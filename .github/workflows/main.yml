@@ -1,4 +1,4 @@
-name: build luosgeo
+name: build gma
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   docs:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
       # 拉取代码
