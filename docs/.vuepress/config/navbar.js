@@ -15,7 +15,7 @@ module.exports = [
     {
         text: '函数和功能',
         icon: "fas fa-toolbox",
-        link: '/Functions/Default'
+        link: '/Functions/Structure'
     },
 
     {

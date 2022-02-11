@@ -48,7 +48,7 @@ pip install "X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
 
 ## 手动安装
 
-&emsp;&emsp;gma 已经上传至 [pypi](https://pypi.org/project/gma/)，可以在终端输入以下命令安装：
+&emsp;&emsp;gma 已经发布至 [pypi](https://pypi.org/project/gma/)，可以在终端输入以下命令安装：
 
 ```bash
 pip install gma
