@@ -3,7 +3,7 @@ title: 函数功能列表
 date: 2021-10-29
 ---
 
-**&emsp;&emsp;函数功能列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。如果你需要详细的函数参数说明，请在 Python 中使用 ```help``` 获取函数帮助或参考 [使用指南](/UserGuide/index.html)。
+**&emsp;&emsp;函数功能列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。如果你需要详细的函数参数说明，请在 Python 中使用 ```help``` 获取函数帮助或参考 [使用指南](/UserGuide/indexc.html)。
 
 <!-- more -->
 
@@ -13,12 +13,12 @@ date: 2021-10-29
 
  函数 | 引用（简版）| 功能 | 详细解释                          
  :----- | :----- | :----- | :-----
-[EVI](/UserGuide/index.html#evi) | gma.index.EVI     | 【EVI】     | 增强植被指数                      
-[NDBI](/UserGuide/index.html#ndbi)| gma.index.NDBI    | 【NDBI】    | 归一化建筑指数                    
-[NDWI](/UserGuide/index.html#ndwi)  | gma.index.NDWI    | 【NDWI】    | 归一化水指数                      
-[NDVI](/UserGuide/index.html#ndvi) | gma.index.NDVI    | 【NDVI】    | 归一化植被指数                    
-[PM_ET0](/UserGuide/index.html#pm-et0) | gma.index.PM_ET0 | 【PM_ET0】 | 基于 FAO-56 推荐的 Penman-Monteith 法计算作物参考蒸散量（ET0） 
-[TVDI](/UserGuide/index.html#tvdi) <Badge text="1.0.2 +"/> | gma.index.TVDI    | 【TVDI】    | 温度植被干旱指数                  
+[EVI](/UserGuide/indexc.html#evi) | gma.index.EVI     | 【EVI】     | 增强植被指数                      
+[NDBI](/UserGuide/indexc.html#ndbi)| gma.index.NDBI    | 【NDBI】    | 归一化建筑指数                    
+[NDWI](/UserGuide/indexc.html#ndwi)  | gma.index.NDWI    | 【NDWI】    | 归一化水指数                      
+[NDVI](/UserGuide/indexc.html#ndvi) | gma.index.NDVI    | 【NDVI】    | 归一化植被指数                    
+[PM_ET0](/UserGuide/indexc.html#pm-et0) | gma.index.PM_ET0 | 【PM_ET0】 | 基于 FAO-56 推荐的 Penman-Monteith 法计算作物参考蒸散量（ET0） 
+[TVDI](/UserGuide/indexc.html#tvdi) <Badge text="1.0.2 +"/> | gma.index.TVDI    | 【TVDI】    | 温度植被干旱指数                  
 
  ## math 数学运算
 

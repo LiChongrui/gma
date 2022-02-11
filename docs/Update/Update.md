@@ -108,7 +108,7 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[TVDI](/UserGuide/index.html#tvdi)】函数
+&emsp;　1、增加【[TVDI](/UserGuide/indexccccccc.html#tvdi)】函数
 
 &emsp;　　计算温度植被干旱指数。引用：gma.index.TVDI。
 

@@ -17,7 +17,7 @@ module.exports = {
             title:'用户指南',
             collapsable: false,
             children: [
-                'index',
+                'indexc',
                 'math',
                 'osf',
                 'smc',

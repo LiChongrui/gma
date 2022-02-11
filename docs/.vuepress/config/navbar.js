@@ -21,7 +21,7 @@ module.exports = [
     {
         text: '使用指南',
         icon: "fa-brands fa-yelp",
-        link: '/UserGuide/index'
+        link: '/UserGuide/indexc'
     },
 
     {
