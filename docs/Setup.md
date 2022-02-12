@@ -1,5 +1,5 @@
 ---
-title: 安装引用
+title: 安装和引用
 date: 2021-10-29 23:20:00
 sidebar: false
 ---
@@ -46,7 +46,7 @@ pip install "X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
 
 &emsp;&emsp; 其中```X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
 
-## 手动安装
+## 安装
 
 &emsp;&emsp;gma 已经发布至 [pypi](https://pypi.org/project/gma/)，可以在终端输入以下命令安装：
 

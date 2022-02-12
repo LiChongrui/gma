@@ -13,16 +13,8 @@ gantt
 
         section 库优化
 
-        持续优化: active, des3, 2022-01-20, 2022-02-10
-
-        section 功能（函数）更新
-
-        气象指数计算: crit, after now,30d
-        
-        section 空间杂项计算
-
-        空间杂项算法扩展: crit, after now,30d
-
+        持续优化: active, des3, 2022-02-10, 2022-03-01
+  
         section 参数检查和初始化
 
         为 index、math、osf 模块内未实现参数检查和初始化的函数添加参数初始化或检查: crit, after now,30d

@@ -3,13 +3,19 @@ title: 函数功能列表
 date: 2021-10-29
 ---
 
-**&emsp;&emsp;函数功能列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。如果你需要详细的函数参数说明，请在 Python 中使用 ```help``` 获取函数帮助或参考 [使用指南](/UserGuide/indexc.html)。
+**&emsp;&emsp;函数功能列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。如果你需要详细的函数参数说明，请在 Python 中使用 ```help``` 获取函数帮助或移步 [使用指南](/UserGuide/index.html)。
 
 <!-- more -->
 
-## index 指数运算
+&emsp;&emsp;截止 **gma 1.0.5** 版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
 
-&emsp;&emsp;指数运算函数 **基于 数 或 Numpy 数组**。
+ |中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|         
+ |:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
+ | 对应 gma 中的模块名 | index | math | osf | smc | rasp | vesp| 6|
+ |函数数量（包括类方法 / 属性）|6|12|8|2|29|11| 67|
+
+
+## 指数运算
 
  函数 | 引用（简版）| 功能 | 详细解释                          
  :----- | :----- | :----- | :-----
@@ -20,9 +26,7 @@ date: 2021-10-29
 [PM_ET0](/UserGuide/indexc.html#pm-et0) | gma.index.PM_ET0 | 【PM_ET0】 | 基于 FAO-56 推荐的 Penman-Monteith 法计算作物参考蒸散量（ET0） 
 [TVDI](/UserGuide/indexc.html#tvdi) <Badge text="1.0.2 +"/> | gma.index.TVDI    | 【TVDI】    | 温度植被干旱指数                  
 
- ## math 数学运算
-
-&emsp;&emsp;数学运算函数基于 **Numpy 数组 或 Pandas 数据帧** 。
+ ## 数学运算
 
 | （类）函数          | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
@@ -39,7 +43,7 @@ date: 2021-10-29
 | [**Evaluation.**](/UserGuide/math.html#evaluation-类)[Select](/UserGuide/math.html#select)  | gma.math.Evaluation.Select    | 【选择方法】       | 选择Evaluation中需要计算的一个或多个评价指标进行计算         |
 | [**Evaluation.**](/UserGuide/math.html#evaluation-类)[Methods](/UserGuide/math.html#methods) | gma.math.Evaluation.Methods   | 【记录方法】       | 记录Evaluation类中所有的评估方法                             |
 
- ## osf 系统交互
+ ## 系统交互
 
 | （类）函数       | 引用（简版）                | 功能         | 详细解释                                         |
 | :--------------- | :-------------------------- | :----------- | :----------------------------------------------- |
@@ -52,14 +56,14 @@ date: 2021-10-29
 | [**Modify.**](/UserGuide/osf.html#rename-类)[Intercept](/UserGuide/osf.html#intercept) | gma.osf.Rename.Intercept | 【截取】     | 截取文件（夹）名中的部分字符串作为新文件（夹）名 |
 | [MultiThreading](/UserGuide/osf.html#multithreading)<Badge text="1.0.3 +"/> | gma.osf.MultiThreading | 【多线程】 | 创建多个线程，实现同一函数多个参数的同步执行 |
 
- ## smc 空间杂项
+ ## 空间杂项
 
 | 函数 | 引用（简版）| 功能 | 详细解释|
 | :----- | :----- | :----- | :-----|
 |[CALDistance](/UserGuide/smc.html#caldistance)<Badge text="1.0.5 +"/> | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
 |[TRANCoordinate](/UserGuide/smc.html#trancoordinate)<Badge text="1.0.5 +"/> | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
 
- ## rasp 栅格处理
+ ## 栅格处理
 
 | （类）函数                                                   | 引用（简版）                  | 功能                | 详细解释                                                     |
 | :----------------------------------------------------------- | :---------------------------- | :------------------ | :----------------------------------------------------------- |
@@ -98,7 +102,7 @@ date: 2021-10-29
 | [NoData](/UserGuide/rasp.html#nodata)         | gma.rasp.Open.NoData         |  【无效值】                 | 获取栅格无效值|
 | [Projection](/UserGuide/rasp.html#projection)     | gma.rasp.Open.Projection     |  【坐标系】                   |获取栅格坐标系 |
 
-## vesp 矢量处理
+## 矢量处理
 
 | （类）函数    | 引用（简版）             | 说明             | 解释                                     |
 | :------------ | :----------------------- | :--------------- | :--------------------------------------- |
