@@ -30,4 +30,10 @@ from gma import rasp
 from gma import vesp
 ```
 
-&emsp;&emsp;如果您需要了解 gma 中默认的参数、定义和约定，请移步 [默认设置](/Functions/Default.html)。
+::: tip 提示
+
+1.0.5 版本后，如果 import 出现异常，可参考 [错误解决](/Install.html#错误解决) 中提供的方案进行处理。
+
+:::
+
+&emsp;&emsp;如果您需要了解 gma 中规定的默认参数和数据类型，请移步 [默认设置](/Functions/Default.html)。

@@ -1,14 +1,14 @@
 ---
-title: 内容说明
+title: 记录内容
 date: 2021-11-21
 ---
 
-**&emsp;&emsp;更新** 记录了 **gma** 不断完善的过程中每个版本优化的内容，包括库函数的 
+**&emsp;&emsp;gma** 不断完善的过程中每个版本优化的内容，包括库函数的 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增**、
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化**、
-<font color="#FFA500"><i class="fas fa-tools"></i></font> **修复** 和 
-<i class="far fa-trash-alt"></i> **移除** 等，同时也会对 
-<font color="#FF4500"><i class="fas fa-exclamation-circle"></i></font> **已知问题** 等进行记录。
+<font color="#FFA500"><i class="fas fa-tools"></i></font> **修复** 、
+<i class="far fa-trash-alt"></i> **移除**  和
+<font color="#FF4500"><i class="fas fa-exclamation-circle"></i></font> **已知问题** 等都会在 **更新记录** 中展示进行汇总。
 
 &emsp;&emsp;更新记录主要有：
 

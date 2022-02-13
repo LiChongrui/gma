@@ -26,18 +26,17 @@ module.exports = [
     },
 
     {
-        text: '更新',
+        text: '更新记录',
         icon: "fas fa-arrow-up",
         link: '/Update/'
     },
 
     {
         text: '支持',
-        icon: "fa-solid fa-envelope",
+        icon: "fa-solid fa-paper-plane",
         items: [
             { text: '研学分享', link: "https://luosgeo.com" },
-            //{ text: '意见反馈', link: "https://luosgeo.com" },
-            //{ text: '友情赞助', link: "https://luosgeo.com" },
+            { text: '反馈与赞助', link: "/Support" },
          ]
     },
 

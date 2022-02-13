@@ -33,7 +33,7 @@ module.exports = {
     
     '/Update/': [
         {
-            title:'更新',
+            title:'更新记录',
             collapsable: false,
             children: [
                 '',

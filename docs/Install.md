@@ -14,11 +14,11 @@ sidebar: false
 
 :::
 
-> 注意：gma 目前**不支持** <Badge text="Linux" type='error' vertical='middle'/><Badge text="MacOS" type='error' vertical='middle'/> 和其他平台。
+> 注意：gma 目前**不支持** <Badge text="Linux" type='error' vertical='middle'/>、<Badge text="MacOS" type='error' vertical='middle'/> 和其他平台。
 
 ::: theorem Python 环境
 
-&emsp; Python 版本应为 <Badge text="3.8、3.9 或 3.10" vertical='middle'/>
+&emsp; Python 版本： <Badge text="3.8、3.9 或 3.10" vertical='middle'/>
 
 :::
 
@@ -31,7 +31,7 @@ sidebar: false
 :::
 
 ## 依赖库 
-&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.3.1 +"/>，numpy <Badge text="1.20.3 +"/>，pandas <Badge text="1.3.3 +"/> 和 scipy<Badge text="1.7.1 +"/> 等库，这些库是 gma 实现功能的基础。由于 gdal 不是一个纯 Python 库，需要手动编译或下载编译后对应版本的 whl 包手动安装。
+&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.3.1 +"/>，numpy <Badge text="1.20.3 +"/>，pandas <Badge text="1.3.3 +"/> 和 scipy<Badge text="1.7.1 +"/> 等库，这些库是 gma 实现功能的基础。 gdal 需要手动编译或下载编译后相应版本的 whl 包手动安装。
 
 ::: right 
 
@@ -64,3 +64,14 @@ import gma
 ```
 
 &emsp;&emsp; 下一步，请试试 gma 的函数吧。
+
+### 错误解决
+
+&emsp;&emsp;从 1.0.5 版本开始，gma 会对引用过程中出现的异常进行追踪标记。引用过程中出现的异常或错误请参考下表解决（其中 XXX / YYY 为发生错误的包 / 模块）：
+
+| 错误类型            | 错误内容                                                     | 解决方法                              |
+| :------------------ | :----------------------------------------------------------- | :------------------------------------ |
+| ModuleNotFoundError | 缺少 gdal 库！gdal 的 whl 包可从：https://www.lfd.uci.edu/~gohlke/pythonlibs/ 下载。 | [安装 gdal](/Install.html#依赖库)     |
+| ModuleNotFoundError | 缺少 XXX 库，请在终端使用 'pip install XXX' 安装！           | 在终端输入 `pip install XXX` 安装     |
+| ImportError         | 无法从 XXX 中导入 XXX.YYY！                                  | 重新安装 XXX                          |
+| ImportError         | 父包未知，无法进行相对导入！                                 | 请将 gma 放置在 Python 包文件夹后重试 |
