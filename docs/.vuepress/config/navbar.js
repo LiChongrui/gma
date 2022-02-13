@@ -8,13 +8,13 @@ module.exports = [
     },
 
     { 
-        text: '安装和引用', 
+        text: '快速安装', 
         icon: "fab fa-instalod",
         link:"/Install.md"
     },
 
     {
-        text: '函数和功能',
+        text: '功能总览',
         icon: "fas fa-toolbox",
         link: '/Functions/'
     },

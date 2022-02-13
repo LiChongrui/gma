@@ -1,9 +1,9 @@
 ---
-title: 更新
+title: 内容说明
 date: 2021-11-21
 ---
 
-**&emsp;&emsp;更新** 为 **gma** 在不断优化完善过程中每个版本更新内容的记录，内容包括库函数的 
+**&emsp;&emsp;更新** 记录了 **gma** 不断完善的过程中每个版本优化的内容，包括库函数的 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增**、
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化**、
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **修复** 和 

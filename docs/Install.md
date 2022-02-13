@@ -1,5 +1,5 @@
 ---
-title: 安装和引用
+title: 快速安装
 date: 2021-10-29 23:20:00
 sidebar: false
 ---
@@ -41,10 +41,9 @@ sidebar: false
 
 &emsp;&emsp;打开  Windows 终端（或```CMD、PowerShell、conda``` 等且**已配置系统变量**），使用以下命令安装 gdal （**默认 Python 环境**）:
 ```bash
-pip install "X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
+pip install "X:\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
 ```
-
-&emsp;&emsp; 其中```X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
+&emsp;&emsp; 其中```X:\GDAL-3.3.3-cp38-cp38-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
 
 ## 安装
 
@@ -54,6 +53,7 @@ pip install "X:\XXX\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
 pip install gma
 ```
 &emsp;&emsp;在安装 gma 时，依赖的 numpy，pandas 和 scipy 等库如果不存在则会自动安装（需联网）。
+
 
 ## 引用
 

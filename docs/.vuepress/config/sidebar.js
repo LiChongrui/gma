@@ -3,12 +3,13 @@ module.exports = {
 
     '/Functions/': [
         {
-            title:'函数和功能',
-            path:'/Functions/Definition',
+            title:'功能总览',
             collapsable: false,
             children: [
+                '',
                 'Structure',
                 'Default',
+                'Naming',
                 'Function',
             ]
         }
@@ -17,9 +18,9 @@ module.exports = {
     '/UserGuide/': [
         {
             title:'使用指南',
-            path:'/UserGuide/',
             collapsable: false,
             children: [
+                '',
                 'indexc',
                 'math',
                 'osf',
@@ -33,9 +34,9 @@ module.exports = {
     '/Update/': [
         {
             title:'更新',
-            path:'/Update/',
             collapsable: false,
             children: [
+                '',
                 'Update',
                 'Plan',
             ]

@@ -3,7 +3,7 @@ title: 指数计算
 date: 2021-10-31
 ---
 
-**&emsp;&emsp;指数计算** 为 **gma.index** 内所有遥感、气象以及其他相关指数计算函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数功能列表](/Functions/Function.html) 。
+**&emsp;&emsp;指数计算** 为 **gma.index** 内所有遥感、气象以及其他相关指数计算函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 
 ## EVI 
