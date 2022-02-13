@@ -1,17 +1,18 @@
 module.exports = [  
-    { text: '首页', link: '/', icon: "fas fa-house-user" },
+    //{ text: '首页', link: '/', icon: "fas fa-house-user" },
 
     { 
         text: '简介', 
         icon: "fab fa-stumbleupon-circle",
-        link:'/Introduce',
+        link:'/Introduce.md',
     },
 
     { 
         text: '安装和引用', 
         icon: "fab fa-instalod",
-        link:"/Setup"
+        link:"/Install.md"
     },
+
     {
         text: '函数和功能',
         icon: "fas fa-toolbox",
@@ -28,6 +29,16 @@ module.exports = [
         text: '更新',
         icon: "fas fa-arrow-up",
         link: '/Update/'
+    },
+
+    {
+        text: '支持',
+        icon: "fa-solid fa-envelope",
+        items: [
+            { text: '研学分享', link: "https://luosgeo.com" },
+            //{ text: '意见反馈', link: "https://luosgeo.com" },
+            //{ text: '友情赞助', link: "https://luosgeo.com" },
+         ]
     },
 
 ]

@@ -7,7 +7,7 @@ module.exports = {
     },
     base: '/',
     head: [
-        ['link', { rel: 'icon', href: '/images/Logo.svg' }]
+        ['link', { rel: 'icon', href: '/images/Logo-gma.svg' }]
     ],
     title: '地理与气象分析库',
     theme: require.resolve('../../theme-reco'),

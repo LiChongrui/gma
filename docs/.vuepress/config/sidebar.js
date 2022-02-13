@@ -1,9 +1,10 @@
 module.exports = {
 
+
     '/Functions/': [
         {
             title:'函数和功能',
-            path:'/Functions/',
+            path:'/Functions/Definition',
             collapsable: false,
             children: [
                 'Structure',
