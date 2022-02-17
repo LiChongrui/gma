@@ -31,3 +31,6 @@ gantt
 
 &emsp;　　所有的插补方法支持的类型移入 key 中。（内部修改，不影响函数功能。）
 
+&emsp;&emsp;2、TRANCoordinate
+
+&emsp;&emsp;&emsp;优化距离计算算法。现在，即使坐标点跨度巨大，仍能准确的返回计算结果。

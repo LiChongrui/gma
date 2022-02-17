@@ -16,7 +16,7 @@ date: 2021-10-30
 
 &emsp;Points：`list||tuple||array` 。需要计算距离的两点（或多点）的 X（纬度），Y（经度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。至少有 2 个坐标点。
 
-​    <Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
+<Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
 
 
 **可选参数：**
@@ -42,7 +42,9 @@ date: 2021-10-30
 
 &emsp;Points：`list||tuple||array` 。需要计算距离的两点（或多点）的 X（纬度），Y（经度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。
 
-​    <Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
+<Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
+
+<Boxx type='warning' title='注意' content='两点之间的最大经度跨度为 180° 。超过 180°，则计算反方向的距离！'/>
 
 **可选参数：**
 
