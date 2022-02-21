@@ -2,7 +2,7 @@
 home: true
 
 heroText: 地理与气象分析库
-tagline: 一个基于 Python 的地理、气象数据快速处理和数据分析函数包（Geographic and Meteorological Analysis，简称 gma）
+tagline: 一个基于 Python 的地理、气象数据快速处理和数据分析函数包（Geographic and Meteorological Analysis，gma）
 
 heroImage: /images/Logo-gma.svg
 

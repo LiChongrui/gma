@@ -26,7 +26,7 @@ sidebar: false
 
 ::: right  
 
- [**点击下载 Anaconda3 (Python 3.8.8 64-bit)**](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe)
+ [**点击访问 Anaconda 下载网站**](https://www.anaconda.com/)
 
 :::
 
@@ -74,4 +74,4 @@ import gma
 | ModuleNotFoundError | 缺少 gdal 库！gdal 的 whl 包可从：https://www.lfd.uci.edu/~gohlke/pythonlibs/ 下载。 | [安装 gdal](/Install.html#依赖库)     |
 | ModuleNotFoundError | 缺少 XXX 库，请在终端使用 'pip install XXX' 安装！           | 在终端输入 `pip install XXX` 安装     |
 | ImportError         | 无法从 XXX 中导入 XXX.YYY！                                  | 重新安装 XXX                          |
-| ImportError         | 父包未知，无法进行相对导入！                                 | 请将 gma 放置在 Python 包文件夹后重试 |
+| ImportError         | 父包未知，无法进行相对导入！                                 | 请从 gma 的父文件夹引用或重新安装 gma |

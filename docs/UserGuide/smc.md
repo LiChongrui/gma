@@ -18,6 +18,7 @@ date: 2021-10-30
 
 <Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
 
+<Boxx type='warning' title='注意' content='每两点之间最大的经度跨度为 180°；若超过 180°，则计算短距——反方向的距离！'/>
 
 **可选参数：**
 
@@ -25,9 +26,9 @@ date: 2021-10-30
 
 &emsp;Unit = `str`。计算距离结果的单位。默认为米（meter）。
 
-​    &emsp;&emsp;支持的单位还有：kilometer（千米）、mile（英里）、nautical mile（海里）。
+<Boxx type='tips' title='其他支持的单位' content='decimeter（分米），centimeter（厘米），millimeter（毫米），micron（微米），picometer（皮米），fermi（费米），kilometer（千米），inch（英寸），foot（英尺），yard（码），mile（英里），mil（密尔），point（pt 字体大小单位），survey foot（测量英尺），survey mile（测量英里），nautical mile（海里），angstrom（埃），astronomical unit（天文单位），light year（光年），parsec（秒差距）。' />
 
-**返回：**`float`。坐标值设置异常将返回无穷 （inf）。
+**返回：**`float`。
 
 :::
 
@@ -43,8 +44,6 @@ date: 2021-10-30
 &emsp;Points：`list||tuple||array` 。需要计算距离的两点（或多点）的 X（纬度），Y（经度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。
 
 <Boxx type='tips' title='示例' content='Points = [(130.1, 45.2), (131.5, 40.2)]'/>
-
-<Boxx type='warning' title='注意' content='两点之间的最大经度跨度为 180° 。超过 180°，则计算反方向的距离！'/>
 
 **可选参数：**
 

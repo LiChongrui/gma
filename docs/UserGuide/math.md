@@ -5,18 +5,18 @@ date: 2021-10-30
 
 **&emsp;&emsp;数学运算** 为 **gma.math** 内所有数学方法相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
-## _DFToNumeric
+## ToNumericArray
 
 ::: theorem
-**引用：** gma.index._DFToNumeric(DataFrame)
+**引用：** gma.index.ToNumericArray(Data)
 
-**功能：**【强制转换为数字】。强制转换 DataFrame 中非数字字符串为 NAN。
+**功能：**【转换为数字型数组】。强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。
 
 **参数：**
 
-&emsp;DataFrame：`DataFrame` 。需要转换的 DataFrame。
+&emsp;Data：`所有数据类型` 。需要转换的数据。
 
-**返回：**`DataFrame`。
+**返回：**`array`。
 ::: 
 
 

@@ -31,6 +31,23 @@ gantt
 
 &emsp;　　所有的插补方法支持的类型移入 key 中。（内部修改，不影响函数功能。）
 
-&emsp;&emsp;2、TRANCoordinate
+&emsp;　2、TRANCoordinate
 
-&emsp;&emsp;&emsp;优化距离计算算法。现在，即使坐标点跨度巨大，仍能准确的返回计算结果。
+&emsp;　　优化距离计算算法。现在，即使坐标点跨度巨大，仍能准确的返回计算结果。
+
+<font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
+
+&emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数
+
+&emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.index.ToNumericArray。
+
+<i class="far fa-trash-alt"></i> **移除：**
+
+&emsp;　1、_DFToNumeric
+
+&emsp;　　移除了 _DFToNumeric 函数，相关功能合并至 ToNumericArray 函数。
+
+
+
+
+

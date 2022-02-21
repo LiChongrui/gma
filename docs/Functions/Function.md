@@ -30,7 +30,7 @@ date: 2021-10-29
 
 | （类）函数          | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
-| [_DFToNumeric](/UserGuide/math.html#dftonumeric)       | gma.math._DFToNumeric         | 【强制转换为数字】 | 强制将 pandas 数据帧中的数据转换数字 |
+| [ToNumericArray](/UserGuide/math.html#tonumericarray)       | gma.math.ToNumericArray         | 【转换为数字型数组】 | 强制将输入数据转为数字型数组 |
 | [FillNoData](/UserGuide/math.html#fillnodata)          | gma.math.FillNoData            | 【填充缺失值】     | 对缺失值或异常值值进行插值替换                               |
 | [**Smooth.**](/UserGuide/math.html#smooth-类)[SavitzkyGolay](/UserGuide/math.html#savitzkygolay)             | gma.math.Smooth.SavitzkyGolay | 【SavitzkyGolay】  | 利用SavitzkyGolay方法对数据进行平滑                          |
 | [**Smooth.**](/UserGuide/math.html#smooth-类)[MovingAverage](/UserGuide/math.html#movingaverage)       | gma.math.Smooth.MovingAverage | 【滑动平均】       | 利用滑动平均法对数据进行平滑                                 |
