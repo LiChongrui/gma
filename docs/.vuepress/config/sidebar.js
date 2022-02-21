@@ -9,6 +9,7 @@ module.exports = {
                 '',
                 'Structure',
                 'Default',
+                'Constants',
                 'Naming',
                 'Function',
             ]

@@ -8,6 +8,7 @@ date: 2021-10-29
 
 >+ [组织方式](/Functions/Structure.html) == 库模块的组织结构和说明
 >+ [默认设置](/Functions/Default.html)  == 库默认参数设置和数据类型规定
+>+ [常量单位](/Functions/Constants.html)  == 库定义的常量名称、值或与国际单位的代换值
 >+ [命名规定](/Functions/Naming.html) == 函数名命名和缩写规定，缩写内容解释
 >+ [函数列表](/Functions/Function.html)  == 以列表形式统计的各个模块所有函数信息
 >	* [指数运算](/Functions/Function.html#指数运算) == gma.index

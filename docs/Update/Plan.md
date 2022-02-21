@@ -47,7 +47,7 @@ gantt
 
 &emsp;　　移除了 _DFToNumeric 函数，相关功能合并至 ToNumericArray 函数。
 
-
+<i class="fas fa-box"></i> **引入 [constants](/Functions/Constants.html) 常量模块。** 提供数学常量、国际单位制词头、二进制单位、长度单位、面积单位等 16 种单位的名称、值或与国际单位的代换值！
 
 
 
