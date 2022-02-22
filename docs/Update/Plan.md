@@ -35,6 +35,10 @@ gantt
 
 &emsp;　　优化距离计算算法。现在，即使坐标点跨度巨大，仍能准确的返回计算结果。
 
+&emsp;　3、版本记录
+
+&emsp;　　增加当前 gma 版本号记录。可通过 gma.\_\_version\_\_ 查看当前版本号。
+
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
 &emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数

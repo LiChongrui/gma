@@ -5,9 +5,9 @@ date: 2021-10-29
 
 **&emsp;&emsp;函数列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。如果你需要详细的函数参数说明，请在 Python 中使用 ```help``` 获取函数帮助或移步 [使用指南](/UserGuide/index.html)。
 
-<!-- more -->
+&emsp;&emsp;除了初版构建的函数之外，其他版本构建的函数会增加版本 <Badge text="标记"/>  。
 
-&emsp;&emsp;截止 **gma 1.0.5** 版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
+&emsp;&emsp;截止 **1.0.5**  版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
 
  |中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|         
  |:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
@@ -30,7 +30,7 @@ date: 2021-10-29
 
 | （类）函数          | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
-| [ToNumericArray](/UserGuide/math.html#tonumericarray)       | gma.math.ToNumericArray         | 【转换为数字型数组】 | 强制将输入数据转为数字型数组 |
+| [ToNumericArray](/UserGuide/math.html#tonumericarray) <Badge text="1.0.6 +"/>      | gma.math.ToNumericArray         | 【转换为数字型数组】 | 强制将输入数据转为数字型数组 |
 | [FillNoData](/UserGuide/math.html#fillnodata)          | gma.math.FillNoData            | 【填充缺失值】     | 对缺失值或异常值值进行插值替换                               |
 | [**Smooth.**](/UserGuide/math.html#smooth-类)[SavitzkyGolay](/UserGuide/math.html#savitzkygolay)             | gma.math.Smooth.SavitzkyGolay | 【SavitzkyGolay】  | 利用SavitzkyGolay方法对数据进行平滑                          |
 | [**Smooth.**](/UserGuide/math.html#smooth-类)[MovingAverage](/UserGuide/math.html#movingaverage)       | gma.math.Smooth.MovingAverage | 【滑动平均】       | 利用滑动平均法对数据进行平滑                                 |

@@ -5,7 +5,7 @@ date: 2021-10-30
 
 **&emsp;&emsp;数学运算** 为 **gma.math** 内所有数学方法相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
-## ToNumericArray
+## ToNumericArray <Badge text="1.0.6 +"/> 
 
 ::: theorem
 **引用：** gma.index.ToNumericArray(Data)

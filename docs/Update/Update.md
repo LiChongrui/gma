@@ -46,6 +46,10 @@ date: 2021-11-21
 
 &emsp;　　添加 MINSize 参数，仅为文件大小大于此值的栅格文件构建金字塔。默认大小为 10 MB。
 
+&emsp;　7、引入检查
+
+&emsp;　　为 import gma 的过程增加检查，以方便定位引入问题。
+
 <i class="far fa-trash-alt"></i> **移除：**
 
 &emsp;　1、位深设置
