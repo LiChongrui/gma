@@ -43,7 +43,7 @@ gantt
 
 &emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数
 
-&emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.index.ToNumericArray。
+&emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.marh.ToNumericArray。
 
 <i class="far fa-trash-alt"></i> **移除：**
 
