@@ -13,7 +13,7 @@ gantt
 
         section 库优化
 
-        持续优化: active, des3, 2022-02-10, 2022-03-01
+        持续优化: active, des3, 2022-03-10, 2022-04-01
 
         section 参数检查和初始化
 
@@ -24,6 +24,8 @@ gantt
 ## 更新测试中的新内容
 
 &emsp;　更新测试中的新内容将在下一个 gma 版本中发布。下一版本 **1.0.6** 。
+
+<i class="fas fa-box"></i> **引入 [constants](/Functions/Constants.html) 常量模块。** 提供数学常量、国际单位制词头、二进制单位、长度单位、面积单位等 16 种单位的名称、值或与国际单位的代换值！
 
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
 
@@ -39,6 +41,10 @@ gantt
 
 &emsp;　　增加当前 gma 版本号记录。可通过 gma.\_\_version\_\_ 查看当前版本号。
 
+&emsp;　4、Resample
+
+&emsp;　　改进重采样算法提升效率，大文件重采样时间缩短超过 30% 。
+
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
 &emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数
@@ -51,7 +57,8 @@ gantt
 
 &emsp;　　移除了 _DFToNumeric 函数，相关功能合并至 ToNumericArray 函数。
 
-<i class="fas fa-box"></i> **引入 [constants](/Functions/Constants.html) 常量模块。** 提供数学常量、国际单位制词头、二进制单位、长度单位、面积单位等 16 种单位的名称、值或与国际单位的代换值！
+<font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
 
+&emsp;　1、SplitImage
 
-
+&emsp;　　修复了部分条件下，切片不能正常执行的问题。
