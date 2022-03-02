@@ -51,6 +51,14 @@ gantt
 
 &emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.math.ToNumericArray。
 
+&emsp;　2、增加 [Simplify](/UserGuide/vesp.html#simplify) 函数
+
+&emsp;　　简化矢量数据中的要素。引用：gma.math.Simplify。
+
+&emsp;　3、增加 [HealGeometry](/UserGuide/vesp.html#healgeometry) 函数
+
+&emsp;　　修复矢量数据中拓扑关系异常的要素。引用：gma.math.HealGeometry。
+
 <i class="far fa-trash-alt"></i> **移除：**
 
 &emsp;　1、_DFToNumeric
@@ -62,3 +70,7 @@ gantt
 &emsp;　1、SplitImage
 
 &emsp;　　修复了部分条件下，切片不能正常执行的问题。
+
+&emsp;　2、ToVector
+
+&emsp;　　修复了部分条件下，掩膜 NoData 区域异常的问题。

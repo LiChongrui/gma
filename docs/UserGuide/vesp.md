@@ -221,9 +221,9 @@ date: 2021-10-30
 
 &emsp;OutFile：`str`。输出矢量文件路径。
 
-**可选参数：** 
+&emsp;Projection: `str`。输出矢量坐标系（EPSG 或 wkb 格式）。
 
-&emsp;Projection = `str`。输出矢量坐标系（EPSG 或 wkb 格式）。
+**可选参数：** 
 
 &emsp;OutFormat = `str`。输出矢量文件格式，默认为 ESRI Shapefile。其他格式详见 ToOtherFormat 函数。
 
@@ -248,5 +248,43 @@ date: 2021-10-30
 **可选参数：** 
 
 &emsp;OutFormat = `str`。输出矢量文件格式，默认为 ESRI Shapefile。其他格式详见 ToOtherFormat 函数。
+
+:::
+
+## Simplify<Badge text="1.0.6 +"/>
+
+::: theorem
+
+**引用：** gma.vesp.Simplify(InFile, OutFile, Tolerance = 0)
+
+**功能：**【简化几何】。简化矢量数据中的要素。
+
+**参数：** 
+
+&emsp;InFile：`str`。输入矢量文件路径。
+
+&emsp;OutFile：`str`。输出矢量文件路径。
+
+**可选参数：** 
+
+&emsp;Tolerance = float。简化几何要素时允许的几何容差。默认为 0。
+
+:::
+
+## HealGeometry<Badge text="1.0.6 +"/>
+
+::: theorem
+
+**引用：** HealGeometry(InFile, OutFile = None)
+
+**功能：**【拓扑修复】。修复矢量数据中拓扑关系异常的要素。
+
+**参数：** 
+
+&emsp;InFile：`str`。输入矢量文件路径。
+
+**可选参数：** 
+
+&emsp;OutFile = str。输出矢量文件路径。如果不设置（None），则直接在输入矢量文件上修复几何错误。
 
 :::

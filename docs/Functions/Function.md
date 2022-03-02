@@ -7,12 +7,12 @@ date: 2021-10-29
 
 &emsp;&emsp;除了初版构建的函数之外，其他版本构建的函数会增加版本 <Badge text="标记"/>  。
 
-&emsp;&emsp;截止 **1.0.5**  版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
+&emsp;&emsp;截止 **1.0.6**  版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
 
- |中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|         
- |:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
- | 对应 gma 中的模块名 | index | math | osf | smc | rasp | vesp| 6|
- |函数数量（包括类方法 / 属性）|6|12|8|2|29|11| 67|
+|中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|
+|:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
+| 对应 gma 中的模块名 | index | math | osf | smc | rasp | vesp| 6|
+|函数数量（包括类方法 / 属性）|6|12|8|2|29|13| 69|
 
 
 ## 指数运算
@@ -117,4 +117,6 @@ date: 2021-10-29
 | [ToOtherFormat](/UserGuide/vesp.html#tootherformat) | gma.vesp.ToOtherFormat | 【格式转换】     | 一种矢量格式转换为另一种矢量格式         |
 | [Reproject](/UserGuide/vesp.html#reproject)     | gma.vesp.Reproject     | 【重投影】       | 将矢量数据从一种坐标系投影到另一种坐标系                       |
 | [SymDifference](/UserGuide/vesp.html#symdifference) <Badge text="1.0.4 +"/>    | gma.vesp.SymDifference    | 【交集取反】       | 取两个矢量不相交的部分                       |
+| [Simplify](/UserGuide/vesp.html#simplify)<Badge text="1.0.6 +"/> | gma.math.Simplify | 【简化几何】 | 简化矢量数据中的要素 |
+| [HealGeometry<Badge text="1.0.6 +"/>](/UserGuide/vesp.html#healgeometry) | gma.math.HealGeometry | 【拓扑修复】 | 修复矢量数据中拓扑关系异常的要素 |
 
