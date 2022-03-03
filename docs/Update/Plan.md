@@ -53,11 +53,11 @@ gantt
 
 &emsp;　2、增加 [Simplify](/UserGuide/vesp.html#simplify) 函数
 
-&emsp;　　简化矢量数据中的要素。引用：gma.math.Simplify。
+&emsp;　　简化矢量数据中的要素。引用：gma.vesp.Simplify。
 
 &emsp;　3、增加 [FixGeometry](/UserGuide/vesp.html#fixgeometry) 函数
 
-&emsp;　　修正矢量数据中无效的几何要素。引用：gma.math.FixGeometry。
+&emsp;　　修正矢量数据中无效的几何要素。引用：gma.vesp.FixGeometry。
 
 <i class="far fa-trash-alt"></i> **移除：**
 
