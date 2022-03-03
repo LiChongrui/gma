@@ -55,9 +55,9 @@ gantt
 
 &emsp;　　简化矢量数据中的要素。引用：gma.math.Simplify。
 
-&emsp;　3、增加 [HealGeometry](/UserGuide/vesp.html#healgeometry) 函数
+&emsp;　3、增加 [FixGeometry](/UserGuide/vesp.html#fixgeometry) 函数
 
-&emsp;　　修复矢量数据中拓扑关系异常的要素。引用：gma.math.HealGeometry。
+&emsp;　　修正矢量数据中无效的几何要素。引用：gma.math.FixGeometry。
 
 <i class="far fa-trash-alt"></i> **移除：**
 

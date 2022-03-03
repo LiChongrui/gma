@@ -117,6 +117,6 @@ date: 2021-10-29
 | [ToOtherFormat](/UserGuide/vesp.html#tootherformat) | gma.vesp.ToOtherFormat | 【格式转换】     | 一种矢量格式转换为另一种矢量格式         |
 | [Reproject](/UserGuide/vesp.html#reproject)     | gma.vesp.Reproject     | 【重投影】       | 将矢量数据从一种坐标系投影到另一种坐标系                       |
 | [SymDifference](/UserGuide/vesp.html#symdifference) <Badge text="1.0.4 +"/>    | gma.vesp.SymDifference    | 【交集取反】       | 取两个矢量不相交的部分                       |
-| [Simplify](/UserGuide/vesp.html#simplify)<Badge text="1.0.6 +"/> | gma.math.Simplify | 【简化几何】 | 简化矢量数据中的要素 |
-| [HealGeometry<Badge text="1.0.6 +"/>](/UserGuide/vesp.html#healgeometry) | gma.math.HealGeometry | 【拓扑修复】 | 修复矢量数据中拓扑关系异常的要素 |
+| [Simplify](/UserGuide/vesp.html#simplify)<Badge text="1.0.6 +"/> | gma.math.Simplify | 【简化】 | 简化矢量数据中的要素 |
+| [FixGeometry<Badge text="1.0.6 +"/>](/UserGuide/vesp.html#fixgeometry) | gma.math.FixGeometry | 【修正几何】 | 修正矢量数据中无效的几何要素 |
 

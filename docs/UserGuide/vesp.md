@@ -271,13 +271,13 @@ date: 2021-10-30
 
 :::
 
-## HealGeometry<Badge text="1.0.6 +"/>
+## FixGeometry<Badge text="1.0.6 +"/>
 
 ::: theorem
 
-**引用：** HealGeometry(InFile, OutFile = None)
+**引用：** gma.vesp.FixGeometry(InFile, OutFile = None)
 
-**功能：**【拓扑修复】。修复矢量数据中拓扑关系异常的要素。
+**功能：**【修正几何】。修正矢量数据中无效的几何要素。
 
 **参数：** 
 
