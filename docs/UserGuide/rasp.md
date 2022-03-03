@@ -120,8 +120,6 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 &emsp;OutFile：`str`。输出文件夹路径。
 
-&emsp;CutLineFile：`str`。裁剪矢量文件路径。
-
 **可选参数：**
 
 &emsp;InNoData = `float||list`。输入栅格的无效值。默认自动搜索每个输入栅格的无效值（None）。
