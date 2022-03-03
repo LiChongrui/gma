@@ -118,7 +118,7 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 &emsp;InFiles：`list`。镶嵌影像路径集合。
 
-&emsp;OutFile：`str`。输出文件夹路径。
+&emsp;OutFile：`str`。输出栅格路径。
 
 **可选参数：**
 
