@@ -41,9 +41,9 @@ gantt
 
 &emsp;　　增加当前 gma 版本号记录。可通过 gma.\_\_version\_\_ 查看当前版本号。
 
-&emsp;　4、Resample
+&emsp;　4、Resample、ChangeDataType
 
-&emsp;　　改进重采样算法提升效率，大文件重采样时间缩短超过 30% 。
+&emsp;　　改进算法，提高效率。大文件处理时间缩短超过 30% 。
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
