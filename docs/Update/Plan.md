@@ -45,6 +45,10 @@ gantt
 
 &emsp;　　改进算法，提高效率。大文件处理时间缩短超过 30% 。
 
+&emsp;　5、rasp
+
+&emsp;　　对模块内函数进行了改造。已实现对输入栅格数据正确性的判断。
+
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
 &emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数
@@ -58,6 +62,10 @@ gantt
 &emsp;　3、增加 [FixGeometry](/UserGuide/vesp.html#fixgeometry) 函数
 
 &emsp;　　修正矢量数据中无效的几何要素。引用：gma.vesp.FixGeometry。
+
+&emsp;　4、Open
+
+&emsp;　　为 Open 类增加 [Info](/UserGuide/rasp.html#info)、[Metadata](/UserGuide/rasp.html#metadata)、[GetBandMetadata](/UserGuide/rasp.html#getbandmetadata) 三个方法，分别实现栅格数据信息、栅格元数据、波段元数据的获取功能。
 
 <i class="far fa-trash-alt"></i> **移除：**
 

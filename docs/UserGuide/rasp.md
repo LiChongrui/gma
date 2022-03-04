@@ -673,6 +673,52 @@ ColorTable = {10:(200,50,100,255), 20:(200,50,100,255)}。
 
 **功能：**【坐标系】。类属性，获取栅格坐标系。
 
-**返回：**`str||None`。
+**返回：**`str`。
+
+:::
+
+### Info<Badge text="1.0.6 +"/>
+
+::: theorem
+
+**引用：** gma.rasp.Open().Info
+
+&emsp;  注意：*引用前请先初始化 `Open` 类。*
+
+**功能：**【栅格信息】。类属性，获取栅格信息。
+
+**返回：**`dict`。
+
+:::
+
+### Metadata<Badge text="1.0.6 +"/>
+
+::: theorem
+
+**引用：** gma.rasp.Open().Metadata
+
+&emsp;  注意：*引用前请先初始化 `Open` 类。*
+
+**功能：**【元数据】。类属性，获取栅格元数据。
+
+**返回：**`dict`。
+
+:::
+
+### GetBandMetadata<Badge text="1.0.6 +"/>
+
+::: theorem
+
+**引用：** gma.rasp.Open().GetBandMetadata(Band)
+
+&emsp;  注意：*引用前请先初始化 `Open` 类。*
+
+**功能：**【波段元数据】。获取某一波段的元数据。
+
+**参数：** 
+
+&emsp;Band：`int`。栅格文件的波段数。从 1 开始。
+
+**返回：**`dict`。
 
 :::

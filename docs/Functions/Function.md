@@ -12,7 +12,7 @@ date: 2021-10-29
 |中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|
 |:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
 | 对应 gma 中的模块名 | index | math | osf | smc | rasp | vesp| 6|
-|函数数量（包括类方法 / 属性）|6|12|8|2|29|13| 69|
+|函数数量（包括类方法 / 属性）|6|12|8|2|32|13| 72|
 
 
 ## 指数运算
@@ -101,6 +101,9 @@ date: 2021-10-29
 | [GetGDALDataset](/UserGuide/rasp.html#getgdaldataset) | gma.rasp.Open.GetGDALDataset | 【获取 GDALDataset】 |读取栅格数据为 gdal.GDALDataset|
 | [NoData](/UserGuide/rasp.html#nodata)         | gma.rasp.Open.NoData         |  【无效值】                 | 获取栅格无效值|
 | [Projection](/UserGuide/rasp.html#projection)     | gma.rasp.Open.Projection     |  【坐标系】                   |获取栅格坐标系 |
+| [Info](/UserGuide/rasp.html#info)<Badge text="1.0.6 +"/> | gma.rasp.Open.Info | 【栅格信息】 |获取栅格信息 |
+| [Metadata](/UserGuide/rasp.html#metadata)<Badge text="1.0.6 +"/> | gma.rasp.Open.Metadata | 【元数据】 |获取栅格元数据 |
+| [GetBandMetadata](/UserGuide/rasp.html#getbandmetadata)<Badge text="1.0.6 +"/> | gma.rasp.Open.GetBandMetadata | 【波段元数据】 |获取某一波段的元数据 |
 
 ## 矢量处理
 
