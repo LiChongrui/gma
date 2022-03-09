@@ -28,6 +28,7 @@ module.exports = {
                 'smc',
                 'rasp',
                 'vesp',
+                'other',
             ]
         }
     ],

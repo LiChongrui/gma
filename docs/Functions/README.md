@@ -17,5 +17,6 @@ date: 2021-10-29
 >	* [空间杂项](/Functions/Function.html#空间杂项) == gma.smc
 >	* [栅格处理](/Functions/Function.html#栅格处理) == gma.rasp
 >	* [矢量处理](/Functions/Function.html#矢量处理) == gma.vesp
+>	* [其他函数](/Functions/Function.html#其他函数) == gma.*
 
 &emsp;&emsp;如果您需要详细的函数帮助，请在 Python 中使用 help 获取函数帮助或移步 [使用指南](/UserGuide/)。

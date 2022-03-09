@@ -9,9 +9,10 @@ date: 2021-10-29
 
 ::: theorem 函数包和依赖文件的组织关系和说明
 
-- **algorithm** *&emsp;&emsp; &emsp;&emsp; == 栅格、矢量操作的**基础算法***
+- **algorithm** *&emsp;&emsp; &emsp;&emsp; == **基础算法***
 	* raster *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格处理， rasp 调用的**算法*** 
 	* vector *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 矢量处理，vesp 调用的**算法***
+	* dataio *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 数据读写操作*
 - **relation** *&emsp;&emsp; &emsp;&emsp; ==  **关联参数和函数***
 	* initialize *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== **初始化**输入参数，错误检查*
 	* [**key**](Default.html#默认参数) *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格 / 矢量 处理的内置参数，例如**压缩**，**超大 TIFF 支持**等*

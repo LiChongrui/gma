@@ -63,9 +63,9 @@ gantt
 
 &emsp;　　修正矢量数据中无效的几何要素。引用：gma.vesp.FixGeometry。
 
-&emsp;　4、Open
+&emsp;　4、增加顶层 [Open](/UserGuide/other.html#open) 函数
 
-&emsp;　　为 Open 类增加 [Info](/UserGuide/rasp.html#info)、[Metadata](/UserGuide/rasp.html#metadata)、[GetBandMetadata](/UserGuide/rasp.html#getbandmetadata) 三个方法，分别实现栅格数据信息、栅格元数据、波段元数据的获取功能。
+&emsp;　　以替代 gma.rasp(vesp).Open 函数（这两个函数仍可用）。引用：gma.Open。
 
 <i class="far fa-trash-alt"></i> **移除：**
 

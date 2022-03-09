@@ -7,13 +7,12 @@ date: 2021-10-29
 
 &emsp;&emsp;除了初版构建的函数之外，其他版本构建的函数会增加版本 <Badge text="标记"/>  。
 
-&emsp;&emsp;截止 **1.0.6**  版本，各个模块的 **函数数量（包括类方法 / 属性）统计** 如下表：
+&emsp;&emsp;截止 **1.0.6**  版本，各个模块的 **函数数量统计** 如下表：
 
-|中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|  合计|
-|:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|
-| 对应 gma 中的模块名 | index | math | osf | smc | rasp | vesp| 6|
-|函数数量（包括类方法 / 属性）|6|12|8|2|32|13| 72|
-
+|中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|其他函数|  合计|
+|:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|------- |
+| 对应模块名 | index | math | osf | smc | rasp | vesp| * | 6|
+|函数/方法 数量|6|12|8|2|17|13|1| 59 |
 
 ## 指数运算
 
@@ -85,29 +84,9 @@ date: 2021-10-29
 | [AddColorTable](/UserGuide/rasp.html#addcolortable)<Badge text="1.0.1 +"/> | gma.rasp.AddColorTable        | 【添加色彩映射表】  | 为栅格数据添加色彩映射                                       |
 | [SplitImage](/UserGuide/rasp.html#splitimage)<Badge text="1.0.3 +"/> | gma.rasp.SplitImage           | 【影像切片】        | 将一幅影像切分为特定行列数的小影像。                         |
 
-&emsp;&emsp;此外，gma 提供了 [Open](/UserGuide/rasp.html#open) 类实现栅格数据的读取操作，主要栅格数据的操作如下：
-
-| 属性 / 方法    | 引用（简版）                         | 功能                            | 详细解释|
-| :------------- | :--------------------------- | :------------------------------ |:-----|
-| [Bands](/UserGuide/rasp.html#bands)          | gma.rasp.Open.Bands          |【波段数】                  |获取栅格波段数   |
-| [Columns](/UserGuide/rasp.html#columns)        | gma.rasp.Open.Columns        |  【列数】                  |获取栅格列数（X）   |
-| [Rows](/UserGuide/rasp.html#rows)          | gma.rasp.Open.Rows           |  【行数】                       |获取栅格行数（Y）|
-| [ToArray](/UserGuide/rasp.html#toarray)        | gma.rasp.Open.ToArray        | 【转为数组】    | 将栅格数据读取为 Numpy 数组|
-| [DataType](/UserGuide/rasp.html#datatype)       | gma.rasp.Open.DataType       | 【数据类型】            |获取栅格数据的数据类型|
-| [Driver](/UserGuide/rasp.html#driver)         | gma.rasp.Open.Driver         |  【栅格驱动】                  |获取栅格数据驱动 |
-| [GeoTransform](/UserGuide/rasp.html#geotransform)   | gma.rasp.Open.GeoTransform   |  【仿射变换】                 |获取栅格仿射变换  |
-| [GetBand](/UserGuide/rasp.html#getband)        | gma.rasp.Open.GetBand        | 【获取 Band】        |读取某一波段为 gdal.Band |
-| [GetBandToArray](/UserGuide/rasp.html#getbandtoarray) | gma.rasp.Open.GetBandToArray |  【转换波段为数组】    |将某一波段读取为 Numpy 数组|
-| [GetGDALDataset](/UserGuide/rasp.html#getgdaldataset) | gma.rasp.Open.GetGDALDataset | 【获取 GDALDataset】 |读取栅格数据为 gdal.GDALDataset|
-| [NoData](/UserGuide/rasp.html#nodata)         | gma.rasp.Open.NoData         |  【无效值】                 | 获取栅格无效值|
-| [Projection](/UserGuide/rasp.html#projection)     | gma.rasp.Open.Projection     |  【坐标系】                   |获取栅格坐标系 |
-| [Info](/UserGuide/rasp.html#info)<Badge text="1.0.6 +"/> | gma.rasp.Open.Info | 【栅格信息】 |获取栅格信息 |
-| [Metadata](/UserGuide/rasp.html#metadata)<Badge text="1.0.6 +"/> | gma.rasp.Open.Metadata | 【元数据】 |获取栅格元数据 |
-| [GetBandMetadata](/UserGuide/rasp.html#getbandmetadata)<Badge text="1.0.6 +"/> | gma.rasp.Open.GetBandMetadata | 【波段元数据】 |获取某一波段的元数据 |
-
 ## 矢量处理
 
-| （类）函数    | 引用（简版）             | 说明             | 解释                                     |
+| 函数    | 引用（简版）             | 说明             | 解释                                     |
 | :------------ | :----------------------- | :--------------- | :--------------------------------------- |
 | [Split](/UserGuide/vesp.html#split)         | gma.vesp.Split         | 【矢量文件分解】 | 将矢量文件的每个要素拆分为单个文件       |
 | [Check](/UserGuide/vesp.html#check)         | gma.vesp.Check         | 【检查】         | 检查每个矢量要素的有效性                       |
@@ -123,3 +102,57 @@ date: 2021-10-29
 | [Simplify](/UserGuide/vesp.html#simplify)<Badge text="1.0.6 +"/> | gma.math.Simplify | 【简化】 | 简化矢量数据中的要素 |
 | [FixGeometry<Badge text="1.0.6 +"/>](/UserGuide/vesp.html#fixgeometry) | gma.math.FixGeometry | 【修正几何】 | 修正矢量数据中无效的几何要素 |
 
+## 其他函数<Badge text="1.0.6 +"/>
+
+| 函数                               | 引用（简版） | 说明         | 解释                                                         |
+| :--------------------------------- | :----------- | :----------- | :----------------------------------------------------------- |
+| [Open](/UserGuide/other.html#open) | gma.Open     | 【打开文件】 | 打开栅格或矢量数据文件。*栅格或矢量数据支持的 方法/属性 详见：[打开数据](Function.html#打开数据)* |
+
+#### **打开数据**
+
+&emsp;&emsp;gma 对打开的矢量/栅格数据提供常用的方法和属性，不同数据集的说明和统计见下表：
+
+| 类型       | 标识                              | 标记 | 来源                                  | 功能数量 |
+| ---------- | :-------------------------------- | :--- | :------------------------------------ | :------- |
+| 栅格数据集 | <gma.algorithm.dataio.RasterOpen> | 类   | gma.Open(栅格数据)                    | 15       |
+| 矢量数据集 | <gma.algorithm.dataio.VectorOpen> | 类   | gma.Open(矢量数据)                    | 5        |
+| 矢量图层   | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 4        |
+
+栅格数据集支持的方法/属性
+
+| 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
+| :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
+| [Bands](/UserGuide/other.html#bands)                     | gma.Open.Bands           | 属性 | 【波段数】           | 获取栅格波段数              |
+| [Columns](/UserGuide/other.html#columns)                 | gma.Open.Columns         | 属性 | 【列数】             | 获取栅格列数（X）           |
+| [Rows](/UserGuide/other.html#rows)                       | gma.Open.Rows            | 属性 | 【行数】             | 获取栅格行数（Y）           |
+| [ToArray](/UserGuide/other.html#toarray)                 | gma.Open.ToArray         | 方法 | 【转为数组】         | 将栅格数据读取为 Numpy 数组 |
+| [DataType](/UserGuide/other.html#datatype)               | gma.Open.DataType        | 属性 | 【数据类型】         | 获取栅格数据的数据类型      |
+| [Driver](/UserGuide/other.html#driver)                   | gma.Open.Drive           | 属性 | 【栅格驱动】         | 获取栅格数据驱动            |
+| [GeoTransform](/UserGuide/other.html#geotransform)       | gma.Open.GeoTransform    | 属性 | 【仿射变换】         | 获取栅格仿射变换            |
+| [GetBand](/UserGuide/other.html#getband)                 | gma.Open.GetBand         | 方法 | 【获取 Band】        | 将某一波段转到 gdal.Band    |
+| [GetBandToArray](/UserGuide/other.html#getbandtoarray)   | gma.Open.GetBandToArray  | 方法 | 【转换波段为数组】   | 将某一波段读取为 Numpy 数组 |
+| [GetGDALDataset](/UserGuide/other.html#getgdaldataset)   | gma.Open.GetGDALDataset  | 方法 | 【获取 GDALDataset】 | 转到 gdal.GDALDataset       |
+| [NoData](/UserGuide/other.html#nodata)                   | gma.Open.NoData          | 属性 | 【无效值】           | 获取栅格无效值              |
+| [Projection](/UserGuide/other.html#projection)           | gma.Open.Projection      | 属性 | 【坐标系/投影】      | 获取栅格坐标系/投影         |
+| [Info](/UserGuide/other.html#info)                       | gma.Open.Info            | 属性 | 【栅格信息】         | 获取栅格信息                |
+| [Metadata](/UserGuide/other.html#metadata)               | gma.Open.Metadata        | 属性 | 【元数据】           | 获取栅格元数据              |
+| [GetBandMetadata](/UserGuide/other.html#getbandmetadata) | gma.Open.GetBandMetadata | 方法 | 【波段元数据】       | 获取某一波段的元数据        |
+
+矢量数据集支持的方法/属性
+
+| 功能                                                       | 引用                      | 标记 | 功能                | 详细解释                   |
+| :--------------------------------------------------------- | :------------------------ | :--- | :------------------ | :------------------------- |
+| [Driver](/UserGuide/other.html#driver-2)                   | gma.Open.Drive            | 属性 | 【矢量驱动】        | 获取矢量数据驱动           |
+| [LayerCount](/UserGuide/other.html#layercount)             | gma.Open.LayerCount       | 属性 | 【图层数】          | 获取矢量数据的图层数量     |
+| [LayersName](/UserGuide/other.html#layersname)             | gma.Open.LayersName       | 属性 | 【图层名】          | 获取矢量数据每个图层的名称 |
+| [GetLayer](/UserGuide/other.html#getlayer)                 | gma.Open.GetLayer         | 方法 | 【打开图层】        | 打开某一图层               |
+| [GetOGRDataSource](/UserGuide/other.html#getogrdatasource) | gma.Open.GetOGRDataSource | 方法 | 【获取 DataSource】 | 转到 ogr.DataSource        |
+
+栅格图层支持的方法/属性
+
+| 功能                                                         | 引用                         | 标记 | 功能            | 详细解释                     |
+| :----------------------------------------------------------- | :--------------------------- | :--- | :-------------- | :--------------------------- |
+| [FeatureCount](/UserGuide/other.html#featurecount)           | ..GetLayer.FeatureCount      | 属性 | 【要素数】      | 获取图层要素的数量           |
+| [Projection](/UserGuide/other.html#projection-2)             | ..GetLayer.Projection        | 属性 | 【坐标系/投影】 | 获取图层坐标系/投影          |
+| [Boundary](/UserGuide/other.html#boundary)                   | ..GetLayer.Boundary          | 属性 | 【四至边界】    | 获取图层的左、右、下、上边界 |
+| [GetAttributeTable](/UserGuide/other.html#getattributetable) | ..GetLayer.GetAttributeTable | 方法 | 【获取属性表】  | 获取图层属性表               |

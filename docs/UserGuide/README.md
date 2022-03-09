@@ -14,6 +14,8 @@ date: 2021-10-30
 >+ [栅格处理](rasp.html) == gma.rasp
 >+ [矢量处理](vesp.html) == gma.vesp
 
+&emsp;&emsp;此外，gma 还定义了一些其他函数，例如打开 栅格/矢量 数据等，详见 [其他函数](/UserGuide/other.html)。
+
 &emsp;&emsp;您可以通过以下形式一次引入 gma 的所有模块：
 
 ```python
@@ -37,3 +39,4 @@ from gma import vesp
 :::
 
 &emsp;&emsp;如果您需要了解 gma 中规定的默认参数和数据类型，请移步 [默认设置](/Functions/Default.html)。
+
