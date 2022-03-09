@@ -112,11 +112,12 @@ date: 2021-10-29
 
 &emsp;&emsp;gma 对打开的矢量/栅格数据提供常用的方法和属性，不同数据集的说明和统计见下表：
 
-| 类型       | 标识                              | 标记 | 来源                                  | 功能数量 |
-| ---------- | :-------------------------------- | :--- | :------------------------------------ | :------- |
-| 栅格数据集 | <gma.algorithm.dataio.RasterOpen> | 类   | gma.Open(栅格数据)                    | 15       |
-| 矢量数据集 | <gma.algorithm.dataio.VectorOpen> | 类   | gma.Open(矢量数据)                    | 5        |
-| 矢量图层   | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 4        |
+| 类型         | 标识                              | 标记 | 来源                                  | 功能数量 |
+| ------------ | :-------------------------------- | :--- | :------------------------------------ | :------- |
+| 栅格数据集   | <gma.algorithm.dataio.RasterOpen> | 类   | gma.Open(栅格数据)                    | 15       |
+| 矢量数据集   | <gma.algorithm.dataio.VectorOpen> | 类   | gma.Open(矢量数据)                    | 5        |
+| 矢量图层     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 4        |
+| 子数据集列表 | []                                | 列表 | gma.Open(具有子数据集的多维数据)      | -        |
 
 栅格数据集支持的方法/属性
 

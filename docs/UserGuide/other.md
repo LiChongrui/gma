@@ -21,9 +21,19 @@ date: 2022-03-09
 
 &emsp;Mode = `int`。打开方式，默认为只读（0），也可为 1（可写模式）。参数设置错误则返回只读模式。
 
-**返回：** 栅格数据 返回 [RasterOpen](other.html#open-rasteropen)；矢量数据 返回 [VectorOpen](other.html#open-vectoropen)。
+**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [RasterOpen](other.html#open-rasteropen)。矢量数据：返回 [VectorOpen](other.html#open-vectoropen)。
 
 :::
+
+::: tip 提示
+
+多维数据返回的子数据列表需要重新 Open 一次，才能获取子数据集的数据！
+
+:::
+
+
+
+
 
 ## Open:RasterOpen
 
