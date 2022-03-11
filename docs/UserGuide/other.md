@@ -90,7 +90,7 @@ date: 2022-03-09
 
  &emsp;ColumnSize = int。从起始列开始读取的列数（数据窗口的列宽度）。默认（None）从起始列开始的全部列。
 
- &emsp;BandList = int。读取数据的波段编号。默认（None）全部波段（编号从 1 开始）。
+ &emsp;BandList = int 或 list。读取数据的波段编号或波段编号列表。默认（None）全部波段（编号从 1 开始）。
 
 **返回：**`array`。
 
