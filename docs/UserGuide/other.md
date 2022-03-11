@@ -3,7 +3,7 @@ title: 其他函数
 date: 2022-03-09
 ---
 
-**&emsp;&emsp;其他函数** 为 **gma** 下包含的辅助函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+&emsp;&emsp;自 **1.0.6** 版本开始增加 **其他函数** 板块，为 **gma** 下包含的辅助函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 ## Open
 
@@ -27,12 +27,9 @@ date: 2022-03-09
 
 ::: tip 提示
 
-多维数据返回的子数据列表需要重新 Open 一次，才能获取子数据集的数据！
+多维数据如果需要打开子数据集，需要重新 Open 子数据集路径（一般为每个子数据集信息的第一个元素）！
 
 :::
-
-
-
 
 
 ## Open:RasterOpen
@@ -79,9 +76,21 @@ date: 2022-03-09
 
 ::: theorem
 
-**引用：** gma.Open().ToArray()
+**引用：** gma.Open().ToArray(LeftRow = 0, LeftColumn = 0, RowSize = None, ColumnSize = None, BandList = None)
 
 **功能：**【转为数组】。将栅格数据读取为 Numpy 数组。
+
+**可选参数：**
+
+ &emsp;LeftRow = int。需要读取数据的起始行。默认（0）为第一行。
+
+ &emsp;LeftColumn = int。需要读取数据的起始列。默认（0）为第一列。
+
+ &emsp;RowSize = int。从起始行开始读取的行数（数据窗口的行宽度）。默认（None）从起始行开始的全部行。
+
+ &emsp;ColumnSize = int。从起始列开始读取的列数（数据窗口的列宽度）。默认（None）从起始列开始的全部列。
+
+ &emsp;BandList = int。读取数据的波段编号。默认（None）全部波段（编号从 1 开始）。
 
 **返回：**`array`。
 
