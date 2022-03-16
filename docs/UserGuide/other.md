@@ -359,3 +359,27 @@ date: 2022-03-09
 **返回：**`DataFrame`。
 
 :::
+
+### FieldNames
+
+::: theorem
+
+**引用：** gma.Open().GetLayer().FieldNames
+
+**功能：**【字段名】。类属性，获取属性表字段名列表。
+
+**返回：**`list`。
+
+:::
+
+### FieldDataTypes
+
+::: theorem
+
+**引用：** gma.Open().GetLayer().FieldDataTypes
+
+**功能：**【字段数据类型】。类属性，获取属性表字段名数据类型。
+
+**返回：**`dict`。
+
+:::

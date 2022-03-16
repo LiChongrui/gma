@@ -116,7 +116,7 @@ date: 2021-10-29
 | :------------ | :-------------------------------- | :--- | :------------------------------------ | :------- |
 | 栅格数据集   | <gma.algorithm.dataio.RasterOpen> | 类   | gma.Open(栅格数据)                    | 15       |
 | 矢量数据集   | <gma.algorithm.dataio.VectorOpen> | 类   | gma.Open(矢量数据)                    | 5        |
-| 矢量图层     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 4        |
+| 矢量图层     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 6        |
 | 子数据集列表 | []                                | 列表 | gma.Open(具有子数据集的多维数据)      | -        |
 
 栅格数据集支持的方法/属性
@@ -151,9 +151,11 @@ date: 2021-10-29
 
 栅格图层支持的方法/属性
 
-| 功能                                                         | 引用                         | 标记 | 功能            | 详细解释                     |
-| :----------------------------------------------------------- | :--------------------------- | :--- | :-------------- | :--------------------------- |
-| [FeatureCount](/UserGuide/other.html#featurecount)           | ..GetLayer.FeatureCount      | 属性 | 【要素数】      | 获取图层要素的数量           |
-| [Projection](/UserGuide/other.html#projection-2)             | ..GetLayer.Projection        | 属性 | 【坐标系/投影】 | 获取图层坐标系/投影          |
-| [Boundary](/UserGuide/other.html#boundary)                   | ..GetLayer.Boundary          | 属性 | 【四至边界】    | 获取图层的左、右、下、上边界 |
-| [GetAttributeTable](/UserGuide/other.html#getattributetable) | ..GetLayer.GetAttributeTable | 方法 | 【获取属性表】  | 获取图层属性表               |
+| 功能                                                         | 引用                         | 标记 | 功能             | 详细解释                     |
+| :----------------------------------------------------------- | :--------------------------- | :--- | :--------------- | :--------------------------- |
+| [FeatureCount](/UserGuide/other.html#featurecount)           | ..GetLayer.FeatureCount      | 属性 | 【要素数】       | 获取图层要素的数量           |
+| [Projection](/UserGuide/other.html#projection-2)             | ..GetLayer.Projection        | 属性 | 【坐标系/投影】  | 获取图层坐标系/投影          |
+| [Boundary](/UserGuide/other.html#boundary)                   | ..GetLayer.Boundary          | 属性 | 【四至边界】     | 获取图层的左、右、下、上边界 |
+| [GetAttributeTable](/UserGuide/other.html#getattributetable) | ..GetLayer.GetAttributeTable | 方法 | 【获取属性表】   | 获取图层属性表               |
+| [FieldNames](/UserGuide/other.html#fieldnames)               | ..GetLayer.FieldNames        | 属性 | 【字段名】       | 获取属性表字段名             |
+| [FieldDataTypes](/UserGuide/other.html#fielddatatypes)       | ..GetLayer.FieldDataTypes    | 属性 | 【字段数据类型】 | 获取属性表字段名数据类型     |

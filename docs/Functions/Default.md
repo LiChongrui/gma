@@ -14,6 +14,7 @@ date: 2021-10-29
 | DataType | 字典 | 数据类型 | Unknown:0，Byte:1，UInt16:2，Int16:3，UInt32:4，Int32:5，Float32:6，Float64:7，CInt16:8，CInt32:9，CFloat32:10，CFloat64:11 |
 | ResampleMethod | 字典 | 重采样方法 | Nearest Neighbour:0，Bilinear:1，Cubic:2，CubicSpline:3，Lanczos:4，Average:5，RMS:6，Mode:7 |
 | FeatureType | 字典 | 矢量要素类型 | Unknown:0，Point:1，Line:2，Polygon:3，Multipoint:4，Multiline:5，Multipolygon:6，LinearRing:101 |
+| FieldDataType | 字典 | 属性表字段数据类型 | Int32:0，Int32List:1，Float64:2，Float64List:3，Str:4，StrList:5，WideStr:6，WideStrList:7，Binary:8，Date:9，Time:10，DateTime:11，Int64:12，Int64List:13 |
 | GetGTiffOptions | 函数 | GTiff 的创建参数 | 1. 不生成 ESRI 世界文件（ .tfw ）。<br> 2. 不生成（ .RPB ）文件来描述 RPC（有理多项式系数）。<br> 3.  不设置数据位深（NBITS）。<br> 4. 默认 LZW 压缩。<br> 5.  默认通过估算生成文件大小来确定是否生成 BIGTIFF 文件。 |
 | GenRCOptions | 函数 | 根据栅格驱动生成创建选项 | 支持的栅格驱动见 RasterFormat  |
 | GetRasterEXTFromDriver | 函数 | 根据栅格驱动格式返回扩展名|  支持的栅格驱动见 RasterFormat   |

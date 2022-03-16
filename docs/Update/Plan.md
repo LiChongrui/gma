@@ -82,3 +82,9 @@ gantt
 &emsp;　2、ToVector
 
 &emsp;　　修复了部分条件下，掩膜 NoData 区域异常的问题。
+
+<font color="#FF4500"><i class="fas fa-exclamation-circle"></i></font> **已知问题：**
+
+&emsp;　1、Float64
+
+&emsp;　　将数据写出为双精度浮点数（Float64）时，数据结果可能异常。请尽量使用单精度浮点数（Float32）或半精度浮点数（Float16）来存储浮点类型的栅格数据结果！
