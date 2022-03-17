@@ -268,11 +268,11 @@ date: 2022-03-09
 
 :::
 
-### LayersName
+### LayerNames
 
 ::: theorem
 
-**引用：** gma.Open().LayersName
+**引用：** gma.Open().LayerNames
 
 **功能：**【图层名】。类属性，获取矢量数据每个图层的名称。
 

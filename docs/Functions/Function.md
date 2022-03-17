@@ -145,7 +145,7 @@ date: 2021-10-29
 | :--------------------------------------------------------- | :------------------------ | :--- | :------------------ | :------------------------- |
 | [Driver](/UserGuide/other.html#driver-2)                   | gma.Open.Drive            | 属性 | 【矢量驱动】        | 获取矢量数据驱动           |
 | [LayerCount](/UserGuide/other.html#layercount)             | gma.Open.LayerCount       | 属性 | 【图层数】          | 获取矢量数据的图层数量     |
-| [LayersName](/UserGuide/other.html#layersname)             | gma.Open.LayersName       | 属性 | 【图层名】          | 获取矢量数据每个图层的名称 |
+| [LayerNames](/UserGuide/other.html#layernames)             | gma.Open.LayerNames       | 属性 | 【图层名】          | 获取矢量数据每个图层的名称 |
 | [GetLayer](/UserGuide/other.html#getlayer)                 | gma.Open.GetLayer         | 方法 | 【打开图层】        | 打开某一图层               |
 | [GetOGRDataSource](/UserGuide/other.html#getogrdatasource) | gma.Open.GetOGRDataSource | 方法 | 【获取 DataSource】 | 转到 ogr.DataSource        |
 
