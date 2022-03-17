@@ -5,25 +5,17 @@ title: 反馈与赞助
 
 ## 意见反馈
 
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" width="100%" height="100%" viewBox="0 0 612 199.9" style="enable-background:new 0 0 612 199.9;" xml:space="preserve">
-<style>
-	.st0{fill:#C0C0C0;}
-	.st1{font-family:'MicrosoftYaHeiLight';}
-	.st2{font-size:22.95px;}
-	.textc{fill:#696969;}
-	.fig{fill:#282C34;}
-</style>
-<path class="fig" d="M161.8,88c-3.7,0-7.2-1.2-10.1-3.5l-44.6-34.7v48.4c0,5.7,4.6,10.2,10.2,10.2h88.8c5.7,0,10.2-4.6,10.2-10.2c0,0,0,0,0,0
-	V49.8l-44.6,34.7C169,86.8,165.4,88,161.8,88z M110.6,43.9l45.3,35.2c3.5,2.7,8.3,2.7,11.8,0L213,43.9c2-1.7,3.5-4.3,3.5-7.1
-	c0-5.7-4.6-10.2-10.2-10.2l0,0h-88.8c-5.7,0-10.2,4.6-10.2,10.2c0,0,0,0,0,0C107.1,39.5,108.4,42.2,110.6,43.9z"/>
-<text transform="matrix(1 0 0 1 136.8432 54.8204)" class="st0 st1 st2">Mail </text>
-<text transform="matrix(1 0 0 1 53.3578 165.7438)" class="textc st1 st2">506827624@qq.com</text>
-<text transform="matrix(1 0 0 1 324.8954 165.7438)" class="textc st1 st2">QQ群：475908505</text>
-<path class="fig" d="M458.1,95c-1.9,0.2-7.3-8.6-7.3-8.6c0,5.1-2.6,11.8-8.3,16.6c2.7,0.8,8.9,3.1,7.5,5.6c-1.2,2-20.4,1.3-26,0.7
-	c-5.6,0.6-24.8,1.4-26-0.7c-1.5-2.5,4.7-4.8,7.5-5.6c-5.7-4.8-8.3-11.5-8.3-16.6c0,0-5.4,8.8-7.3,8.6c-0.9-0.1-2-4.8,1.5-16.2
-	c1.7-5.4,3.6-9.9,6.5-17.2c-0.5-19,7.4-35,26.1-35c18.5,0,26.6,15.7,26.1,35c3,7.4,4.9,11.9,6.5,17.2C460.2,90.2,459,94.9,458.1,95
-	L458.1,95z"/>
-</svg>
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 158.85">
+    <defs>
+        <style>
+            .cls-1,.cls-2{isolation:isolate;font-size:22.95px;font-family:MicrosoftYaHeiLight, Microsoft YaHei;}
+            .cls-1{fill:#fff;}
+        </style>
+    </defs>
+    <path d="M305.43,69.82a16.37,16.37,0,0,1-10.07-3.51L250.78,31.65v48.4A10.25,10.25,0,0,0,261,90.3h88.8a10.25,10.25,0,0,0,10.25-10.25h0V31.65l-44.57,34.7A16.5,16.5,0,0,1,305.43,69.82ZM254.26,25.69l45.3,35.24a9.56,9.56,0,0,0,11.75,0l45.3-35.24a9.63,9.63,0,0,0,3.47-7.11A10.24,10.24,0,0,0,349.83,8.34H261a10.24,10.24,0,0,0-10.25,10.24h0A9,9,0,0,0,254.26,25.69Z"/>
+    <text class="cls-1" transform="translate(280.5 36.65)">Mail</text>
+    <text class="cls-2" transform="translate(197.02 147.58)">506827624@qq.com</text></svg>
+
 
 
 ## 友情赞助
