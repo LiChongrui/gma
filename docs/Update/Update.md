@@ -33,19 +33,19 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加 [ToNumericArray](/UserGuide/math.html#tonumericarray) 函数
+&emsp;　1、增加【[ToNumericArray](/UserGuide/math.html#tonumericarray)】函数
 
 &emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.math.ToNumericArray。
 
-&emsp;　2、增加 [Simplify](/UserGuide/vesp.html#simplify) 函数
+&emsp;　2、增加【[Simplify](/UserGuide/vesp.html#simplify)】函数
 
 &emsp;　　简化矢量数据中的要素。引用：gma.vesp.Simplify。
 
-&emsp;　3、增加 [FixGeometry](/UserGuide/vesp.html#fixgeometry) 函数
+&emsp;　3、增加【[FixGeometry](/UserGuide/vesp.html#fixgeometry)】函数
 
 &emsp;　　修正矢量数据中无效的几何要素。引用：gma.vesp.FixGeometry。
 
-&emsp;　4、增加顶层 [Open](/UserGuide/other.html#open) 函数
+&emsp;　4、增加顶层【[Open](/UserGuide/other.html#open)】函数
 
 &emsp;　　以替代 gma.rasp(vesp).Open 函数（这两个函数仍可用）。引用：gma.Open。
 
@@ -178,7 +178,7 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[TVDI](/UserGuide/indexccccccc.html#tvdi)】函数
+&emsp;　1、增加【[TVDI](/UserGuide/indexc.html#tvdi)】函数
 
 &emsp;　　计算温度植被干旱指数。引用：gma.index.TVDI。
 
