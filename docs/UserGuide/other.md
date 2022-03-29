@@ -82,15 +82,15 @@ date: 2022-03-09
 
 **可选参数：**
 
- &emsp;LeftRow = int。需要读取数据的起始行。默认（0）为第一行。
+ &emsp;LeftRow = `int`。需要读取数据的起始行。默认（0）为第一行。
 
- &emsp;LeftColumn = int。需要读取数据的起始列。默认（0）为第一列。
+ &emsp;LeftColumn = `int`。需要读取数据的起始列。默认（0）为第一列。
 
- &emsp;RowSize = int。从起始行开始读取的行数（数据窗口的行宽度）。默认（None）从起始行开始的全部行。
+ &emsp;RowSize = `int`。从起始行开始读取的行数（数据窗口的行宽度）。默认（None）从起始行开始的全部行。
 
- &emsp;ColumnSize = int。从起始列开始读取的列数（数据窗口的列宽度）。默认（None）从起始列开始的全部列。
+ &emsp;ColumnSize = `int`。从起始列开始读取的列数（数据窗口的列宽度）。默认（None）从起始列开始的全部列。
 
- &emsp;BandList = int 或 list。读取数据的波段编号或波段编号列表。默认（None）全部波段（编号从 1 开始）。
+ &emsp;BandList = `int||list`。读取数据的波段编号或波段编号列表。默认（None）全部波段（编号从 1 开始）。
 
 **返回：**`array`。
 

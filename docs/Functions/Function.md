@@ -7,12 +7,12 @@ date: 2021-10-29
 
 &emsp;&emsp;除了初版构建的函数之外，其他版本构建的函数会增加版本 <Badge text="标记"/>  。
 
-&emsp;&emsp;截止 **1.0.6**  版本，各个模块的 **函数数量统计** 如下表：
+&emsp;&emsp;截止 **1.0.7**  版本，各个模块的 **函数/方法数量统计** 如下表：
 
-|中文名|指数运算|数学运算|系统交互|空间杂项|栅格处理|矢量处理|其他函数|  合计|
-|:-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----:| :-----:|------- |
-| 对应模块名 | index | math | osf | smc | rasp | vesp| * | 6|
-|函数/方法 数量|6|12|8|2|17|13|1| 59 |
+|    中文名     | 指数运算 | 数学运算 | 系统交互 | 空间杂项 | 栅格处理 | 栅格分析 | 矢量处理 | 其他函数 | 合计 |
+| :-----------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :--: |
+|    模块名     |  index   |   math   |   osf    |   smc    |   rasp   |   raa    |   vesp   |    -     |  6   |
+| 函数/方法数量 |    6     |    12    |    8     |    2     |    17    |    5     |    13    |    1     |  64  |
 
 ## 指数运算
 
@@ -55,12 +55,12 @@ date: 2021-10-29
 | [**Modify.**](/UserGuide/osf.html#rename-类)[Intercept](/UserGuide/osf.html#intercept) | gma.osf.Rename.Intercept | 【截取】     | 截取文件（夹）名中的部分字符串作为新文件（夹）名 |
 | [MultiThreading](/UserGuide/osf.html#multithreading)<Badge text="1.0.3 +"/> | gma.osf.MultiThreading | 【多线程】 | 创建多个线程，实现同一函数多个参数的同步执行 |
 
- ## 空间杂项
+ ## 空间杂项<Badge text="1.0.5 +"/>
 
 | 函数 | 引用（简版）| 功能 | 详细解释|
 | :----- | :----- | :----- | :-----|
-|[CALDistance](/UserGuide/smc.html#caldistance)<Badge text="1.0.5 +"/> | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
-|[TRANCoordinate](/UserGuide/smc.html#trancoordinate)<Badge text="1.0.5 +"/> | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
+|[CALDistance](/UserGuide/smc.html#caldistance) | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
+|[TRANCoordinate](/UserGuide/smc.html#trancoordinate) | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
 
  ## 栅格处理
 
@@ -83,6 +83,17 @@ date: 2021-10-29
 | [**Fusion.**](/UserGuide/rasp.html#fusion-类)[Pansharpen](/UserGuide/rasp.html#pansharpen) | gma.rasp.Fusion.Pansharpen    | 【Pansharpen】      | 对全色影像和多光谱影像基于Pansharpen方法进行融合             |
 | [AddColorTable](/UserGuide/rasp.html#addcolortable)<Badge text="1.0.1 +"/> | gma.rasp.AddColorTable        | 【添加色彩映射表】  | 为栅格数据添加色彩映射                                       |
 | [SplitImage](/UserGuide/rasp.html#splitimage)<Badge text="1.0.3 +"/> | gma.rasp.SplitImage           | 【影像切片】        | 将一幅影像切分为特定行列数的小影像。                         |
+
+ ## 栅格分析<Badge text="1.0.7 +"/>
+
+| 函数                                       | 引用（简版）          | 功能               | 详细解释                          |
+| :----------------------------------------- | :-------------------- | :----------------- | :-------------------------------- |
+| [Roughness](/UserGuide/raa.html#roughness) | gma.raa.DEM.Roughness | 【粗糙度】         | 从 DEM 栅格文件计算粗糙度         |
+| [HillShade](/UserGuide/raa.html#hillshade) | gma.raa.DEM.HillShade | 【山体阴影】       | 从 DEM 栅格文件计算山体阴影       |
+| [Slope](/UserGuide/raa.html#slope)         | gma.raa.DEM.Slope     | 【坡度】           | 从 DEM 栅格文件计算坡度           |
+| [Aspect](/UserGuide/raa.html#aspect)       | gma.raa.DEM.Aspect    | 【坡向】           | 从 DEM 栅格文件计算坡向           |
+| [TRI](/UserGuide/raa.html#tri)             | gma.raa.DEM.TRI       | 【地形耐用度指数】 | 从 DEM 栅格文件计算地形耐用度指数 |
+| [TPI](/UserGuide/raa.html#tpi)             | gma.raa.DEM.TPI       | 【地形位置指数】   | 从DEM 栅格文件计算地形位置指数    |
 
 ## 矢量处理
 
@@ -119,7 +130,7 @@ date: 2021-10-29
 | 矢量图层     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 6        |
 | 子数据集列表 | []                                | 列表 | gma.Open(具有子数据集的多维数据)      | -        |
 
-栅格数据集支持的方法/属性
+栅格数据集支持的方法/属性：
 
 | 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
 | :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
@@ -139,7 +150,7 @@ date: 2021-10-29
 | [Metadata](/UserGuide/other.html#metadata)               | gma.Open.Metadata        | 属性 | 【元数据】           | 获取栅格元数据              |
 | [GetBandMetadata](/UserGuide/other.html#getbandmetadata) | gma.Open.GetBandMetadata | 方法 | 【波段元数据】       | 获取某一波段的元数据        |
 
-矢量数据集支持的方法/属性
+矢量数据集支持的方法/属性：
 
 | 功能                                                       | 引用                      | 标记 | 功能                | 详细解释                   |
 | :--------------------------------------------------------- | :------------------------ | :--- | :------------------ | :------------------------- |
@@ -149,7 +160,7 @@ date: 2021-10-29
 | [GetLayer](/UserGuide/other.html#getlayer)                 | gma.Open.GetLayer         | 方法 | 【打开图层】        | 打开某一图层               |
 | [GetOGRDataSource](/UserGuide/other.html#getogrdatasource) | gma.Open.GetOGRDataSource | 方法 | 【获取 DataSource】 | 转到 ogr.DataSource        |
 
-栅格图层支持的方法/属性
+矢量图层支持的方法/属性：
 
 | 功能                                                         | 引用                         | 标记 | 功能             | 详细解释                     |
 | :----------------------------------------------------------- | :--------------------------- | :--- | :--------------- | :--------------------------- |

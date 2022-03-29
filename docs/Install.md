@@ -8,7 +8,7 @@ sidebar: false
 
 ::: theorem 系统环境
 
-&emsp;&emsp;操作系统：<Badge text="Winows 10 +" vertical='middle'/> 及以上
+&emsp;&emsp;操作系统：64 位 (amd64) <Badge text="Winows 10" vertical='middle'/> 及以上
 
 &emsp;&emsp;内存：<Badge text="8 GB" vertical='middle'/>  及以上
 

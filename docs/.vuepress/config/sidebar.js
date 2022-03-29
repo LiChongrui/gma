@@ -27,6 +27,7 @@ module.exports = {
                 'osf',
                 'smc',
                 'rasp',
+                'raa',
                 'vesp',
                 'other',
             ]

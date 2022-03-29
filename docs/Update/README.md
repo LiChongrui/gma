@@ -13,8 +13,6 @@ date: 2021-11-21
 &emsp;&emsp;更新记录主要有：
 
 > + [更新日志](/Update/Update.html) == 所有版本的更新记录
-> + [更新预览](/Update/Plan.html) == 拟完善的新内容
->	* [更新前瞻](/Update/Plan.html#更新前瞻) == 计划更新的内容
->	* [更新测试中的新内容](/Update/Plan.html#更新测试中的新内容) == 下一版本的新内容
+> + [更新预览](/Update/Plan.html) == 下一版本拟更新的内容
 
 &emsp;&emsp;已发布所有 **正式版** 的更新记录统一记录在 [更新日志](/Update/Update.html)。下一个正式版本发布前测试、优化的版本（**测试版**）会以 alpha 版的形式发布在 [pypi](https://pypi.org/project/gma/)；新版本正式发布后，对应的测试版本将会从 [pypi](https://pypi.org/project/gma/) 上删除。计划添加的函数，测试版的更新内容会记录在 [更新预览](/Update/Plan.html) 。

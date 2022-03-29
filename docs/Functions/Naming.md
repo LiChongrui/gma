@@ -16,6 +16,14 @@ date: 2021-10-29
 
 :::
 
+&emsp;&emsp;模块名的命名遵循以下规定：
+
+::: theorem 
+
+**不论缩写与否均使用小写**，例如：vesp（vector space processing）。
+
+:::
+
 ## 缩写对照
 
 &emsp;&emsp;下表为函数名中出现缩写的中英文对照解释（专有缩写，如植被指数（NDVI、EVI等）、数学评估方法（RMSE、NRMSE等）以及数据驱动等不在下表中列出）。
@@ -33,4 +41,5 @@ date: 2021-10-29
 | EXT      | Extension                           | 扩展名             | 标记、查找或应用的文件类型                                   |
 | VC | Vector Creation | 矢量创建 | 生成矢量文件的创建参数 |
 | RC | Raster Creation | 栅格创建 | 生成栅格文件的创建参数 |
+| DEM | Digital Elevation Model | 数字高程模型 | 零阶单纯的单项数字地貌模型 |
 

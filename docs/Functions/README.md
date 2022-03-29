@@ -6,7 +6,7 @@ date: 2021-10-29
 **&emsp;&emsp;功能总览** 为 **gma** 库文件的组织结构、参数配置和函数功能的整体介绍和说明。包括：
 
 
->+ [组织方式](/Functions/Structure.html) == 库模块的组织结构和说明
+>+ [组织方式](/Functions/Structure.html) == 库模块的构建思路和文件组织
 >+ [默认设置](/Functions/Default.html)  == 库默认参数设置和数据类型规定
 >+ [常量单位](/Functions/Constants.html)  == 库定义的常量名称、值或与国际单位的代换值
 >+ [命名规定](/Functions/Naming.html) == 函数名命名和缩写规定，缩写内容解释
@@ -16,6 +16,7 @@ date: 2021-10-29
 >	* [系统交互](/Functions/Function.html#系统交互) == gma.osf
 >	* [空间杂项](/Functions/Function.html#空间杂项) == gma.smc
 >	* [栅格处理](/Functions/Function.html#栅格处理) == gma.rasp
+>	* [栅格分析](/Functions/Function.html#栅格分析) == gma.raa
 >	* [矢量处理](/Functions/Function.html#矢量处理) == gma.vesp
 >	* [其他函数](/Functions/Function.html#其他函数) == gma.*
 
