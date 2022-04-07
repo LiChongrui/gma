@@ -33,3 +33,7 @@ sidebar: false
 &emsp;　6、增加【[TPI](/UserGuide/raa.html#tpi)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算地形位置指数！引用：gma.raa.DEM.TPI。
+
+<font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
+
+&emsp;　1、将 栅格/矢量 生成过程中的高级 **创建参数外置**。在未来的几个版本，栅格/矢量生成过程的高级配置参数会逐步开放设置。

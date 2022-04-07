@@ -24,9 +24,9 @@ date: 2021-10-30
 
 <Boxx type='warning' title='注意' content='只有在 SearchPath = "FILE" 时, 此参数才生效。'/>
 
-&emsp;Include = `str||list`。查找的文件路径中包含的字符串 。默认返回全部结果（None）。
+&emsp;Include = `str||list`。筛选包含此参数设置值的路径。默认返回全部结果（None）。其他类型的参数设置将会被强制转换为字符串。
 
-&emsp;Exclude = `str||list`。查找的文件路径中包含的字符串 。默认返回全部结果（None）。
+&emsp;Exclude = `str||list`。排除包含此参数设置值的路径。默认不排除任何字符串（None）。其他类型的参数设置将会被强制转换为字符串。
 
 <Boxx type='tips' title='提示' content='1. 如果 Include（Exclude）为字符串，则包含设置值的路径才会被保留（排除）。<br>2. 如果 Include（Exclude）为列表，则包含列表内任意一个字符串的路径都会被保留（排除）。'/>
 
