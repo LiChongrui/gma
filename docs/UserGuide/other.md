@@ -3,7 +3,7 @@ title: 其他函数
 date: 2022-03-09
 ---
 
-&emsp;&emsp;自 **1.0.6** 版本开始增加 **其他函数** 板块，为 **gma** 下包含的辅助函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+&emsp;&emsp;自 <Badge text="1.0.6" vertical='middle'/> 版本开始，增加 **其他函数** 板块，为 **gma** 下包含的辅助函数的详细功能、参数设置和引用方法说明。如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 ## Open
 

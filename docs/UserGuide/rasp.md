@@ -3,12 +3,12 @@ title: 栅格处理
 date: 2021-10-30
 ---
 
-**&emsp;&emsp;栅格处理** 为 **gma.rasp** 内所有栅格处理操作相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+**&emsp;&emsp;栅格处理** 为 **gma.rasp** 内所有栅格处理操作相关函数的详细功能、参数设置和引用方法说明。如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 
-::: warning 须知
+::: warning 注意
 
-rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外部栅格金字塔 .ovr 文件。目前，除部分自带压缩的驱动，仅对 GTiff，HFA，netCDF 进行了完整的压缩支持。
+自 <Badge text="1.0.7" vertical='middle'/>  版本开始，rasp 下各个函数生成 GTiff 文件时**不在默认**生成 .ovr 金字塔。
 
 :::
 
@@ -70,11 +70,13 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 **可选参数：**
 
+&emsp;LayerID = `int`<Badge text="1.0.7 +"/> 。输入裁剪矢量的图层 ID。默认第一个图层（0）。
+
+&emsp;FeatureID = `int`<Badge text="1.0.7 +"/> 。掩膜图层的要素 ID。默认掩膜全部要素（None）。
+
 &emsp;InNoData = `float`。输入栅格的无效值。默认不指定（None）无效值。
 
 &emsp;OutNoData  = `float`。输出栅格的无效值。默认不指定（None）无效值。
-
-&emsp;MaskBoundary  = `bool`。是否掩膜边界外数据。默认掩膜（True）。
 
 &emsp;OutFormat  = `str`。输出栅格文件格式。默认为 GTiff，其他格式详见 ToOtherFormat 函数。
 
@@ -307,6 +309,16 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 &emsp;MINSize = `float`。需要创建金字塔的栅格文件的最小文件大小（MB）。小于此大小的栅格文件不会被创建金字塔。默认为 10 MB。
 
+&emsp;Compress = `str`<Badge text="1.0.7 +"/> 。金字塔文件的压缩方式。默认 DEFLATE 压缩。
+
+<Boxx type='tip' title='其他可配置的压缩方式' content='NONE, LZW, PACKBITS, JPEG, CCITTRLE, CCITTFAX3, CCITTFAX4, DEFLATE, LZMA, ZSTD, WEBP, LERC, LERC_DEFLATE, LERC_ZSTD'/>
+
+&emsp;Resample = `str`<Badge text="1.0.7 +"/> 。生成金字塔文件的重采样方法。默认 NEAREST 法。
+
+<Boxx type='tip' title='其他可配置的重采样方法' content='AVERAGE, AVERAGE_MAGPHASE, RMS, BILINEAR, CUBIC, CUBICSPLINE, GAUSS, LANCZOS, MODE, NEAREST, NONE'/>
+
+&emsp;BlockSize = `int`<Badge text="1.0.7 +"/> 。生成金字塔过程的块大小。默认为 128。
+
 ::: 
 
 ## OrthophotoCorrection
@@ -372,11 +384,19 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 ::: theorem
 
-**引用：** gma.rasp.Fusion(InPanchromatic, InMultispectral, OutFile)
+**功能：**【数据融合】。全色与多光谱数据融合。
 
-**功能：**【影像融合】。
+:::
 
-**初始化：**
+### Pansharpen
+
+::: theorem
+
+**引用：** gma.rasp.Fusion.Pansharpen(InPanchromatic, InMultispectral, OutFile， ResampleMethod = None, SpatAdjust = None, Bands = None, NumThreads = None, InNoData = None, OutFormat = 'GTiff')
+
+**功能：**【Pansharpen】。对全色影像和多光谱影像基于 Pansharpen 方法进行融合。
+
+**参数：** 
 
 &emsp;InPanchromatic：`str`。输入全色影像路径。
 
@@ -384,41 +404,25 @@ rasp 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外
 
 &emsp;OutFile：`str`。输出栅格路径。
 
-::: 
+**可选参数：** 
 
-::: warning 注意
-类内函数引用前请先初始化 `Fusion` 类！
-::: 
+&emsp;ResampleMethod = `str`。重采样方法。默认为 Cubic 法（None）。其他方法详见 Resample 函数。
 
-### Pansharpen
-
-::: theorem
-
-**引用：** gma.rasp.Fusion().Pansharpen(ResampleMethod = None, SpatAdjust = None, Bands = None, NumThreads = None, InNoData = None, OutFormat = 'GTiff')
-
-&emsp;  注意：*引用前请先初始化 `Fusion` 类。*
-
-**功能：**【Pansharpen】。对全色影像和多光谱影像基于 Pansharpen 方法进行融合。
-
-**参数：** 
-
-&emsp;ResampleMethod：`str`。重采样方法。默认为 Cubic 法（None）。其他方法详见 Resample 函数。
-
-&emsp;SpatAdjust：`str`。空间坐标系调整。默认为 Union（None）。
+&emsp;SpatAdjust = `str`。空间坐标系调整。默认为 Union（None）。
 
 <Boxx type='tips' title='其他空间坐标系调整方法' content='Intersection，NoneWithoutWarning。'/>
 
-&emsp;Bands：`list`。融合多光谱波段列表。例如[1,2...]，波段计数从 1 开始。默认融合输入多光谱数据的所有波段（None）。
+&emsp;Bands = `list`。融合多光谱波段列表。例如[1,2...]，波段计数从 1 开始。默认融合输入多光谱数据的所有波段（None）。
 
 <Boxx type='warning' title='注意' content='每个波段的权重值（Weights）相同，根据 Bands 数量确定，为 1 / len(Bands)。'/>
 
-&emsp;NumThreads：`int||ALL_CPUS`。融合使用计算机 CPU 的线程数。默认不使用多线程（None）。
+&emsp;NumThreads = `int||ALL_CPUS`。融合使用计算机 CPU 的线程数。默认不使用多线程（None）。
 
-&emsp;InNoData：`float`。全色和多光谱影像的无效值。默认不设置无效值（None）。
+&emsp;InNoData = `float`。全色和多光谱影像的无效值。默认不设置无效值（None）。
 
 <Boxx type='warning' title='注意' content='所有输入数据的无效值应当相同，否则该设置无效。输出文件的无效值也为该值。'/>
 
-&emsp;OutFormat：`str`。输出栅格文件格式。默认为 GTiff，其他格式详见 ToOtherFormat 函数。
+&emsp;OutFormat = `str`。输出栅格文件格式。默认为 GTiff，其他格式详见 ToOtherFormat 函数。
 
 ::: 
 

@@ -29,6 +29,7 @@ module.exports = {
                 'rasp',
                 'raa',
                 'vesp',
+                'config',
                 'other',
             ]
         }

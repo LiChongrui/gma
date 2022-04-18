@@ -3,6 +3,159 @@ title: 更新日志
 date: 2021-11-21
 ---
 
+## 1.0.7 (2022.04.17)
+---
+
+::: warning 注意
+
+自 <Badge text="1.0.7" vertical='middle'/>  版本开始，gma 内各个函数生成 GTiff 文件时**不在默认**生成 .ovr 金字塔。
+
+:::
+
+<i class="fas fa-box"></i> **引入 [raa](/UserGuide/raa.html) 函数包。** 提供栅格数据分析功能！
+
+<i class="fas fa-box"></i> **引入 [config](/UserGuide/config.html) 函数包。** 提供栅格高级参数配置查询功能！
+
+<font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
+
+&emsp;　1、增加【[Roughness](/UserGuide/raa.html#roughness)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算粗糙度！引用：gma.raa.DEM.Roughness。
+
+&emsp;　2、增加【[HillShade](/UserGuide/raa.html#hillshade)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算山体阴影！引用：gma.raa.DEM.HillShade。
+
+&emsp;　3、增加【[Slope](/UserGuide/raa.html#slope)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算坡度！引用：gma.raa.DEM.Slope。
+
+&emsp;　4、增加【[Aspect](/UserGuide/raa.html#aspect)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算坡向！引用：gma.raa.DEM.Aspect。
+
+&emsp;　5、增加【[TRI](/UserGuide/raa.html#tri)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算地形耐用度指数！引用：gma.raa.DEM.TRI。
+
+&emsp;　6、增加【[TPI](/UserGuide/raa.html#tpi)】函数
+
+&emsp;　　从任何支持的 DEM 栅格文件计算地形位置指数！引用：gma.raa.DEM.TPI。
+
+&emsp;　7、增加【[GetRACreationOption](/UserGuide/config.html#getracreationoption)】函数
+
+&emsp;　　获取栅格驱动格式支持的高级创建选项！引用：gma.config.GetRACreationOption。
+
+&emsp;　8、增加【[GetRasterFormat](/UserGuide/config.html#getrasterformat-类)】类
+
+&emsp;　　实现针对某一栅格驱动详细信息的获取！引用：gma.config.GetRasterFormat。类支持的属性包括：
+
+&emsp;　　a. ColorTableDataType： 色彩映射表支持的数据类型。
+
+&emsp;　　b. CompressMode：支持的压缩方式。
+
+&emsp;　　c. CreationDataType：支持创建的数据类型。
+
+&emsp;　　d. Details：详细信息。
+
+&emsp;　　e. GeoReferencing：地理参考支持。
+
+&emsp;　　f. LongName：驱动长名称。
+
+&emsp;　　g. Multiband：多波段支持。
+
+&emsp;　　h. Update：更新支持。
+
+&emsp;　　i. Extension：驱动扩展名。
+
+&emsp;　9、增加【[GetVectorFormat](/UserGuide/config.html#getvectorformat-类)】类
+
+&emsp;　　实现针对某一矢量驱动详细信息的获取！引用：gma.config.GetVectorFormat。类支持的属性包括：
+
+&emsp;　　a. CreationFieldDataType：支持创建属性表字段类型。
+
+&emsp;　　b. Details：详细信息。
+
+&emsp;　　c. Extension：驱动扩展名。
+
+&emsp;　　d. GeoReferencing：地理参考支持。
+
+&emsp;　　e. LongName：驱动长名称。
+
+&emsp;　　f. MultiLayer：多图层支持。
+
+&emsp;　　g. Update：更新支持。
+
+&emsp;　10、增加【[GetVELayerCreationOption](/UserGuide/config.html#getvelayercreationoption)】函数
+
+&emsp;　　获取矢量驱动格式支持的图层高级创建选项！引用：gma.config.GetVELayerCreationOption。
+
+&emsp;　11、增加【[RasterFormatInfo](/UserGuide/config.html#rasterformatinfo-类)】类
+
+&emsp;　　获取所有栅格驱动格式分类的详细信息！引用：gma.config.RasterFormatInfo。类支持的属性包括：
+
+&emsp;　　a. AddableColorTableFormats：支持色彩映射表的驱动格式。
+
+&emsp;　　b. CompressibleFormats：支持压缩的驱动格式。
+
+&emsp;　　c. CopyableFormats：支持复制的驱动格式。
+
+&emsp;　　d. CreatableFormats：支持创建的驱动格式。
+
+&emsp;　　e. MultibandFormats：支持多波段的驱动格式。
+
+&emsp;　　f. ReadableFormats：支持读取的驱动格式。
+
+&emsp;　　g. TransformableFormats：支持转换的驱动格式。
+
+&emsp;　　h. UpdatableFormats：支持更新的驱动格式。
+
+&emsp;　12、增加【[VectorFormatInfo](/UserGuide/config.html#vectorformatinfo-类)】类
+
+&emsp;　　获取所有矢量驱动格式分类的详细信息！引用：gma.config.VectorFormatInfo。类支持的属性包括：
+
+&emsp;　　a. CopyableFormats：支持复制的驱动格式。
+
+&emsp;　　b. CreatableFormats：支持创建的驱动格式。
+
+&emsp;　　c. MultiLayerFormats：支持多图层的驱动格式。
+
+&emsp;　　d. ReadableFormats：支持读取的驱动格式。
+
+&emsp;　　e. TransformableFormats：支持转换的驱动格式。
+
+&emsp;　　f. UpdatableFormats：支持更新的驱动格式。
+
+<font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
+
+&emsp;　1、将 栅格/矢量 生成过程中的高级 **创建参数外置**。在未来的几个版本，栅格/矢量生成过程的高级配置参数会逐步开放设置。
+
+&emsp;　2、基于外置的创建参数，对所有 **栅格处理函数** 进行 **第二次重构**，以实现所有的栅格处理函数在底层隶属于一个整体，而不仅仅是许多单独的函数的集合。
+
+&emsp;　3、rasp.Clip
+
+&emsp;　　移除 MaskBoundary 参数，增加 LayerID （掩膜矢量图层 ID）、FeatureID （掩膜图层要素 ID）参数。
+
+&emsp;　4、rasp.GenerateOVR
+
+&emsp;　　增加 Compress（压缩方式）、Resample（重采样方法）、BlockSize（分块大小）参数。
+
+&emsp;　5、rasp.Fusion
+
+&emsp;　　移除了 Fusion 类初始化参数，初始化内容合并到类内函数。
+
+&emsp;　6、rasp.Fusion.Pansharpen
+
+&emsp;　　承接 Fusion 初始化参数。
+
+&emsp;　7、relation.key
+
+&emsp;　　调整并优化了与外置的高级创建参数内容重复的内容。
+
+&emsp;　8、vesp.FixGeometry
+
+&emsp;　　面积或长度值小于 0.00000001 的要素将会被清除。
+
 ## 1.0.6 (2022.03.17)
 
 ---

@@ -27,33 +27,51 @@ date: 2021-10-29
 
  ## 数学运算
 
-| （类）函数          | 引用（简版）                     | 功能               | 详细解释                                                     |
+| 函数 / *类*  | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
 | [ToNumericArray](/UserGuide/math.html#tonumericarray) <Badge text="1.0.6 +"/>      | gma.math.ToNumericArray         | 【转换为数字型数组】 | 强制将输入数据转为数字型数组 |
 | [FillNoData](/UserGuide/math.html#fillnodata)          | gma.math.FillNoData            | 【填充缺失值】     | 对缺失值或异常值值进行插值替换                               |
-| [**Smooth.**](/UserGuide/math.html#smooth-类)[SavitzkyGolay](/UserGuide/math.html#savitzkygolay)             | gma.math.Smooth.SavitzkyGolay | 【SavitzkyGolay】  | 利用SavitzkyGolay方法对数据进行平滑                          |
-| [**Smooth.**](/UserGuide/math.html#smooth-类)[MovingAverage](/UserGuide/math.html#movingaverage)       | gma.math.Smooth.MovingAverage | 【滑动平均】       | 利用滑动平均法对数据进行平滑                                 |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[RMSE](/UserGuide/math.html#rmse)    | gma.math.Evaluation.RMSE      | 【RMSE】           | 均方根误差                                                   |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[NRMSE](/UserGuide/math.html#nrmse)   | gma.math.Evaluation.NRMSE     | 【NRMSE】          | 归一化均方根误差                                             |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[D](/UserGuide/math.html#d)       | gma.math.Evaluation.D         | 【D】              | D指标                                                        |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[CORR](/UserGuide/math.html#corr)       | gma.math.Evaluation.CORR         | 【r，P】           | 相关系数和显著性水平                                         |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[R2](/UserGuide/math.html#r2)      | gma.math.Evaluation.R2        | 【R2】             | 决定系数                                                     |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[MaxAE](/UserGuide/math.html#maxae)   | gma.math.Evaluation.MaxAE     | 【MaxAE】          | 最大绝对误差                                                 |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[Select](/UserGuide/math.html#select)  | gma.math.Evaluation.Select    | 【选择方法】       | 选择Evaluation中需要计算的一个或多个评价指标进行计算         |
-| [**Evaluation.**](/UserGuide/math.html#evaluation-类)[Methods](/UserGuide/math.html#methods) | gma.math.Evaluation.Methods   | 【记录方法】       | 记录Evaluation类中所有的评估方法                             |
+| ***[Smooth](/UserGuide/math.html#smooth-类)*** | *gma.math.Smooth* | *【数据平滑】* | *数据平滑（滤波）。支持的重命名方法详见：[数据平滑](Function.html#数据平滑)* |
+| ***[Evaluation](/UserGuide/math.html#evaluation-类)*** | *gma.math.Evaluation* | *【数据评估】* | *支持的重命名方法详见：[数据评估](Function.html#数据评估)* |
+
+#### 数据平滑
+
+| 方法                                                | 引用（简版）                  | 功能         | 详细解释                               |
+| :-------------------------------------------------- | :---------------------------- | :----------- | :------------------------------------- |
+| [SavitzkyGolay](/UserGuide/math.html#savitzkygolay) | gma.math.Smooth.SavitzkyGolay | 【SG平滑】   | 利用 Savitzky-Golay 方法对数据进行平滑 |
+| [MovingAverage](/UserGuide/math.html#movingaverage) | gma.math.Smooth.MovingAverage | 【滑动平均】 | 利用滑动平均法对数据进行平滑           |
+
+#### 数据评估
+
+| 方法                                    | 引用（简版）                | 功能         | 详细解释                                             |
+| :-------------------------------------- | :-------------------------- | :----------- | :--------------------------------------------------- |
+| [RMSE](/UserGuide/math.html#rmse)       | gma.math.Evaluation.RMSE    | 【RMSE】     | 均方根误差                                           |
+| [NRMSE](/UserGuide/math.html#nrmse)     | gma.math.Evaluation.NRMSE   | 【NRMSE】    | 归一化均方根误差                                     |
+| [D](/UserGuide/math.html#d)             | gma.math.Evaluation.D       | 【D】        | D指标                                                |
+| [CORR](/UserGuide/math.html#corr)       | gma.math.Evaluation.CORR    | 【r，P】     | 相关系数和显著性水平                                 |
+| [R2](/UserGuide/math.html#r2)           | gma.math.Evaluation.R2      | 【R2】       | 决定系数                                             |
+| [MaxAE](/UserGuide/math.html#maxae)     | gma.math.Evaluation.MaxAE   | 【MaxAE】    | 最大绝对误差                                         |
+| [Select](/UserGuide/math.html#select)   | gma.math.Evaluation.Select  | 【选择方法】 | 选择Evaluation中需要计算的一个或多个评价指标进行计算 |
+| [Methods](/UserGuide/math.html#methods) | gma.math.Evaluation.Methods | 【记录方法】 | 记录Evaluation类中所有的评估方法                     |
 
  ## 系统交互
 
-| （类）函数       | 引用（简版）                | 功能         | 详细解释                                         |
+| **函数 /** *类* | 引用（简版）                | 功能         | 详细解释                                         |
 | :--------------- | :-------------------------- | :----------- | :----------------------------------------------- |
 | [GetPath](/UserGuide/osf.html#getpath)          | gma.osf.GetPath           | 【获取路径】 | 获取目标路径或路径集合下满足条件的所有文件夹和文件路径                              |
 | [Zip](/UserGuide/osf.html#zip)            | gma.osf.Zip               | 【压缩】     | 将目标路径下所有文件压缩为 .zip 文件                  |
 | [UnZip](/UserGuide/osf.html#unzip)            | gma.osf.UnZip             | 【解压缩】   | 解压缩 .zip 文件                                |
 | [DateSeries](/UserGuide/osf.html#dateseries)       | gma.osf.DateSeries        | 【日期序列】 | 构造一个日期序列列表                               |
-| [**Modify.**](/UserGuide/osf.html#rename-类)[Rename](/UserGuide/osf.html#modify)    | gma.osf.Rename.Modify    | 【修改】     | 将原有文件（夹）名修改为新名                     |
-| [**Modify.**](/UserGuide/osf.html#rename-类)[Replace](/UserGuide/osf.html#replace)  | gma.osf.Rename.Replace   | 【替换】     | 替换原文件（夹）名中字符串后作为新文件（夹）名   |
-| [**Modify.**](/UserGuide/osf.html#rename-类)[Intercept](/UserGuide/osf.html#intercept) | gma.osf.Rename.Intercept | 【截取】     | 截取文件（夹）名中的部分字符串作为新文件（夹）名 |
+| *[**Rename**](/UserGuide/osf.html#rename-类)* | *gma.osf.Rename* | *【重命名】* | *重命名文件或文件夹。支持的重命名方法详见：[重命名](Function.html#重命名)* |
 | [MultiThreading](/UserGuide/osf.html#multithreading)<Badge text="1.0.3 +"/> | gma.osf.MultiThreading | 【多线程】 | 创建多个线程，实现同一函数多个参数的同步执行 |
+
+#### 重命名
+
+| 方法                                       | 引用（简版）             | 功能     | 详细解释                                         |
+| :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
+| [Modify](/UserGuide/osf.html#modify)       | gma.osf.Rename.Modify    | 【修改】 | 将原有文件（夹）名修改为新名                     |
+| [Replace](/UserGuide/osf.html#replace)     | gma.osf.Rename.Replace   | 【替换】 | 替换原文件（夹）名中字符串后作为新文件（夹）名   |
+| [Intercept](/UserGuide/osf.html#intercept) | gma.osf.Rename.Intercept | 【截取】 | 截取文件（夹）名中的部分字符串作为新文件（夹）名 |
 
  ## 空间杂项<Badge text="1.0.5 +"/>
 
@@ -64,27 +82,39 @@ date: 2021-10-29
 
  ## 栅格处理
 
-| （类）函数                                                   | 引用（简版）                  | 功能                | 详细解释                                                     |
+| 函数 / *类*                                                  | 引用（简版）                  | 功能                | 详细解释                                                     |
 | :----------------------------------------------------------- | :---------------------------- | :------------------ | :----------------------------------------------------------- |
-| [BandSynthesis](/UserGuide/rasp.html#bandsynthesis)               | gma.rasp.BandSynthesis        | 【文件合并】        | 单波段文件合成多波段文件                                     |
-| [BandDecomposition](/UserGuide/rasp.html#banddecomposition)       | gma.rasp.BandDecomposition    | 【波段分解】        | 将多波段文件拆分（或提取）为单波段文件                       |
-| [Clip](/UserGuide/rasp.html#clip)                                 | gma.rasp.Clip                 | 【裁剪】            | 按矢量边界裁剪栅格                                           |
-| [ToOtherFormat](/UserGuide/rasp.html#tootherformat)               | gma.rasp.ToOtherFormat        | 【格式转换】        | 一种栅格格式转换为另一种栅格格式                             |
-| [Mosaic](/UserGuide/rasp.html#mosaic)                             | gma.rasp.Mosaic               | 【栅格镶嵌】        | 将多个栅格数据集合并到一个新的栅格数据集中                   |
-| [Resample](/UserGuide/rasp.html#resample)                         | gma.rasp.Resample             | 【重采样】          | 更改栅格数据的空间分辨率                                     |
-| [Reproject](/UserGuide/rasp.html#reproject)                       | gma.rasp.Reproject            | 【重投影】          | 将空间数据从一种坐标系投影到另一种坐标系                     |
-| [ChangeDataType](/UserGuide/rasp.html#changedatatype)             | gma.rasp.ChangeDataType       | 【数据类型转换】    | 转换栅格数据的数据类型                                       |
-| [MultiSDSToTif](/UserGuide/rasp.html#multisdstotif)               | gma.rasp.MultiSDSToTif        | 【多维数据转GTiff】 | 将含有子数据集的多维数据提取为 GTiff                         |
-| [ToVector](/UserGuide/rasp.html#tovector)                        | gma.rasp.ToVector             | 【栅格转矢量】      | 将栅格数据转换为矢量数据                                     |
-| [WriteRaster](/UserGuide/rasp.html#writeraster)                  | gma.rasp.WriteRaster          | 【写出栅格】        | 将数组保存为栅格                                             |
-| [GenerateOVR](/UserGuide/rasp.html#generateovr)                  | gma.rasp.GenerateOVR          | 【构建栅格金字塔】  | 为GTiff文件构造 .ovr 栅格金字塔，或为其他类型的栅格数据强制构造.ovr金字塔 |
+| [BandSynthesis](/UserGuide/rasp.html#bandsynthesis)          | gma.rasp.BandSynthesis        | 【文件合并】        | 单波段文件合成多波段文件                                     |
+| [BandDecomposition](/UserGuide/rasp.html#banddecomposition)  | gma.rasp.BandDecomposition    | 【波段分解】        | 将多波段文件拆分（或提取）为单波段文件                       |
+| [Clip](/UserGuide/rasp.html#clip)                            | gma.rasp.Clip                 | 【裁剪】            | 按矢量边界裁剪栅格                                           |
+| [ToOtherFormat](/UserGuide/rasp.html#tootherformat)          | gma.rasp.ToOtherFormat        | 【格式转换】        | 一种栅格格式转换为另一种栅格格式                             |
+| [Mosaic](/UserGuide/rasp.html#mosaic)                        | gma.rasp.Mosaic               | 【栅格镶嵌】        | 将多个栅格数据集合并到一个新的栅格数据集中                   |
+| [Resample](/UserGuide/rasp.html#resample)                    | gma.rasp.Resample             | 【重采样】          | 更改栅格数据的空间分辨率                                     |
+| [Reproject](/UserGuide/rasp.html#reproject)                  | gma.rasp.Reproject            | 【重投影】          | 将空间数据从一种坐标系投影到另一种坐标系                     |
+| [ChangeDataType](/UserGuide/rasp.html#changedatatype)        | gma.rasp.ChangeDataType       | 【数据类型转换】    | 转换栅格数据的数据类型                                       |
+| [MultiSDSToTif](/UserGuide/rasp.html#multisdstotif)          | gma.rasp.MultiSDSToTif        | 【多维数据转GTiff】 | 将含有子数据集的多维数据提取为 GTiff                         |
+| [ToVector](/UserGuide/rasp.html#tovector)                    | gma.rasp.ToVector             | 【栅格转矢量】      | 将栅格数据转换为矢量数据                                     |
+| [WriteRaster](/UserGuide/rasp.html#writeraster)              | gma.rasp.WriteRaster          | 【写出栅格】        | 将数组保存为栅格                                             |
+| [GenerateOVR](/UserGuide/rasp.html#generateovr)              | gma.rasp.GenerateOVR          | 【构建栅格金字塔】  | 为 GTiff 文件构造 .ovr 栅格金字塔，或为其他类型的栅格数据强制构造 .ovr 金字塔 |
 | [OrthophotoCorrection](/UserGuide/rasp.html#orthophotocorrection) | gma.rasp.OrthophotoCorrection | 【正射矫正】        | 根据有理多项式系数（RPC）对影像进行正射校正                  |
-| [Deformation](/UserGuide/rasp.html#deformation)                  | gma.rasp.Deformation          | 【流程化处理】      | 完成镶嵌-裁剪-重采样-重投影-格式转换等其中一个或多个功能     |
-| [**Fusion.**](/UserGuide/rasp.html#fusion-类)[Pansharpen](/UserGuide/rasp.html#pansharpen) | gma.rasp.Fusion.Pansharpen    | 【Pansharpen】      | 对全色影像和多光谱影像基于Pansharpen方法进行融合             |
+| [Deformation](/UserGuide/rasp.html#deformation)              | gma.rasp.Deformation          | 【流程化处理】      | 完成镶嵌-裁剪-重采样-重投影-格式转换等其中一个或多个功能     |
 | [AddColorTable](/UserGuide/rasp.html#addcolortable)<Badge text="1.0.1 +"/> | gma.rasp.AddColorTable        | 【添加色彩映射表】  | 为栅格数据添加色彩映射                                       |
-| [SplitImage](/UserGuide/rasp.html#splitimage)<Badge text="1.0.3 +"/> | gma.rasp.SplitImage           | 【影像切片】        | 将一幅影像切分为特定行列数的小影像。                         |
+| [SplitImage](/UserGuide/rasp.html#splitimage)<Badge text="1.0.3 +"/> | gma.rasp.SplitImage           | 【影像切片】        | 将一幅影像切分为特定行列数的小影像                           |
+| ***[Fusion](/UserGuide/rasp.html#fusion-类)***               | *gma.rasp.Fusion*             | *【数据融合】*      | *全色与多光谱数据融合。支持的融合函数详见：[数据融合](Function.html#数据融合)* |
+
+#### 数据融合
+
+| 函数                                          | 引用（简版）               | 功能           | 详细解释                                         |
+| :-------------------------------------------- | :------------------------- | :------------- | :----------------------------------------------- |
+| [Pansharpen](/UserGuide/rasp.html#pansharpen) | gma.rasp.Fusion.Pansharpen | 【Pansharpen】 | 对全色影像和多光谱影像基于Pansharpen方法进行融合 |
 
  ## 栅格分析<Badge text="1.0.7 +"/>
+
+| **函数 /** *类*                         | 引用（简版）   | 功能           | 详细解释                                                     |
+| --------------------------------------- | -------------- | :------------- | :----------------------------------------------------------- |
+| ***[DEM](/UserGuide/raa.html#dem-类)*** | *gma.rasp.DEM* | *【DEM 分析】* | *利用 DEM 实现地形分析。支持的 DEM 分析函数详见：[DEM 分析](Function.html#dem-分析)* |
+
+#### DEM 分析
 
 | 函数                                       | 引用（简版）          | 功能               | 详细解释                          |
 | :----------------------------------------- | :-------------------- | :----------------- | :-------------------------------- |
@@ -112,6 +142,19 @@ date: 2021-10-29
 | [SymDifference](/UserGuide/vesp.html#symdifference) <Badge text="1.0.4 +"/>    | gma.vesp.SymDifference    | 【交集取反】       | 取两个矢量不相交的部分                       |
 | [Simplify](/UserGuide/vesp.html#simplify)<Badge text="1.0.6 +"/> | gma.math.Simplify | 【简化】 | 简化矢量数据中的要素 |
 | [FixGeometry<Badge text="1.0.6 +"/>](/UserGuide/vesp.html#fixgeometry) | gma.math.FixGeometry | 【修正几何】 | 修正矢量数据中无效的几何要素 |
+
+## 高级配置<Badge text="1.0.7 +"/>
+
+| 函数 / *类*                                                  | 引用（简版）                        | 说明                   | 解释                                   |
+| :----------------------------------------------------------- | :---------------------------------- | :--------------------- | :------------------------------------- |
+| [GetRACreationOption](/UserGuide/config.html#getracreationoption) | gma.config.GetRACreationOption      | 【栅格创建选项】       | 获取栅格驱动格式支持的高级创建选项     |
+| [GetVELayerCreationOption](/UserGuide/config.html#getvelayercreationoption) | gma.config.GetVELayerCreationOption | 【矢量图层创建选项】   | 获取矢量驱动格式支持的图层高级创建选项 |
+| ***[GetRasterFormat](/UserGuide/config.html#getrasterformat-类)*** | *gma.config.GetRasterFormat*        | *【获取栅格格式】*     | *实现针对某一栅格驱动详细信息的获取*   |
+| ***[GetVectorFormat](/UserGuide/config.html#getvectorformat-类)*** | *gma.config.GetVectorFormat*        | *【获取矢量格式】*     | *实现针对某一矢量驱动详细信息的获取*   |
+| ***[RasterFormatInfo](/UserGuide/config.html#rasterformatinfo-类)*** | *gma.config.RasterFormatInfo*       | *【栅格驱动格式信息】* | *获取所有栅格驱动格式分类的详细信息*   |
+| ***[VectorFormatInfo](/UserGuide/config.html#vectorformatinfo-类)*** | *gma.config.VectorFormatInfo*       | *【矢量驱动格式信息】* | *获取所有矢量驱动格式分类的详细信息*   |
+
+
 
 ## 其他函数<Badge text="1.0.6 +"/>
 

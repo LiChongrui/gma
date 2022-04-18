@@ -3,16 +3,15 @@ title: 栅格分析
 date: 2022-03-20
 ---
 
-**&emsp;&emsp;栅格分析** 为 **gma.raa** 内所有栅格处理操作相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+**&emsp;&emsp;栅格分析** 为 **gma.raa** 内所有栅格处理操作相关函数的详细功能、参数设置和引用方法说明。如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
+## DEM 类<Badge text="1.0.7 +"/>
 
-::: warning 须知
+::: theorem
 
-raa 下各个函数生成 GTiff 文件时默认采用 LZW 压缩，并生成外部栅格金字塔 .ovr 文件。目前，除部分自带压缩的驱动，仅对 GTiff，HFA，netCDF 进行了完整的压缩支持。
+**功能：** 【DEM 分析】。利用 DEM 数据实现地形分析。
 
 :::
-
-## DEM<Badge text="1.0.7 +"/>
 
 ### Roughness
 ::: theorem

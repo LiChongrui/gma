@@ -3,7 +3,7 @@ title: 矢量处理
 date: 2021-10-30
 ---
 
-**&emsp;&emsp;矢量处理** 为 **gma.vesp** 内所有矢量处理操作相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+**&emsp;&emsp;矢量处理** 为 **gma.vesp** 内所有矢量处理操作相关函数的详细功能、参数设置和引用方法说明。如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 ## Split
 

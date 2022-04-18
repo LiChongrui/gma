@@ -3,9 +3,9 @@ title: 模块说明
 date: 2021-10-30
 ---
 
-**&emsp;&emsp;使用指南** 为 **gma** 内 7 大模块所有相关函数的详细功能、参数设置和引用方法说明，如果您想快速了解 gma 中每个模块所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+**&emsp;&emsp;使用指南** 为 **gma** 内所有模块（7个功能模块，1个配置模块）相关函数的详细功能、参数设置和引用方法说明，如果您想快速了解 gma 中每个模块所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
-&emsp;&emsp;7 大模块包括：
+&emsp;&emsp;7 个功能模块：
 
 >+ [指数运算](indexc.html) == gma.index
 >+ [数学运算](math.html) == gma.math
@@ -15,7 +15,11 @@ date: 2021-10-30
 >+ [栅格分析](raa.html) == gma.raa
 >+ [矢量处理](vesp.html) == gma.vesp
 
-&emsp;&emsp;此外，gma 还定义了一些其他函数，例如打开 栅格/矢量 数据等，详见 [其他函数](/UserGuide/other.html)。
+&emsp;&emsp;1 个配置模块：
+
+>+ [高级配置](config.html)== gma.config
+
+&emsp;&emsp;此外，gma 还定义了一些其他函数，例如打开 栅格/矢量 数据等，辅助数据处理分析。详见 [其他函数](/UserGuide/other.html)。
 
 &emsp;&emsp;您可以通过以下形式一次引入 gma 的所有模块：
 
@@ -32,7 +36,9 @@ from gma import smc
 from gma import rasp
 from gma import raa
 from gma import vesp
+from gma import config
 ```
+
 
 ::: tip 提示
 

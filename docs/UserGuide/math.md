@@ -3,7 +3,7 @@ title: 数学运算
 date: 2021-10-30
 ---
 
-**&emsp;&emsp;数学运算** 为 **gma.math** 内所有数学方法相关函数的详细功能、参数设置和引用方法说明，如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
+**&emsp;&emsp;数学运算** 为 **gma.math** 内所有数学方法相关函数的详细功能、参数设置和引用方法说明。如果您想了解 gma 所有函数的整体情况，请移步 [函数列表](/Functions/Function.html) 。
 
 ## ToNumericArray <Badge text="1.0.6 +"/> 
 
@@ -66,7 +66,7 @@ date: 2021-10-30
 ::: 
 
 ::: warning 注意
-类内函数引用前请先初始化 `Smooth` 类！
+类内 属性/方法 引用前请先初始化 `Smooth` 类！
 ::: 
 
 ### SavitzkyGolay
@@ -128,7 +128,7 @@ date: 2021-10-30
 ::: 
 
 ::: warning 注意
-类内函数引用前请先初始化 `Evaluation` 类！
+类内 属性/方法 引用前请先初始化 `Evaluation` 类！
 ::: 
 
 ### RMSE
