@@ -68,7 +68,7 @@ date: 2022-03-20
 
 &emsp;Combined = `bool`。是否计算混合阴影。默认不计算（False）。不为 True 的设置值均视为否（False）。
 
-&emsp;ZevenbergenThorne = `False`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
+&emsp;ZevenbergenThorne = `bool`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
 
 ::: 
 
@@ -98,7 +98,7 @@ date: 2022-03-20
 
 &emsp;UseDegree = `bool`。是否使用度（°）来表示坡度。默认（True）使用。若为否（False），则采用百分比（%）表示坡度。
 
-&emsp;ZevenbergenThorne = `False`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
+&emsp;ZevenbergenThorne = `bool`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
 
 ::: 
 
@@ -124,7 +124,7 @@ date: 2022-03-20
 
 &emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
 
-&emsp;ZevenbergenThorne = `False`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
+&emsp;ZevenbergenThorne = `bool`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
 
 &emsp;Trigonometric = `bool`。是否使用（三角）角度。默认（False）不使用（即使用方位角）。不为 True 的设置均视为 Fasle。
 

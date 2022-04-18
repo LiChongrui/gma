@@ -40,6 +40,10 @@ date: 2021-10-29
 | GDAL     | Geospatial Data Abstraction Library | 栅格空间数据转换库 | 栅格数据应用                                                 |
 | EXT      | Extension                           | 扩展名             | 标记、查找或应用的文件类型                                   |
 | VC | Vector Creation | 矢量创建 | 生成矢量文件的创建参数 |
+| VE | Vector | 矢量 | 矢量处理 |
 | RC | Raster Creation | 栅格创建 | 生成栅格文件的创建参数 |
+| RA | Raster | 栅格 | 栅格处理 |
 | DEM | Digital Elevation Model | 数字高程模型 | 零阶单纯的单项数字地貌模型 |
+| TPI | Topographic Position Index | 地形位置指数 | DEM 分析 |
+| TRI | Terrain Ruggedness Index | 地形耐用度指数 | DEM 分析 |
 

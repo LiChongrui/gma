@@ -1,4 +1,4 @@
-﻿---
+---
 title: 更新日志
 date: 2021-11-21
 ---
@@ -8,7 +8,7 @@ date: 2021-11-21
 
 ::: warning 注意
 
-自 <Badge text="1.0.7" vertical='middle'/>  版本开始，gma 内各个函数生成 GTiff 文件时**不在默认**生成 .ovr 金字塔。
+自 <Badge text="1.0.7" vertical='middle'/>  版本开始，gma 内各个函数生成 GTiff 文件时 **不在默认** 生成 .ovr 金字塔。
 
 :::
 
@@ -146,7 +146,7 @@ date: 2021-11-21
 
 &emsp;　6、rasp.Fusion.Pansharpen
 
-&emsp;　　承接 Fusion 初始化参数。
+&emsp;　　承接 Fusion 初始化参数。优化内部生成逻辑，使源代码更简洁。
 
 &emsp;　7、relation.key
 

@@ -281,7 +281,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().AddableColorTableFormats
+**引用：** gma.config.RasterFormatInfo().AddableColorTableFormats
 
 **功能：**【色彩映射表支持】。类属性，支持色彩映射表的驱动格式。
 
@@ -293,7 +293,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().CompressibleFormats
+**引用：** gma.config.RasterFormatInfo().CompressibleFormats
 
 **功能：**【压缩支持】。类属性，支持压缩的驱动格式。
 
@@ -305,7 +305,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().CopyableFormats
+**引用：** gma.config.RasterFormatInfo().CopyableFormats
 
 **功能：**【复制支持】。类属性，支持复制的驱动格式。
 
@@ -317,7 +317,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().CreatableFormats
+**引用：** gma.config.RasterFormatInfo().CreatableFormats
 
 **功能：**【创建支持】。类属性，支持创建的驱动格式。
 
@@ -329,7 +329,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().MultibandFormats
+**引用：** gma.config.RasterFormatInfo().MultibandFormats
 
 **功能：**【多波段支持】。类属性，支持多波段的驱动格式。
 
@@ -341,7 +341,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().ReadableFormats
+**引用：** gma.config.RasterFormatInfo().ReadableFormats
 
 **功能：**【读取支持】。类属性，支持读取的驱动格式。
 
@@ -353,7 +353,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().TransformableFormats
+**引用：** gma.config.RasterFormatInfo().TransformableFormats
 
 **功能：**【转换支持】。类属性，支持转换的驱动格式。
 
@@ -365,7 +365,7 @@ date: 2022-04-17
 
 ::: theorem
 
-**引用：** gma.config.GetVectorFormat().UpdatableFormats
+**引用：** gma.config.RasterFormatInfo().UpdatableFormats
 
 **功能：**【更新支持】。类属性，支持更新的驱动格式。
 

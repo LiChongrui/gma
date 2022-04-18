@@ -100,7 +100,7 @@ date: 2021-10-30
 
 &emsp;OutFormat  = `str`。输出栅格文件格式，默认为 GTiff。
 
-<Boxx type='tip' title='其他支持格式' content='AAIGrid，BT，CALS，COG，DTED，EHdr，ENVI，ERS，EXR，FIT，GIF，GPKG，GRIB，GS7BG，GSAG，GSBG，GTiff，HDF4Image，HF2，HFA，ISCE，ISIS2，ISIS3，JP2OpenJPEG，JPEG，LAN，MBTiles，XPM，XYZ，netCDF，MFF2，MRF，NITF，PAux，PCIDSK，PCRaster，PNG，RST，Rasterlite，SIGDEM，USGSDEM，VICAR，VRT，BMP' />
+<Boxx type='tip' title='其他支持格式' content='AAIGrid, ADRG, ARG, BAG, BLX, BMP, BT, BYN, CALS, CEOS, COG, CTable2, DDS, DTED, EHdr, ELAS, ENVI, ERS, EXR, FIT, FITS, GIF, GPKG, GS7BG, GSBG, GTiff, HDF4Image, HF2, HFA, ILWIS, ISCE, ISIS2, ISIS3, JP2OpenJPEG, JPEG, KMLSuperoverlay, KRO, LCP, Leveller, MBTiles, MEM, MFF, MFF2, MRF, NITF, NTv2, NWT_GRD, PAux, netCDF, PCIDSK, PCRaster, PDF, PDS4, PNG, PNM, PostGISRaster, R, RMF, ROI_PAC, RRASTER, RST, Rasterlite, SAGA, SGI, SIGDEM, SQLite, Terragen, USGSDEM, VICAR, VRT, WEBP, WMS, XPM, XYZ, ZMAP, Zarr' />
 
 ::: 
 

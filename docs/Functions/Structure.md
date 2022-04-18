@@ -116,6 +116,7 @@ date: 2021-10-29
 	* initialize *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== **初始化**输入参数，错误检查*
 	* [**key**](Default.html#默认参数) *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格 / 矢量 处理的内置参数，例如**压缩**，**超大 TIFF 支持**等*
 	* [**constants**](Default.html#常量单位) &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 常量名称、值或与国际单位的代换值
+- [**config**](Function.html#高级配置) *&emsp;&emsp; &emsp;&emsp; == **高级配置**参数*
 - [**index**](Function.html#指数运算) *&emsp;&emsp; &emsp;&emsp; == 遥感、气象的**指数运算**的相关算法*
 - [**math**](Function.html#数学运算) *&emsp;&emsp; &emsp;&emsp; == **数学运算**相关算法*
 - [**osf**](Function.html#系统交互) *&emsp;&emsp;&emsp; &emsp;&emsp; == **系统交互**操作*
@@ -125,5 +126,4 @@ date: 2021-10-29
 - [**vesp**](Function.html#矢量处理) *&emsp;&emsp; &emsp;&emsp; == **矢量处理**函数包*
 
 :::
-
 
