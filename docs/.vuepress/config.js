@@ -1,7 +1,7 @@
 
 module.exports = {
     locales: { '/': { lang: 'zh-CN' }},//,'/en/': { lang: 'en-US', },  },
-    port: '9999', // 本地端口
+    port: '9000', // 本地端口
     markdown:{
         lineNumbers: true
     },

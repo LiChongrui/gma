@@ -1,4 +1,5 @@
 /* eslint-disable no-proto */
+import '@theme/fontawesome-free-6.1.1-web/css/all.min.css'
 import postMixin from '@theme/mixins/posts'
 import localMixin from '@theme/mixins/locales'
 import { addLinkToHead, addScriptToHead } from '@theme/helpers/utils'
