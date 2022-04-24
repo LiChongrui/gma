@@ -78,6 +78,7 @@ a.sidebar-link
   background var(--background-color)
   //margin 0 0 0 0.035rem
   box-sizing: border-box
+  
   &:hover
     color $accentColor
   &.active

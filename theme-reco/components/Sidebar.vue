@@ -28,7 +28,7 @@ export default defineComponent({
     display none
   ul
     padding 0
-    margin 0
+    //margin 0
     list-style-type none
     &.sidebar-links
       > li
@@ -53,7 +53,16 @@ export default defineComponent({
       line-height 1.7
       font-weight 500
     & > li:not(:first-child)
-      margin-top 0.05rem
+      margin-top 2.5rem
+	&.depth-0 > .sidebar-heading::before {
+	    content: "";
+        position: absolute;
+        top: -1rem;
+        left: 1.5rem;
+        width: 14rem;
+		height: 0.05rem;
+        background: rgba(234,236,239,1);
+    }	
 
 @media (max-width: $MQMobile)
   .sidebar

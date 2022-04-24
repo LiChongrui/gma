@@ -86,9 +86,9 @@ export default defineComponent({
   &.is-sub-group
     padding-left 0
     & > .sidebar-heading
-      font-size 0.95em
+      font-size 14px
       line-height 1.4
-      font-weight normal
+      font-weight bold
       padding-left 2.2rem
       &:not(.clickable)
         opacity 1
@@ -106,8 +106,8 @@ export default defineComponent({
   color var(--text-color)
   transition color .15s ease
   cursor pointer
-  font-size 1.1em
-  font-weight 450
+  font-size 16px
+  font-weight bold
   padding 0.8rem 1.5rem 0.35rem 1.5rem
   width 100%
   box-sizing border-box
