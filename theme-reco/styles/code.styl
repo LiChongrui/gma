@@ -1,30 +1,41 @@
 .content__default
  code
-   color lighten($textColor, 20%)
+   color lighten($coderColor, 20%)
    padding 0.25rem 0.5rem
    margin 0
    font-size 0.85em
    background-color var(--code-color)
    border-radius 3px
-   .token
-     &.deleted
-       color #EC5975
-     &.inserted
-       color $accentColor
 
 .content__default
  pre, pre[class*="language-"]
    line-height 1.4
-   padding 1.25rem 1.5rem
+   padding 2.15rem 1.5rem 1rem 0
+   border-style solid
    margin 0.85rem 0
    background-color $codeBgColor
    border-radius 6px
+   border-width 1px
    overflow auto
    code
-     color #fff
+     color rgba(0, 0, 0, 1)
      padding 0
      background-color transparent
      border-radius 0
+
+.dark pre[class*="language-"]
+   code
+     color #EBEBEB
+
+.token.punctuation 
+   color rgba(0, 0, 0, 1)
+
+.dark .token.punctuation 
+   color #EBEBEB
+
+.dark div[class*="language-"]
+  border-color rgba(62, 76, 90, 1)
+  background-color rgba(54, 59, 70, 1)
 
 div[class*="language-"]
  position relative
@@ -50,10 +61,21 @@ div[class*="language-"]
    top 0.8em
    right 1em
    font-size 0.75rem
-   color rgba(255, 255, 255, 0.4)
+   color #999
  &:not(.line-numbers-mode)
    .line-numbers-wrapper
      display none
+ &::after {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    height: 0.625rem;
+    width: 0.625rem;
+    border-radius: 9999px;
+    content: "";
+    background: #858DE6;
+    box-shadow: 21px 0 0 0 #858DE6, 42px 0 0 0 #858DE6;
+  }
  &.line-numbers-mode
    .highlight-lines .highlighted
        position relative
@@ -67,17 +89,21 @@ div[class*="language-"]
          width $lineNumbersWrapperWidth
          height 100%
          background-color rgba(0, 0, 0, 66%)
+
    pre
      padding-left $lineNumbersWrapperWidth + 1 rem
      vertical-align middle
    .line-numbers-wrapper
      position absolute
-     top 0
+     top 2.15rem
+     bottom 1rem
      width $lineNumbersWrapperWidth
      text-align center
-     color rgba(255, 255, 255, 0.3)
-     padding 1.25rem 0
+     color $codeLineNumberColor
      line-height 1.4
+
+     border-right-width 1px
+     border-right-style dashed
      br
        user-select none
      .line-number
@@ -85,17 +111,6 @@ div[class*="language-"]
        z-index 4
        user-select none
        font-size 0.85em
-   &::after
-     content ''
-     position absolute
-     z-index 2
-     top 0
-     left 0
-     width $lineNumbersWrapperWidth
-     height 100%
-     border-radius 6px 0 0 6px
-     border-right 1px solid rgba(0, 0, 0, 66%)
-     background-color $codeBgColor
 
 
 for lang in $codeLang
@@ -133,3 +148,99 @@ div[class~="language-bash"]:before
 
 div[class~="language-php"]:before
  content "php"
+
+
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+//.token.punctuation,
+.token.cdata {
+	color: #999;
+}
+
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
+}
+
+.token.function-name {
+	color: #6196cc;
+}
+
+.token.boolean,
+.token.function {
+	color: #f08d49;
+}
+
+.token.number {
+	color: #DAA520;
+}
+
+.dark .token.number {
+	color: #FAED96;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword {
+	color: #2196f3;
+}
+
+.token.builtin {
+    color: #A20090;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}

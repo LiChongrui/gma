@@ -14,9 +14,9 @@ module.exports = [
     },
 
     {
-        text: '功能总览',
+        text: '功能探索',
         icon: "fas fa-toolbox",
-        link: '/Functions/'
+        link: '/Explore/'
     },
 
     {

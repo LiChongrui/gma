@@ -83,8 +83,20 @@ a.sidebar-link
   &.active
     font-weight 600
     color $accentColor
-    background var(--default-color-8)
-    border-right 3px solid $accentColor
+    //background var(--default-color-8)
+    //border-right 3px solid $accentColor
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: $accentColor;
+        vertical-align: middle;
+        margin-right: 6px;
+        margin-bottom: 4px;
+        border-radius: 50%;
+        border: 0.4px solid;
+      }	
   .sidebar-group &
     // padding-left 2rem
   .sidebar-sub-headers &

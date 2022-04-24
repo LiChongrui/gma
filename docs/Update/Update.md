@@ -12,41 +12,41 @@ date: 2021-11-21
 
 :::
 
-<i class="fas fa-box"></i> **引入 [raa](/UserGuide/raa.html) 函数包。** 提供栅格数据分析功能！
+<i class="fas fa-box"></i> **引入 [raa](/UserGuide/Function.html#栅格分析) 函数包。** 提供栅格数据分析功能！
 
-<i class="fas fa-box"></i> **引入 [config](/UserGuide/config.html) 函数包。** 提供栅格高级参数配置查询功能！
+<i class="fas fa-box"></i> **引入 [config](/UserGuide/Function.html#高级配置) 函数包。** 提供栅格高级参数配置查询功能！
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[Roughness](/UserGuide/raa.html#roughness)】函数
+&emsp;　1、增加【[Roughness](/UserGuide/raa/DEM/Roughness.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算粗糙度！引用：gma.raa.DEM.Roughness。
 
-&emsp;　2、增加【[HillShade](/UserGuide/raa.html#hillshade)】函数
+&emsp;　2、增加【[HillShade](/UserGuide/raa/DEM/HillShade.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算山体阴影！引用：gma.raa.DEM.HillShade。
 
-&emsp;　3、增加【[Slope](/UserGuide/raa.html#slope)】函数
+&emsp;　3、增加【[Slope](/UserGuide/raa/DEM/Slope.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算坡度！引用：gma.raa.DEM.Slope。
 
-&emsp;　4、增加【[Aspect](/UserGuide/raa.html#aspect)】函数
+&emsp;　4、增加【[Aspect](/UserGuide/raa/DEM/Aspect.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算坡向！引用：gma.raa.DEM.Aspect。
 
-&emsp;　5、增加【[TRI](/UserGuide/raa.html#tri)】函数
+&emsp;　5、增加【[TRI](/UserGuide/raa/DEM/TRI.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算地形耐用度指数！引用：gma.raa.DEM.TRI。
 
-&emsp;　6、增加【[TPI](/UserGuide/raa.html#tpi)】函数
+&emsp;　6、增加【[TPI](/UserGuide/raa/DEM/TPI.html)】函数
 
 &emsp;　　从任何支持的 DEM 栅格文件计算地形位置指数！引用：gma.raa.DEM.TPI。
 
-&emsp;　7、增加【[GetRACreationOption](/UserGuide/config.html#getracreationoption)】函数
+&emsp;　7、增加【[GetRACreationOption](/UserGuide/config/GetRACreationOption.html)】函数
 
 &emsp;　　获取栅格驱动格式支持的高级创建选项！引用：gma.config.GetRACreationOption。
 
-&emsp;　8、增加【[GetRasterFormat](/UserGuide/config.html#getrasterformat-类)】类
+&emsp;　8、增加【[GetRasterFormat](/UserGuide/config/GetRasterFormat.html)】类
 
 &emsp;　　实现针对某一栅格驱动详细信息的获取！引用：gma.config.GetRasterFormat。类支持的属性包括：
 
@@ -68,7 +68,7 @@ date: 2021-11-21
 
 &emsp;　　i. Extension：驱动扩展名。
 
-&emsp;　9、增加【[GetVectorFormat](/UserGuide/config.html#getvectorformat-类)】类
+&emsp;　9、增加【[GetVectorFormat](/UserGuide/config/GetVectorFormat.html)】类
 
 &emsp;　　实现针对某一矢量驱动详细信息的获取！引用：gma.config.GetVectorFormat。类支持的属性包括：
 
@@ -86,11 +86,11 @@ date: 2021-11-21
 
 &emsp;　　g. Update：更新支持。
 
-&emsp;　10、增加【[GetVELayerCreationOption](/UserGuide/config.html#getvelayercreationoption)】函数
+&emsp;　10、增加【[GetVELayerCreationOption](/UserGuide/config/GetVELayerCreationOption.html)】函数
 
 &emsp;　　获取矢量驱动格式支持的图层高级创建选项！引用：gma.config.GetVELayerCreationOption。
 
-&emsp;　11、增加【[RasterFormatInfo](/UserGuide/config.html#rasterformatinfo-类)】类
+&emsp;　11、增加【[RasterFormatInfo](/UserGuide/config/RasterFormatInfo.html)】类
 
 &emsp;　　获取所有栅格驱动格式分类的详细信息！引用：gma.config.RasterFormatInfo。类支持的属性包括：
 
@@ -110,7 +110,7 @@ date: 2021-11-21
 
 &emsp;　　h. UpdatableFormats：支持更新的驱动格式。
 
-&emsp;　12、增加【[VectorFormatInfo](/UserGuide/config.html#vectorformatinfo-类)】类
+&emsp;　12、增加【[VectorFormatInfo](/UserGuide/config/VectorFormatInfo.html)】类
 
 &emsp;　　获取所有矢量驱动格式分类的详细信息！引用：gma.config.VectorFormatInfo。类支持的属性包括：
 
@@ -160,7 +160,7 @@ date: 2021-11-21
 
 ---
 
-<i class="fas fa-box"></i> **引入 [constants](/Functions/Constants.html) 常量模块。** 提供数学常量、国际单位制词头、二进制单位、长度单位、面积单位等 16 种单位的名称、值或与国际单位的代换值！
+<i class="fas fa-box"></i> **引入 [constants](/Explore/Constants.html) 常量模块。** 提供数学常量、国际单位制词头、二进制单位、长度单位、面积单位等 16 种单位的名称、值或与国际单位的代换值！
 
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
 
@@ -186,19 +186,19 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[ToNumericArray](/UserGuide/math.html#tonumericarray)】函数
+&emsp;　1、增加【[ToNumericArray](/UserGuide/math/ToNumericArray.html)】函数
 
 &emsp;　　强制将输入数据转为数字型数组，无法转换的值将会被修改为 nan。引用：gma.math.ToNumericArray。
 
-&emsp;　2、增加【[Simplify](/UserGuide/vesp.html#simplify)】函数
+&emsp;　2、增加【[Simplify](/UserGuide/vesp/Simplify.html)】函数
 
 &emsp;　　简化矢量数据中的要素。引用：gma.vesp.Simplify。
 
-&emsp;　3、增加【[FixGeometry](/UserGuide/vesp.html#fixgeometry)】函数
+&emsp;　3、增加【[FixGeometry](/UserGuide/vesp/FixGeometry.html)】函数
 
 &emsp;　　修正矢量数据中无效的几何要素。引用：gma.vesp.FixGeometry。
 
-&emsp;　4、增加顶层【[Open](/UserGuide/other.html#open)】函数
+&emsp;　4、增加顶层【[Open](/UserGuide/other/Open.html)】函数
 
 &emsp;　　以替代 gma.rasp(vesp).Open 函数（这两个函数仍可用）。引用：gma.Open。
 
@@ -228,15 +228,15 @@ date: 2021-11-21
 
 ---
 
-<i class="fas fa-box"></i> **增加 [smc](/UserGuide/smc.html) 函数包。** 提供（或未来提供）空间杂项（例如计算空间距离、面积、坐标转换等操作）计算！
+<i class="fas fa-box"></i> **增加 [smc](/UserGuide/Function.html#空间杂项) 函数包。** 提供（或未来提供）空间杂项（例如计算空间距离、面积、坐标转换等操作）计算！
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[CALDistance](/UserGuide/smc.html#caldistance)】函数
+&emsp;　1、增加【[CALDistance](/UserGuide/smc/CALDistance.html)】函数
 
 &emsp;　　计算距离。计算输入两点（或多点）之间的距离。引用：gma.smc.CALDistance
 
-&emsp;　2、增加【[TRANCoordinate](/UserGuide/smc.html#trancoordinate)】函数
+&emsp;　2、增加【[TRANCoordinate](/UserGuide/smc/TRANCoordinate.html)】函数
 
 &emsp;　　坐标转换。将输入点的坐标转换为目标坐标系的坐标。引用：gma.smc.TRANCoordinate
 
@@ -244,7 +244,7 @@ date: 2021-11-21
 
 &emsp;　1、相关系数计算函数（r）
 
-&emsp;　　相关系数计算函数名由 r 改为 [CORR](/UserGuide/math.html#corr)，并增加 pearson（皮尔逊相关）、kendall（肯德尔秩相关），spearman（斯皮尔曼相关）三种可选的相关系数计算方法。
+&emsp;　　相关系数计算函数名由 r 改为 [CORR](/UserGuide/math/Evaluation/CORR.html)，并增加 pearson（皮尔逊相关）、kendall（肯德尔秩相关），spearman（斯皮尔曼相关）三种可选的相关系数计算方法。
 
 &emsp;　2、Select
 
@@ -283,7 +283,7 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[SymDifference](/UserGuide/vesp.html#symdifference)】函数
+&emsp;　1、增加【[SymDifference](/UserGuide/vesp/SymDifference.html)】函数
 
 &emsp;　　交集取反。提取两个矢量不相交的部分组成新矢量。引用：gma.vesp.SymDifference。
 
@@ -318,11 +318,11 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font>  **新增：**
 
-&emsp;　1、增加【[SplitImage](/UserGuide/rasp.html#splitimage)】函数
+&emsp;　1、增加【[SplitImage](/UserGuide/rasp/SplitImage.html)】函数
 
 &emsp;　　影像切片。将一幅影像切分为特定行列数的小影像（切片）。引用：gma.rasp.SplitImage。
 
-&emsp;　2、增加【[MultiThreading](/UserGuide/osf.html#multithreading)】函数
+&emsp;　2、增加【[MultiThreading](/UserGuide/osf/MultiThreading.html)】函数
 
 &emsp;　　多线程。自定义多线程实现同一函数多个参数的同步执行。引用：gma.osf.MultiThreading。
 
@@ -331,7 +331,7 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[TVDI](/UserGuide/indexc.html#tvdi)】函数
+&emsp;　1、增加【[TVDI](/UserGuide/index/TVDI.html)】函数
 
 &emsp;　　计算温度植被干旱指数。引用：gma.index.TVDI。
 
@@ -360,7 +360,7 @@ date: 2021-11-21
 
 <font color="#616AE5"><i class="fas fa-award"></i></font>  **新增：**
 
-&emsp;　1、增加【[AddColorTable](/UserGuide/rasp.html#addcolortable)】函数
+&emsp;　1、增加【[AddColorTable](/UserGuide/rasp/AddColorTable.html)】函数
 
 &emsp;　　为栅格数据添加色彩映射表。引用：gma.rasp.AddColorTable。
 

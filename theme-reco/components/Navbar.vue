@@ -97,6 +97,9 @@ $navbar-horizontal-padding = 1.5rem
   line-height $navbarHeight - 1.4rem
   box-shadow var(--box-shadow)
   background var(--background-color)
+  background-color: rgba(255, 255, 255, 0.1);
+  --tw-bg-opacity: 0.1;
+  backdrop-filter blur(10px)
   a, span, img
     display inline-block
   .logo
@@ -119,7 +122,6 @@ $navbar-horizontal-padding = 1.5rem
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
-    background-color var(--background-color)
     .search-box
       flex: 0 0 auto
       vertical-align top

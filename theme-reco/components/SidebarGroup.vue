@@ -89,7 +89,7 @@ export default defineComponent({
       font-size 0.95em
       line-height 1.4
       font-weight normal
-      padding-left 2rem
+      padding-left 2.2rem
       &:not(.clickable)
         opacity 1
     & > .sidebar-group-items
@@ -106,9 +106,9 @@ export default defineComponent({
   color var(--text-color)
   transition color .15s ease
   cursor pointer
-  font-size 1em
-  font-weight 500
-  padding 0.35rem 1.5rem 0.35rem 1.25rem
+  font-size 1.1em
+  font-weight 450
+  padding 0.8rem 1.5rem 0.35rem 1.5rem
   width 100%
   box-sizing border-box
   margin 0
@@ -122,7 +122,7 @@ export default defineComponent({
     margin auto
   &.clickable
     &.active
-      font-weight 600
+      font-weight 450
       color $accentColor
       border-left-color $accentColor
     &:hover

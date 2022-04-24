@@ -40,15 +40,16 @@ body
   background-color: rgba(0,0,0,.65);
 
 .sidebar
-  font-size 16px
+  font-size 14px
   background-color var(--background-color)
-  width $sidebarWidth
+  //width $sidebarWidth
+  width 18rem
   position fixed
   z-index 10
   margin 0
   top $navbarHeight
   left 0
-  bottom 0
+  bottom 1rem
   box-sizing border-box
   border-right 1px solid var(--border-color)
   overflow-y auto
@@ -105,15 +106,19 @@ ul, ol
   padding-left 1.2em
 
 strong
-  font-weight 600
+  font-weight 700
+
+em
+  font-weight normal
+  color #696969
 
 h1, h2, h3, h4, h5, h6
   font-weight 500
-  line-height 1.25
+  line-height 1.4
   .content__default:not(.custom) > &
     margin-top (2.1rem - $navbarHeight)
     padding-top $navbarHeight
-    margin-bottom 1rem
+    margin-bottom 1.5rem
     &:first-child
       margin-top -3.5rem
 
@@ -151,6 +156,7 @@ table
   margin 1rem 0
   display: block
   overflow-x: auto
+
 
 tr
   border-top 1px solid var(--border-color)

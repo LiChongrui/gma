@@ -249,7 +249,7 @@ function flatten (items, res) {
     position fixed
     top 18%
     bottom 18%
-    right 2rem
+    right 0rem
     overflow-y scroll
     &::-webkit-scrollbar
       width: 0

@@ -25,7 +25,7 @@ export default defineComponent({
   render (h) {
     return h('ul', {
       class: { 'sub-sidebar-wrapper': true },
-      style: { width: this.headers.length > 0 ? '14rem' : '0' }
+      style: { width: this.headers.length > 0 ? '12rem' : '0' }
     }, [
       ...this.headers.map(header => {
         return h('li', {
@@ -48,7 +48,7 @@ export default defineComponent({
 
 <style lang="stylus" scoped>
 .sub-sidebar-wrapper
-  width 12rem
+  width 16rem !important
   padding-left 0
   list-style none
   font-size 12px

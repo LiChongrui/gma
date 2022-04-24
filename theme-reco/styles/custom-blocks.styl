@@ -1,30 +1,53 @@
 .custom-block
-  .custom-block-title
+  .custom-block-title, .title
     font-weight 600
+    font-size 1.1rem
     margin-bottom -0.4rem
+    padding-top 0.4rem
+
   &.tip, &.warning, &.danger
-    padding .1rem 1.5rem
-    border-left-width .5rem
-    border-left-style solid
+    padding .1rem 1.5rem 0.5rem 2rem
+    border-width 2px
+    border-style solid
     margin 1rem 0
+    border-radius 0.4rem
+
   &.tip
-    background-color var(--code-color)
-    border-color #67cc86
-    .title
-      color #67cc86
-      font-weight bold
+    border-color rgba(97, 106, 229, 1)
+    background-color rgba(97, 106, 229, 0.1)
+    .custom-block-title, .title
+      color rgba(97, 106, 229, 1)
+      &::before {
+        font-family: "Font Awesome 6 Free";
+        content: "\f4ad";
+        padding-right: .5rem;
+      }
+    color darken(rgba(131, 141, 210, 1), 20)
+
   &.warning
-    background-color var(--code-color)
-    border-color #fb9b5f
-    .title
-      color #fb9b5f
-      font-weight bold
+    background-color rgba(230, 162, 60, 0.1)
+    border-color rgba(230, 162, 60, 1)
+    .custom-block-title, .title
+       color rgba(230, 162, 60, 1)   
+       &::before {
+         font-family: "Font Awesome 6 Free";
+         content: "\f06a";
+         padding-right: .5rem;
+       }
+    color darken(rgba(230, 162, 60, 1), 20)
+
   &.danger
-    background-color var(--code-color)
-    border-color #f26d6d
-    .title
-      color #f26d6d
-      font-weight bold
+    border-color rgba(245, 108, 108, 1)
+    background-color rgba(245, 108, 108, .1)
+    .custom-block-title, .title
+       color rgba(245, 108, 108, 1)
+       &::before {
+         font-family: "Font Awesome 6 Free";
+         content: "\f057";
+         padding-right: .5rem;
+       }
+    color darken(rgba(245, 108, 108, 1), 40)
+
   &.right
     color transparentify($textColor, 0.4)
     font-size 0.9rem
@@ -36,6 +59,7 @@
     background-color var(--code-color)
     .title
       font-weight bold
+
   &.details
     display block
     position relative
