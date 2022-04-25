@@ -1,6 +1,11 @@
 
 module.exports = {
-    locales: { '/': { lang: 'zh-CN' }},//,'/en/': { lang: 'en-US', },  },
+    locales: {
+        '/': {
+            lang: 'zh-CN'
+        }
+    },
+    //,'/en/': { lang: 'en-US', },  },
     port: '9000', // 本地端口
     markdown:{
         lineNumbers: true
@@ -12,26 +17,30 @@ module.exports = {
     title: '地理与气象分析库',
     theme: require.resolve('../../theme-reco'),
     themeConfig: {
-        //导航栏logo
-        logo: '/images/Logo-gma.svg',
-        author: '洛',
-        //type: 'blog',
-        authorAvatar: '/images/Luo.jpg',
-        modePicker: true,
-        nav: require('./config/navbar.js'),
-        // 侧边栏
-        sidebar: require('./config/sidebar.js'),
-        sidebarDepth: 4,
+        locales: {
+            '/': {
+                //导航栏logo
+                logo: '/images/Logo-gma.svg',
+                author: '洛',
+                //type: 'blog',
+                authorAvatar: '/images/Luo.jpg',
+                modePicker: true,
+                nav: require('./config/navbar.js'),
+                // 侧边栏
+                sidebar: require('./config/sidebar.js'),
+                sidebarDepth: 4,
 
-        displayAllHeaders: true,
-        subSidebar: 'auto', 
+                displayAllHeaders: true,
+                subSidebar: 'auto',
 
-        //lastUpdated: '最近更新', 
-        smoothScroll: true,
+                //lastUpdated: '最近更新', 
+                smoothScroll: true,
 
-        startYear: 2021,
-        showAccessNumber: true,
-        //codeTheme: 'tomorrow',//'solarizedlight', 'funky','okaidia', 'tomorrow'
+                startYear: 2021,
+                showAccessNumber: true,
+                //codeTheme: 'tomorrow',//'solarizedlight', 'funky','okaidia', 'tomorrow'
+            },
+        },
     },
     plugins: [
          [
