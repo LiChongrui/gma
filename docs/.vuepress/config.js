@@ -22,6 +22,11 @@ module.exports = {
         author: '洛',
         //type: 'blog',
         authorAvatar: '/images/Luo.jpg',
+
+        displayAllHeaders: true,
+        subSidebar: 'auto',
+        sidebarDepth: 4,
+
         locales: {
             '/': {
 
@@ -29,10 +34,6 @@ module.exports = {
                 nav: require('./config/navbar.js'),
                 // 侧边栏
                 sidebar: require('./config/sidebar.js'),
-                sidebarDepth: 4,
-
-                displayAllHeaders: true,
-                subSidebar: 'auto',
 
                 //lastUpdated: '最近更新', 
                 smoothScroll: true,

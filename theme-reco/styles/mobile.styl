@@ -1,6 +1,8 @@
 // @require './config'
 
-$mobileSidebarWidth = $sidebarWidth * 0.82
+$mobileSidebarWidth = $sidebarWidth * 1
+
+//0.82
 
 // narrow desktop / iPad
 @media (max-width: $MQNarrow)
@@ -9,10 +11,11 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
     width $mobileSidebarWidth
   .page, .password-wrapper-in
     margin-left $mobileSidebarWidth
-  .depth-0 > .sidebar-heading::before {
-    content: "";
-    width: 10rem;
-    }
+
+  //.depth-0 > .sidebar-heading::before {
+   // content: "";
+   // width: 10rem;
+   // }
 
 // wide mobile
 @media (max-width: $MQMobile)
