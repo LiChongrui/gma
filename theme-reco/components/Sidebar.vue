@@ -73,5 +73,5 @@ export default defineComponent({
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
         top calc(1rem - 2px)
     & > .sidebar-links
-      padding 1rem 0
+      padding 0rem 0
 </style>

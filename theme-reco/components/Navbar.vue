@@ -97,9 +97,9 @@ $navbar-horizontal-padding = 1.5rem
   line-height $navbarHeight - 1.4rem
   box-shadow var(--box-shadow)
   background var(--background-color)
-  background-color: rgba(255, 255, 255, 0.1);
-  --tw-bg-opacity: 0.1;
-  backdrop-filter blur(10px)
+  background-color rgba(255, 255, 255, 0.1)
+  //--tw-bg-opacity 0.1
+  backdrop-filter saturate(100%) blur(20px)
   a, span, img
     display inline-block
   .logo
