@@ -52,6 +52,7 @@ export default defineComponent({
   padding-left 0
   list-style none
   font-size 12px
+  right 0rem
   li
     padding 0.12rem 0
     cursor pointer

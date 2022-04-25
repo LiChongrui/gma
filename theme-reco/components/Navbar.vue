@@ -99,7 +99,7 @@ $navbar-horizontal-padding = 1.5rem
   background var(--background-color)
   background-color rgba(255, 255, 255, 0.1)
   //--tw-bg-opacity 0.1
-  backdrop-filter saturate(100%) blur(20px)
+  backdrop-filter saturate(180%) blur(15px)
   a, span, img
     display inline-block
   .logo

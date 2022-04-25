@@ -59,7 +59,7 @@ export default defineComponent({
         position: absolute;
         top: -1rem;
         left: 1.5rem;
-        width: 14rem;
+        width: 13rem;
 		height: 0.05rem;
         background: rgba(234,236,239,1);
     }	
