@@ -57,7 +57,7 @@ export default defineComponent({
 	&.depth-0 > .sidebar-heading::before {
 	    content: "";
         position: absolute;
-        top: -0.91rem;
+        top: -0.92rem;
         left: 1.5rem;
         width: 13rem;
 		height: 0.05rem;
@@ -66,8 +66,8 @@ export default defineComponent({
 
 @media (max-width: $MQMobile)
   .sidebar
-    //.personal-info-wrapper
-      //display block
+    .personal-info-wrapper
+      display block
     .nav-links
       display block
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after

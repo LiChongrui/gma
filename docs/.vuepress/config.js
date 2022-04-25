@@ -17,13 +17,14 @@ module.exports = {
     title: '地理与气象分析库',
     theme: require.resolve('../../theme-reco'),
     themeConfig: {
+        //导航栏logo
+        logo: '/images/Logo-gma.svg',
+        author: '洛',
+        //type: 'blog',
+        authorAvatar: '/images/Luo.jpg',
         locales: {
             '/': {
-                //导航栏logo
-                logo: '/images/Logo-gma.svg',
-                author: '洛',
-                //type: 'blog',
-                authorAvatar: '/images/Luo.jpg',
+
                 modePicker: true,
                 nav: require('./config/navbar.js'),
                 // 侧边栏
