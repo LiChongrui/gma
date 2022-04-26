@@ -311,7 +311,7 @@ function flatten (items, res) {
     .side-bar
       display none
     .page-title
-      padding: 0 1rem;
+      padding 0 2.5rem 
     .page-edit
       .edit-link
         margin-bottom .5rem
@@ -319,5 +319,10 @@ function flatten (items, res) {
         font-size .8em
         float none
         text-align left
+
+@media (max-width: $MQMobileNarrow)
+  .page
+    .page-title
+      padding 0 1.5rem
 
 </style>
