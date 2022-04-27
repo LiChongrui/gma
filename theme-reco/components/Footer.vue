@@ -84,6 +84,7 @@ export default defineComponent({
       display block
       margin-left 0
       line-height 2rem
+      text-align center
     }
   }
 }
