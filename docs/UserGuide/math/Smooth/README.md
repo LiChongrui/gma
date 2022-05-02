@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.index.**Smooth**(*Data, WindowSize, Times = 1*)
+## gma.index.**Smooth**(*Data, WindowSize, Times = 1, Axis = None*)
 
 ---
 
@@ -17,6 +17,8 @@ sidebar: false
 &emsp;WindowSize：`int`。平滑窗口大小。必须为正奇数。
 
 &emsp;Times = `int`。平滑次数。默认平滑 1 次。
+
+&emsp;Axis = `int` <Badge text="1.0.8 +"/> 。数据平滑使用的轴。默认（None）数据小于 3 维以第 1 个维度为轴，高于 3 维以倒数第 3 个维度为轴。
 
 ::: warning 注意
 

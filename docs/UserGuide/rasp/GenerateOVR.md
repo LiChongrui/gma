@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**GenerateOVR**(*InFile, Force = False, MINSize = 10*)
+## gma.rasp.**GenerateOVR**(*InFile, Force = False, MINSize = 10, Compress = 'DEFLATE', Resample = 'NEAREST', BlockSize = 128*)
 
 ---
 
@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp;MINSize = `float`。需要创建金字塔的栅格文件的最小文件大小（MB）。小于此大小的栅格文件不会被创建金字塔。默认为 10 MB。
 
-&emsp;Compress = `str`<Badge text="1.0.7 +"/> 。金字塔文件的压缩方式。默认 DEFLATE 压缩。
+&emsp;Compress = `str` <Badge text="1.0.7 +"/> 。金字塔文件的压缩方式。默认 DEFLATE 压缩。
 
 ::: tip 其他可配置的压缩方式
 
@@ -28,7 +28,7 @@ NONE, LZW, PACKBITS, JPEG, CCITTRLE, CCITTFAX3, CCITTFAX4, DEFLATE, LZMA, ZSTD, 
 
 :::
 
-&emsp;Resample = `str`<Badge text="1.0.7 +"/> 。生成金字塔文件的重采样方法。默认 NEAREST 法。
+&emsp;Resample = `str` <Badge text="1.0.7 +"/> 。生成金字塔文件的重采样方法。默认 NEAREST 法。
 
 ::: tip 其他可配置的重采样方法
 
@@ -36,7 +36,7 @@ AVERAGE, AVERAGE_MAGPHASE, RMS, BILINEAR, CUBIC, CUBICSPLINE, GAUSS, LANCZOS, MO
 
 :::
 
-&emsp;BlockSize = `int`<Badge text="1.0.7 +"/> 。生成金字塔过程的块大小。默认为 128。
+&emsp;BlockSize = `int` <Badge text="1.0.7 +"/> 。生成金字塔过程的块大小。默认为 128。
 
 ---
 

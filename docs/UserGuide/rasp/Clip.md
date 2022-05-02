@@ -20,9 +20,9 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;LayerID = `int`<Badge text="1.0.7 +"/> 。输入裁剪矢量的图层 ID。默认第一个图层（0）。
+&emsp;LayerID = `int` <Badge text="1.0.7 +"/> 。输入裁剪矢量的图层 ID。默认第一个图层（0）。
 
-&emsp;FeatureID = `int`<Badge text="1.0.7 +"/> 。掩膜图层的要素 ID。默认掩膜全部要素（None）。
+&emsp;FeatureID = `list` <Badge text="1.0.7 +"/> 。掩膜图层的要素 ID。默认掩膜全部要素（None）。
 
 &emsp;InNoData = `float`。输入栅格的无效值。默认不指定（None）无效值。
 

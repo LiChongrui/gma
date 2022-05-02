@@ -10,10 +10,16 @@ sidebar: false
 
 &emsp;　1、重构指数计算模块 index，增加多维数据的计算支持。
 
-&emsp;　　a、TVDI：修正了一个拟合结果异常的 bug。
-
 &emsp;　2、重构数学计算 math 模块，增加多维数据计算支持。
 
 &emsp;　　a、Smooth：增加轴 Axis 参数，多维数据支持定义计算轴。
 
 &emsp;　　a、Evaluation：增加轴 Axis 参数，多维数据支持定义计算轴。
+
+&emsp;　2、修改 GTiff 格式的默认压缩方式为 DEFLATE，并使用最高级别压缩（12），生成过程分块（TILED）。
+
+<font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
+
+&emsp;　1、TVDI
+
+&emsp;　　修复了一个引起拟合结果异常的问题。

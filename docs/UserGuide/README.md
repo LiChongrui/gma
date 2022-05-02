@@ -59,7 +59,7 @@ from gma import config
 
 ::: tip 提示
 
-1.0.5 版本后，如果 import 出现异常，可参考 [错误解决](/Install.html#错误解决) 中提供的方案进行处理。
+1.0.5 版本后，如果 import 出现异常，可参考 **[错误解决](/Install.html#错误解决)** 中提供的方案进行处理。
 
 :::
 
