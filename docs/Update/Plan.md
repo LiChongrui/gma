@@ -14,9 +14,9 @@ sidebar: false
 
 &emsp;　　a、Smooth：增加轴 Axis 参数，多维数据支持定义计算轴。
 
-&emsp;　　a、Evaluation：增加轴 Axis 参数，多维数据支持定义计算轴。
+&emsp;　　b、Evaluation：增加轴 Axis 参数，多维数据支持定义计算轴。
 
-&emsp;　2、修改 GTiff 格式的默认压缩方式为 DEFLATE，并使用最高级别压缩（12），生成过程分块（TILED）。
+&emsp;　3、修改 GTiff 格式的默认压缩方式为 DEFLATE，并使用最高级别压缩（12），生成过程分块（TILED）。
 
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
 

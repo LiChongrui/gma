@@ -38,4 +38,10 @@ time（时间）, index（索引）, values（序列值），pad（前向填充�
 
 **返回：** Series，DataFrame 返回 `输入类型`；list，tuple，array 返回 `array`。
 
+::: tip 提示
+
+自 <Badge text="1.0.8" vertical='middle'/> 版本开始，默认数据小于 3 维以第 1 个维度为轴，高于 3 维以倒数第 3 个维度为轴进行插补。
+
+::: 
+
 ---

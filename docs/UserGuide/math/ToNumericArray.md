@@ -16,9 +16,14 @@ sidebar: false
 
 **返回：**`array`。
 
+::: tip 提示
+
+自 <Badge text="1.0.8" vertical='middle'/> 版本开始支持多维数据转换。
+
+::: 
+
 
 ---
-
 
 
 
