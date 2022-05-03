@@ -25,3 +25,7 @@ sidebar: false
 &emsp;　1、TVDI
 
 &emsp;　　修复了一个引起拟合结果异常的问题。
+
+&emsp;　2、Reproject
+
+&emsp;　　修复了一个引起重投影结果异常的问题。

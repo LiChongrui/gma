@@ -34,7 +34,7 @@ time（时间）, index（索引）, values（序列值），pad（前向填充�
 
 :::
 
-&emsp;Axis = `int` <Badge text="1.0.8" vertical='middle'/> 。数据插补使用的轴。默认（None）数据小于 3 维以第 1 个维度为轴，高于 3 维以倒数第 3 个维度为轴。
+&emsp;Axis = `int` <Badge text="1.0.8"/> 。数据插补使用的轴。默认（None）数据小于 3 维以第 1 个维度为轴，高于 3 维以倒数第 3 个维度为轴。
 
 &emsp;**kwargs。传递给插值函数的其他参数。例如：Method 为 polynomial 或 spline 需要设置 order（阶数），默认阶数为 3。
 
