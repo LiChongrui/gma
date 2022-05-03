@@ -12,11 +12,13 @@ sidebar: false
 
 &emsp;　2、重构数学计算 math 模块，增加多维数据计算支持。
 
-&emsp;　　a、Smooth：增加轴 Axis 参数，多维数据支持定义计算轴。
-
-&emsp;　　b、Evaluation：增加轴 Axis 参数，多维数据支持定义计算轴。
+&emsp;　　a、Smooth、Evaluation、FillNoData：增加轴 Axis 参数，多维数据支持定义计算轴。
 
 &emsp;　3、修改 GTiff 格式的默认压缩方式为 DEFLATE，并使用最高级别压缩（12），生成过程分块（TILED）。
+
+&emsp;　4、MultiThreading
+
+&emsp;　　添加 Process 参数，控制多线程进度条显示。
 
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
 

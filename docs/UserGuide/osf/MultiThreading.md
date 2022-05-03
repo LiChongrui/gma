@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.osf.**MultiThreading**(*Function, MTParameters, THNumber = 'ALL_CPUS', \*args, \*\*kwargs*)<Badge text="1.0.3 +"/>
+## gma.osf.**MultiThreading**(*Function, MTParameters, THNumber = 'ALL_CPUS', Process = True, \*args, \*\*kwargs*)<Badge text="1.0.3 +"/>
 
 ---
 
@@ -19,6 +19,8 @@ sidebar: false
 **可选参数：** 
 
 &emsp;THNumber =  `int||ALL_CPUS`。线程数，默认是所有 逻辑 CPU 核心数（ALL_CPUS）。
+
+&emsp;Process = `bool` <Badge text="1.0.8 +"/> 。是否显示多线程进度条。默认显示（True）。
 
 &emsp;*args：`Function 的固定参数`。传递给 Function 的不变参数。从 Function 的第一个开始固定。
 

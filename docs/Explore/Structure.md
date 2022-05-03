@@ -107,18 +107,22 @@ date: 2021-10-29
 
 ::: theorem 
 
-- **algorithm** *&emsp;&emsp; &emsp;&emsp; == **基础算法***
+- **algorithm** *&emsp;&emsp; &emsp;&emsp; == **基础算法（内部调用）***
+	* calindex *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 指数运算，index 调用的遥感、气象指数运算相关算法*
 	* dataio *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 数据读写操作*
 	* dem *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== DEM 分析，raa 调用的 DEM 算法*
+	* mathematics *&emsp;&emsp; &emsp;&emsp; ==== 数学运算，math 调用的栅格处理**算法*** 
 	* raster *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格处理， rasp 调用的栅格处理**算法*** 
 	* vector *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 矢量处理，vesp 调用的矢量处理**算法***
+- **configure** *&emsp;&emsp; &emsp;&emsp; ==  **配置数据***
 - **relation** *&emsp;&emsp; &emsp;&emsp; ==  **关联参数和函数***
+	* [**constants**](Default.html#常量单位)  *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 常量名称、值或与国际单位的代换值*
+	* driver *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 驱动格式支持信息*
 	* initialize *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== **初始化**输入参数，错误检查*
 	* [**key**](Default.html#默认参数) *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格 / 矢量 处理的内置参数，例如**压缩**，**超大 TIFF 支持**等*
-	* [**constants**](Default.html#常量单位) &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 常量名称、值或与国际单位的代换值
 - [**config**](/UserGuide/Function.html#高级配置) *&emsp;&emsp; &emsp;&emsp; == **高级配置**参数*
-- [**index**](/UserGuide/Function.html#指数运算) *&emsp;&emsp; &emsp;&emsp; == 遥感、气象的**指数运算**的相关算法*
-- [**math**](/UserGuide/Function.html#数学运算) *&emsp;&emsp; &emsp;&emsp; == **数学运算**相关算法*
+- [**index**](/UserGuide/Function.html#指数运算) *&emsp;&emsp; &emsp;&emsp; == **指数运算**函数包*
+- [**math**](/UserGuide/Function.html#数学运算) *&emsp;&emsp; &emsp;&emsp; == **数学运算**函数包*
 - [**osf**](/UserGuide/Function.html#系统交互) *&emsp;&emsp;&emsp; &emsp;&emsp; == **系统交互**操作*
 - [**smc**](/UserGuide/Function.html#空间杂项) *&emsp;&emsp;&emsp; &emsp;&emsp; == **空间杂项**计算*
 - [**rasp**](/UserGuide/Function.html#栅格处理) *&emsp;&emsp; &emsp;&emsp; == **栅格处理**函数包*
