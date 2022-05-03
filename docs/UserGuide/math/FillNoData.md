@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.index.**FillNoData**(*Data, FillValue = None, Method = 'linear',  Axis = None,  \*\*kwargs*)
+## gma.index.**FillNoData**(*Data, FillValue = None, Method = 'linear', Axis = None, \*\*kwargs*)
 
 ---
 
