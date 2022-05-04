@@ -14,6 +14,8 @@ sidebar: false
 
 &emsp;　　a、Smooth、Evaluation、FillNoData：增加轴 Axis 参数，多维数据支持定义计算轴。
 
+&emsp;　　b、FillNoData：移除了 time 插值方法。
+
 &emsp;　3、修改 GTiff 格式的默认压缩方式为 DEFLATE，并使用最高级别压缩（12），生成过程分块（TILED）。
 
 &emsp;　4、MultiThreading
