@@ -57,11 +57,11 @@ gma.index.PM_ET0(Pres, Wind, MaxT, MinT, Rh, Shour, Lat, Day, Ele)
 *序列（1 维）*
 
 ```python
-Pres =[1034.7,  991.8,  994.8, 1014.7]
+Pres =[1034.7, 991.8, 994.8, 1014.7]
 Wind = [3.4, 2.8, 3.1, 2.9]
-MaxT = [5.5, 9. , 5.9, 7.6]
-MinT = [-1.3, -1.4,  0.8, -0.1]
-Rh = [18.8, 18.4,  7. , 19.9]
+MaxT = [5.5, 9, 5.9, 7.6]
+MinT = [-1.3, -1.4, 0.8, -0.1]
+Rh = [18.8, 18.4, 7, 19.9]
 Shour = [5.2, 4.6, 4.2, 6.8]
 Lat = [37.1, 37.6, 35.9, 36.5]
 Day = [357, 348, 352, 358]
@@ -106,7 +106,7 @@ print('组合1', gma.index.PM_ET0(Pres, Wind, MaxT, MinT, Rh, Shour, Lat, Day, E
 
 *更多维度*
 ```python
-Pres = [[1026.4, 1037.7,  987.1, 1031.1],
+Pres = [[1026.4, 1037.7, 987.1, 1031.1],
         [1006.1, 1013.2, 1016.9, 1046.4],
         [1046. , 1009.3, 1004.1, 1022.9]]
 Wind = [[3.2, 5.8, 5.2, 5.9],
@@ -157,12 +157,12 @@ EleSet = gma.Open('ELE_China_GEBCO_2020.tif')
 # 纬度
 LatSet = gma.Open('LAT_China_GEBCO_2020.tif')
 
-# 提取数据集的仿射变换和坐标系
+# 提取数据集的仿射变换、坐标系和无数据值
 Geot = PRSSet.GeoTransform
 Proj = PRSSet.Projection
 NoData = PRSSet.NoData
 
-# 读取数到数组
+# 读取数据到数组
 Pres, Wind, MaxT = PRSSet.ToArray(), WINSet.ToArray(), TMAXSet.ToArray(),
 MinT, Rh, Shour = TMINSet.ToArray(), RHUSet.ToArray(), SSDSet.ToArray()
 Ele = EleSet.ToArray()
