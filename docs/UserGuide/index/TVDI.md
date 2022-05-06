@@ -30,7 +30,11 @@ sidebar: false
 
 &emsp; OutNoData = `float` 。TVDI结果中的无效值。默认值为 -1。
 
-<Boxx type='warning' title='注意' content='VINoData， LSTNoData 的区域在输出栅格中都将被改为 OutNoData。'/>
+::: warning 注意
+
+VINoData， LSTNoData 的区域在输出栅格中都将被改为 OutNoData。
+
+:::
 
 **返回：** TVDI（`array`），参与拟合的VI（`array`），湿边LST（`array`）， 干边LST（`array`），湿边方程[系数，常数]（`list`），干边方程[系数，常数]（`list`）。
 
