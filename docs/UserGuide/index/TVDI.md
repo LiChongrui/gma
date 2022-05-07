@@ -96,7 +96,7 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif',
 ```
 > TVDI 计算结果：
 
-![](/index/TVDI.webp)
+![](/index/TVDI.png)
 
 > TVDI 干湿边拟合：
 
