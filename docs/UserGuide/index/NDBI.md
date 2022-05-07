@@ -78,28 +78,5 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\SENT_LY_NDBI_20220305.tif',
                      DataType = 'Float32')
 ```
 > NDBI 计算结果：
-```python
-import matplotlib.pyplot as plt
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-# 配置参数
-PAR = {'font.sans-serif': 'Times New Roman',
-       'axes.unicode_minus': False,
-      }
-plt.rcParams.update(PAR)
 
-# 获取色带
-CMap = plt.get_cmap('RdYlGn_r')
-
-plt.figure(figsize = (8, 5), dpi = 200)
-ax = plt.subplot()
-ax.set_xticks([])
-ax.set_yticks([])
-
-# 制图
-im = ax.imshow(NDBI, cmap = CMap)
-divider = make_axes_locatable(ax)
-cax = divider.append_axes("right", size = "5%", pad = 0.2)
-plt.colorbar(im, cax = cax)
-plt.show()
-```
 ![](/index/NDBI.webp)
