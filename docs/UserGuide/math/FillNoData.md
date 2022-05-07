@@ -88,7 +88,7 @@ plt.grid(True, linestyle = (0,(6,6)), linewidth = 0.4)
 plt.legend(ncol = 3, frameon = False)
 plt.show()
 ```
-![](/index/FillNoData.svg)
+![](/math/FillNoData.svg)
 
 *基于栅格（多维）（10 波段哨兵2 L2A/B 计算的 NDVI 结果）*
 
