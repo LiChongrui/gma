@@ -41,3 +41,104 @@ sidebar: false
 **返回：** Series，DataFrame 返回 `输入类型`；list，tuple，array 返回 `array`。
 
 ---
+
+**示例：**
+```python
+import gma
+```
+
+*序列（1 维）*
+
+```python
+Data = [None, 0.16359164, 0.17469311, 'NULL', 0.22857143, 0.32706435, 10, 0.10225949]
+# 未定义需要被填充的值则仅插值序列中的非数据值以及无穷值
+gma.math.FillNoData(Data)
+```
+> \>>> array([0.16359164, 0.16359164, 0.17469311, 0.20163227, 0.22857143, 0.32706435, 10.0, 0.10225949])
+
+::: tip 提示
+
+不能处理边缘缺失值的插补方法（例如 linear 等）函数默认采用最邻近法填充！如有特定需求，请在插补前自行处理！
+
+:::
+
+```python
+# 定义了需要被填充的值后此值也会被填充。不存在的值则自动忽略
+gma.math.FillNoData(Data, FillValue = 10)
+```
+
+> \>>> array([0.16359164, 0.16359164, 0.17469311, 0.20163227, 0.22857143, 0.32706435, 0.21466192, 0.10225949])
+
+*不同插补方法插值结果对比*
+
+```python
+import matplotlib.pyplot as plt
+# 配置参数
+PAR = {'font.sans-serif': 'Times New Roman',
+       'axes.unicode_minus': False
+      }
+plt.rcParams.update(PAR)
+plt.figure(figsize = (8, 4.5), dpi = 300)
+# 所有支持的插补方法
+Metheds = gma.relation.key.FillingMethod
+for m in Metheds:
+    RS = gma.math.FillNoData(Data, FillValue = 10, Method = m)
+    plt.plot(RS, label = m)
+plt.grid(True, linestyle = (0,(6,6)), linewidth = 0.4)
+plt.legend(ncol = 3, frameon = False)
+plt.show()
+```
+![](/index/FillNoData.svg)
+
+*基于栅格（多维）（10 波段哨兵2 L2A/B 计算的 NDVI 结果）*
+
+```python
+NDVISet = gma.Open('SENT_LY_NDVI_20220303-20220417.tif')
+
+# 提取数据集的仿射变换和坐标系
+Geot = NDVISet.GeoTransform
+Proj = NDVISet.Projection
+## print(NDVISet.NoData) >>> None # 栅格文件未配置 NoData 值
+NDVI = NDVISet.ToArray()
+## print(NDVI.max()) >>> nan  # 数据中存在无数据值 nan，也可根据最大值、最小值确定异常值。
+
+# 按照第一个维度，也就是波段（相当于时间序列）进行 linear 插补。
+# 无数据值为 nan 且栅格未配置 NoData 值，插补时不在需要配置 FillValue 参数；否则可配置为栅格 NoData 值或自行指定 FillValue 值。
+NDVIFill = gma.math.FillNoData(NDVI, Axis = 0)
+
+## NDVIFill.min() >>> -1.0
+## NDVIFill.max() >>> 1.0 # 确定插补完数据不含异常值
+
+# 将结果保存为 GTiff 格式
+gma.rasp.WriteRaster(r'..\0.1 预处理\SENT_LY_NDVI_FillNoData_20220303-20220417.tif', 
+                     NDVIFill, 
+                     Projection = Proj, 
+                     Transform = Geot,
+                     DataType = 'Float32')
+```
+> \>>> 绘制其中的一个波段
+
+```python
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+# 配置参数
+PAR = {'font.sans-serif': 'Times New Roman',
+       'axes.unicode_minus': False,
+      }
+plt.rcParams.update(PAR)
+
+# 获取色带
+CMap = plt.get_cmap('RdYlGn_r')
+
+plt.figure(figsize = (8, 5), dpi = 200)
+ax = plt.subplot()
+ax.set_xticks([])
+ax.set_yticks([])
+
+# 制图
+im = ax.imshow(NDVIFill[7], cmap = CMap)
+divider = make_axes_locatable(ax)
+cax = divider.append_axes("right", size="5%", pad = 0.2)
+plt.colorbar(im, cax = cax)
+```
+![](/math/FillNoData.webp)

@@ -172,7 +172,7 @@ Day = 350
 PMET0 = gma.index.PM_ET0(Pres, Wind, MaxT, MinT, Rh, Shour, Lat, Day, Ele)
 
 # 将结果保存为 GTiff 格式
-gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20220305.tif', 
+gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif', 
                      PMET0, 
                      Projection = Proj, 
                      Transform = Geot,
