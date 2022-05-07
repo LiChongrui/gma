@@ -138,7 +138,7 @@ ax.set_yticks([])
 # 制图
 im = ax.imshow(NDVIFill[7], cmap = CMap)
 divider = make_axes_locatable(ax)
-cax = divider.append_axes("right", size="5%", pad = 0.2)
+cax = divider.append_axes("right", size = "5%", pad = 0.2)
 plt.colorbar(im, cax = cax)
 ```
 ![](/math/FillNoData.webp)

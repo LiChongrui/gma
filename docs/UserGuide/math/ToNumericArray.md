@@ -25,5 +25,27 @@ sidebar: false
 
 ---
 
+**示例：**
+```python
+import gma
+```
+*单个值（0 维）*
+
+```python
+Data = None
+gma.math.ToNumericArray(Data)
+```
+> \>>> array(nan)
+
+*更多维度（1 维及以上）*
+
+```python
+Data = [1,2,3,4,'sad',None,2,34]
+gma.math.ToNumericArray(Data)
+```
+> \>>> array([ 1.,  2.,  3.,  4., nan, nan,  2., 34.])
+
+
+
 
 
