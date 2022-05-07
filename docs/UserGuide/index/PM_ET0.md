@@ -179,6 +179,6 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20220305.tif',
                      DataType = 'Float32',
                      NoData = NoData)
 ```
-> PM_ET0 计算结果：
+> 最高气温和PM_ET0 计算结果对比：
 
-![](/index/PM_ET0.webp)
+![](/index/PMET0.webp)

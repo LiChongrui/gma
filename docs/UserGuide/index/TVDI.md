@@ -116,7 +116,7 @@ DryP = TVDI[5]
 PolyfitD = TVDI[1] * DryP[0] + DryP[1]
 plt.plot(TVDI[1], PolyfitD, c = 'red')
 DryR2 = gma.math.Evaluation(PolyfitD, TVDI[3]).R2()
-DryInfo = f'Dry: y = {"{:4f}".format(DryP[0])} * VI + {"{:4f}".format(DryP[1])}\n{" " * 8}$R^2$ = {DryR2}'
+DryInfo = f'Dry: y = {"{:.4f}".format(DryP[0])} * VI + {"{:.4f}".format(DryP[1])}\n{" " * 8}$R^2$ = {DryR2}'
 plt.text(0.58, 305, DryInfo, c = 'red', linespacing = 1.5)
 
 # 湿边散点图、拟合图和方程
@@ -125,7 +125,7 @@ WetP = TVDI[4]
 PolyfitW = TVDI[1] * WetP[0] + WetP[1]
 plt.plot(TVDI[1], PolyfitW, c = 'blue')
 WetR2 = gma.math.Evaluation(PolyfitW, TVDI[2]).R2()
-WetInfo = f'Wet: y = {"{:4f}".format(WetP[0])} * VI + {"{:4f}".format(WetP[1])}\n{" " * 8}$R^2$ = {WetR2}'
+WetInfo = f'Wet: y = {"{:.4f}".format(WetP[0])} * VI + {"{:.4f}".format(WetP[1])}\n{" " * 8}$R^2$ = {WetR2}'
 plt.text(0.58, 291, WetInfo, c = 'blue', linespacing = 1.5)
 
 # 其他配置
@@ -136,6 +136,5 @@ plt.ylabel('LST(K)', loc = 'top', fontsize = 12)
 plt.show()
 ```
 
+![](/index/TVDIWDF.svg)
 
-
-![](/index/TVDIWDF.webp)
