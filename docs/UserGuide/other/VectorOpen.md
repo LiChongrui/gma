@@ -26,7 +26,7 @@ sidebar: false
 
 &emsp;ID：`int`。矢量图层的编号。从 0 开始。
 
-**返回：**[Layer](other.html#getlayer-layer)。
+**返回：**[Layer](Layer.html)。
 
 ---
 

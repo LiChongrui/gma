@@ -18,7 +18,7 @@ sidebar: false
 
 &emsp;Mode = `int`。打开方式，默认为只读（0），也可为 1（可写模式）。参数设置错误则返回只读模式。
 
-**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [RasterOpen](other.html#open-rasteropen)。矢量数据：返回 [VectorOpen](other.html#open-vectoropen)。
+**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [RasterOpen](RasterOpen.html)。矢量数据：返回 [VectorOpen](VectorOpen.html)。
 
 ::: tip 提示
 
