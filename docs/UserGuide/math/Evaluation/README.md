@@ -25,3 +25,15 @@ sidebar: false
 ::: 
 
 ---
+
+**示例：**
+```python
+import gma
+MEA = [0.16359164, 0.16359164, 0.17469311, 0.20163227]
+SIM = [0.22857143, 0.32706435, 0.21466192, 0.10225949]
+EVA = gma.math.Evaluation(MEA, SIM)
+## 查看类型所有的 方法/属性
+print([M for M in dir(EVA) if '_' not in M])
+```
+> \>>> ['CORR', 'D', 'MaxAE', 'Methods', 'NRMSE', 'R2', 'RMSE', 'Select']
+

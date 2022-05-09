@@ -13,3 +13,17 @@ sidebar: false
 **返回：**`list`。
 
 --- 
+
+**示例：**
+
+```python
+import gma
+gma.math.Evaluation.Methods()
+```
+> \>>> ['CORR', 'D', 'MaxAE', 'NRMSE', 'R2', 'RMSE']
+
+::: warning 注意
+
+使用此方法不需要初始化类！
+
+:::
