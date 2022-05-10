@@ -24,8 +24,7 @@ sidebar: false
 
 **返回：**`DatetimeIndex`。
 
----
-::: tip pandas 中格式化日期
+::: tip 格式化日期
 |格式|说明|格式|说明|
 |:---|:---|:---|:---|
 |%y|两位数的年份表示（00-99）|%Y|四位数的年份表示（000-9999）|
@@ -41,7 +40,14 @@ sidebar: false
 
 :::
 
+---
 
-
+**示例：**
+```python
+import gma
+# 按照 100 天的间隔生成日期序列
+gma.osf.DateSeries('20200101', '20210101', DateDelta = '100D', Format = '%Y%m%d')
+```
+> \>>> DatetimeIndex(['2020-01-01', '2020-04-10', '2020-07-19', '2020-10-27'], dtype='datetime64[ns]', freq='100D')
 
 
