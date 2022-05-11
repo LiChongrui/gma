@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.Fusion.**Pansharpen**(*InPanchromatic, InMultispectral, OutFile， ResampleMethod = None, SpatAdjust = None, Bands = None, NumThreads = None, InNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Fusion.**Pansharpen**(*InPanchromatic, InMultispectral, OutFile, ResampleMethod = None, SpatAdjust = None, Bands = None, NumThreads = None, InNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
