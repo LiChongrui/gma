@@ -41,3 +41,67 @@ sidebar: false
 **返回：**`list`。满足条件的所有【文件夹和文件路径】集合。重复的路径只会保留一个。
 
 ---
+
+**示例：（以 gma 库内文件为例，文件详情见 [文件组织](/Explore/Structure.html#文件组织)）**
+```python
+import gma
+# 确定 gma 库的位置
+Path = gma.__path__[0]
+# gma 内关联参数和函数 relation 路径
+PathA = f'{Path}\\relation'
+```
+
+*获取所有文件*
+```python
+gma.osf.GetPath(PathA)
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\constants.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\driver.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\initialize.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\key.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_init\_\_.py',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_pycache\_\_\\_\_init__.cpython-38.pyc']
+
+*获取指定扩展名的文件*
+```python
+gma.osf.GetPath(PathA, EXT = '.pyd')
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\constants.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\driver.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\initialize.pyd',<br>
+ 　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\key.pyd']
+
+*获取指定扩展名且包含特定字符的文件*
+```python
+gma.osf.GetPath(PathA, EXT = '.pyd', Include = 'init')
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\initialize.pyd']
+
+*获取指定扩展名且排除特定字符的文件*
+```python
+gma.osf.GetPath(PathA, EXT = '.pyd', Exclude = 'init')
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\constants.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\driver.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\key.pyd']
+
+*仅获取文件夹（含输入路径）*
+```python
+gma.osf.GetPath(PathA, Search = 'DIR')
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_pycache\_\_\\']
+
+*获取文件和文件夹*
+```python
+gma.osf.GetPath(PathA, Search = 'ALL')
+```
+> \>>> ['D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\constants.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\driver.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\initialize.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\key.pyd',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_init\_\_.py',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_pycache\_\_',<br>
+　　　'D:\\github\\gma-code\\gma-pyd\\dist\\gma\\relation\\\_\_pycache\_\_\\\_\_init\_\_.cpython-38.pyc']
+
+
