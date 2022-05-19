@@ -29,3 +29,56 @@ sidebar: false
 **返回：** `list`。每个参数带入 Function 执行后的返回值列表。与 MTParameters 的顺序一致。
 
 ---
+
+**示例：**
+```python
+import gma
+```
+
+*为栅格数据批量构建 .ovr 金字塔*
+```python
+# 获取所有栅格数据路径
+InFiles = gma.osf.GetPath('.')
+
+# 栅格金字塔函数
+GenerateOVR = gma.rasp.GenerateOVR
+
+# 批量生成
+gma.osf.MultiThreading(GenerateOVR, InFiles)
+
+# 查看生成结果
+OVRFiles = gma.osf.GetPath('.', EXT = '.ovr')
+print(OVRFiles)
+```
+> \>>> ['.\\PRE_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\PRS_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\RHU_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\SSD_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\TMAX_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\TMIN_China_ANUSPLIN_20201215.tif.ovr',<br>
+ 　　　'.\\WIN_China_ANUSPLIN_20201215.tif.ovr']
+
+* *控制线程数量*
+```python
+import datetime as dt
+T0 = dt.datetime.now()
+gma.osf.MultiThreading(GenerateOVR, InFiles, THNumber = 2)
+print('2 线程：', dt.datetime.now() - T0)
+T1 = dt.datetime.now()
+gma.osf.MultiThreading(GenerateOVR, InFiles, THNumber = 7)
+print('7 线程：', dt.datetime.now() - T1)
+```
+> \>>> 2 线程： 0:00:06.622308<br>
+ \>>> 7 线程： 0:00:04.191480
+
+* *为 `GenerateOVR ` 传入可选参数*
+```python
+CM0 = gma.Open(OVRFiles[0]).Info['metadata']['IMAGE_STRUCTURE']['COMPRESSION']
+print('默认压缩方式：', CM0)
+# 修改金字塔文件的压缩方式
+gma.osf.MultiThreading(GenerateOVR, InFiles, Compress = 'LZMA')
+CM1 = gma.Open(OVRFiles[0]).Info['metadata']['IMAGE_STRUCTURE']['COMPRESSION']
+print('自定义压缩方式：', CM1)
+```
+> \>>> 默认压缩方式： DEFLATE<br>
+ \>>> 自定义压缩方式： LZMA

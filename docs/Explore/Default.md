@@ -32,6 +32,7 @@ date: 2021-10-29
 | float | 浮点数 |                  | -1、1.0、6       | 主要有 float16（半精度）、float32 和 float64（双精度） |
 | DataFrame | 数据帧 | pandas.DataFrame | 参考 dict        | pandas 中高效处理二维数据的组织形式 |
 | Series | 数据系列 | pandas.Series | 参考 dict | pandas 中高效处理一维数据的组织形式 |
+| DatetimeIndex | 日期时间索引 | pandas.DatetimeIndex | 参考 list | pandas 中高效处理一维日期时间序列的组织形式 |
 | bool | 布尔型 |  | True、False |  |
 | set | 集合 | { } | {1, 2, 3} | 交、并、差、补等集合运算的常用形式 |
 | def | 函数 | | 参考 Python 函数定义 |  |
