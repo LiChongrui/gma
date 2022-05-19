@@ -28,3 +28,14 @@ Points = [(45.2, 130.1), (40.2, 131.5)]
 **返回：**`list`。
 
 ---
+
+
+**示例：**
+```python
+import gma
+Points = [(45.2, 130.1), (40.2, 131.5)]
+# 将输入点坐标（WGS 84 坐标系）转到 EPSG:32650（WGS 84 / UTM zone 50N）下的坐标
+gma.smc.TRANCoordinate(Points, InProjection = 'WGS84', OutProjection = 'EPSG:32650')
+```
+> \>>> [(1528762.0778835732, 5089353.9231655225), (1736214.6487505916, 4552113.044639503)]
+

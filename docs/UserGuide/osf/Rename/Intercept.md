@@ -24,3 +24,11 @@ sidebar: false
 
 ---
 
+**示例：**
+```python
+import gma
+SM = gma.osf.Rename('SENT_RS_LY_20220305.zip')
+# 从第 0 个字符开始截取 4 个字符做为新名
+SM.Intercept(0, 4)
+```
+> \>>> SENT.zip

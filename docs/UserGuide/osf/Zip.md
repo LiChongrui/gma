@@ -30,3 +30,10 @@ a：如果目标 .zip 存在，则目标文件内容会被更新。
 
 ---
 
+
+**示例：**
+```python
+# 压缩 SENT2_RS 文件夹及文件夹下所有文件压缩至至 SENT_RS_LY_20220305.zip
+gma.osf.Zip('SENT2_RS', 'SENT_RS_LY_20220305.zip')
+```
+

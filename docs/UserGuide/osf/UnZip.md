@@ -18,3 +18,8 @@ sidebar: false
 
 ---
 
+**示例：**
+```python
+# 压缩 SENT_RS_LY_20220305.zip 文件至 SENT2_RS_UNZip 文件夹
+gma.osf.UnZip('SENT_RS_LY_20220305.zip', 'SENT2_RS_UNZip')
+```

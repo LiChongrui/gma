@@ -20,4 +20,11 @@ sidebar: false
 
 ---
 
-
+**示例：**
+```python
+import gma
+SM = gma.osf.Rename('SENT_RS_LY_20220305.zip')
+## 查看类型所有的 方法/属性
+print([M for M in dir(SM) if '_' not in M])
+```
+> \>>> ['Intercept', 'Modify', 'Replace']

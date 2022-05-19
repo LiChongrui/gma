@@ -18,4 +18,11 @@ sidebar: false
 
 ---
 
-
+**示例：**
+```python
+import gma
+SM = gma.osf.Rename('SENT_RS_LY_20220305.zip')
+# 替换文件名中的 SENT 为 SENT2
+SM.Replace('SENT', 'SENT2')
+```
+> \>>> SENT.zip
