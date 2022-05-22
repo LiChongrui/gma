@@ -84,20 +84,11 @@ gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本 (3).tif",
 
 ```python
 import cartopy.crs as ccrs
-import cartopy.feature as cfeature
-from cartopy.io.shapereader import Reader
-
-import matplotlib.patches as ptc
 import matplotlib.pyplot as plt
 import matplotlib.colors as cor
-from functools import partial
-
 import numpy as np
-from scipy import ndimage
-from osgeo import osr
 ## 此模块为地理制图图例、比例尺等的尝鲜模块。在下一版 gma 中会作为非必要的扩展模块合入！！
 import gma.extend.mapplottools as mpt
-
 PAR = {'font.sans-serif': 'Times New Roman',
        'axes.unicode_minus': False,
       }
@@ -181,7 +172,7 @@ for i in range(4):
 
     # 2.绘制数据图层
     ## 分块绘制（节约内存）
-    for Block in tqdm.tqdm(Blocks):
+    for Block in Blocks:
         # 数据都一样，读取一个文件的数据即可
         DrawData = DataSet.ToArray(*Block, BlockSize, BlockSize)
         ExtentBlock = [GEOT[0] + Block[1] * GEOT[1],  GEOT[0] + (DrawData.shape[1] + Block[1]) * GEOT[1], 
