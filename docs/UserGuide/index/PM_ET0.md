@@ -179,6 +179,117 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif',
                      DataType = 'Float32',
                      NoData = NoData)
 ```
-> 最高气温和PM_ET0 计算结果对比：
+> 对最高气温和PM_ET0 计算结果进行绘制
 
 ![](/index/PMET0.webp)
+
+> 绘图代码参考
+
+```python
+import cartopy.crs as ccrs
+import cartopy.feature as cft
+import matplotlib.pyplot as plt
+import matplotlib.colors as cor
+import numpy as np
+import gma
+
+## 以下模块为尝鲜模块。在 gma 1.0.9 中作为非必要的扩展模块合入！！
+import gma.extend.mapplottools as mpt
+import gma.extend.arrayenhancement as aec
+
+PAR = {'font.sans-serif': 'Times New Roman',
+       'axes.unicode_minus': False,
+      }
+plt.rcParams.update(PAR)
+
+# 需要绘制的两个文件
+InFiles = [r"TMAX_China_ANUSPLIN_20201215.tif", r"PMET0_China_ANUSPLIN_20201215.tif"]
+
+DataTypeNames = ['最高气温', '作物参考蒸散量']
+LegendLable = ['TMax(℃)', 'ET0(mm)']
+fig = plt.figure(figsize = (10, 10), dpi = 300)
+
+# 定义一个标准中国区 ALBERS 投影
+Alberts_China = ccrs.AlbersEqualArea(central_longitude = 105, standard_parallels = (25.0, 47.0))  
+
+for i in range(len(InFiles)):
+    ax = plt.subplot(1, 2, i + 1, projection = Alberts_China) 
+    
+    DataSet = gma.Open(InFiles[i])
+    DrawData = DataSet.ToArray()
+    DrawData[DrawData == DataSet.NoData] = np.nan
+    # 由于数据有过大过小值，这里做一个百分比截断拉伸
+    DataL = DrawData[np.isnan(DrawData) == 0]
+    DrawData = aec.PercentageCutoff(DrawData, MaxLabel = np.percentile(DataL, 95), MinLabel = np.percentile(DataL, 5))
+    ############################################ 配置范围
+    GEOT = DataSet.GeoTransform
+    Columns = DataSet.Columns
+    Rows = DataSet.Rows
+    # 数据边界
+    ExtentData = [GEOT[0], GEOT[0] + GEOT[1] * Columns, GEOT[3] + GEOT[-1] * Rows, GEOT[3]]
+    # 绘图边界（以数据边界为基础确定）
+    EL, ER, EB, ET = -0.1,-0.1,0.1, 0.01  # 左右、下上边界的扩展比例
+    ExtentPLT = [ExtentData[0] - (ExtentData[1] - ExtentData[0]) * EL, 
+                 ExtentData[1] + (ExtentData[1] - ExtentData[0]) * ER, 
+                 ExtentData[2] - (ExtentData[3] - ExtentData[2]) * EB, 
+                 ExtentData[3] + (ExtentData[3] - ExtentData[2]) * ET]    
+    
+    WKTCRS = DataSet.Projection
+    
+    ## 0.1 控制数据显示范围
+    DataCRS = mpt.GetCRS(WKTCRS)
+    ax.set_extent(ExtentPLT, crs = DataCRS)
+
+    # 1.绘制底图图层
+    ## 1.1 添加行政边界
+    mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.1)
+    mpt.AddGeometries(ax, r"Region\VTD_PG_China.shp", EdgeColor = 'black', LineWidth = 0.2)
+    mpt.AddGeometries(ax, r"Region\南海诸岛九段线.shp", EdgeColor = 'black', LineWidth = 0.3)
+
+    # 1.3 添加国家 / 海洋背景 / 大型湖泊
+    mpt.AddGeometries(ax, r"World\VTD_PG_World_Country.shp", EdgeColor = 'gray', LineWidth = 0.1, 
+                      FaceColor = 'white', Zorder = 0)
+    ax.set_facecolor('#BEE8FF')
+    ax.add_feature(cft.LAKES.with_scale('110m'), color = '#BEE8FF')
+    
+    # 2.绘制数据图层
+    im = ax.imshow(DrawData, transform = DataCRS, cmap = plt.get_cmap('jet'), extent = ExtentData, zorder = 1,
+                   interpolation = 'none')        
+         
+    # 3.为绘制区域增加经纬网
+    gl = ax.gridlines(draw_labels = True, dms = False, x_inline = False, y_inline = False, 
+                      linestyle = (0, (10, 10)), 
+                      linewidth = 0.2,
+                      color = 'Gray',
+                      rotate_labels = False,
+                      xlabel_style = {'fontsize': 8},
+                      ylabel_style = {'fontsize': 8})
+    if i % 2 == 0:
+        gl.right_labels = False
+    else:
+        gl.left_labels = False
+        
+    ax.set_title(DataTypeNames[i], fontsize = 10, y = 0.92, fontdict = {'family':'SimSun'})
+    
+    # n.其他优化设置
+    # n.1 添加指北针
+    mpt.AddCompass(ax, LOC = (0.15, 0.9), SCA = 0.04, FontSize = 10)
+    # n.2 添加比例尺
+    mpt.AddScaleBar(ax, LOC = (0.4, 0.08), SCA = 0.12, FontSize = 6, UnitPad = 0.2, BarWidth = 0.6)
+    ## n.3 添加并修饰图例
+    leg = fig.colorbar(im, 
+                       location = 'right', # 位置
+                       orientation = 'vertical', # 图例方向
+                       pad = -0.3, # 边距
+                       ticks = [np.nanmin(DrawData), 0, np.nanmax(DrawData)],
+                       shrink = 0.06, # 大小缩放
+                       aspect = 2, # 长宽比
+                       anchor = (-8, 0.38), # 位置
+                      )
+    leg.outline.set(edgecolor = 'black',linewidth = 0.1)
+    leg.ax.set_title(LegendLable[i], fontsize = 8, loc = 'left')
+    leg.ax.tick_params(which = 'major', direction = 'out', labelsize = 6, length = 3, color = 'black', width = 0.1)
+
+plt.show()
+```
+

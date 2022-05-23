@@ -58,7 +58,7 @@ ColorTable = {10:(0,112,255,255),
               90:(190,210,255,255),
               95:(109,150,178,255),
               100:(223,198,142,255)}
-## 将定义的色彩映射表更新到文件
+## 将定义的色彩映射表更新到 副本
 gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本.tif",
                        ColorTable = ColorTable)
 ```
@@ -66,7 +66,7 @@ gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本.tif",
 *根据模板栅格更新*
 
 ```python
-## 将定义的色彩映射表更新到文件
+## 将 副本 的色彩映射表更新到 副本（2）
 gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本 (2).tif",
                        "地表覆盖_河南_ESA_2020 - 副本.tif")
 ```
@@ -74,7 +74,7 @@ gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本 (2).tif",
 *根据模板栅格和定义更新*
 
 ```python
-## 将定义的色彩映射表更新到文件
+## 将 副本 以及定义的色彩映射表更新到 副本 (3)
 gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本 (3).tif",
                        "地表覆盖_河南_ESA_2020 - 副本.tif",
                        ColorTable = {10:(100,100,100,255), 40:(200,200,200,255)})
@@ -82,12 +82,16 @@ gma.rasp.AddColorTable("地表覆盖_河南_ESA_2020 - 副本 (3).tif",
 
 > \>>> 绘制原始数据及三个更新后的副本
 
+![](/rasp/AddColorTable.webp)
+
+>  \>>> 绘图代码示例
+
 ```python
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import matplotlib.colors as cor
 import numpy as np
-## 此模块为地理制图图例、比例尺等的尝鲜模块。在下一版 gma 中会作为非必要的扩展模块合入！！
+## 以下模块为尝鲜模块。在 gma 1.0.9 中作为非必要的扩展模块合入！！
 import gma.extend.mapplottools as mpt
 PAR = {'font.sans-serif': 'Times New Roman',
        'axes.unicode_minus': False,
@@ -155,7 +159,7 @@ for i in range(4):
     DataCRS = mpt.GetCRS(WKTCRS)
     ax.set_extent(ExtentPLT, crs = DataCRS)
 
-    # 1.绘制底图图层（应用自有高精度数据做地图）
+    # 1.绘制底图图层（应用自有高精度数据做底图）
     ## 1.1 添加行政边界
     mpt.AddGeometries(ax, r"Region\VTD_PG_PLCity_China.shp", EdgeColor = 'LightGrey', LineWidth = 0.1)
     mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.2)
@@ -188,7 +192,7 @@ for i in range(4):
                       rotate_labels = False,
                       xlabel_style = {'fontsize': 8},
                       ylabel_style = {'fontsize': 8})
-    # 3.1忽略相邻轴的经纬网标签
+    ## 3.1忽略相邻轴的经纬网标签
     if i % 2 == 0:
         gl.right_labels = False
     else:
@@ -201,15 +205,14 @@ for i in range(4):
     ax.set_title(Method[i], fontsize = 10, y = 0.92, fontdict = {'family':'SimSun'})
     
     # n.其他优化设置
-    # n.1 添加指北针
+    ## n.1 添加指北针
     mpt.AddCompass(ax, LOC = (0.2, 0.85), SCA = 0.04, FontSize = 10)
-    # n.2 添加比例尺
+    ## n.2 添加比例尺
     mpt.AddScaleBar(ax, LOC = (0.8, 0.08), SCA = 0.1, FontSize = 6, PROJType = 'PROJCS', UnitPad = 0.25, BarWidth = 0.6)
-    ## n.3 添加并修饰图例
+    ## n.3 添加图例并修饰
     mpt.AddLegend(ax, Colors[i], LegendName = '分类', LengedInterval = 0.4, LabelList = ColorName, 
                   LegendSize = 8, TextInterval = 0.1, LOC = (0.05, 0.32), SCA = 0.03, AspectRatio = 1.5, 
                   Columns = 2, ColumnWide = 0.15, RowInterval = 0.015, FontSize = 6, EdgeColor = 'k', EdgeWidth = 0.1)    
 plt.subplots_adjust(wspace = 0.05, hspace = -0.05)
 plt.show()
 ```
-![](/rasp/AddColorTable.webp)
