@@ -203,7 +203,7 @@ PAR = {'font.sans-serif': 'Times New Roman',
 plt.rcParams.update(PAR)
 
 # 需要绘制的两个文件
-InFiles = [r"TMAX_China_ANUSPLIN_20201215.tif", r"PMET0_China_ANUSPLIN_20201215.tif"]
+InFiles = ["TMAX_China_ANUSPLIN_20201215.tif", "PMET0_China_ANUSPLIN_20201215.tif"]
 
 DataTypeNames = ['最高气温', '作物参考蒸散量']
 LegendLable = ['TMax(℃)', 'ET0(mm)']
