@@ -236,7 +236,7 @@ for i in range(len(InFiles)):
     
     WKTCRS = DataSet.Projection
     
-    ## 0.1 控制数据显示范围
+    # 0.控制数据显示范围
     DataCRS = mpt.GetCRS(WKTCRS)
     ax.set_extent(ExtentPLT, crs = DataCRS)
 
@@ -245,8 +245,7 @@ for i in range(len(InFiles)):
     mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.1)
     mpt.AddGeometries(ax, r"Region\VTD_PG_China.shp", EdgeColor = 'black', LineWidth = 0.2)
     mpt.AddGeometries(ax, r"Region\南海诸岛九段线.shp", EdgeColor = 'black', LineWidth = 0.3)
-
-    # 1.3 添加国家 / 海洋背景 / 大型湖泊
+    ## 1.2 添加国家 / 海洋背景 / 大型湖泊
     mpt.AddGeometries(ax, r"World\VTD_PG_World_Country.shp", EdgeColor = 'gray', LineWidth = 0.1, 
                       FaceColor = 'white', Zorder = 0)
     ax.set_facecolor('#BEE8FF')
@@ -264,6 +263,7 @@ for i in range(len(InFiles)):
                       rotate_labels = False,
                       xlabel_style = {'fontsize': 8},
                       ylabel_style = {'fontsize': 8})
+    ## 3.1忽略相邻轴的经纬网标签
     if i % 2 == 0:
         gl.right_labels = False
     else:
@@ -272,9 +272,9 @@ for i in range(len(InFiles)):
     ax.set_title(DataTypeNames[i], fontsize = 10, y = 0.92, fontdict = {'family':'SimSun'})
     
     # n.其他优化设置
-    # n.1 添加指北针
+    ## n.1 添加指北针
     mpt.AddCompass(ax, LOC = (0.15, 0.9), SCA = 0.04, FontSize = 10)
-    # n.2 添加比例尺
+    ## n.2 添加比例尺
     mpt.AddScaleBar(ax, LOC = (0.4, 0.08), SCA = 0.12, FontSize = 6, UnitPad = 0.2, BarWidth = 0.6)
     ## n.3 添加并修饰图例
     leg = fig.colorbar(im, 

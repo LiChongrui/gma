@@ -155,7 +155,7 @@ Alberts_China = ccrs.AlbersEqualArea(central_longitude = 105, standard_parallels
 for i in range(4):
     ax = plt.subplot(2, 2, i + 1, projection = Alberts_China) 
 
-    ## 0.控制数据显示范围
+    # 0.控制数据显示范围
     DataCRS = mpt.GetCRS(WKTCRS)
     ax.set_extent(ExtentPLT, crs = DataCRS)
 
@@ -165,7 +165,6 @@ for i in range(4):
     mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.2)
     mpt.AddGeometries(ax, r"Region\VTD_PG_China.shp", EdgeColor = 'black', LineWidth = 0.4)
     mpt.AddGeometries(ax, r"Region\南海诸岛九段线.shp", EdgeColor = 'black', LineWidth = 0.4)
-
     ## 1.2 添加河流湖泊
     mpt.AddGeometries(ax, r"river\1级河流.shp", EdgeColor = 'RoyalBlue', LineWidth = 0.4)
     mpt.AddGeometries(ax, r"river\2级河流.shp", EdgeColor = 'DodgerBlue', LineWidth = 0.3)
