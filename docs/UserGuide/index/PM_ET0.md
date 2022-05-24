@@ -183,7 +183,7 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif',
 
 ![](/index/PMET0.webp)
 
-> 绘图代码参考
+> 绘图代码示例
 
 ```python
 import cartopy.crs as ccrs
@@ -219,8 +219,8 @@ for i in range(len(InFiles)):
     DrawData = DataSet.ToArray()
     DrawData[DrawData == DataSet.NoData] = np.nan
     # 由于数据有过大过小值，这里做一个百分比截断拉伸
-    DataL = DrawData[np.isnan(DrawData) == 0]
-    DrawData = aec.PercentageCutoff(DrawData, MaxLabel = np.percentile(DataL, 95), MinLabel = np.percentile(DataL, 5))
+    STRE = aec.Stretch(DrawData, MaxLabel = np.nanpercentile(DrawData, 95), MinLabel = np.nanpercentile(DrawData, 5))
+    DrawData = STRE.Percentage()
     ############################################ 配置范围
     GEOT = DataSet.GeoTransform
     Columns = DataSet.Columns
