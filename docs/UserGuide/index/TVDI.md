@@ -93,7 +93,7 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif',
                      DataType = 'Float32',
                      NoData = VINoData)
 ```
-> TVDI 计算结果：
+> NDVI、LST 和 TVDI  计算结果：
 
 ![](/index/TVDI.webp)
 
