@@ -147,6 +147,7 @@ ExtentPLT = [ExtentData[0] - (ExtentData[1] - ExtentData[0]) * EL,
 * *第四步：绘图*
 ```python
 WKTCRS = DataSet.Projection
+DataCRS = mpt.GetCRS(WKTCRS)
 fig = plt.figure(figsize = (10, 10), dpi = 600)
 
 # 定义一个标准中国区 ALBERS 投影
@@ -156,15 +157,12 @@ for i in range(4):
     ax = plt.subplot(2, 2, i + 1, projection = Alberts_China) 
 
     # 0.控制数据显示范围
-    DataCRS = mpt.GetCRS(WKTCRS)
     ax.set_extent(ExtentPLT, crs = DataCRS)
 
     # 1.绘制底图图层（应用自有高精度数据做底图）
     ## 1.1 添加行政边界
     mpt.AddGeometries(ax, r"Region\VTD_PG_PLCity_China.shp", EdgeColor = 'LightGrey', LineWidth = 0.1)
     mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.2)
-    mpt.AddGeometries(ax, r"Region\VTD_PG_China.shp", EdgeColor = 'black', LineWidth = 0.4)
-    mpt.AddGeometries(ax, r"Region\南海诸岛九段线.shp", EdgeColor = 'black', LineWidth = 0.4)
     ## 1.2 添加河流湖泊
     mpt.AddGeometries(ax, r"river\1级河流.shp", EdgeColor = 'RoyalBlue', LineWidth = 0.4)
     mpt.AddGeometries(ax, r"river\2级河流.shp", EdgeColor = 'DodgerBlue', LineWidth = 0.3)
