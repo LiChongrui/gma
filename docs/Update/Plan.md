@@ -25,3 +25,9 @@ sidebar: false
 &emsp;　　b. Correction
 
 &emsp;　　提供 Gamma（伽马变换）、Log（对数变换）、Sigmoid（S型曲线函数变换）三种变换方式。
+
+<font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
+
+&emsp;　1、ToArray
+
+&emsp;　　修复了一个当提取窗口边界超过栅格行列数时不能返回默认结果的错误。
