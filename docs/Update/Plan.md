@@ -12,7 +12,7 @@ sidebar: false
 
 &emsp;　1、mapplottools
 
-&emsp;　　空间绘图支持模块（依赖 cartopy）。提供 AddCompass（添加指北针）、AddScaleBar（添加比例尺）、AddGeometries（添加几何图形（.shp文件））、AddLegend（添加图例（离散型））和 GetCRS （获取支持的坐标系类）功能。
+&emsp;　　空间绘图支持模块（依赖 cartopy）。提供 AddCompass（添加指北针）、AddScaleBar（添加比例尺）、AddGeometries（添加几何图形（.shp文件））、AddLegend（添加图例（离散型））和 GetCRS （获取支持的坐标系）功能。
 
 &emsp;　2、arrayenhancement
 
