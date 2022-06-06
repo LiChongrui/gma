@@ -30,3 +30,17 @@ Unknown:0，Byte:1，UInt16:2，Int16:3，UInt32:4，Int32:5，Float32:6，Float
 
 ---
 
+**示例：*****（以 BandDecomposition 分解的 12 波段数据为例）***
+
+```python
+import gma
+InFile = 'ELE_China_GEBCO_2020.tif'
+OutFile = 'ELE_China_GEBCO_2020_Float32.tif'
+print('输入栅格数据类型：', gma.Open(InFile).DataType)
+
+gma.rasp.ChangeDataType(InFile, OutFile, 'Float32')
+
+print('输出栅格数据类型：', gma.Open(OutFile).DataType)
+```
+> \>>> 输入栅格数据类型： 3<br>
+> \>>> 输出栅格数据类型： 6
