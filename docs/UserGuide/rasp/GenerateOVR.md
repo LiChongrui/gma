@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;Compress = `str` <Badge text="1.0.7 +"/> 。金字塔文件的压缩方式。默认 DEFLATE 压缩。
 
-::: tip 其他可配置的压缩方式
+::: tip 可配置的压缩方式
 
 NONE, LZW, PACKBITS, JPEG, CCITTRLE, CCITTFAX3, CCITTFAX4, DEFLATE, LZMA, ZSTD, WEBP, LERC, LERC_DEFLATE, LERC_ZSTD
 
@@ -30,7 +30,7 @@ NONE, LZW, PACKBITS, JPEG, CCITTRLE, CCITTFAX3, CCITTFAX4, DEFLATE, LZMA, ZSTD, 
 
 &emsp;Resample = `str` <Badge text="1.0.7 +"/> 。生成金字塔文件的重采样方法。默认 NEAREST 法。
 
-::: tip 其他可配置的重采样方法
+::: tip 可配置的重采样方法
 
 AVERAGE, AVERAGE_MAGPHASE, RMS, BILINEAR, CUBIC, CUBICSPLINE, GAUSS, LANCZOS, MODE, NEAREST, NONE
 

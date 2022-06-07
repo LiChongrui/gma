@@ -32,5 +32,9 @@ sidebar: false
 
 &emsp;OutFormat   = `str`。输出栅格文件格式。默认为 GTiff，其他格式详见 ToOtherFormat 函数。
 
+::: warning 注意
+此函数的效率比单独的 镶嵌、裁剪、重采样、重投影、格式转换 函数低！
+:::
+
 ---
 
