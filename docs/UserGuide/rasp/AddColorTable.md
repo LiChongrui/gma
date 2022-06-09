@@ -132,8 +132,6 @@ Blocks = [(r, c) for r in range(0, Rows, BlockSize) for c in range(0, Columns, B
 * *第三步：配置制图范围*
 ```python
 GEOT = DataSet.GeoTransform
-Columns = DataSet.Columns
-Rows = DataSet.Rows
 # 数据边界
 ExtentData = [GEOT[0], GEOT[0] + GEOT[1] * Columns, GEOT[3] + GEOT[-1] * Rows, GEOT[3]]
 # 绘图边界（以数据边界为基础确定）

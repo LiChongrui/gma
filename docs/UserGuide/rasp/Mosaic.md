@@ -41,3 +41,4 @@ OutNoData：如果配置了此值，输入栅格 NoData 的区域将被修改为
 
 > 原始数据与镶嵌结果：
 
+![](/rasp/Mosaic.webp)
