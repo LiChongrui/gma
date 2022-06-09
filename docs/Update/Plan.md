@@ -8,7 +8,7 @@ sidebar: false
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　引入 extend 扩展组。今后，尝鲜或非必要功能会合入此处。此模块功能不提供详细示例和说明，请自行使用 help 函数根据帮助探索应用。目前包含：
+&emsp;　引入 extend 扩展组。今后，尝鲜或非必要功能会合入此处。此模块功能**不提供**详细示例和说明，请自行使用 help 函数根据帮助探索应用。目前包含：
 
 &emsp;　1、mapplottools
 
@@ -24,10 +24,18 @@ sidebar: false
 
 &emsp;　　b. Correction
 
-&emsp;　　提供 Gamma（伽马变换）、Log（对数变换）、Sigmoid（S型曲线函数变换）三种变换方式。
+&emsp;　　提供 Gamma（伽马变换）、Log（对数变换）、Sigmoid（S 型曲线函数变换）三种变换方式。
 
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **修复**
 
 &emsp;　1、ToArray
 
 &emsp;　　修复了一个当提取窗口边界超过栅格行列数时不能返回默认结果的错误。
+
+&emsp;　2、其他
+
+&emsp;　　修复了若干特殊情况下才会出现的错误。
+
+<font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
+
+&emsp;　1、重构矢量处理模块 vesp，以实现所有的矢量处理函数在底层隶属于一个整体，而不仅仅是许多单独的函数的集合。
