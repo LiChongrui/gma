@@ -39,3 +39,7 @@ sidebar: false
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
 
 &emsp;　1、重构矢量处理模块 vesp，以实现所有的矢量处理函数在底层隶属于一个整体，而不仅仅是许多单独的函数的集合。
+
+&emsp;　2、Open
+
+&emsp;　　为 Open 添加 Method 参数，读取数据时可选择以 gma 定义的方式或 osgeo 原生方式打开。
