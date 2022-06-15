@@ -111,12 +111,14 @@ date: 2021-10-29
 	* calindex *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 指数运算，index 调用的遥感、气象指数运算相关算法*
 	* dataio *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 数据读写操作*
 	* dem *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== DEM 分析，raa 调用的 DEM 算法*
+	* formatio *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格 / 矢量驱动格式控制*
 	* interact *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 系统交互，osf 调用的算法*
 	* mathematics *&emsp;&emsp; &emsp;&emsp; ==== 数学运算，math 调用的栅格处理算法* 
 	* miscellaneous *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 杂项计算，smc 调用的算法*
-	* raster *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 栅格处理， rasp 调用的栅格处理算法* 
-	* vector *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 矢量处理，vesp 调用的矢量处理算法*
+	* raster *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 基础栅格处理算法， rasp 调用的栅格处理算法* 
+	* vector *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 基础矢量处理算法，vesp 调用的矢量处理算法*
 - **configure** *&emsp;&emsp; &emsp;&emsp; ==  **配置数据***
+- **extend** *&emsp;&emsp; &emsp;&emsp; ==  **扩展功能***
 - **relation** *&emsp;&emsp; &emsp;&emsp; ==  **关联参数和函数***
 	* [**constants**](Default.html#常量单位)  *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 常量名称、值或与国际单位的代换值*
 	* driver *&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; ==== 驱动格式支持信息*
