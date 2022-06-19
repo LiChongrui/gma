@@ -15,117 +15,132 @@ module.exports = {
         }
     ],
 
-    '/UserGuide/': [
+    '/UserGuide/Instructions/': [
         {
             title:'使用说明',
             collapsable: false,
             children: [
-                '',
-                'Function'
+                '/UserGuide/Instructions/Overview',
+                '/UserGuide/Instructions/Function'
             ]
-        },
+        }
+    ],
+
+    '/UserGuide/index/': [
         {
             title: '指数运算',
             collapsable: false,
             children: [
-                'index/EVI',
-                'index/NDBI',
-                'index/NDWI',
-                'index/NDVI',
-                'index/PM_ET0',
-                'index/TVDI',
+                '/UserGuide/index/EVI',
+                '/UserGuide/index/NDBI',
+                '/UserGuide/index/NDWI',
+                '/UserGuide/index/NDVI',
+                '/UserGuide/index/PM_ET0',
+                '/UserGuide/index/TVDI',
             ],
-        },
+        }
+    ],
+       
+    '/UserGuide/math/': [
         {
             title: '数学运算',
             collapsable: false,
             children: [
-                'math/FillNoData',
-                'math/ToNumericArray',
+                '/UserGuide/math/FillNoData',
+                '/UserGuide/math/ToNumericArray',
                 {
                     title: 'Smooth',
                     collapsable: false,
                     children: [
-                        'math/Smooth/',
-                        'math/Smooth/MovingAverage',
-                        'math/Smooth/SavitzkyGolay',
+                        '/UserGuide/math/Smooth/',
+                        '/UserGuide/math/Smooth/MovingAverage',
+                        '/UserGuide/math/Smooth/SavitzkyGolay',
                     ]
                 },
                 {
                     title: 'Evaluation',
                     collapsable: false,
                     children: [
-                        'math/Evaluation/',
-                        'math/Evaluation/CORR',
-                        'math/Evaluation/D',
-                        'math/Evaluation/MaxAE',
-                        'math/Evaluation/Methods',
-                        'math/Evaluation/NRMSE',
-                        'math/Evaluation/R2',
-                        'math/Evaluation/RMSE',
-                        'math/Evaluation/Select',
+                        '/UserGuide/math/Evaluation/',
+                        '/UserGuide/math/Evaluation/CORR',
+                        '/UserGuide/math/Evaluation/D',
+                        '/UserGuide/math/Evaluation/MaxAE',
+                        '/UserGuide/math/Evaluation/Methods',
+                        '/UserGuide/math/Evaluation/NRMSE',
+                        '/UserGuide/math/Evaluation/R2',
+                        '/UserGuide/math/Evaluation/RMSE',
+                        '/UserGuide/math/Evaluation/Select',
                     ]
                 }
             ]
-        },
+        }
+    ],
+
+    '/UserGuide/osf/': [
         {
             title: '系统交互',
             collapsable: false,
             children: [
-                'osf/DateSeries',
-                'osf/GetPath',
-                'osf/MultiThreading',
-                'osf/UnZip',
-                'osf/Zip',
+                '/UserGuide/osf/DateSeries',
+                '/UserGuide/osf/GetPath',
+                '/UserGuide/osf/MultiThreading',
+                '/UserGuide/osf/UnZip',
+                '/UserGuide/osf/Zip',
                 {
                     title: 'Rename',
                     collapsable: false,
                     children: [
-                        'osf/Rename/',
-                        'osf/Rename/Intercept',
-                        'osf/Rename/Modify',
-                        'osf/Rename/Replace',
+                        '/UserGuide/osf/Rename/',
+                        '/UserGuide/osf/Rename/Intercept',
+                        '/UserGuide/osf/Rename/Modify',
+                        '/UserGuide/osf/Rename/Replace',
                     ]
                 }
             ]
-        },
+        }
+    ],
+    '/UserGuide/smc/': [
         {
             title: '空间杂项',
             collapsable: false,
             children: [
-                'smc/CALDistance',
-                'smc/TRANCoordinate',
+                '/UserGuide/smc/CALDistance',
+                '/UserGuide/smc/TRANCoordinate',
             ]
-        },
+        }
+    ],
+    '/UserGuide/rasp/': [
         {
             title: '栅格处理',
             collapsable: false,
             children: [
-                'rasp/AddColorTable',
-                'rasp/BandDecomposition',
-                'rasp/BandSynthesis',
-                'rasp/ChangeDataType',
-                'rasp/Clip',
-                'rasp/Deformation',
-                'rasp/GenerateOVR',
-                'rasp/Mosaic',
-                'rasp/MultiSDSToTif',
-                'rasp/OrthophotoCorrection',
-                'rasp/Reproject',
-                'rasp/Resample',
-                'rasp/SplitImage',
-                'rasp/ToOtherFormat',
-                'rasp/ToVector',
-                'rasp/WriteRaster',
+                '/UserGuide/rasp/AddColorTable',
+                '/UserGuide/rasp/BandDecomposition',
+                '/UserGuide/rasp/BandSynthesis',
+                '/UserGuide/rasp/ChangeDataType',
+                '/UserGuide/rasp/Clip',
+                '/UserGuide/rasp/Deformation',
+                '/UserGuide/rasp/GenerateOVR',
+                '/UserGuide/rasp/Mosaic',
+                '/UserGuide/rasp/MultiSDSToTif',
+                '/UserGuide/rasp/OrthophotoCorrection',
+                '/UserGuide/rasp/Reproject',
+                '/UserGuide/rasp/Resample',
+                '/UserGuide/rasp/SplitImage',
+                '/UserGuide/rasp/ToOtherFormat',
+                '/UserGuide/rasp/ToVector',
+                '/UserGuide/rasp/WriteRaster',
                 {
                     title: 'Fusion',
                     collapsable: false,
                     children: [
-                        'rasp/Fusion/Pansharpen',
+                        '/UserGuide/rasp/Fusion/Pansharpen',
                     ]
                 }
             ]
-        },
+        }
+    ],
+    '/UserGuide/raa/': [
         {
             title: '栅格分析',
             collapsable: false,
@@ -134,66 +149,79 @@ module.exports = {
                     title: 'DEM',
                     collapsable: false,
                     children: [
-                        'raa/DEM/Aspect',
-                        'raa/DEM/HillShade',
-                        'raa/DEM/Roughness',
-                        'raa/DEM/Slope',
-                        'raa/DEM/TPI',
-                        'raa/DEM/TRI',
+                        '/UserGuide/raa/DEM/Aspect',
+                        '/UserGuide/raa/DEM/HillShade',
+                        '/UserGuide/raa/DEM/Roughness',
+                        '/UserGuide/raa/DEM/Slope',
+                        '/UserGuide/raa/DEM/TPI',
+                        '/UserGuide/raa/DEM/TRI',
                     ]
                 }
             ]
-        },
+        }
+    ],
+    '/UserGuide/vesp/': [
         {
             title: '矢量处理',
             collapsable: false,
             children: [
-                'vesp/Check',
-                'vesp/Clip',
-                'vesp/Erase',
-                'vesp/FixGeometry',
-                'vesp/Intersection',
-                'vesp/Reproject',
-                'vesp/Simplify',
-                'vesp/Split',
-                'vesp/SymDifference',
-                'vesp/ToOtherFormat',
-                'vesp/ToRaster',
-                'vesp/Union',
-                'vesp/Update',
+                '/UserGuide/vesp/Check',
+                '/UserGuide/vesp/Clip',
+                '/UserGuide/vesp/Erase',
+                '/UserGuide/vesp/FixGeometry',
+                '/UserGuide/vesp/Intersection',
+                '/UserGuide/vesp/Reproject',
+                '/UserGuide/vesp/Simplify',
+                '/UserGuide/vesp/Split',
+                '/UserGuide/vesp/SymDifference',
+                '/UserGuide/vesp/ToOtherFormat',
+                '/UserGuide/vesp/ToRaster',
+                '/UserGuide/vesp/Union',
+                '/UserGuide/vesp/Update',
             ]
-        },
+        }
+    ],
+    '/UserGuide/config/': [
         {
             title: '高级配置',
             collapsable: false,
             children: [
-                'config/GetRACreationOption',
-                'config/GetRasterFormat',
-                'config/GetVectorFormat',
-                'config/GetVELayerCreationOption',
-                'config/RasterFormatInfo',
-                'config/VectorFormatInfo',
+                '/UserGuide/config/GetRACreationOption',
+                '/UserGuide/config/GetRasterFormat',
+                '/UserGuide/config/GetVectorFormat',
+                '/UserGuide/config/GetVELayerCreationOption',
+                '/UserGuide/config/RasterFormatInfo',
+                '/UserGuide/config/VectorFormatInfo',
             ]
-        },
+        }
+    ],
+    '/UserGuide/other/': [
         {
             title: '其他函数',
             collapsable: false,
             children: [
-                'other/Open',
-                'other/RasterOpen',
-                'other/VectorOpen',
-                'other/Layer',
+                '/UserGuide/other/Open',
+                '/UserGuide/other/RasterOpen',
+                '/UserGuide/other/VectorOpen',
+                '/UserGuide/other/Layer',
             ]
         },
     ],
-    '/Update/': [
+    '/Update/log/': [
         {
-            title:'更新记录',
+            title:'更新日志',
             collapsable: false,
             children: [
-                '',
-                'Update',
-                'Plan',
+                '1.0.9',
+                '1.0.8',
+                '1.0.7',
+                '1.0.6',
+                '1.0.5',
+                '1.0.4',
+                '1.0.3',
+                '1.0.2',
+                '1.0.1',
+                '1.0.0',
             ]
         }
     ],

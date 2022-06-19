@@ -1,7 +1,50 @@
 ---
 title: 更新预览
-date: 2022-05-08
+date: 2022-06-20
 sidebar: false
 ---
 
 &emsp;　更新预览中的新内容将在下一个 gma 版本中发布。下一版本 **1.0.10** 。
+
+---
+
+<i class="fas fa-box"></i> **引入包：**
+
+::: theorem 
+
+**引入 [rsvi]() 遥感指数函数包。** 提供遥感指数计算功能（由 index 拆分而来）！
+
+**引入 [climet]() 气候气象函数包。** 提供气候气象相关指数计算功能（由 index 拆分而来）！
+
+:::
+
+<i class="far fa-trash-alt"></i> **移除：**
+
+&emsp;　移除了 index 模块，相关功能合并至 rsvi 模块和 climet 模块。
+
+<font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
+
+&emsp;　1、增加【[SPEI]()】函数
+
+&emsp;　　利用 Log-Logistic 分布拟合参数计算标准化降水蒸散指数。引用：gma.climet.SPEI。
+
+&emsp;　2、增加【[Thornthwaite]()】函数
+
+&emsp;　　基于 桑斯维特（Thornthwaite 1948）法计算月潜在蒸散量。引用：gma.climet.ET0.Thornthwaite。
+
+&emsp;　3、增加【[Hargreaves]()】函数
+
+&emsp;　　基于 哈格里夫斯（Hargreaves 1998）法计算日潜在蒸散量。引用：gma.climet.ET0.Hargreaves。
+
+<font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
+
+&emsp;　1、遥感指数
+
+&emsp;　　所有遥感指数移入 rsvi 模块。
+
+&emsp;　2、PM_ET0
+
+&emsp;　　修改函数名为 PenmanMonteith 并移入 gma.climet.ET0 下。移除了可配置的 3 个常量参数。
+
+
+
