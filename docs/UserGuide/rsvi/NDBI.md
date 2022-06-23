@@ -4,7 +4,7 @@ date: 2021-10-31
 sidebar: false
 ---
 
-## gma.index.**NDBI**(*Nir, Swir*)
+## gma.rsvi.**NDBI**(*Nir, Swir*)
 
 ---
 
@@ -28,7 +28,7 @@ import gma
 ```python
 Nir = 0.1052
 Swir = 0.1598
-gma.index.NDBI(Nir, Swir)
+gma.rsvi.NDBI(Nir, Swir)
 ```
 > \>>> 0.20603773584905657
 
@@ -37,7 +37,7 @@ gma.index.NDBI(Nir, Swir)
 ```python
 Nir = [0.49998039, 0.43281425, 0.4370636 , 0.43339039, 0.42903499]
 Swir = [0.57939615, 0.5364073 , 0.56272019, 0.56820692, 0.50563094]
-gma.index.NDBI(Nir, Swir)
+gma.rsvi.NDBI(Nir, Swir)
 ```
 > \>>> array([0.07357558, 0.10688273, 0.12568376, 0.13460153, 0.08195008])
 
@@ -49,7 +49,7 @@ Nir = [[0.43547845, 0.4525367 , 0.48956414, 0.46418583],
 Swir = [[0.52987932, 0.53247515, 0.59122501, 0.50296513],
        [0.51291895, 0.55736167, 0.50249297, 0.50782207],
        [0.5959599 , 0.52399249, 0.59509758, 0.54306701]]
-gma.index.NDBI(Nir, Swir)
+gma.rsvi.NDBI(Nir, Swir)
 ```
 > \>>> array([[0.09778848, 0.08115481, 0.0940617 , 0.04009643],<br>
 > 　　　　　[0.07938466, 0.09007989, 0.08081088, 0.04504244],<br>
@@ -68,7 +68,7 @@ Proj = NirSet.Projection
 # 依据反射率数据进行单位换算
 Nir = NirSet.ToArray() * 1e-4
 Swir = SwirSet.ToArray() * 1e-4
-NDBI = gma.index.NDBI(Nir, Swir)
+NDBI = gma.rsvi.NDBI(Nir, Swir)
 
 # 将结果保存为 GTiff 格式
 gma.rasp.WriteRaster(r'..\0.1 预处理\SENT_LY_NDBI_20220305.tif', 
@@ -79,4 +79,4 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\SENT_LY_NDBI_20220305.tif',
 ```
 > NDBI 计算结果：
 
-![](/index/NDBI.webp)
+![](/rsvi/NDBI.webp)

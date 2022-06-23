@@ -4,7 +4,7 @@ date: 2021-10-31
 sidebar: false
 ---
 
-## gma.index.**TVDI**(*VI, LST, ValidVIRange = [0.2, 0.8], ValidLSTRange = [200, 350], Delta = 0.01, VINoData = None, LSTNoData = None, OutNoData = -1*) <Badge text="1.0.2 +"/>
+## gma.rsvi.**TVDI**(*VI, LST, ValidVIRange = [0.2, 0.8], ValidLSTRange = [200, 350], Delta = 0.01, VINoData = None, LSTNoData = None, OutNoData = -1*) <Badge text="1.0.2 +"/>
 
 ---
 
@@ -50,7 +50,7 @@ import gma
 ```python
 NDVI = [0.5251, 0.5092, 0.4618, 0.4304, 0.4494, 0.4544, 0.4982, 0.6308, 0.5271, 0.4489]
 LST = [302.72, 302.98, 303.64, 304.68, 303.7 , 302.94, 302.78, 300.64, 301.98, 302.12]
-gma.index.TVDI(NDVI, LST)
+gma.rsvi.TVDI(NDVI, LST)
 ```
 > \>>> (array([ 1.93649901,  1.79681104,  1.2003987 ,  2.40119038,  0.79481429,<br>
 > 　　　　　　-1.04221242,  0.37934697, -2.2399279 , -1.1514285 , -3.38829638]),<br>
@@ -83,10 +83,10 @@ LSTNoData = LSTSet.NoData
 NDVI = NDVISet.ToArray() * 1e-4 
 LST = LSTSet.ToArray() * 0.02
 
-TVDI = gma.index.TVDI(NDVI, LST, VINoData = VINoData, LSTNoData = LSTNoData, OutNoData = VINoData)
+TVDI = gma.rsvi.TVDI(NDVI, LST, VINoData = VINoData, LSTNoData = LSTNoData, OutNoData = VINoData)
 
 # 将结果保存为 GTiff 格式
-gma.rasp.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif', 
+gma.rsvi.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif', 
                      TVDI[0], 
                      Projection = Proj,
                      Transform = Geot,
@@ -95,7 +95,7 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif',
 ```
 > NDVI、LST 和 TVDI  计算结果：
 
-![](/index/TVDI.webp)
+![](/rsvi/TVDI.webp)
 
 > TVDI 干湿边拟合：
 
@@ -135,5 +135,5 @@ plt.ylabel('LST(K)', loc = 'top', fontsize = 12)
 plt.show()
 ```
 
-![](/index/TVDIWDF.svg)
+![](/rsvi/TVDIWDF.svg)
 

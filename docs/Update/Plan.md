@@ -12,9 +12,9 @@ sidebar: false
 
 ::: theorem 
 
-**引入 [rsvi]() 遥感指数函数包。** 提供遥感指数计算功能（由 index 拆分而来）！
+**引入 [rsvi](/UserGuide/Instructions/Function.html#遥感指数) 遥感指数函数包。** 提供遥感指数计算功能（由 index 拆分而来）！
 
-**引入 [climet]() 气候气象函数包。** 提供气候气象相关指数计算功能（由 index 拆分而来）！
+**引入 [climet](/UserGuide/Instructions/Function.html#气象气候) 气候气象函数包。** 提供气候气象相关指数计算功能（由 index 拆分而来）！
 
 :::
 
@@ -24,15 +24,23 @@ sidebar: false
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
-&emsp;　1、增加【[SPEI]()】函数
+&emsp;　1、增加【[SPEI](/UserGuide/climet/SPEI.html)】函数
 
 &emsp;　　利用 Log-Logistic 分布拟合参数计算标准化降水蒸散指数。引用：gma.climet.SPEI。
 
-&emsp;　2、增加【[Thornthwaite]()】函数
+&emsp;　2、增加【[SPI](/UserGuide/climet/SPI.html)】函数
+
+&emsp;　　利用 Gamma 分布拟合参数计算标准化降水指数。引用：gma.climet.SPI。
+
+&emsp;　3、增加【[PAP](/UserGuide/climet/PAP.html)】函数
+
+&emsp;　　计算降水值到多年平均值的波动情况（降水距平百分率）。引用：gma.climet.PAP。
+
+&emsp;　4、增加【[Thornthwaite](/UserGuide/climet/ET0/Thornthwaite.html)】函数
 
 &emsp;　　基于 桑斯维特（Thornthwaite 1948）法计算月潜在蒸散量。引用：gma.climet.ET0.Thornthwaite。
 
-&emsp;　3、增加【[Hargreaves]()】函数
+&emsp;　5、增加【[Hargreaves](/UserGuide/climet/ET0/Hargreaves.html)】函数
 
 &emsp;　　基于 哈格里夫斯（Hargreaves 1998）法计算日潜在蒸散量。引用：gma.climet.ET0.Hargreaves。
 

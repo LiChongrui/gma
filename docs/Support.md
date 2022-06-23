@@ -3,19 +3,9 @@ sidebar: false
 title: 反馈与赞助
 ---
 
-## 意见反馈
+## 微信反馈
 
-<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 158.85">
-    <defs>
-        <style>
-            .cls-1,.cls-2{isolation:isolate;font-size:22.95px;font-family:MicrosoftYaHeiLight, Microsoft YaHei;}
-            .cls-1{fill:#fff;}
-        </style>
-    </defs>
-    <path d="M305.43,69.82a16.37,16.37,0,0,1-10.07-3.51L250.78,31.65v48.4A10.25,10.25,0,0,0,261,90.3h88.8a10.25,10.25,0,0,0,10.25-10.25h0V31.65l-44.57,34.7A16.5,16.5,0,0,1,305.43,69.82ZM254.26,25.69l45.3,35.24a9.56,9.56,0,0,0,11.75,0l45.3-35.24a9.63,9.63,0,0,0,3.47-7.11A10.24,10.24,0,0,0,349.83,8.34H261a10.24,10.24,0,0,0-10.25,10.24h0A9,9,0,0,0,254.26,25.69Z"/>
-    <text class="cls-1" transform="translate(280.5 36.65)">Mail</text>
-    <text class="cls-2" transform="translate(197.02 147.58)">506827624@qq.com</text></svg>
-
+![](/images/LuoWeiXin.webp)
 
 
 ## 友情赞助
@@ -118,3 +108,4 @@ title: 反馈与赞助
   <ellipse id="放大镜_中" data-name="放大镜 中" class="cls-15" cx="7060" cy="1713" rx="218" ry="215"/>
   <circle id="放大镜_外" data-name="放大镜 外" class="cls-16" cx="7061" cy="1713" r="236"/>
 </svg>
+

@@ -34,7 +34,8 @@ module.exports = [
             { 
                 text: '帮助与示例', 
                 items: [
-                    {text: '指数运算', link: '/UserGuide/index/EVI'},
+                    {text: '气候气象', link: '/UserGuide/climet/SPEI'},
+                    {text: '遥感指数', link: '/UserGuide/rsvi/EVI'},
                     {text: '数学运算', link: '/UserGuide/math/FillNoData'},
                     {text: '系统交互', link: '/UserGuide/osf/DateSeries'},
                     {text: '空间杂项', link: '/UserGuide/smc/CALDistance'},

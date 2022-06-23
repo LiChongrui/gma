@@ -7,16 +7,32 @@ date: 2021-10-29
 
 &emsp;&emsp;除了初版构建的函数之外，其他版本构建的函数会增加版本 <Badge text="标记"/>  。
 
-## 指数运算
+## 气象气候 <Badge text="1.0.10 +"/>
 
  函数 | 引用（简版）| 功能 | 详细解释                          
  :----- | :----- | :----- | :-----
-[EVI](../index/EVI.html) | gma.index.EVI     | 【EVI】     | 增强植被指数                      
-[NDBI](../index/NDBI.html)| gma.index.NDBI    | 【NDBI】    | 归一化建筑指数                    
-[NDWI](../index/NDWI.html)  | gma.index.NDWI    | 【NDWI】    | 归一化水指数                      
-[NDVI](../index/NDVI.html) | gma.index.NDVI    | 【NDVI】    | 归一化植被指数                    
-[PM_ET0](../index/PM_ET0.html) | gma.index.PM_ET0 | 【PM_ET0】 | 基于 FAO-56 推荐的 Penman-Monteith 法计算作物参考蒸散量（ET0） 
-[TVDI](../index/TVDI.html) <Badge text="1.0.2 +"/> | gma.index.TVDI    | 【TVDI】    | 温度植被干旱指数                  
+[SPEI](../climet/SPEI.html) | gma.climet.SPEI | 【标准化降水蒸散指数】 | 基于 Log-Logistic 分布计算标准化降水蒸散指数 
+[SPI](../climet/SPI.html)| gma.climet.SPI | 【标准化降水指数】 | 基于 Gamma 分布计算标准化降水指数                            
+[PAP](../climet/PAP.html)  | gma.climet.PAP | 【降水距平百分率】 | 计算降水值到多年平均值的波动情况 
+***ET0*** | gma.climet.ET0 | 【蒸散】 | *日尺度或月尺度潜在蒸散量计算。支持的计算方法详见：[蒸散](Function.html#蒸散)* 
+
+#### 蒸散 <Badge text="1.0.10 +"/>
+
+| 函数                                                | 引用（简版）                  | 功能               | 详细解释                                             |
+| :-------------------------------------------------- | :---------------------------- | :----------------- | :--------------------------------------------------- |
+| [Hargreaves](../climet/ET0/Hargreaves.html)         | gma.climet.ET0.Hargreaves     | 【Hargreaves】     | 基于 哈格里夫斯（Hargreaves 1998）法计算日潜在蒸散量 |
+| [PenmanMonteith](../climet/ET0/PenmanMonteith.html) | gma.climet.ET0.PenmanMonteith | 【PenmanMonteith】 | 基于 彭曼-蒙提斯法（FAO-56）计算日作物参考蒸散量     |
+| [Thornthwaite](../climet/ET0/Thornthwaite.html)     | gma.climet.ET0.Thornthwaite   | 【Thornthwaite】   | 基于 桑斯维特（Thornthwaite 1948）法计算月潜在蒸散量 |
+
+## 遥感指数
+
+| 函数                                              | 引用（简版）  | 功能     | 详细解释         |
+| :------------------------------------------------ | :------------ | :------- | :--------------- |
+| [EVI](../rsvi/EVI.html)                           | gma.rsvi.EVI  | 【EVI】  | 增强植被指数     |
+| [NDBI](../rsvi/NDBI.html)                         | gma.rsvi.NDBI | 【NDBI】 | 归一化建筑指数   |
+| [NDWI](../rsvi/NDWI.html)                         | gma.rsvi.NDWI | 【NDWI】 | 归一化水指数     |
+| [NDVI](../rsvi/NDVI.html)                         | gma.rsvi.NDVI | 【NDVI】 | 归一化植被指数   |
+| [TVDI](../rsvi/TVDI.html) <Badge text="1.0.2 +"/> | gma.rsvi.TVDI | 【TVDI】 | 温度植被干旱指数 |
 
  ## 数学运算
 

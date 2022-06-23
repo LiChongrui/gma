@@ -18,7 +18,9 @@ sidebar: false
 
 ::: theorem 已包含的功能
 
-+ **指数运算**（例如 NDVI、ET0、TVDI 等）。
++ **气候气象**（例如 SPEI、SPI、ET0 等）。
+
++ **遥感指数**（例如 NDVI、EVI、TVDI 等）。
 
 + **数学运算**（例如 RMSE、缺失值插补算法、时序数据平滑算法等数学及相关运算）。
 

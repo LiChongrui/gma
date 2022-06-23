@@ -26,17 +26,39 @@ module.exports = {
         }
     ],
 
-    '/UserGuide/index/': [
+    '/UserGuide/climet/': [
+        {
+            title: '气候气象',
+            collapsable: false,
+            children: [
+                '/UserGuide/climet/SPEI',
+                '/UserGuide/climet/SPI',
+                '/UserGuide/climet/PAP',
+                {
+                    title: 'ET0',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/climet/ET0/Hargreaves',
+                        '/UserGuide/climet/ET0/PenmanMonteith',
+                        '/UserGuide/climet/ET0/Thornthwaite',
+
+                    ]
+                },
+
+            ],
+        }
+    ],
+
+    '/UserGuide/rsvi/': [
         {
             title: '指数运算',
             collapsable: false,
             children: [
-                '/UserGuide/index/EVI',
-                '/UserGuide/index/NDBI',
-                '/UserGuide/index/NDWI',
-                '/UserGuide/index/NDVI',
-                '/UserGuide/index/PM_ET0',
-                '/UserGuide/index/TVDI',
+                '/UserGuide/rsvi/EVI',
+                '/UserGuide/rsvi/NDBI',
+                '/UserGuide/rsvi/NDWI',
+                '/UserGuide/rsvi/NDVI',
+                '/UserGuide/rsvi/TVDI',
             ],
         }
     ],
