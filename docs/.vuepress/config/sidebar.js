@@ -51,7 +51,7 @@ module.exports = {
 
     '/UserGuide/rsvi/': [
         {
-            title: '指数运算',
+            title: '遥感指数',
             collapsable: false,
             children: [
                 '/UserGuide/rsvi/EVI',

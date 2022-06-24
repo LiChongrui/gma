@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61d3af08-63c4-482a-8ee6-1a30ec2be076" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/UserGuide/math/ToNumericArray.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/UserGuide/math/ToNumericArray.md" afterDir="false" />
-    </list>
+    <list default="true" id="61d3af08-63c4-482a-8ee6-1a30ec2be076" name="更改" comment="更改" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
