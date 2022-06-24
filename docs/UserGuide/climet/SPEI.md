@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp;PET: `array`。潜在蒸散量（mm）。
 
-**可选参数（常量）：**
+**可选参数：**
 
 &emsp; Axis = `int`。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 

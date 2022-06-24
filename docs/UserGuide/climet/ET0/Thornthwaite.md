@@ -14,7 +14,7 @@ sidebar: false
 
 &emsp;TEM: `array` 。月平均气温（℃）。
 
-**可选参数（常量）：**
+**可选参数：**
 
 &emsp; LAT = `float||array`。数据纬度值（°）。默认为 34.6° N。
 

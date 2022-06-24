@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp;TMIN: `float||array`。日最低气温（℃）。
 
-**可选参数（常量）：**
+**可选参数：**
 
 &emsp;LAT = `float||array`。数据纬度值（°）。默认北纬 34.6°。
 
