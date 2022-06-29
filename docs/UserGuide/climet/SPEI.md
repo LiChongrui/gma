@@ -109,7 +109,7 @@ plt.show()
 ```python
 import numpy as np
 # 读取数据集
-PPESet = gma.Open('PRE_Luoyang_1981-2020.tif')
+PRESet = gma.Open('PRE_Luoyang_1981-2020.tif')
 ET0Set = gma.Open('ET0_Luoyang_1981-2020.tif')
 PRE = PRESet.ToArray()
 ET0 = ET0Set.ToArray()
