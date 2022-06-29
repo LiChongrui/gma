@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-### gma.math.Smooth().**SavitzkyGolay**(*Polyorder = 2, Delta = 1, Mode = 'interp'*)
+## gma.math.Smooth().**SavitzkyGolay**(*Polyorder = 2, Delta = 1, Mode = 'interp'*)
 
 ---
 

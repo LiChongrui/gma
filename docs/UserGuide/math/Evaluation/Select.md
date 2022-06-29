@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.index.Evaluation().**Select**(*Method = 'ALL'*)
+## gma.math.Evaluation().**Select**(*Method = 'ALL'*)
 
 ---
 

@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-##  gma.index.**ToNumericArray**(*Data*) <Badge text="1.0.6 +"/> 
+##  gma.math.**ToNumericArray**(*Data*) <Badge text="1.0.6 +"/> 
 
 ---
 

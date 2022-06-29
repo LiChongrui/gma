@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.index.**Smooth**(*Data, WindowSize, Times = 1, Axis = None*)
+## gma.math.**Smooth**(*Data, WindowSize, Times = 1, Axis = None*)
 
 ---
 

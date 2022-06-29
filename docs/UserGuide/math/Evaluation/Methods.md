@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-### gma.index.Evaluation().**Methods**()
+## gma.math.Evaluation().**Methods**()
 
 ---
 
@@ -12,7 +12,7 @@ sidebar: false
 
 **返回：**`list`。
 
---- 
+---
 
 **示例：**
 

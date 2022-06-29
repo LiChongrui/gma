@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.index.Evaluation().**CORR**(*Method = 'pearson'*)
+## gma.math.Evaluation().**CORR**(*Method = 'pearson'*)
 ---
 
 **功能：**【r，P】。相关系数和显著性水平。

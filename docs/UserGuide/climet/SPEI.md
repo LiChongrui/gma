@@ -124,7 +124,7 @@ SPEI60 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 60)
 for i in S:
 	# 保存所有结果中的非全 nan 波段。即：去除时间尺度累积时序列前无效的波段。
     gma.rasp.WriteRaster(fr'.\1981-2020_SPEI{i}.tif', 
-                         eval(f'SPEI{i}[i-1:]'), 
+                         eval(f'SPEI{i}')[i-1:], 
                          Projection = PRESet.Projection,
                          Transform = PRESet.GeoTransform, 
                          DataType = 'Float32', 
