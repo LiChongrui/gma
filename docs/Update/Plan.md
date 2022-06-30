@@ -54,5 +54,9 @@ sidebar: false
 
 &emsp;　　修改函数名为 PenmanMonteith 并移入 gma.climet.ET0 下。移除了可配置的 3 个常量参数。
 
+&emsp;　3、import
+
+&emsp;　　导入包前，首先将包目录写入临时系统环境，以提高导入包的通过率。
+
 
 
