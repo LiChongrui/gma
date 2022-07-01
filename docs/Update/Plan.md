@@ -56,7 +56,7 @@ sidebar: false
 
 &emsp;　3、import
 
-&emsp;　　导入包前，首先将包目录写入临时系统环境，以提高导入包的通过率。
+&emsp;　　优化 import 过程，提高导入包的通过率。
 
 
 
