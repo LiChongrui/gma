@@ -176,9 +176,16 @@ module.exports = {
                         '/UserGuide/raa/DEM/Roughness',
                         '/UserGuide/raa/DEM/Slope',
                         '/UserGuide/raa/DEM/TPI',
-                        '/UserGuide/raa/DEM/TRI',
                     ]
-                }
+                },
+                {
+                    title: 'Kernel',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/raa/Kernel/Aggregate',
+                        '/UserGuide/raa/Kernel/GeneralFiltering',   
+                    ]
+                }, 
             ]
         }
     ],
