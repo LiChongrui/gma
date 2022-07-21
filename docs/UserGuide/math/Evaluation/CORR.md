@@ -83,7 +83,7 @@ print('"Axis = 1":', EVA1.CORR())
 ET0Set = gma.Open('ET0_China_ANUSPLIN_2020.tif')
 PRESet = gma.Open('PRE_China_ANUSPLIN_2020.tif')
 
-# 提取数据集的仿射变换、坐标系和无数据值
+# 提取数据集的仿射变换、坐标系
 Geot = ET0Set.GeoTransform
 Proj = ET0Set.Projection
 
@@ -92,7 +92,6 @@ PRE = PRESet.ToArray()
 
 # 按照月份计算相关，也就是波段
 CORRData = gma.math.Evaluation(ET0, PRE, Axis = 0).CORR()
-# 异常的结果将直接被赋值为 nan
 
 # 将相关系数结果保存为 GTiff 栅格
 gma.rasp.WriteRaster(r'..\0.1 预处理\CORRET0PRE_China_ANUSPLIN_2020.tif', 
