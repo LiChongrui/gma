@@ -93,6 +93,15 @@ module.exports = {
                         '/UserGuide/math/Evaluation/RMSE',
                         '/UserGuide/math/Evaluation/Select',
                     ]
+                },
+                {
+                    title: 'Kernel',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/math/Kernel/Aggregate',
+                        '/UserGuide/math/Kernel/GaussFilter',
+                        '/UserGuide/math/Kernel/GeneralFilter',
+                    ]
                 }
             ]
         }
@@ -183,7 +192,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/UserGuide/raa/Kernel/Aggregate',
-                        '/UserGuide/raa/Kernel/GeneralFiltering',   
+                        '/UserGuide/raa/Kernel/GeneralFilter',   
+                        '/UserGuide/raa/Kernel/GaussFilter',   
                     ]
                 }, 
             ]

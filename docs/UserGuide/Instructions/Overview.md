@@ -21,7 +21,7 @@ date: 2021-10-30
 | :------- | :----: | :--: | :--: | :----: | :----: | :--: | :------: | :------: | :--: | :--: |
 | 气象气候 | climet | 3 | 1 | 3 |  |  |  |  | 7 |<Badge text="1.0.10" vertical='middle'/>|
 | 指数运算 | rsvi |  5   |      |        |        |      |          |          |  5   |<Badge text="1.0.10" vertical='middle'/>|
-| 数学运算 |  math  |  2   |  2   |   10   |        |      |          |          |  14  |<Badge text="1.0.10" vertical='middle'/>|
+| 数学运算 |  math  |  2   |  2   |   10   |        |      |          |          |  14  |<Badge text="1.0.0" vertical='middle'/>|
 | 系统交互 |  osf   |  5   |  1   |   3    |        |      |          |          |  9   |<Badge text="1.0.0" vertical='middle'/>|
 | 空间杂项 |  smc   |  2   |      |        |        |      |          |          |  2   |<Badge text="1.0.5" vertical='middle'/>|
 | 栅格处理 |  rasp  |  16  |  1   |   1    |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
