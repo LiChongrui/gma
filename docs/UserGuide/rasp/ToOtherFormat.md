@@ -14,7 +14,7 @@ sidebar: false
 
 &emsp;InFile：`str`。输入栅格路径。
 
-&emsp;OutPath：`str`。输出文件夹路径。
+&emsp;OutFile：`str`。输出栅格路径。
 
 **可选参数：**
 
