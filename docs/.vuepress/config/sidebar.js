@@ -251,6 +251,7 @@ module.exports = {
             title:'更新日志',
             collapsable: false,
             children: [
+                '1.0.11',
                 '1.0.10',
                 '1.0.9',
                 '1.0.8',
