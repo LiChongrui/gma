@@ -32,7 +32,7 @@ Scale、Periodicity 基于计算轴！
 
 **参考文献：**
 
-&emsp;Thornthwaite, C.W. (1948) An approach toward a rational classification of climate. Geographical Review, Vol. 38, 55-94.
+&emsp;McKee T B, Doesken N J, Kleis J. The relationship of drought frequency and duration to time scales[R]. Eighth Conf. on Applied Climatology, Anaheim, CA: American Meteor Society, 1993.
 
 ---
 
