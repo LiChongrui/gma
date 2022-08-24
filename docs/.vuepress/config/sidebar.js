@@ -69,6 +69,7 @@ module.exports = {
             collapsable: false,
             children: [
                 '/UserGuide/math/FillNoData',
+                '/UserGuide/math/MKMutationTest',
                 '/UserGuide/math/ToNumericArray',
                 {
                     title: 'Smooth',

@@ -39,6 +39,7 @@ date: 2021-10-29
 | 函数 / *类*  | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
 | [FillNoData](../math/FillNoData.html) | gma.math.FillNoData | 【填充缺失值】 | 对缺失值或异常值值进行插值替换 |
+| [MKMutationTest](../math/MKMutationTest.html) <Badge text="1.0.12 +"/>| gma.math.MKMutationTest | 【Mann-Kendall 突变检验】 | 基于 Mann-Kendall 方法对时间序列数据进行突变检验。 |
 | [ToNumericArray](../math/ToNumericArray.html) <Badge text="1.0.6 +"/> | gma.math.ToNumericArray | 【转换为数字型数组】 | 强制将输入数据转为数字型数组                                 |
 | ***[Smooth](../math/Smooth/index.html)*** | *gma.math.Smooth* | *【数据平滑】* | *数据平滑（滤波）。支持的平滑方法详见：[数据平滑](Function.html#数据平滑)* |
 | ***[Evaluation](../math/Evaluation/index.html)*** | *gma.math.Evaluation* | *【数据评估】* | *支持的重命名方法详见：[数据评估](Function.html#数据评估)* |
