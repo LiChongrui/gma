@@ -80,6 +80,7 @@ SPI12 = gma.climet.SPI(PRE, Axis = 0, Scale = 12)
 SPI24 = gma.climet.SPI(PRE, Axis = 0, Scale = 24)
 SPI60 = gma.climet.SPI(PRE, Axis = 0, Scale = 60)
 # 存储计算结果
+S = [1,3,6,12,24,60]
 for i in S:
 	# 保存所有结果中的非全 nan 波段。即：去除时间尺度累积时序列前无效的波段。
     gma.rasp.WriteRaster(fr'.\1981-2020_SPI{i}.tif', 
