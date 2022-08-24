@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp;Simulation：`list||array`。模拟数据。
 
-&emsp;Axis = `int` <Badge text="1.0.8 +"/> 。数据评估使用的轴。默认（None）将输入数据展开为 1 维数据，轴为 0。
+&emsp;Axis = `int` <Badge text="1.0.8 +"/> 。数据评估使用的轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 
 ::: warning 注意
 

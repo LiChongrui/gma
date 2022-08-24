@@ -1,10 +1,10 @@
 ---
 title: MKMutationTest
-date: 2021-10-30
+date: 2022-08-28
 sidebar: false
 ---
 
-## gma.math.**MKMutationTest**(*Data*)<Badge text="1.0.12 +"/>
+## gma.math.**MKMutationTest**(*Data, Axis = None*)<Badge text="1.0.12 +"/>
 
 ---
 
@@ -13,6 +13,10 @@ sidebar: false
 **参数：**
 
 &emsp;Data：`list||array` 。需要检验的数据。
+
+**可选参数：**
+
+&emsp;Axis = `int`  。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 
 **返回：** `namedtuple`。
 
