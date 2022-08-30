@@ -36,6 +36,8 @@ Scale、Periodicity 基于计算轴！
 
 ---
 
+**示例：**
+
 ```python
 import gma
 ```

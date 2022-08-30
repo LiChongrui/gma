@@ -14,6 +14,7 @@ date: 2021-10-29
 [SPEI](../climet/SPEI.html) | gma.climet.SPEI | 【标准化降水蒸散指数】 | 基于 Log-Logistic 分布计算标准化降水蒸散指数 
 [SPI](../climet/SPI.html)| gma.climet.SPI | 【标准化降水指数】 | 基于 Gamma 分布计算标准化降水指数                            
 [PAP](../climet/PAP.html)  | gma.climet.PAP | 【降水距平百分率】 | 计算降水值到多年平均值的波动情况 
+| [MKMutationTest](../climet/MKMutationTest.html) <Badge text="1.0.12 +"/>| gma.math.MKMutationTest | 【Mann-Kendall 突变检验】 | 基于 Mann-Kendall 方法对时间序列数据进行突变检验。 |
 ***ET0*** | gma.climet.ET0 | 【蒸散】 | *日尺度或月尺度潜在蒸散量计算。支持的计算方法详见：[蒸散](Function.html#蒸散)* 
 
 #### 蒸散 <Badge text="1.0.10 +"/>
@@ -39,7 +40,6 @@ date: 2021-10-29
 | 函数 / *类*  | 引用（简版）                     | 功能               | 详细解释                                                     |
 | :------------------ | :------------------------------- | :----------------- | :----------------------------------------------------------- |
 | [FillNoData](../math/FillNoData.html) | gma.math.FillNoData | 【填充缺失值】 | 对缺失值或异常值值进行插值替换 |
-| [MKMutationTest](../math/MKMutationTest.html) <Badge text="1.0.12 +"/>| gma.math.MKMutationTest | 【Mann-Kendall 突变检验】 | 基于 Mann-Kendall 方法对时间序列数据进行突变检验。 |
 | [ToNumericArray](../math/ToNumericArray.html) <Badge text="1.0.6 +"/> | gma.math.ToNumericArray | 【转换为数字型数组】 | 强制将输入数据转为数字型数组                                 |
 | ***[Smooth](../math/Smooth/index.html)*** | *gma.math.Smooth* | *【数据平滑】* | *数据平滑（滤波）。支持的平滑方法详见：[数据平滑](Function.html#数据平滑)* |
 | ***[Evaluation](../math/Evaluation/index.html)*** | *gma.math.Evaluation* | *【数据评估】* | *支持的重命名方法详见：[数据评估](Function.html#数据评估)* |

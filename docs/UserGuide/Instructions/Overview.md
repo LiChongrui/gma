@@ -15,17 +15,17 @@ date: 2021-10-30
 
 ## 功能统计
 
-&emsp;&emsp;截止 <Badge text="1.0.11" vertical='middle'/>  版本，各个模块的 **函数/方法数量统计** 如下表：
+&emsp;&emsp;截止 <Badge text="1.0.10" vertical='middle'/>  版本，各个模块的 **函数/方法数量统计** 如下表：
 
 |  中文名  | 模块名 | 函数 |  类  | 方法 | 属性 | 子类 | 子类方法 | 子类属性 | 合计 | 初始构建版本 |
 | :------- | :----: | :--: | :--: | :----: | :----: | :--: | :------: | :------: | :--: | :--: |
-| 气象气候 | climet | 3 | 1 | 3 |  |  |  |  | 7 |<Badge text="1.0.10" vertical='middle'/>|
+| 气象气候 | climet | 4 | 1 | 3 |  |  |  |  | 8 |<Badge text="1.0.10" vertical='middle'/>|
 | 指数运算 | rsvi |  5   |      |        |        |      |          |          |  5   |<Badge text="1.0.10" vertical='middle'/>|
-| 数学运算 |  math  |  3   |  2   |   10   |        |      |          |          |  15  |<Badge text="1.0.0" vertical='middle'/>|
+| 数学运算 |  math  |  2   |  3   |   13   |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
 | 系统交互 |  osf   |  5   |  1   |   3    |        |      |          |          |  9   |<Badge text="1.0.0" vertical='middle'/>|
 | 空间杂项 |  smc   |  2   |      |        |        |      |          |          |  2   |<Badge text="1.0.5" vertical='middle'/>|
 | 栅格处理 |  rasp  |  16  |  1   |   1    |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
-| 栅格分析 |  raa   |      |  1   |   6    |        |      |          |          |  7   |<Badge text="1.0.7" vertical='middle'/>|
+| 栅格分析 |  raa   |      |  2   |   8    |        |      |          |          |  10   |<Badge text="1.0.7" vertical='middle'/>|
 | 矢量处理 |  vesp  |  13  |      |        |        |      |          |          |  13  |<Badge text="1.0.0" vertical='middle'/>|
 | 高级配置 | config |  2   |  4   |        |   30   |      |          |          |  36  |<Badge text="1.0.7" vertical='middle'/>|
 | 其他函数 |   -    |  1   |      |   7    |   13   |  1   |    1     |    5     |  28  |<Badge text="1.0.6" vertical='middle'/>|

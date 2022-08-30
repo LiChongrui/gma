@@ -34,6 +34,7 @@ module.exports = {
                 '/UserGuide/climet/SPEI',
                 '/UserGuide/climet/SPI',
                 '/UserGuide/climet/PAP',
+                '/UserGuide/climet/MKMutationTest',
                 {
                     title: 'ET0',
                     collapsable: false,
@@ -69,7 +70,6 @@ module.exports = {
             collapsable: false,
             children: [
                 '/UserGuide/math/FillNoData',
-                '/UserGuide/math/MKMutationTest',
                 '/UserGuide/math/ToNumericArray',
                 {
                     title: 'Smooth',
