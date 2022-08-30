@@ -4,7 +4,7 @@ date: 2022-08-28
 sidebar: false
 ---
 
-## gma.math.**MKMutationTest**(*Data, Axis = None*)<Badge text="1.0.12 +"/>
+## gma.climet.**MKMutationTest**(*Data, Axis = None*)<Badge text="1.0.12 +"/>
 
 ---
 
