@@ -26,7 +26,7 @@ sidebar: false
 
 &emsp;LAT：`float||array` 。纬度（°）。
 
-&emsp;Day：`int||array` 。以日序（儒略日）表示。1-365（平年）或366（闰年）。
+&emsp;Day：`int||array` 。日期，以日序（儒略日）表示。1-365（平年）或366（闰年）。
 
 &emsp;ELE：`float||array` 。海拔高度（m）。
 
