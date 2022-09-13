@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;RHU：`float||array` 。日平均相对湿度（%）。
 
-&emsp;SSH：`float||array`  日日照时数（hr）。
+&emsp;SSH：`float||array`  日日照时数（h）。
 
 &emsp;LAT：`float||array` 。纬度（°）。
 
