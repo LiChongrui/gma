@@ -45,7 +45,17 @@ module.exports = {
 
                     ]
                 },
-
+                {
+                    title: 'Other',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/climet/Other/DaylightHours',
+                        '/UserGuide/climet/Other/Declination',
+                        '/UserGuide/climet/Other/HourAngle',
+                        '/UserGuide/climet/Other/RDBSunAndEarth',
+                        '/UserGuide/climet/Other/SolarRadiationFluxOA'
+                    ]
+                },
             ],
         }
     ],
