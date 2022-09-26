@@ -60,7 +60,7 @@ OUT = pd.DataFrame([SPI1, SPI3, SPI6, SPI12, SPI24, SPI60],
                    index = ['SPI1','SPI3','SPI6','SPI12','SPI24','SPI60']).T
 OUT.to_excel(r'.\SPI.xlsx', index = False)
 ```
-> 对不同尺度 SPEI 结果进行绘制
+> 对不同尺度 SPI 结果进行绘制
 
 ![](/climet/SPIPlot.svg)
 
