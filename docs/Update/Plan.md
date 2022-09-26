@@ -13,3 +13,7 @@ sidebar: false
 &emsp;　1、为 climet 增加 Other 类组
 
 &emsp;　　提供 DaylightHours【白昼时数】、Declination【赤纬】、HourAngle【时角】、RDBSunAndEarth【日地相对距离】、SolarRadiationFluxOA【大气层外太阳辐射通量】计算！
+
+&emsp;　2、增加【[Isopleth](/UserGuide/raa/Extraction/Isopleth.html)】函数
+
+&emsp;　　计算等值线，生成数量指标值相等的各点连成的平滑曲线。引用：gma.raa.Extraction.Isopleth。

@@ -207,6 +207,13 @@ module.exports = {
                         '/UserGuide/raa/Kernel/GaussFilter',   
                     ]
                 }, 
+                {
+                    title: 'Extraction',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/raa/Extraction/Isopleth',
+                    ]
+                }, 
             ]
         }
     ],

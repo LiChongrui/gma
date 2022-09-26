@@ -25,6 +25,16 @@ date: 2021-10-29
 | [PenmanMonteith](../climet/ET0/PenmanMonteith.html) | gma.climet.ET0.PenmanMonteith | 【PenmanMonteith】 | 基于 彭曼-蒙提斯法（FAO-56）计算日作物参考蒸散量     |
 | [Thornthwaite](../climet/ET0/Thornthwaite.html)     | gma.climet.ET0.Thornthwaite   | 【Thornthwaite】   | 基于 桑斯维特（Thornthwaite 1948）法计算月潜在蒸散量 |
 
+#### 其他 <Badge text="1.0.13 +"/>
+
+| 函数                                                | 引用（简版）                  | 功能               | 详细解释                                             |
+| :-------------------------------------------------- | :---------------------------- | :----------------- | :--------------------------------------------------- |
+| [DaylightHours](../climet/Other/DaylightHours.html)         | gma.climet.Other.DaylightHours     | 【DaylightHours】     | 基于 FAO-56 推荐的方法计算白昼时数（h） |
+| [Declination](../climet/Other/Declination.html)         | gma.climet.Other.Declination     | 【Declination】     | 基于 FAO-56 推荐的方法计算赤纬（red） |
+| [HourAngle](../climet/Other/HourAngle.html)         | gma.climet.Other.HourAngle     | 【HourAngle】     | 基于 FAO-56 推荐的方法计算时角（t） |
+| [RDBSunAndEarth](../climet/Other/RDBSunAndEarth.html)         | gma.climet.Other.RDBSunAndEarth     | 【RDBSunAndEarth】     | 基于 FAO-56 推荐的方法计算日地相对距离（AU） |
+| [SolarRadiationFluxOA](../climet/Other/SolarRadiationFluxOA.html)         | gma.climet.Other.SolarRadiationFluxOA     | 【SolarRadiationFluxOA】     | 基于 FAO-56 推荐的方法计算大气层外太阳辐射通量（MJ/m2）|
+
 ## 遥感指数
 
 | 函数                                              | 引用（简版）  | 功能     | 详细解释         |
