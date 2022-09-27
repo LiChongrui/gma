@@ -31,7 +31,7 @@ sidebar: false
 :::
 
 ## 依赖库 
-&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.3.1 +"/>，numpy <Badge text="1.20.3 +"/>，pandas <Badge text="1.3.3 +"/> 和 scipy<Badge text="1.7.1 +"/> 等库，这些库是 gma 实现功能的基础。 gdal 需要手动编译或下载编译后相应版本的 whl 包手动安装。
+&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.4.1 +"/>，numpy <Badge text="1.23.3 +"/>，pandas <Badge text="1.4.2 +"/> 和 scipy<Badge text="1.7.3 +"/> 等库，这些库是 gma 实现功能的基础。 gdal 需要手动编译或下载编译后相应版本的 whl 包手动安装。
 
 ::: right 
 
@@ -41,9 +41,9 @@ sidebar: false
 
 &emsp;&emsp;打开  Windows 终端（或```CMD、PowerShell、conda``` 等且**已配置系统变量**），使用以下命令安装 gdal （**默认 Python 环境**）:
 ```bash
-pip install "X:\GDAL-3.3.3-cp38-cp38-win_amd64.whl"
+pip install "X:\GDAL-3.4.1-cp39-cp39-win_amd64.whl"
 ```
-&emsp;&emsp; 其中```X:\GDAL-3.3.3-cp38-cp38-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
+&emsp;&emsp; 其中```X:\GDAL-3.4.1-cp39-cp39-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
 
 ## 安装
 
