@@ -42,16 +42,16 @@ import gma
 *单个值（0 维）*
 
 ```python
-PRE, WIN, TMAX, TMIN, RHU, SSH = 1025.3, 2.2, 5.1, -4.5, 6.3, 5.5
+PRS, WIN, TMAX, TMIN, RHU, SSH = 1025.3, 2.2, 5.1, -4.5, 6.3, 5.5
 LAT, Day, ELE = 35.6, 350, 45
-gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> 1.680369405068718
 
 *序列（1 维）*
 
 ```python
-PRE =[1034.7, 991.8, 994.8, 1014.7]
+PRS =[1034.7, 991.8, 994.8, 1014.7]
 WIN = [3.4, 2.8, 3.1, 2.9]
 TMAX = [5.5, 9, 5.9, 7.6]
 TMIN = [-1.3, -1.4, 0.8, -0.1]
@@ -60,7 +60,7 @@ SSH = [5.2, 4.6, 4.2, 6.8]
 LAT = [37.1, 37.6, 35.9, 36.5]
 Day = [357, 348, 352, 358]
 ELE = [176, 385, 468, 412]
-gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> array([2.05433147, 2.02435767, 2.31121748, 1.99324934])
 ::: tip 提示
@@ -70,25 +70,25 @@ LAT、Day、ELE 也支持配置单个值，以及与气象数据同形状数据�
 ```python
 # 组合 1
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], 357, 176
-print('组合1', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合1', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 2
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], [357, 348, 352, 358], 176
-print('组合2', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合2', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 3
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], 357, [176, 385, 468, 412]
-print('组合3', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合3', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 4
 LAT, Day, ELE = 37.1, 357, 176
-print('组合4', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合4', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 5
 LAT, Day, ELE = 37.1, [357, 348, 352, 358], 176
-print('组合5', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合5', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 6
 LAT, Day, ELE = 37.1, [357, 348, 352, 358], [176, 385, 468, 412]
-print('组合6', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合6', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 7
 LAT, Day, ELE = 37.1, 357, [176, 385, 468, 412]
-print('组合7', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合7', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 ```
 > \>>> 组合1 [2.05433147 2.01522148 2.3042206  1.98495581]<br>
 > \>>> 组合2 [2.05433147 2.0188891  2.30384578 1.98591626]<br>
@@ -100,7 +100,7 @@ print('组合7', gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, L
 
 *更多维度*
 ```python
-PRE = [[1026.4, 1037.7, 987.1, 1031.1],
+PRS = [[1026.4, 1037.7, 987.1, 1031.1],
         [1006.1, 1013.2, 1016.9, 1046.4],
         [1046. , 1009.3, 1004.1, 1022.9]]
 WIN = [[3.2, 5.8, 5.2, 5.9],
@@ -127,7 +127,7 @@ Day = [[350, 351, 352, 353],
 ELE = [[240, 399, 168.3, 197.3],
        [233.3, 365.1, 329.4, 330.7],
        [163.2, 346.8,  57.2, 227.7]]
-gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> array([[1.96605814, 2.53089833, 1.8249439 , 2.57517405],<br>
 > 　　　　　[1.60235259, 2.38994146, 1.86795955, 2.25009657],<br>
@@ -157,13 +157,13 @@ Proj = PRSSet.Projection
 NoData = PRSSet.NoData
 
 # 读取数据到数组
-PRE, WIN, TMAX = PRSSet.ToArray(), WINSet.ToArray(), TMAXSet.ToArray(),
+PRS, WIN, TMAX = PRSSet.ToArray(), WINSet.ToArray(), TMAXSet.ToArray(),
 TMIN, RHU, SSH = TMINSet.ToArray(), RHUSet.ToArray(), SSDSet.ToArray()
 ELE = ELESet.ToArray()
 LAT = LATSet.ToArray()
 Day = 350
 
-PMET0 = gma.climet.ET0.PenmanMonteith(PRE, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+PMET0 = gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 
 # 将结果保存为 GTiff 格式
 gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif', 

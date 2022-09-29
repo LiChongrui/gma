@@ -3,7 +3,7 @@ module.exports = {
 
     '/Explore/': [
         {
-            title:'功能探索',
+            title:'组织说明',
             collapsable: false,
             children: [
                 '',
@@ -12,7 +12,14 @@ module.exports = {
                 'Constants',
                 'Naming',
             ]
-        }
+        },
+        {
+            title:'应用探索',
+            collapsable: false,
+            children: [
+                'RasterOperation',
+            ]
+        },
     ],
 
     '/UserGuide/Instructions/': [
