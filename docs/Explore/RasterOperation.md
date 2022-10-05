@@ -7,7 +7,7 @@ date: 2022-09-29
 
 &emsp;&emsp; gma **有限度的**提供栅格读取、处理等操作过程，并提供标准化的栅格处理思路，方便自主进行栅格数据运算等操作。基于 gma 的栅格运算标准思路和流程如下图：
 
-![](/images/RasterOperation.svg)
+![](/explore/RasterOperation.svg)
 
 ## 栅格运算
 
@@ -44,7 +44,7 @@ Data = DataSet.ToArray()
 
 &emsp;&emsp; 这里对整个 array 进行一个简单的归一化运算，归一化方法如下：
 
-$$NDData  = (Data - Data_{min}) / (Data_{max} - Data_{min})$$ 
+$$NDData  = \frac{Data - Data_{min}}{Data_{max} - Data_{min}}$$ 
 
 ```python
 # 记录有效数据位置
@@ -73,5 +73,5 @@ gma.rasp.WriteRaster('./ELE_China_GEBCO_2020_ND.tif',
                      NoData = NoData )
 ```
 
-
+![](/explore/NDDEM.webp)
 
