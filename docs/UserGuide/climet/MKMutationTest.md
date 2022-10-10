@@ -18,7 +18,7 @@ sidebar: false
 
 &emsp;Axis = `int`  。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 
-**返回：** `namedtuple`。
+**返回：** `namedtuple`。包含正向（UFk）和反向（UBk）结果。
 
 ---
 

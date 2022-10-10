@@ -156,6 +156,13 @@ module.exports = {
             children: [
                 '/UserGuide/smc/CALDistance',
                 '/UserGuide/smc/TRANCoordinate',
+                {
+                    title: 'Interpolate',
+                    collapsable: false,
+                    children: [
+                        '/UserGuide/smc/Interpolate/IDW',
+                    ]
+                }
             ]
         }
     ],

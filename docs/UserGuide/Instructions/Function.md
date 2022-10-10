@@ -53,6 +53,7 @@ date: 2021-10-29
 | [ToNumericArray](../math/ToNumericArray.html) <Badge text="1.0.6 +"/> | gma.math.ToNumericArray | 【转换为数字型数组】 | 强制将输入数据转为数字型数组                                 |
 | ***[Smooth](../math/Smooth/index.html)*** | *gma.math.Smooth* | *【数据平滑】* | *数据平滑（滤波）。支持的平滑方法详见：[数据平滑](Function.html#数据平滑)* |
 | ***[Evaluation](../math/Evaluation/index.html)*** | *gma.math.Evaluation* | *【数据评估】* | *支持的重命名方法详见：[数据评估](Function.html#数据评估)* |
+| ***Kernel*** <Badge text="1.0.11 +"/> | *gma.math.Kernel* | *【核运算】* | *利用卷积核或其他核对数据进行运算分析。支持的分析函数详见：[核运算](Function.html#核运算)* |
 
 #### 数据平滑
 
@@ -73,6 +74,15 @@ date: 2021-10-29
 | [MaxAE](../math/Evaluation/MaxAE.html)     | gma.math.Evaluation.MaxAE   | 【MaxAE】    | 最大绝对误差                                         |
 | [Select](../math/Evaluation/Select.html)   | gma.math.Evaluation.Select  | 【选择方法】 | 选择Evaluation中需要计算的一个或多个评价指标进行计算 |
 | [Methods](../math/Evaluation/Methods.html) | gma.math.Evaluation.Methods | 【记录方法】 | 记录Evaluation类中所有的评估方法                     |
+
+#### 核运算 <Badge text="1.0.11 +"/>
+
+| 函数                                       | 引用（简版）          | 功能               | 详细解释                          |
+| :----------------------------------------- | :-------------------- | :----------------- | :-------------------------------- |
+| [Aggregate](../math/Kernel/Aggregate.html) | gma.math.Kernel.Aggregate | 【数组聚合】         | 生成缩小后数组        |
+| [GeneralFilter](../math/Kernel/GeneralFilter.html)| gma.math.Kernel.GeneralFilter | 【普通滤波】      | 对数组进行普通滤波处理       |
+| [GaussFilter](../math/Kernel/GaussFilter.html)| gma.math.Kernel.GaussFilter | 【高斯滤波】      | 利用高斯核对数组进行滤波处理       |
+
 
  ## 系统交互
 
@@ -99,6 +109,12 @@ date: 2021-10-29
 | :----- | :----- | :----- | :-----|
 |[CALDistance](../smc/CALDistance.html) | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
 |[TRANCoordinate](../smc/TRANCoordinate.html) | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
+| ***Interpolate*** | *gma.smc.Interpolate* | *【空间插值】* | *利用不同插值方法将点插值到面。支持的插值方法详见：[空间插值](Function.html#空间插值)* |
+
+#### 空间插值
+| 方法                                       | 引用（简版）             | 功能     | 详细解释                                         |
+| :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
+| [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组。           |
 
  ## 栅格处理
 
@@ -132,8 +148,9 @@ date: 2021-10-29
 
 | **函数 /** *类*                         | 引用（简版）   | 功能           | 详细解释                                                     |
 | --------------------------------------- | -------------- | :------------- | :----------------------------------------------------------- |
-| ***DEM*** <Badge text="1.0.7 +"/> | *gma.rasp.DEM* | *【DEM 分析】* | *利用 DEM 实现地形分析。支持的 DEM 分析函数详见：[DEM 分析](Function.html#dem-分析)* |
-| ***Extraction***<Badge text="1.0.7 +"/> | gma.raa.Extraction | *【提取分析 分析】* | *对栅格数据进行提取分析。函数详见：[提取分析](Function.html#提取分析) |
+| ***DEM*** <Badge text="1.0.7 +"/> | *gma.raa.DEM* | *【DEM 分析】* | *利用 DEM 实现地形分析。支持的 DEM 分析函数详见：[DEM 分析](Function.html#dem-分析)* |
+| ***Kernel*** <Badge text="1.0.11 +"/> | *gma.raa.Kernel* | *【核分析】* | *利用卷积核获取其他核对栅格数据进行运算分析。支持的分析函数详见：[核分析](Function.html#核分析)* |
+| ***Extraction***<Badge text="1.0.13 +"/> | *gma.raa.Extraction* | *【提取分析 分析】* | *对栅格数据进行提取分析。函数详见：[提取分析](Function.html#提取分析)* |
 
 #### DEM 分析 <Badge text="1.0.7 +"/>
 
@@ -145,6 +162,14 @@ date: 2021-10-29
 | [Aspect](../raa/DEM/Aspect.html)  | gma.raa.DEM.Aspect    | 【坡向】           | 从 DEM 栅格文件计算坡向           |
 | [TRI](../raa/DEM/TRI.html)   | gma.raa.DEM.TRI       | 【地形耐用度指数】 | 从 DEM 栅格文件计算地形耐用度指数 |
 | [TPI](../raa/DEM/TPI.html)  | gma.raa.DEM.TPI       | 【地形位置指数】   | 从DEM 栅格文件计算地形位置指数    |
+
+#### 核分析 <Badge text="1.0.11 +"/>
+
+| 函数                                       | 引用（简版）          | 功能               | 详细解释                          |
+| :----------------------------------------- | :-------------------- | :----------------- | :-------------------------------- |
+| [Aggregate](../raa/Kernel/Aggregate.html) | gma.raa.Kernel.Aggregate | 【栅格聚合】         | 生成低分辨率栅格        |
+| [GeneralFilter](../raa/Kernel/GeneralFilter.html)| gma.raa.Kernel.GeneralFilter | 【普通滤波】      | 对影像进行普通滤波处理       |
+| [GaussFilter](../raa/Kernel/GaussFilter.html)| gma.raa.Kernel.GaussFilter | 【高斯滤波】      | 利用高斯核对影像进行滤波处理       |
 
 #### 提取分析 <Badge text="1.0.13 +"/>
 
