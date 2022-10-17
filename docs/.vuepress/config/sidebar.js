@@ -28,8 +28,8 @@ module.exports = {
             title:'使用说明',
             collapsable: false,
             children: [
-                '/UserGuide/Instructions/Overview',
-                '/UserGuide/Instructions/Function'
+                'Overview',
+                'Function'
             ]
         }
     ],
@@ -39,17 +39,17 @@ module.exports = {
             title: '气候气象',
             collapsable: false,
             children: [
-                '/UserGuide/climet/SPEI',
-                '/UserGuide/climet/SPI',
-                '/UserGuide/climet/PAP',
-                '/UserGuide/climet/MKMutationTest',
+                'SPEI',
+                'SPI',
+                'PAP',
+                'MKMutationTest',
                 {
                     title: 'ET0',
                     collapsable: false,
                     children: [
-                        '/UserGuide/climet/ET0/Hargreaves',
-                        '/UserGuide/climet/ET0/PenmanMonteith',
-                        '/UserGuide/climet/ET0/Thornthwaite',
+                        'ET0/Hargreaves',
+                        'ET0/PenmanMonteith',
+                        'ET0/Thornthwaite',
 
                     ]
                 },
@@ -57,11 +57,11 @@ module.exports = {
                     title: 'Other',
                     collapsable: false,
                     children: [
-                        '/UserGuide/climet/Other/DaylightHours',
-                        '/UserGuide/climet/Other/Declination',
-                        '/UserGuide/climet/Other/HourAngle',
-                        '/UserGuide/climet/Other/RDBSunAndEarth',
-                        '/UserGuide/climet/Other/SolarRadiationFluxOA'
+                        'Other/DaylightHours',
+                        'Other/Declination',
+                        'Other/HourAngle',
+                        'Other/RDBSunAndEarth',
+                        'Other/SolarRadiationFluxOA'
                     ]
                 },
             ],
@@ -73,11 +73,11 @@ module.exports = {
             title: '遥感指数',
             collapsable: false,
             children: [
-                '/UserGuide/rsvi/EVI',
-                '/UserGuide/rsvi/NDBI',
-                '/UserGuide/rsvi/NDWI',
-                '/UserGuide/rsvi/NDVI',
-                '/UserGuide/rsvi/TVDI',
+                'EVI',
+                'NDBI',
+                'NDWI',
+                'NDVI',
+                'TVDI',
             ],
         }
     ],
@@ -87,39 +87,39 @@ module.exports = {
             title: '数学运算',
             collapsable: false,
             children: [
-                '/UserGuide/math/FillNoData',
-                '/UserGuide/math/ToNumericArray',
+                'FillNoData',
+                'ToNumericArray',
                 {
                     title: 'Smooth',
                     collapsable: false,
                     children: [
-                        '/UserGuide/math/Smooth/',
-                        '/UserGuide/math/Smooth/MovingAverage',
-                        '/UserGuide/math/Smooth/SavitzkyGolay',
+                        'Smooth/',
+                        'Smooth/MovingAverage',
+                        'Smooth/SavitzkyGolay',
                     ]
                 },
                 {
                     title: 'Evaluation',
                     collapsable: false,
                     children: [
-                        '/UserGuide/math/Evaluation/',
-                        '/UserGuide/math/Evaluation/CORR',
-                        '/UserGuide/math/Evaluation/D',
-                        '/UserGuide/math/Evaluation/MaxAE',
-                        '/UserGuide/math/Evaluation/Methods',
-                        '/UserGuide/math/Evaluation/NRMSE',
-                        '/UserGuide/math/Evaluation/R2',
-                        '/UserGuide/math/Evaluation/RMSE',
-                        '/UserGuide/math/Evaluation/Select',
+                        'Evaluation/',
+                        'Evaluation/CORR',
+                        'Evaluation/D',
+                        'Evaluation/MaxAE',
+                        'Evaluation/Methods',
+                        'Evaluation/NRMSE',
+                        'Evaluation/R2',
+                        'Evaluation/RMSE',
+                        'Evaluation/Select',
                     ]
                 },
                 {
                     title: 'Kernel',
                     collapsable: false,
                     children: [
-                        '/UserGuide/math/Kernel/Aggregate',
-                        '/UserGuide/math/Kernel/GaussFilter',
-                        '/UserGuide/math/Kernel/GeneralFilter',
+                        'Kernel/Aggregate',
+                        'Kernel/GaussFilter',
+                        'Kernel/GeneralFilter',
                     ]
                 }
             ]
@@ -131,19 +131,19 @@ module.exports = {
             title: '系统交互',
             collapsable: false,
             children: [
-                '/UserGuide/osf/DateSeries',
-                '/UserGuide/osf/GetPath',
-                '/UserGuide/osf/MultiThreading',
-                '/UserGuide/osf/UnZip',
-                '/UserGuide/osf/Zip',
+                'DateSeries',
+                'GetPath',
+                'MultiThreading',
+                'UnZip',
+                'Zip',
                 {
                     title: 'Rename',
                     collapsable: false,
                     children: [
-                        '/UserGuide/osf/Rename/',
-                        '/UserGuide/osf/Rename/Intercept',
-                        '/UserGuide/osf/Rename/Modify',
-                        '/UserGuide/osf/Rename/Replace',
+                        'Rename/',
+                        'Rename/Intercept',
+                        'Rename/Modify',
+                        'Rename/Replace',
                     ]
                 }
             ]
@@ -154,13 +154,13 @@ module.exports = {
             title: '空间杂项',
             collapsable: false,
             children: [
-                '/UserGuide/smc/CALDistance',
-                '/UserGuide/smc/TRANCoordinate',
+                'CALDistance',
+                'TRANCoordinate',
                 {
                     title: 'Interpolate',
                     collapsable: false,
                     children: [
-                        '/UserGuide/smc/Interpolate/IDW',
+                        'Interpolate/IDW',
                     ]
                 }
             ]
@@ -171,27 +171,27 @@ module.exports = {
             title: '栅格处理',
             collapsable: false,
             children: [
-                '/UserGuide/rasp/AddColorTable',
-                '/UserGuide/rasp/BandDecomposition',
-                '/UserGuide/rasp/BandSynthesis',
-                '/UserGuide/rasp/ChangeDataType',
-                '/UserGuide/rasp/Clip',
-                '/UserGuide/rasp/Deformation',
-                '/UserGuide/rasp/GenerateOVR',
-                '/UserGuide/rasp/Mosaic',
-                '/UserGuide/rasp/MultiSDSToTif',
-                '/UserGuide/rasp/OrthophotoCorrection',
-                '/UserGuide/rasp/Reproject',
-                '/UserGuide/rasp/Resample',
-                '/UserGuide/rasp/SplitImage',
-                '/UserGuide/rasp/ToOtherFormat',
-                '/UserGuide/rasp/ToVector',
-                '/UserGuide/rasp/WriteRaster',
+                'AddColorTable',
+                'BandDecomposition',
+                'BandSynthesis',
+                'ChangeDataType',
+                'Clip',
+                'Deformation',
+                'GenerateOVR',
+                'Mosaic',
+                'MultiSDSToTif',
+                'OrthophotoCorrection',
+                'Reproject',
+                'Resample',
+                'SplitImage',
+                'ToOtherFormat',
+                'ToVector',
+                'WriteRaster',
                 {
                     title: 'Fusion',
                     collapsable: false,
                     children: [
-                        '/UserGuide/rasp/Fusion/Pansharpen',
+                        'Fusion/Pansharpen',
                     ]
                 }
             ]
@@ -206,27 +206,27 @@ module.exports = {
                     title: 'DEM',
                     collapsable: false,
                     children: [
-                        '/UserGuide/raa/DEM/Aspect',
-                        '/UserGuide/raa/DEM/HillShade',
-                        '/UserGuide/raa/DEM/Roughness',
-                        '/UserGuide/raa/DEM/Slope',
-                        '/UserGuide/raa/DEM/TPI',
+                        'DEM/Aspect',
+                        'DEM/HillShade',
+                        'DEM/Roughness',
+                        'DEM/Slope',
+                        'DEM/TPI',
                     ]
                 },
                 {
                     title: 'Kernel',
                     collapsable: false,
                     children: [
-                        '/UserGuide/raa/Kernel/Aggregate',
-                        '/UserGuide/raa/Kernel/GeneralFilter',   
-                        '/UserGuide/raa/Kernel/GaussFilter',   
+                        'Kernel/Aggregate',
+                        'Kernel/GeneralFilter',   
+                        'Kernel/GaussFilter',   
                     ]
                 }, 
                 {
                     title: 'Extraction',
                     collapsable: false,
                     children: [
-                        '/UserGuide/raa/Extraction/Isopleth',
+                        'Extraction/Isopleth',
                     ]
                 }, 
             ]
@@ -237,19 +237,19 @@ module.exports = {
             title: '矢量处理',
             collapsable: false,
             children: [
-                '/UserGuide/vesp/Check',
-                '/UserGuide/vesp/Clip',
-                '/UserGuide/vesp/Erase',
-                '/UserGuide/vesp/FixGeometry',
-                '/UserGuide/vesp/Intersection',
-                '/UserGuide/vesp/Reproject',
-                '/UserGuide/vesp/Simplify',
-                '/UserGuide/vesp/Split',
-                '/UserGuide/vesp/SymDifference',
-                '/UserGuide/vesp/ToOtherFormat',
-                '/UserGuide/vesp/ToRaster',
-                '/UserGuide/vesp/Union',
-                '/UserGuide/vesp/Update',
+                'Check',
+                'Clip',
+                'Erase',
+                'FixGeometry',
+                'Intersection',
+                'Reproject',
+                'Simplify',
+                'Split',
+                'SymDifference',
+                'ToOtherFormat',
+                'ToRaster',
+                'Union',
+                'Update',
             ]
         }
     ],
@@ -258,12 +258,12 @@ module.exports = {
             title: '高级配置',
             collapsable: false,
             children: [
-                '/UserGuide/config/GetRACreationOption',
-                '/UserGuide/config/GetRasterFormat',
-                '/UserGuide/config/GetVectorFormat',
-                '/UserGuide/config/GetVELayerCreationOption',
-                '/UserGuide/config/RasterFormatInfo',
-                '/UserGuide/config/VectorFormatInfo',
+                'GetRACreationOption',
+                'GetRasterFormat',
+                'GetVectorFormat',
+                'GetVELayerCreationOption',
+                'RasterFormatInfo',
+                'VectorFormatInfo',
             ]
         }
     ],
@@ -272,10 +272,10 @@ module.exports = {
             title: '其他函数',
             collapsable: false,
             children: [
-                '/UserGuide/other/Open',
-                '/UserGuide/other/RasterOpen',
-                '/UserGuide/other/VectorOpen',
-                '/UserGuide/other/Layer',
+                'Open',
+                'RasterOpen',
+                'VectorOpen',
+                'Layer',
             ]
         },
     ],
@@ -284,20 +284,33 @@ module.exports = {
             title:'更新日志',
             collapsable: false,
             children: [
-                '1.0.13',
-                '1.0.12',
-                '1.0.11',
-                '1.0.10',
-                '1.0.9',
-                '1.0.8',
-                '1.0.7',
-                '1.0.6',
-                '1.0.5',
-                '1.0.4',
-                '1.0.3',
-                '1.0.2',
-                '1.0.1',
-                '1.0.0',
+                {
+                    title: '1.1 (2023)',
+                    collapsable: false,
+                    children: [
+                        '1.1/1.1.0',
+                    ]
+                }, 
+                {
+                    title: '1.0 (2022)',
+                    collapsable: false,
+                    children: [
+                        '1.0/1.0.13',
+                        '1.0/1.0.12',
+                        '1.0/1.0.11',
+                        '1.0/1.0.10',
+                        '1.0/1.0.9',
+                        '1.0/1.0.8',
+                        '1.0/1.0.7',
+                        '1.0/1.0.6',
+                        '1.0/1.0.5',
+                        '1.0/1.0.4',
+                        '1.0/1.0.3',
+                        '1.0/1.0.2',
+                        '1.0/1.0.1',
+                        '1.0/1.0.0',
+                    ]
+                }, 
             ]
         }
     ],
