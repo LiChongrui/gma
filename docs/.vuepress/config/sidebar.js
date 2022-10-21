@@ -154,6 +154,7 @@ module.exports = {
             title: '空间杂项',
             collapsable: false,
             children: [
+                'CALArea',
                 'CALDistance',
                 'TRANCoordinate',
                 {
