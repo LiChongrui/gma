@@ -51,7 +51,7 @@ gma.smc.CALArea(Points, Projection = 'EPSG:32650')
 
 *获得其他距离单位的结果*
 ```python
-# 以平方千米 kilometer 为单位
-gma.smc.CALArea(Points, Projection = 'EPSG:32650', Unit = 'square kilometers')
+# 以平方千米 square kilometer 为单位
+gma.smc.CALArea(Points, Projection = 'EPSG:32650', Unit = 'square kilometer')
 ```
 > \>>> 31506.092530982423
