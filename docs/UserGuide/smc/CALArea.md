@@ -21,7 +21,7 @@ sidebar: false
 
 ::: tip 其他支持的单位
 
-square meter（平方米），square millimeter（平方毫米），square centimeter（平方厘米），square decimeter（平方分米），square kilometers（平方千米），hectare（公顷），acre（英亩），mu（亩）。
+square meter（平方米），square millimeter（平方毫米），square centimeter（平方厘米），square decimeter（平方分米），square kilometer（平方千米），hectare（公顷），acre（英亩），mu（亩）。
 
 :::
 
@@ -43,7 +43,9 @@ gma.smc.CALArea(Points)
 *计算其他坐标系下两点的距离*
 
 ```python
-Points = [(1528762.07788357, 5089353.92316552), (1736214.64875059, 4552113.0446395), (1638653.77538803, 5108509.49658331)]
+Points = [(1528762.07788357, 5089353.92316552), 
+          (1736214.64875059, 4552113.0446395), 
+          (1638653.77538803, 5108509.49658331)]
 # 输入坐标点的坐标系为 EPSG:32650（WGS 84 / UTM zone 50N）
 gma.smc.CALArea(Points, Projection = 'EPSG:32650')
 ```

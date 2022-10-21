@@ -4,14 +4,14 @@ date: 2022-10-06
 sidebar: false
 ---
 
-## gma.smc.interpolate.**IDW**(*Points, Values, Boundary = None, Resolution = None, Power = 2, SearchRadius = 12*, InProjection = 'WGS84')<Badge text="1.1.0 +"/>
+## gma.smc.interpolate.**IDW**(*Points, Values, Boundary = None, Resolution = None, Power = 2, SearchRadius = 12, InProjection = 'WGS84'*)<Badge text="1.1.0 +"/>
 ---
 
 **功能：** 【反距离权重插值】。使用反距离加权法（IDW）将点插值成二维数组。
 
 **参数：**
 
-&emsp;Points：`list||tuple||array` 。插值点 X（经度），Y（纬度）坐标，且必须为经纬度坐标。可为嵌套列表或元组，至少有 2 个坐标点。
+&emsp;Points：`list||tuple||array` 。插值点 X（经度），Y（纬度）坐标。可为嵌套列表或元组，至少有 2 个坐标点。
 
 &emsp;Values：`array`。坐标点对应的数据值，与 Points 数量相同。
 
@@ -30,4 +30,28 @@ sidebar: false
 **返回：** 类型：`namedtuple`。包含数据（Data）和仿射变换（Transform）。
 
 ---
+
+**示例：**
+
+```python
+import gma
+import pandas as pd
+
+Data = pd.read_excel("IDW.xlsx")
+Points = Data.loc[:, ['经度','纬度']].values
+Values = Data.loc[:, ['值']].values
+
+# 插值
+IDWD = gma.smc.Interpolate.IDW(Points, Values, Resolution = 0.05)
+
+gma.rasp.WriteRaster(r'.\gma_IDW.tif',
+                     IDWD.Data,
+                     Projection = 'WGS84',
+                     Transform = IDWD.Transform, 
+                     DataType='Float32')
+```
+
+*与 ArcGIS IDW 插值结果（重分类后）对比：*
+
+![fdg](/smc/IDW.webp)
 

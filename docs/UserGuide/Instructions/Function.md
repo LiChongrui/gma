@@ -107,6 +107,7 @@ date: 2021-10-29
 
 | 函数 | 引用（简版）| 功能 | 详细解释|
 | :----- | :----- | :----- | :-----|
+| [CALArea](../smc/CALArea.html) | gma.smc.CALArea | 【计算面积】 | 计算输入多点组成多边形的面积 |
 |[CALDistance](../smc/CALDistance.html) | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
 |[TRANCoordinate](../smc/TRANCoordinate.html) | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
 | ***Interpolate*** | *gma.smc.Interpolate* | *【空间插值】* | *利用不同插值方法将点插值到面。支持的插值方法详见：[空间插值](Function.html#空间插值)* |

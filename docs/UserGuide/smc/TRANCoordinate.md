@@ -7,11 +7,11 @@ sidebar: false
 ## gma.smc.**TRANCoordinate**(*Points, InProjection = 'WGS84', OutProjection = 'EPSG:4490'*)<Badge text="1.0.5 +"/>
 ---
 
-**功能：** 【坐标转换】。将输入点的坐标转换为目标坐标系的坐标。
+**功能：** 【坐标转换】。将输入单点或多点的坐标转换为目标坐标系下的坐标。
 
 **参数：**
 
-&emsp;Points：`list||tuple||array` 。需要计算距离的两点（或多点）的  X（经度），Y（纬度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。
+&emsp;Points：`list||tuple||array` 。需要转换坐标点（或多点）的  X（经度），Y（纬度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。
 
 ::: warning 注意
 
