@@ -37,7 +37,7 @@ sidebar: false
 import gma
 import pandas as pd
 
-Data = pd.read_excel("IDW.xlsx")
+Data = pd.read_excel("Interpolate.xlsx")
 Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
