@@ -52,7 +52,7 @@ gma.rasp.WriteRaster(r'.\gma_NaturalNeighbor.tif',
                      DataType = 'Float32')
 ```
 
-*与 ArcGIS IDW 插值结果（重分类后）对比：*
+*与 ArcGIS NaturalNeighbor 插值结果（重分类后）对比：*
 
 ![fdg](/smc/NaturalNeighbor.webp)
 
