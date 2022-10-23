@@ -4,7 +4,7 @@ date: 2022-10-06
 sidebar: false
 ---
 
-## gma.smc.interpolate.**IDW**(*Points, Values, Boundary = None, Resolution = None, Power = 2, SearchRadius = 12, InProjection = 'WGS84'*)<Badge text="1.1.0 +"/>
+## gma.smc.Interpolate.**IDW**(*Points, Values, Boundary = None, Resolution = None, Power = 2, SearchRadius = 12, InProjection = 'WGS84'*)<Badge text="1.1.0 +"/>
 ---
 
 **功能：** 【反距离权重插值】。使用反距离加权法（IDW）将点插值成二维数组。
@@ -48,7 +48,7 @@ gma.rasp.WriteRaster(r'.\gma_IDW.tif',
                      IDWD.Data,
                      Projection = 'WGS84',
                      Transform = IDWD.Transform, 
-                     DataType='Float32')
+                     DataType = 'Float32')
 ```
 
 *与 ArcGIS IDW 插值结果（重分类后）对比：*

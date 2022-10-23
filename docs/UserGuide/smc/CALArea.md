@@ -33,14 +33,15 @@ square meter（平方米），square millimeter（平方毫米），square centi
 ```python
 import gma
 ```
-*计算两点之间的距离*
+*计算三个顶点的多边形面积*
+
 ```python
 Points = [(130.1, 45.2), (131.5, 40.2), (131.5, 45.2)]
 gma.smc.CALArea(Points)
 ```
 > \>>> 31761406920.13275
 
-*计算其他坐标系下两点的距离*
+*计算其他坐标系下三个点组成多边形的面积*
 
 ```python
 Points = [(1528762.07788357, 5089353.92316552), 
@@ -51,7 +52,7 @@ gma.smc.CALArea(Points, Projection = 'EPSG:32650')
 ```
 > \>>> 31506092530.98242
 
-*获得其他距离单位的结果*
+*获得其他面积单位的结果*
 ```python
 # 以平方千米 square kilometer 为单位
 gma.smc.CALArea(Points, Projection = 'EPSG:32650', Unit = 'square kilometer')
