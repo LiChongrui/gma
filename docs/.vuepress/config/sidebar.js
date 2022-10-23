@@ -162,6 +162,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'Interpolate/IDW',
+                        'Interpolate/NaturalNeighbor'
                     ]
                 }
             ]

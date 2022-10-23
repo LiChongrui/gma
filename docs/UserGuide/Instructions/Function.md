@@ -115,7 +115,8 @@ date: 2021-10-29
 #### 空间插值
 | 方法                                       | 引用（简版）             | 功能     | 详细解释                                         |
 | :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
-| [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组。           |
+| [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组           |
+| [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法法（NaturalNeighbor）将点插值成二维数组 |
 
  ## 栅格处理
 

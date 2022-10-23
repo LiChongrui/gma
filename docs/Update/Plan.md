@@ -24,8 +24,12 @@ sidebar: false
 
 &emsp;　1、增加【[IDW](/UserGuide/smc/Interpolate/IDW.html)】函数
 
-&emsp;　　基于 IDW 法的点数据空间插值。引用：gma.smc.Interpolate.IDW。
+&emsp;　　基于反距离权重（IDW） 法的点数据空间插值。引用：gma.smc.Interpolate.IDW。
 
 &emsp;　2、增加【[CALArea](/UserGuide/smc/CALArea.html)】函数
 
 &emsp;　　计算面积。计算输入多点组成多边形的面积。引用：gma.smc.CALArea。
+
+&emsp;　3、增加【[NaturalNeighbor](/UserGuide/smc/Interpolate/NaturalNeighbor.html)】函数
+
+&emsp;　　基于自然邻域（NaturalNeighbor）法的点数据空间插值。引用：gma.smc.Interpolate.NaturalNeighbor。
