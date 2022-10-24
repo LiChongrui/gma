@@ -4,7 +4,7 @@ date: 2022-10-23
 sidebar: false
 ---
 
-## gma.smc.Interpolate.**NaturalNeighbor**(*Points, Values, Boundary = None, Resolution = None*)<Badge text="1.1.0 +"/>
+## gma.smc.Interpolate.**NaturalNeighbor**(*Points, Values, Resolution = None*)<Badge text="1.1.0 +"/>
 ---
 
 **功能：** 【自然邻域法插值】。使用自然邻域法（NaturalNeighbor）将点插值成二维数组。
@@ -17,15 +17,15 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;Boundary = `tuple`。插值结果的四至边界，分别为最小经度（左）、最小纬度（下）、最大经度（右）、最大纬度（上）。默认（None）从输入坐标点提取范围。
-
 &emsp;Resolution = `float`。插值结果的分辨率。默认（None）为 Boundary 经度、纬度差最小值的十分之一。
 
 **返回：** 类型：`namedtuple`。包含数据（Data）和仿射变换（Transform）。
 
 ::: warning 注意
 
-NaturalNeighbor 方法不会进行内部坐标转换！因此，这里不配置可以指定输入数据坐标系的参数！
+1. NaturalNeighbor 插值不会包含输入点范围外的任何数据！
+
+2. NaturalNeighbor 方法不会进行内部坐标转换！
 
 :::
 
