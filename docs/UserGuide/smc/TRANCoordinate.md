@@ -11,7 +11,7 @@ sidebar: false
 
 **参数：**
 
-&emsp;Points：`list||tuple||array` 。需要转换坐标点（或多点）的  X（经度），Y（纬度）坐标。如果有，也可包含 Z（高程）。可为嵌套列表或元组。
+&emsp;Points：`list||tuple||array` 。需要转换坐标点（或多点）的  X（经度），Y（纬度）坐标。如果有，也可包含 Z（高程）。
 
 ::: warning 注意
 

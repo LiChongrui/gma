@@ -11,7 +11,13 @@ sidebar: false
 
 **参数：**
 
-&emsp;Points：`list||tuple||array` 。插值点 X（经度），Y（纬度）坐标。可为嵌套列表或元组，至少有 2 个坐标点。
+&emsp;Points：`list||tuple||array` 。插值点 X（经度），Y（纬度）坐标。至少有 4 个坐标点。
+
+::: tip 示例
+
+Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)]
+
+:::
 
 &emsp;Values：`array`。坐标点对应的数据值，与 Points 数量相同。
 

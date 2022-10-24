@@ -11,7 +11,13 @@ sidebar: false
 
 **参数：**
 
-&emsp;Points：`list||tuple||array` 。需要计算面积多边形的顶点的 X（经度），Y（纬度）坐标。可为嵌套列表或元组。
+&emsp;Points：`list||tuple||array` 。需要计算面积多边形的顶点的 X（经度），Y（纬度）坐标。
+
+::: tip 示例
+
+Points = [(130.1, 45.2), (131.5, 40.2), (131.5, 45.2)]
+
+:::
 
 **可选参数：**
 
