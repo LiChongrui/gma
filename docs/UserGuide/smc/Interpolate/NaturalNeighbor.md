@@ -35,6 +35,14 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 
 :::
 
+**参考文献：**
+
+&emsp;[1] Sibson, R. (1981). “A brief description of natural neighbor interpolation (Chapter 2)”. In V. Barnett (ed.). Interpolating Multivariate Data. Chichester: John Wiley. pp. 21–36.
+
+&emsp;[2] V.V. Belikov; V.D. Ivanov; V.K. Kontorovich; S.A. Korytnik; A.Y. Semenov (1997). “The non-Sibsonian interpolation: A new method of interpolation of the values of a function on an arbitrary set of points”. Computational mathematics and mathematical physics. 37 (1): 9–15.            
+
+&emsp;[3] N.H. Christ; R. Friedberg, R.; T.D. Lee (1982). “Weights of links and plaquettes in a random lattice”. Nuclear Physics B. 210 (3): 337–346. 
+
 ---
 
 **示例：**

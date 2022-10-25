@@ -33,3 +33,14 @@ sidebar: false
 &emsp;　3、增加【[NaturalNeighbor](/UserGuide/smc/Interpolate/NaturalNeighbor.html)】函数
 
 &emsp;　　基于自然邻域（NaturalNeighbor）法的点数据空间插值。引用：gma.smc.Interpolate.NaturalNeighbor。
+
+&emsp;　4、增加【[Trend](/UserGuide/smc/Interpolate/Trend.html)】函数
+
+&emsp;　　基于趋势面法（Trend）（全局多项式插值法）的点数据空间插值。引用：gma.smc.Interpolate.Trend。
+
+<font color="#FFA500"><i class="fas fa-tools"></i></font> **重大修复**
+
+&emsp;　1、rsvi
+
+&emsp;　　修复一个重大问题，该问题导致 rsvi 下所有函数均无法正常调用！
+

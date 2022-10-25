@@ -29,11 +29,11 @@ date: 2021-10-29
 
 | 函数                                                | 引用（简版）                  | 功能               | 详细解释                                             |
 | :-------------------------------------------------- | :---------------------------- | :----------------- | :--------------------------------------------------- |
-| [DaylightHours](../climet/Other/DaylightHours.html)         | gma.climet.Other.DaylightHours     | 【DaylightHours】     | 基于 FAO-56 推荐的方法计算白昼时数（h） |
-| [Declination](../climet/Other/Declination.html)         | gma.climet.Other.Declination     | 【Declination】     | 基于 FAO-56 推荐的方法计算赤纬（red） |
-| [HourAngle](../climet/Other/HourAngle.html)         | gma.climet.Other.HourAngle     | 【HourAngle】     | 基于 FAO-56 推荐的方法计算时角（t） |
-| [RDBSunAndEarth](../climet/Other/RDBSunAndEarth.html)         | gma.climet.Other.RDBSunAndEarth     | 【RDBSunAndEarth】     | 基于 FAO-56 推荐的方法计算日地相对距离（AU） |
-| [SolarRadiationFluxOA](../climet/Other/SolarRadiationFluxOA.html)         | gma.climet.Other.SolarRadiationFluxOA     | 【SolarRadiationFluxOA】     | 基于 FAO-56 推荐的方法计算大气层外太阳辐射通量（MJ/m2）|
+| [DaylightHours](../climet/Other/DaylightHours.html)         | gma.climet.Other.DaylightHours     | 【白昼时数】 | 基于 FAO-56 推荐的方法计算白昼时数（h） |
+| [Declination](../climet/Other/Declination.html)         | gma.climet.Other.Declination     | 【赤纬】   | 基于 FAO-56 推荐的方法计算赤纬（red） |
+| [HourAngle](../climet/Other/HourAngle.html)         | gma.climet.Other.HourAngle     | 【时角】   | 基于 FAO-56 推荐的方法计算时角（t） |
+| [RDBSunAndEarth](../climet/Other/RDBSunAndEarth.html)         | gma.climet.Other.RDBSunAndEarth     | 【日地相对距离】 | 基于 FAO-56 推荐的方法计算日地相对距离（AU） |
+| [SolarRadiationFluxOA](../climet/Other/SolarRadiationFluxOA.html)         | gma.climet.Other.SolarRadiationFluxOA     | 【大气层外太阳辐射通量】 | 基于 FAO-56 推荐的方法计算大气层外太阳辐射通量（MJ/m2）|
 
 ## 遥感指数
 
@@ -107,16 +107,17 @@ date: 2021-10-29
 
 | 函数 | 引用（简版）| 功能 | 详细解释|
 | :----- | :----- | :----- | :-----|
-| [CALArea](../smc/CALArea.html) | gma.smc.CALArea | 【计算面积】 | 计算输入多点组成多边形的面积 |
+| [CALArea](../smc/CALArea.html)<Badge text="1.1.0 +"/> | gma.smc.CALArea | 【计算面积】 | 计算输入多点组成多边形的面积 |
 |[CALDistance](../smc/CALDistance.html) | gma.smc.CALDistance |【计算距离】|计算输入两点或多点之间依次连接后的总距离|
 |[TRANCoordinate](../smc/TRANCoordinate.html) | gma.smc.TRANCoordinate |【坐标转换】|将输入点的坐标转换为目标坐标系下的坐标|
-| ***Interpolate*** | *gma.smc.Interpolate* | *【空间插值】* | *利用不同插值方法将点插值到面。支持的插值方法详见：[空间插值](Function.html#空间插值)* |
+| ***Interpolate***<Badge text="1.1.0 +"/> | *gma.smc.Interpolate* | *【空间插值】* | *利用不同插值方法将点插值到面。支持的插值方法详见：[空间插值](Function.html#空间插值)* |
 
-#### 空间插值
+#### 空间插值<Badge text="1.1.0 +"/>
 | 方法                                       | 引用（简版）             | 功能     | 详细解释                                         |
 | :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
 | [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组           |
 | [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法法（NaturalNeighbor）将点插值成二维数组 |
+| [Trend](../smc/Interpolate/Trend.html) | gma.smc.Interpolate.Trend | 【趋势面法插值】 | 使用趋势面法（Trend）（全局多项式插值法）将点插值成二维数组 |
 
  ## 栅格处理
 
