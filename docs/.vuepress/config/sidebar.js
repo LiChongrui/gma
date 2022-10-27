@@ -161,6 +161,7 @@ module.exports = {
                     title: 'Interpolate',
                     collapsable: false,
                     children: [
+                        'Interpolate/BSpline',
                         'Interpolate/IDW',
                         'Interpolate/NaturalNeighbor',
                         'Interpolate/Trend',

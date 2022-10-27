@@ -1,6 +1,6 @@
 ---
 title: 函数列表
-date: 2021-10-29
+date: 2022-10-29
 ---
 
 **&emsp;&emsp;函数列表** 列出了 gma 包含的所有可用函数定义和说明，**可以快速了解所有的函数和功能**。
@@ -115,6 +115,7 @@ date: 2021-10-29
 #### 空间插值<Badge text="1.1.0 +"/>
 | 方法                                       | 引用（简版）             | 功能     | 详细解释                                         |
 | :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
+| [BSpline](../smc/Interpolate/BSpline.html)       | gma.smc.Interpolate.BSpline    | 【B-样条函数法插值】 | 使用 B-样条函数法（BSpline）将点插值成二维数组         |
 | [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组           |
 | [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法法（NaturalNeighbor）将点插值成二维数组 |
 | [Trend](../smc/Interpolate/Trend.html) | gma.smc.Interpolate.Trend | 【趋势面法插值】 | 使用趋势面法（Trend）（全局多项式插值法）将点插值成二维数组 |

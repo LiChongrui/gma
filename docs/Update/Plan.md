@@ -38,6 +38,10 @@ sidebar: false
 
 &emsp;　　基于趋势面法（Trend）（全局多项式插值法）的点数据空间插值。引用：gma.smc.Interpolate.Trend。
 
+&emsp;　5、增加【[BSpline](/UserGuide/smc/Interpolate/BSpline.html)】函数
+
+&emsp;　　基于 B-样条函数法（BSpline）的点数据空间插值。引用：gma.smc.Interpolate.BSpline。
+
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **重大修复**
 
 &emsp;　1、rsvi

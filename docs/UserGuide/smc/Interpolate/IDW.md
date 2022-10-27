@@ -36,6 +36,12 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 
 **返回：** 类型：`namedtuple`。包含数据（Data）和仿射变换（Transform）。
 
+**参考文献：**
+
+&emsp;[1] Philip, G. M., and D. F. Watson. A Precise Method for Determining Contoured Surfaces. Australian Petroleum Exploration Association Journal 22: 205–212. 1982.
+
+&emsp;[2] Watson, D. F., and G. M. Philip. A Refinement of Inverse Distance Weighted Interpolation. Geoprocessing 2:315–327. 1985.
+
 ---
 
 **示例：**
