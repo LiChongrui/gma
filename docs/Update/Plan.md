@@ -42,6 +42,10 @@ sidebar: false
 
 &emsp;　　基于 B-样条函数法（BSpline）的点数据空间插值。引用：gma.smc.Interpolate.BSpline。
 
+&emsp;　6、增加【[OKriging](/UserGuide/smc/Interpolate/OKriging.html)】函数
+
+&emsp;　　基于 普通克里金法（Ordinary Kriging）的点数据空间插值。引用：gma.smc.Interpolate.OKriging。
+
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **重大修复**
 
 &emsp;　1、rsvi

@@ -164,6 +164,7 @@ module.exports = {
                         'Interpolate/BSpline',
                         'Interpolate/IDW',
                         'Interpolate/NaturalNeighbor',
+                        'Interpolate/OKriging',
                         'Interpolate/Trend',
                     ]
                 }
