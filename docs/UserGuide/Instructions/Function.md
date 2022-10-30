@@ -118,7 +118,7 @@ date: 2022-10-29
 | [BSpline](../smc/Interpolate/BSpline.html)       | gma.smc.Interpolate.BSpline    | 【B-样条函数法插值】 | 使用 B-样条函数法（BSpline）将点插值成二维数组         |
 | [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组           |
 | [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法法（NaturalNeighbor）将点插值成二维数组 |
-| [OKriging](../smc/Interpolate/OKriging.html) | gma.smc.Interpolate.OKriging | 【普通克里金法插值】 | 使用普通克里金法（Ordinary Kriging）将点插值成二维数组 |
+| [Kriging](../smc/Interpolate/Kriging.html) | gma.smc.Interpolate.Kriging | 【克里金法插值】 | 使用普通克里金法（Ordinary Kriging）或泛克里金法（Universal Kriging）将点插值成二维数组 |
 | [Trend](../smc/Interpolate/Trend.html) | gma.smc.Interpolate.Trend | 【趋势面法插值】 | 使用趋势面法（Trend）（全局多项式插值法）将点插值成二维数组 |
 
  ## 栅格处理

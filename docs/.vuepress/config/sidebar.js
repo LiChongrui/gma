@@ -163,8 +163,8 @@ module.exports = {
                     children: [
                         'Interpolate/BSpline',
                         'Interpolate/IDW',
+                        'Interpolate/Kriging',
                         'Interpolate/NaturalNeighbor',
-                        'Interpolate/OKriging',
                         'Interpolate/Trend',
                     ]
                 }

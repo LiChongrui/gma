@@ -1,13 +1,13 @@
 ---
-title: OKriging
+title: Kriging
 date: 2022-10-29
 sidebar: false
 ---
 
-## gma.smc.Interpolate.**OKriging**(*Points, Values, Boundary = None, Resolution = None, SearchRadius = 12, InProjection = 'WGS84', VariogramModel = 'Linear',  VariogramParameters = None, \*\*kwargs*)<Badge text="1.1.0 +"/>
+## gma.smc.Interpolate.**Kriging**(*Points, Values, Boundary = None, Resolution = None, SearchRadius = 12, InProjection = 'WGS84', VariogramModel = 'Linear',  VariogramParameters = None, KMethod = 'Ordinary', \*\*kwargs*)<Badge text="1.1.0 +"/>
 ---
 
-**功能：** 【普通克里金法插值】。使用普通克里金法（Ordinary Kriging）将点插值成二维数组。
+**功能：** 【克里金法插值】。使用普通克里金法（Ordinary Kriging）或泛克里金法（Universal Kriging）将点插值成二维数组。
 
 **参数：**
 
@@ -36,7 +36,6 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 
 &emsp;VariogramParameters = `dict`。半变异模型对应的参数。默认利用最小二乘法自动计算变异函数模型参数（None）。
 
-
 ::: tip 支持的模型及可配置的参数
 
 + 线性模型：Linear，可配置参数：Slope，Nugget
@@ -46,6 +45,8 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 + 指数模型：Exponential，可配置参数：PSill, Range, Nugget      
 + 空穴效应模型：HoleEffect，可配置参数：PSill, Range, Nugget
 :::
+
+&emsp;KMethod = `str`。克里金方法。包括 Ordinary（普通克里金）或 Universal（泛克里金），默认（或配置错误修正）为 Ordinary。
 
 **其他参数（kwargs）：**（当 VariogramParameters = None 时生效）
 
@@ -73,20 +74,25 @@ Data = pd.read_excel("Interpolate.xlsx")
 Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
-# （球面函数模型）插值
-OKD = gma.smc.Interpolate.OKriging(Points, Values, Resolution = 0.05, 
-                                   VariogramModel = 'Spherical', 
-                                   VariogramParameters = None,   
-                                   InProjection = 'EPSG:4326')
+# 普通克里金（球面函数模型）插值
+KD = gma.smc.Interpolate.Kriging(Points, Values, Resolution = 0.05, 
+                                 VariogramModel = 'Spherical', 
+                                 VariogramParameters = None,
+                                 KMethod = 'Ordinary',
+                                 InProjection = 'EPSG:4326')
 
-gma.rasp.WriteRaster(r':\gma_OKriging.tif',
-                     OKD.Data,
+gma.rasp.WriteRaster(r'.\gma_OKriging.tif',
+                     KD.Data,
                      Projection = 'WGS84',
-                     Transform = OKD.Transform, 
+                     Transform = KD.Transform, 
                      DataType = 'Float32')
 ```
 
 *与 ArcGIS Ordinary Kriging 插值结果（重分类后）对比：*
 
 ![fdg](/smc/OKriging.webp)
+
+*与 pykrige 包 Universal Kriging 插值结果（重分类后）对比：*
+
+![fdg](/smc/UKriging.webp)
 

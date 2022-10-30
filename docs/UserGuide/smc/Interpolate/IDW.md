@@ -7,7 +7,7 @@ sidebar: false
 ## gma.smc.Interpolate.**IDW**(*Points, Values, Boundary = None, Resolution = None, Power = 2, SearchRadius = 12, InProjection = 'WGS84'*)<Badge text="1.1.0 +"/>
 ---
 
-**功能：** 【反距离权重插值】。使用反距离加权法（IDW）将点插值成二维数组。
+**功能：** 【反距离权重法插值】。使用反距离加权法（IDW）将点插值成二维数组。
 
 **参数：**
 
