@@ -20,6 +20,16 @@ sidebar: false
 
 &emsp;　　根据《现代气候统计诊断与预测技术》优化检验过程逻辑。
 
+&emsp;　3、Open
+
+&emsp;　　完善矢量数据读取操作。
+
+&emsp;　　a. VectorOpen：添加 Metadata（元数据） 属性。
+
+&emsp;　　b. Layer：添加 GeomType（几何类型）、 Metadata（元数据）、FieldsInfo（字段信息）属性，移除 FieldDataTypes、FieldNames 属性，相关信息合并至 FieldsInfo 。增加 GetFuture（获取要素） 方法。
+
+&emsp;　　c. Future：新增 Future 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
+
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
 &emsp;　1、增加【[IDW](/UserGuide/smc/Interpolate/IDW.html)】函数

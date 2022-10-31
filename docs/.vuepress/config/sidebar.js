@@ -281,6 +281,7 @@ module.exports = {
                 'RasterOpen',
                 'VectorOpen',
                 'Layer',
+                'Future',
             ]
         },
     ],
