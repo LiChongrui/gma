@@ -24,13 +24,13 @@ sidebar: false
 
 &emsp;　　重构并完善数据读取操作。
 
-&emsp;　　a. VectorOpen：添加 Metadata（元数据） 属性。
+&emsp;　　a. DataSet：添加 Metadata（元数据） 属性。
 
 &emsp;　　b. Layer：添加 GeomType（几何类型）、 Metadata（元数据）、FieldsInfo（字段信息）属性，移除 FieldDataTypes、FieldNames 属性，相关信息合并至 FieldsInfo 。增加 GetFeature（获取要素） 方法。
 
 &emsp;　　c. Feature：新增 Feature 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
 
-&emsp;　　d. RasterOpen：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
+&emsp;　　d. DataSource：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 

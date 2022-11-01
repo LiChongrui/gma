@@ -20,3 +20,10 @@ sidebar: false
 
 ---
 
+**示例 ：**
+
+```python
+import gma
+gma.climet.Other.DaylightHours([1,2,3],35)
+```
+> \>>> array([[[9.69732946, 9.70686719, 9.71716952]]])

@@ -46,11 +46,10 @@ import gma
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
 import pandas as pd
-# 读取数据。Excel 数据有两列，分别为 PRE 和 ET0 列，每列各 480 个数据 
 Data = pd.read_excel('PRE_ET0.xlsx')
-# 提取 PRE 和 ET0 用于 SPEI 运算
 PRE = Data['PRE'].values
 ET0 = Data['ET0'].values
+
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPEI 数据
 SPEI1 = gma.climet.SPEI(PRE, ET0)
 SPEI3 = gma.climet.SPEI(PRE, ET0, Scale = 3)
@@ -104,7 +103,7 @@ plt.subplots_adjust(wspace = 0.04, hspace = 0.18)
 plt.show()
 ```
 
-*基于栅格数据（1981-2020 年月降水和蒸散空间栅格数据，共 480 个波段）*
+*基于栅格数据（下载 [示例数据](/climet/PRE_ET0.7z)）*
 
 ```python
 import numpy as np

@@ -20,3 +20,10 @@ sidebar: false
 
 ---
 
+**示例 ：**
+
+```python
+import gma
+gma.climet.Other.HourAngle([1,2,3], 34)
+```
+> \>>> array([[[1.28076788, 1.2819664 , 1.28326103]]])

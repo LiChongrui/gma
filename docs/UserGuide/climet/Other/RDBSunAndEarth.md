@@ -18,3 +18,10 @@ sidebar: false
 
 ---
 
+**示例 ：**
+
+```python
+import gma
+gma.climet.Other.RDBSunAndEarth([1,2,3])
+```
+> \>>> array([0.96805879, 0.96807254, 0.96809544])

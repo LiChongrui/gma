@@ -20,3 +20,10 @@ sidebar: false
 
 ---
 
+**示例 ：**
+
+```python
+import gma
+gma.climet.Other.SolarRadiationFluxOA([1,2,3],34)
+```
+> \>>> array([[[17.5426866 , 17.59680637, 17.65521884]]])

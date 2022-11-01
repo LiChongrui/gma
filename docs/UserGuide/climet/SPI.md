@@ -45,7 +45,7 @@ import gma
 ```python
 import pandas as pd
 # 读取数据。Excel 数据有一列，为 PRE 降水，共 480 个数据 
-Data = pd.read_excel('PRE.xlsx')
+Data = pd.read_excel('PRE_ET0.xlsx')
 # 提取 PRE 用于 SPI 运算
 PRE = Data['PRE'].values
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
@@ -66,7 +66,7 @@ OUT.to_excel(r'.\SPI.xlsx', index = False)
 
 > 绘图代码参考：[SPEI](/UserGuide/climet/SPEI.html)
 
-*基于栅格数据（1981-2020 年月降水空间栅格数据，共 480 个波段）*
+*基于栅格数据（下载 [示例数据](/climet/PRE_ET0.7z)）*
 
 ```python
 import numpy as np
