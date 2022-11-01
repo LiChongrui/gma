@@ -22,13 +22,15 @@ sidebar: false
 
 &emsp;　3、Open
 
-&emsp;　　完善矢量数据读取操作。
+&emsp;　　重构并完善数据读取操作。
 
 &emsp;　　a. VectorOpen：添加 Metadata（元数据） 属性。
 
-&emsp;　　b. Layer：添加 GeomType（几何类型）、 Metadata（元数据）、FieldsInfo（字段信息）属性，移除 FieldDataTypes、FieldNames 属性，相关信息合并至 FieldsInfo 。增加 GetFuture（获取要素） 方法。
+&emsp;　　b. Layer：添加 GeomType（几何类型）、 Metadata（元数据）、FieldsInfo（字段信息）属性，移除 FieldDataTypes、FieldNames 属性，相关信息合并至 FieldsInfo 。增加 GetFeature（获取要素） 方法。
 
-&emsp;　　c. Future：新增 Future 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
+&emsp;　　c. Feature：新增 Feature 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
+
+&emsp;　　d. RasterOpen：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
 
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
@@ -54,7 +56,7 @@ sidebar: false
 
 &emsp;　6、增加【[Kriging](/UserGuide/smc/Interpolate/Kriging.html)】函数
 
-&emsp;　　基于 克里金法（Ordinary 或 Universal）的点数据空间插值。引用：gma.smc.Interpolate.Kriging。
+&emsp;　　基于 克里金法（Ordinary Kriging 或 Universal Kriging）的点数据空间插值。引用：gma.smc.Interpolate.Kriging。
 
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **重大修复**
 

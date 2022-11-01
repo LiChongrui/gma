@@ -43,7 +43,7 @@ Scale、Periodicity 基于计算轴！
 ```python
 import gma
 ```
-*基于 Excel 表数据（某点 1981-2020 年月降水和蒸散数据，共 480 个月）*
+*基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
 import pandas as pd
 # 读取数据。Excel 数据有两列，分别为 PRE 和 ET0 列，每列各 480 个数据 

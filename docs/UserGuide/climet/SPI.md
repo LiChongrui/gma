@@ -36,12 +36,12 @@ Scale、Periodicity 基于计算轴！
 
 ---
 
-**示例：**
+**示例 ：**
 
 ```python
 import gma
 ```
-*基于 Excel 表数据（某点 1981-2020 年月降水数据，共 480 个月）*
+*基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
 import pandas as pd
 # 读取数据。Excel 数据有一列，为 PRE 降水，共 480 个数据 

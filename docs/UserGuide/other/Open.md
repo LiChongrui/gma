@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp;Methed = str <Badge text="1.0.9 +"/> 。打开方式（gma 或 osgeo）。默认以 gma 定义的方式打开。参数设置错误则以 gma 的方式打开。
 
-**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [RasterOpen](RasterOpen.html)。矢量数据：返回 [VectorOpen](VectorOpen.html)。
+**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [DataSet](DataSet.html)。矢量数据：返回 [DataSource](DataSource.html)。
 
 ::: warning 注意
 
@@ -31,4 +31,27 @@ sidebar: false
 :::
 
 ---
+
+**示例：**
+```python
+import gma
+```
+*打开矢量数据（下载 [示例矢量](/Open/2022省矢量.7z)）*
+
+```python
+VO = gma.Open('2022省矢量.shp')
+print(VO)
+```
+> \>>> <gma.algorithm.core.dataio.DataSource object at 0x......>
+
+*打开栅格数据（下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)）*
+
+```python
+RO = gma.Open('ELE_China_GEBCO_2020.tif')
+print(RO)
+```
+> \>>> <gma.algorithm.core.dataio.DataSet object at 0x......>
+
+
+
 

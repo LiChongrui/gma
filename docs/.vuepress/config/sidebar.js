@@ -278,10 +278,10 @@ module.exports = {
             collapsable: false,
             children: [
                 'Open',
-                'RasterOpen',
-                'VectorOpen',
+                'DataSet',
+                'DataSource',
                 'Layer',
-                'Future',
+                'Feature',
             ]
         },
     ],

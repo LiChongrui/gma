@@ -11,7 +11,7 @@ date: 2022-09-29
 
 ## 栅格运算
 
-&emsp;&emsp; 基于 **整体思路**，这里简单实现栅格运算 *（以 GEBCO 2020 年海洋与陆地中国范围内地形 GTiff 格式数据为例）*。
+&emsp;&emsp; 基于 **整体思路**，这里简单实现栅格运算 *（下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)）（GEBCO 2020 年海洋与陆地地形）*。
 
 ```python
 import gma
@@ -24,7 +24,7 @@ DataSet =  gma.Open(InFile)
 ```
 ### 获取属性
 
-&emsp;&emsp; 为方便运算后结果生成 GTiff 时添加属性，这里记录一下原始数据属性。可获取的属性参考 [Open:RasterOpen](/UserGuide/other/RasterOpen.html)。
+&emsp;&emsp; 为方便运算后结果生成 GTiff 时添加属性，这里记录一下原始数据属性。可获取的属性参考 [DataSet](/UserGuide/other/DataSet.html)。
 这里记录 **坐标系/投影（Projection）、仿射变换（GeoTransform）、驱动格式（Driver）以及无数据标记值（NoData）**。
 
 ```python
