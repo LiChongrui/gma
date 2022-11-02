@@ -32,6 +32,10 @@ sidebar: false
 
 &emsp;　　d. DataSource：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
 
+&emsp;　4、import
+
+&emsp;　　优化 import 逻辑，提高导入成功率。
+
 <font color="#616AE5"><i class="fas fa-award"></i></font> **新增：**
 
 &emsp;　1、增加【[IDW](/UserGuide/smc/Interpolate/IDW.html)】函数
