@@ -46,7 +46,7 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 + 空穴效应模型：HoleEffect，可配置参数：PSill, Range, Nugget
 :::
 
-&emsp;KMethod = `str`。克里金方法。包括 Ordinary（普通克里金）或 Universal（泛克里金），默认（或配置错误修正）为 Ordinary。
+&emsp;KMethod = `str`。克里金方法。包括 Ordinary（普通克里金）或 Universal（泛克里金），默认为 Ordinary。
 
 **其他参数（kwargs）：**（当 VariogramParameters = None 时生效）
 

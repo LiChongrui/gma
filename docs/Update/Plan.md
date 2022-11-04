@@ -8,6 +8,8 @@ sidebar: false
 
 ---
 
+&emsp;　从本版本开始，gma 内部帮助语言由中文变为英文。
+
 <font color="#3CB371"><i class="fab fa-superpowers"></i></font> **优化：**
 
 &emsp;　1、smc
