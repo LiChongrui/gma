@@ -26,15 +26,21 @@ sidebar: false
 
 &emsp;　　重构并完善数据读取操作。
 
-&emsp;　　a. DataSet：添加 Metadata（元数据） 属性。
+&emsp;　　a. DataSet：添加 Metadata（元数据） 属性。移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
 
 &emsp;　　b. Layer：添加 GeomType（几何类型）、 Metadata（元数据）、FieldsInfo（字段信息）属性，移除 FieldDataTypes、FieldNames 属性，相关信息合并至 FieldsInfo 。增加 GetFeature（获取要素） 方法。
 
 &emsp;　　c. Feature：新增 Feature 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
 
-&emsp;　　d. DataSource：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
+&emsp;　4、ToNumericArray
 
-&emsp;　4、import
+&emsp;　　不在返回 0 维结果，最少是 1 维。
+
+&emsp;　5、ET0
+
+&emsp;　　为多维数据计算进行优化。
+
+&emsp;　6、import
 
 &emsp;　　优化 import 逻辑，提高导入成功率。
 
