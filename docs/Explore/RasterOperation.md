@@ -20,7 +20,7 @@ InFile = 'ELE_China_GEBCO_2020.tif'
 ### 打开文件
 
 ```python
-DataSet =  gma.Open(InFile)
+DataSet = gma.Open(InFile)
 ```
 ### 获取属性
 
