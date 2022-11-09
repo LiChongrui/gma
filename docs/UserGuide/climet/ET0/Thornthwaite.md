@@ -44,3 +44,43 @@ StartYear、StartMonth 基于计算轴！
 
 ---
 
+**示例：**
+
+```python
+import gma
+
+TEM = [0.95, 2.15, 5.75, 13, 19.95, 23.7, 24.8, 23.9, 20.15, 15.2, 10.6, 3.4,
+       0.0, 3.8, 9.85, 14.95, 20.7, 25.05, 26.55, 24.5, 19.55, 12.65, 5.9, 2.4]
+
+THD = gma.climet.ET0.Thornthwaite(TEM, LAT = 34.17, StartYear = 1980)
+```
+
+> 绘制计算结果
+
+![](/climet/Thornthwaite.svg)
+
+> 绘图代码示例
+
+```python
+import matplotlib.pyplot as plt
+PAR = {'font.sans-serif': 'Times New Roman',
+       'axes.unicode_minus': False,
+      }
+plt.rcParams.update(PAR)
+
+X = gma.osf.DateSeries('198101','198301',DateDelta='M', Format='%Y%m').strftime('%Y-%m')
+
+plt.figure(figsize = (10, 5), dpi = 300)
+
+### 绘制数据
+plt.plot(X, THD, linewidth = 0.8, c = 'gray')
+plt.xticks(X[::2])
+
+### 绘制其他网格
+plt.grid(True, linestyle = (0,(6,6)), linewidth = 0.3)
+
+plt.xlabel('Date')
+plt.ylabel('Thornthwaite PET(mm)')
+plt.show()
+
+```
