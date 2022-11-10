@@ -242,6 +242,7 @@ module.exports = {
             title: '矢量处理',
             collapsable: false,
             children: [
+                'ChangeGeometryType',
                 'Check',
                 'Clip',
                 'Erase',

@@ -10,12 +10,11 @@ sidebar: false
 
 **功能：**【矢量驱动格式信息】。获取所有矢量驱动格式分类的详细信息。
 
-::: warning 注意
-
-类内 属性/方法 引用前请先初始化 `VectorFormatInfo` 类！
-
-::: 
-
+**示例：**
+```python
+import gma
+VFInfo = gma.config.VectorFormatInfo()
+```
 ---
 
 ## 类内属性/方法
@@ -28,6 +27,11 @@ sidebar: false
 
 **返回：**`set`。
 
+```python
+VFInfo.CopyableFormats
+```
+> \>>> {'GPKG', 'NGW', 'PDF', 'netCDF'}
+
 ---
 
 ### CreatableFormats
@@ -38,15 +42,25 @@ sidebar: false
 
 **返回：**`set`。
 
+```python
+VFInfo.CreatableFormats
+```
+> \>>> {'AmigoCloud', 'CARTO', 'CSV', 'DGN', 'DGNv8', 'DXF', 'ESRI Shapefile', ...}
+
 ---
 
-### MultiLayerFormats
+### MultiLayersFormats
 
 ---
 
 **功能：**【多图层支持】。类属性，支持多图层的驱动格式。
 
 **返回：**`set`。
+
+```python
+VFInfo.MultiLayersFormats
+```
+> \>>> {'AVCBIN', 'CAD', 'DGN', 'DXF', 'EDIGEO', 'GML', 'GPKG', ...}
 
 ---
 
@@ -58,6 +72,11 @@ sidebar: false
 
 **返回：**`set`。
 
+```python
+VFInfo.ReadableFormats
+```
+> \>>> {'AVCBIN', 'AVCE00', 'AmigoCloud', 'CAD', 'CARTO', 'CSV', ...}
+
 ---
 
 ### TransformableFormats
@@ -68,6 +87,11 @@ sidebar: false
 
 **返回：**`set`。
 
+```python
+VFInfo.TransformableFormats
+```
+> \>>> {'AmigoCloud', 'CARTO', 'CSV', 'DGN', 'DGNv8', 'DXF', 'ESRI Shapefile', ...}
+
 ---
 
 ### UpdatableFormats
@@ -77,5 +101,10 @@ sidebar: false
 **功能：**【更新支持】。类属性，支持更新的驱动格式。
 
 **返回：**`set`。
+
+```python
+VFInfo.UpdatableFormats
+```
+> \>>> {'CSV', 'DGN', 'DXF', 'ESRI Shapefile', 'GMT', 'GPKG', 'GeoJSON', ...}
 
 ---

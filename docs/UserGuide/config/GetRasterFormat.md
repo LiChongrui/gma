@@ -14,12 +14,13 @@ sidebar: false
 
 &emsp;Format：`str`。栅格驱动格式名称。
 
-::: warning 注意
+**示例：**
+```python
+import gma
 
-类内 属性/方法 引用前请先初始化 `GetRasterFormat` 类！
-
-::: 
-
+# 获取 GTiff 格式
+RAFormat = gma.config.GetRasterFormat('GTiff')
+```
 ---
 
 ## 类内属性/方法
@@ -32,6 +33,11 @@ sidebar: false
 
 **返回：**`dict`。
 
+```python
+RAFormat.ColorTableDataType
+```
+> \>>> {'Byte': 1, 'UInt16': 2}
+
 ---
 
 ###  **CompressMode**
@@ -41,6 +47,11 @@ sidebar: false
 **功能：**【压缩方式】。类属性，支持的压缩方式。
 
 **返回：**`list`。
+
+```python
+RAFormat.CompressMode
+```
+> \>>> ['NONE', 'LZW', 'PACKBITS', 'JPEG', 'CCITTRLE', 'CCITTFAX3', 'CCITTFAX4', 'DEFLATE', 'LZMA', 'ZSTD', 'WEBP', 'LERC', 'LERC_DEFLATE', 'LERC_ZSTD']
 
 ---
 
@@ -52,6 +63,11 @@ sidebar: false
 
 **返回：**`dict`。
 
+```python
+RAFormat.CreationDataType
+```
+> \>>> {'Byte': 1, 'UInt16': 2, 'Int16': 3, 'UInt32': 4, 'Int32': 5, 'Float32': 6, 'Float64': 7, 'CInt16': 8, 'CInt32': 9, 'CFloat32': 10, 'CFloat64': 11}
+
 ---
 
 ### Details
@@ -61,6 +77,27 @@ sidebar: false
 **功能：**【详细信息】。类属性，全部支持内容的详细信息。
 
 **返回：**`dict`。
+
+```python
+RAFormat.Details
+```
+> \>>> {'Creation': 'Yes', 
+ 'Copy': 'Yes',
+ 'Geo Referencing': 'Yes',
+ 'Open': 'Yes',
+ 'Raster': 'Yes',
+ 'Virtualio': 'Yes',
+ 'Creation Data Types': 'Byte UInt16 Int16 UInt32 Int32 Float32 Float64 CInt16 CInt32 CFloat32 CFloat64',
+ 'Extension': '.tif .tiff',
+ 'Long Name': 'GeoTIFF',
+ 'Subdatasets': 'Yes',
+ 'Coordinate Epoch': 'Yes',
+ 'Mime Type': 'image/tiff',
+ 'Color Table Data Type': 'Byte UInt16',
+ 'Update': 'Yes',
+ 'Multiband': 'Yes',
+ 'Compress': 'NONE LZW PACKBITS JPEG CCITTRLE CCITTFAX3 CCITTFAX4 DEFLATE LZMA ZSTD WEBP LERC LERC_DEFLATE LERC_ZSTD',
+ 'Short Name': 'GTiff'}
 
 ---
 
@@ -72,6 +109,11 @@ sidebar: false
 
 **返回：**`str`。
 
+```python
+RAFormat.Extension
+```
+> \>>> '.tif'
+
 ---
 
 ### GeoReferencing
@@ -81,6 +123,11 @@ sidebar: false
 **功能：**【地理参考支持】。类属性，是否支持地理参考。
 
 **返回：**`str`。
+
+```python
+RAFormat.GeoReferencing
+```
+> \>>> 'Yes'
 
 ---
 
@@ -92,6 +139,11 @@ sidebar: false
 
 **返回：**`str`。
 
+```python
+RAFormat.LongName
+```
+> \>>> 'GeoTIFF'
+
 ---
 
 ### Multiband
@@ -102,6 +154,11 @@ sidebar: false
 
 **返回：**`str||list`。
 
+```python
+RAFormat.Multiband
+```
+> \>>> 'Yes'
+
 ---
 
 ### Update
@@ -111,6 +168,11 @@ sidebar: false
 **功能：**【更新支持】。类属性，是否支持更新（修改）。
 
 **返回：**`str||list`。
+
+```python
+RAFormat.Update
+```
+> \>>> 'Yes'
 
 ---
 

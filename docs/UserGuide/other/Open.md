@@ -36,10 +36,10 @@ sidebar: false
 ```python
 import gma
 ```
-*打开矢量数据（下载 [示例矢量](/Open/2022省矢量.7z)）*
+*打开矢量数据（下载 [示例矢量](/Open/China_Province_2022.7z)）*
 
 ```python
-VO = gma.Open('2022省矢量.shp')
+VO = gma.Open('China_Province_2022.shp')
 print(VO)
 ```
 > \>>> <gma.algorithm.core.dataio.DataSource object at 0x......>

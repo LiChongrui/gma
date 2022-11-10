@@ -186,6 +186,7 @@ date: 2022-10-29
 
 | 函数    | 引用（简版）             | 说明             | 解释                                     |
 | :------------ | :----------------------- | :--------------- | :--------------------------------------- |
+| [ChangeGeometryType](../vesp/ChangeGeometryType.html)         | gma.vesp.ChangeGeometryType         | 【几何类型转换】        | 转换输入矢量的几何类型                    |
 | [Check](../vesp/Check.html)         | gma.vesp.Check         | 【检查】         | 检查每个矢量要素的有效性                       |
 | [Clip](../vesp/Clip.html)          | gma.vesp.Clip          | 【裁剪】         | 矢量裁剪矢量                             |
 | [Erase](../vesp/Erase.html)         | gma.vesp.Erase         | 【擦除】         | 从第一个矢量中去除与第二个矢量交叉的部分 |

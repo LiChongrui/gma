@@ -4,11 +4,11 @@ date: 2022-11-01
 sidebar: false
 ---
 
-&emsp;　下载 [示例矢量](/Open/2022省矢量.7z)。
+&emsp;　下载 [示例矢量](/Open/China_Province_2022.7z)。
 
 ```python
 import gma
-VO = gma.Open('2022省矢量.shp')
+VO = gma.Open('China_Province_2022.shp')
 LY = VO.GetLayer(0)
 FU = LY.GetFeature(0)
 ```

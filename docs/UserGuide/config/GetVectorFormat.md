@@ -14,11 +14,13 @@ sidebar: false
 
 &emsp;Format：`str`。矢量驱动格式名称。
 
-::: warning 注意
+**示例：**
+```python
+import gma
 
-类内 属性/方法 引用前请先初始化 `GetVectorFormat` 类！
-
-::: 
+# 获取 ESRI Shapefile 格式
+VEFormat = gma.config.GetVectorFormat('ESRI Shapefile')
+```
 
 ---
 
@@ -32,6 +34,11 @@ sidebar: false
 
 **返回：**`dict`。
 
+```python
+VEFormat.CreationFieldDataType
+```
+> \>>> {'Integer': 0, 'Real': 2, 'String': 4, 'Date': 9, 'Integer64': 12}
+
 ---
 
 ### Details
@@ -42,7 +49,21 @@ sidebar: false
 
 **返回：**`dict`。
 
----
+```python
+VEFormat.Details
+```
+> \>>> {'Creation': 'Yes',
+ 'Copy': 'No',
+ 'Multiple Vector Layers': 'No',
+ 'Open': 'Yes',
+ 'Vector': 'Yes',
+ 'Virtualio': 'Yes',
+ 'Creation Field Data Types': 'Integer Integer64 Real String Date',
+ 'Extension': '.shp .dbf .shz .shp.zip',
+ 'Long Name': 'ESRI Shapefile',
+ 'Update': 'Yes',
+ 'Geo Referencing': 'Yes',
+ 'Short Name': 'ESRI Shapefile'}
 
 ### Extension
 
@@ -52,6 +73,10 @@ sidebar: false
 
 **返回：**`str`。
 
+```python
+VEFormat.Extension
+```
+> \>>> '.shp'
 ---
 
 ### GeoReferencing
@@ -61,6 +86,11 @@ sidebar: false
 **功能：**【地理参考支持】。类属性，是否支持地理参考。
 
 **返回：**`str`。
+
+```python
+VEFormat.GeoReferencing
+```
+> \>>> 'Yes'
 
 ---
 
@@ -72,6 +102,11 @@ sidebar: false
 
 **返回：**`str`。
 
+```python
+VEFormat.LongName
+```
+> \>>> 'ESRI Shapefile'
+
 ---
 
 ### MultiLayer
@@ -82,6 +117,11 @@ sidebar: false
 
 **返回：**`str`。
 
+```python
+VEFormat.MultiLayer
+```
+> \>>> 'No'
+
 ---
 
 ### Update
@@ -91,6 +131,11 @@ sidebar: false
 **功能：**【更新支持】。类属性，是否支持更新（修改）。
 
 **返回：**`str||list`。
+
+```python
+VEFormat.Update
+```
+> \>>> 'Yes'
 
 ---
 

@@ -72,6 +72,10 @@ sidebar: false
 
 &emsp;　　基于 克里金法（Ordinary Kriging 或 Universal Kriging）的点数据空间插值。引用：gma.smc.Interpolate.Kriging。
 
+&emsp;　7、增加【[ChangeGeometryType](/UserGuide/vesp/ChangeGeometryType.html)】函数
+
+&emsp;　　转换输入矢量的几何类型（被忽略的函数，其在数个版本之前已经存在）。引用：gma.vesp.ChangeGeometryType。
+
 <font color="#FFA500"><i class="fas fa-tools"></i></font> **重大修复**
 
 &emsp;　1、rsvi

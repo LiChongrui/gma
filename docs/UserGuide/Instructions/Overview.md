@@ -26,10 +26,10 @@ date: 2021-10-30
 | 空间杂项 |  smc   |  3   |   1   |    5    |        |      |          |          |  9   |<Badge text="1.0.5" vertical='middle'/>|
 | 栅格处理 |  rasp  |  16  |  1   |   1    |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
 | 栅格分析 |  raa   |      |  3   |   9    |        |      |          |          |  13   |<Badge text="1.0.7" vertical='middle'/>|
-| 矢量处理 |  vesp  |  13  |      |        |        |      |          |          |  13  |<Badge text="1.0.0" vertical='middle'/>|
+| 矢量处理 |  vesp  |  14  |      |        |        |      |          |          |  14  |<Badge text="1.0.0" vertical='middle'/>|
 | 高级配置 | config |  2   |  4   |        |   30   |      |          |          |  36  |<Badge text="1.0.7" vertical='middle'/>|
 | 其他函数 |   -    |  1   |      |   7    |   13   |  1   |    1     |    5     |  28  |<Badge text="1.0.6" vertical='middle'/>|
-|   合计   |   9    |  50  |  14  |   45   |   43   |  1   |    1     |    5     | 163 ||
+|   合计   |   9    |  51  |  14  |   45   |   43   |  1   |    1     |    5     | 164 ||
 
 ::: warning 注意
 

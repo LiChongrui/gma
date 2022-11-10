@@ -41,7 +41,7 @@ module.exports = [
                     {text: '空间杂项-smc', link: '/UserGuide/smc/CALArea'},
                     {text: '栅格处理-rasp', link: '/UserGuide/rasp/AddColorTable'},
                     {text: '栅格分析-raa', link: '/UserGuide/raa/DEM/Aspect'},
-                    {text: '矢量处理-vesp', link: '/UserGuide/vesp/Check'},
+                    {text: '矢量处理-vesp', link: '/UserGuide/vesp/ChangeGeometryType'},
                     {text: '高级配置-config', link: '/UserGuide/config/GetRACreationOption'},
                     {text: '其他函数', link: '/UserGuide/other/Open'},
                 ],

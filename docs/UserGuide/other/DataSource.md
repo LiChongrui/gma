@@ -4,11 +4,11 @@ date: 2022-03-09
 sidebar: false
 ---
 
-&emsp;　下载 [示例矢量](/Open/2022省矢量.7z)。
+&emsp;　下载 [示例矢量](/Open/China_Province_2022.7z)。
 
 ```python
 import gma
-VO = gma.Open('2022省矢量.shp')
+VO = gma.Open('China_Province_2022.shp')
 ```
 
 &emsp;　打开的 **矢量数据** 具有如下所列的 方法/属性：
@@ -90,7 +90,7 @@ VO.LayerCount
 ```python
 VO.LayerNames
 ```
-> \>>> ['2022省矢量']
+> \>>> ['China_Province_2022']
 
 ---
 
