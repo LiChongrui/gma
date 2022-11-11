@@ -20,15 +20,7 @@ sidebar: false
 
 &emsp;Methed = str <Badge text="1.0.9 +"/> 。打开方式（gma 或 osgeo）。默认以 gma 定义的方式打开。参数设置错误则以 gma 的方式打开。
 
-**返回：** 多维数据：返回子数据集列表；其他栅格：返回 [DataSet](DataSet.html)。矢量数据：返回 [DataSource](DataSource.html)。
-
-::: warning 注意
-
-1、gma 暂不支持直接读取子数据集。
-
-2、如果需要打开多维数据的子数据集，请以 osgeo 方式打开子数据集路径（一般为每个子数据集信息的第一个元素）！
-
-:::
+**返回：** 多维栅格：[SubDataSet](SubDataSet.html)<Badge text="1.1.0 +"/>；其他栅格：[DataSet](DataSet.html)。矢量数据：[DataSource](DataSource.html)。
 
 ---
 

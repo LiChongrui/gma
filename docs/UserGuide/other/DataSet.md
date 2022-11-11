@@ -94,7 +94,7 @@ RO.GeoTransform
 
 **功能：**【获取 GDALDataset】。读取栅格数据为 gdal.GDALDataset。
 
-**返回：**`gdal.GDALDataset`。
+**返回：**`osgeo.gdal.Dataset`。
 
 ```python
 RO.GetGDALDataset()

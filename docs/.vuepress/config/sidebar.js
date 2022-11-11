@@ -279,6 +279,7 @@ module.exports = {
             collapsable: false,
             children: [
                 'Open',
+                'SubDataSet',
                 'DataSet',
                 'DataSource',
                 'Layer',

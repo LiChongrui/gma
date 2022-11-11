@@ -54,7 +54,7 @@ print(LY)
 
 **功能：**【获取 DataSource】。读取矢量数据为 ogr.DataSource。
 
-**返回：**`ogr.DataSource`。
+**返回：**`osgeo.ogr.DataSource`。
 
 ```python
 OGRDS = VO.GetOGRDataSource()

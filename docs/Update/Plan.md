@@ -32,7 +32,9 @@ sidebar: false
 
 &emsp;　　c. Feature：新增 Feature 类。添加 Area（面积）、 Fields（属性表字段）、GeometryCount（几何数量）、Length（长度）、Points（折点坐标） 属性。
 
-&emsp;　　D.DataSet：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
+&emsp;　　d.DataSet：移除了必要性不大的 GetBand、GetBandMetadata、GetBandToArray 方法。
+
+&emsp;　　e.SubDataSet：新增 SubDataSet 类，为多维栅格数据读取提供支持。添加 SubInfo（子数据集信息）属性和 GetSubDataSet（读取子数据集为 DataSet）方法。
 
 &emsp;　4、ToNumericArray
 
