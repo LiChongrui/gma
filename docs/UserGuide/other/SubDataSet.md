@@ -4,17 +4,17 @@ date: 2022-03-09
 sidebar: false
 ---
 
-&emsp;　多维数据（此处以多维 netCDF 数据为例）可从 [中山大学网站](http://globalchange.bnu.edu.cn/research/soil2) 下载。
+&emsp;　含有子数据集的科学数据集（此处以 netCDF 数据为例）可从 [中山大学网站](http://globalchange.bnu.edu.cn/research/soil2) 下载。
 
 ```python
 import gma
 SDS = gma.Open('C1.nc')
 ```
 
-&emsp;　打开的 **含有子数据集的多维数据** 具有如下所列的 方法/属性：
+&emsp;　打开的 **含有子数据集的科学数据集** 具有如下所列的 方法/属性：
 
 ::: warning 注意
-并非所有的 netCDF 数据都是多维的！
+并非所有的 netCDF 数据都含有子数据集！只具有 1 个子数据集的科学数据集可以理解为普通的栅格（例如 GTiff）。
 :::
 
 ## **SubInfo** 
