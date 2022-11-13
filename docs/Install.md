@@ -8,17 +8,19 @@ sidebar: false
 
 ::: theorem 系统环境
 
-&emsp;&emsp;操作系统：64 位 (amd64) <Badge text="Winows 10" vertical='middle'/> 及以上
+&emsp;&emsp;操作系统：64 位 (amd64) <Badge text="Windows" vertical='middle'/> 、<Badge text="Linux" vertical='middle'/>及以上
 
 &emsp;&emsp;内存：<Badge text="8 GB" vertical='middle'/>  及以上
 
 :::
 
-> 注意：gma 目前**不支持** <Badge text="Linux" type='error' vertical='middle'/>、<Badge text="MacOS" type='error' vertical='middle'/> 和其他平台。
+> 注意：gma 目前**不支持** <Badge text="MacOS" type='error' vertical='middle'/> 和其他平台。
 
 ::: theorem Python 环境
 
-&emsp; Python 版本： <Badge text="3.8、3.9 或 3.10" vertical='middle'/>
+&emsp; Windows： <Badge text="3.8、3.9 或 3.10" vertical='middle'/>
+
+&emsp; Linux： <Badge text="3.9 或 3.10" vertical='middle'/>
 
 :::
 
@@ -43,7 +45,13 @@ sidebar: false
 ```bash
 pip install "X:\GDAL-3.4.1-cp39-cp39-win_amd64.whl"
 ```
-&emsp;&emsp; 其中```X:\GDAL-3.4.1-cp39-cp39-win_amd64.whl``` 为下载的编译后 whl 格式 gdal 包的绝对路径。其他 whl 包也可以按此方法安装。
+&emsp;&emsp; 或使用 **conda** 安装：
+
+```bash
+conda install gdal
+```
+
+
 
 ## 安装
 
@@ -69,9 +77,9 @@ import gma
 
 &emsp;&emsp;从 **1.0.5** 版本开始，gma 会对引用过程中出现的错误进行追踪标记。引用过程中出现的错误可参考下表解决（其中 XXX / YYY 为发生错误的包 / 模块）：
 
-| 错误类型            | 错误内容                                                     | 解决方法                              |
-| :------------------ | :----------------------------------------------------------- | :------------------------------------ |
-| ModuleNotFoundError | 缺少 gdal 库！gdal 的 whl 包可从：https://www.lfd.uci.edu/~gohlke/pythonlibs/ 下载。 | [安装 gdal](/Install.html#依赖库)     |
-| ModuleNotFoundError | 缺少 XXX 库，请在终端使用 'pip install XXX' 安装！           | 在终端输入 `pip install XXX` 安装     |
-| ImportError         | 无法从 XXX 中导入 XXX.YYY！                                  | 重新安装 XXX                          |
-| ImportError         | 父包未知，无法进行相对导入！                                 | 请从 gma 的父文件夹引用或重新安装 gma |
+| 错误类型            | 错误内容                                                     | 解决方法                          |
+| :------------------ | :----------------------------------------------------------- | :-------------------------------- |
+| ModuleNotFoundError | Missing GDAL library! See https://gdal.org/api/python_bindings.html | [安装 gdal](/Install.html#依赖库) |
+| ModuleNotFoundError | The XXX library is missing, please install it with 'pip install XXX' in the terminal! | 在终端输入 `pip install XXX` 安装 |
+| ImportError         | Currently installed GDAL is not supported, please update GDAL! | 升级 gdal                         |
+| ImportError         | The GDAL version is too low, the current version {__gdalversion__}, the minimum version is 3.4.1, please update GDAL! | 升级 gdal                         |
