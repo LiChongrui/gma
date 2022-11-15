@@ -28,9 +28,23 @@ AAIGrid, ADRG, ARG, BAG, BLX, BMP, BT, BYN, CALS, CEOS, COG, CTable2, DDS, DTED,
 
 ::: warning 注意
 
-多维数据（netCDF, HDF4Image等）转出请使用 MultiSDSToTif 函数。
+含有**多个子数据**的 netCDF, HDF4Image 等格式转出请使用 MultiSDSToTif 函数。
 
 :::
 
 ---
 
+**示例：**
+
+*netCDF(.nc) 转 GTiff(.tif)（下载 [示例数据](/rasp/HRCLDAS_Test.nc)）*
+```python
+import gma
+
+InFile = 'HRCLDAS_Test.nc'
+OutFile = 'HRCLDAS_Test.tif'
+gma.rasp.ToOtherFormat(InFile, OutFile, OutFormat = 'GTiff')
+
+# 查看输出文件驱动
+print(gma.Open(OutFile).Driver)
+```
+> \>>> GTiff

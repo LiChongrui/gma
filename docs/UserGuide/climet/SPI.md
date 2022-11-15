@@ -4,7 +4,7 @@ date: 2022-06-25
 sidebar: false
 ---
 
-## gma.climet.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12*) <Badge text="1.0.10 +"/>
+## gma.climet.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'Gamma'*) <Badge text="1.0.10 +"/>
 
 ---
 
@@ -22,9 +22,15 @@ sidebar: false
 
 &emsp; Periodicity = `int`。周期。默认为 12。例如：月尺度可以以 12 为周期，日尺度可以以 365 为周期。
 
-::: warning 注意
+&emsp; Distribution = `str`<Badge text="1.1.1 +"/>。用于内部拟合/变换计算的分布类型。默认为 Gamma。
 
-Scale、Periodicity 基于计算轴！
+::: tip 支持的分布类型
+
+'Gamma'(Maximum Likelihood Estimation)：伽马分布（参数估计：最大似然估计）；
+
+'LogLogistic'(L-Moment Estimation(PWD))：对数逻辑斯蒂分布（参数估计：L-矩估计（概率加权矩））；
+
+'Pearson3'(L-Moment Estimation)：泊松 III 分布（参数估计：L-矩估计）。
 
 :::
 

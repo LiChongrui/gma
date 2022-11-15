@@ -31,8 +31,8 @@ sidebar: false
 ```python
 import gma
 # 查看多维数据的变量信息
-DataSet = gma.Open('C1.nc')
-DataSet
+SubDataSet = gma.Open('C1.nc')
+SubDataSet.SubInfo
 ```
 > \>>> [('NETCDF:"C1.nc":C1', '[8x4320x7560] C1 (32-bit integer)'),<br>
   　　　('NETCDF:"C1.nc":C2', '[8x4320x7560] C2 (32-bit integer)')]
