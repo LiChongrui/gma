@@ -28,7 +28,7 @@ AAIGrid, ADRG, ARG, BAG, BLX, BMP, BT, BYN, CALS, CEOS, COG, CTable2, DDS, DTED,
 
 ::: warning 注意
 
-含有**多个子数据**的 netCDF, HDF4Image 等格式转出请使用 MultiSDSToTif 函数。
+含有**多个子数据集**的 netCDF, HDF4Image 等科学数据格式转出请使用 MultiSDSToTif 函数。
 
 :::
 
