@@ -4,7 +4,7 @@ date: 2022-08-28
 sidebar: false
 ---
 
-## gma.climet.**MKMutationTest**(*Data, Axis = None*)<Badge text="1.0.12 +"/>
+## gma.climet.Diagnosis.**MKMutationTest**(*Data, Axis = None*)<Badge text="1.0.12 +"/>
 
 ---
 
@@ -31,7 +31,7 @@ import numpy as np
 np.random.seed(0)
 Data = np.random.uniform(size = 72)
 
-MKD = gma.climet.MKMutationTest(Data)
+MKD = gma.climet.Diagnosis.MKMutationTest(Data)
 
 # 输出具名元组字段名
 print(MKD._fields)

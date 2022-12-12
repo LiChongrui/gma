@@ -14,8 +14,17 @@ date: 2022-10-29
 [SPEI](../climet/SPEI.html) | gma.climet.SPEI | 【标准化降水蒸散指数】 | 基于 Log-Logistic 分布计算标准化降水蒸散指数 
 [SPI](../climet/SPI.html)| gma.climet.SPI | 【标准化降水指数】 | 基于 Gamma 分布计算标准化降水指数                            
 [PAP](../climet/PAP.html)  | gma.climet.PAP | 【降水距平百分率】 | 计算降水值到多年平均值的波动情况 
-| [MKMutationTest](../climet/MKMutationTest.html) <Badge text="1.0.12 +"/>| gma.math.MKMutationTest | 【Mann-Kendall 突变检验】 | 基于 Mann-Kendall 方法对时间序列数据进行突变检验。 |
+***Diagnosis***| gma.climet.Diagnosis | 【诊断】 | *时序气候数据诊断。支持的计算方法详见：[诊断](Function.html#诊断)* 
 ***ET0*** | gma.climet.ET0 | 【蒸散】 | *日尺度或月尺度潜在蒸散量计算。支持的计算方法详见：[蒸散](Function.html#蒸散)* 
+***Other*** | gma.climet.Other | 【其他相关函数】 | *支持的计算方法详见：[其他](Function.html#其他)* 
+
+#### 诊断 <Badge text="1.1.1 +"/>
+| 函数                                                | 引用（简版）                  | 功能               | 详细解释                                             |
+| :-------------------------------------------------- | :---------------------------- | :----------------- | :--------------------------------------------------- |
+| [MKMutationTest](../climet/Diagnosis/MKMutationTest.html) <Badge text="1.0.12 +"/>| gma.math.Diagnosis.MKMutationTest | 【Mann-Kendall 突变检验】 | 基于 Mann-Kendall 方法对时间序列数据进行突变检验 |
+| [Buishand](../climet/Diagnosis/Buishand.html)| gma.math.Diagnosis.Buishand | 【Buishand 突变点检验】 | 基于 Buishand 法对时间序列数据进行突变点检验 |
+| [Pettitt](../climet/Diagnosis/Pettitt.html)| gma.math.Diagnosis.Pettitt | 【Pettitt 突变点检验】 | 基于 Pettitt 法对时间序列数据进行突变点检验 |
+| [SNHT](../climet/Diagnosis/SNHT.html)| gma.math.Diagnosis.SNHT | 【SNHT 突变点检验】 | 基于 SNHT 法对时间序列数据进行突变点检验 |
 
 #### 蒸散 <Badge text="1.0.10 +"/>
 
@@ -117,7 +126,7 @@ date: 2022-10-29
 | :----------------------------------------- | :----------------------- | :------- | :----------------------------------------------- |
 | [BSpline](../smc/Interpolate/BSpline.html)       | gma.smc.Interpolate.BSpline    | 【B-样条函数法插值】 | 使用 B-样条函数法（BSpline）将点插值成二维数组         |
 | [IDW](../smc/Interpolate/IDW.html)       | gma.smc.Interpolate.IDW    | 【反距离权重插值】 | 使用反距离加权法（IDW）将点插值成二维数组           |
-| [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法法（NaturalNeighbor）将点插值成二维数组 |
+| [NaturalNeighbor](../smc/Interpolate/NaturalNeighbor.html) | gma.smc.Interpolate.NaturalNeighbor | 【自然邻域法插值】 | 使用自然邻域法（NaturalNeighbor）将点插值成二维数组 |
 | [Kriging](../smc/Interpolate/Kriging.html) | gma.smc.Interpolate.Kriging | 【克里金法插值】 | 使用普通克里金法（Ordinary Kriging）或泛克里金法（Universal Kriging）将点插值成二维数组 |
 | [Trend](../smc/Interpolate/Trend.html) | gma.smc.Interpolate.Trend | 【趋势面法插值】 | 使用趋势面法（Trend）（全局多项式插值法）将点插值成二维数组 |
 
@@ -180,7 +189,8 @@ date: 2022-10-29
 
 | 函数                                        | 引用（简版）                | 功能       | 详细解释                                 |
 | :------------------------------------------ | :-------------------------- | :--------- | :--------------------------------------- |
-| [Isopleth](../raa/Extraction/Isopleth.html) | gma.raa.Extraction.Isopleth | 【等值线】 | 生成数量指标值相等的各点连成的平滑曲线。 |
+| [Isopleth](../raa/Extraction/Isopleth.html) | gma.raa.Extraction.Isopleth | 【等值线】 | 生成数量指标值相等的各点连成的平滑曲线 |
+| [Reclassify](../raa/Extraction/Reclassify.html) | gma.raa.Extraction.Reclassify | 【重分类】 | 重新分类或修改栅格数据值|
 
 ## 矢量处理
 

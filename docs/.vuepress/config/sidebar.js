@@ -42,7 +42,16 @@ module.exports = {
                 'SPEI',
                 'SPI',
                 'PAP',
-                'MKMutationTest',
+                {
+                    title: 'Diagnosis',
+                    collapsable: false,
+                    children: [
+                        'Diagnosis/MKMutationTest',
+                        'Diagnosis/Buishand',
+                        'Diagnosis/Pettitt',
+                        'Diagnosis/SNHT',
+                    ]
+                },
                 {
                     title: 'ET0',
                     collapsable: false,
@@ -232,6 +241,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'Extraction/Isopleth',
+                        'Extraction/Reclassify',
                     ]
                 }, 
             ]
