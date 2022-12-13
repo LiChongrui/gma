@@ -240,7 +240,7 @@ date: 2022-10-29
 | [矢量数据集](../other/DataSource.html)   | <gma.algorithm.dataio.DataSource> | 类   | gma.Open(矢量数据)                    | 6        |
 | [矢量图层](../other/Layer.html)     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 8        |
 | [矢量要素](../other/Feature.html)     | <gma.algorithm.dataio.Feature>      | 孙类 | ..GetLayer(图层序号).GetFeature(要素序号) | 5        |
-| 子数据集列表 | []                                | 列表 | gma.Open(具有子数据集的多维数据)      | -        |
+| [栅格子数据集](../other/SubDataSet.html)   | <gma.algorithm.core.dataio.SubDataSet>  | 类 | gma.Open(具有子数据集的多维数据)      | 2     |
 
 #### DataSet 支持的方法/属性
 
@@ -258,6 +258,13 @@ date: 2022-10-29
 | [Projection](../other/DataSet.html#projection)           | gma.Open.Projection      | 属性 | 【坐标系/投影】      | 获取栅格坐标系/投影         |
 | [Rows](../other/DataSet.html#rows)                       | gma.Open.Rows            | 属性 | 【行数】             | 获取栅格行数（Y）           |
 | [ToArray](../other/DataSet.html#toarray-leftrow-0-leftcolumn-0-rowsize-none-columnsize-none-bandlist-none)                 | gma.Open.ToArray         | 方法 | 【转为数组】         | 将栅格数据读取为 Numpy 数组 |
+
+#### SubDataSet 支持的方法/属性
+
+| 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
+| :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
+| [SubInfo](../other/SubDataSet.html#subinfo)                     | gma.Open.SubInfo           | 属性 | 【子数据集信息】           | 获取所有子数据集信息列表              |
+| [GetSubDataSet](../other/SubDataSet.html#getsubdataset-subid-0)                 | gma.Open.GetSubDataSet         | 属性 | 【获取子数据集】             | 根据 ID 读取子数据集为 DataSet           |
 
 #### DataSource 支持的方法/属性
 
@@ -288,6 +295,7 @@ date: 2022-10-29
 | 功能                                                         | 引用                         | 标记 | 功能             | 详细解释                     |
 | :----------------------------------------------------------- | :--------------------------- | :--- | :--------------- | :--------------------------- |
 | [Area](../other/Feature.html#area)                   | ..GetFeature.Area          | 属性 |【面积】   | 获取要素（当前坐标系单位）的面积|
+| [ExportGeom](../other/Feature.html#exportgeom-type-isowkt)                   | ..GetFeature.ExportGeom         | 方法 |【导出几何形状】   | 导出当前要素几何|
 | [Fields](../other/Feature.html#fields)                   | ..GetFeature.Fields        | 属性 |【字段】   | 获取要素的属性表字段|
 | [GeometryCount](../other/Feature.html#geometrycount)                   | ..GetFeature.GeometryCount          | 属性 |【几何数量】   | 获取构成要素几何的数量|
 | [Length](../other/Feature.html#length)                   | ..GetFeature.Length         | 属性 |【长度】   | 获取要素（当前坐标系单位）的长度|

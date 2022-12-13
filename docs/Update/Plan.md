@@ -36,3 +36,6 @@ sidebar: false
 
 &emsp;　　栅格重分类。引用 gma.raa.Extraction.Reclassify。
 
+&emsp;　5、增加【[ExportGeom](/UserGuide/other/Feature.html#exportgeom-type-isowkt)】方法
+
+&emsp;　　为打开的矢量要素增加导出要素几何方法。引用 gma.Open.Layer.Feature.ExportGeom。

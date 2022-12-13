@@ -30,6 +30,29 @@ FU.Area
 
 ---
 
+## **ExportGeom**(*Type = 'IsoWkt'*)<Badge text="1.1.1 +"/>
+
+---
+
+**功能：**【导出几何形状】。类方法，导出当前要素几何。
+
+**可选参数：**
+
+ &emsp;SUBID = `str`。导出类型。默认为 'IsoWkt'。
+
+::: tip 所有支持的类型
+'GML', 'IsoWkb', 'IsoWkt', 'Json', 'KML', 'Wkb', 'Wkt'
+:::
+
+**返回：**`str`。
+
+```python
+FU.ExportGeom()
+```
+> \>>> POLYGON ((117.383350145193 40.2264723149455, ...))
+
+---
+
 ## **Fields**
 
 ---
