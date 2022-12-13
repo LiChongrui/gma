@@ -54,7 +54,7 @@ module.exports = [
         icon: "fas fa-arrow-up",
         items: [
             { text: '更新预览', link: "/Update/Plan" },
-            { text: '更新日志', link: '/Update/log/1.1/1.1.0'}
+            { text: '更新日志', link: '/Update/log/1.1/1.1.1'}
          ]
     },
     {

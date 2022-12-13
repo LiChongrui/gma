@@ -306,6 +306,7 @@ module.exports = {
                     title: '1.1 (2023)',
                     collapsable: false,
                     children: [
+                        '1.1/1.1.1',
                         '1.1/1.1.0',
                     ]
                 }, 
