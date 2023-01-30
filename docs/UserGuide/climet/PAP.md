@@ -4,7 +4,7 @@ date: 2022-06-26
 sidebar: false
 ---
 
-## gma.climet.**PAP**(*PRE, Axis = None, Scale = 1, Periodicity = 12*) <Badge text="1.0.10 +"/>
+## gma.climet.**PAP**(*PRE, Axis = None, Scale = 1, Periodicity = 1*) <Badge text="1.0.10 +"/>
 
 ---
 
@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp; Scale = `int`。时间尺度。默认为 1。例如：1月、3月或其他。
 
-&emsp; Periodicity = `int`。周期。默认为 12。例如：月尺度可以以 12 为周期，日尺度可以以 365 为周期。
+&emsp; Periodicity = `int`。周期。默认为 1。例如：月尺度可以以 12 为周期，日尺度可以以 365 为周期。
 
 ::: warning 注意
 

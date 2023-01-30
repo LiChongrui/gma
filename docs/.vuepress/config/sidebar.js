@@ -1,6 +1,5 @@
 module.exports = {
 
-
     '/Explore/': [
         {
             title:'组织说明',
@@ -130,7 +129,26 @@ module.exports = {
                         'Kernel/GaussFilter',
                         'Kernel/GeneralFilter',
                     ]
-                }
+                },
+                {
+                    title: 'Stretch',
+                    collapsable: false,
+                    children: [
+                        'Stretch/Percentage',
+                        'Stretch/STD',
+                        'Stretch/MaxMin',
+                        'Stretch/HistEqualize',
+                    ]
+                },
+                {
+                    title: 'Correction',
+                    collapsable: false,
+                    children: [
+                        'Correction/Sigmoid',
+                        'Correction/Log',
+                        'Correction/Gamma',
+                    ]
+                },
             ]
         }
     ],
@@ -158,6 +176,7 @@ module.exports = {
             ]
         }
     ],
+
     '/UserGuide/smc/': [
         {
             title: '空间杂项',
@@ -180,6 +199,7 @@ module.exports = {
             ]
         }
     ],
+
     '/UserGuide/rasp/': [
         {
             title: '栅格处理',
@@ -211,6 +231,7 @@ module.exports = {
             ]
         }
     ],
+
     '/UserGuide/raa/': [
         {
             title: '栅格分析',
@@ -247,6 +268,7 @@ module.exports = {
             ]
         }
     ],
+
     '/UserGuide/vesp/': [
         {
             title: '矢量处理',
@@ -269,6 +291,23 @@ module.exports = {
             ]
         }
     ],
+
+    '/UserGuide/map/': [
+        {
+            title: '地图工具',
+            collapsable: false,
+            children: [
+                {
+                    title: 'MapFrame',
+                    collapsable: false,
+                    children: [
+                        'plot/MapFrame/',
+                    ]
+                }, 
+            ],
+        }
+    ],
+
     '/UserGuide/config/': [
         {
             title: '高级配置',
@@ -283,6 +322,7 @@ module.exports = {
             ]
         }
     ],
+
     '/UserGuide/other/': [
         {
             title: '其他函数',
@@ -297,6 +337,7 @@ module.exports = {
             ]
         },
     ],
+
     '/Update/log/': [
         {
             title:'更新日志',
@@ -306,6 +347,7 @@ module.exports = {
                     title: '1.1 (2023)',
                     collapsable: false,
                     children: [
+                        '1.1/1.1.2',
                         '1.1/1.1.1',
                         '1.1/1.1.0',
                     ]
