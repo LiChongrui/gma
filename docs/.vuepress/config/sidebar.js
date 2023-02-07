@@ -305,6 +305,7 @@ module.exports = {
                         'plot/MapFrame/AddLayer',
                         'plot/MapFrame/AddGridLines',
                         'plot/MapFrame/AddLegend',
+                        'plot/MapFrame/SetBackground',
                     ]
                 }, 
             ],

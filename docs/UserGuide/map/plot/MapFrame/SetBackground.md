@@ -14,6 +14,8 @@ sidebar: false
 
 &emsp; Color = `str||tuplt||None`。背景色。如果为 None，则生成随机颜色。详见：matplotlib。
 
+**返回：**`gma.map.layer.PlotLPolygon`。
+
 ---
 
 **示例：**
@@ -29,9 +31,9 @@ MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 # 添加图层（可以重复添加多个图层）
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
-# 添加经纬网
-Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
+# 设置底图颜色
+Background = MapF.SetBackground(Color = '#BEE8FF')
 
 ```
-![](/map/AddGridLines.png)
+![](/map/SetBackground.png)
 

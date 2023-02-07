@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMALayer: `gma 图层`。一个由 gma.Open(.GetLayer) 打开的矢量图层。
+&emsp; GMALayer: `gma.algorithm.core.dataio.Layer`。一个由 gma.Open(.GetLayer) 打开的矢量图层。
 
 **可选参数：**
 
@@ -55,6 +55,8 @@ sidebar: false
 &emsp; Connector = `str`。多字段连接字符。如果 FieldName 定义了多个字段，那么字段之间用此字符连接。
 
 &emsp; Zorder = `int`。图层顺序。如果添加了多个图层，为避免图层上下遮挡错误，请配置此参数。Zorder 越大，图层越靠上。
+
+**返回：**`gma.map.layer.PlotLPolygon||PlotLLine||PlotLPoint`。
 
 ---
 

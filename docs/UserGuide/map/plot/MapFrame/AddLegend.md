@@ -54,6 +54,8 @@ sidebar: false
 
 &emsp; PlotID = `list||None`。选择添加图例的图层序号（依据添加到地图框中的图层先后）。默认（None） 添加全部图层。
 
+**返回：**`matplotlib.Figure.legend`。
+
 ---
 
 **示例：**
@@ -70,7 +72,7 @@ MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, FieldName = 'Name')
 
 # 添加图例（标注属性表 'Name' 列）
-Legend = MapF.AddLegend(LOC = (0, 0.1), NColumns = 1, TitleAlignment = 'left') 
+Legend = MapF.AddLegend(LOC = (1, 0.1), NColumns = 1, TitleAlignment = 'left') 
 
 ```
 ![](/map/AddLegend.png)
