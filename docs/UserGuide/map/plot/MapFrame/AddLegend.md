@@ -1,16 +1,10 @@
 ---
-title: AddLayer
+title: AddLegend
 date: 2023-01-10
 sidebar: false
 ---
 
-## **AddLegend**(*LegendName = 'Lenged', LOC = 'best', Labels = None, 
-                  LabelFont = None, LabelFontSize = 7, LabelFontPROP = {},
-                  LabelColor = 'black',  TitleFont = None, TitleFontSize = 9, TitleFontPROP = {},
-                  TitleColor = 'black', TitleAlignment = 'center', TitleSEQ = 7, 
-                  VerticalInterval = None, HorizontalInterval = None,
-                  HandleLength = 3, HandleHeight = 2, HandleTextPad = 0.8,
-                  MarkerFirst = True, NColumns = 1, PlotID = None*)
+## **AddLegend**(*LegendName = 'Lenged', LOC = 'best', Labels = None,  LabelFont = None, LabelFontSize = 7, LabelFontPROP = {}, LabelColor = 'black',  TitleFont = None, TitleFontSize = 9, TitleFontPROP = {}, TitleColor = 'black', TitleAlignment = 'center', TitleSEQ = 7, VerticalInterval = None, HorizontalInterval = None, HandleLength = 3, HandleHeight = 2, HandleTextPad = 0.8, MarkerFirst = True, NColumns = 1, PlotID = None*)
 
 ---
 
@@ -18,33 +12,47 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;LegendName = `str`。图例名。
+&emsp; LegendName = `str`。图例名。
 
-&emsp;LOC = `int||tuplt||str`。 图例位置。默认为最佳位置。更多内容请参见matplotlib.legend.loc。
+&emsp; LOC = `int||tuplt||str`。 图例位置。默认为最佳位置。更多内容请参见matplotlib.legend.loc。
 
-&emsp;EdgeColor = `str||tuplt||list||None`。多边形的边界颜色。只适用于 Polygon。其他说明同 FaceColor。
+&emsp; Labels = `None||str`。 图例标签。默认（None）使用图层标签。否则，图例标签则会用此参数且图层标签也会被更新。
 
-&emsp;Hatch = `str||list||None`。填充样式。只适用于 Polygon。可为 /, \\, |, -, +, x, o, O, ., * 或其组合。如果是一个列表，则为每个 Feature 指定不同的样式，默认无样式（None）。更多信息请参考：matplotlib。
+&emsp; LabelFont = `tuplt||str||list`。 标签字体。如果为列表，则每个标签分配不同的字体。 默认（None）取决于 matplotlib 设置。
 
-&emsp;LineStyle = `str||tuplt||list||None`。线形。可为 -, --, -., :, (offset, on-off-seq), ...。如果是一个列表，则为每个 Feature 指定不同的线形，默认实线（None）。更多信息请参考：matplotlib。
+&emsp; LabelFontSize = `float||list`。 标签字体大小。如果为列表，则每个标签分配不同的字体。 默认为 7。
 
-&emsp;LineWidth = `float||list`。线宽。如果是一个列表，则为每个 Feature 指定不同的线宽。更多信息请参考：matplotlib。
+&emsp; LabelFontPROP = `dict||list`。 标签字体的其他属性。如果为列表，则为每个标签分配不同的属性。详见：matplotlib.font_manager.FontProperties。
 
-&emsp;LineColor = `str||tuplt||list||None`。线颜色。只适用于 Line。其他说明同 FaceColor。
+&emsp; LabelColor = `str||tuplt||list||None`。标签字体的颜色。如果为 None，则生成随机颜色。如果是一个列表，则为每个标签指定不同的颜色。详见：matplotlib。
 
-&emsp;PointColor = `str||tuplt||list||None`。点颜色。只适用于 Point。其他说明同 FaceColor。
+&emsp; TitleFont = `str`。 图例名字体。 默认（None）取决于 matplotlib 设置。
 
-&emsp;PointSize = `float||list||None`。点大小。只适用于 Point。如果是一个列表，则为每个 Feature 指定不同的大小。更多信息请参考：matplotlib。
+&emsp; TitleFontSize  = `float`。 图例名字体大小。如果为列表，则每个标签分配不同的字体。 默认为 7。
 
-&emsp;PointMarker = `str||list||None`。点标记。只适用于 Point。如果是一个列表，则为每个 Feature 指定不同的标记。更多信息请参考：matplotlib。
+&emsp; TitleFontPROP = `dict`。 图例名字体的其他属性。详见：matplotlib.font_manager.FontProperties。
 
-&emsp;Labels = `str||None`。为每个 Feature 添加一个标注。如果想从 矢量属性表 中添加标注，请忽略此参数，并配置 FieldName 参数。
+&emsp; TitleColor = `str||tuple`。标签字体的颜色。如果为 None，则生成随机颜色。详见：matplotlib。
 
-&emsp;FieldName = `str||list||None`。字段名。从矢量字段提取标注信息，以便后续标注。
+&emsp; TitleAlignment = `str`。图例标题的对齐方式。可为 'center', 'left' 或 'right'。默认居中（'center'）。
 
-&emsp;Connector = `str`。多字段连接字符。如果 FieldName 定义了多个字段，那么字段之间用此字符连接。
+&emsp; TitleSEQ = `float`。图例项和标题之间的间隔。默认为 7。
 
-&emsp;Zorder = `int`。图层顺序。如果添加了多个图层，为避免图层上下遮挡错误，请配置此参数。Zorder 越大，图层越靠上。
+&emsp; VerticalInterval = `float||None`。图例项之间的垂直间隔。默认（None）取决于 matplotlib 的设置。
+
+&emsp; HorizontalInterval = `float||None`。图例项之间的垂直间隔。默认（None）取决于 matplotlib 的设置。
+
+&emsp; HandleLength = `float`。图例项长度。默认为 3。
+
+&emsp; HandleHeight = `float`。图例项宽度。默认为 2。
+
+&emsp; HandleTextPad = `float`。图例项与图例文本之间的间距。默认为 0.8。
+
+&emsp; MarkerFirst = `bool`。（图例项和文本）是否图例项在前。默认（True）图例项在前，文本在后。
+
+&emsp; NColumns = `int`。图例列数。默认 1 列。
+
+&emsp; PlotID = `list||None`。选择添加图例的图层序号（依据添加到地图框中的图层先后）。默认（None） 添加全部图层。
 
 ---
 
@@ -52,6 +60,18 @@ sidebar: false
 ```python
 from gma.map import plot
 
+WorldDS = plot.GetWorldDataSource()
+WorldLayer = WorldDS.GetLayer(0)
+
+# 初始化一个地图框，用于绘图
+MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
+
+# 添加图层（可以重复添加多个图层，定义标注使用 'Name'列）
+MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, FieldName = 'Name')
+
+# 添加图例（标注属性表 'Name' 列）
+Legend = MapF.AddLegend(LOC = (0, 0.1), NColumns = 1, TitleAlignment = 'left') 
+
 ```
-> \>>> 
+![](/map/AddLegend.png)
 

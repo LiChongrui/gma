@@ -302,6 +302,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'plot/MapFrame/',
+                        'plot/MapFrame/AddLayer',
+                        'plot/MapFrame/AddGridLines',
+                        'plot/MapFrame/AddLegend',
                     ]
                 }, 
             ],
