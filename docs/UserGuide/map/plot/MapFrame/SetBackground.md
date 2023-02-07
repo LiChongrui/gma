@@ -12,19 +12,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp; LONRange = `tuple`。生成经纬网的初始经度、结束经度和间隔。 默认 (-180, 180, 15)。
-
-&emsp; LATRange = `tuple`。生成经纬网的初始纬度、结束纬度和间隔。 默认 (-90, 90, 15)。
-
-&emsp; ShowLON = `tuple`。是否显示经度网。 默认显示（True）。
-
-&emsp; ShowLAT = `tuple`。是否显示纬度网。 默认显示（True）。
-
-&emsp; LineColor = `str||tuple`。经纬网线颜色。如果为 None，则生成随机颜色。详见：matplotlib。
-
-&emsp; LineStyle = `str||tuple`。经纬网线样式。详见：AddLayer 中 LineStyle。
-
-&emsp; LineWidth = `float`。线宽。默认 0.3。
+&emsp; Color = `str||tuplt||None`。背景色。如果为 None，则生成随机颜色。详见：matplotlib。
 
 ---
 
