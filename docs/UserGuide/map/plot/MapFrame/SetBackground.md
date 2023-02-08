@@ -33,7 +33,6 @@ MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidt
 
 # 设置底图颜色
 Background = MapF.SetBackground(Color = '#BEE8FF')
-
 ```
 ![](/map/SetBackground.png)
 

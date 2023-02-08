@@ -73,7 +73,6 @@ MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidt
 
 # 添加图例（标注属性表 'Name' 列）
 Legend = MapF.AddLegend(LOC = (1, 0.1), NColumns = 1, TitleAlignment = 'left') 
-
 ```
 ![](/map/AddLegend.png)
 

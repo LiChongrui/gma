@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp; FontPROP = `dict`。 指北针 'N' 字体的其他属性。详见：matplotlib.font_manager.FontProperties。
 
-&emsp; Color = `str||tuplt||list||None`。指北针颜色。如果为 None，则生成随机一个颜色。详见：matplotlib。
+&emsp; Color = `str||tuplt||list||None`。指北针颜色。如果为 None，则生成随机颜色。详见：matplotlib。
 
 ::: tip 提示
 如果 Color 为列表，则会为指北针的每个主体（例如字体 'N' 和指北的形状）分配不同的颜色。
@@ -47,7 +47,6 @@ MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidt
 
 # 添加指北针
 Grid = MapF.AddCompass(LOC = (0.06, 0.86), Width = 0.05, Color = 'gray')
-
 ```
 ![](/map/AddCompass.png)
 

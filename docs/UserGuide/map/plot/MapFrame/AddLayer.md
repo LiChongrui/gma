@@ -72,7 +72,6 @@ MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 
 # 添加图层（可以重复添加多个图层）
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
-
 ```
 ![](/map/AddLayer.png)
 

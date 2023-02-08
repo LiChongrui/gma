@@ -38,6 +38,10 @@ sidebar: false
 
 **返回：**`list`。比例尺形状和字体样式。
 
+::: warning 注意
+比例尺的值根据地图坐标系和比例尺长度计算。**对于地理坐标系，比例尺的位置影响比例尺的标注值！**
+:::
+
 ---
 
 **示例：**
@@ -53,7 +57,6 @@ MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidt
 
 # 添加比例尺
 ScaleBar = MapF.AddScaleBar(LOC = (0.1, 0.1), Width = 0.22, Color = 'black')
-
 ```
 ![](/map/AddScaleBar.png)
 

@@ -307,10 +307,24 @@ module.exports = {
                         'plot/MapFrame/AddGridLines',
                         'plot/MapFrame/AddLegend',
                         'plot/MapFrame/AddScaleBar',
+                        'plot/MapFrame/AddDataSetDiscrete',
                         'plot/MapFrame/SetBackground',
                         'plot/MapFrame/SetFrame',
                     ]
                 }, 
+                {
+                    title: 'SpatRef',
+                    collapsable: false,
+                    children: [
+                        'rcs/SpatRef/',
+                        'rcs/SpatRef/Export',
+                    ]
+                }, 
+                'plot/GetWorldDataSource',
+                'rcs/AlbersEqualArea',
+                'rcs/CustomGCS',
+                'rcs/Mollweide',
+                'rcs/Robinson',
             ],
         }
     ],

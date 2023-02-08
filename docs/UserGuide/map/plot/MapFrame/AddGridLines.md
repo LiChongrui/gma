@@ -43,7 +43,6 @@ MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidt
 
 # 添加经纬网
 Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
-
 ```
 ![](/map/AddGridLines.png)
 
