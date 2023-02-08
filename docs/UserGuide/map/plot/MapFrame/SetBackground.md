@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **SetBackground**(*Color = '#BEE8FF'*)
+## **SetBackground**(*Color = '#BEE8FF'*)<Badge text="1.1.2 +"/> 
 
 ---
 

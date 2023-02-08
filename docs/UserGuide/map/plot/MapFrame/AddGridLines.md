@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **AddGridLines**(*LONRange = (-180, 180, 15), LATRange = (-90, 90, 15), ShowLON = True, ShowLAT = True, LineColor = 'gray', LineStyle = (0, (6, 6)), LineWidth = 0.3*)
+## **AddGridLines**(*LONRange = (-180, 180, 15), LATRange = (-90, 90, 15), ShowLON = True, ShowLAT = True, LineColor = 'gray', LineStyle = (0, (6, 6)), LineWidth = 0.3*)<Badge text="1.1.2 +"/> 
 
 ---
 
@@ -37,10 +37,8 @@ from gma.map import plot
 WorldDS = plot.GetWorldDataSource()
 WorldLayer = WorldDS.GetLayer(0)
 
-# 初始化一个地图框，用于绘图
+# 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
-
-# 添加图层（可以重复添加多个图层）
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 添加经纬网

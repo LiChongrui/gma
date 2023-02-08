@@ -303,9 +303,12 @@ module.exports = {
                     children: [
                         'plot/MapFrame/',
                         'plot/MapFrame/AddLayer',
+                        'plot/MapFrame/AddCompass',
                         'plot/MapFrame/AddGridLines',
                         'plot/MapFrame/AddLegend',
+                        'plot/MapFrame/AddScaleBar',
                         'plot/MapFrame/SetBackground',
+                        'plot/MapFrame/SetFrame',
                     ]
                 }, 
             ],

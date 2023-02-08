@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **AddLayer**(*GMALayer, FID = None, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = None, PointMarker = None, Labels = None, FieldName = None, Connector = '', Zorder = None*)
+## **AddLayer**(*GMALayer, FID = None, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = None, PointMarker = None, Labels = None, FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.2 +"/> 
 
 ---
 

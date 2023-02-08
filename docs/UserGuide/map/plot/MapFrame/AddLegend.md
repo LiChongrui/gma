@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **AddLegend**(*LegendName = 'Lenged', LOC = 'best', Labels = None,  LabelFont = None, LabelFontSize = 7, LabelFontPROP = {}, LabelColor = 'black',  TitleFont = None, TitleFontSize = 9, TitleFontPROP = {}, TitleColor = 'black', TitleAlignment = 'center', TitleSEQ = 7, VerticalInterval = None, HorizontalInterval = None, HandleLength = 3, HandleHeight = 2, HandleTextPad = 0.8, MarkerFirst = True, NColumns = 1, PlotID = None*)
+## **AddLegend**(*LegendName = 'Lenged', LOC = 'best', Labels = None,  LabelFont = None, LabelFontSize = 7, LabelFontPROP = {}, LabelColor = 'black',  TitleFont = None, TitleFontSize = 9, TitleFontPROP = {}, TitleColor = 'black', TitleAlignment = 'center', TitleSEQ = 7, VerticalInterval = None, HorizontalInterval = None, HandleLength = 3, HandleHeight = 2, HandleTextPad = 0.8, MarkerFirst = True, NColumns = 1, PlotID = None*)<Badge text="1.1.2 +"/> 
 
 ---
 
@@ -18,7 +18,7 @@ sidebar: false
 
 &emsp; Labels = `None||str`。 图例标签。默认（None）使用图层标签。否则，图例标签则会用此参数且图层标签也会被更新。
 
-&emsp; LabelFont = `tuplt||str||list`。 标签字体。如果为列表，则每个标签分配不同的字体。 默认（None）取决于 matplotlib 设置。
+&emsp; LabelFont = `str||list`。 标签字体。如果为列表，则每个标签分配不同的字体。 默认（None）取决于 matplotlib 设置。
 
 &emsp; LabelFontSize = `float||list`。 标签字体大小。如果为列表，则每个标签分配不同的字体。 默认为 7。
 

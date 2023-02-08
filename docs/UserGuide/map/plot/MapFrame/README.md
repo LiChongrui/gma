@@ -34,10 +34,10 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | ----- | ------------- | ------------------------------------------------------------ | ---------- |
 | 1     | AddLayer      | 添加图层（可以重复添加多个图层）                             | 方法       |
 | *1.1* | *AddLabel*    | *添加图层标注，为 layer 模块相关子类的功能*                  | *子类方法* |
-| 2     | AddGridLines  | 添加经纬网                                                   | 方法       |
-| 3     | AddCompass    | 添加指北针                                                   | 方法       |
-| 4     | AddScaleBar   | 添加比例尺                                                   | 方法       |
-| 5     | AddLegend     | 为绘制的矢量图层、重分类或唯一值栅格数据集添加图例           | 方法       |
+| 2     | AddCompass    | 添加指北针                                                   | 方法       |
+| 3     | AddGridLines  | 添加经纬网（仅经纬网线）                             | 方法       |
+| 4     | AddLegend     | 为绘制的矢量图层、重分类或唯一值栅格数据集添加图例           | 方法       |
+| 5     | AddScaleBar   | 添加比例尺                                                   | 方法       |
 | 6     | SetBackground | 设置背景颜色                                                 | 方法       |
 | 7     | SetFrame      | 设置地图框（包括刻度和经纬度的标注等）                       | 方法       |
 | 8     | Axes          | `<matplotlib.axes._subplots.AxesSubplot>`。matplotlib 子图，可按需补充或调整 | 属性       |
@@ -48,7 +48,7 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | 13    | PLengendID    | `list`。添加的图层序号列表（按图层添加顺序排序）             | 属性       |
 | 14    | PlotX         | `list`。所有绘制图层的返回值                                 | 属性       |
 | 15    | ProjWKT       | `str`。WKT 格式的底图坐标系                                  | 属性       |
-| 16    | WorldFeature  | `<gma.algorithm.core.dataio.Feature>` 。世界 Feature（WGS84） | 属性       |
+| 16    | WorldFeature  | `<gma.algorithm.core.dataio.Feature>` 。底图坐标系的最大范围 Feature（WGS84） | 属性       |
 
 **示例：**
 
