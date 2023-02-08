@@ -54,7 +54,35 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 
 ```python
 from gma.map import plot
-MapF = plot.MapFrame()
+MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 ```
 > \>>> <gma.map.layout.MapFrame at 0x......>
 
+**绘图流程的简单示例：**
+```python
+WorldDS = plot.GetWorldDataSource()
+WorldLayer = WorldDS.GetLayer(0)
+
+# 1.添加图层（可以重复添加多个图层）
+MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+## 1.1 为此图层添加标注(标注属性表 'Name' 列)
+MapL1.AddLabel(FieldName = 'Name', FontSize = 4)
+
+# 2.添加经纬网
+Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
+
+# 3.设置地图框（包括刻度和经纬度的标注）
+Frame = MapF.SetFrame(FrameWidth = 0.5, LabelFontSize = 7, TickLength = 0.008)
+
+# 4.设置底图颜色
+Background = MapF.SetBackground(Color = '#BEE8FF')
+
+# *5.地图整饰要素
+## 5.1 添加指北针
+Compass = MapF.AddCompass(LOC = (0.06, 0.86), Width = 0.05, Color = 'black')
+## 5.2 添加比例尺
+ScaleBar = MapF.AddScaleBar(LOC = (0.02, 0), Width = 0.22, Color = 'black')
+## 5.3 添加图例
+Legend = MapF.AddLegend(LOC = (1, 0.1), NColumns = 1, TitleAlignment = 'left')
+```
+![](/map/MapFrame.png)
