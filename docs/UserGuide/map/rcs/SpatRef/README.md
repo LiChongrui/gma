@@ -37,10 +37,10 @@ SR = rcs.SpatRef('WGS84')
 | 属性     | AngularUnitsName  |  角度单位名称                           |   `str`         |
 | 属性     | EPSG    | 坐标系 EPSG 编码。没有 EPSG 编码的坐标系则值为 0          | `int`      |
 | 方法     | [Export](/UserGuide/map/rcs/SpatRef/Export.html)    | 导出坐标系。支持 MICoordSys，PCI，PROJJSON，PrettyWkt，Proj4，USGS，Wkt，XML 格式      | `str` |
-| 属性     | GetProjParms    | 获取坐标系的投影参数          |  `dict`       |
+| 方法     | GetProjParms    | 获取坐标系的投影参数          |  `dict`       |
 | 方法     | GetUseFeature    | 获取坐标系的使用区域 Feature          |  `gma.algorithm.core.dataio.Feature`       |
 | 方法     | GetUseFeatureInWGS84   | 获取坐标系的使用区域 Feature（WGS84）         |    `gma.algorithm.core.dataio.Feature`         |
-| 属性     | InvFlattening    | 反扁率          |    `float`         |
+| 属性     | InvFlattening    | 椭球体反扁率          |    `float`         |
 | 属性     | LinearUnits    | 线形单位值          |    `float`         |
 | 属性     | LinearUnitsName   | 线形单位名称         |    `str`         |
 | 属性     | Name    | 坐标系名称          |   `str`          |

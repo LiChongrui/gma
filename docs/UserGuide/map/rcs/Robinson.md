@@ -22,7 +22,7 @@ sidebar: false
 ```python
 from gma.map import rcs
 
-RB = rcs.创建伪圆柱投影()
+RB = rcs.Robinson()
 ```
 
 > \>>> <gma.map.rcs.SpatRef at 0x......>

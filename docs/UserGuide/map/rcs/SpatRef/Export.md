@@ -12,7 +12,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp; Format = `str`。坐标系类型。
+&emsp; Format = `str`。坐标系格式。
 
 ::: tip 支持导出为
 EPSG，MICoordSys，PCI，PROJJSON，PrettyWkt，Proj4，USGS，Wkt，XML 格式。
