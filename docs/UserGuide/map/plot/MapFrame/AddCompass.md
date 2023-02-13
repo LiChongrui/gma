@@ -36,17 +36,28 @@ sidebar: false
 
 **示例：**
 ```python
+import gma
 from gma.map import plot
 
 WorldDS = plot.GetWorldDataSource()
 WorldLayer = WorldDS.GetLayer(0)
 
-# 初始化地图框，并添加一个图层
-MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
+DataSet = gma.Open('ELE_China_GEBCO_2020.tif')
+
+# 初始化地图框
+MapF = plot.MapFrame(BaseMapProj = 3857, Extent = None)
+
+# 1.1添加矢量图层（可以重复添加多个图层）
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
-# 添加指北针
-Grid = MapF.AddCompass(LOC = (0.06, 0.86), Width = 0.05, Color = 'gray')
+# 1.2 添加栅格数据集（可以重复添加多个图层）
+MapL1 = MapF.AddDataSetDiscrete(DataSet)
+
+# 2.添加经纬网
+Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
+
+# 3.设置地图框（包括刻度和经纬度的标注）
+Frame = MapF.SetFrame(FrameWidth = 0.5, LabelFontSize = 7, TickLength = 0.008)
 ```
 ![](/map/AddCompass.png)
 
