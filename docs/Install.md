@@ -18,9 +18,9 @@ sidebar: false
 
 ::: theorem Python 环境
 
-&emsp; Windows： <Badge text="3.8、3.9 或 3.10" vertical='middle'/>
+&emsp; Windows： <Badge text="3.8 ~ 3.11" vertical='middle'/>
 
-&emsp; Linux： <Badge text="3.9 或 3.10" vertical='middle'/>
+&emsp; Linux： <Badge text="3.9~3.11" vertical='middle'/>
 
 :::
 
