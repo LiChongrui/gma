@@ -11,7 +11,7 @@ jobs:
     steps:
       # 拉取代码
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -20,7 +20,7 @@ jobs:
         run: npm install && npm run docs:build
  
       - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
