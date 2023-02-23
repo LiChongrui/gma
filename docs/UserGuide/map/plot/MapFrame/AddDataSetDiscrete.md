@@ -37,7 +37,7 @@ sidebar: false
 
 &emsp; Correction = `str||None`。数据变换方法。默认不变换（None）。详见：gma.math.Correction。
 
-&emsp; StretchPROP = `dict`。数据变换参数（对应拉伸方法）。详见：gma.math.Correction。
+&emsp; StretchPROP = `dict`。数据变换参数（对应变换方法）。详见：gma.math.Correction。
 
 &emsp; UseDataRange = `bool`。使用数据集的最大值、最小值作为颜色范围（True），或使用数据类型支持的最大值、最小值作为颜色范围（False）。
 
