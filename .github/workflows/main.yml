@@ -7,20 +7,23 @@ on:
 jobs:
   docs:
     runs-on: windows-2019
+    strategy:
+      matrix:
+        node-version: [16.16.0] 
 
     steps:
       # 拉取代码
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@2
         with:
           persist-credentials: false
 
       # 生成静态文件
       - name: Build
-        run: npm install npm@8.19.3 -g && npm run docs:build
+        run: npm run docs:build
  
       - name: Deploy
-        uses: jenkey2011/vuepress-deploy@master
+        uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
