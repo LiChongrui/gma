@@ -45,7 +45,7 @@ WorldLayer = WorldDS.GetLayer(0)
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
-# 添加经纬网
+# 添加指北针
 AddCompass = MapF.AddCompass(LOC = (0.1, 0.8), Color = 'gray')
 ```
 ![](/map/AddCompass.png)
