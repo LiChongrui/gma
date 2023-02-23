@@ -19,8 +19,11 @@ jobs:
           persist-credentials: false
 
       # 生成静态文件
-      - name: Build
-        run: npm install npm@8.11.0 - g && npm run docs:build
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+        run: npm run docs:build
  
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2
