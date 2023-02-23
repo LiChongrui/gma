@@ -18,11 +18,14 @@ jobs:
         with:
           persist-credentials: false
 
-      # 生成静态文件
+      # 配置 node.js 版本
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      # 生成静态文件
+      - name: Build
         run: npm run docs:build
  
       - name: Deploy
