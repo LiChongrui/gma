@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **AddDataSetDiscrete**(*GMADataSet, Bands = None, CMap = None, ForcedZoom = True, Stretch = None, StretchPROP = {}, Correction = None, CorrectionPROP = {}, UseDataRange = True, Zorder = None*)<Badge text="1.1.3 +"/> <Badge text="beta"/> 
+## **AddDataSetDiscrete**(*GMADataSet, Bands = None, CMap = None, ForcedZoom = True, Stretch = None, StretchPROP = {}, Correction = None, CorrectionPROP = {}, UseDataRange = True, Zorder = None*)<Badge text="1.1.3 +"/>
 
 ---
 
