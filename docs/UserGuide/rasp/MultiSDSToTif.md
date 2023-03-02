@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;Dimension  = `list`。要转换维度的 整型数 列表。默认转换所有维度（None）。
 
-&emsp;Projection  = `str`。输入数据的 X，Y 坐标系。默认自动读取输入多维数据的坐标系（None）。
+&emsp;Projection  = `str`。输入数据的 X，Y 坐标系。可配置 None，自动读取输入多维数据的坐标系。默认为 ‘WGS84’。
 
 ---
 
