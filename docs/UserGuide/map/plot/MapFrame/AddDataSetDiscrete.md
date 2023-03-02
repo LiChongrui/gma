@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMADataSet: `gma.algorithm.core.dataio.Data`。一个由 gma.Open 打开的栅格数据集。
+&emsp; GMADataSet: `gma.algorithm.core.dataio.DataSet`。一个由 gma.Open 打开的栅格数据集。
 
 **可选参数：**
 
