@@ -40,7 +40,7 @@ sidebar: false
         
 &emsp; Uint = `str`。经纬网标度值保留的单位。可以为 'D'（度）、 'DM'（度分）或 'DMS'（度分秒）。   
 
-&emsp; UseWESN = `bool`。经纬网标度值是否使用 'W'（西经）、'E'（东京）、'S'（南纬）、'N'（北纬）。
+&emsp; UseWESN = `bool`。经纬网标度值是否使用 'W'（西经）、'E'（东经）、'S'（南纬）、'N'（北纬）。
 
 &emsp; LabelFont = `str||None`。 标签字体。 默认（None）取决于 matplotlib 设置。
 
