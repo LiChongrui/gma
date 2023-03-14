@@ -307,6 +307,7 @@ module.exports = {
                         'plot/MapFrame/AddGridLines',
                         'plot/MapFrame/AddLegend',
                         'plot/MapFrame/AddScaleBar',
+                        'plot/MapFrame/AddDataSetClassify',
                         'plot/MapFrame/AddDataSetDiscrete',
                         'plot/MapFrame/SetBackground',
                         'plot/MapFrame/SetFrame',
@@ -320,6 +321,8 @@ module.exports = {
                         'rcs/SpatRef/Export',
                     ]
                 }, 
+                'plot/GetSystemFonts',
+                'plot/GetWorldDEMDataSet',
                 'plot/GetWorldDataSource',
                 'rcs/AlbersEqualArea',
                 'rcs/CustomGCS',
@@ -368,6 +371,7 @@ module.exports = {
                     title: '1.1 (2023)',
                     collapsable: false,
                     children: [
+                        '1.1/1.1.4',
                         '1.1/1.1.3',
                         '1.1/1.1.2',
                         '1.1/1.1.1',

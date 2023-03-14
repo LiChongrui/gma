@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp; LOC = `int||tuplt||str`。 图例位置。默认为最佳位置。更多内容请参见matplotlib.legend.loc。
 
-&emsp; Labels = `None||str`。 图例标签。默认（None）使用图层标签。否则，图例标签则会用此参数且图层标签也会被更新。
+&emsp; Labels = `None||list`。 图例标签。默认（None）使用图层标签。否则，图例标签则会用此参数且图层标签也会被更新。
 
 &emsp; LabelFont = `str||list`。 标签字体。如果为列表，则每个标签分配不同的字体。 默认（None）取决于 matplotlib 设置。
 

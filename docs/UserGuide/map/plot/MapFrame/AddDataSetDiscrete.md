@@ -8,7 +8,7 @@ sidebar: false
 
 ---
 
-**功能：** 【添加离散数据集】。添加离散型栅格数据集。
+**功能：** 【添加离散数据集】。添加离散型栅格数据集图层。
 
 **参数：**
 
@@ -43,7 +43,7 @@ sidebar: false
 
 &emsp; Zorder = `int||None`。图层顺序。如果添加了多个图层，为避免图层上下遮挡错误，请配置此参数。Zorder 越大，图层越靠上。
 
-**返回：**`matplotlib.image.AxesImage`。
+**返回：**`gma.map.dataset.PlotDataSet`。
 
 ---
 

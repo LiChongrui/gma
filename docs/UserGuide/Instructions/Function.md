@@ -247,6 +247,7 @@ date: 2022-10-29
 | 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
 | :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
 | [Bands](../other/DataSet.html#bands)                     | gma.Open.Bands           | 属性 | 【波段数】           | 获取栅格波段数              |
+| [Boundary](../other/DataSet.html#Boundary)                     | gma.Open.Boundary           | 属性 | 【四至范围】           | 获取栅格数据的四至范围            |
 | [Columns](../other/DataSet.html#columns)                 | gma.Open.Columns         | 属性 | 【列数】             | 获取栅格列数（X）           |
 | [DataType](../other/DataSet.html#datatype)               | gma.Open.DataType        | 属性 | 【数据类型】         | 获取栅格数据的数据类型      |
 | [Driver](../other/DataSet.html#driver)                   | gma.Open.Drive           | 属性 | 【栅格驱动】         | 获取栅格数据驱动            |

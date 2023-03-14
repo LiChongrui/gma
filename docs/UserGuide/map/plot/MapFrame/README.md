@@ -38,7 +38,8 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | M.3     | [AddGridLines](/UserGuide/map/plot/MapFrame/AddGridLines.html)   | 添加经纬网（仅经纬网线）                             | 方法       |
 | M.4     | [AddLegend](/UserGuide/map/plot/MapFrame/AddLegend.html)      | 为绘制的矢量图层、重分类或唯一值栅格数据集添加图例           | 方法       |
 | M.5     | [AddScaleBar](/UserGuide/map/plot/MapFrame/AddScaleBar.html)    | 添加比例尺                                                   | 方法       |
-| M.6     | [AddDataSetDiscrete](/UserGuide/map/plot/MapFrame/AddDataSetDiscrete.html)    | 添加离散型栅格数据集                                               | 方法       |
+| M.6     | [AddDataSetClassify](/UserGuide/map/plot/MapFrame/AddDataSetClassify.html)    | 添加重分类栅格数据集图层                                               | 方法       |
+| M.7     | [AddDataSetDiscrete](/UserGuide/map/plot/MapFrame/AddDataSetDiscrete.html)    | 添加离散型栅格数据集图层                                               | 方法       |
 | M.7     | [SetBackground](/UserGuide/map/plot/MapFrame/SetBackground.html)  | 设置背景颜色                                                 | 方法       |
 | M.8     | [SetFrame](/UserGuide/map/plot/MapFrame/SetFrame.html)       | 设置地图框（包括刻度和经纬度的标注等）                       | 方法       |
 | P.1     | Axes          | `<matplotlib.axes._subplots.AxesSubplot>`。matplotlib 子图，可按需补充调整 | 属性       |
