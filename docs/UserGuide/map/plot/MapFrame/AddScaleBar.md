@@ -12,7 +12,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp; LOC = `tuple`。比例尺相对（与地图框的）位置（X, Y）。 默认 (0.8, 0.8)。
+&emsp; LOC = `tuple`。比例尺相对（于地图框的）位置（X, Y）。 默认 (0.1, 0.1)。
 
 &emsp; Width = `float`。比例尺的相对宽度。为相对于地图框 X 方向长度的倍数。默认 0.2 倍。    
 
@@ -26,13 +26,13 @@ sidebar: false
 
 &emsp; FontPROP = `dict`。比例尺字体的其他属性。详见：matplotlib.font_manager.FontProperties。
 
-&emsp; Color = `str||tuplt||None`。比例尺字体颜色。如果为 None，则生成随机一个颜色。详见：matplotlib。
+&emsp; Color = `str||tuplt||None`。比例尺字体颜色。如果为 None，则生成一个随机颜色。详见：matplotlib。
 
 &emsp; SpindleWidth = `float`。主轴宽度（字体单位）。默认 0.5 。    
 
-&emsp; ScaleHeight  = `float`。主刻度缩放（相对与 Width）。默认 0.05 倍。    
+&emsp; ScaleHeight  = `float`。主刻度缩放（相对于 Width）。默认 0.05 倍。    
 
-&emsp; SubSCAScaling  = `float`。子刻度缩放（相对与 ScaleHeight）。默认 0.5 倍。    
+&emsp; SubSCAScaling  = `float`。子刻度缩放（相对于 ScaleHeight）。默认 0.5 倍。    
 
 &emsp; Style = `str`。比例尺样式。目前仅支持 'ScaleBar1' 样式。
 
