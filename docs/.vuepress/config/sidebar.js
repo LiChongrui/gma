@@ -347,9 +347,9 @@ module.exports = {
         }
     ],
 
-    '/UserGuide/other/': [
+    '/UserGuide/io/': [
         {
-            title: '其他函数',
+            title: '输入输出',
             collapsable: false,
             children: [
                 'Open',
@@ -371,6 +371,7 @@ module.exports = {
                     title: '1.1 (2023)',
                     collapsable: false,
                     children: [
+                        '1.1/1.1.5',
                         '1.1/1.1.4',
                         '1.1/1.1.3',
                         '1.1/1.1.2',

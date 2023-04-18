@@ -224,11 +224,20 @@ date: 2022-10-29
 
 
 
-## 其他函数 <Badge text="1.0.6 +"/>
+## 输入输出 <Badge text="1.1.5 +"/>
 
 | 函数                               | 引用（简版） | 说明         | 解释                                                         |
 | :--------------------------------- | :----------- | :----------- | :----------------------------------------------------------- |
-| [Open](../other/Open.html) | gma.Open     | 【打开文件】 | 打开栅格或矢量数据文件。*栅格或矢量数据支持的 方法/属性 详见：[打开数据](Function.html#打开数据)* |
+| [Open](../io/Open.html) | io.Open     | 【打开文件】 | 打开栅格或矢量数据文件。*栅格或矢量数据支持的 方法/属性 详见：[打开数据](Function.html#打开数据)* |
+| [RasterOpen](../io/RasterOpen.html) | io.RasterOpen    | 【打开栅格文件】 | 其他同 Open。 |
+| [VectorOpen](../io/VectorOpen.html) | io.VectorOpen     | 【打开矢量文件】 | 其他同 Open。 |
+| [CreateFeatureFromPoints](../io/CreateFeatureFromPoints.html) | io.CreateFeatureFromPoints     | 【从点创建要素】 | 根据输入的坐标点，生成 Feature |
+| [CreateLayerFromFeature](../io/CreateLayerFromFeature.html) | io.CreateLayerFromFeature    | 【从要素创建图层】 | 根据输入的要素，合成 Layer |
+| [ReadArrayAsDataSet](../io/ReadArrayAsDataSet.html) | io.ReadArrayAsDataSet     | 【读取数组】 | 将 NumPy 数组读取为 DataSet |
+| [SaveArrayToRaster](../io/SaveArrayToRaster.html) | io.SaveArrayToRaster    | 【保存数组】 | 将 NumPy 数组保存到栅格文件  |
+| [TranslateFeatureToDataSet](../io/TranslateFeatureToDataSet.html) | io.TranslateFeatureToDataSet     | 【要素转数据集】 | 将要素（Feature）转换为数据集（DataSet） |
+| [TranslateLayerToDataSet](../io/TranslateLayerToDataSet.html) | io.TranslateLayerToDataSet     | 【图层转数据集】 | 将图层（Layer）转换为数据集（DataSet） |
+
 
 #### **打开数据**
 
@@ -236,68 +245,68 @@ date: 2022-10-29
 
 | 类型         | 标识                              | 标记 | 来源                                  | 功能数量 |
 | :------------ | :-------------------------------- | :--- | :------------------------------------ | :------- |
-| [栅格数据集](../other/DataSet.html)   | <gma.algorithm.dataio.DataSet> | 类   | gma.Open(栅格数据)                    | 12       |
-| [矢量数据集](../other/DataSource.html)   | <gma.algorithm.dataio.DataSource> | 类   | gma.Open(矢量数据)                    | 6        |
-| [矢量图层](../other/Layer.html)     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 8        |
-| [矢量要素](../other/Feature.html)     | <gma.algorithm.dataio.Feature>      | 孙类 | ..GetLayer(图层序号).GetFeature(要素序号) | 5        |
-| [栅格子数据集](../other/SubDataSet.html)   | <gma.algorithm.core.dataio.SubDataSet>  | 类 | gma.Open(具有子数据集的多维数据)      | 2     |
+| [栅格数据集](../io/DataSet.html)   | <gma.algorithm.dataio.DataSet> | 类   | gma.Open(栅格数据)                    | 12       |
+| [矢量数据集](../io/DataSource.html)   | <gma.algorithm.dataio.DataSource> | 类   | gma.Open(矢量数据)                    | 6        |
+| [矢量图层](../io/Layer.html)     | <gma.algorithm.dataio.Layer>      | 子类 | gma.Open(矢量数据).GetLayer(图层序号) | 8        |
+| [矢量要素](../io/Feature.html)     | <gma.algorithm.dataio.Feature>      | 孙类 | ..GetLayer(图层序号).GetFeature(要素序号) | 5        |
+| [栅格子数据集](../io/SubDataSet.html)   | <gma.algorithm.core.dataio.SubDataSet>  | 类 | gma.Open(具有子数据集的多维数据)      | 2     |
 
 #### DataSet 支持的方法/属性
 
 | 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
 | :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
-| [Bands](../other/DataSet.html#bands)                     | gma.Open.Bands           | 属性 | 【波段数】           | 获取栅格波段数              |
-| [Boundary](../other/DataSet.html#Boundary)                     | gma.Open.Boundary           | 属性 | 【四至范围】           | 获取栅格数据的四至范围            |
-| [Columns](../other/DataSet.html#columns)                 | gma.Open.Columns         | 属性 | 【列数】             | 获取栅格列数（X）           |
-| [DataType](../other/DataSet.html#datatype)               | gma.Open.DataType        | 属性 | 【数据类型】         | 获取栅格数据的数据类型      |
-| [Driver](../other/DataSet.html#driver)                   | gma.Open.Drive           | 属性 | 【栅格驱动】         | 获取栅格数据驱动            |
-| [GeoTransform](../other/DataSet.html#geotransform)       | gma.Open.GeoTransform    | 属性 | 【仿射变换】         | 获取栅格仿射变换            |
-| [GetGDALDataset](../other/DataSet.html#getgdaldataset)   | gma.Open.GetGDALDataset  | 方法 | 【获取 GDALDataset】 | 转到 gdal.GDALDataset       |
-| [Info](../other/DataSet.html#info)                       | gma.Open.Info            | 属性 | 【栅格信息】         | 获取栅格信息                |
-| [Metadata](../other/DataSet.html#metadata)               | gma.Open.Metadata        | 属性 | 【元数据】           | 获取栅格元数据              |
-| [NoData](../other/DataSet.html#nodata)                   | gma.Open.NoData          | 属性 | 【无效值】           | 获取栅格无效值              |
-| [Projection](../other/DataSet.html#projection)           | gma.Open.Projection      | 属性 | 【坐标系/投影】      | 获取栅格坐标系/投影         |
-| [Rows](../other/DataSet.html#rows)                       | gma.Open.Rows            | 属性 | 【行数】             | 获取栅格行数（Y）           |
-| [ToArray](../other/DataSet.html#toarray-leftrow-0-leftcolumn-0-rowsize-none-columnsize-none-bandlist-none)                 | gma.Open.ToArray         | 方法 | 【转为数组】         | 将栅格数据读取为 Numpy 数组 |
+| [Bands](../io/DataSet.html#bands)                     | gma.Open.Bands           | 属性 | 【波段数】           | 获取栅格波段数              |
+| [Boundary](../io/DataSet.html#Boundary)                     | gma.Open.Boundary           | 属性 | 【四至范围】           | 获取栅格数据的四至范围            |
+| [Columns](../io/DataSet.html#columns)                 | gma.Open.Columns         | 属性 | 【列数】             | 获取栅格列数（X）           |
+| [DataType](../io/DataSet.html#datatype)               | gma.Open.DataType        | 属性 | 【数据类型】         | 获取栅格数据的数据类型      |
+| [Driver](../io/DataSet.html#driver)                   | gma.Open.Drive           | 属性 | 【栅格驱动】         | 获取栅格数据驱动            |
+| [GeoTransform](../io/DataSet.html#geotransform)       | gma.Open.GeoTransform    | 属性 | 【仿射变换】         | 获取栅格仿射变换            |
+| [GetGDALDataset](../io/DataSet.html#getgdaldataset)   | gma.Open.GetGDALDataset  | 方法 | 【获取 GDALDataset】 | 转到 gdal.GDALDataset       |
+| [Info](../io/DataSet.html#info)                       | gma.Open.Info            | 属性 | 【栅格信息】         | 获取栅格信息                |
+| [Metadata](../io/DataSet.html#metadata)               | gma.Open.Metadata        | 属性 | 【元数据】           | 获取栅格元数据              |
+| [NoData](../io/DataSet.html#nodata)                   | gma.Open.NoData          | 属性 | 【无效值】           | 获取栅格无效值              |
+| [Projection](../io/DataSet.html#projection)           | gma.Open.Projection      | 属性 | 【坐标系/投影】      | 获取栅格坐标系/投影         |
+| [Rows](../io/DataSet.html#rows)                       | gma.Open.Rows            | 属性 | 【行数】             | 获取栅格行数（Y）           |
+| [ToArray](../io/DataSet.html#toarray-leftrow-0-leftcolumn-0-rowsize-none-columnsize-none-bandlist-none)                 | gma.Open.ToArray         | 方法 | 【转为数组】         | 将栅格数据读取为 Numpy 数组 |
 
 #### SubDataSet 支持的方法/属性
 
 | 功能                                                     | 引用                     | 标记 | 功能                 | 详细解释                    |
 | :------------------------------------------------------- | :----------------------- | :--- | :------------------- | :-------------------------- |
-| [SubInfo](../other/SubDataSet.html#subinfo)                     | gma.Open.SubInfo           | 属性 | 【子数据集信息】           | 获取所有子数据集信息列表              |
-| [GetSubDataSet](../other/SubDataSet.html#getsubdataset-subid-0)                 | gma.Open.GetSubDataSet         | 属性 | 【获取子数据集】             | 根据 ID 读取子数据集为 DataSet           |
+| [SubInfo](../io/SubDataSet.html#subinfo)                     | gma.Open.SubInfo           | 属性 | 【子数据集信息】           | 获取所有子数据集信息列表              |
+| [GetSubDataSet](../io/SubDataSet.html#getsubdataset-subid-0)                 | gma.Open.GetSubDataSet         | 属性 | 【获取子数据集】             | 根据 ID 读取子数据集为 DataSet           |
 
 #### DataSource 支持的方法/属性
 
 | 功能                                                       | 引用                      | 标记 | 功能                | 详细解释                   |
 | :--------------------------------------------------------- | :------------------------ | :--- | :------------------ | :------------------------- |
-| [Driver](../other/DataSource.html#driver)                   | gma.Open.Drive            | 属性 | 【矢量驱动】        | 获取矢量数据驱动           |
-| [GetLayer](../other/DataSource.html#getlayer-id)                 | gma.Open.GetLayer         | 方法 | 【打开图层】        | 打开某一图层               |
-| [GetOGRDataSource](../other/DataSource.html#getogrdatasource) | gma.Open.GetOGRDataSource | 方法 | 【获取 DataSource】 | 转到 ogr.DataSource        |
-| [LayerCount](../other/DataSource.html#layercount)             | gma.Open.LayerCount       | 属性 | 【图层数】          | 获取矢量数据的图层数量     |
-| [LayerNames](../other/DataSource.html#layernames)             | gma.Open.LayerNames       | 属性 | 【图层名】          | 获取矢量数据每个图层的名称 |
-| [Metadata](../other/DataSource.html#metadata)             | gma.Open.Metadata       | 属性 | 【元数据】     | 获取矢量数据的元数据 |
+| [Driver](../io/DataSource.html#driver)                   | gma.Open.Drive            | 属性 | 【矢量驱动】        | 获取矢量数据驱动           |
+| [GetLayer](../io/DataSource.html#getlayer-id)                 | gma.Open.GetLayer         | 方法 | 【打开图层】        | 打开某一图层               |
+| [GetOGRDataSource](../io/DataSource.html#getogrdatasource) | gma.Open.GetOGRDataSource | 方法 | 【获取 DataSource】 | 转到 ogr.DataSource        |
+| [LayerCount](../io/DataSource.html#layercount)             | gma.Open.LayerCount       | 属性 | 【图层数】          | 获取矢量数据的图层数量     |
+| [LayerNames](../io/DataSource.html#layernames)             | gma.Open.LayerNames       | 属性 | 【图层名】          | 获取矢量数据每个图层的名称 |
+| [Metadata](../io/DataSource.html#metadata)             | gma.Open.Metadata       | 属性 | 【元数据】     | 获取矢量数据的元数据 |
 
 ####  Layer 支持的方法/属性
 
 | 功能                                                         | 引用                         | 标记 | 功能             | 详细解释                     |
 | :----------------------------------------------------------- | :--------------------------- | :--- | :--------------- | :--------------------------- |
-| [Boundary](../other/Layer.html#boundary)                   | ..GetLayer.Boundary          | 属性 | 【四至边界】     | 获取图层的左、右、下、上边界 |
-| [FeatureCount](../other/Layer.html#featurecount)           | ..GetLayer.FeatureCount      | 属性 | 【要素数】       | 获取图层要素的数量           |
-| [FieldsInfo](../other/Layer.html#fieldsinfo)       | ..GetLayer.FieldsInfo   | 属性 | 【字段信息】 |获取属性表字段信息     |
-| [GeomType](../other/Layer.html#geomtype)       | ..GetLayer.GeomType   | 属性 | 【几何类型】 | 获取图层的几何类型    |
-| [GetAttributeTable](../other/Layer.html#getattributetable) | ..GetLayer.GetAttributeTable | 方法 | 【获取属性表】   | 获取图层属性表               |
-| [GetFeature](../other/Layer.html#getfeature)             | ..GetLayer.GetFeature      | 方法 | 【获取要素】 | 获取某一要素 |
-| [Metadata](../other/Layer.html#metadata)             | ..GetLayer.Metadata      | 属性 | 【元数据】 | 获取图层的元数据 |
-| [Projection](../other/Layer.html#projection)             | ..GetLayer.Projection        | 属性 | 【坐标系/投影】  | 获取图层坐标系/投影          |
+| [Boundary](../io/Layer.html#boundary)                   | ..GetLayer.Boundary          | 属性 | 【四至边界】     | 获取图层的左、右、下、上边界 |
+| [FeatureCount](../io/Layer.html#featurecount)           | ..GetLayer.FeatureCount      | 属性 | 【要素数】       | 获取图层要素的数量           |
+| [FieldsInfo](../io/Layer.html#fieldsinfo)       | ..GetLayer.FieldsInfo   | 属性 | 【字段信息】 |获取属性表字段信息     |
+| [GeomType](../io/Layer.html#geomtype)       | ..GetLayer.GeomType   | 属性 | 【几何类型】 | 获取图层的几何类型    |
+| [GetAttributeTable](../io/Layer.html#getattributetable) | ..GetLayer.GetAttributeTable | 方法 | 【获取属性表】   | 获取图层属性表               |
+| [GetFeature](../io/Layer.html#getfeature)             | ..GetLayer.GetFeature      | 方法 | 【获取要素】 | 获取某一要素 |
+| [Metadata](../io/Layer.html#metadata)             | ..GetLayer.Metadata      | 属性 | 【元数据】 | 获取图层的元数据 |
+| [Projection](../io/Layer.html#projection)             | ..GetLayer.Projection        | 属性 | 【坐标系/投影】  | 获取图层坐标系/投影          |
 
 ####  Feature 支持的方法/属性
 
 | 功能                                                         | 引用                         | 标记 | 功能             | 详细解释                     |
 | :----------------------------------------------------------- | :--------------------------- | :--- | :--------------- | :--------------------------- |
-| [Area](../other/Feature.html#area)                   | ..GetFeature.Area          | 属性 |【面积】   | 获取要素（当前坐标系单位）的面积|
-| [ExportGeom](../other/Feature.html#exportgeom-type-isowkt)                   | ..GetFeature.ExportGeom         | 方法 |【导出几何形状】   | 导出当前要素几何|
-| [Fields](../other/Feature.html#fields)                   | ..GetFeature.Fields        | 属性 |【字段】   | 获取要素的属性表字段|
-| [GeometryCount](../other/Feature.html#geometrycount)                   | ..GetFeature.GeometryCount          | 属性 |【几何数量】   | 获取构成要素几何的数量|
-| [Length](../other/Feature.html#length)                   | ..GetFeature.Length         | 属性 |【长度】   | 获取要素（当前坐标系单位）的长度|
-| [Points](../other/Feature.html#points)                   | ..GetFeature.Points         | 属性 |【折点坐标】   | 获取组成要素所有折点的坐标|
+| [Area](../io/Feature.html#area)                   | ..GetFeature.Area          | 属性 |【面积】   | 获取要素（当前坐标系单位）的面积|
+| [ExportGeom](../io/Feature.html#exportgeom-type-isowkt)                   | ..GetFeature.ExportGeom         | 方法 |【导出几何形状】   | 导出当前要素几何|
+| [Fields](../io/Feature.html#fields)                   | ..GetFeature.Fields        | 属性 |【字段】   | 获取要素的属性表字段|
+| [GeometryCount](../io/Feature.html#geometrycount)                   | ..GetFeature.GeometryCount          | 属性 |【几何数量】   | 获取构成要素几何的数量|
+| [Length](../io/Feature.html#length)                   | ..GetFeature.Length         | 属性 |【长度】   | 获取要素（当前坐标系单位）的长度|
+| [Points](../io/Feature.html#points)                   | ..GetFeature.Points         | 属性 |【折点坐标】   | 获取组成要素所有折点的坐标|

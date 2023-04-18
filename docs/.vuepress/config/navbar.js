@@ -44,7 +44,7 @@ module.exports = [
                     {text: '矢量处理-vesp', link: '/UserGuide/vesp/ChangeGeometryType'},
                     {text: '地图工具-map', link: '/UserGuide/map/plot/MapFrame/'},
                     {text: '高级配置-config', link: '/UserGuide/config/GetRACreationOption'},
-                    {text: '其他函数', link: '/UserGuide/other/Open'},
+                    {text: '输入输出-io', link: '/UserGuide/io/Open'},
                 ],
             },
          ]
@@ -55,7 +55,7 @@ module.exports = [
         icon: "fas fa-arrow-up",
         items: [
             { text: '更新预览', link: "/Update/Plan" },
-            { text: '更新日志', link: '/Update/log/1.1/1.1.4'}
+            { text: '更新日志', link: '/Update/log/1.1/1.1.5'}
          ]
     },
     {
