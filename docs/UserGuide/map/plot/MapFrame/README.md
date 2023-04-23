@@ -34,14 +34,15 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | :----- | :------------- | :------------------------------------------------------------ | :---------- |
 | M.1     | [AddLayer](/UserGuide/map/plot/MapFrame/AddLayer.html)      | 添加图层（可以重复添加多个图层）                             | 方法       |
 | *M.1.1* | *AddLabel*    | *添加图层标注，为 layer 模块相关子类的功能*                  | *子类方法* |
-| M.2     | [AddCompass](/UserGuide/map/plot/MapFrame/AddCompass.html)    | 添加指北针                                                   | 方法       |
-| M.3     | [AddGridLines](/UserGuide/map/plot/MapFrame/AddGridLines.html)   | 添加经纬网（仅经纬网线）                             | 方法       |
-| M.4     | [AddLegend](/UserGuide/map/plot/MapFrame/AddLegend.html)      | 为绘制的矢量图层、重分类或唯一值栅格数据集添加图例           | 方法       |
-| M.5     | [AddScaleBar](/UserGuide/map/plot/MapFrame/AddScaleBar.html)    | 添加比例尺                                                   | 方法       |
-| M.6     | [AddDataSetClassify](/UserGuide/map/plot/MapFrame/AddDataSetClassify.html)    | 添加重分类栅格数据集图层                                               | 方法       |
-| M.7     | [AddDataSetDiscrete](/UserGuide/map/plot/MapFrame/AddDataSetDiscrete.html)    | 添加离散型栅格数据集图层                                               | 方法       |
-| M.7     | [SetBackground](/UserGuide/map/plot/MapFrame/SetBackground.html)  | 设置背景颜色                                                 | 方法       |
-| M.8     | [SetFrame](/UserGuide/map/plot/MapFrame/SetFrame.html)       | 设置地图框（包括刻度和经纬度的标注等）                       | 方法       |
+| M.2 | [AddFeature](/UserGuide/map/plot/MapFrame/AddFeature.html) | 添加要素（可以重复添加多个要素） | 方法 |
+| M.3     | [AddCompass](/UserGuide/map/plot/MapFrame/AddCompass.html)    | 添加指北针                                                   | 方法       |
+| M.4     | [AddGridLines](/UserGuide/map/plot/MapFrame/AddGridLines.html)   | 添加经纬网（仅经纬网线）                             | 方法       |
+| M.5     | [AddLegend](/UserGuide/map/plot/MapFrame/AddLegend.html)      | 为绘制的矢量图层、重分类或唯一值栅格数据集添加图例           | 方法       |
+| M.6     | [AddScaleBar](/UserGuide/map/plot/MapFrame/AddScaleBar.html)    | 添加比例尺                                                   | 方法       |
+| M.7     | [AddDataSetClassify](/UserGuide/map/plot/MapFrame/AddDataSetClassify.html)    | 添加重分类栅格数据集图层                                               | 方法       |
+| M.8     | [AddDataSetDiscrete](/UserGuide/map/plot/MapFrame/AddDataSetDiscrete.html)    | 添加离散型栅格数据集图层                                               | 方法       |
+| M.9     | [SetBackground](/UserGuide/map/plot/MapFrame/SetBackground.html)  | 设置背景颜色                                                 | 方法       |
+| M.10    | [SetFrame](/UserGuide/map/plot/MapFrame/SetFrame.html)       | 设置地图框（包括刻度和经纬度的标注等）                       | 方法       |
 | P.1     | Axes          | `<matplotlib.axes._subplots.AxesSubplot>`。matplotlib 子图，可按需补充调整 | 属性       |
 | P.2     | BaseMapProj   | `<gma.map.rcs.SpatRef>` 。底图坐标系（已初始化为空间参考）   | 属性       |
 | P.3    | FrameFeature  | `<gma.algorithm.core.dataio.Feature>` 。地图框 Feature（ProjWKT） | 属性       |

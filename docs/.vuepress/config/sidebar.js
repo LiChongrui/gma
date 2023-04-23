@@ -303,6 +303,7 @@ module.exports = {
                     children: [
                         'plot/MapFrame/',
                         'plot/MapFrame/AddLayer',
+                        'plot/MapFrame/AddFeature',
                         'plot/MapFrame/AddCompass',
                         'plot/MapFrame/AddGridLines',
                         'plot/MapFrame/AddLegend',
@@ -321,13 +322,32 @@ module.exports = {
                         'rcs/SpatRef/Export',
                     ]
                 }, 
-                'plot/GetSystemFonts',
-                'plot/GetWorldDEMDataSet',
-                'plot/GetWorldDataSource',
-                'rcs/AlbersEqualArea',
-                'rcs/CustomGCS',
-                'rcs/Mollweide',
-                'rcs/Robinson',
+                {
+                    title: 'plot',
+                    collapsable: false,
+                    children: [
+                        'plot/GetSystemFonts',
+                        'plot/GetPreDefinedCMaps',
+                    ]
+                }, 
+                {
+                    title: 'rcs',
+                    collapsable: false,
+                    children: [
+                        'rcs/AlbersEqualArea',
+                        'rcs/CustomGCS',
+                        'rcs/Mollweide',
+                        'rcs/Robinson',
+                    ]
+                }, 
+                {
+                    title: 'inres',
+                    collapsable: false,
+                    children: [
+                        'inres/WorldDataSet',
+                        'inres/WorldLayer',
+                    ]
+                }, 
             ],
         }
     ],
