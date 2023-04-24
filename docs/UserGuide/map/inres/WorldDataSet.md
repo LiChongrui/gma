@@ -14,8 +14,8 @@ sidebar: false
 
 | 属性         | 说明                            |
 | ------------ | ------------------------------- |
-| DEM          | GEBCO 2020 世界陆地和海洋 DEM。 |
-| NaturalEarth | Natural Earth 自然地球数据。    |
+| DEM          | GEBCO 2022 世界陆地和海洋 DEM。 |
+| NaturalEarth | Natural Earth 自然地球影像。    |
 
 ---
 
