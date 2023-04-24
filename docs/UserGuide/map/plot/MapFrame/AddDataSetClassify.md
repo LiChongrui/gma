@@ -75,21 +75,15 @@ Remap = [[1000, 1],
 
 **示例：**
 ```python
-from gma.map import rcs, plot
-
-# 0. 打开 gma 内置数据
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
-
-WorldDEM = plot.GetWorldDEMDataSet()
+from gma.map import rcs, plot, inres
 
 # 1.初始化一个地图框，用于绘图
 MapF = plot.MapFrame(Axes = None, BaseMapProj = rcs.CustomGCS(), Extent = None)
 
 # 2.将内置的世界矢量图层添加到地图框
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = 'none', LineWidth = 0.2, EdgeColor = 'white', Zorder = 1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = 'none', LineWidth = 0.2, EdgeColor = 'white', Zorder = 1)
 
-Classify = MapF.AddDataSetClassify(WorldDEM,
+Classify = MapF.AddDataSetClassify(inres.WorldDataSet.DEM,
                                    CMap = 'rainbow',
                                    Remap = [[0, 0], [500, 1], [1000, 2], [1500, 3],[2000, 4], [3000, 5], [9000, 6]],
                                    Method = 'Range', 

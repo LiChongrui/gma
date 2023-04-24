@@ -36,14 +36,11 @@ sidebar: false
 
 **示例：**
 ```python
-from gma.map import plot
-
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
+from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 添加指北针
 AddCompass = MapF.AddCompass(LOC = (0.1, 0.8), Color = 'gray')

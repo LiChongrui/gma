@@ -4,7 +4,7 @@ date: 2023-04-10
 sidebar: false
 ---
 
-## **AddFeature**(*GMAFeature, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2',                   Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2',                   PointColor = '#BED2FF', PointSize = 0.5, PointMarker = None, Label = None,                   FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.5 +"/> 
+## **AddFeature**(*GMAFeature, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = 0.5, PointMarker = None, Label = None,  FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.5 +"/> 
 
 ---
 
@@ -69,9 +69,8 @@ FPolygon = plot.CreatePlotFeature(Points, Type = 'Polygon')
 # 1.初始化一个地图框，底图 0 定义的坐标系
 MapF = plot.MapFrame(Axes = None, BaseMapProj = 4326, Extent = None)
 
-# 2.将内置的世界矢量图层添加到地图框
-MapD1 = MapF.AddDataSetDiscrete(inres.WorldDataSet.NaturalEarth, Zorder = 0)
-# 2.2 添加面、线、点
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, LineWidth = 0.1)
+# 2.2 添加面
 MapL1 = MapF.AddFeature(FPolygon, FaceColor = (0.2, 0.5, 0.8, 0.5), EdgeColor = 'gray', LineWidth = 0.5, Zorder = 2)
 ```
 ![](/map/AddFeature.png)

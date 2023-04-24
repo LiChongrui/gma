@@ -49,22 +49,16 @@ sidebar: false
 
 **示例：** *（下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)）*
 ```python
-import gma
-from gma.map import plot
-
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
-
-DataSet = gma.Open('ELE_China_GEBCO_2020.tif')
+from gma.map import plot, inres
 
 # 初始化地图框
 MapF = plot.MapFrame(BaseMapProj = 4326, Extent = None)
 
 # 1.1添加矢量图层（可以重复添加多个图层）
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 1.2 添加栅格数据集（可以重复添加多个栅格数据集）
-MapL1 = MapF.AddDataSetDiscrete(DataSet)
+MapL1 = MapF.AddDataSetDiscrete(inres.WorldDataSet.DEM)
 
 # 2.添加经纬网
 Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
