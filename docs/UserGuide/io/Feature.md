@@ -7,8 +7,8 @@ sidebar: false
 &emsp;　下载 [示例矢量](/Open/China_Province_2022.7z)。
 
 ```python
-import gma
-VO = gma.Open('China_Province_2022.shp')
+from gma import io
+VO = io.Open('China_Province_2022.shp')
 LY = VO.GetLayer(0)
 FU = LY.GetFeature(0)
 ```

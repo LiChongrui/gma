@@ -7,8 +7,8 @@ sidebar: false
 &emsp;　下载 [示例矢量](/Open/China_Province_2022.7z)。
 
 ```python
-import gma
-VO = gma.Open('China_Province_2022.shp')
+from gma import io
+VO = io.Open('China_Province_2022.shp')
 ```
 
 &emsp;　打开的 **矢量数据** 具有如下所列的 方法/属性：

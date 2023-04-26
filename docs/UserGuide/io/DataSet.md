@@ -7,99 +7,29 @@ sidebar: false
 &emsp;　下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)。
 
 ```python
-import gma
-RO = gma.Open('ELE_China_GEBCO_2020.tif')
+from gma import io
+RO = io.Open('ELE_China_GEBCO_2020.tif')
 ```
 
 &emsp;　打开的 **栅格数据** 具有如下所列的 方法/属性：
 
-## **Bands** 
 
----
+| 序号  | 名称          | 描述                                                         | 返回值类型       | 实例       |
+| :----- | :------------- | :------------------------------------------------------------ | :---------- |:---------- |
+| M.1     | [GetGDALDataset](/UserGuide/io/DataSet.html#getgdaldataset)      | 从 GMA 数据集转到 GDAL 数据集                             |`<osgeo.gdal.Dataset>`| RO.GetGDALDataset()     |
+| M.2     | [ToArray](/UserGuide/io/DataSet.html#toarray-leftrow-0-leftcolumn-0-rowsize-none-columnsize-none-bandlist-none)      | 读取栅格数据集到 NumPy 数组                            | `<numpy.array>`| RO.ToArray()   |
+| P.1     | Bands         |波段数 |  `int`|RO.Bands       |
+| P.2     | Boundary         | 四至边界 | `list`|RO.Boundary       |
+| P.3     | Columns         |列数 |  `int`|RO.Columns       |
+| P.4     | DataType         | 数据类型 | `int`|RO.DataType       |
+| P.5     | Driver         | 栅格驱动 | `str`|RO.Driver    |
+| P.6     | GeoTransform         | 仿射变换 | `tuple`|RO.GeoTransform     |
+| P.7     | Info        |栅格信息 |  `dict`|RO.Info   |
+| P.8     | Metadata         | 元数据 |`dict`| RO.Metadata      |
+| P.9     | NoData         | 无效值 |`float`| RO.NoData       |
+| P.10     | Projection         | WKT 格式的坐标系/投影 | `str`|RO.Projection      |
+| P.11     | Rows         | 行数 | `int`|RO.Rows       |
 
-**功能：**【波段数】。类属性，获取栅格波段数。
-
-**返回：**`str`。
-
-```python
-RO.Bands
-```
-> \>>> 1
-
-## **Boundary** 
-
----
-
-**功能：**【四至边界】。类属性，获取栅格的四至边界范围。
-
-**返回：**`list`。
-
-```python
-RO.Boundary
-```
-> \>>> [73.5000000000002, 6.562499999999972, 135.5000000000002, 53.56249999999997]
-
----
-
-## **Columns** 
-
----
-
-**功能：**【列数】。类属性，获取栅格列数（X）。
-
-**返回：**`int`。
-
-```python
-RO.Columns
-```
-> \>>> 62
-
----
-
-## **DataType**
-
----
-
-**功能：**【数据类型】。类属性，获取栅格数据的数据类型。如果为多波段数据，则取所有波段数据类型的众数。
-
-**返回：**`int`。
-
-```python
-RO.DataType
-```
-> \>>> 3
-
----
-
-## **Driver**
-
----
-
-**功能：**【栅格驱动】。获取栅格数据驱动。
-
-**返回：**`str`。
-
-```python
-RO.Driver
-```
-> \>>> 'GTiff'
-
----
-
-## **GeoTransform**
-
----
-
-**功能：**【仿射变换】。类属性，获取栅格仿射变换。
-
-**返回：**`tuple`。
-
-```python
-RO.GeoTransform
-```
-> \>>> (73.5000000000002, 1.0, 0.0, 53.56249999999997, 0.0, -1.0)
-
----
 
 ## **GetGDALDataset**()
 
@@ -116,81 +46,6 @@ RO.GetGDALDataset()
 
 ---
 
-## **Info**
-
----
-
-**功能：**【栅格信息】。类属性，获取栅格信息。
-
-**返回：**`dict`。
-
-```python
-RO.Info
-```
-> \>>> {'description': 'ELE_China_GEBCO_2020.tif',
- 'driverShortName': 'GTiff',
- 'driverLongName': 'GeoTIFF',
- ......}
-
----
-
-## **Metadata**
-
----
-
-**功能：**【元数据】。类属性，获取栅格元数据。
-
-**返回：**`dict`。
-
-```python
-RO.Metadata
-```
-> \>>> {'AREA_OR_POINT': 'Area', 'DataType': 'Thematic'}
-
----
-
-## **NoData**
-
----
-
-**功能：**【无效值】。类属性，获取栅格无效值。
-
-**返回：**`float||None`。
-
-```python
-RO.NoData
-```
-> \>>> 32767.0
-
----
-
-## **Projection**
-
----
-
-**功能：**【坐标系】。类属性，获取栅格坐标系。
-
-**返回：**`str`。
-
-```python
-RO.Projection
-```
-> \>>> 'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563, AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree", 0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST], AUTHORITY["EPSG","4326"]]'
-
----
-
-## **Rows**
-
-**功能：**【行数】。类属性，获取栅格行数（Y）。
-
-**返回：**`int`。
-
-```python
-RO.Rows
-```
-> \>>> 11338
-
----
 
 ## **ToArray**(*LeftRow = 0, LeftColumn = 0, RowSize = None, ColumnSize = None, BandList = None*)
 

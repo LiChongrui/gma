@@ -57,14 +57,11 @@ sidebar: false
 **示例：**
 ```python
 '''示例1'''
-from gma.map import plot
-
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
+from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 添加地图框
 Frame = MapF.SetFrame(FrameColor = 'black', FrameWidth = 0.6)
@@ -73,14 +70,11 @@ Frame = MapF.SetFrame(FrameColor = 'black', FrameWidth = 0.6)
 
 ```python
 '''示例2'''
-from gma.map import plot
-
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
+from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 # 添加经纬网
 Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
 

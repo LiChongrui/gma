@@ -7,8 +7,8 @@ sidebar: false
 &emsp;　含有子数据集的科学数据集（此处以 netCDF 数据为例）可从 [中山大学网站](http://globalchange.bnu.edu.cn/research/soil2) 下载。
 
 ```python
-import gma
-SDS = gma.Open('C1.nc')
+from gma import io
+SDS = io.Open('C1.nc')
 ```
 
 &emsp;　打开的 **含有子数据集的科学数据集** 具有如下所列的 方法/属性：
@@ -17,21 +17,13 @@ SDS = gma.Open('C1.nc')
 并非所有的 netCDF 数据都含有子数据集！只具有 1 个子数据集的科学数据集可以理解为普通的栅格（例如 GTiff）。
 :::
 
-## **SubInfo** 
 
----
+| 序号  | 名称          | 描述                                                         | 返回值类型       | 实例       |
+| :----- | :------------- | :------------------------------------------------------------ | :---------- |:---------- |
+| M.1     | [GetSubDataSet](/UserGuide/io/DataSet.html#getgdaldataset)      | 获取子数据集                            |`<osgeo.gdal.Dataset>`| RO.GetSubDataSet()     |
+| P.1     | SubInfo         |子数据集信息 |  `list`|SDS.SubInfo  |
 
-**功能：**【子数据集信息】。类属性，获取所有子数据集信息列表。
 
-**返回：**`list`。
-
-```python
-SDS.SubInfo
-```
-> \>>> [('NETCDF:"C1.nc":C1', '[8x4320x7560] C1 (32-bit integer)'),
- ('NETCDF:"C1.nc":C2', '[8x4320x7560] C2 (32-bit integer)')]
-
----
 
 ## **GetSubDataSet**(*SUBID = 0*)
 

@@ -63,11 +63,10 @@ MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 
 **绘图流程的简单示例：**
 ```python
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
+from gma.map import inres
 
 # 1.添加图层（可以重复添加多个图层）
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 ## 1.1 为此图层添加标注(标注属性表 'Name' 列)
 MapL1.AddLabel(FieldName = 'Name', FontSize = 4)
 

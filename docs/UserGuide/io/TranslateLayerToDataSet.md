@@ -4,7 +4,7 @@ date: 2023-04-04
 sidebar: false
 ---
 
-## gma.io.**TranslateLayerToDataSet**(*GMALayer, Resolution = 1, Attribute = None, Boundary = None*)<Badge text="1.1.5 +"/> 
+## io.**TranslateLayerToDataSet**(*GMALayer, Resolution = 1, Attribute = None, Boundary = None*)<Badge text="1.1.5 +"/> 
 
 ---
 
@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMALayer: `gma.algorithm.core.dataio.Layer`。一个由 gma.Open(.GetLayer) 打开的矢量图层。
+&emsp; GMALayer: `Layer`。一个待转换的 Layer。
 
 **可选参数：**
 

@@ -4,7 +4,7 @@ date: 2022-03-09
 sidebar: false
 ---
 
-## gma.**Open**(*InFile, Mode = 0, Methed = 'gma'*)
+## io.**Open**(*InFile, Mode = 0, Methed = 'gma'*)
 
 ---
 
@@ -26,12 +26,12 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
+from gma import io
 ```
 *打开矢量数据（下载 [示例矢量](/Open/China_Province_2022.7z)）*
 
 ```python
-VO = gma.Open('China_Province_2022.shp')
+VO = io.Open('China_Province_2022.shp')
 print(VO)
 ```
 > \>>> <gma.algorithm.core.dataio.DataSource object at 0x......>
@@ -39,7 +39,7 @@ print(VO)
 *打开栅格数据（下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)）*
 
 ```python
-RO = gma.Open('ELE_China_GEBCO_2020.tif')
+RO = io.Open('ELE_China_GEBCO_2020.tif')
 print(RO)
 ```
 > \>>> <gma.algorithm.core.dataio.DataSet object at 0x......>

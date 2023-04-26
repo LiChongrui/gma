@@ -220,7 +220,6 @@ module.exports = {
                 'SplitImage',
                 'ToOtherFormat',
                 'ToVector',
-                'WriteRaster',
                 {
                     title: 'Fusion',
                     collapsable: false,
@@ -372,12 +371,18 @@ module.exports = {
             title: '输入输出',
             collapsable: false,
             children: [
+                'CreateFeatureFromPoints',
+                'CreateLayerFromFeature',
                 'Open',
                 'SubDataSet',
                 'DataSet',
                 'DataSource',
                 'Layer',
                 'Feature',
+                'ReadArrayAsDataSet',
+                'SaveArrayToRaster',
+                'TranslateFeatureToDataSet',
+                'TranslateLayerToDataSet',
             ]
         },
     ],

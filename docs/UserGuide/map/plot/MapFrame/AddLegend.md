@@ -60,16 +60,13 @@ sidebar: false
 
 **示例：**
 ```python
-from gma.map import plot
-
-WorldDS = plot.GetWorldDataSource()
-WorldLayer = WorldDS.GetLayer(0)
+from gma.map import plot, inres
 
 # 初始化一个地图框，用于绘图
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 
 # 添加图层（可以重复添加多个图层，定义标注使用 'Name'列）
-MapL1 = MapF.AddLayer(WorldLayer, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, FieldName = 'Name')
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, FieldName = 'Name')
 
 # 添加图例（标注属性表 'Name' 列）
 Legend = MapF.AddLegend(LOC = (1, 0.1), NColumns = 1, TitleAlignment = 'left') 
