@@ -1,10 +1,10 @@
 ---
 title: SPEI
-date: 2022-06-24
+date: 2023-08-25
 sidebar: false
 ---
 
-## gma.climet.**SPEI**(*PRE, PET, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'LogLogistic'*) <Badge text="1.0.10 +"/>
+## gma.climet.Index.**SPEI**(*PRE, PET, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'LogLogistic'*) <Badge text="1.0.10 +"/>
 
 ---
 
@@ -47,7 +47,7 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
+from gma import climet
 ```
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
@@ -57,12 +57,12 @@ PRE = Data['PRE'].values
 ET0 = Data['ET0'].values
 
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPEI 数据
-SPEI1 = gma.climet.SPEI(PRE, ET0)
-SPEI3 = gma.climet.SPEI(PRE, ET0, Scale = 3)
-SPEI6 = gma.climet.SPEI(PRE, ET0, Scale = 6)
-SPEI12 = gma.climet.SPEI(PRE, ET0, Scale = 12)
-SPEI24 = gma.climet.SPEI(PRE, ET0, Scale = 24)
-SPEI60 = gma.climet.SPEI(PRE, ET0, Scale = 60)
+SPEI1 = climet.Index.SPEI(PRE, ET0)
+SPEI3 = climet.Index.SPEI(PRE, ET0, Scale = 3)
+SPEI6 = climet.Index.SPEI(PRE, ET0, Scale = 6)
+SPEI12 = climet.Index.SPEI(PRE, ET0, Scale = 12)
+SPEI24 = climet.Index.SPEI(PRE, ET0, Scale = 24)
+SPEI60 = climet.Index.SPEI(PRE, ET0, Scale = 60)
 # 将结果保存到文件
 OUT = pd.DataFrame([SPEI1, SPEI3, SPEI6, SPEI12, SPEI24, SPEI60],
                    index = ['SPEI1','SPEI3','SPEI6','SPEI12','SPEI24','SPEI60']).T
@@ -113,23 +113,25 @@ plt.show()
 
 ```python
 import numpy as np
+from gma import io
 # 读取数据集
 PRESet = gma.Open('PRE_Luoyang_1981-2020.tif')
 ET0Set = gma.Open('ET0_Luoyang_1981-2020.tif')
 PRE = PRESet.ToArray()
 ET0 = ET0Set.ToArray()
 # 读取的数据为三维数据（波段，行，列），第一维为时间序列（月数据）。因此按照轴 0 来计算
-SPEI1 = gma.climet.SPEI(PRE, ET0, Axis = 0)
-SPEI3 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 3)
-SPEI6 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 6)
-SPEI12 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 12)
-SPEI24 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 24)
-SPEI60 = gma.climet.SPEI(PRE, ET0, Axis = 0, Scale = 60)
+SPEI1 = climet.Index.SPEI(PRE, ET0, Axis = 0)
+SPEI3 = climet.Index.SPEI(PRE, ET0, Axis = 0, Scale = 3)
+SPEI6 = climet.Index.SPEI(PRE, ET0, Axis = 0, Scale = 6)
+SPEI12 = climet.Index.SPEI(PRE, ET0, Axis = 0, Scale = 12)
+SPEI24 = climet.Index.SPEI(PRE, ET0, Axis = 0, Scale = 24)
+SPEI60 = climet.Index.SPEI(PRE, ET0, Axis = 0, Scale = 60)
 # 存储计算结果
+S = [1,3,6,12,24,60]
 for i in S:
 	# 保存所有结果中的非全 nan 波段。即：去除时间尺度累积时序列前无效的波段。
-    gma.rasp.WriteRaster(fr'.\1981-2020_SPEI{i}.tif', 
-                         eval(f'SPEI{i}')[i-1:], 
+    io.SaveArrayAsRaster(eval(f'SPEI{i}')[i-1:],
+                         fr'.\1981-2020_SPEI{i}.tif', 
                          Projection = PRESet.Projection,
                          Transform = PRESet.GeoTransform, 
                          DataType = 'Float32', 

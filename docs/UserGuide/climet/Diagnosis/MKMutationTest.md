@@ -25,13 +25,13 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
+from gma import climet
 # 这里建立一个随机序列来模拟代码数据处理过程
 import numpy as np
 np.random.seed(0)
 Data = np.random.uniform(size = 72)
 
-MKD = gma.climet.Diagnosis.MKMutationTest(Data)
+MKD = climet.Diagnosis.MKMutationTest(Data)
 
 # 输出具名元组字段名
 print(MKD._fields)

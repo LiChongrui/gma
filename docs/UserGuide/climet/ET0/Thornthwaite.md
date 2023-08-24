@@ -47,12 +47,12 @@ StartYear、StartMonth 基于计算轴！
 **示例：**
 
 ```python
-import gma
+from gma import climet
 
 TEM = [0.95, 2.15, 5.75, 13, 19.95, 23.7, 24.8, 23.9, 20.15, 15.2, 10.6, 3.4,
        0.0, 3.8, 9.85, 14.95, 20.7, 25.05, 26.55, 24.5, 19.55, 12.65, 5.9, 2.4]
 
-THD = gma.climet.ET0.Thornthwaite(TEM, LAT = 34.17, StartYear = 1980)
+THD = climet.ET0.Thornthwaite(TEM, LAT = 34.17, StartYear = 1980)
 ```
 
 > 绘制计算结果

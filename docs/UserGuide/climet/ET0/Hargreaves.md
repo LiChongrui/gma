@@ -48,3 +48,18 @@ StartYear、StartDayOfYear 基于计算轴！
 
 ---
 
+```python
+from gma import climet
+import numpy as np
+np.random.seed(0)
+
+TMAX = np.random.uniform(20, 30, size = 48)
+TMIN = np.random.uniform(10, 20, size = 48)
+
+THD = climet.ET0.Hargreaves(TMAX, TMIN)
+```
+> \>>> array([2.20254352, 2.09796738, 2.26378286, 1.60532567, 1.84185121,
+       2.1940866 , 2.04971425, 2.27649286, 2.57712085, 1.7926611 ,
+       2.60771494, 1.96530488, 2.03299078, 2.50441209, 0.73454371,
+       1.27599509, 1.55238039, 2.56200767, 2.32908408, 2.8287616 ,
+       2.65669559, 2.42848895, 2.31957885, 2.7729996 ])

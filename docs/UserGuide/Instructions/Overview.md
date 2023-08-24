@@ -1,42 +1,27 @@
 ---
-title: 统计总览
-date: 2021-10-30
+title: 简易说明
+date: 2023-08-20
 ---
 
-**&emsp;&emsp;使用指南** 为 **gma** 内所有模块（8个功能模块，1个配置模块以及一些其他函数）相关函数的详细功能、参数设置和引用方法说明。
-
-::: tip 提示
-
-* 如果您想快速了解 gma 中每个模块所有函数的整体情况，请移步 **[函数列表](Function.html)** 。
-
-* 如果您需要了解 gma 中规定的默认参数和数据类型，请移步 **[默认设置](/Explore/Default.html)**。
-
-:::
+**&emsp;&emsp;本页** 为 **gma** 内所有模块相关函数整体统计说明。
 
 ## 功能统计
 
-&emsp;&emsp;截至 <Badge text="1.1.0" vertical='middle'/>  版本，各个模块的 **函数/方法数量统计** 如下表：
+&emsp;&emsp;截至 <Badge text="2.0.0" vertical='middle'/>  版本，各个模块的 **函数/方法数量统计** 如下表：
 
-|  中文名  | 模块名 | 函数 |  类  | 方法 | 属性 | 子类 | 子类方法 | 子类属性 | 合计 | 初始构建版本 |
-| :------- | :----: | :--: | :--: | :----: | :----: | :--: | :------: | :------: | :--: | :--: |
-| 气象气候 | climet | 4 | 2 | 8 |  |  |  |  | 14 |<Badge text="1.0.10" vertical='middle'/>|
-| 指数运算 | rsvi |  5   |      |        |        |      |          |          |  5   |<Badge text="1.0.10" vertical='middle'/>|
-| 数学运算 |  math  |  2   |  3   |   13   |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
-| 系统交互 |  osf   |  5   |  1   |   3    |        |      |          |          |  9   |<Badge text="1.0.0" vertical='middle'/>|
-| 空间杂项 |  smc   |  3   |   1   |    5    |        |      |          |          |  9   |<Badge text="1.0.5" vertical='middle'/>|
-| 栅格处理 |  rasp  |  16  |  1   |   1    |        |      |          |          |  18  |<Badge text="1.0.0" vertical='middle'/>|
-| 栅格分析 |  raa   |      |  3   |   9    |        |      |          |          |  13   |<Badge text="1.0.7" vertical='middle'/>|
-| 矢量处理 |  vesp  |  14  |      |        |        |      |          |          |  14  |<Badge text="1.0.0" vertical='middle'/>|
-| 高级配置 | config |  2   |  4   |        |   30   |      |          |          |  36  |<Badge text="1.0.7" vertical='middle'/>|
-| 地图工具 | map |  -   |  -   |   -     |   -   |   -   |  -   |   -    | 不统计  |<Badge text="1.1.2" vertical='middle'/>|
-| 输入输出 |   io    |  9   |      |       |      |     |         |         |  9  |<Badge text="1.1.5" vertical='middle'/>|
-
-
-::: warning 注意
-
-自 <Badge text="1.0.7" vertical='middle'/>  版本开始，gma 下各个函数生成 GTiff 文件时 **不在默认** 生成 .ovr 金字塔。
-
-:::
+|  模块名  | 中文名 | 对应主要功能 |  
+| :------- | :----: | :--: |
+|io|输入输出|栅格/矢量数据输入输出模块|
+|crs|坐标系统|坐标参考系统|
+|map|地图工具|地理空间制图|
+|math|数学运算|数学运算模块|
+|climet|气象气候|气象气候模块|
+|rsvi|指数运算|遥感指数计算|
+|rasp|栅格处理|栅格处理工具|
+|vesp|矢量处理|矢量处理工具|
+|gft|驱动格式|（地理数据格式）|
+|smc|空间杂项|空间计算工具|
+|osf|系统交互|其他系统工具|
 
 ## 引入模块
 
@@ -46,7 +31,7 @@ date: 2021-10-30
 import gma
 ```
 
-&emsp;&emsp;或引入其中一个或多个所需模块：
+&emsp;&emsp;或引入其中一个或多个所需模块 **（推荐）**：
 
 ```python
 from gma import climet
@@ -55,17 +40,13 @@ from gma import math
 from gma import osf
 from gma import smc
 from gma import rasp
-from gma import raa
 from gma import vesp
-from gma import config
-##### 以下模块必须按照下列方法引入
+from gma import gft
 from gma import io
-from gma.map import plot, rcs
+from gma.map import crs
+
+# 空间绘图专用
+from gma.map import plot, inres
 ```
 
-::: tip 提示
-
-1.0.5 版本后，如果 import 出现异常，可参考 **[错误解决](/Install.html#错误解决)** 中提供的方案进行处理。
-
-:::
 

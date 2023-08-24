@@ -1,10 +1,10 @@
 ---
 title: SPI
-date: 2022-06-25
+date: 2023-08-25
 sidebar: false
 ---
 
-## gma.climet.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'Gamma'*) <Badge text="1.0.10 +"/>
+## gma.climet.Index.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'Gamma'*) <Badge text="1.0.10 +"/>
 
 ---
 
@@ -45,7 +45,7 @@ sidebar: false
 **示例 ：**
 
 ```python
-import gma
+from gma import climet
 ```
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
@@ -55,12 +55,12 @@ Data = pd.read_excel('PRE_ET0.xlsx')
 # 提取 PRE 用于 SPI 运算
 PRE = Data['PRE'].values
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
-SPI1 = gma.climet.SPI(PRE)
-SPI3 = gma.climet.SPI(PRE, Scale = 3)
-SPI6 = gma.climet.SPI(PRE, Scale = 6)
-SPI12 = gma.climet.SPI(PRE, Scale = 12)
-SPI24 = gma.climet.SPI(PRE, Scale = 24)
-SPI60 = gma.climet.SPI(PRE, Scale = 60)
+SPI1 = climet.Index.SPI(PRE)
+SPI3 = climet.Index.SPI(PRE, Scale = 3)
+SPI6 = climet.Index.SPI(PRE, Scale = 6)
+SPI12 = climet.Index.SPI(PRE, Scale = 12)
+SPI24 = climet.Index.SPI(PRE, Scale = 24)
+SPI60 = climet.Index.SPI(PRE, Scale = 60)
 # 将结果保存到文件
 OUT = pd.DataFrame([SPI1, SPI3, SPI6, SPI12, SPI24, SPI60],
                    index = ['SPI1','SPI3','SPI6','SPI12','SPI24','SPI60']).T
@@ -76,23 +76,24 @@ OUT.to_excel(r'.\SPI.xlsx', index = False)
 
 ```python
 import numpy as np
+from gma import io
 # 读取数据集
-PRESet = gma.Open('PRE_Luoyang_1981-2020.tif')
+PRESet = io.Open('PRE_Luoyang_1981-2020.tif')
 PRE = PRESet.ToArray()
 PRE[PRE == PRESet.NoData] = np.nan
 # 读取的数据为三维数据（波段，行，列），第一维为时间序列（月数据）。因此按照轴 0 来计算
-SPI1 = gma.climet.SPI(PRE, Axis = 0)
-SPI3 = gma.climet.SPI(PRE, Axis = 0, Scale = 3)
-SPI6 = gma.climet.SPI(PRE, Axis = 0, Scale = 6)
-SPI12 = gma.climet.SPI(PRE, Axis = 0, Scale = 12)
-SPI24 = gma.climet.SPI(PRE, Axis = 0, Scale = 24)
-SPI60 = gma.climet.SPI(PRE, Axis = 0, Scale = 60)
+SPI1 = climet.Index.SPI(PRE, Axis = 0)
+SPI3 = climet.Index.SPI(PRE, Axis = 0, Scale = 3)
+SPI6 = climet.Index.SPI(PRE, Axis = 0, Scale = 6)
+SPI12 = climet.Index.SPI(PRE, Axis = 0, Scale = 12)
+SPI24 = climet.Index.SPI(PRE, Axis = 0, Scale = 24)
+SPI60 = climet.Index.SPI(PRE, Axis = 0, Scale = 60)
 # 存储计算结果
 S = [1,3,6,12,24,60]
 for i in S:
 	# 保存所有结果中的非全 nan 波段。即：去除时间尺度累积时序列前无效的波段。
-    gma.rasp.WriteRaster(fr'.\1981-2020_SPI{i}.tif', 
-                         eval(f'SPI{i}')[i-1:], 
+    io.SaveArrayAsRaster(eval(f'SPI{i}')[i-1:],
+                         fr'.\1981-2020_SPI{i}.tif', 
                          Projection = PRESet.Projection,
                          Transform = PRESet.GeoTransform, 
                          DataType = 'Float32', 

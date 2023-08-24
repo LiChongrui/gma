@@ -27,14 +27,14 @@ module.exports = [
             { 
                 text: '使用说明', 
                 items: [
-                    {text: '统计总览', link: '/UserGuide/Instructions/Overview'},
-                    {text: '函数列表', link: '/UserGuide/Instructions/Function'}
+                    {text: '简易说明', link: '/UserGuide/Instructions/Overview'},
+                    {text: '函数总览', link: '/UserGuide/Instructions/Function'}
                 ],
             },
             { 
                 text: '帮助与示例', 
                 items: [
-                    {text: '气候气象-climet', link: '/UserGuide/climet/SPEI'},
+                    {text: '气候气象-climet', link: '/UserGuide/climet/'},
                     {text: '遥感指数-rsvi', link: '/UserGuide/rsvi/EVI'},
                     {text: '数学运算-math', link: '/UserGuide/math/FillNoData'},
                     {text: '系统交互-osf', link: '/UserGuide/osf/DateSeries'},

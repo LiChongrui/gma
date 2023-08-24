@@ -1,22 +1,15 @@
 ---
 title: 默认设置
-date: 2021-10-29
+date: 2023-08-20
 ---
 
 ## 默认参数
 
-&emsp;&emsp; 默认参数已经内置在 gma.relation.key 模块中，**下表列出 gma 定义了的参数**。
-
 | 变量 / 函数 | 类型 | 说明 | 详细介绍 |
 | :----| :---- | :---- | :----- |
-| RasterDataType | 字典 | 数据类型 | Unknown: 0, Byte: 1, UInt16: 2, Int16: 3, UInt32: 4, Int32: 5, Float32: 6, Float64: 7, CInt16: 8, CInt32: 9, CFloat32: 10, CFloat64: 11 |
-| ResampleMethod | 字典 | 重采样方法 | Nearest Neighbour: 0, Bilinear: 1, Cubic: 2, CubicSpline: 3, Lanczos: 4, Average: 5, RMS: 6, Mode: 7 |
-| FeatureType | 字典 | 矢量要素类型 | Unknown: 0, Point: 1, Line: 2, Polygon: 3, Multipoint: 4, Multiline: 5, Multipolygon: 6, LinearRing: 101 |
-| FieldDataType | 字典 | 属性表字段数据类型 | Integer: 0, IntegerList:1, Real:2, RealList:3, String:4, StringList: 5, WideString: 6, WideStringList: 7, Binary: 8,  Date: 9, Time: 10, DateTime: 11, Integer64: 12, Integer64List: 13 |
-
-::: warning 注意
-仅可根据 变量 / 函数 查看内置设置，不能对内置设置进行修改。
-:::
+| RasterDataType | 字典 | 数据类型 | Byte, UInt16, Int16, UInt32, Int32, Float32, Float64, CInt16, CInt32, CFloat32, CFloat64|
+| ResampleMethod | 字典 | 重采样方法 | Nearest Neighbour, Bilinear, Cubic, CubicSpline, Lanczos, Average, RMS, Mode |
+| FeatureType | 字典 | 矢量要素类型 | Point, Line, Polygon, Multipoint, Multiline, Multipolygon |
 
 ## 数据类型
 

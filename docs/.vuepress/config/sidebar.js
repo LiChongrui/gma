@@ -38,9 +38,16 @@ module.exports = {
             title: '气候气象',
             collapsable: false,
             children: [
-                'SPEI',
-                'SPI',
-                'PAP',
+                '',
+                {
+                    title: 'Index',
+                    collapsable: false,
+                    children: [
+                        'Index/SPEI',
+                        'Index/SPI',
+                        'Index/PAP',
+                    ]
+                },
                 {
                     title: 'Diagnosis',
                     collapsable: false,
@@ -62,14 +69,14 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Other',
+                    title: 'Astronomy',
                     collapsable: false,
                     children: [
-                        'Other/DaylightHours',
-                        'Other/Declination',
-                        'Other/HourAngle',
-                        'Other/RDBSunAndEarth',
-                        'Other/SolarRadiationFluxOA'
+                        'Astronomy/DaylightHours',
+                        'Astronomy/Declination',
+                        'Astronomy/HourAngle',
+                        'Astronomy/RDBSunAndEarth',
+                        'Astronomy/SolarRadiationFluxOA'
                     ]
                 },
             ],

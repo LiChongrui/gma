@@ -21,7 +21,7 @@ sidebar: false
 **示例 ：**
 
 ```python
-import gma
-gma.climet.Other.Declination([1,2,3])
+from gma import climet
+climet.Astronomy.Declination([1,2,3])
 ```
 > \>>> array([-0.40100809, -0.39956372, -0.39800096])

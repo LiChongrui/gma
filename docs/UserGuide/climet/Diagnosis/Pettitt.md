@@ -32,13 +32,13 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
+from gma import climet
 # 这里建立一个随机序列来模拟代码数据处理过程
 import numpy as np
 np.random.seed(0)
 Data = np.random.uniform(size = 72)
 
-PD = gma.climet.Diagnosis.Pettitt(Data)
+PD = climet.Diagnosis.Pettitt(Data)
 
 print(PD)
 ```

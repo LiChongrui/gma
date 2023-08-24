@@ -37,14 +37,14 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
+from gma import climet
 ```
 *单个值（0 维）*
 
 ```python
 PRS, WIN, TMAX, TMIN, RHU, SSH = 1025.3, 2.2, 5.1, -4.5, 6.3, 5.5
 LAT, Day, ELE = 35.6, 350, 45
-gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> 1.680369405068718
 
@@ -60,7 +60,7 @@ SSH = [5.2, 4.6, 4.2, 6.8]
 LAT = [37.1, 37.6, 35.9, 36.5]
 Day = [357, 348, 352, 358]
 ELE = [176, 385, 468, 412]
-gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> array([2.05433147, 2.02435767, 2.31121748, 1.99324934])
 ::: tip 提示
@@ -70,25 +70,25 @@ LAT、Day、ELE 也支持配置单个值，以及与气象数据同形状数据�
 ```python
 # 组合 1
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], 357, 176
-print('组合1', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合1', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 2
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], [357, 348, 352, 358], 176
-print('组合2', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合2', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 3
 LAT, Day, ELE = [37.1, 37.6, 35.9, 36.5], 357, [176, 385, 468, 412]
-print('组合3', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合3', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 4
 LAT, Day, ELE = 37.1, 357, 176
-print('组合4', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合4', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 5
 LAT, Day, ELE = 37.1, [357, 348, 352, 358], 176
-print('组合5', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合5', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 6
 LAT, Day, ELE = 37.1, [357, 348, 352, 358], [176, 385, 468, 412]
-print('组合6', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合6', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 # 组合 7
 LAT, Day, ELE = 37.1, 357, [176, 385, 468, 412]
-print('组合7', gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
+print('组合7', climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE))
 ```
 > \>>> 组合1 [2.05433147 2.01522148 2.3042206  1.98495581]<br>
 > \>>> 组合2 [2.05433147 2.0188891  2.30384578 1.98591626]<br>
@@ -127,7 +127,7 @@ Day = [[350, 351, 352, 353],
 ELE = [[240, 399, 168.3, 197.3],
        [233.3, 365.1, 329.4, 330.7],
        [163.2, 346.8,  57.2, 227.7]]
-gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
+climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 ```
 > \>>> array([[1.96605814, 2.53089833, 1.8249439 , 2.57517405],<br>
 > 　　　　　[1.60235259, 2.38994146, 1.86795955, 2.25009657],<br>
@@ -139,17 +139,19 @@ LAT、Day、ELE 类型组合请参考 *序列（1 维）*。
 
 *基于栅格（ANUSPLIN 气象站点空间插值数据）*
 ```python
+from gma import io
+
 # 气象数据
-PRSSet = gma.Open('PRS_China_ANUSPLIN_20201215.tif')
-RHUSet = gma.Open('RHU_China_ANUSPLIN_20201215.tif')
-SSDSet = gma.Open('SSD_China_ANUSPLIN_20201215.tif')
-TMAXSet = gma.Open('TMAX_China_ANUSPLIN_20201215.tif')
-TMINSet = gma.Open('TMIN_China_ANUSPLIN_20201215.tif')
-WINSet = gma.Open('WIN_China_ANUSPLIN_20201215.tif')
+PRSSet = io.Open('PRS_China_ANUSPLIN_20201215.tif')
+RHUSet = io.Open('RHU_China_ANUSPLIN_20201215.tif')
+SSDSet = io.Open('SSD_China_ANUSPLIN_20201215.tif')
+TMAXSet = io.Open('TMAX_China_ANUSPLIN_20201215.tif')
+TMINSet = io.Open('TMIN_China_ANUSPLIN_20201215.tif')
+WINSet = io.Open('WIN_China_ANUSPLIN_20201215.tif')
 # 高程
-ELESet = gma.Open('ELE_China_GEBCO_2020.tif')
+ELESet = io.Open('ELE_China_GEBCO_2020.tif')
 # 纬度
-LATSet = gma.Open('LAT_China_GEBCO_2020.tif')
+LATSet = io.Open('LAT_China_GEBCO_2020.tif')
 
 # 提取数据集的仿射变换、坐标系和无数据值
 Geot = PRSSet.GeoTransform
@@ -166,8 +168,8 @@ Day = 350
 PMET0 = gma.climet.ET0.PenmanMonteith(PRS, WIN, TMAX, TMIN, RHU, SSH, LAT, Day, ELE)
 
 # 将结果保存为 GTiff 格式
-gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif', 
-                     PMET0, 
+io.SaveArrayAsRaster(PMET0,
+                     r'..\0.1 预处理\PMET0_China_20201215.tif', 
                      Projection = Proj, 
                      Transform = Geot,
                      DataType = 'Float32',
@@ -177,113 +179,4 @@ gma.rasp.WriteRaster(r'..\0.1 预处理\PMET0_China_20201215.tif',
 
 ![](/climet/PMET0.webp)
 
-> 绘图代码示例
-
-```python
-import cartopy.crs as ccrs
-import cartopy.feature as cft
-import matplotlib.pyplot as plt
-import matplotlib.colors as cor
-import numpy as np
-import gma
-
-## 以下模块为尝鲜模块。在 gma 1.0.9 中作为非必要的扩展模块合入！！
-import gma.extend.mapplottools as mpt
-import gma.extend.arrayenhancement as aec
-
-PAR = {'font.sans-serif': 'Times New Roman',
-       'axes.unicode_minus': False,
-      }
-plt.rcParams.update(PAR)
-
-# 需要绘制的两个文件
-InFiles = ["TMAX_China_ANUSPLIN_20201215.tif", "PMET0_China_ANUSPLIN_20201215.tif"]
-
-DataTypeNames = ['最高气温', '作物参考蒸散量']
-LegendLable = ['TMax(℃)', 'ET0(mm)']
-fig = plt.figure(figsize = (10, 10), dpi = 300)
-
-# 定义一个标准中国区 ALBERS 投影
-Alberts_China = ccrs.AlbersEqualArea(central_longitude = 105, standard_parallels = (25.0, 47.0))  
-
-for i in range(len(InFiles)):
-    ax = plt.subplot(1, 2, i + 1, projection = Alberts_China) 
-    
-    DataSet = gma.Open(InFiles[i])
-    DrawData = DataSet.ToArray()
-    DrawData[DrawData == DataSet.NoData] = np.nan
-    # 由于数据有过大过小值，这里做一个百分比截断拉伸
-    STRE = aec.Stretch(DrawData, MaxLabel = np.nanpercentile(DrawData, 95), MinLabel = np.nanpercentile(DrawData, 5))
-    DrawData = STRE.Percentage()
-    ############################################ 配置范围
-    GEOT = DataSet.GeoTransform
-    Columns = DataSet.Columns
-    Rows = DataSet.Rows
-    # 数据边界
-    ExtentData = [GEOT[0], GEOT[0] + GEOT[1] * Columns, GEOT[3] + GEOT[-1] * Rows, GEOT[3]]
-    # 绘图边界（以数据边界为基础确定）
-    EL, ER, EB, ET = -0.1,-0.1,0.1, 0.01  # 左右、下上边界的扩展比例
-    ExtentPLT = [ExtentData[0] - (ExtentData[1] - ExtentData[0]) * EL, 
-                 ExtentData[1] + (ExtentData[1] - ExtentData[0]) * ER, 
-                 ExtentData[2] - (ExtentData[3] - ExtentData[2]) * EB, 
-                 ExtentData[3] + (ExtentData[3] - ExtentData[2]) * ET]    
-    
-    WKTCRS = DataSet.Projection
-    
-    # 0.控制数据显示范围
-    DataCRS = mpt.GetCRS(WKTCRS)
-    ax.set_extent(ExtentPLT, crs = DataCRS)
-
-    # 1.绘制底图图层
-    ## 1.1 添加行政边界
-    mpt.AddGeometries(ax, r"Region\VTD_PG_Province_China.shp", EdgeColor = 'Gray', LineWidth = 0.1)
-    mpt.AddGeometries(ax, r"Region\VTD_PG_China.shp", EdgeColor = 'black', LineWidth = 0.2)
-    mpt.AddGeometries(ax, r"Region\南海诸岛九段线.shp", EdgeColor = 'black', LineWidth = 0.3)
-    ## 1.2 添加国家 / 海洋背景 / 大型湖泊
-    mpt.AddGeometries(ax, r"World\VTD_PG_World_Country.shp", EdgeColor = 'gray', LineWidth = 0.1, 
-                      FaceColor = 'white', Zorder = 0)
-    ax.set_facecolor('#BEE8FF')
-    ax.add_feature(cft.LAKES.with_scale('110m'), color = '#BEE8FF')
-    
-    # 2.绘制数据图层
-    im = ax.imshow(DrawData, transform = DataCRS, cmap = plt.get_cmap('jet'), extent = ExtentData, zorder = 1,
-                   interpolation = 'none')        
-         
-    # 3.为绘制区域增加经纬网
-    gl = ax.gridlines(draw_labels = True, dms = False, x_inline = False, y_inline = False, 
-                      linestyle = (0, (10, 10)), 
-                      linewidth = 0.2,
-                      color = 'Gray',
-                      rotate_labels = False,
-                      xlabel_style = {'fontsize': 8},
-                      ylabel_style = {'fontsize': 8})
-    ## 3.1忽略相邻轴的经纬网标签
-    if i % 2 == 0:
-        gl.right_labels = False
-    else:
-        gl.left_labels = False
-        
-    ax.set_title(DataTypeNames[i], fontsize = 10, y = 0.92, fontdict = {'family':'SimSun'})
-    
-    # n.其他优化设置
-    ## n.1 添加指北针
-    mpt.AddCompass(ax, LOC = (0.15, 0.9), SCA = 0.04, FontSize = 10)
-    ## n.2 添加比例尺
-    mpt.AddScaleBar(ax, LOC = (0.4, 0.08), SCA = 0.12, FontSize = 6, UnitPad = 0.2, BarWidth = 0.6)
-    ## n.3 添加并修饰图例
-    leg = fig.colorbar(im, 
-                       location = 'right', # 位置
-                       orientation = 'vertical', # 图例方向
-                       pad = -0.3, # 边距
-                       ticks = [np.nanmin(DrawData), 0, np.nanmax(DrawData)],
-                       shrink = 0.06, # 大小缩放
-                       aspect = 2, # 长宽比
-                       anchor = (-8, 0.38), # 位置
-                      )
-    leg.outline.set(edgecolor = 'black',linewidth = 0.1)
-    leg.ax.set_title(LegendLable[i], fontsize = 8, loc = 'left')
-    leg.ax.tick_params(which = 'major', direction = 'out', labelsize = 6, length = 3, color = 'black', width = 0.1)
-
-plt.show()
-```
 
