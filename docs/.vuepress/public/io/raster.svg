@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 raster.svg RasterOperation -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="10%" height="10%"  viewBox="0 0 501.438 291.995" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st25">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;font-family:宋体;font-size:0.833336em}
+		.st3 {font-family:Times New Roman;font-size:1em}
+		.st4 {fill:#b7dde8;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st5 {fill:#000000;font-family:宋体;font-size:0.833336em;font-weight:bold}
+		.st6 {marker-end:url(#mrkr5-21);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st7 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st8 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st9 {fill:#000000;font-family:宋体;font-size:0.666664em}
+		.st10 {fill:none;stroke:none;stroke-linecap:butt;stroke-width:0.75}
+		.st11 {fill:#305497;font-family:Times New Roman;font-size:0.666664em}
+		.st12 {fill:none;stroke:#7f7f7f;stroke-dasharray:3.5,2.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st13 {fill:#f2f2f2}
+		.st14 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st15 {fill:#0070c0;font-family:Times New Roman;font-size:0.499992em}
+		.st16 {fill:#000000;font-family:微软雅黑;font-size:1em}
+		.st17 {fill:#000000;font-size:1em}
+		.st18 {fill:#fff2cc;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st19 {fill:#000000;font-family:Times New Roman;font-size:0.833336em}
+		.st20 {font-family:宋体;font-size:1em}
+		.st21 {marker-start:url(#mrkr5-161);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st22 {fill:none;stroke:#7f7f7f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5}
+		.st23 {fill:#dbeef3}
+		.st24 {fill:#c0fdca}
+		.st25 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend5">
+			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364515 1.67301 0.372641 1.98465 1.00043 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr5-21" class="st7" refX="-7.63" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(-4.36,-4.36) "/>
+		</marker>
+		<marker id="mrkr5-161" class="st7" refX="7.15" orient="auto" markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(4.36) "/>
+		</marker>
+	</defs>
+	<g>
+		<title>RasterOperation</title>
+		<g id="shape182-1" transform="translate(82.6877,-243.5)">
+			<title>圆角的矩形</title>
+			<desc>栅格文件-File</desc>
+			<path d="M11.87 292 L106.82 292 A11.8686 11.8686 -180 0 0 118.69 280.13 L118.69 273.49 A11.8686 11.8686 -180 0 0 106.82
+						 261.62 L11.87 261.62 A11.8686 11.8686 -180 0 0 0 273.49 L0 280.13 A11.8686 11.8686 -180 0 0 11.87 292 Z"
+					class="st1"/>
+			<text x="29.9" y="280.1" class="st2">栅格文件<tspan class="st3">-</tspan><tspan class="st3">File</tspan></text>		</g>
+		<g id="shape184-6" transform="translate(161.558,-140.461)">
+			<title>圆角的矩形.184</title>
+			<desc>数据集-DataSet</desc>
+			<path d="M14.4 292 L129.6 292 A14.3998 14.3998 -180 0 0 144 277.6 L144 266.36 A14.3998 14.3998 -180 0 0 129.6 251.96
+						 L14.4 251.96 A14.3998 14.3998 -180 0 0 -0 266.36 L0 277.6 A14.3998 14.3998 -180 0 0 14.4 292 Z"
+					class="st4"/>
+			<text x="38.34" y="275.28" class="st5">数据集<tspan class="st3">-</tspan><tspan class="st3">DataSet</tspan></text>		</g>
+		<g id="shape186-11" transform="translate(18.1198,-68)">
+			<title>圆角的矩形.186</title>
+			<desc>多数据集-MultiDataSets</desc>
+			<path d="M11.34 292 L102.05 292 A11.3384 11.3384 -180 0 0 113.39 280.66 L113.39 263.29 A11.3384 11.3384 -180 0 0 102.05
+						 251.96 L11.34 251.96 A11.3384 11.3384 -180 0 0 0 263.29 L0 280.66 A11.3384 11.3384 -180 0 0 11.34 292 Z"
+					class="st4"/>
+			<text x="4.12" y="275.28" class="st5">多数据集<tspan class="st3">-</tspan><tspan class="st3">MultiDataSets</tspan></text>		</g>
+		<g id="shape188-16" transform="translate(105.75,-243.5)">
+			<title>动态连接线</title>
+			<path d="M0 292 L0 368.5 L50.11 368.5" class="st6"/>
+		</g>
+		<g id="shape189-22" transform="translate(105.75,-243.5)">
+			<title>动态连接线.189</title>
+			<path d="M0 292 L0 317.95 L-30.94 317.95 L-30.94 421.73" class="st6"/>
+		</g>
+		<g id="shape190-27" transform="translate(54.6366,-137.813)">
+			<title>工作表.190</title>
+			<desc>多维科学数据</desc>
+			<rect x="0" y="231.558" width="15.6023" height="60.4375" class="st8"/>
+			<text x="7.8" y="237.78" writing-mode="tb-rl" class="st9">多维科学数据</text>		</g>
+		<g id="shape192-30" transform="translate(90,-168.187)">
+			<title>工作表.192</title>
+			<desc>普通栅格</desc>
+			<rect x="0" y="248.683" width="18" height="43.3125" class="st8"/>
+			<text x="9" y="254.34" writing-mode="tb-rl" class="st9">普通栅格</text>		</g>
+		<g id="shape193-33" transform="translate(131.506,-88.0197)">
+			<title>动态连接线.193</title>
+			<path d="M0 292 L12.05 292 L12.05 227.78 L24.57 227.78" class="st6"/>
+		</g>
+		<g id="shape197-38" transform="translate(95.1825,-120.66)">
+			<title>工作表.197</title>
+			<desc>GetDataSet</desc>
+			<rect x="0" y="280.315" width="47.25" height="11.6798" class="st10"/>
+			<text x="5.19" y="288.55" class="st11">GetDataSet</text>		</g>
+		<g id="shape220-41" transform="translate(362.933,-18.25)">
+			<title>工作表.220</title>
+			<path d="M0 292 L120.26 292 L120.26 37.75 L0 37.75 L0 292 Z" class="st12"/>
+		</g>
+		<g id="shape201-43" transform="translate(368.438,-38.9018)">
+			<title>子流程.201</title>
+			<desc>Projection-投影WKT</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="22.4" y="286.76" class="st15">Projection-<tspan class="st16">投影</tspan><tspan class="st16">（</tspan><tspan
+						class="st17">WKT</tspan><tspan class="st16">）</tspan></text>		</g>
+		<g id="shape204-53" transform="translate(368.438,-256.187)">
+			<title>子流程.204</title>
+			<desc>Bands-波段数</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="37.06" y="286.76" class="st15">Bands-<tspan class="st16">波段数</tspan></text>		</g>
+		<g id="shape205-60" transform="translate(368.438,-189.33)">
+			<title>子流程.205</title>
+			<desc>Boundary-四至范围</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="29.73" y="286.76" class="st15">Boundary-<tspan class="st16">四至范围</tspan></text>		</g>
+		<g id="shape206-67" transform="translate(368.438,-239.473)">
+			<title>子流程.206</title>
+			<desc>Columns-列数</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="36.73" y="286.76" class="st15">Columns-<tspan class="st16">列数</tspan></text>		</g>
+		<g id="shape207-74" transform="translate(368.438,-155.902)">
+			<title>子流程.207</title>
+			<desc>Driver-驱动格式</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="33.73" y="286.76" class="st15">Driver-<tspan class="st16">驱动格式</tspan></text>		</g>
+		<g id="shape208-81" transform="translate(368.438,-139.187)">
+			<title>子流程.208</title>
+			<desc>GeoTransform-仿射变换</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="23.9" y="286.76" class="st15">GeoTransform-<tspan class="st16">仿射变换</tspan></text>		</g>
+		<g id="shape211-88" transform="translate(368.438,-72.3304)">
+			<title>子流程.211</title>
+			<desc>Name-数据名</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="37.4" y="286.76" class="st15">Name-<tspan class="st16">数据名</tspan></text>		</g>
+		<g id="shape212-95" transform="translate(368.438,-206.045)">
+			<title>子流程.212</title>
+			<desc>Rows-行数</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="40.73" y="286.76" class="st15">Rows-<tspan class="st16">行数</tspan></text>		</g>
+		<g id="shape215-102" transform="translate(368.438,-55.6161)">
+			<title>子流程.215</title>
+			<desc>NoData-无数据值</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="32.23" y="286.76" class="st15">NoData-<tspan class="st16">无数据值</tspan></text>		</g>
+		<g id="shape216-109" transform="translate(368.438,-89.0446)">
+			<title>子流程.216</title>
+			<desc>Metadata-元数据</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="33.4" y="286.76" class="st15">Metadata-<tspan class="st16">元</tspan><tspan class="st16">数据</tspan></text>		</g>
+		<g id="shape217-117" transform="translate(368.438,-105.759)">
+			<title>子流程.217</title>
+			<desc>Info-栅格信息</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="36.57" y="286.76" class="st15">Info-<tspan class="st16">栅格信息</tspan></text>		</g>
+		<g id="shape222-124" transform="translate(305.558,-151.48)">
+			<title>动态连接线.222</title>
+			<path d="M0 283 L51.65 283" class="st6"/>
+		</g>
+		<g id="shape223-129" transform="translate(314.558,-162.5)">
+			<title>工作表.223</title>
+			<desc>属性</desc>
+			<rect x="0" y="277.37" width="44.8523" height="14.625" class="st8"/>
+			<text x="14.43" y="287.31" class="st9">属性</text>		</g>
+		<g id="shape224-132" transform="translate(28.6877,-29.2187)">
+			<title>子流程</title>
+			<desc>MDInfo-多数据集信息</desc>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M83.75 292 L83.75 277.93" class="st14"/>
+			<text x="17.29" y="286.76" class="st15">MDInfo-<tspan class="st16">多数据集信息</tspan></text>		</g>
+		<g id="shape225-139" transform="translate(65.8127,-68)">
+			<title>动态连接线.225</title>
+			<path d="M9 292 L9 310.99" class="st6"/>
+		</g>
+		<g id="shape226-144" transform="translate(280.29,-207.5)">
+			<title>工作表.226</title>
+			<desc>ReadArrayAsDataSet</desc>
+			<rect x="0" y="280.315" width="70.2672" height="11.6798" class="st10"/>
+			<text x="0.48" y="288.55" class="st11">ReadArrayAsDataSet</text>		</g>
+		<g id="shape227-147" transform="translate(224.558,-243.5)">
+			<title>圆角的矩形.227</title>
+			<desc>NumPy数组-np.array</desc>
+			<path d="M9.9 292 L89.1 292 A9.89984 9.89984 -180 0 0 99 282.1 L99 271.52 A9.89984 9.89984 -180 0 0 89.1 261.62 L9.9
+						 261.62 A9.89984 9.89984 -180 0 0 0 271.52 L0 282.1 A9.89984 9.89984 -180 0 0 9.9 292 Z" class="st18"/>
+			<text x="6.04" y="280.1" class="st19">NumPy<tspan class="st20">数组</tspan>-np.array</text>		</g>
+		<g id="shape228-151" transform="translate(269.336,-243.5)">
+			<title>动态连接线.228</title>
+			<path d="M8.78 292 L9.18 349.5" class="st6"/>
+		</g>
+		<g id="shape231-156" transform="translate(249.51,-243.5)">
+			<title>动态连接线.231</title>
+			<path d="M8.82 297.36 L8.82 297.72 L9.22 355.23" class="st21"/>
+		</g>
+		<g id="shape232-162" transform="translate(223.433,-207.5)">
+			<title>工作表.232</title>
+			<desc>ToArray</desc>
+			<rect x="0" y="280.315" width="34.875" height="11.6798" class="st10"/>
+			<text x="3.67" y="288.55" class="st11">ToArray</text>		</g>
+		<g id="shape233-165" transform="translate(78.75,-223.66)">
+			<title>工作表.233</title>
+			<desc>Open</desc>
+			<rect x="0" y="280.315" width="24.75" height="11.6798" class="st10"/>
+			<text x="3.71" y="288.55" class="st11">Open</text>		</g>
+		<g id="shape240-168" transform="translate(166.521,-243.5)">
+			<title>动态连接线.240</title>
+			<path d="M8.98 297.36 L8.98 297.72 L9.02 355.15" class="st21"/>
+		</g>
+		<g id="shape241-173" transform="translate(112.5,-202.5)">
+			<title>工作表.241</title>
+			<desc>ReadRaster</desc>
+			<rect x="0" y="280.315" width="38.25" height="11.6798" class="st10"/>
+			<text x="0.69" y="288.55" class="st11">ReadRaster</text>		</g>
+		<g id="shape242-176" transform="translate(177.75,-140.461)">
+			<title>动态连接线.242</title>
+			<path d="M9 292 L9 325.73" class="st6"/>
+		</g>
+		<g id="shape230-181" transform="translate(153,-18)">
+			<title>工作表.230</title>
+			<rect x="0" y="208.995" width="105.75" height="83" class="st22"/>
+		</g>
+		<g id="shape236-183" transform="translate(159.75,-62.8125)">
+			<title>子流程.216</title>
+			<desc>Reproject-重投影</desc>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292 Z" class="st23"/>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M83.75 292 L83.75 277.93" class="st14"/>
+			<text x="24.46" y="286.76" class="st15">Reproject-<tspan class="st16">重投影</tspan></text>		</g>
+		<g id="shape237-190" transform="translate(159.75,-42.6562)">
+			<title>子流程.237</title>
+			<desc>Resamplet-重采样</desc>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292 Z" class="st23"/>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M83.75 292 L83.75 277.93" class="st14"/>
+			<text x="23.46" y="286.76" class="st15">Resamplet-<tspan class="st16">重采样</tspan></text>		</g>
+		<g id="shape246-197" transform="translate(174.124,-111.273)">
+			<title>工作表.246</title>
+			<desc>方法</desc>
+			<rect x="0" y="264.995" width="11.7526" height="27" class="st8"/>
+			<text x="5.88" y="270.5" writing-mode="tb-rl" class="st9">方法</text>		</g>
+		<g id="shape252-200" transform="translate(287.438,-37.375)">
+			<title>圆角的矩形.252</title>
+			<desc>矢量图层-Layer</desc>
+			<path d="M6.3 292 L56.7 292 A6.2999 6.2999 -180 0 0 63 285.7 L63 267.92 A6.2999 6.2999 -180 0 0 56.7 261.62 L6.3 261.62
+						 A6.2999 6.2999 -180 0 0 -0 267.92 L0 285.7 A6.2999 6.2999 -180 0 0 6.3 292 Z" class="st18"/>
+			<text x="9.83" y="274.1" class="st2">矢量图层<tspan class="st3">-</tspan><tspan x="19.84" dy="1.229em" class="st3">Layer</tspan></text>		</g>
+		<g id="shape253-205" transform="translate(285.75,-140.461)">
+			<title>动态连接线.253</title>
+			<path d="M0 292 L0 335.01 L33.19 335.01 L33.19 358.98" class="st6"/>
+		</g>
+		<g id="shape254-210" transform="translate(287.438,-114.57)">
+			<title>工作表.254</title>
+			<desc>ToLayer</desc>
+			<rect x="0" y="280.315" width="36" height="11.6798" class="st10"/>
+			<text x="4.23" y="288.55" class="st11">ToLayer</text>		</g>
+		<g id="shape1002-213" transform="translate(368.438,-172.616)">
+			<title>子流程.1002</title>
+			<desc>DataType-数据类型</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="29.74" y="286.76" class="st15">DataType-<tspan class="st16">数据类型</tspan></text>		</g>
+		<g id="shape1003-220" transform="translate(368.438,-222.759)">
+			<title>子流程.1003</title>
+			<desc>ComputeStatistics-计算统计量</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="16.73" y="286.76" class="st15">ComputeStatistics-<tspan class="st16">计算统计量</tspan></text>		</g>
+		<g id="shape1004-227" transform="translate(368.438,-122.473)">
+			<title>子流程.1004</title>
+			<desc>GetColorTable-获取色彩映射表</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="14.57" y="286.76" class="st15">GetColorTable-<tspan class="st16">获取色彩映射表</tspan></text>		</g>
+		<g id="shape1005-234" transform="translate(368.438,-22.1875)">
+			<title>子流程.1005</title>
+			<desc>Resolution-X,Y分辨率</desc>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292 Z" class="st13"/>
+			<path d="M0 292 L109.12 292 L109.12 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M100.62 292 L100.62 277.93" class="st14"/>
+			<text x="26.48" y="286.76" class="st15">Resolution-<tspan class="st17">X,Y</tspan><tspan class="st16">分辨率</tspan></text>		</g>
+		<g id="shape1006-242" transform="translate(159.75,-22.5)">
+			<title>子流程.1006</title>
+			<desc>Clip-裁剪数据集</desc>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292 Z" class="st23"/>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M83.75 292 L83.75 277.93" class="st14"/>
+			<text x="24.96" y="286.76" class="st15">Clip-<tspan class="st16">裁剪数据集</tspan></text>		</g>
+		<g id="shape1007-249" transform="translate(159.187,-82.9688)">
+			<title>子流程.1007</title>
+			<desc>ComputeStatistics-统计量</desc>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292 Z" class="st23"/>
+			<path d="M0 292 L92.25 292 L92.25 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M83.75 292 L83.75 277.93" class="st14"/>
+			<text x="14.29" y="286.76" class="st15">ComputeStatistics-<tspan class="st16">统计量</tspan></text>		</g>
+		<g id="shape1008-256" transform="translate(212.625,-111.938)">
+			<title>子流程.1008</title>
+			<desc>Preview-预览</desc>
+			<path d="M0 292 L60.75 292 L60.75 277.93 L0 277.93 L0 292 Z" class="st24"/>
+			<path d="M0 292 L60.75 292 L60.75 277.93 L0 277.93 L0 292" class="st14"/>
+			<path d="M8.5 292 L8.5 277.93" class="st14"/>
+			<path d="M52.25 292 L52.25 277.93" class="st14"/>
+			<text x="13.55" y="286.76" class="st15">Preview-<tspan class="st16">预览</tspan></text>		</g>
+		<g id="shape1009-263" transform="translate(234,-124.312)">
+			<title>动态连接线.1009</title>
+			<path d="M9 284.95 L9 284.59 L9 275.68" class="st21"/>
+		</g>
+		<g id="shape1010-268" transform="translate(151.738,-243.5)">
+			<title>动态连接线.1010</title>
+			<path d="M3.96 292 L3.96 359.21 L8.32 359.21" class="st6"/>
+		</g>
+		<g id="shape1011-273" transform="translate(177.75,-204.32)">
+			<title>工作表.1011</title>
+			<desc>SaveAs</desc>
+			<rect x="0" y="280.315" width="38.25" height="11.6798" class="st10"/>
+			<text x="6.9" y="288.55" class="st11">SaveAs</text>		</g>
+	</g>
+</svg>

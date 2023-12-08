@@ -44,7 +44,7 @@ module.exports = [
                     {text: '矢量处理-vesp', link: '/UserGuide/vesp/ChangeGeometryType'},
                     {text: '地图工具-map', link: '/UserGuide/map/plot/MapFrame/'},
                     {text: '高级配置-config', link: '/UserGuide/config/GetRACreationOption'},
-                    {text: '输入输出-io', link: '/UserGuide/io/Open'},
+                    {text: '输入输出-io', link: '/UserGuide/io/'},
                 ],
             },
          ]

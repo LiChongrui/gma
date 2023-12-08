@@ -46,6 +46,7 @@ module.exports = {
                         'Index/SPEI',
                         'Index/SPI',
                         'Index/PAP',
+                        'Index/RMI',
                     ]
                 },
                 {
@@ -99,7 +100,7 @@ module.exports = {
        
     '/UserGuide/math/': [
         {
-            title: '数学运算',
+            title: '数学运算-1.x',
             collapsable: false,
             children: [
                 'FillNoData',
@@ -162,7 +163,7 @@ module.exports = {
 
     '/UserGuide/osf/': [
         {
-            title: '系统交互',
+            title: '系统交互-1.x',
             collapsable: false,
             children: [
                 'DateSeries',
@@ -186,7 +187,7 @@ module.exports = {
 
     '/UserGuide/smc/': [
         {
-            title: '空间杂项',
+            title: '空间杂项-1.x',
             collapsable: false,
             children: [
                 'CALArea',
@@ -209,7 +210,7 @@ module.exports = {
 
     '/UserGuide/rasp/': [
         {
-            title: '栅格处理',
+            title: '栅格处理-1.x',
             collapsable: false,
             children: [
                 'AddColorTable',
@@ -240,7 +241,7 @@ module.exports = {
 
     '/UserGuide/raa/': [
         {
-            title: '栅格分析',
+            title: '栅格分析-1.x',
             collapsable: false,
             children: [
                 {
@@ -277,7 +278,7 @@ module.exports = {
 
     '/UserGuide/vesp/': [
         {
-            title: '矢量处理',
+            title: '矢量处理-1.x',
             collapsable: false,
             children: [
                 'ChangeGeometryType',
@@ -300,7 +301,7 @@ module.exports = {
 
     '/UserGuide/map/': [
         {
-            title: '地图工具',
+            title: '地图工具-1.x',
             collapsable: false,
             children: [
                 {
@@ -360,7 +361,7 @@ module.exports = {
 
     '/UserGuide/config/': [
         {
-            title: '高级配置',
+            title: '高级配置-1.x',
             collapsable: false,
             children: [
                 'GetRACreationOption',
@@ -378,6 +379,7 @@ module.exports = {
             title: '输入输出',
             collapsable: false,
             children: [
+                '',
                 'CreateFeatureFromPoints',
                 'CreateLayerFromFeature',
                 'Open',
@@ -403,6 +405,7 @@ module.exports = {
                     title: '1.1 (2023)',
                     collapsable: false,
                     children: [
+                        '1.1/1.1.6',
                         '1.1/1.1.5',
                         '1.1/1.1.4',
                         '1.1/1.1.3',

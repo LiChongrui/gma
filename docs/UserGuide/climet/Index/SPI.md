@@ -4,7 +4,7 @@ date: 2023-08-25
 sidebar: false
 ---
 
-## gma.climet.Index.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'Gamma'*) <Badge text="1.0.10 +"/>
+## gma.climet.Index.**SPI**(*PRE, Axis = None, Scale = 1, Periodicity = 12, Distribution = 'Gamma', FitMethod = 'MLE', Calibration = None*) <Badge text="1.0.10 +"/>
 
 ---
 
@@ -26,13 +26,27 @@ sidebar: false
 
 ::: tip 支持的分布类型
 
-'Gamma'(Maximum Likelihood Estimation)：伽马分布（参数估计：最大似然估计）；
+'Gamma'：伽马分布；
 
-'LogLogistic'(L-Moment Estimation(PWD))：对数逻辑斯蒂分布（参数估计：L-矩估计（概率加权矩））；
+'LogLogistic'：对数逻辑斯蒂分布；
 
-'Pearson3'(L-Moment Estimation)：泊松 III 分布（参数估计：L-矩估计）。
+'Pearson3'：泊松 III 分布。
 
 :::
+
+&emsp; FitMethod = `str` <Badge text="2.0.4 +"/>。用于内部拟合/变换计算的参数估计方法。默认为 MLE。
+
+::: tip 支持的分布类型
+
+'MLE'：最大似然估计；
+
+'LMoment'(PWD)：L-矩估计（概率加权矩）；
+
+'LMoment'：L-矩估计。
+
+:::
+
+&emsp; FitMethod = `list||slice||None`<Badge text="2.0.4 +"/>。提取参与内部参数拟合运算的数据（基于周期）。默认（None）为全部数据。
 
 **返回：**`array`。
 

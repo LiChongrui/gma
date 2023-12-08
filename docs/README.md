@@ -27,5 +27,19 @@ pip install gma
 ```
 ### 引用（IDE）
 ```python
+## 完整引入
 import gma
+
+## 引用部分模块
+from gma import climet # 气候气象模块
+from gma import crs # 坐标参考系统
+from gma import gft # 地理数据（栅格/矢量）格式
+from gma import io # 输入输出模块
+from gma import math # 数学模块
+from gma import osf # 系统交互
+from gma import rasp # 栅格处理
+from gma import rsvi # 遥感指数
+from gma import smc # 空间杂项
+from gma import vesp # 矢量处理
+from gma.map import plot, inres # 空间绘图，内置数据
 ```

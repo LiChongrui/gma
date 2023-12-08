@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.math.**FillNoData**(*Data, FillValue = None, Method = 'linear', Axis = None, \*\*kwargs*)
+## gma.math.PrePro.**FillNoData**(*Data, FillValue = None, Method = 'linear', Axis = None, \*\*kwargs*)
 
 ---
 
@@ -44,7 +44,7 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
+from gma import math
 ```
 
 *序列（1 维）*
@@ -52,7 +52,7 @@ import gma
 ```python
 Data = [None, 0.16359164, 0.17469311, 'NULL', 0.22857143, 0.32706435, 10, 0.10225949]
 # 未定义需要被填充的值则仅插值序列中的非数据值以及无穷值
-gma.math.FillNoData(Data)
+math.PrePro.FillNoData(Data)
 ```
 > \>>> array([0.16359164, 0.16359164, 0.17469311, 0.20163227, 0.22857143, 0.32706435, 10.0, 0.10225949])
 
@@ -64,7 +64,7 @@ gma.math.FillNoData(Data)
 
 ```python
 # 定义了需要被填充的值后此值也会被填充。不存在的值则自动忽略
-gma.math.FillNoData(Data, FillValue = 10)
+math.PrePro.FillNoData(Data, FillValue = 10)
 ```
 
 > \>>> array([0.16359164, 0.16359164, 0.17469311, 0.20163227, 0.22857143, 0.32706435, 0.21466192, 0.10225949])
