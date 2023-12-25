@@ -48,7 +48,7 @@ sidebar: false
 
 :::
 
-&emsp; FitMethod = `list||slice||None`<Badge text="2.0.4 +"/>。提取参与内部参数拟合运算的数据（基于周期）。默认（None）为全部数据。
+&emsp; Calibration = `list||slice||None`<Badge text="2.0.4 +"/>。提取参与内部参数拟合运算的数据（基于周期）。默认（None）为全部数据。
 
 **返回：**`array`。
 
