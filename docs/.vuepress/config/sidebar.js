@@ -100,16 +100,22 @@ module.exports = {
        
     '/UserGuide/math/': [
         {
-            title: '数学运算-1.x',
+            title: '数学运算',
             collapsable: false,
             children: [
-                'FillNoData',
-                'ToNumericArray',
+                 '',
+                {
+                    title: 'PrePro',
+                    collapsable: false,
+                    children: [
+                        'PrePro/FillNoData',
+                        'PrePro/ToNumericArray',
+                    ]
+                },
                 {
                     title: 'Smooth',
                     collapsable: false,
                     children: [
-                        'Smooth/',
                         'Smooth/MovingAverage',
                         'Smooth/SavitzkyGolay',
                     ]
@@ -118,15 +124,12 @@ module.exports = {
                     title: 'Evaluation',
                     collapsable: false,
                     children: [
-                        'Evaluation/',
                         'Evaluation/CORR',
                         'Evaluation/D',
                         'Evaluation/MaxAE',
-                        'Evaluation/Methods',
                         'Evaluation/NRMSE',
                         'Evaluation/R2',
                         'Evaluation/RMSE',
-                        'Evaluation/Select',
                     ]
                 },
                 {

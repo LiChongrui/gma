@@ -23,14 +23,14 @@ sidebar: false
 ---
 **示例：**
 ```python
-import gma
+from gma import rsvi
 ```
 *单个值（0 维）*
 ```python
 Blue = 0.1302
 Red = 0.1604
 Nir = 0.4540
-gma.rsvi.EVI(Blue, Red, Nir)
+rsvi.EVI(Blue, Red, Nir)
 ```
 > \>>> 0.5097576220570874
 
@@ -40,7 +40,7 @@ gma.rsvi.EVI(Blue, Red, Nir)
 Blue =[0.1572414, 0.17303503, 0.17937252, 0.18422147, 0.17526136]
 Red = [0.17049912, 0.18568421, 0.15712575, 0.17212352, 0.18122375]
 Nir = [0.49998039, 0.43281425, 0.4370636 , 0.43339039, 0.42903499]
-gma.rsvi.EVI(Blue, Red, Nir)
+rsvi.EVI(Blue, Red, Nir)
 ```
 > \>>> array([0.61302736, 0.49459372, 0.67648937, 0.60229133, 0.51544986])
 
@@ -55,7 +55,7 @@ Red = [[0.16600456, 0.18746094, 0.16713885, 0.1706692 ],
 Nir = [[0.43547845, 0.4525367 , 0.48956414, 0.46418583],
         [0.43747245, 0.46524534, 0.42735143, 0.46404673],
         [0.44102187, 0.44652723, 0.44031739, 0.42079154]]
-gma.rsvi.EVI(Blue, Red, Nir)
+rsvi.EVI(Blue, Red, Nir)
 ```
 > \>>> array([[0.6477238 , 0.50599551, 0.74756786, 0.56833448],<br>
 > 　 　 　 　 [0.46308277, 0.63616862, 0.46282498, 0.51994648],<br>
@@ -64,9 +64,9 @@ gma.rsvi.EVI(Blue, Red, Nir)
 *基于栅格（哨兵 2 L2A/B 数据）*
 ```python
 # 读取栅格文件至数据集
-BlueSet = gma.Open('SENT_LY_B2_20220305.tif')
-RedSet = gma.Open('SENT_LY_B4_20220305.tif')
-NirSet = gma.Open('SENT_LY_B8_20220305.tif')
+BlueSet = io.ReadRater('SENT_LY_B2_20220305.tif')
+RedSet = io.ReadRater('SENT_LY_B4_20220305.tif')
+NirSet = io.ReadRater('SENT_LY_B8_20220305.tif')
 
 # 提取数据集的仿射变换和坐标系
 Geot = BlueSet.GeoTransform
@@ -79,8 +79,8 @@ Nir = NirSet.ToArray() * 1e-4
 EVI = gma.rsvi.EVI(Blue, Red, Nir)
 
 # 将结果保存为 GTiff 格式
-gma.rasp.WriteRaster(r'..\0.1 预处理\SENT_LY_EVI_20220305.tif', 
-                     EVI, 
+io.SaveArrayAsRaster(EVI, 
+                     'SENT_LY_EVI_20220305.tif', 
                      Projection = Proj, 
                      Transform = Geot,
                      DataType = 'Float32')

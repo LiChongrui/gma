@@ -36,7 +36,7 @@ module.exports = [
                 items: [
                     {text: '气候气象-climet', link: '/UserGuide/climet/'},
                     {text: '遥感指数-rsvi', link: '/UserGuide/rsvi/EVI'},
-                    {text: '数学运算-math', link: '/UserGuide/math/FillNoData'},
+                    {text: '数学运算-math', link: '/UserGuide/math/'},
                     {text: '系统交互-osf', link: '/UserGuide/osf/DateSeries'},
                     {text: '空间杂项-smc', link: '/UserGuide/smc/CALArea'},
                     {text: '栅格处理-rasp', link: '/UserGuide/rasp/AddColorTable'},

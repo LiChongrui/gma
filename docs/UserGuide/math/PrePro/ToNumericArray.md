@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-##  gma.math.**ToNumericArray**(*Data*) <Badge text="1.0.6 +"/> 
+##  gma.math.PrePro.**ToNumericArray**(*Data*) <Badge text="1.0.6 +"/> 
 
 ---
 
@@ -27,13 +27,13 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
+from gma import math
 ```
 *单个值（0 维）*
 
 ```python
 Data = None
-gma.math.ToNumericArray(Data)
+math.ToNumericArray(Data)
 ```
 > \>>> array(nan)
 
@@ -41,7 +41,7 @@ gma.math.ToNumericArray(Data)
 
 ```python
 Data = [1,2,3,4,'sad',None,2,34]
-gma.math.ToNumericArray(Data)
+math.ToNumericArray(Data)
 ```
 > \>>> array([ 1.,  2.,  3.,  4., nan, nan,  2., 34.])
 

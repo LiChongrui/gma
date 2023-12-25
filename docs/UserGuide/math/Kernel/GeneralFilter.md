@@ -44,3 +44,16 @@ Mean（均值滤波），Min（最小值滤波），Sum（求和滤波），Max�
 
 ---
 
+**示例：**
+```python
+from gma import math
+import numpy as np
+
+np.random.seed(1992)
+Data = np.random.uniform(0, 100, (200, 200))
+
+GeF3 = math.Kernel.GeneralFilter(Data, KernelSize = 3)
+GeF9 = math.Kernel.GeneralFilter(Data, KernelSize = 9)
+```
+
+![](/math/GeneralFilter.svg)

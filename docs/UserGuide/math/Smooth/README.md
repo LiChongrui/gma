@@ -18,8 +18,7 @@ sidebar: false
 
 &emsp;Times = `int`。平滑次数。默认平滑 1 次。
 
-&emsp;Axis = `int` <Badge text="1.0.8 +"/> 。数据平滑使用的轴。默认（None）数据小于 3 维以第 1 个维度为轴，高于 3 维以倒数第 3 个维度为轴。
-
+&emsp;Axis = `int`。数据平滑使用的轴。
 ::: warning 注意
 
 类内 属性/方法 引用前请先初始化 `Smooth` 类！

@@ -40,3 +40,16 @@ float: 若配置为常数，则用此常数扩展。
 
 ---
 
+**示例：**
+```python
+from gma import math
+import numpy as np
+
+np.random.seed(1992)
+Data = np.random.uniform(0, 100, (200, 200))
+
+GF3 = math.Kernel.GaussFilter(Data, KernelSize = 3)
+GF9 = math.Kernel.GaussFilter(Data, KernelSize = 9)
+```
+
+![](/math/GaussFilter.svg)

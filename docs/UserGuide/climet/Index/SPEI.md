@@ -88,6 +88,7 @@ OUT.to_excel(r'.\SPEI.xlsx', index = False)
 
 > 绘图代码示例：
 ```python
+from gma import osf
 import matplotlib.pyplot as plt
 PAR = {'font.sans-serif': 'Times New Roman',
        'axes.unicode_minus': False,
@@ -98,7 +99,7 @@ plt.rcParams.update(PAR)
 S = [1,3,6,12,24,60]
 ## 准备横坐标（年份）的标签
 X = range(len(PRE))
-Date = gma.osf.DateSeries('198101','202101',DateDelta='M', Format='%Y%m').strftime('%Y-%m')
+Date = osf.DateSeries('198101','202101',DateDelta='M', Format='%Y%m').strftime('%Y-%m')
 
 ## 循环绘制 6 个尺度的 SPEI 结果
 plt.figure(figsize = (18, 14), dpi = 300)
@@ -129,8 +130,8 @@ plt.show()
 import numpy as np
 from gma import io
 # 读取数据集
-PRESet = gma.Open('PRE_Luoyang_1981-2020.tif')
-ET0Set = gma.Open('ET0_Luoyang_1981-2020.tif')
+PRESet = io.ReadRaster('PRE_Luoyang_1981-2020.tif')
+ET0Set = io.ReadRaster('ET0_Luoyang_1981-2020.tif')
 PRE = PRESet.ToArray()
 ET0 = ET0Set.ToArray()
 # 读取的数据为三维数据（波段，行，列），第一维为时间序列（月数据）。因此按照轴 0 来计算

@@ -42,7 +42,7 @@ VINoData， LSTNoData 的区域在输出栅格中都将被改为 OutNoData。
 
 **示例：**
 ```python
-import gma
+from gma import rsvi
 ```
 
 *基于数组类（1 维或多维）*
@@ -50,14 +50,10 @@ import gma
 ```python
 NDVI = [0.5251, 0.5092, 0.4618, 0.4304, 0.4494, 0.4544, 0.4982, 0.6308, 0.5271, 0.4489]
 LST = [302.72, 302.98, 303.64, 304.68, 303.7 , 302.94, 302.78, 300.64, 301.98, 302.12]
-gma.rsvi.TVDI(NDVI, LST)
+rsvi.TVDI(NDVI, LST)
 ```
-> \>>> (array([ 1.93649901,  1.79681104,  1.2003987 ,  2.40119038,  0.79481429,<br>
-> 　　　　　　-1.04221242,  0.37934697, -2.2399279 , -1.1514285 , -3.38829638]),<br>
-> 　　 array([0.435, 0.445, 0.455, 0.465, 0.495, 0.505, 0.525, 0.635]),<br>　　 array([304.68, 302.12, 302.94, 303.64, 302.78, 302.98, 301.98, 300.64]),<br>
-> 　　 array([304.68, 303.7 , 302.94, 303.64, 302.78, 302.98, 302.72, 300.64]),<br>
-> 　　 [-14.890410958904331, 310.0907534246576],<br>
-> 　　 [-16.835616438356006, 311.3436301369862])
+> \>>> TVDI(TVDI=array([ 1.93649901,  1.79681104,  1.2003987 ,  2.40119038,  0.79481429,
+       -1.04221242,  0.37934697, -2.2399279 , -1.1514285 , -3.38829638]), <br>　　XVI=array([0.435, 0.445, 0.455, 0.465, 0.495, 0.505, 0.525, 0.635]), <br>　　WetLST=array([304.68, 302.12, 302.94, 303.64, 302.78, 302.98, 301.98, 300.64]), <br>　　DryLST=array([304.68, 303.7 , 302.94, 303.64, 302.78, 302.98, 302.72, 300.64]), <br>　　WetA=-14.890410958904331, <br>　　WetB=310.0907534246576, <br>　　DryA=-16.835616438356006, <br>　　DryB=311.3436301369862)
 
 ::: danger 警告
 
@@ -68,9 +64,10 @@ gma.rsvi.TVDI(NDVI, LST)
 
 *基于栅格（MODIS VI/LST）*
 ```python
+from gma import io
 # 读取栅格文件至数据集
-NDVISet = gma.Open("MOD13Q1_LY_NDVI_20220407.tif")
-LSTSet = gma.Open("MOD11A2_LY_LST_20220407.tif")
+NDVISet = io.ReadRater("MOD13Q1_LY_NDVI_20220407.tif")
+LSTSet = io.ReadRater("MOD11A2_LY_LST_20220407.tif")
 
 # 提取数据集的仿射变换和坐标系
 Proj = NDVISet.Projection
@@ -83,11 +80,11 @@ LSTNoData = LSTSet.NoData
 NDVI = NDVISet.ToArray() * 1e-4 
 LST = LSTSet.ToArray() * 0.02
 
-TVDI = gma.rsvi.TVDI(NDVI, LST, VINoData = VINoData, LSTNoData = LSTNoData, OutNoData = VINoData)
+TVDI = rsvi.TVDI(NDVI, LST, VINoData = VINoData, LSTNoData = LSTNoData, OutNoData = VINoData)
 
 # 将结果保存为 GTiff 格式
-gma.rsvi.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif', 
-                     TVDI[0], 
+io.SaveArrayAsRaster(TVDI.TVDI, 
+                     'MODIS_LY_TVDI_20220407.tif', 
                      Projection = Proj,
                      Transform = Geot,
                      DataType = 'Float32',
@@ -101,6 +98,7 @@ gma.rsvi.WriteRaster(r'..\0.1 预处理\MODIS_LY_TVDI_20220407.tif',
 
 ``` python 
 import matplotlib.pyplot as plt
+from gma import math
 # 配置参数
 PAR = {'font.sans-serif': 'Times New Roman',
        'axes.unicode_minus': False,
@@ -114,7 +112,7 @@ plt.scatter(TVDI[1], TVDI[3], c = 'pink', s = 10)
 DryP = TVDI[5]
 PolyfitD = TVDI[1] * DryP[0] + DryP[1]
 plt.plot(TVDI[1], PolyfitD, c = 'red')
-DryR2 = gma.math.Evaluation(PolyfitD, TVDI[3]).R2()
+DryR2 = math.Evaluation(PolyfitD, TVDI[3]).R2()
 DryInfo = f'Dry: y = {"{:.4f}".format(DryP[0])} * VI + {"{:.4f}".format(DryP[1])}\n{" " * 8}$R^2$ = {DryR2}'
 plt.text(0.58, 305, DryInfo, c = 'red', linespacing = 1.5)
 
@@ -123,7 +121,7 @@ plt.scatter(TVDI[1], TVDI[2], c = 'lightblue', s = 10)
 WetP = TVDI[4]
 PolyfitW = TVDI[1] * WetP[0] + WetP[1]
 plt.plot(TVDI[1], PolyfitW, c = 'blue')
-WetR2 = gma.math.Evaluation(PolyfitW, TVDI[2]).R2()
+WetR2 = math.Evaluation.Evaluation(PolyfitW, TVDI[2]).R2()
 WetInfo = f'Wet: y = {"{:.4f}".format(WetP[0])} * VI + {"{:.4f}".format(WetP[1])}\n{" " * 8}$R^2$ = {WetR2}'
 plt.text(0.58, 291, WetInfo, c = 'blue', linespacing = 1.5)
 

@@ -4,11 +4,21 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.math.Evaluation().**RMSE**()
+## gma.math.Evaluation.**RMSE**(*Measure, Simulation, Axis = 0*)
 
 ---
 
 **功能：**【RMSE】。均方根误差。
+
+**参数：**
+
+&emsp;Measure：`list||array`。第一组数据。
+
+&emsp;Simulation：`list||array`。第二组数据。
+
+**可选参数：** 
+
+&emsp;Axis = `int` 。数据评估使用的轴。
 
 **返回：**`float||array`。
 
@@ -17,7 +27,7 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
+from gma import math
 ```
 
 *序列（1 维）*
@@ -25,8 +35,7 @@ import gma
 ```python
 MEA = [15.1, 33, 88, 158.4]
 SIM = [0.8, 1.7, 7.8, 7.4]
-EVA = gma.math.Evaluation(MEA, SIM)
-EVA.RMSE()
+EVA = math.Evaluation.RMSE(MEA, SIM)
 ```
 > \>>> 87.20266624364189
 
@@ -43,23 +52,12 @@ SIM = [[ 0.22857143,  0.22911051,  0.1908772 ,  0.1908772 ],
        [ 0.03658536,  0.03522885,  0.03478987,  0.03478987],
        [-0.10225949, -0.07193749, -0.05467691, -0.05467691]]
 
-## 按照所有数据计算
-EVA = gma.math.Evaluation(MEA, SIM, Axis = None)
-print('"Axis = None":', EVA.RMSE())
 ## 按照第一个维度计算
-EVA0 = gma.math.Evaluation(MEA, SIM, Axis = 0)
-print('"Axis = 0":', EVA0.RMSE())
+EVA0 = math.Evaluation.RMSE(MEA, SIM, Axis = 0)
+print('"Axis = 0":', EVA0)
 ## 按照第二个维度计算
-EVA1 = gma.math.Evaluation(MEA, SIM, Axis = 1)
-print('"Axis = 1":', EVA1.RMSE())
+EVA1 = gma.math.Evaluation.RMSE(MEA, SIM, Axis = 1)
+print('"Axis = 1":', EVA1)
 ```
-
-> \>>> "Axis = None": 0.23255980980507654<br>
 > \>>> "Axis = 0": [0.25416241 0.25254128 0.20971485 0.20971485]<br>
 > \>>> "Axis = 1": [0.15899376 0.10127746 0.39396406 0.13552503 0.2476075 ]
-
-::: tip 提示
-
-基于栅格的运算请参考 [CORR](CORR.html)。
-
-:::

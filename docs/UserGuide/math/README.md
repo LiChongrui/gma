@@ -8,8 +8,6 @@ sidebar: false
 
 &emsp;&emsp; 目前主要包括 6 大部分共计 XX 个函数 ，主要分类为：
 
-![](/climet/climet.png)
-
  **导入此模块**
 
 ```python
