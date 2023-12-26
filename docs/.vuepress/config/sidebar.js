@@ -219,46 +219,45 @@ module.exports = {
             title: '栅格处理-1.x',
             collapsable: false,
             children: [
-                'AddColorTable',
-                'BandDecomposition',
-                'BandSynthesis',
-                'ChangeDataType',
-                'Clip',
-                'Deformation',
-                'GenerateOVR',
-                'Mosaic',
-                'MultiSDSToTif',
-                'OrthophotoCorrection',
-                'Reproject',
-                'Resample',
-                'SplitImage',
-                'ToOtherFormat',
-                'ToVector',
+                {
+                    title: 'Basic',
+                    collapsable: false,
+                    children: [
+                        'Basic/AddColorTable',
+                        'Basic/BandSynthesis',
+                        'Basic/ChangeDataType',
+                        'Basic/Clip',
+                        'Basic/Deformation',
+                        'Basic/GenerateOVR',
+                        'Basic/Mosaic',
+                        'Basic/OrthophotoCorrection',
+                        'Basic/Reproject',
+                        'Basic/Resample',
+                        'Basic/ToOtherFormat',
+                    ]
+                },
+                {
+                    title: 'Decompose',
+                    collapsable: false,
+                    children: [
+                        'Decompose/BandDecomposition',
+                        'Decompose/SplitImage'
+                    ]
+                },
+                {
+                    title: 'Extraction',
+                    collapsable: false,
+                    children: [
+                        'Extraction/Isopleth',
+                        'Extraction/Reclassify',
+                        'Extraction/ToVector'
+                    ]
+                },
                 {
                     title: 'Fusion',
                     collapsable: false,
                     children: [
                         'Fusion/Pansharpen',
-                    ]
-                }
-            ]
-        }
-    ],
-
-    '/UserGuide/raa/': [
-        {
-            title: '栅格分析-1.x',
-            collapsable: false,
-            children: [
-                {
-                    title: 'DEM',
-                    collapsable: false,
-                    children: [
-                        'DEM/Aspect',
-                        'DEM/HillShade',
-                        'DEM/Roughness',
-                        'DEM/Slope',
-                        'DEM/TPI',
                     ]
                 },
                 {
@@ -271,43 +270,70 @@ module.exports = {
                     ]
                 }, 
                 {
-                    title: 'Extraction',
+                    title: 'Multidim',
                     collapsable: false,
                     children: [
-                        'Extraction/Isopleth',
-                        'Extraction/Reclassify',
+                        'Multidim/ToNORRaster',
                     ]
-                }, 
+                },
+                {
+                    title: 'Surface',
+                    collapsable: false,
+                    children: [
+                        'Surface/Aspect',
+                        'Surface/HillShade',
+                        'Surface/Roughness',
+                        'Surface/Slope',
+                        'Surface/TPI',
+                    ]
+                }
             ]
         }
     ],
-
     '/UserGuide/vesp/': [
         {
             title: '矢量处理-1.x',
             collapsable: false,
             children: [
-                'ChangeGeometryType',
-                'Check',
-                'Clip',
-                'Erase',
-                'FixGeometry',
-                'Intersection',
-                'Reproject',
-                'Simplify',
-                'Split',
-                'SymDifference',
-                'ToOtherFormat',
-                'ToRaster',
-                'Union',
-                'Update',
+                {
+                    title: 'Basic',
+                    collapsable: false,
+                    children: [
+                        'Basic/ChangeGeometryType',
+                        'Basic/Check',
+                        'Basic/FixGeometry',
+                        'Basic/Reproject',
+                        'Basic/Simplify',
+                        'Basic/ToOtherFormat',
+                    ]
+                },
+                {
+                    title: 'Extraction',
+                    collapsable: false,
+                    children: [
+                        'Extraction/Split',
+                        'Extraction/ToRaster',
+                    ]
+                },
+                {
+                    title: 'Geometry',
+                    collapsable: false,
+                    children: [
+                        'Geometry/Clip',
+                        'Geometry/Erase',
+                        'Geometry/Intersection',
+                        'Geometry/SymDifference',
+                        'Geometry/Union',
+                        'Geometry/Update',
+                    ]
+                },
             ]
         }
     ],
 
     '/UserGuide/map/': [
         {
-            title: '地图工具-1.x',
+            title: '地图工具',
             collapsable: false,
             children: [
                 {
@@ -328,29 +354,11 @@ module.exports = {
                     ]
                 }, 
                 {
-                    title: 'SpatRef',
-                    collapsable: false,
-                    children: [
-                        'rcs/SpatRef/',
-                        'rcs/SpatRef/Export',
-                    ]
-                }, 
-                {
                     title: 'plot',
                     collapsable: false,
                     children: [
                         'plot/GetSystemFonts',
                         'plot/GetPreDefinedCMaps',
-                    ]
-                }, 
-                {
-                    title: 'rcs',
-                    collapsable: false,
-                    children: [
-                        'rcs/AlbersEqualArea',
-                        'rcs/CustomGCS',
-                        'rcs/Mollweide',
-                        'rcs/Robinson',
                     ]
                 }, 
                 {
@@ -365,9 +373,9 @@ module.exports = {
         }
     ],
 
-    '/UserGuide/config/': [
+    '/UserGuide/gft/': [
         {
-            title: '高级配置-1.x',
+            title: '地理驱动',
             collapsable: false,
             children: [
                 'GetRACreationOption',
@@ -398,6 +406,25 @@ module.exports = {
                 'SaveArrayToRaster',
                 'TranslateFeatureToDataSet',
                 'TranslateLayerToDataSet',
+            ]
+        },
+    ],
+
+    '/UserGuide/crs/': [
+        {
+            title: '空间参考',
+            collapsable: false,
+            children: [
+                'AngularUnits',
+                'Datum',
+                'Ellips',
+                'Ellipsoid',
+                'GeogCS',
+                'LinearUnits',
+                'PRIMEMs',
+                'ProjCS',
+                'ProjMethod',
+                'SpatRef'
             ]
         },
     ],
