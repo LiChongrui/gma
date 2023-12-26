@@ -4,7 +4,7 @@ date: 2022-10-20
 sidebar: false
 ---
 
-## gma.smc.**CALArea**(*Points, Projection = 'WGS84', Unit = 'square meter'*)<Badge text="1.1.0 +"/>
+## gma.smc.Query.**CALArea**(*Points, Projection = 'WGS84', Unit = 'square meter'*)<Badge text="1.1.0 +"/>
 ---
 
 **功能：** 【计算面积】。计算输入多点组成多边形的面积。
@@ -37,13 +37,13 @@ square meter（平方米），square millimeter（平方毫米），square centi
 
 **示例：**
 ```python
-import gma
+from gma import smc
 ```
 *计算三个顶点的多边形面积*
 
 ```python
 Points = [(130.1, 45.2), (131.5, 40.2), (131.5, 45.2)]
-gma.smc.CALArea(Points)
+smc.Query.CALArea(Points)
 ```
 > \>>> 31761406920.13275
 
@@ -54,13 +54,13 @@ Points = [(1528762.07788357, 5089353.92316552),
           (1736214.64875059, 4552113.0446395), 
           (1638653.77538803, 5108509.49658331)]
 # 输入坐标点的坐标系为 EPSG:32650（WGS 84 / UTM zone 50N）
-gma.smc.CALArea(Points, Projection = 'EPSG:32650')
+smc.Query.CALArea(Points, Projection = 'EPSG:32650')
 ```
 > \>>> 31506092530.98242
 
 *获得其他面积单位的结果*
 ```python
 # 以平方千米 square kilometer 为单位
-gma.smc.CALArea(Points, Projection = 'EPSG:32650', Unit = 'square kilometer')
+smc.Query.CALArea(Points, Projection = 'EPSG:32650', Unit = 'square kilometer')
 ```
 > \>>> 31506.092530982423

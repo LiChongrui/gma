@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.smc.**CALDistance**(*Points, Projection = 'WGS84', Unit = 'meter'*)<Badge text="1.0.5 +"/>
+## gma.smc.Query.**CALDistance**(*Points, Projection = 'WGS84', Unit = 'meter'*)<Badge text="1.0.5 +"/>
 ---
 
 **功能：** 【计算距离】。计算输入两点（或多点）之间的距离。
@@ -12,12 +12,6 @@ sidebar: false
 **参数：**
 
 &emsp;Points：`list||tuple||array` 。需要计算距离的两点（或多点）的 X（经度），Y（纬度）坐标。
-
-::: warning 注意
-
-自 1.1.0 版本开始 输入坐标方式变更为 （经度，纬度）！以符合大多数人的使用习惯！
-
-:::
 
 ::: tip 示例
 
@@ -43,12 +37,12 @@ decimeter（分米），centimeter（厘米），millimeter（毫米），micron
 
 **示例：**
 ```python
-import gma
+from gma import smc
 ```
 *计算两点之间的距离*
 ```python
 Points =  [(130.1, 45.2), (131.5, 40.2)]
-gma.smc.CALDistance(Points)
+smc.Query.CALDistance(Points)
 ```
 > \>>> 567329.2892521989
 
@@ -57,13 +51,13 @@ gma.smc.CALDistance(Points)
 ```python
 Points = [(5089353.92316552, 1528762.07788357), (4552113.0446395, 1736214.64875059)]
 # 输入坐标点的坐标系为 EPSG:32650（WGS 84 / UTM zone 50N）
-gma.smc.CALDistance(Points, Projection = 'EPSG:32650')
+smc.Query.CALDistance(Points, Projection = 'EPSG:32650')
 ```
 > \>>> 575903.0567020334
 
 *获得其他距离单位的结果*
 ```python
 # 以千米 kilometer 为单位
-gma.smc.CALDistance(Points, Projection = 'EPSG:32650', Unit = 'kilometer')
+smc.Query.CALDistance(Points, Projection = 'EPSG:32650', Unit = 'kilometer')
 ```
 > \>>> 575.9030567020334

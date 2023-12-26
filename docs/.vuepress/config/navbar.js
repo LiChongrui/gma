@@ -38,7 +38,7 @@ module.exports = [
                     {text: '遥感指数-rsvi', link: '/UserGuide/rsvi/EVI'},
                     {text: '数学运算-math', link: '/UserGuide/math/'},
                     {text: '系统交互-osf', link: '/UserGuide/osf/DateSeries'},
-                    {text: '空间杂项-smc', link: '/UserGuide/smc/CALArea'},
+                    {text: '空间杂项-smc', link: '/UserGuide/smc/'},
                     {text: '栅格处理-rasp', link: '/UserGuide/rasp/AddColorTable'},
                     {text: '栅格分析-raa', link: '/UserGuide/raa/DEM/Aspect'},
                     {text: '矢量处理-vesp', link: '/UserGuide/vesp/ChangeGeometryType'},

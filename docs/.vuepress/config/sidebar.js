@@ -166,36 +166,30 @@ module.exports = {
 
     '/UserGuide/osf/': [
         {
-            title: '系统交互-1.x',
+            title: '系统交互',
             collapsable: false,
             children: [
                 'DateSeries',
-                'GetPath',
+                'FindPath',
                 'MultiThreading',
                 'UnZip',
-                'Zip',
-                {
-                    title: 'Rename',
-                    collapsable: false,
-                    children: [
-                        'Rename/',
-                        'Rename/Intercept',
-                        'Rename/Modify',
-                        'Rename/Replace',
-                    ]
-                }
+                'Zip'
             ]
         }
     ],
 
     '/UserGuide/smc/': [
         {
-            title: '空间杂项-1.x',
+            title: '空间杂项',
             collapsable: false,
             children: [
-                'CALArea',
-                'CALDistance',
-                'TRANCoordinate',
+                {
+                    title: 'Extraction',
+                    collapsable: false,
+                    children: [
+                        'Extraction/ExtractValues'
+                    ]
+                },
                 {
                     title: 'Interpolate',
                     collapsable: false,
@@ -205,6 +199,15 @@ module.exports = {
                         'Interpolate/Kriging',
                         'Interpolate/NaturalNeighbor',
                         'Interpolate/Trend',
+                    ]
+                },
+                {
+                    title: 'Query',
+                    collapsable: false,
+                    children: [
+                        'Query/CALArea',
+                        'Query/CALDistance',
+                        'Query/TRANCoordinate'
                     ]
                 }
             ]

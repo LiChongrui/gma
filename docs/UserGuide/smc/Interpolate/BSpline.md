@@ -45,7 +45,7 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 
 
 ```python
-import gma
+from gma import smc
 import pandas as pd
 
 Data = pd.read_excel("Interpolate.xlsx")
@@ -53,13 +53,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值
-BSD  = gma.smc.Interpolate.BSpline(Points, Values, Resolution = 0.05, Weights = 0.1)
-
-gma.rasp.WriteRaster(r'.\gma_BSpline.tif',
-                     BSD.Data,
-                     Projection = 'WGS84',
-                     Transform = BSD.Transform, 
-                     DataType = 'Float32')
+BSD  = smc.Interpolate.BSpline(Points, Values, Resolution = 0.05, Weights = 0.1)
 ```
 
 *不同 Weights 插值结果（重分类后）对比：*

@@ -48,7 +48,7 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 **示例 *（下载 [示例数据](/smc/Interpolate.xlsx)）*：**
 
 ```python
-import gma
+from gma import smc
 import pandas as pd
 
 Data = pd.read_excel("Interpolate.xlsx")
@@ -56,14 +56,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值
-NND = gma.smc.Interpolate.NaturalNeighbor(Points, Values, Resolution = 0.05)
-
-gma.rasp.WriteRaster(r'.\gma_NaturalNeighbor.tif',
-                     NND.Data,
-                     Projection = 'WGS84',
-                     Transform = NND.Transform, 
-                     NoData = np.nan,
-                     DataType = 'Float32')
+NND = smc.Interpolate.NaturalNeighbor(Points, Values, Resolution = 0.05)
 ```
 
 *与 ArcGIS NaturalNeighbor 插值结果（重分类后）对比：*

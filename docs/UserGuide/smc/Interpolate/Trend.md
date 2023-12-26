@@ -37,7 +37,7 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 **示例 *（下载 [示例数据](/smc/Interpolate.xlsx)）*：**
 
 ```python
-import gma
+from gma import smc
 import pandas as pd
 
 Data = pd.read_excel("Interpolate.xlsx")
@@ -45,13 +45,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值（2阶多项式）
-TrendD  = gma.smc.Interpolate.Trend(Points, Values, Resolution = 0.05, Order = 2)
-
-gma.rasp.WriteRaster(r'.\gma_Trend_2.tif',
-                     TrendD.Data,
-                     Projection = 'WGS84',
-                     Transform = TrendD.Transform, 
-                     DataType = 'Float32')
+TrendD  = smc.Interpolate.Trend(Points, Values, Resolution = 0.05, Order = 2)
 ```
 
 *与 ArcGIS Trend 插值结果（重分类后）对比：*

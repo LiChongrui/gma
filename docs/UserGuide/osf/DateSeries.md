@@ -57,61 +57,61 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
+from gma import osf
 ```
 
 *按天生成*
 ```python
 # 按照 100 天的间隔生成日期序列
-gma.osf.DateSeries('20200101', '20210101', DateDelta = '100D', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20210101', DateDelta = '100D', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-01-01', '2020-04-10', '2020-07-19', '2020-10-27'], dtype='datetime64[ns]', freq='100D')
 
 *按月生成*
 ```python
 # 按照 4 个月的间隔生成日期序列
-gma.osf.DateSeries('20200101', '20210101', DateDelta = '4M', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20210101', DateDelta = '4M', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-01-31', '2020-05-31', '2020-09-30'], dtype='datetime64[ns]', freq='4M')
 
 *按年生成*
 ```python
 # 抽取每 1 年最后一天生成日期序列
-gma.osf.DateSeries('20200101', '20210101', DateDelta = 'Y', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20210101', DateDelta = 'Y', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-12-31'], dtype='datetime64[ns]', freq='A-DEC')
 
 ```python
 # 抽取每 1 年某月最后一天生成日期序列（按照每年 2 月抽取）（A-月份名缩写）
-gma.osf.DateSeries('20200101', '20210101', DateDelta = 'A-FEB', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20210101', DateDelta = 'A-FEB', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-02-29'], dtype='datetime64[ns]', freq='A-FEB')
 
 *按小时生成*
 ```python
 # 按照 8000 小时的间隔生成日期序列
-gma.osf.DateSeries('20200101', '20210101', DateDelta = '8000H', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20210101', DateDelta = '8000H', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-01-01 00:00:00', '2020-11-29 08:00:00'], dtype='datetime64[ns]', freq='8000H')
 
 *按分钟生成*
 ```python
 # 按照 10000 分钟的间隔生成日期序列
-gma.osf.DateSeries('20200101', '20200111', DateDelta = '10000T', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20200111', DateDelta = '10000T', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-01-01 00:00:00', '2020-01-07 22:40:00'], dtype='datetime64[ns]', freq='10000T')
 
 *按秒生成*
 ```python
 # 按照 10000 秒的间隔生成日期序列
-gma.osf.DateSeries('20200101000000', '20200101040000', DateDelta = '10000S', Format = '%Y%m%d%H%M%S')
+osf.DateSeries('20200101000000', '20200101040000', DateDelta = '10000S', Format = '%Y%m%d%H%M%S')
 ```
 > \>>> DatetimeIndex(['2020-01-01 00:00:00', '2020-01-01 02:46:40'], dtype='datetime64[ns]', freq='10000S')
 
 *按星期生成*
 ```python
 # 提取每周的第一天（星期天）（W-星期名的缩写）
-gma.osf.DateSeries('20200101', '20200121', DateDelta = 'W', Format = '%Y%m%d')
+osf.DateSeries('20200101', '20200121', DateDelta = 'W', Format = '%Y%m%d')
 ```
 > \>>> DatetimeIndex(['2020-01-05', '2020-01-12', '2020-01-19'], dtype='datetime64[ns]', freq='W-SUN')
 
