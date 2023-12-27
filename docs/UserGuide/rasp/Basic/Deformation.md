@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**Deformation**(*InFiles, OutFile, CutLineFile = None, ResampleMethod = 0, Resolution = None, OutProjection = 'WGS84',  InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**Deformation**(*InFiles, OutFile, CutLineFile = None, ResampleMethod = 0, Resolution = None, OutProjection = 'WGS84',  InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -38,3 +38,18 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+CutLineFile = 'Chanhe.shp'
+OutFile = 'ESA_LC2020_Luoyang_Chanhe.tif'
+
+# 执行裁剪、重采样、重投影过程
+rasp.Basic.Deformation(InFile, OutFile, 
+                       CutLineFile = CutLineFile, 
+                       ResampleMethod = 'CubicSpline', 
+                       OutProjection = 3857)
+```

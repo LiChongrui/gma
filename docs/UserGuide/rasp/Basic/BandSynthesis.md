@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**BandSynthesis**(*InFiles, OutFile, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**BandSynthesis**(*InFiles, OutFile, OutFormat = 'GTiff'*)
 ---
 
 **功能：**【文件合并】。将单波段文件合成多波段文件。
@@ -26,16 +26,13 @@ sidebar: false
 
 ---
 
-**示例：*****（以 BandDecomposition 分解的 12 波段数据为例）***
+**示例：**
 
 ```python
-import gma
-OutFile = r'.\ET0_China_ANUSPLIN_2020_BandSynthesis.tif'
+from gma import rasp, osf
+OutFile = 'BandSynthesis.tif'
+
 # 获取需要合并文件的路径列表
-## 为了保证顺序，在读取完所有12个波段的路径后，根据文件名长度做一个排序
-InFiles = sorted(gma.osf.GetPath(OutPath), key = len)
-gma.rasp.BandSynthesis(InFiles, OutFile)
-# 查看合成文件的波段数
-gma.Open(OutFile).Bands
+InFiles = osf.FindPath('TifDir', EXT = '.tif')
+rasp.Basic.BandSynthesis(InFiles, OutFile)
 ```
-> \>>> 12

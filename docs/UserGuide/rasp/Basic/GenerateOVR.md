@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**GenerateOVR**(*InFile, Force = False, MINSize = 10, Compress = 'DEFLATE', Resample = 'NEAREST', BlockSize = 128*)
+## gma.rasp.Basic.**GenerateOVR**(*InFile, Force = False, MINSize = 10, Compress = 'DEFLATE', Resample = 'NEAREST', BlockSize = 128*)
 
 ---
 
@@ -43,62 +43,16 @@ AVERAGE, AVERAGE_MAGPHASE, RMS, BILINEAR, CUBIC, CUBICSPLINE, GAUSS, LANCZOS, MO
 **示例：**
 
 ```python
-import gma
-InFile = 'NASA_SRTM_DEM_China_1000m.tif'
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+
+# 按默认配置生成金字塔
+rasp.Basic.GenerateOVR(InFile)
+
+# 为其他格式强制生成 .ovr 金字塔
+rasp.Basic.GenerateOVR('ESA_LC2020_Luoyang.img', Force = True)
 ```
 
-*按默认配置生成金字塔*
-
-```python
-gma.rasp.GenerateOVR(InFile)
-## 查看生成的金字塔信息
-gma.Open(InFile).Info['bands'][0]['overviews']
-```
-> \>>>[{'size': [3427, 2629]},<br>
- 　　{'size': [1714, 1315]},<br>
- 　　{'size': [857, 658]},<br>
- 　　{'size': [429, 329]},<br>
- 　　{'size': [215, 165]}]
-
-*为其他格式强制生成 .ovr 金字塔*
-
-```python
-gma.rasp.GenerateOVR('NASA_SRTM_DEM_China_1000m.img', Force = True)
-## 生成的金字塔和思路 GTiff 文件一致
-```
-
-*限定只为大于 20MB 的栅格生成金字塔*
-
-```python
-gma.rasp.GenerateOVR(InFile, MINSize = 20)
-## 若文件小于 设定的 MINSize 值，则会自动跳过成成过程
-```
-
-*修改金字塔文件的压缩方式*
-
-```python
-gma.rasp.GenerateOVR(InFile, Compress = 'LZW')
-## 不同压缩方式的生成的金字塔文件大小不同，生成速率不同。
-```
-
-*修改金字塔文件的重采样方法*
-
-```python
-gma.rasp.GenerateOVR(InFile, Resample = 'CUBIC')
-## 不同重采样方式的金字塔文件值不同，生成速率不同。
-```
-
-*修改金字塔文件生成过程的块大小（影响金字塔级别）*
-
-```python
-gma.rasp.GenerateOVR(InFile, BlockSize = 256)
-## 不同的块大小对金字塔级别有影响。
-gma.Open(InFile).Info['bands'][0]['overviews']
-## 与默认生成方式相比（生成了 5 级金字塔），BlockSize 为 256 时生成金字塔少一级（ 生成了 4 级金字塔）。
-```
-> \>>>[{'size': [3427, 2629]},<br>
- 　　{'size': [1714, 1315]},<br>
- 　　{'size': [857, 658]},<br>
- 　　{'size': [429, 329]}]
 
 

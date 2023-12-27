@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**Resample**(*InFile, OutFile, Resolution, Method = 2, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**Resample**(*InFile, OutFile, Resolution, Method = 2, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -36,3 +36,18 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'Resample.tif'
+
+# 重采样到 0.01°
+rasp.Basic.Resample(InFile, OutFile, Resolution = 0.01)
+```
+
+> 原始数据与重采样结果：
+
+![](/rasp/Resample.png)

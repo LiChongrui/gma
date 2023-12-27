@@ -4,7 +4,7 @@ date: 2022-12-01
 sidebar: false
 ---
 
-## gma.raa.Extraction.**Reclassify**(*InFile, OutFile, Remap, Method = 'Range', OutFormat = 'GTiff'*)<Badge text="1.1.1 +"/>
+## gma.rasp.Extraction.**Reclassify**(*InFile, OutFile, Remap, Method = 'Range', OutFormat = 'GTiff'*)<Badge text="1.1.1 +"/>
 
 ---
 
@@ -58,3 +58,21 @@ Remap = [[1000, 1],
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+OutFile = 'Reclassify.tif'
+Remap = [[0, 0],
+         [500, 1],
+         [1000, 2],
+         [1500, 3],
+         [2000, 5],
+        ]
+rasp.Extraction.Reclassify(inres.WorldDataSet.DEM, OutFile, Remap = Remap)
+```
+
+> 原始DEM与重分类结果：
+
+![](/rasp/Reclassify.png)

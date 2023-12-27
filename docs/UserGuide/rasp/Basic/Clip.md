@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**Clip**(*InFile, OutFile, CutLineFile, LayerID = 0, FeatureID = None, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**Clip**(*InFile, OutFile, CutLineFile, LayerID = 0, FeatureID = None, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -34,45 +34,18 @@ sidebar: false
 
 **示例：**
 
->**栅格数据：** ESA 2020年陆表覆盖数据<br>
->**矢量数据：** 河南省18个地级行政单位矢量边界
-
 ```python
-import gma
-InFile = r'.\0.1原始影像\ESA_Henan_2020.tif'
-CutLineFile = r'.\0.2原始矢量\Henan_City.shp'
-```
+from gma import rasp
 
-*按矢量全范围裁剪*
-```python
+InFile = 'ESA_LC2020_Luoyang.tif'
+CutLineFile = 'Chanhe.shp'
+OutFile = 'ESA_LC2020_Luoyang_Chanhe.tif'
+
 # 定义裁剪结果路径并执行裁剪，并为边界外数据分配无数据值
-OutFile = r'.\Clip\ESA_Henan_2020_Clip.tif'
-gma.rasp.Clip(InFile, OutFile, CutLineFile, OutNoData = 0)
+rasp.Basic.Clip(InFile, OutFile, CutLineFile, OutNoData = 0)
 ```
 
-*按矢量中某个要素裁剪*
-
-```python
-# 获取矢量属性表，确定要素 ID
-VEDataSet = gma.Open(CutLineFile)
-LY = VEDataSet.GetLayer(0)
-ATable = LY.GetAttributeTable()
-# 查看前三个要素
-print(ATable[:3])
-```
-|    |   省代码 | 省     |   市代码 | 市       | 类型     |
-|---:|---------:|:-------|---------:|:---------|:---------|
-|  0 |   410000 | 河南省 |   410100 | 郑州市   | 地级市   |
-|  1 |   410000 | 河南省 |   410200 | 开封市   | 地级市   |
-|  2 |   410000 | 河南省 |   410300 | 洛阳市   | 地级市   |
-
-&emsp;&emsp;我们裁剪河南省洛阳市，其 FeatureID 为 2，配置参数如下：
-
-```python
-OutFileFID = r'.\Clip\ESA_Henan_2020_Clip_FID2.tif'
-gma.rasp.Clip(InFile, OutFileFID, CutLineFile, FeatureID = [2], OutNoData = 0)
-```
 > 原始数据与裁剪结果：
 
-![](/rasp/Clip.webp)
+![](/rasp/Clip.png)
 

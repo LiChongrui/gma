@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.raa.DEM.**Slope**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1, Scale = 1.0, UseDegree = True, ZevenbergenThorne = False*)<Badge text="1.0.7 +"/>
+## gma.rasp.Surface.**Slope**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1, Scale = 1.0, UseDegree = True, ZevenbergenThorne = False*)
 
 ---
 
@@ -32,3 +32,17 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'Slope.tif'
+
+rasp.Surface.Slope(InFile, OutFile, Scale = 111120, OutFormat = 'GTiff')
+```
+
+> 原始DEM与坡度结果：
+
+![](/rasp/Slope.png)

@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.raa.DEM.**HillShade**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1, ZFactor = 1.0, Scale = 1.0, Azimuth = 315.0, Altitude = 45.0, Combined = False, ZevenbergenThorne = False*)<Badge text="1.0.7 +"/>
+## gma.rasp.Surface.**HillShade**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1, ZFactor = 1.0, Scale = 1.0, Azimuth = 315.0, Altitude = 45.0, Combined = False, ZevenbergenThorne = False*)
 
 ---
 
@@ -38,3 +38,17 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'HillShade.tif'
+
+rasp.Surface.HillShade(InFile, OutFile, OutFormat = 'GTiff')
+```
+
+> 原始DEM与山体阴影结果：
+
+![](/rasp/HillShade.png)

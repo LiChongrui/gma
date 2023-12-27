@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.raa.DEM.**TRI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)<Badge text="1.0.7 +"/>
+## gma.rasp.Surface.**TRI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)
 
 ---
 
@@ -25,4 +25,17 @@ sidebar: false
 &emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
 
 ---
+**示例：**
 
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'TRI.tif'
+
+rasp.Surface.TRI(InFile, OutFile, OutFormat = 'GTiff')
+```
+
+> 原始DEM与地形耐用度指数结果：
+
+![](/rasp/TRI.png)

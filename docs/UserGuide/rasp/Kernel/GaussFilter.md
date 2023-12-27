@@ -4,7 +4,7 @@ date: 2022-07-10
 sidebar: false
 ---
 
-## gma.raa.Kernel.**GaussFilter**(*InFile, OutFile, KernelSize = 3, OutFormat = 'GTiff'*)<Badge text="1.0.11 +"/>
+## gma.rasp.Kernel.**GaussFilter**(*InFile, OutFile, KernelSize = 3, OutFormat = 'GTiff'*)<Badge text="1.0.11 +"/>
 
 ---
 
@@ -28,3 +28,16 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'GaussFilter.tif'
+rasp.Kernel.GaussFilter(InFile, OutFile, KernelSize = 3)
+```
+
+> 原始数据与普通滤波结果对比：
+
+![](/rasp/GaussFilter.png)

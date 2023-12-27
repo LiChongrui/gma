@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.raa.DEM.**Aspect**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1,  ZevenbergenThorne = False, Trigonometric = False, ZeroForFlat = False*)<Badge text="1.0.7 +"/>
+## gma.rasp.Surface.**Aspect**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1,  ZevenbergenThorne = False, Trigonometric = False, ZeroForFlat = False*)
 
 ---
 
@@ -38,3 +38,17 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'Aspect.tif'
+
+rasp.Surface.Aspect(InFile, OutFile, OutFormat = 'GTiff')
+```
+
+> 原始DEM与坡向结果：
+
+![](/rasp/Aspect.png)

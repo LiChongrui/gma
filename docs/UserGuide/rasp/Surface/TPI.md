@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-##  gma.raa.DEM.**TPI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)<Badge text="1.0.7 +"/>
+##  gma.rasp.Surface.**TPI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)
 
 ---
 
@@ -25,3 +25,18 @@ sidebar: false
 &emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
 
 ---
+
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'TPI.tif'
+
+rasp.Surface.TPI(InFile, OutFile, OutFormat = 'GTiff')
+```
+
+> 原始DEM与地形位置指数结果：
+
+![](/rasp/TPI.png)

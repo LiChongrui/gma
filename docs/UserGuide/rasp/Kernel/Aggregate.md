@@ -4,7 +4,7 @@ date: 2022-07-10
 sidebar: false
 ---
 
-## gma.raa.Kernel.**Aggregate**(*InFile, OutFile, KernelSize = 3, Method = 'Max', OutFormat = 'GTiff'*)<Badge text="1.0.11 +"/>
+## gma.rasp.Kernel.**Aggregate**(*InFile, OutFile, KernelSize = 3, Method = 'Max', OutFormat = 'GTiff'*)
 
 ---
 
@@ -32,7 +32,22 @@ Mean（均值） ， Min（最小值），Sum（求和），Median（中值）�
 
 **相关函数：**
 
-&emsp;rasp.Resample
+&emsp;rasp.Basic.Resample
+
+&emsp;math.Kernel.Aggregate
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'Aggregate.tif'
+rasp.Kernel.Aggregate(InFile, OutFile, KernelSize = 3)
+```
+
+> 原始数据与聚合结果对比：
+
+![](/rasp/Aggregate.png)

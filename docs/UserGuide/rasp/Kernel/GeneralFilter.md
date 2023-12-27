@@ -4,7 +4,7 @@ date: 2022-07-10
 sidebar: false
 ---
 
-## gma.raa.Kernel.**GeneralFilter**(*InFile, OutFile, KernelSize = 3, Method = 'Median', OutFormat = 'GTiff'*)<Badge text="1.0.11 +"/>
+## gma.rasp.Kernel.**GeneralFilter**(*InFile, OutFile, KernelSize = 3, Method = 'Median', OutFormat = 'GTiff'*)
 
 ---
 
@@ -35,4 +35,18 @@ Mean（均值滤波），Min（最小值滤波），Sum（求和滤波），Max�
 &emsp;math.Kernel.GeneralFilter
 
 ---
+
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'GeneralFilter.tif'
+rasp.Kernel.GeneralFilter(InFile, OutFile, KernelSize = 3)
+```
+
+> 原始数据与高斯滤波结果对比：
+
+![](/rasp/GeneralFilter.png)
 

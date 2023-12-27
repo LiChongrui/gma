@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**OrthophotoCorrection**(*InFile, OutFile, DEM = None, Resample = 0, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**OrthophotoCorrection**(*InFile, OutFile, DEM = None, Resample = 0, OutFormat = 'GTiff'*)
 
 ---
 

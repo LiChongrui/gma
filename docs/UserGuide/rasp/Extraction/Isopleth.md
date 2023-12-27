@@ -4,7 +4,7 @@ date: 2022-09-26
 sidebar: false
 ---
 
-## gma.raa.Extraction.**Isopleth**(*InFile, OutFile, Band = 1, Interval = 50, Base = 0, OutFormat = 'ESRI Shapefile'*)<Badge text="1.0.13 +"/>
+## gma.rasp.Extraction.**Isopleth**(*InFile, OutFile, Band = 1, Interval = 50, Base = 0, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -28,3 +28,15 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+OutFile = 'Isopleth.shp'
+rasp.Extraction.Isopleth(inres.WorldDataSet.DEM, OutFile, Interval = 1000)
+```
+
+> 原始DEM与等值线：
+
+![](/rasp/Isopleth.png)

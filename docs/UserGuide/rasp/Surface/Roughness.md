@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.raa.DEM.**Roughness**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)<Badge text="1.0.7 +"/>
+## gma.rasp.Surface.**Roughness**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)
 
 ---
 
@@ -26,4 +26,18 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'DEM.tif'
+OutFile = 'Roughness.tif'
+
+rasp.Surface.Roughness(InFile, OutFile, OutFormat = 'GTiff')
+```
+
+> 原始DEM与粗糙度结果：
+
+![](/rasp/Roughness.png)
 

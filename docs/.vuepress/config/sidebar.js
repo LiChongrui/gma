@@ -12,14 +12,6 @@ module.exports = {
                 'Naming',
             ]
         },
-        {
-            title:'应用探索',
-            collapsable: false,
-            children: [
-                'RasterOperation',
-                'VectorOperation',
-            ]
-        },
     ],
 
     '/UserGuide/Instructions/': [
@@ -216,7 +208,7 @@ module.exports = {
 
     '/UserGuide/rasp/': [
         {
-            title: '栅格处理-1.x',
+            title: '栅格处理',
             collapsable: false,
             children: [
                 {
@@ -285,6 +277,7 @@ module.exports = {
                         'Surface/Roughness',
                         'Surface/Slope',
                         'Surface/TPI',
+                        'Surface/TRI',
                     ]
                 }
             ]

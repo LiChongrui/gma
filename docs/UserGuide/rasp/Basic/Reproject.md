@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**Reproject**(*InFile, OutFile, OutProjection, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**Reproject**(*InFile, OutFile, OutProjection, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -28,3 +28,22 @@ sidebar: false
 
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'Reproject_6931.tif'
+
+# 重投影到 WGS 84 / NSIDC EASE-Grid 2.0 North（EPSG:6931）
+rasp.Basic.Reproject(InFile, OutFile, 6931)
+```
+::: tip 提示
+InNoData：如果输入栅格已经定义或不含 NoData 值，则不需要配置 InNoData 值。<br>
+OutNoData：如果配置了此值，输入栅格 NoData 的区域将被修改为此值。
+:::
+
+> 原始数据与重投影结果：
+
+![](/rasp/Reproject.png)

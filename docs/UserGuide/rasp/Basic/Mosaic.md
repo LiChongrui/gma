@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**Mosaic**(*InFiles, OutFile, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**Mosaic**(*InFiles, OutFile, InNoData = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -29,10 +29,11 @@ sidebar: false
 **示例：**
 
 ```python
-import gma
-InFiles = ['ESA_WorldCover_10m_2020_v100_N33E111_Map_0_7000.tif',
-           'ESA_WorldCover_10m_2020_v100_N33E111_Map_7000_14000.tif']
-gma.rasp.Mosaic(InFiles, r'.\ESA_WorldCover_10m_2020_v100_N33E111_Map_Mosaic.tif')
+from gma import rasp
+
+InFiles = ['ESA_WorldCover_0.tif',
+           'ESA_WorldCover_1.tif']
+rasp.Basic.Mosaic(InFiles, 'ESA_WorldCover_Mosaic.tif')
 ```
 ::: tip 提示
 InNoData：如果输入栅格已经定义或不含 NoData 值，则不需要配置 InNoData 值。<br>
@@ -41,4 +42,4 @@ OutNoData：如果配置了此值，输入栅格 NoData 的区域将被修改为
 
 > 原始数据与镶嵌结果：
 
-![](/rasp/Mosaic.webp)
+![](/rasp/Mosaic.png)

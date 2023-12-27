@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**ToVector**(*InFile, OutVector, FieldName = 'Value', TranBand = 1, OutFormat = 'ESRI Shapefile'*)
+## gma.rasp.Extraction.**ToVector**(*InFile, OutVector, FieldName = 'Value', Band = 1, GeomType = 'Polygon', OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -20,15 +20,24 @@ sidebar: false
 
 &emsp;FieldName  = `str`。输出矢量字段的名称。默认为 Value。
 
-&emsp;TranBand  = `int`。要转换的波段。默认转换第一个波段（1）。
+&emsp;Band  = `int`。要转换的波段。默认转换第一个波段（1）。
+
+&emsp;GeomType = `str`。矢量几何类型。默认为多边形（'Polygon'）。
 
 &emsp;OutFormat   = `str`。输出矢量文件格式，默认为 ESRI Shapefile。其他格式详见 vesp.ToOtherFormat 函数。
 
-::: tip 提示
-
-不需要设置类型（点、线、面等），默认根据栅格数据自动确定类型。
-
-:::
-
 ---
 
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_TT.tif'
+OutFile = 'ToVector.shp'
+rasp.Extraction.ToVector(InFile, OutFile, GeomType = 'Polygon')
+```
+
+> 原始数据与转为矢量后数据对比：
+
+![](/rasp/ToVector.png)

@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**SplitImage**(*InFile, OutPath, Size=256, Lap=0, FillValue=None*)<Badge text="1.0.3 +"/>
+## gma.rasp.Decompose.**SplitImage**(*InFile, OutPath, Size=256, Lap=0, FillValue=None*)
 
 ---
 
@@ -38,8 +38,19 @@ sidebar: false
 
 * float: 不足 Size 的部分将用此值填充。
 
-*  AUTO: 不足 Size 的部分将用输入栅格的 NoData 值填充。若 NoData不存在，则自动尝试扩展填充值。
+* AUTO: 不足 Size 的部分将用输入栅格的 NoData 值填充。若 NoData不存在，则自动尝试扩展填充值。
 
-  :::
+:::
 
 ---
+
+**示例：**
+
+```python
+from gma import rasp
+
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutPath = 'SplitImage'
+
+rasp.Decompose.SplitImage(InFile, OutPath, Size = 2048)
+```

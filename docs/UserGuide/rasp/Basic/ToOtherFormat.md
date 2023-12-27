@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**ToOtherFormat**(*InFile, OutFile, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**ToOtherFormat**(*InFile, OutFile, OutFormat = 'GTiff'*)
 
 ---
 
@@ -18,7 +18,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;OutFormat  = `str`。输出栅格文件格式，默认为 GTiff。
+&emsp;OutFormat  = `str||class`。输出栅格文件格式，默认为 GTiff。
 
 ::: tip 其他支持格式
 
@@ -26,9 +26,9 @@ AAIGrid, ADRG, ARG, BAG, BLX, BMP, BT, BYN, CALS, CEOS, COG, CTable2, DDS, DTED,
 
 :::
 
-::: warning 注意
+::: tip 高级格式配置
 
-含有**多个子数据集**的 netCDF, HDF4Image 等科学数据格式转出请使用 MultiSDSToTif 函数。
+OutFormat 可以为一个 gma.gft.RasterFormat 类，用以实现例如压缩格式，分块大小等高级参数配置。详见 **地理驱动-gft**。
 
 :::
 
@@ -38,13 +38,10 @@ AAIGrid, ADRG, ARG, BAG, BLX, BMP, BT, BYN, CALS, CEOS, COG, CTable2, DDS, DTED,
 
 *netCDF(.nc) 转 GTiff(.tif)（下载 [示例数据](/rasp/HRCLDAS_Test.nc)）*
 ```python
-import gma
+from gma import rasp
 
 InFile = 'HRCLDAS_Test.nc'
 OutFile = 'HRCLDAS_Test.tif'
-gma.rasp.ToOtherFormat(InFile, OutFile, OutFormat = 'GTiff')
 
-# 查看输出文件驱动
-print(gma.Open(OutFile).Driver)
+rasp.Basic.ToOtherFormat(InFile, OutFile, OutFormat = 'GTiff')
 ```
-> \>>> GTiff

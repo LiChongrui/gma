@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.**ChangeDataType**(*InFile, OutFile, DataType, OutFormat = 'GTiff'*)
+## gma.rasp.Basic.**ChangeDataType**(*InFile, OutFile, DataType, OutFormat = 'GTiff'*)
 
 ---
 
@@ -30,17 +30,12 @@ Unknown:0，Byte:1，UInt16:2，Int16:3，UInt32:4，Int32:5，Float32:6，Float
 
 ---
 
-**示例：*****（以 BandDecomposition 分解的 12 波段数据为例）***
+**示例：**
 
 ```python
-import gma
-InFile = 'ELE_China_GEBCO_2020.tif'
-OutFile = 'ELE_China_GEBCO_2020_Float32.tif'
-print('输入栅格数据类型：', gma.Open(InFile).DataType)
+from gma import rasp
+InFile = 'ESA_LC2020_Luoyang.tif'
+OutFile = 'ESA_LC2020_Luoyang_Float32.tif'
 
-gma.rasp.ChangeDataType(InFile, OutFile, 'Float32')
-
-print('输出栅格数据类型：', gma.Open(OutFile).DataType)
+rasp.Basic.ChangeDataType(InFile, OutFile, 'Float32')
 ```
-> \>>> 输入栅格数据类型： 3<br>
-> \>>> 输出栅格数据类型： 6
