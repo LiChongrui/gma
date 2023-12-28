@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**Check**(*InFile*)
+## gma.vesp.Basic.**Check**(*InFile*)
 
 ---
 
@@ -14,7 +14,15 @@ sidebar: false
 
 &emsp;InFile：`str`。输入矢量文件路径。
 
-**返回：** 如果输入矢量通过检查，则返回 Pass。否则返回无效信息（dict）。无效信息组成：{ Invalid float: 无效要素的数量。Invalid layer&FID: 无效图层和图层内无效要素的FID}。
+**返回：** 通过：Pass；不通过：无效要素的 FID 列表（list）。
 
 ---
 
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+```python
+from gma import vesp
+
+InFile = 'China_Province_2022.shp'
+vesp.Basic.Check(InFile)
+```
+> \>>>  [9]

@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**ToOtherFormat**(*InFile, OutFile, OutFormat = 'ESRI Shapefile'*)
+## gma.vesp.Basic.**ToOtherFormat**(*InFile, OutFile, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -28,3 +28,15 @@ ESRI Shapefile，PCIDSK，PDS4，PDF，MBTiles，MapInfo File，Memory，CSV，G
 
 ---
 
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
+```python
+from gma import vesp
+
+# 多边形转线
+InFile = 'China_Province_2022.shp'
+OutFile = 'China_Province_2022_ToOtherFormat.gpkg'
+
+# 转换为 GPKG 文件
+vesp.Basic.ToOtherFormat(InFile, OutFile, OutFormat = 'GPKG')
+```

@@ -285,7 +285,7 @@ module.exports = {
     ],
     '/UserGuide/vesp/': [
         {
-            title: '矢量处理-1.x',
+            title: '矢量处理',
             collapsable: false,
             children: [
                 {
@@ -427,8 +427,19 @@ module.exports = {
             title:'更新日志',
             collapsable: false,
             children: [
+                 {
+                    title: 'gma 2',
+                    collapsable: false,
+                    children: [
+                        '2.0/2.0.4',
+                        '2.0/2.0.3',
+                        '2.0/2.0.2',
+                        '2.0/2.0.1',
+                        '2.0/2.0.0',
+                    ]
+                }, 
                 {
-                    title: '1.1 (2023)',
+                    title: 'gma 1',
                     collapsable: false,
                     children: [
                         '1.1/1.1.6',
@@ -438,12 +449,6 @@ module.exports = {
                         '1.1/1.1.2',
                         '1.1/1.1.1',
                         '1.1/1.1.0',
-                    ]
-                }, 
-                {
-                    title: '1.0 (2022)',
-                    collapsable: false,
-                    children: [
                         '1.0/1.0.13',
                         '1.0/1.0.12',
                         '1.0/1.0.11',

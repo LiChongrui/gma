@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**Union**(*InFile, MethodFile, OutFile, OutFormat = 'ESRI Shapefile'*)
+## gma.vesp.Geometry.**Union**(*InFile, MethodFile, OutFile, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -24,3 +24,18 @@ sidebar: false
 
 ---
 
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
+```python
+from gma import vesp
+
+InFile = 'China_Province_2022.shp'
+MethodFile = 'Method_Vector.shp'
+OutFile = 'Union.shp'
+
+vesp.Geometry.Union(InFile, MethodFile, OutFile)
+```
+
+> 结果对比：
+
+![](/vesp/Union.png)

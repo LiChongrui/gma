@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**SymDifference**(*InFile, MethodFile, OutFile, OutFormat = 'ESRI Shapefile'*)<Badge text="1.0.4 +"/>
+## gma.vesp.Geometry.**SymDifference**(*InFile, MethodFile, OutFile, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -24,3 +24,18 @@ sidebar: false
 
 ---
 
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
+```python
+from gma import vesp
+
+InFile = 'China_Province_2022.shp'
+MethodFile = 'Method_Vector.shp'
+OutFile = 'SymDifference.shp'
+
+vesp.Geometry.SymDifference(InFile, MethodFile, OutFile)
+```
+
+> 结果对比：
+
+![](/vesp/SymDifference.png)

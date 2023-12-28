@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp;OutFile：`str`。输出栅格路径。
 
-&emsp;OutProjection：`str`。输出栅格坐标系（EPSG 或 wkb 格式）。
+&emsp;OutProjection：`str||EPSG||WKT||Proj4||SpatRef||...` 。输出栅格坐标系。
 
 **可选参数：**
 

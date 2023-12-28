@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**Split**(*InFile, OutPath, OutNameField = None, Separator = None, OutFormat = 'ESRI Shapefile'*)
+## gma.vesp.Extraction.**Split**(*InFile, OutPath, FieldName = None, Connector = None, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -18,9 +18,9 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;OutNameField = `str||list`。标记输出文件名的字段名称或字段名称列表。默认（None）按照 <0.shp, 1.shp, ... >的方式输出。
+&emsp;FieldName = `str||list`。标记输出文件名的字段名称或字段名称列表。默认（None）按照 <0.shp, 1.shp, ... >的方式输出。
 
-&emsp;Separator = `str`。多字段连接方式。默认（None）不以任何进行字段连接。
+&emsp;Connector = `str`。多字段连接方式。默认（None）不以任何进行字段连接。
 
 ::: tip 说明
 
@@ -34,3 +34,15 @@ OutNameField = ["City", "Country"],  Separator = "_"
 
 ---
 
+
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
+```python
+from gma import vesp
+
+InFile = 'China_Province_2022.shp'
+OutPath = 'Split'
+
+vesp.Basic.Reproject(InFile, OutPath, OutNameField = '', Separator = '_')
+```
+> \>>> 安徽省_340000.shp

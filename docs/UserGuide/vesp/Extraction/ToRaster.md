@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.vesp.**ToRaster**(*InFile, OutFile, Resolution, Attribute = None, OutNoData = None, OutFormat = 'GTiff'*)
+## gma.vesp.Extraction.**ToRaster**(*InFile, OutFile, Resolution, Attribute = None, OutNoData = None, OutFormat = 'GTiff'*)
 
 ---
 
@@ -34,3 +34,18 @@ sidebar: false
 
 ---
 
+**示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
+```python
+from gma import vesp
+
+InFile = 'China_Province_2022.shp'
+OutFile = 'ToRaster.tif'
+
+# 按照属性表 '省级码' 列值写入栅格
+vesp.Extraction.ToRaster(InFile, OutFile, 0.3, Attribute = '省级码')
+```
+
+> 结果对比：
+
+![](/vesp/ToRaster.png)

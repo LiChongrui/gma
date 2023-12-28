@@ -4,7 +4,7 @@ date: 2022-11-12
 sidebar: false
 ---
 
-## gma.vesp.**ChangeGeometryType**(*InFile, OutFile, GType = 'MultiPolygon', OutFormat = 'ESRI Shapefile'*)
+## gma.vesp.Basic.**ChangeGeometryType**(*InFile, OutFile, GType = 'MultiPolygon', OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -31,14 +31,17 @@ Point（点），MultiPoint（多点），Line（线），MultiLine（多线）�
 ---
 
 **示例：（下载 [示例矢量](/Open/China_Province_2022.7z)）**
+
 ```python
-import gma
+from gma import vesp
 
 # 多边形转线
-gma.vesp.ChangeGeometryType('China_Province_2022.shp',
-                            'China_Province_2022_Line.shp',
-                            GType = 'Line')
+InFile = 'China_Province_2022.shp'
+OutFile = 'China_Province_2022_Line.shp'
+vesp.Basic.ChangeGeometryType(InFile, OutFile, GType = 'Line')
 ```
 
+> 结果对比：
 
+![](/vesp/Aggregate.png)
 
