@@ -1,7 +1,7 @@
 ---
-title: VectorFormatInfo
-date: 2022-04-17
-sidebar: false
+title: VectorSummary
+date: 2023-12-29
+sidebar: true
 ---
 
 ## gma.config.**VectorFormatInfo**()
@@ -12,8 +12,9 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
-VFInfo = gma.config.VectorFormatInfo()
+from gma import gft
+
+VFInfo = gft.VectorSummary()
 ```
 ---
 

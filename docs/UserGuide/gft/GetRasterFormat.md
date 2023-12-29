@@ -1,10 +1,10 @@
 ---
 title: GetRasterFormat
 date: 2022-04-17
-sidebar: false
+sidebar: true
 ---
 
-## gma.config.**GetRasterFormat**(*Format*)
+## gma.gft.**GetRasterFormat**(*Format = 'GTiff'*)
 
 ---
 
@@ -12,35 +12,35 @@ sidebar: false
 
 **初始化：** 
 
-&emsp;Format：`str`。栅格驱动格式名称。
+&emsp;Format = `str`。栅格驱动格式名称。默认为 GTiff 格式。
 
 **示例：**
 ```python
-import gma
+from gma import gft
 
 # 获取 GTiff 格式
-RAFormat = gma.config.GetRasterFormat('GTiff')
+RAFormat = gft.GetRasterFormat('GTiff')
 ```
 ---
 
 ## 类内属性/方法
 
-### **ColorTableDataType**
+### **ColorTableDataTypes**
 
 ---
 
-**功能：**【色彩映射表数据类型】。类属性，色彩映射表支持的数据类型。
+**功能：**【色彩映射表支持的数据类型】。类属性，色彩映射表支持的数据类型。
 
-**返回：**`dict`。
+**返回：**`list`。
 
 ```python
-RAFormat.ColorTableDataType
+RAFormat.ColorTableDataTypes
 ```
-> \>>> {'Byte': 1, 'UInt16': 2}
+> \>>> ['Byte', 'UInt16']
 
 ---
 
-###  **CompressMode**
+###  **CompressModes**
 
 ---
 
@@ -49,24 +49,86 @@ RAFormat.ColorTableDataType
 **返回：**`list`。
 
 ```python
-RAFormat.CompressMode
+RAFormat.CompressModes
 ```
 > \>>> ['NONE', 'LZW', 'PACKBITS', 'JPEG', 'CCITTRLE', 'CCITTFAX3', 'CCITTFAX4', 'DEFLATE', 'LZMA', 'ZSTD', 'WEBP', 'LERC', 'LERC_DEFLATE', 'LERC_ZSTD']
 
 ---
 
-### CreationDataType
+### Copyable
 
 ---
 
-**功能：**【创建数据类型】。类属性，支持创建的数据类型。
+**功能：**【可复制性】。类属性。是否可以通过复制的方式创建文件。
+
+**返回：**`str`。
+
+```python
+RAFormat.Copyable
+```
+> \>>> 'Yes'
+---
+
+### Creatable
+
+---
+
+**功能：**【可创建性】。类属性。部分格式仅支持读取，不支持创建。
+
+**返回：**`str`。
+
+```python
+RAFormat.Creatable
+```
+> \>>> 'Yes'
+---
+
+### CreationDataTypes
+
+---
+
+**功能：**【支持创建数据类型】。类属性。
+
+**返回：**`list`。
+
+```python
+RAFormat.CreationDataTypes
+```
+> \>>> ['Byte', 'UInt16', 'Int16', 'UInt32', 'Int32', 'Float32', 'Float64', 'CInt16', 'CInt32', 'CFloat32', 'CFloat64']
+
+---
+
+### CreationOptionInfo
+
+---
+
+**功能：**【创建配置信息】。类属性。可查看此驱动支持的配置参数以及说明。
+
+**返回：**`DataFrame`。
+
+```python
+RAFormat.CreationOptionInfo
+```
+|    | name                           | type          | description                                                                                                              | default     | Value                                                                                                  |
+|---:|:-------------------------------|:--------------|:-------------------------------------------------------------------------------------------------------------------------|:------------|:-------------------------------------------------------------------------------------------------------|
+|  0 | COMPRESS                       | string-select | nan                                                                                                                      | DEFLATE     | NONE LZW PACKBITS JPEG CCITTRLE CCITTFAX3 CCITTFAX4 DEFLATE LZMA ZSTD WEBP LERC LERC_DEFLATE LERC_ZSTD |
+|  1 | PREDICTOR                      | int           | Predictor Type (1=default, 2=horizontal differencing, 3=floating point prediction)                                       | 2           | nan                                                                                                    |
+|  2 | DISCARD_LSB                    | string        | Number of least-significant bits to set to clear as a single value or comma-separated list of values for per-band values | nan         | nan                                                                                                    |
+|  ... | ...                   | ...        | ...                                                                                                    | ...          | ...      |
+---
+
+### CreationOptions
+
+---
+
+**功能：**【创建选项】。栅格文件创建过程中使用的参数。
 
 **返回：**`dict`。
 
 ```python
-RAFormat.CreationDataType
+RAFormat.CreationOptions
 ```
-> \>>> {'Byte': 1, 'UInt16': 2, 'Int16': 3, 'UInt32': 4, 'Int32': 5, 'Float32': 6, 'Float64': 7, 'CInt16': 8, 'CInt32': 9, 'CFloat32': 10, 'CFloat64': 11}
+> \>>>{'COMPRESS': 'DEFLATE', 'PREDICTOR': '2', 'JPEG_QUALITY': '75', 'JPEGTABLESMODE': '1', 'ZLEVEL': '12', 'LZMA_PRESET': '6', 'ZSTD_LEVEL': '9', 'NUM_THREADS': 'ALL_CPUS', 'INTERLEAVE': 'PIXEL', 'TILED': 'Yes', 'SPARSE_OK': 'FALSE', 'PROFILE': 'GDALGeoTIFF', 'BIGTIFF': 'IF_SAFER', 'ENDIANNESS': 'NATIVE', 'STREAMABLE_OUTPUT': 'NO', 'GEOTIFF_KEYS_FLAVOR': 'STANDARD'}
 
 ---
 
@@ -143,6 +205,23 @@ RAFormat.GeoReferencing
 RAFormat.LongName
 ```
 > \>>> 'GeoTIFF'
+
+---
+
+### SetCreationOptions(*\*\*kwargs*)
+
+---
+
+**功能：**【设置创建选项】。类方法，为此驱动格式修改创建选项。
+
+**可选参数：**
+
+&emsp; \**kwargs：需要配置的参数设置。参数名详见 CreationOptionInfo 中的 name 列。
+
+```python
+## 设置 GTiff 压缩方式为 LZW
+RAFormat.SetCreationOptions(COMPRESS = 'LZW')
+```
 
 ---
 

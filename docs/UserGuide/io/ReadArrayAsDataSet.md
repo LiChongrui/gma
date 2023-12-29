@@ -4,7 +4,7 @@ date: 2023-04-04
 sidebar: false
 ---
 
-## io.**ReadArrayAsDataSet**(*Array, Projection = None, Transform = None, DataType = None, NoData = None*)<Badge text="1.1.5 +"/> 
+## io.**ReadArrayAsDataSet**(*Array, Projection = None, Transform = None, DataType = None, NoData = None*)
 
 ---
 

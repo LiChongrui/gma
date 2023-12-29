@@ -42,7 +42,7 @@ module.exports = [
                     {text: '栅格处理-rasp', link: '/UserGuide/rasp/'},
                     {text: '矢量处理-vesp', link: '/UserGuide/vesp/'},
                     {text: '地图工具-map', link: '/UserGuide/map/plot/MapFrame/'},
-                    {text: '地理驱动-gft', link: '/UserGuide/gft/GetRACreationOption'},
+                    {text: '地理驱动-gft', link: '/UserGuide/gft/GetRasterFormat'},
                     {text: '输入输出-io', link: '/UserGuide/io/'},
                     {text: '空间参考-crs', link: '/UserGuide/crs/'},
                 ],

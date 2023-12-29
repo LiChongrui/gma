@@ -4,7 +4,7 @@ date: 2023-01-10
 sidebar: false
 ---
 
-## **AddLayer**(*GMALayer, FID = None, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = None, PointMarker = None, Labels = None, FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.2 +"/> 
+## **AddLayer**(*GMALayer, FID = None, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = None, PointMarker = None, Labels = None, FieldName = None, Connector = '', AutoSimplify = True, Zorder = None*)
 
 ---
 
@@ -53,6 +53,8 @@ sidebar: false
 &emsp; FieldName = `str||list||None`。字段名。从矢量字段提取标注信息，以便后续标注。
 
 &emsp; Connector = `str`。多字段连接字符。如果 FieldName 定义了多个字段，那么字段之间用此字符连接。
+
+&emsp; AutoSimplify = `bool`<Badge text="2.0.2 +"/> 。是否自动简化图层，以提高绘图速率。默认（True）自动简化。
 
 &emsp; Zorder = `int`。图层顺序。如果添加了多个图层，为避免图层上下遮挡错误，请配置此参数。Zorder 越大，图层越靠上。
 

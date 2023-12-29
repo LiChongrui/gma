@@ -33,7 +33,7 @@ sidebar: false
 :::
 
 ## 依赖库 
-&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.4.1 +"/>，numpy <Badge text="1.23.3 +"/>，pandas <Badge text="1.4.2 +"/> 和 scipy<Badge text="1.7.3 +"/> 等库，这些库是 gma 实现功能的基础。 gdal 需要手动编译或下载编译后相应版本的 whl 包手动安装。
+&emsp;&emsp;gma 的构建依赖 gdal <Badge text="3.4.1 +"/>，numpy <Badge text="1.23.3 +"/>，pandas <Badge text="1.4.2 +"/>，scipy<Badge text="1.7.3 +"/>，matplotlib<Badge text="3.5.2 +"/> 等库，这些库是 gma 实现功能的基础。 *注意：为了保证 gdal 的完整安装，Windows 下建议下载编译后相应版本的 whl 包手动安装。*
 
 ::: right 
 

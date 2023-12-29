@@ -1,10 +1,10 @@
 ---
-title: RasterFormatInfo
-date: 2022-04-17
-sidebar: false
+title: RasterSummary
+date: 2023-12-29
+sidebar: true
 ---
 
-## gma.config.**RasterFormatInfo**()
+## gma.gft.**RasterSummary**()
 
 ---
 
@@ -12,8 +12,9 @@ sidebar: false
 
 **示例：**
 ```python
-import gma
-RFInfo = gma.config.RasterFormatInfo()
+from gma import gft
+
+RFInfo = gft.RasterSummary()
 ```
 
 ---

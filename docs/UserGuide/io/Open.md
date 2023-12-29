@@ -4,7 +4,7 @@ date: 2022-03-09
 sidebar: false
 ---
 
-## io.**Open**(*InFile, Mode = 0, Methed = 'gma'*)
+## io.**Open**(*InFile, Mode = 0*)
 
 ---
 
@@ -18,9 +18,7 @@ sidebar: false
 
 &emsp;Mode = `int`。读取模式。默认为只读（0），也可为 1（可写模式）。参数设置错误则返回只读模式。
 
-&emsp;Methed = str <Badge text="1.0.9 +"/> 。打开方式（gma 或 osgeo）。默认以 gma 定义的方式打开。参数设置错误则以 gma 的方式打开。
-
-**返回：** 多维栅格：[SubDataSet](SubDataSet.html)<Badge text="1.1.0 +"/>；其他栅格：[DataSet](DataSet.html)。矢量数据：[DataSource](DataSource.html)。
+**返回：** 多维栅格：[SubDataSet](SubDataSet.html)；其他栅格：[DataSet](DataSet.html)。矢量数据：[DataSource](DataSource.html)。
 
 ---
 
