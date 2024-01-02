@@ -4,28 +4,45 @@ date: 2023-04-04
 sidebar: false
 ---
 
-## io.**ReadArrayAsDataSet**(*Array, Projection = None, Transform = None, DataType = None, NoData = None*)<Badge text="1.1.5 +"/> 
+## io.**ReadDataFrameAsLayer**(*DataFrame, Projection = 'WGS84', KeepWKT = False*)
 
 ---
 
-**功能：** 【读取 NumPy 数组 为 DataSet】。
+**功能：** 【读取 pandas 数据帧（DataFrame） 为 Layer】。
+
+::: tip 提示
+
+若 DataFrame 中存在记录矢量几何体的 WKT 字符串（WKT列），则自动将此列转换为矢量几何体。
+
+:::
 
 **参数：**
 
-&emsp;Array：`array`。输入数组。
+&emsp;Array：`DataFrame`。输入 pandas 数据帧（DataFrame）。
 
 **可选参数：**
 
-&emsp;Projection  = `str`。输出栅格坐标系。默认不指定坐标系（None）。
+&emsp;Projection  = `str||EPSG||WKT||Proj4||SpatRef||...` 。输出栅格坐标系。默认为 'WGS84'。
 
-&emsp;Transform  = `tuple`。输出栅格的仿射变换。默认不指定仿射变换（None）。
+&emsp;KeepWKT  = `bool`。是否保留 DataFrame 中的几何体信息到属性表。默认不保留（False）。
 
-&emsp;Format   = `str`。输出栅格文件格式。默认为 GTiff。其他格式详见 ToOtherFormat 函数。
-
-&emsp;DataType  = `int||str`。输出栅格数据类型的代码或字符串标记。默认根据写出数组的数据类型确定（None），其他类型详见 ChangeDataType 函数。
-
-&emsp;NoData = `float`。输出栅格的无效值。默认不设置无效值（None）。
-
-**返回：**`DataSet`。
+**返回：**`Layer`。
 
 ---
+
+**示例：**
+```python
+from gma import io
+import pandas as pd
+
+Data = [['Point(120 44)','Test1'],
+        ['Point(121 44)','Test2']]
+DF = pd.DataFrame(Data, columns = ['WKT', 'Test'], index = ['Geom1', 'Geom2'])
+LY = io.ReadDataFrameAsLayer(DF, KeepWKT = True)
+```
+> \>>> *属性表如下：*
+
+|    | WKT           | Test   |
+|---:|:--------------|:-------|
+|  0 | Point(120 44) | Test1  |
+|  1 | Point(121 44) | Test2  |

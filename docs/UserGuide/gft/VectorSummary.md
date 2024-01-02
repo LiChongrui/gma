@@ -4,11 +4,13 @@ date: 2023-12-29
 sidebar: true
 ---
 
-## gma.config.**VectorFormatInfo**()
+## gma.gft.**VectorFormat**()
 
 ---
 
 **功能：**【矢量驱动格式信息】。获取所有矢量驱动格式分类的详细信息。
+
+**返回：** `VectorFormat`类。
 
 **示例：**
 ```python

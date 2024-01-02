@@ -10,9 +10,11 @@ sidebar: true
 
 **功能：**【获取矢量格式】。实现针对某一矢量驱动详细信息的获取。
 
-**初始化：** 
+**参数：** 
 
 &emsp;Format = `str`。矢量驱动格式名称。默认为 'ESRI Shapefile'。
+
+**返回：** `VectorFormat`类。
 
 **示例：**
 ```python

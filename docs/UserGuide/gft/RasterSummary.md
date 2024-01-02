@@ -10,6 +10,8 @@ sidebar: true
 
 **功能：**【栅格驱动格式信息】。获取所有栅格驱动格式分类的详细信息。
 
+**返回：** `RasterSummary`类。
+
 **示例：**
 ```python
 from gma import gft

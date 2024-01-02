@@ -16,7 +16,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;Projection  = `str`。输出栅格坐标系。默认不指定坐标系（None）。
+&emsp;Projection  = `str||EPSG||WKT||Proj4||SpatRef||...` 。输出栅格坐标系。默认不指定坐标系（None）。
 
 &emsp;Transform  = `tuple`。输出栅格的仿射变换。默认不指定仿射变换（None）。
 
@@ -29,3 +29,16 @@ sidebar: false
 **返回：**`DataSet`。
 
 ---
+
+**示例：**
+```python
+from gma import io
+import numpy as np
+
+np.random.seed(1992)
+Data = np.random.uniform(0, 100, size = (50, 100))
+DataSet = io.ReadArrayAsDataSet(Data, Projection = 3857)
+```
+> \>>> <gma.algos.dataio.rads.DataSet at 0x......>
+
+![](/io/ReadArrayAsDataSet.png)

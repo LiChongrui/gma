@@ -32,7 +32,7 @@ from gma import io
 VO = io.Open('China_Province_2022.shp')
 print(VO)
 ```
-> \>>> <gma.algorithm.core.dataio.DataSource object at 0x......>
+> \>>> <gma.algos.dataio.veds.DataSource at 0x......>
 
 *打开栅格数据（下载 [示例栅格](/Open/ELE_China_GEBCO_2020.tif)）*
 
@@ -40,7 +40,7 @@ print(VO)
 RO = io.Open('ELE_China_GEBCO_2020.tif')
 print(RO)
 ```
-> \>>> <gma.algorithm.core.dataio.DataSet object at 0x......>
+> \>>> <gma.algos.dataio.rads.DataSet at 0x......>
 
 
 
