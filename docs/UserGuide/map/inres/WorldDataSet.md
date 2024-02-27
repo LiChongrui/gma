@@ -27,3 +27,10 @@ DEM = inres.WorldDataSet.DEM
 ```
 > \>>> <gma.algorithm.core.dataio.DataSet at 0x...>
 
+### DEM
+
+![](/map/DEM.jpg)
+
+### 自然地球影像
+
+![](/map/NEImage.jpg)

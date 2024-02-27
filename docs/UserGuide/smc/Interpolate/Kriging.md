@@ -67,19 +67,20 @@ Points = [(122.52,  52.97), (124.72,  52.35), (124.4 ,  51.67), (126.63,  51.73)
 **示例 *（下载 [示例数据](/smc/Interpolate.xlsx)）*：**
 
 ```python
-from gma import smc
-import pandas as pd
+from gma import smc, io
 
-Data = pd.read_excel("Interpolate.xlsx")
+ELSXLayer = io.ReadVector("Interpolate.xlsx")
+Data = ELSXLayer.ToDataFrame()
+
 Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 普通克里金（球面函数模型）插值
 KD = smc.Interpolate.Kriging(Points, Values, Resolution = 0.05, 
-                                 VariogramModel = 'Spherical', 
-                                 VariogramParameters = None,
-                                 KMethod = 'Ordinary',
-                                 InProjection = 'EPSG:4326')
+                             VariogramModel = 'Spherical', 
+                             VariogramParameters = None,
+                             KMethod = 'Ordinary',
+                             InProjection = 'EPSG:4326')
 ```
 
 *与 ArcGIS Ordinary Kriging 插值结果（重分类后）对比：*

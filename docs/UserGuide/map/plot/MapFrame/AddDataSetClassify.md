@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMADataSet: `gma.algorithm.core.dataio.DataSet`。一个由 gma.Open 打开的栅格数据集。
+&emsp; GMADataSet: `DataSet`。一个由 gma.io.ReadRaster 打开的栅格数据集。
 
 **可选参数：**
 
@@ -21,7 +21,7 @@ sidebar: false
 &emsp; CMap = `str||list||matplotlib.color.Colormap||None`。色带。详见：matplotlib.color.Colormap。
 
 ::: warning 注意
-1. 如果 CMap 是一个列表，那这个列表必须为 （R, G, B）或 （R, G, B, A）的格式（与 matplotlib 不同）！否则，请自行创建 matplotlib 色带！
+1. 如果 CMap 是一个列表，那这个列表必须为 （R, G, B）或 （R, G, B, A）的格式（同 matplotlib ）！否则，请自行创建 matplotlib 色带！
 2. 如果输入数据集带有色彩映射表，请勿配置色带，否则，数据集色彩映射表将被忽略。色彩优先级：CMap > ColorTable。
 :::
 
@@ -33,7 +33,9 @@ sidebar: false
 
 &emsp; Remap = `list||None`。用于将输入值或范围定义重新映射到新值。默认（None）不进行重分类映射。格式为：
 
-&emsp;&emsp;&emsp;[[mapping1，value1]，[mmapping2，value2]，…]。
+&emsp;&emsp;&emsp;1、[[mapping1，value1]，[mmapping2，value2]，…]。
+
+&emsp;&emsp;&emsp;2、[mapping1，mmapping2，…]。
 
 &emsp; Method = `str`。重分类方法。可以为 'Range' 或 'Unique'，默认为 'Range'。
 
@@ -75,17 +77,17 @@ Remap = [[1000, 1],
 
 **示例：**
 ```python
-from gma.map import rcs, plot, inres
+from gma.map import plot, inres
 
 # 1.初始化一个地图框，用于绘图
-MapF = plot.MapFrame(Axes = None, BaseMapProj = rcs.CustomGCS(), Extent = None)
+MapF = plot.MapFrame(Axes = None, BaseMapProj = 4326, Extent = None)
 
 # 2.将内置的世界矢量图层添加到地图框
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = 'none', LineWidth = 0.2, EdgeColor = 'white', Zorder = 1)
 
 Classify = MapF.AddDataSetClassify(inres.WorldDataSet.DEM,
                                    CMap = 'rainbow',
-                                   Remap = [[0, 0], [500, 1], [1000, 2], [1500, 3],[2000, 4], [3000, 5], [9000, 6]],
+                                   Remap = [0, 500, 1000,1500, 2000, 3000, 9000],
                                    Method = 'Range', 
                                    Labels = ['<= 0', '0 ~ 500', '500 ~ 1000','1000 ~ 1500','1500 ~ 2000','2000 ~ 3000', '> 3000'],
                                   )

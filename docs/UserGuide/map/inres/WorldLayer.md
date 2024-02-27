@@ -30,3 +30,22 @@ Country = inres.WorldLayer.Country
 ```
 > \>>> <gma.algorithm.core.dataio.Layer at 0x...>
 
+### Country
+
+![](/map/NECountry.jpg)
+
+### Lake
+
+![](/map/NELake.jpg)
+
+### Land
+
+![](/map/NELand.jpg)
+
+### Ocean
+
+![](/map/NEOcean.jpg)
+
+### Ocean
+
+![](/map/NERiver.jpg)

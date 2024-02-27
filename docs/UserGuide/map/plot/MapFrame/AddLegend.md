@@ -16,7 +16,7 @@ sidebar: false
 
 &emsp; LOC = `int||tuplt||str`。 图例位置。默认为最佳位置。更多内容请参见matplotlib.legend.loc。
 
-&emsp; Labels = `None||list`。 图例标签。默认（None）使用图层标签。否则，图例标签则会用此参数且图层标签也会被更新。
+&emsp; Labels = `None||list`。 图例标签。默认（None）使用图层标签。
 
 &emsp; LabelFont = `str||list`。 标签字体。如果为列表，则每个标签分配不同的字体。 默认（None）取决于 matplotlib 设置。
 
@@ -66,7 +66,8 @@ from gma.map import plot, inres
 MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
 
 # 添加图层（可以重复添加多个图层，定义标注使用 'Name'列）
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, FieldName = 'Name')
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, 
+                      FieldName = 'Name')
 
 # 添加图例（标注属性表 'Name' 列）
 Legend = MapF.AddLegend(LOC = (1, 0.1), NColumns = 1, TitleAlignment = 'left') 

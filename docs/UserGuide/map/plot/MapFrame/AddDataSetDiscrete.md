@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMADataSet: `gma.algorithm.core.dataio.DataSet`。一个由 gma.Open 打开的栅格数据集。
+&emsp; GMADataSet: `DataSet`。一个由 gma.io.ReadRaster 打开的栅格数据集。
 
 **可选参数：**
 
@@ -58,7 +58,7 @@ MapF = plot.MapFrame(BaseMapProj = 4326, Extent = None)
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 1.2 添加栅格数据集（可以重复添加多个栅格数据集）
-MapL1 = MapF.AddDataSetDiscrete(inres.WorldDataSet.DEM)
+MapL1 = MapF.AddDataSetDiscrete(inres.WorldDataSet.DEM, Zorder = -1)
 
 # 2.添加经纬网
 Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
@@ -66,5 +66,5 @@ Grid = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), L
 # 3.设置地图框（包括刻度和经纬度的标注）
 Frame = MapF.SetFrame(FrameWidth = 0.5, LabelFontSize = 7, TickLength = 0.008)
 ```
-![](/map/AddDataSetDiscrete.png)
+![](/map/AddDataSetDiscrete.jpg)
 

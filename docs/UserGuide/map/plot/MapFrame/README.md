@@ -14,10 +14,6 @@ sidebar: false
 
 &emsp;Axes = `None||matplotlib.~.AxesSubplot`。一个 matplotlib 子图。默认（None）自动创建子图。
 
-::: warning 注意
-gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请反馈！
-:::
-
 &emsp;BaseMapProj = `str||EPSG||WKT||Proj4||SpatRef||...` 。底图坐标系，默认为 WGS84。
 
 ::: tip 提示
@@ -33,7 +29,7 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | 序号  | 名称          | 描述                                                         | 类型       |
 | :----- | :------------- | :------------------------------------------------------------ | :---------- |
 | M.1     | [AddLayer](/UserGuide/map/plot/MapFrame/AddLayer.html)      | 添加图层（可以重复添加多个图层）                             | 方法       |
-| *M.1.1* | *AddLabel*    | *添加图层标注，为 layer 模块相关子类的功能*                  | *子类方法* |
+| *M.1.1* | *AddLabel*    | *添加 图层/要素 标注，为 layer /feature 模块相关子类的功能*                  | *子类方法* |
 | M.2 | [AddFeature](/UserGuide/map/plot/MapFrame/AddFeature.html) | 添加要素（可以重复添加多个要素） | 方法 |
 | M.3     | [AddCompass](/UserGuide/map/plot/MapFrame/AddCompass.html)    | 添加指北针                                                   | 方法       |
 | M.4     | [AddGridLines](/UserGuide/map/plot/MapFrame/AddGridLines.html)   | 添加经纬网（仅经纬网线）                             | 方法       |
@@ -45,13 +41,11 @@ gma 会自动禁用大部分的 matplotlib 子图配置功能！如有需求请�
 | M.10    | [SetFrame](/UserGuide/map/plot/MapFrame/SetFrame.html)       | 设置地图框（包括刻度和经纬度的标注等）                       | 方法       |
 | P.1     | Axes          | `<matplotlib.axes._subplots.AxesSubplot>`。matplotlib 子图，可按需补充调整 | 属性       |
 | P.2     | BaseMapProj   | `<gma.map.rcs.SpatRef>` 。底图坐标系（已初始化为空间参考）   | 属性       |
-| P.3    | FrameFeature  | `<gma.algorithm.core.dataio.Feature>` 。地图框 Feature（ProjWKT） | 属性       |
-| P.4    | LATLines      | `<gma.algorithm.core.dataio.Feature>` 。纬度网 Feature       | 属性       |
-| P.5    | LONLines      | `<gma.algorithm.core.dataio.Feature>` 。经度网 Feature       | 属性       |
-| P.6    | PLengendID    | `list`。添加的图层序号列表（按图层添加顺序排序）             | 属性       |
-| P.7    | PlotX         | `list`。所有绘制图层的返回值                                 | 属性       |
-| P.8    | ProjWKT       | `str`。WKT 格式的底图坐标系                                  | 属性       |
-| P.9    | WorldFeature  | `<gma.algorithm.core.dataio.Feature>` 。底图坐标系的最大范围 Feature（WGS84） | 属性       |
+| P.3    | FrameFeature  | `<gma.algos.dataio.veds.Feature>` 。地图框 Feature（ProjWKT） | 属性       |
+| P.4    | GridLines      | `list` 。经度网 / 纬度网 ->（gma.map.feature.PlotFeature）     | 属性       |
+| P.5    | PlotX         | `list`。所有绘制图层的返回值                                 | 属性       |
+| P.6    | ProjWKT       | `str`。WKT 格式的底图坐标系                                  | 属性       |
+| P.7    | WorldFeature  | `<gma.algos.dataio.veds.Feature>` 。底图的最大范围 Feature（WGS84） | 属性       |
 
 **示例：**
 

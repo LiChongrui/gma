@@ -4,7 +4,7 @@ date: 2023-04-10
 sidebar: false
 ---
 
-## **AddFeature**(*GMAFeature, FaceColor = '#BED2FF', EdgeColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, LineColor = '#B2B2B2', PointColor = '#BED2FF', PointSize = 0.5, PointMarker = None, Label = None,  FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.5 +"/> 
+## **AddFeature**(*GMAFeature, FaceColor = '#BED2FF', LineColor = '#B2B2B2', Hatch = None, LineStyle = None, LineWidth = 0.5, PointSize = 0.5, PointMarker = None, Label = None,  FieldName = None, Connector = '', Zorder = None*)<Badge text="1.1.5 +"/> 
 
 ---
 
@@ -12,7 +12,7 @@ sidebar: false
 
 **参数：**
 
-&emsp; GMAFeature: `gma.algorithm.core.dataio.Feature`。一个 gma 矢量要素。
+&emsp; GMAFeature: `Feature`。一个 gma.io.ReadVector().GetFeature() 获取的矢量要素。
 
 **可选参数：**
 
@@ -54,7 +54,7 @@ sidebar: false
 
 &emsp; Zorder = `int`。图层顺序。如果添加了多个图层，为避免图层上下遮挡错误，请配置此参数。Zorder 越大，图层越靠上。
 
-**返回：**`gma.map.layer.PlotLPolygon||PlotLLine||PlotLPoint`。
+**返回：**`gma.map.feature.PlotFeature`。
 
 ---
 
@@ -64,14 +64,14 @@ from gma.map import plot, inres
 
 Points = [[112.5, 34.4], [30, 60], [2.3, 48.8], [47.5, -18.9], [112.5, 34.4]]
 # 创建线 Feature
-FPolygon = plot.CreatePlotFeature(Points, Type = 'Polygon')
+FPolygon = plot.CreatePlotFeature(Points, GeomType = 'Polygon')
 
 # 1.初始化一个地图框，底图 0 定义的坐标系
 MapF = plot.MapFrame(Axes = None, BaseMapProj = 4326, Extent = None)
 
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, LineWidth = 0.1)
 # 2.2 添加面
-MapL1 = MapF.AddFeature(FPolygon, FaceColor = (0.2, 0.5, 0.8, 0.5), EdgeColor = 'gray', LineWidth = 0.5, Zorder = 2)
+MapL1 = MapF.AddFeature(FPolygon, FaceColor = (0.2, 0.5, 0.8, 0.5), LineColor = 'gray', LineWidth = 0.5, Zorder = 2)
 ```
 ![](/map/AddFeature.png)
 

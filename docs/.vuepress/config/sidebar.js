@@ -393,6 +393,10 @@ module.exports = {
                 'ReadRaster',
                 'ReadVector',
                 'SaveArrayAsRaster',
+                'GeoDataBase',
+                'DataSet',
+                'Layer',
+                'Feature',
             ]
         },
     ],
