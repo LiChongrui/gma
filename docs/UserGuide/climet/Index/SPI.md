@@ -63,11 +63,13 @@ from gma import climet
 ```
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
-import pandas as pd
-# 读取数据。Excel 数据有一列，为 PRE 降水，共 480 个数据 
-Data = pd.read_excel('PRE_ET0.xlsx')
-# 提取 PRE 用于 SPI 运算
+from gma import io
+
+ELSXLayer = io.ReadVector('PRE_ET0.xlsx')
+Data = ELSXLayer.ToDataFrame()
+
 PRE = Data['PRE'].values
+
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
 SPI1 = climet.Index.SPI(PRE)
 SPI3 = climet.Index.SPI(PRE, Scale = 3)
@@ -75,16 +77,10 @@ SPI6 = climet.Index.SPI(PRE, Scale = 6)
 SPI12 = climet.Index.SPI(PRE, Scale = 12)
 SPI24 = climet.Index.SPI(PRE, Scale = 24)
 SPI60 = climet.Index.SPI(PRE, Scale = 60)
-# 将结果保存到文件
-OUT = pd.DataFrame([SPI1, SPI3, SPI6, SPI12, SPI24, SPI60],
-                   index = ['SPI1','SPI3','SPI6','SPI12','SPI24','SPI60']).T
-OUT.to_excel(r'.\SPI.xlsx', index = False)
 ```
-> 对不同尺度 SPI 结果进行绘制
+> 不同尺度 SPI 结果
 
 ![](/climet/SPIPlot.svg)
-
-> 绘图代码参考：[SPEI](/UserGuide/climet/SPEI.html)
 
 *基于栅格数据（下载 [示例数据](/climet/PRE_ET0.7z)）*
 
@@ -113,6 +109,6 @@ for i in S:
                          DataType = 'Float32', 
                          NoData = np.nan)  
 ```
-> 绘制最后一个月（2020年12月）计算结果（绘图代码请参考：[PenmanMonteith](/UserGuide/climet/ET0/PenmanMonteith.html)）
+> 最后一个月（2020年12月）计算结果
 
 ![](/climet/SPI.webp)

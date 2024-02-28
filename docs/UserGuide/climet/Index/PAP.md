@@ -39,8 +39,11 @@ from gma import climet
 ```
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
-import pandas as pd
-Data = pd.read_excel('PRE_ET0.xlsx')
+from gma import io
+
+ELSXLayer = io.ReadVector('PRE_ET0.xlsx')
+Data = ELSXLayer.ToDataFrame()
+
 PRE = Data['PRE'].values
 
 # 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
@@ -50,17 +53,10 @@ PAP6 = climet.Index.PAP(PRE, Scale = 6)
 PAP12 = climet.Index.PAP(PRE, Scale = 12)
 PAP24 = climet.Index.PAP(PRE, Scale = 24)
 PAP60 = climet.Index.PAP(PRE, Scale = 60)
-
-# 将结果保存到文件
-OUT = pd.DataFrame([PAP1, PAP3, PAP6, PAP12, PAP24, PAP60],
-                   index = ['PAP1','PAP3','PAP6','PAP12','PAP24','PAP60']).T
-OUT.to_excel(r'.\PAP.xlsx', index = False)
 ```
-> 对不同尺度 PAP 结果进行绘制
+> 不同尺度 PAP 结果
 
 ![](/climet/PAPPlot.svg)
-
-> 绘图代码参考：[SPEI](/UserGuide/climet/SPEI.html)
 
 *基于栅格数据（下载 [示例数据](/climet/PRE_ET0.7z)）*
 

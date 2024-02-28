@@ -56,7 +56,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值
-IDWD = gma.smc.Interpolate.IDW(Points, Values, Resolution = 0.05)
+IDWD = smc.Interpolate.IDW(Points, Values, Resolution = 0.05)
 ```
 
 *与 ArcGIS IDW 插值结果（重分类后）对比：*

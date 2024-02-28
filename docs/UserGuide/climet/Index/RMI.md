@@ -39,8 +39,11 @@ from gma import climet
 ```
 *基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
 ```python
-import pandas as pd
-Data = pd.read_excel('PRE_ET0.xlsx')
+from gma import io
+
+ELSXLayer = io.ReadVector('PRE_ET0.xlsx')
+Data = ELSXLayer.ToDataFrame()
+
 PRE = Data['PRE'].values
 ET0 = Data['ET0'].values
 
@@ -51,13 +54,8 @@ RMI6 = climet.Index.RMI(PRE, ET0, Scale = 6)
 RMI12 = climet.Index.RMI(PRE, ET0, Scale = 12)
 RMI24 = climet.Index.RMI(PRE, ET0, Scale = 24)
 RMI60 = climet.Index.RMI(PRE, ET0, Scale = 60)
-
-# 将结果保存到文件
-OUT = pd.DataFrame([RMI1, RMI3, RMI6, RMI12, RMI24, RMI60],
-                   index = ['RMI1','RMI3','RMI6','RMI12','RMI24','RMI60']).T
-OUT.to_excel(r'.\RMI.xlsx', index = False)
 ```
-> 对不同尺度 PAP 结果进行绘制
+> 不同尺度 PAP 结果
 
 ![](/climet/RMIPlot.svg)
 

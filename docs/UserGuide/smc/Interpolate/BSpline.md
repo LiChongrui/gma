@@ -54,7 +54,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值
-BSD  = smc.Interpolate.BSpline(Points, Values, Resolution = 0.05, Weights = 0.1)
+BSD = smc.Interpolate.BSpline(Points, Values, Resolution = 0.05, Weights = 0.1)
 ```
 
 *不同 Weights 插值结果（重分类后）对比：*

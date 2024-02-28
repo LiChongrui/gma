@@ -46,7 +46,7 @@ Points = Data.loc[:, ['经度','纬度']].values
 Values = Data.loc[:, ['值']].values
 
 # 插值（2阶多项式）
-TrendD  = smc.Interpolate.Trend(Points, Values, Resolution = 0.05, Order = 2)
+TrendD = smc.Interpolate.Trend(Points, Values, Resolution = 0.05, Order = 2)
 ```
 
 *与 ArcGIS Trend 插值结果（重分类后）对比：*
