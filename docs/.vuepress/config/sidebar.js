@@ -329,6 +329,7 @@ module.exports = {
             title: '地图工具',
             collapsable: false,
             children: [
+                '',
                 {
                     title: 'MapFrame',
                     collapsable: false,

@@ -63,7 +63,7 @@ sidebar: false
 from gma.map import plot, inres
 
 # 初始化一个地图框，用于绘图
-MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
+MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 
 # 添加图层（可以重复添加多个图层，定义标注使用 'Name'列）
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1, 

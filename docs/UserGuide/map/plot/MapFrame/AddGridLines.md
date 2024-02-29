@@ -26,16 +26,17 @@ sidebar: false
 
 &emsp; LineWidth = `float`。线宽。默认 0.3。
 
-**返回：**`list`。经度网和纬度网 Feature 列表。
+**返回：**`list`。经度网和纬度网 gma.map.feature.PlotFeature 列表。
 
 ---
 
 **示例：**
+
 ```python
 from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
-MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
+MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
 
 # 添加经纬网

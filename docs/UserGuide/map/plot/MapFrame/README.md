@@ -44,20 +44,21 @@ sidebar: false
 | P.3    | FrameFeature  | `<gma.algos.dataio.veds.Feature>` 。地图框 Feature（ProjWKT） | 属性       |
 | P.4    | GridLines      | `list` 。经度网 / 纬度网 ->（gma.map.feature.PlotFeature）     | 属性       |
 | P.5    | PlotX         | `list`。所有绘制图层的返回值                                 | 属性       |
-| P.6    | ProjWKT       | `str`。WKT 格式的底图坐标系                                  | 属性       |
-| P.7    | WorldFeature  | `<gma.algos.dataio.veds.Feature>` 。底图的最大范围 Feature（WGS84） | 属性       |
+| P.6    | WorldFeature  | `<gma.algos.dataio.veds.Feature>` 。底图的最大范围 Feature（WGS84） | 属性       |
 
 **示例：**
 
 ```python
 from gma.map import plot
-MapF = plot.MapFrame(BaseMapProj = 2163, Extent = None)
+MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 ```
 > \>>> <gma.map.layout.MapFrame at 0x......>
 
 **绘图流程的简单示例：**
 ```python
 from gma.map import inres
+
+MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 
 # 1.添加图层（可以重复添加多个图层）
 MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
