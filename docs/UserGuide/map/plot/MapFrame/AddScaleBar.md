@@ -50,7 +50,7 @@ from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, LineColor = 'gray', LineWidth = 0.1)
 
 # 添加比例尺
 ScaleBar = MapF.AddScaleBar(LOC = (0.1, 0.1), Width = 0.22, Color = 'black')

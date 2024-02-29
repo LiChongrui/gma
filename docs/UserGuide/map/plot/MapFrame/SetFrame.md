@@ -61,7 +61,7 @@ from gma.map import plot, inres
 
 # 初始化地图框，并添加一个图层
 MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, LineColor = 'gray', LineWidth = 0.1)
 
 # 添加地图框
 Frame = MapF.SetFrame(FrameColor = 'black', FrameWidth = 0.6)

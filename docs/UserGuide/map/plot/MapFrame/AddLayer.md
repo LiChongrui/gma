@@ -64,7 +64,7 @@ from gma.map import plot, inres
 MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 
 # 添加图层（可以重复添加多个图层）
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, LineColor = 'gray', LineWidth = 0.1)
 ```
 ![](/map/AddLayer.png)
 

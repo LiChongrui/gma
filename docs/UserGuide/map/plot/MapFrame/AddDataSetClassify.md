@@ -83,7 +83,7 @@ from gma.map import plot, inres
 MapF = plot.MapFrame(Axes = None, BaseMapProj = 4326, Extent = None)
 
 # 2.将内置的世界矢量图层添加到地图框
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = 'none', LineWidth = 0.2, EdgeColor = 'white', Zorder = 1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = 'none', LineWidth = 0.2, LineColor = 'white', Zorder = 1)
 
 Classify = MapF.AddDataSetClassify(inres.WorldDataSet.DEM,
                                    CMap = 'rainbow',

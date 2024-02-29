@@ -55,7 +55,7 @@ from gma.map import plot, inres
 MapF = plot.MapFrame(BaseMapProj = 4326, Extent = None)
 
 # 1.1添加矢量图层（可以重复添加多个图层）
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, EdgeColor = 'gray', LineWidth = 0.1)
+MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, LineColor = 'gray', LineWidth = 0.1)
 
 # 1.2 添加栅格数据集（可以重复添加多个栅格数据集）
 MapL1 = MapF.AddDataSetDiscrete(inres.WorldDataSet.DEM, Zorder = -1)
