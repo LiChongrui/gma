@@ -28,7 +28,7 @@ sidebar: false
 如果 Color 为列表，则会为指北针的每个主体（例如字体 'N' 和指北的形状）分配不同的颜色。
 :::
 
-&emsp; Style = `str`。指北针样式。目前仅支持 'Compass1' 样式。
+&emsp; Style = `str`。指北针样式。目前支持 'GMACompass1'~'GMACompass4' 4 种样式。
 
 **返回：**`list`。指北针形状和字体样式。
 
