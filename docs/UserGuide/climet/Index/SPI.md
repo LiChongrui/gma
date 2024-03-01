@@ -8,7 +8,7 @@ sidebar: false
 
 ---
 
-**功能：**【标准化降水指数】。基于 Gamma 分布计算标准化降水指数。
+**功能：**【标准化降水指数】。计算标准化降水指数（Standardized Precipitation Index）。
 
 **参数：**
 
@@ -40,13 +40,13 @@ sidebar: false
 
 'MLE'：最大似然估计；
 
-'LMoment'(PWD)：L-矩估计（概率加权矩）；
+'LMoment'：L-矩估计（PWD，概率加权矩）；
 
-'LMoment'：L-矩估计。
+'LMoment2'：L-矩估计。
 
 :::
 
-&emsp; Calibration = `list||slice||None`<Badge text="2.0.4 +"/>。提取参与内部参数拟合运算的数据（基于周期）。默认（None）为全部数据。
+&emsp; Calibration = `list||slice||None`<Badge text="2.0.4 +"/>。参与内部参数拟合运算数据的周期。默认（None）为全部数据。
 
 **返回：**`array`。
 

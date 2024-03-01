@@ -43,7 +43,6 @@ from gma import rasp
 from gma import vesp
 from gma import gft
 from gma import io
-from gma.map import crs
 
 # 空间绘图专用
 from gma.map import plot, inres
