@@ -21,7 +21,7 @@ sidebar: false
 &emsp; CMap = `str||list||matplotlib.color.Colormap||None`。色带。详见：matplotlib.color.Colormap。
 
 ::: warning 注意
-1. 如果 CMap 是一个列表，那这个列表必须为 （R, G, B）或 （R, G, B, A）的格式（与 matplotlib 不同）！否则，请自行创建 matplotlib 色带！
+1. 如果 CMap 是一个列表，那这个列表必须为 （R, G, B）或 （R, G, B, A）的格式（与 matplotlib 相同）！否则，请自行创建 matplotlib 色带！
 2. 如果输入数据集带有色彩映射表，请勿配置色带，否则，数据集色彩映射表将被忽略。色彩优先级：CMap > ColorTable。
 :::
 

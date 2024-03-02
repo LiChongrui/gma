@@ -44,7 +44,7 @@ EVData = smc.Extraction.ExtractValues(Points, DEMDS)
 
 > \>>> 
 
-|    |   X |   Y |   Band1 |
+|    |   X |   Y |   Band_0 |
 |---:|----:|----:|--------:|
 |  0 | 112 |  30 |      44 |
 |  1 | 120 |  45 |     742 |
