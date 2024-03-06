@@ -51,8 +51,6 @@ pip install "X:\GDAL-3.4.1-cp39-cp39-win_amd64.whl"
 conda install gdal
 ```
 
-
-
 ## 安装
 
 &emsp;&emsp;gma 已经发布至 [pypi](https://pypi.org/project/gma/)，可以在终端输入以下命令安装：
@@ -61,25 +59,3 @@ conda install gdal
 pip install gma
 ```
 &emsp;&emsp;在安装 gma 时，依赖的 numpy，pandas 和 scipy 等库如果不存在则会自动安装（需联网）。
-
-
-## 引用
-
-&emsp;&emsp;打开 Python 的 IDE（数据处理推荐 **Spyder**，工程开发推荐 **Pycharm**，分步测试推荐 **Jupter Notebook**）直接导入库。
-
-```python
-import gma
-```
-
-&emsp;&emsp; 下一步，请试试 gma 的函数吧。
-
-### 错误解决
-
-&emsp;&emsp;从 **1.0.5** 版本开始，gma 会对引用过程中出现的错误进行追踪标记。引用过程中出现的错误可参考下表解决（其中 XXX / YYY 为发生错误的包 / 模块）：
-
-| 错误类型            | 错误内容                                                     | 解决方法                          |
-| :------------------ | :----------------------------------------------------------- | :-------------------------------- |
-| ModuleNotFoundError | Missing GDAL library! See https://gdal.org/api/python_bindings.html | [安装 gdal](/Install.html#依赖库) |
-| ModuleNotFoundError | The XXX library is missing, please install it with 'pip install XXX' in the terminal! | 在终端输入 `pip install XXX` 安装 |
-| ImportError         | Currently installed GDAL is not supported, please update GDAL! | 升级 gdal                         |
-| ImportError         | The GDAL version is too low, the current version {__gdalversion__}, the minimum version is 3.4.1, please update GDAL! | 升级 gdal                         |

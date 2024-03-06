@@ -28,6 +28,8 @@ sidebar: false
 
 **返回：**`DataSet`。
 
+***&emsp;类内属性/方法详见：[DataSet](DataSet.html)。***
+
 ---
 
 **示例：**
@@ -38,6 +40,8 @@ import numpy as np
 np.random.seed(1992)
 Data = np.random.uniform(0, 100, size = (50, 100))
 DataSet = io.ReadArrayAsDataSet(Data, Projection = 3857)
+
+print(DataSet)
 ```
 > \>>> <gma.algos.dataio.rads.DataSet at 0x......>
 

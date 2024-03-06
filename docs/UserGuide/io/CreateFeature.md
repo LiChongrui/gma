@@ -27,6 +27,8 @@ sidebar: false
 
 **返回：**`Feature`。
 
+***&emsp;类内属性/方法详见：[Feature](Feature.html)。***
+
 ---
 
 **示例**

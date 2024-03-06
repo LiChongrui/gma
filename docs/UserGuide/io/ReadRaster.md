@@ -28,9 +28,12 @@ sidebar: true
 
 **返回：** `DataSet`。
 
+***&emsp;类内属性/方法详见：[DataSet](DataSet.html)。***
+
 ---
 
-**示例：**
+**示例：** *（下载 [示例栅格](/io/ELE_China_GEBCO_2020.tif)）*
+
 ```python
 from gma import io
 
@@ -39,7 +42,6 @@ print(RO)
 ```
 > \>>> <gma.algos.dataio.rads.DataSet at 0x......>
 
-## 类内属性/方法
 
 
 

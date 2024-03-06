@@ -56,8 +56,7 @@ MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 
 **绘图流程的简单示例：**
 ```python
-from gma.map import inres
-
+from gma.map import inres, plot
 MapF = plot.MapFrame(BaseMapProj = 9311, Extent = None)
 
 # 1.添加图层（可以重复添加多个图层）

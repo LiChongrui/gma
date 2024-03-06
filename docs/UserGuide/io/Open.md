@@ -18,22 +18,21 @@ sidebar: false
 
 &emsp;\*args, \*\*kwargs。传递给 gdal.OpenEx 的其他参数。
 
-**返回：** `GeoDataBase` 。
+**返回：** `GeoDataBase`。
+
+***&emsp;类内属性/方法详见：[GeoDataBase](GeoDataBase.html)。***
 
 ---
 
 **示例：**
+
 ```python
 from gma import io
 ```
-*打开矢量数据（下载 [示例矢量](/Open/China_Province_2022.7z)）*
+*打开矢量数据（下载 [示例矢量](/io/China_Province_2022.7z)）*
 
 ```python
 GDB = io.Open('China_Province_2022.shp')
 print(GDB)
 ```
 > \>>> <gma.algos.dataio.database.GeoDataBase at 0x......>
-
-
-
-

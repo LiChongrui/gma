@@ -22,7 +22,11 @@ sidebar: false
 
 **返回：**`Layer`。
 
+***&emsp;类内属性/方法详见：[Layer](Layer.html)。***
+
 ---
+
+**示例：**
 
 ```python
 from gma import io

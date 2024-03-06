@@ -30,9 +30,11 @@ sidebar: true
 
 **返回：** `Layer`。
 
+***&emsp;类内属性/方法详见：[Layer](Layer.html)。***
+
 ---
 
-**示例：***（下载 [示例矢量](/Open/China_Province_2022.7z)）*
+**示例：***（下载 [示例矢量](/io/China_Province_2022.7z)）*
 ```python
 from gma import io
 
@@ -41,6 +43,5 @@ print(VO)
 ```
 > \>>> <gma.algos.dataio.vesd.Layer at 0x......>
 
-## 类内属性/方法
 
 

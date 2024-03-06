@@ -28,6 +28,8 @@ sidebar: false
 
 **返回：**`Layer`。
 
+***&emsp;类内属性/方法详见：[Layer](Layer.html)。***
+
 ---
 
 **示例：**
@@ -39,7 +41,11 @@ Data = [['Point(120 44)','Test1'],
         ['Point(121 44)','Test2']]
 DF = pd.DataFrame(Data, columns = ['WKT', 'Test'], index = ['Geom1', 'Geom2'])
 LY = io.ReadDataFrameAsLayer(DF, KeepWKT = True)
+
+print(LY)
 ```
+> \>>> <gma.algos.dataio.rads.DataSet at 0x......>
+
 > \>>> *属性表如下：*
 
 |    | WKT           | Test   |

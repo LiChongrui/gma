@@ -4,11 +4,11 @@ home: true
 heroText: 地理与气象分析库
 tagline: 一个基于 Python 的地理、气象数据快速处理分析和地理制图函数包（Geographic and Meteorological Analysis，gma）
 
-
 heroImage: /images/Logo-gma.svg
 
 actionText: 开始探索 →
 actionLink: /Introduce.md
+
 features:
 - title: 易用至上
   details: 以 Python 语法为基础，以最清晰用户指南帮助你快速实现功能应用。

@@ -3,7 +3,7 @@ title: 【Layer】
 sidebar: false
 ---
 
-&emsp;　下载 [示例矢量](/Open/China_Province_2022.7z)。
+&emsp;　下载 [示例矢量](/io/China_Province_2022.7z)。
 
 ```python
 from gma import io

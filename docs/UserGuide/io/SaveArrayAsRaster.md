@@ -30,3 +30,12 @@ sidebar: false
 
 ---
 
+**示例：**
+```python
+from gma import io
+import numpy as np
+
+np.random.seed(1992)
+Data = np.random.uniform(0, 100, size = (50, 100))
+io.SaveArrayAsRaster(Data, "RandomRaster.tif" , Projection = 3857)
+```

@@ -387,6 +387,7 @@ module.exports = {
             children: [
                 '',
                 'CreateFeature',
+                'CreateGeoDataBase',
                 'CreateLayer',
                 'Open',
                 'ReadArrayAsDataSet',
