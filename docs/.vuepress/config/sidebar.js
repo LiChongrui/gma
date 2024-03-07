@@ -415,7 +415,7 @@ module.exports = {
                 'ProjMethod',
                 'AngularUnits',
                 'LinearUnits',
-                'PriMems',
+                'Primems',
                 'GeogCS',
                 'ProjCS',
                 'SpatRef'
