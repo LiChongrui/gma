@@ -25,8 +25,8 @@ sidebar: false
 ```python
 from gma import crs
 
-Degree = crs.AngularUnits.Degree
-print(Degree)
+AngularUnit = crs.AngularUnits.Degree
+print(AngularUnit)
 ```
 
 > \>>> 0.0174532925199433
