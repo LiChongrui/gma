@@ -417,7 +417,6 @@ module.exports = {
                 'LinearUnits',
                 'ProjCS',
                 'GeogCS',
-                'Primems',
                 'SpatRef'
             ]
         },
