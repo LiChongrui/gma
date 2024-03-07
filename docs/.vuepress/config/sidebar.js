@@ -408,15 +408,16 @@ module.exports = {
             title: '空间参考',
             collapsable: false,
             children: [
-                'AngularUnits',
-                'Datum',
+                '',
                 'Ellips',
                 'Ellipsoid',
-                'GeogCS',
-                'LinearUnits',
-                'PRIMEMs',
-                'ProjCS',
+                'Datum',
                 'ProjMethod',
+                'AngularUnits',
+                'LinearUnits',
+                'ProjCS',
+                'GeogCS',
+                'Primems',
                 'SpatRef'
             ]
         },
