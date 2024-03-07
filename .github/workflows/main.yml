@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-2019
     strategy:
       matrix:
-        node-version: [18] 
+        node-version: [20.11.1] 
 
     steps:
       # 拉取代码
