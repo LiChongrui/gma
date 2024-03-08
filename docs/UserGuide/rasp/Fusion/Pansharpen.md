@@ -30,7 +30,7 @@ Intersection，NoneWithoutWarning。
 
 :::
 
-&emsp;Bands = `list`。融合多光谱波段列表。例如[1,2...]，波段计数从 1 开始。默认融合输入多光谱数据的所有波段（None）。
+&emsp;Bands = `list`。融合多光谱波段列表。例如[0,1,2...]，波段计数从 0 开始。默认融合输入多光谱数据的所有波段（None）。
 
 ::: warning 注意
 

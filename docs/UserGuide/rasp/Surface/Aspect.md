@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.rasp.Surface.**Aspect**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1,  ZevenbergenThorne = False, Trigonometric = False, ZeroForFlat = False*)
+## gma.rasp.Surface.**Aspect**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 0,  ZevenbergenThorne = False, Trigonometric = False, ZeroForFlat = False*)
 
 ---
 
@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;ComputeEdges = `bool`。是否计算栅格边缘数据和无数据值附近的数据。默认（True）是，其他设置值均视为否（False）。
 
-&emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
+&emsp;Band = `int`。需要计算的波段，编号从 0 开始。默认（0）为第一个波段。
 
 &emsp;ZevenbergenThorne = `bool`。是否改用 ZevenbergenThorne 法计算。默认（False）不使用（即采用 Horn 法计算）。不为 True 的设置均视为 Fasle。
 

@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.rasp.Surface.**TRI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1*)
+## gma.rasp.Surface.**TRI**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 0*)
 
 ---
 
@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;ComputeEdges = `bool`。是否计算栅格边缘数据和无数据值附近的数据。默认（True）是，其他设置值均视为否（False）。
 
-&emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
+&emsp;Band = `int`。需要计算的波段，编号从 0 开始。默认（0）为第一个波段。
 
 ---
 **示例：**

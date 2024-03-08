@@ -21,7 +21,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;Bands = `int||list`。需要导出文件的波段，编号从 1 开始。默认全部导出（None）。
+&emsp;Bands = `int||list`。需要导出文件的波段，编号从 0 开始。默认全部导出（None）。
 
 &emsp;OutFormat  = `str`。输出栅格文件格式。默认为 GTiff，其他格式详见 ToOtherFormat 函数。
 

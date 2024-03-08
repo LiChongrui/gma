@@ -4,7 +4,7 @@ date: 2021-10-30
 sidebar: false
 ---
 
-## gma.rasp.Extraction.**ToVector**(*InFile, OutVector, FieldName = 'Value', Band = 1, GeomType = 'Polygon', OutFormat = 'ESRI Shapefile'*)
+## gma.rasp.Extraction.**ToVector**(*InFile, OutVector, FieldName = 'Value', Band = 0, GeomType = 'Polygon', OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp;FieldName  = `str`。输出矢量字段的名称。默认为 Value。
 
-&emsp;Band  = `int`。要转换的波段。默认转换第一个波段（1）。
+&emsp;Band  = `int`。要转换的波段。默认转换第一个波段（0）。
 
 &emsp;GeomType = `str`。矢量几何类型。默认为多边形（'Polygon'）。
 

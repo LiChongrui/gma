@@ -4,7 +4,7 @@ date: 2022-09-26
 sidebar: false
 ---
 
-## gma.rasp.Extraction.**Isopleth**(*InFile, OutFile, Band = 1, Interval = 50, Base = 0, OutFormat = 'ESRI Shapefile'*)
+## gma.rasp.Extraction.**Isopleth**(*InFile, OutFile, Band = 0, Interval = 50, Base = 0, OutFormat = 'ESRI Shapefile'*)
 
 ---
 
@@ -18,7 +18,7 @@ sidebar: false
 
 **可选参数：**
 
-&emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
+&emsp;Band = `int`。需要计算的波段，编号从 0 开始。默认（0）为第一个波段。
 
 &emsp;Interval = `float`。等值线间隔。默认为 50。
 

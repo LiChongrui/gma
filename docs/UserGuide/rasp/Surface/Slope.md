@@ -4,7 +4,7 @@ date: 2022-03-20
 sidebar: false
 ---
 
-## gma.rasp.Surface.**Slope**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 1, Scale = 1.0, UseDegree = True, ZevenbergenThorne = False*)
+## gma.rasp.Surface.**Slope**(*InFile, OutFile, OutFormat = 'GTiff', ComputeEdges = True, Band = 0, Scale = 1.0, UseDegree = True, ZevenbergenThorne = False*)
 
 ---
 
@@ -22,7 +22,7 @@ sidebar: false
 
 &emsp;ComputeEdges = `bool`。是否计算栅格边缘数据和无数据值附近的数据。默认（True）是，其他设置值均视为否（False）。
 
-&emsp;Band = `int`。需要计算的波段，编号从 1 开始。默认（1）为第一个波段。
+&emsp;Band = `int`。需要计算的波段，编号从 0 开始。默认（0）为第一个波段。
 
 &emsp;Scale = `float`。垂直单位与水平单位的比值。默认为 1 。若垂直单位为 m 而水平单位为 °（即栅格坐标系为地理坐标系），可设置 Scale = 111120。
 
