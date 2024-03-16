@@ -88,7 +88,7 @@ SPI60 = climet.Index.SPI(PRE, Scale = 60)
 import numpy as np
 from gma import io
 # 读取数据集
-PRESet = io.ReadRster('PRE_Luoyang_1981-2020.tif')
+PRESet = io.ReadRaster('PRE_Luoyang_1981-2020.tif')
 PRE = PRESet.ToArray()
 PRE[PRE == PRESet.NoData] = np.nan
 # 读取的数据为三维数据（波段，行，列），第一维为时间序列（月数据）。因此按照轴 0 来计算
