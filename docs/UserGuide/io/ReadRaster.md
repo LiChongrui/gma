@@ -1,7 +1,7 @@
 ---
 title: ReadRaster
 date: 2022-03-09
-sidebar: true
+sidebar: false
 ---
 
 ## io.**ReadRaster**(*InFile, DataSetID = 0, \*\*kwargs*)
@@ -18,11 +18,6 @@ sidebar: true
 
 &emsp;DataSetID = `int`。子数据集序号。对于普通的栅格数据，只能为 0；对于多维数据（例如 netCDF 等），可配置此参数，以打开不同的子数据集。
 
-::: tip 提示
-
-打开一个普通栅格时，此函数与 Open 函数等效。
-
-:::
 
 &emsp;\*\*kwargs: 传递给 gdal.OpenEx 的其他参数。
 

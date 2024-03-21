@@ -1,7 +1,7 @@
 ---
 title: ReadVector
 date: 2022-03-09
-sidebar: true
+sidebar: false
 ---
 
 ## io.**ReadVector**(*InFile, LayerID = 0, Encoding = None, \*\*kwargs*)

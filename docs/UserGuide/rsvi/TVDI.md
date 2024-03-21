@@ -32,15 +32,16 @@ sidebar: false
 
 ::: warning 注意
 
-VINoData， LSTNoData 的区域在输出栅格中都将被改为 OutNoData。
+VINoData， LSTNoData 的区域在输出数据中都将被改为 OutNoData。
 
 :::
 
-**返回：** TVDI（`array`），参与拟合的VI（`array`），湿边LST（`array`）， 干边LST（`array`），湿边方程[系数，常数]（`list`），干边方程[系数，常数]（`list`）。
+**返回：**类型：`namedtuple`。包含 TVDI（`array`），参与拟合的VI（`array`），湿边LST（`array`）， 干边LST（`array`），湿边方程系数（`flaot`），（`flaot`），干边方程系数（`flaot`），常数（`flaot`）。
 
 ---
 
 **示例：**
+
 ```python
 from gma import rsvi
 ```
@@ -66,8 +67,8 @@ rsvi.TVDI(NDVI, LST)
 ```python
 from gma import io
 # 读取栅格文件至数据集
-NDVISet = io.ReadRater("MOD13Q1_LY_NDVI_20220407.tif")
-LSTSet = io.ReadRater("MOD11A2_LY_LST_20220407.tif")
+NDVISet = io.ReadRaster("MOD13Q1_LY_NDVI_20220407.tif")
+LSTSet = io.ReadRaster("MOD11A2_LY_LST_20220407.tif")
 
 # 提取数据集的仿射变换和坐标系
 Proj = NDVISet.Projection
