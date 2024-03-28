@@ -50,6 +50,17 @@ sidebar: false
 
 &emsp; Calibration = `list||slice||None`<Badge text="2.0.4 +"/>。参与内部参数拟合运算数据的周期。默认（None）为全部数据。
 
+
+::: tip 例如
+
+全部数据：Calibration = None
+
+第1~10个周期：Calibration = [0, 10]
+
+在第1~50个周期中，每隔 2 周期选一组数据：Calibration = slice(0, 50, 2)
+
+:::
+
 **返回：**`array`。
 
 **参考文献：**

@@ -46,6 +46,6 @@ Country = inres.WorldLayer.Country
 
 ![](/map/NEOcean.jpg)
 
-### Ocean
+### River
 
 ![](/map/NERiver.jpg)
