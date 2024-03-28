@@ -4,7 +4,7 @@ date: 2022-09-26
 sidebar: false
 ---
 
-## gma.climet.Other.**SolarRadiationFluxOA**(*Day, LAT*) <Badge text="1.0.13 +"/>
+## gma.climet.Astronomy.**SolarRadiationFluxOA**(*Day, LAT*) <Badge text="1.0.13 +"/>
 
 ---
 

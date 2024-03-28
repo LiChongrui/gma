@@ -4,7 +4,7 @@ date: 2022-09-20
 sidebar: false
 ---
 
-## gma.climet.Other.**RDBSunAndEarth**(*Day*) <Badge text="1.0.13 +"/>
+## gma.climet.Astronomy.**RDBSunAndEarth**(*Day*) <Badge text="1.0.13 +"/>
 
 ---
 

@@ -4,7 +4,7 @@ date: 2022-09-18
 sidebar: false
 ---
 
-## gma.climet.Other.**Declination**(*Day*) <Badge text="1.0.13 +"/>
+## gma.climet.Astronomy.**Declination**(*Day*) <Badge text="1.0.13 +"/>
 
 ---
 

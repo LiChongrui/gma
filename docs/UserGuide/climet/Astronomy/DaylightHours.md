@@ -4,7 +4,7 @@ date: 2022-09-15
 sidebar: false
 ---
 
-## gma.climet.Other.**DaylightHours**(*Day, LAT*) <Badge text="1.0.13 +"/>
+## gma.climet.Astronomy.**DaylightHours**(*Day, LAT*) <Badge text="1.0.13 +"/>
 
 ---
 
