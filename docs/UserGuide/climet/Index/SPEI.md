@@ -22,7 +22,17 @@ sidebar: false
 
 &emsp; Scale = `int`。时间尺度。默认为 1。例如：1月、3月或其他。
 
-&emsp; Periodicity = `int`。周期。默认为 12。例如：月数据可以以 12 为周期。
+&emsp; Periodicity = `int`。周期。默认为 12。
+
+::: tip 关于周期
+
+周期定义了参与拟合数据的分组方式，例如：
+
+**输入月数据，Periodicity = 12 时**，每个月份（共 12 组数据）之间互不干扰，独立拟合，更适合针对月份独立分析；
+
+**输入月数据，Periodicity = 1 时**，所有月份（共 1 组）同时参与拟合，相互影响，更适合分析月份之间的差异；
+
+:::
 
 &emsp; Distribution = `str` <Badge text="1.1.1 +"/>。用于内部拟合/变换计算的分布类型。默认为 LogLogistic。
 
