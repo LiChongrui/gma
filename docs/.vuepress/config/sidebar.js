@@ -38,6 +38,7 @@ module.exports = {
                         'Index/SPEI',
                         'Index/SPI',
                         'Index/PAP',
+                        'Index/PCI',
                         'Index/RMI',
                     ]
                 },
@@ -432,6 +433,9 @@ module.exports = {
                     title: 'gma 2',
                     collapsable: false,
                     children: [
+                        '2.0/2.0.7',
+                        '2.0/2.0.6',
+                        '2.0/2.0.5',
                         '2.0/2.0.4',
                         '2.0/2.0.3',
                         '2.0/2.0.2',

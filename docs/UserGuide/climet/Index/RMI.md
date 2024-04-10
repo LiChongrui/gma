@@ -8,7 +8,7 @@ sidebar: false
 
 ---
 
-**功能：**【相对湿润度指数】。计算相对湿润度指数。
+**功能：**【相对湿润度指数】。计算相对湿润度指数（Relative Moisture Index）。
 
 **参数：**
 
@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp; Axis = `int||None`。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 
-&emsp; Scale = `int`。时间尺度。默认为 1。例如：1月、3月或其他。
+&emsp; Scale = `int`。时间尺度。默认为 1。
 
 ::: warning 注意
 
@@ -47,7 +47,7 @@ Data = ELSXLayer.ToDataFrame()
 PRE = Data['PRE'].values
 ET0 = Data['ET0'].values
 
-# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 RMI 数据
+# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 RMI 指数
 RMI1 = climet.Index.RMI(PRE, ET0)
 RMI3 = climet.Index.RMI(PRE, ET0, Scale = 3)
 RMI6 = climet.Index.RMI(PRE, ET0, Scale = 6)
@@ -55,7 +55,7 @@ RMI12 = climet.Index.RMI(PRE, ET0, Scale = 12)
 RMI24 = climet.Index.RMI(PRE, ET0, Scale = 24)
 RMI60 = climet.Index.RMI(PRE, ET0, Scale = 60)
 ```
-> 不同尺度 PAP 结果
+> 不同尺度 RMI 结果
 
 ![](/climet/RMIPlot.svg)
 

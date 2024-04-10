@@ -42,7 +42,7 @@ sidebar: false
 
 'LogLogistic'：对数逻辑斯蒂分布；
 
-'Pearson3'：泊松 III 分布。
+'Pearson3'：皮尔逊 III 分布。
 
 :::
 
@@ -94,7 +94,7 @@ Data = ELSXLayer.ToDataFrame()
 PRE = Data['PRE'].values
 ET0 = Data['ET0'].values
 
-# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPEI 数据
+# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPEI 指数
 SPEI1 = climet.Index.SPEI(PRE, ET0)
 SPEI3 = climet.Index.SPEI(PRE, ET0, Scale = 3)
 SPEI6 = climet.Index.SPEI(PRE, ET0, Scale = 6)

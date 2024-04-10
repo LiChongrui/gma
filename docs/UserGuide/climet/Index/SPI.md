@@ -40,7 +40,7 @@ sidebar: false
 
 'LogLogistic'：对数逻辑斯蒂分布；
 
-'Pearson3'：泊松 III 分布。
+'Pearson3'：皮尔逊 III 分布。
 
 :::
 
@@ -90,7 +90,7 @@ Data = ELSXLayer.ToDataFrame()
 
 PRE = Data['PRE'].values
 
-# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
+# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 指数
 SPI1 = climet.Index.SPI(PRE)
 SPI3 = climet.Index.SPI(PRE, Scale = 3)
 SPI6 = climet.Index.SPI(PRE, Scale = 6)

@@ -8,7 +8,7 @@ sidebar: false
 
 ---
 
-**功能：**【降水距平百分率】。计算降水值到多年平均值的波动情况。
+**功能：**【降水距平百分率】。计算降水值到多年平均值的波动情况（Precipitation Anomaly in Percentage）。
 
 **参数：**
 
@@ -56,7 +56,7 @@ Data = ELSXLayer.ToDataFrame()
 
 PRE = Data['PRE'].values
 
-# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 SPI 数据
+# 分别计算1个月、3个月、6个月、12个月、24个月、60个月尺度的 PAP 指数
 PAP1 = climet.Index.PAP(PRE)
 PAP3 = climet.Index.PAP(PRE, Scale = 3)
 PAP6 = climet.Index.PAP(PRE, Scale = 6)
