@@ -32,7 +32,9 @@ Scale、Periodicity 基于计算轴！
 
 ::: warning 注意
 
-PCI 指数会缩减 Axis 上数据数量。在 Axis 上，每个周期仅有一组结果！
++ PCI 指数会缩减 Axis 上数据数量。在 Axis 上，每个周期仅有一组结果！
+
++ Axis 上不足一个周期的数据部分不会被计算PCI！
 
 :::
 
