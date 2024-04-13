@@ -11,7 +11,7 @@ actionLink: /Introduce.md
 
 features:
 - title: 易用至上
-  details: 以 Python 语法为基础，以最清晰用户指南帮助你快速实现功能应用。
+  details: 基于 Python，以 GDAL 为支撑（含命名规则），用最清晰用户指南帮助你快速实现功能应用。
 - title: 开放共享
   details: 涵盖气候气象指数、遥感指数、空间绘图、栅格/矢量处理等方向近百个功能函数开放使用。
 - title: 效率更新
@@ -32,7 +32,7 @@ import gma
 ## 引用部分模块
 ## 气候气象模块，坐标参考系统，地理数据（栅格/矢量）格式， 输入输出模块，数学模块，系统交互，
 ## 栅格处理，遥感指数，空间杂项，矢量处理
-from gma import climet, crs ,gft, io, math, osf, rasp, rsvi, smc, vesp 
+from gma import climet, crs, gft, io, math, osf, rasp, rsvi, smc, vesp 
 ## 空间绘图和内置数据
 from gma.map import plot, inres 
 ```
