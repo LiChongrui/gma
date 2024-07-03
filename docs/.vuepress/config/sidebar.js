@@ -40,6 +40,7 @@ module.exports = {
                         'Index/PAP',
                         'Index/PCI',
                         'Index/RMI',
+                        'Index/CWDI',
                     ]
                 },
                 {
@@ -433,6 +434,9 @@ module.exports = {
                     title: 'gma 2',
                     collapsable: false,
                     children: [
+                        '2.0/2.0.10',
+                        '2.0/2.0.9',
+                        '2.0/2.0.8',
                         '2.0/2.0.7',
                         '2.0/2.0.6',
                         '2.0/2.0.5',
