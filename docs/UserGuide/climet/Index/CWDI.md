@@ -20,7 +20,7 @@ sidebar: false
 
 &emsp; Axis = `int||None`。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
 
-&emsp; Weights= `list`。分组权重。默认为 [0.3, 0.25, 0.2, 0.15, 0.1]。
+&emsp; Weights = `list`。分组权重。默认为 [0.3, 0.25, 0.2, 0.15, 0.1]。
 
 &emsp; DurationPerWeight = `int`。与权重对应，每个权重系数对应的时长。默认为 10。
 
@@ -38,14 +38,10 @@ sidebar: false
 
 ---
 
-**示例 ：**
+**示例 ：*基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）***
 
 ```python
-from gma import climet
-```
-*基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）*
-```python
-from gma import io
+from gma import climet, io
 
 ELSXLayer = io.ReadVector('PRE_ET0.xlsx')
 Data = ELSXLayer.ToDataFrame()
