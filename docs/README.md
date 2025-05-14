@@ -6,7 +6,7 @@ tagline: 一个基于 Python 的地理、气象数据快速处理分析和地理
 
 heroImage: /images/Logo-gma.svg
 
-actionText: 开始探索 →
+actionText: 开始探索 → gma 2
 actionLink: /Introduce.md
 
 features:

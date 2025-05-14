@@ -53,7 +53,7 @@ module.exports = [
     {
         text: '更新日志',
         icon: "fas fa-arrow-up",
-        link: '/Update/log/2.0/2.0.10'
+        link: '/Update/log/2.1/2.1.4'
     },
     {
         text: '支持',
