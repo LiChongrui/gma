@@ -11,12 +11,11 @@ date: 2025-05-14
 
 &emsp; &emsp; GmaGIS 基础界面设计参考了 ArcGIS Pro，具有现代化的界面风格。
 
+![](/explore/GmaGIS-UI.png)
 
 ## 下载 GmaGIS
 
 &emsp; &emsp;目前 GmaGIS 仍处于发展阶段，功能不完成切可能存在诸多 BUG，仅供学习参考使用。
-
-![](/explore/GmaGIS-UI.png)
 
 **下载地址：**
 
