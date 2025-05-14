@@ -12,6 +12,13 @@ module.exports = {
                 'Naming',
             ]
         },
+        {
+            title:'GmaGIS',
+            collapsable: false,
+            children: [
+                'GmaGIS',
+            ]
+        },
     ],
 
     '/UserGuide/Instructions/': [
@@ -458,7 +465,7 @@ module.exports = {
                 }, 
                 {
                     title: 'gma 1',
-                    collapsable: true,
+                    collapsable: false,
                     children: [
                         '1.1/1.1.6',
                         '1.1/1.1.5',

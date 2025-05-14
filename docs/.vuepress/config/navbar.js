@@ -28,7 +28,7 @@ module.exports = [
                 text: '使用说明', 
                 items: [
                     {text: '简易说明', link: '/UserGuide/Instructions/Overview'},
-                    {text: '函数总览', link: '/UserGuide/Instructions/Function'}
+                    {text: '用户指南（pdf）', link: '/UserGuide/Instructions/Function'}
                 ],
             },
             { 

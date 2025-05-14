@@ -1,9 +1,11 @@
 ---
-title: 函数总览
-date: 2022-10-29
+title: 用户指南（pdf）
+date: 2025-05-14
 sidebar: false
 ---
 
-**&emsp;&emsp;下图** 列出了 gma 包含的所有可用函数，**可以快速了解所有的函数和功能**。
+**下载地址：**
 
-![](/explore/filefunction.png)
+> 链接: https://pan.baidu.com/s/1tBYlJXbewOgfXfe0_7ThUg?pwd=bc8w 
+
+> 提取码: bc8w 
