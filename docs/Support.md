@@ -1,14 +1,19 @@
 ---
 sidebar: false
-title: 反馈与赞助
+title: Support
 ---
 
-## 微信反馈
+## Feedback
+
+### E-Mail
+
+858998723@qq.com
+
+### WeChat
 
 ![](/images/LuoWeiXin.webp)
 
-
-## 友情赞助
+## Sponsor
 
 <svg id="赞" xmlns="http://www.w3.org/2000/svg" baseProfile="full" width="100%" height="100%" viewBox="0 0 13783 3725">
   <defs>

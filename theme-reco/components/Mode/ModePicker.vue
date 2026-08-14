@@ -1,6 +1,6 @@
 <template>
   <div class="mode-options">
-    <h4 class="title">主题模式</h4>
+    <h4 class="title">Theme Mode</h4>
     <ul class="color-mode-options">
       <li
         v-for="(mode, index) in modeOptions"
@@ -20,9 +20,9 @@ export default {
   data () {
     return {
       modeOptions: [
-        { mode: 'dark', title: '深色' },
-        { mode: 'auto', title: '自动' },
-        { mode: 'light', title: '浅色' }
+        { mode: 'dark', title: 'dark' },
+        { mode: 'auto', title: 'auto' },
+        { mode: 'light', title: 'light' }
       ],
       currentMode: 'auto'
     }

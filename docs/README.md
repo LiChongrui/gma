@@ -1,61 +1,64 @@
 ---
 home: true
 
-heroText: 地理与气象分析库
-tagline: 一个基于 Python 的地理、气象数据快速处理分析和地理制图函数包（Geographic and Meteorological Analysis，gma）
+heroText: gma - Geographic and Meteorological Analysis
+tagline: A Python package for rapid processing, analysis, and cartographic visualization of geospatial and meteorological data.
 
 heroImage: /images/Logo-gma.svg
 
-actionText: 开始探索 → gma 2
-actionLink: /Introduce.md
+actionText: Explore Latest → gma 3.0.3
+actionLink: /UserGuide/gio/
 
 features:
-- title: 易用至上
-  details: 基于 Python，以 GDAL 为支撑（含命名规则），用最清晰用户指南帮助你快速实现功能应用。
-- title: 开放共享
-  details: 涵盖气候气象指数、遥感指数、空间绘图、栅格/矢量处理等方向近百个功能函数开放使用。
-- title: 效率更新
-  details: 针对算法函数不断优化升级，以最大限度提高运行效率。
+- title: User-Friendly First
+  details: Built on Python, with a clear guide for quick start.
+- title: Open and Shared
+  details: Over 100 functions are available for open use.
+- title: Efficient Updates
+  details: Continuously optimized for peak performance.
 ---
 
 ---
-## <strong>快速入手</strong>
+## <strong>Quick Start</strong>
 
-### 安装（终端）
+### Install（bash）
 ```bash
 pip install gma
 ```
-### 引用（IDE）
+### Import（IDE）
 ```python
-## 完整引入
-import gma
-## 引用部分模块
-## 气候气象模块，坐标参考系统，地理数据（栅格/矢量）格式， 输入输出模块，数学模块，系统交互，
-## 栅格处理，遥感指数，空间杂项，矢量处理
-from gma import climet, crs, gft, io, math, osf, rasp, rsvi, smc, vesp 
-## 空间绘图和内置数据
-from gma.map import plot, inres 
+## Import selected modules
+from gma import climet, crs, driver, gio, math, rsvi, smc, etools, env, const
+
+## Spatial plotting and built-in data
+from gma.carto import plot, inres 
 ```
 
-### 绘图（示例）
+### Plotting (Example)
 
 ```python
-from gma import crs
-from gma.map import plot, inres
+from gma.carto import plot, inres
+import matplotlib.pyplot as plt
+import numpy as np
 
-# 创建一个 中央经线为 112°E 的 Bonne 投影坐标系
-Proj = crs.ProjCS(ProjMethod = crs.ProjMethod.Bonne(CentralMeridian = 112))
+fig = plt.figure(dpi = 300)
+ax = fig.add_subplot()
 
-# 0.创建一个地图框，用于制图
-MapF = plot.MapFrame(BaseMapProj = Proj)
+# Create a Bonne projection coordinate system with a central meridian of 112°E
+proj = crs.ProjectedCoordinateSystem(proj_method = crs.ProjMethods.Bonne(central_meridian = 112))
 
-# 1.添加内置的世界国家和政区矢量
-MapL1 = MapF.AddLayer(inres.WorldLayer.Country, FaceColor = None, LineColor = 'gray', LineWidth = 0.1)
+# 0. Create a map frame for cartography
+mf = plot.MapFrame(ax = ax, crs = proj)
 
-# 2.添加经纬网
-GridLines = MapF.AddGridLines(LONRange = (-180, 180, 30), LATRange = (-90, 90, 15), LineWidth = 0.2)
+# 1. Add built-in world country and administrative boundary vectors
+xly = inres.WorldLayer.Country
+colors = np.random.uniform(size = (len(xly), 3))
+ml1 = mf.add_vector(xly, facecolors = colors, edgecolors = 'gray', linewidths = 0.1)
 
-# 3.设置地图边框
-Frame = MapF.SetFrame(ShowBottom = False, ShowLeft = False, ShowRight = False, ShowTop = False, FrameWidth = 0.4)
+# 2. Add graticules
+gtl = mf.add_graticule(lat_range = range(-180, 180, 30), lon_range = range(-90, 90, 15), 
+                       linewidths = 0.2, ls = (6, (6, 6)))
+# 2.1 Set the graticule frame border
+ol = gtl.set_outline(linewidths = 0.5)
 ```
 ![](/images/Bonne.png)

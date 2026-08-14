@@ -1,50 +1,40 @@
 ---
 title: Datum
-date: 2023-01-10
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
+# gma.crs.Datum
 
-## gma.crs.**Datum**(*Name = 'WGS_1984', EllipsoidName = 'WGS84', UseDefaultEllips = True, SemiMajor = 6378137.0, InvFlattening = 298.2572236*)
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Datum</span><span style="font-style: italic; color: black;font-size: 130%;">(name = <span style="color:#48566B">"GMA Datum"</span>, ellipsoid = <span style="color:#48566B">"GMA Ellipsoid"</span>, semi_major = <span style="color:#48566B">6378137.0</span>, inv_flattening = <span style="color:#48566B">298.2572236</span>):</span></span>
 
-**功能：** 创建一个自定义基准面。
+Datum object. Define a datum.
 
-**可选参数：**
-
-&emsp; Name = `str`。基准面名称。
-
-&emsp; EllipsoidName = `str`。椭球体名称。
-
-&emsp; UseDefaultEllips = `bool`。是否使用内置椭球体参数。
-
-::: tip 说明
-
-**True**：EllipsoidName 必须为 crs.Ellips 下内置椭球体名称，且忽略 SemiMajor、InvFlattening 参数。
-
-**False**：EllipsoidName 仅作为新椭球体自定义名称，且应用 SemiMajor、InvFlattening 参数。
-
-::: 
-
-&emsp; SemiMajor = `float`。椭球体长半轴（m）。
-
-&emsp; InvFlattening = `float`。椭球体反扁率。
-
-**返回：** `Datum`。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code>str</code>. <span style="color:#48566B;">Default 'GMA Datum'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Name of the new datum.</p><p style="text-indent: 1em;"><b>ellipsoid  = </b> <code>str||Ellipsoid</code>. <span style="color:#48566B;">Default 'GMA Ellipsoid'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Name of the new datum. if ellipsoid is a Ellipsoid object, then semi_major, inv_flattening will be ignore.</p><p style="text-indent: 1em;"><b>semi_major  = </b> <code>float||None</code>. <span style="color:#48566B;">Default 6378137.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The semi-major axis of the ellipsoid.</p><p style="text-indent: 1em;"><b>inv_flattening  = </b> <code>float</code>. <span style="color:#48566B;">Default 298.2572236.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The inverse flattening of the ellipsoid.</p>
 
 ---
 
-**示例：**
+## Property 
 
-```python
-from gma import crs
 
-NewDatum = crs.Datum(Name = 'GMADatum', EllipsoidName = 'CGCS2000')
-print(NewDatum)
-```
 
-> \>>> <gma.algos.spat.datum.Datum at 0x...>
+### ellipsoid_name
 
 
 
 
+---
+
+### inv_flattening
+
+
+
+
+---
+
+### semi_major
+
+
+
+
+---

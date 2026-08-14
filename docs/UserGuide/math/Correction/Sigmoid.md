@@ -1,34 +1,15 @@
 ---
-title: Sigmoid
-date: 2023-01-30
-sidebar: false
+title: sigmoid
+date: 2026-08-14
+sidebar: true
 ---
+# gma.math.correction.sigmoid
 
-## gma.math.Correction.**Sigmoid**(*Data, Constant = 1, IgnoreValue = None, Inverse = False, Cutoff = 0.5*)<Badge text="1.1.3 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">sigmoid</span><span style="font-style: italic; color: black;font-size: 130%;">(data, constant = <span style="color:#48566B">1</span>, ignore_value = <span style="color:#48566B">None</span>, inverse = <span style="color:#48566B">False</span>, cutoff = <span style="color:#48566B">0.5</span>):</span></span>
 
-**功能：** 【S型曲线函数变换】。对输入数组进行的S型曲线函数变换。
+S-shaped curve function transformation. Reference equation: Out = 1 / (1 + exp(constant * (cutoff - (data - vmin) / vptp))) * vptp.
 
-::: tip 参考公式
-Out = 1 / (1 + exp(Constant * (Cutoff - (Data - Min) / RangeV))) * RangeV
-:::
-
-**参数：** 
-
-&emsp;Data: `array`。需要矫正的数据。
-
-**可选参数：**
-
-&emsp;Constant = `float`。变换常量。默认为 1。
-
-&emsp;IgnoreValue = `float`。不参与计算的忽略值。默认无（None）。
-
-&emsp;Inverse = `bool`。是否进行逆变化。默认不进行逆变化（False）。
-
-&emsp;Cutoff = `float`。S型曲线的截点。默认为中点（0.5）。
-
-**返回：**`array`。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The data to be corrected.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>constant  = </b> <code>float</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The constant term of the correction factor.</p><p style="text-indent: 1em;"><b>ignore_value  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The value that is not involved in the calculation.</p><p style="text-indent: 1em;"><b>inverse  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to perform the inverse change.</p><p style="text-indent: 1em;"><b>cutoff  = </b> <code>bool</code>. <span style="color:#48566B;">Default 0.5.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The intercept point of the S-curve. The default is the midpoint (0.5).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---
-

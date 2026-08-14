@@ -1,19 +1,26 @@
 ---
-title: 模块简介
-date: 2023-11-13
+title: Contents
+date: 2026-08-14
 sidebar: false
 ---
-
-&emsp;&emsp; gma 数学运算函数包 **math** 主要提供一些常用的数学计算和数组处理工作。其不如一些专业的库（例如scipy、numpy、pandas、symbol等），但也在一定程度上方便了某些计算过程。
-
-&emsp;&emsp; 目前主要包括 6 大部分共计 XX 个函数 ，主要分类为：
-
- **导入此模块**
-
-```python
-from gma import math
-```
-
-
-
-
+All items(functions/classes/consts) in this module are as follows:
+|No.|item|type|introduce|
+|---|---|---|---|
+|1|[math.correction.gamma](/UserGuide/math/correction/gamma.html)|function|Gamma transform.Reference equation: Out = constant * ((data - vvmin) / vptp) ** gamma_v) * vptp.|
+|2|[math.correction.log](/UserGuide/math/correction/log.html)|function|Logarithmic transformation.Reference equation: Out = log2(1 + (data - vmin) / vptp) * vptp * constant.|
+|3|[math.correction.sigmoid](/UserGuide/math/correction/sigmoid.html)|function|S-shaped curve function transformation.Reference equation: Out = 1 / (1 + exp(constant * (cutoff - (data - vmin) / vptp))) * vptp.|
+|4|[math.evaluation.D](/UserGuide/math/evaluation/D.html)|function|D index.|
+|5|[math.evaluation.MAE](/UserGuide/math/evaluation/MAE.html)|function|Maximum absolute error.|
+|6|[math.evaluation.NRMSE](/UserGuide/math/evaluation/NRMSE.html)|function|NRMSE.|
+|7|[math.evaluation.R2](/UserGuide/math/evaluation/R2.html)|function|Coefficient of determination.|
+|8|[math.evaluation.RMSE](/UserGuide/math/evaluation/RMSE.html)|function|RMSE.|
+|9|[math.evaluation.corrcoef](/UserGuide/math/evaluation/corrcoef.html)|function|Correlation coefficient and significance.|
+|10|[math.kernel.aggregate](/UserGuide/math/kernel/aggregate.html)|function|Aggregate array.|
+|11|[math.prepro.fill_nodata](/UserGuide/math/prepro/fill_nodata.html)|function|Interpolate missing or abnormal values.|
+|12|[math.prepro.to_numeric_array](/UserGuide/math/prepro/to_numeric_array.html)|function|Forces the input data to be converted to a numeric array, values that cannotbe converted will be modified to nan.|
+|13|[math.smooth.moving_average](/UserGuide/math/smooth/moving_average.html)|function|Data smoothing based on moving average method.|
+|14|[math.smooth.savitzky_golay](/UserGuide/math/smooth/savitzky_golay.html)|function|Data smoothing based on Savitzky-Golay method.|
+|15|[math.stretch.hist_equalize](/UserGuide/math/stretch/hist_equalize.html)|function|Apply non-linear contrast stretching, where the values are distributed within the bit depth range.|
+|16|[math.stretch.max_min](/UserGuide/math/stretch/max_min.html)|function|Use linear stretching with the minimum and maximum output pixel values as the endpoints of the histogram.|
+|17|[math.stretch.percentage](/UserGuide/math/stretch/percentage.html)|function|Truncates the array based on the percentage interval entered.Then stretch it to the specified range.|
+|18|[math.stretch.std](/UserGuide/math/stretch/std.html)|function|Standard deviation stretch. This method is used to emphasize how much feature values vary from the mean value;it is best when used on normally distributed data.|

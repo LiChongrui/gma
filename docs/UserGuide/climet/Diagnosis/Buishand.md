@@ -1,50 +1,15 @@
 ---
 title: Buishand
-date: 2022-08-28
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
-
-## gma.climet.Diagnosis.**Buishand**(*Data, Axis = None, Method = 'Q'*)<Badge text="1.1.1 +"/>
-
----
-
-**功能：**【Buishand 突变点检验】。基于 Buishand 法对时间序列数据进行突变点检验。
-
-**参数：**
-
-&emsp;Data：`list||array` 。需要检验的数据。
-
-**可选参数：**
-
-&emsp;Axis = `int`  。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
-
-&emsp;Method = `Q`  。Buishand 方法。默认为 'Q'。
-
-::: tip 其他方法
-'Range'，'LL Ration'，'U'。
-:::
+# gma.climet.diagnosis.Buishand
 
 
-**返回：** `namedtuple`。
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Buishand</span><span style="font-style: italic; color: black;font-size: 130%;">(data, axis = <span style="color:#48566B">None</span>, method = <span style="color:#48566B">"Q"</span>):</span></span>
 
-&emsp;&emsp;最大统计量：R（Range）或 Q（Q）或 V（LL Ration）或 U（U）。
+Checks homogeneity test using Buishand's methods proposed in T. A. Buishand (1982).
 
-&emsp;&emsp;LOC：突变位置。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data to be tested.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="text-indent: 1em;"><b>method  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Q'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Buishand's method. Supported methods include: 'Q', 'Range', 'LL Ration', 'U'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Statistic: R('Range'): Buishand's Q Statistics range divided by squire root of sample size [R/sqrt(n)].</p><p style="padding-left: 1em;text-indent: 1em;">Q('Q'): Maximum of absolute Buishand's Q Statistics divided by squire root of sample size [Q/sqrt(n)].</p><p style="padding-left: 1em;text-indent: 1em;">V('LL Ration'): Maximum of absolute Buishand's weighted adjusted partial sum S.</p><p style="padding-left: 1em;text-indent: 1em;">U('U'): Buishand's U Statistics.</p><p style="padding-left: 1em;text-indent: 1em;">loc: Probable change point location index (Start from 1).</p>
 
 ---
-
-**示例：**
-
-```python
-from gma import climet
-# 这里建立一个随机序列来模拟代码数据处理过程
-import numpy as np
-np.random.seed(0)
-Data = np.random.uniform(size = 72)
-
-BD = climet.Diagnosis.Buishand(Data, Method='Q')
-
-print(BD)
-```
-> \>>> BuishandQ(Q=1.2571112721486875, LOC=40)
-

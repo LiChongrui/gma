@@ -1,65 +1,15 @@
 ---
 title: Hargreaves
-date: 2022-06-22
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
+# gma.climet.et0.Hargreaves
 
-## gma.climet.ET0.**Hargreaves**(*TMAX, TMIN, LAT = 34.6, TMean = None, Axis = None, StartYear = 1992, StartDayOfYear = 1*) <Badge text="1.0.10 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Hargreaves</span><span style="font-style: italic; color: black;font-size: 130%;">(tmax, tmin, lat = <span style="color:#48566B">34.6</span>, TMean = <span style="color:#48566B">None</span>, axis = <span style="color:#48566B">None</span>, start_year = <span style="color:#48566B">1992</span>, start_day_of_year = <span style="color:#48566B">1</span>):</span></span>
 
-**功能：**【Hargreaves】。基于 哈格里夫斯（Hargreaves 1998）法计算日潜在蒸散量。
+Calculate daily potential evapotranspiration based on the Hargreaves (1998) method.
 
-**参数：**
-
-&emsp;TMAX: `float||array`。日最高气温（℃）。
-
-&emsp;TMIN: `float||array`。日最低气温（℃）。
-
-**可选参数：**
-
-&emsp;LAT = `float||array`。数据纬度值（°）。默认北纬 34.6°。
-
-::: tip 提示
-
-若 LAT 为数组，其在非计算轴上应与输入数据具有相同的形状！
-
-:::
-
-&emsp;TMean = `float||array`。日最高气温（℃）。默认（None）为最高最低气温的平均值（TMAX + TMIN） * 0.5。
-
-&emsp;Axis = `int`。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
-
-&emsp;StartYear = `int`。数据起始年份。默认 1992 年。
-
-&emsp;StartDayOfYear = `int`。数据起始日序。默认为 1。
-
-::: warning 注意
-
-StartYear、StartDayOfYear 基于计算轴！
-
-:::
-
-**返回：**`array`。
-
-**参考文献：**
-
-&emsp;Allen, Richard et al (1998) Crop evapotranspiration - Guidelines for computing crop  water requirements - FAO Irrigation and drainage paper 56 ISBN 92-5-104219-5
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>tmax: </b> <code>float||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Daily maximum temperature (��).</p><p style="text-indent: 1em;"><b>tmin: </b> <code>float||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Daily minimum temperature (��).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>lat  = </b> <code>float||array</code>. <span style="color:#48566B;">Default 34.6�� N.</span></p><p style="padding-left: 1em;text-indent: 1em;">Data latitude value (��).</p><p style="padding-left: 1em;text-indent: 1em;">*Note: If lat is an array, it should have the same shape as the input data on the non-computed axis!</p><p style="text-indent: 1em;"><b>TMean  = </b> <code>float||array</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Daily maximum temperature (��). The default (None) is (tmax + tmin) * 0.5.</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="text-indent: 1em;"><b>start_year  = </b> <code>int</code>. <span style="color:#48566B;">Default 1992.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Data start year.</p><p style="text-indent: 1em;"><b>start_day_of_year  = </b> <code>int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">Data start day of year.</p><p style="padding-left: 1em;text-indent: 1em;">*Note: start_year, start_month are based on calculated axis!</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p><p style="text-indent: 1em;"><b>References</b>.</p><p style="text-indent: 1em;"><b>Allen, Richard et al (1998) Crop evapotranspiration - Guidelines for computing crop</b>.</p><p style="text-indent: 1em;"><b>water requirements - FAO Irrigation and drainage paper 56</b>.</p><p style="text-indent: 1em;"><b>ISBN 92-5-104219-5</b>.</p>
 
 ---
-
-```python
-from gma import climet
-import numpy as np
-np.random.seed(0)
-
-TMAX = np.random.uniform(20, 30, size = 48)
-TMIN = np.random.uniform(10, 20, size = 48)
-
-THD = climet.ET0.Hargreaves(TMAX, TMIN)
-```
-> \>>> array([2.20254352, 2.09796738, 2.26378286, 1.60532567, 1.84185121,
-       2.1940866 , 2.04971425, 2.27649286, 2.57712085, 1.7926611 ,
-       2.60771494, 1.96530488, 2.03299078, 2.50441209, 0.73454371,
-       1.27599509, 1.55238039, 2.56200767, 2.32908408, 2.8287616 ,
-       2.65669559, 2.42848895, 2.31957885, 2.7729996 ])

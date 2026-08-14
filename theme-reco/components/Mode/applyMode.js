@@ -31,7 +31,7 @@ export default function applyMode (mode) {
   if (isLightMode) render('light')
 
   if (!isDarkMode && !isLightMode) {
-    console.log('配色方案设置异常。我们已自动调整配色方案。')
+    console.log('Color scheme setting error. We have automatically adjusted the color scheme.')
     const hour = new Date().getHours()
     if (hour < 6 || hour >= 18) render('dark')
     else render('light')

@@ -1,32 +1,15 @@
 ---
-title: Percentage
-date: 2023-01-30
-sidebar: false
+title: percentage
+date: 2026-08-14
+sidebar: true
 ---
+# gma.math.stretch.percentage
 
-## gma.math.Stretch.**Percentage**(*Data, MinLabel = None, MaxLabel = None, IgnoreValue = None, MinPER = 5, MaxPER = 95*)<Badge text="1.1.3 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">percentage</span><span style="font-style: italic; color: black;font-size: 130%;">(data, min_label = <span style="color:#48566B">None</span>, max_label = <span style="color:#48566B">None</span>, ignore_value = <span style="color:#48566B">None</span>, min_per = <span style="color:#48566B">5</span>, max_per = <span style="color:#48566B">95</span>):</span></span>
 
-**功能：** 【百分比截断】。以百分比处数据作为直方图的端点，应用线性拉伸。
+Truncates the array based on the percentage interval entered. Then stretch it to the specified range.
 
-**参数：** 
-
-&emsp;Data: `array`。需要拉伸的数据。
-
-**可选参数：**
-
-&emsp;MinLabel = `float`。拉伸后最小值。默认为输入数组的最小值（None）。
-
-&emsp;MaxLabel = `float`。拉伸后最大值。默认为输入数组的最大值（None）。
-
-&emsp;IgnoreValue = `float`。不参与计算的忽略值。默认无（None）。
-
-&emsp;MinPER = `float`。截断最小值百分比（0~100）。默认 5。
-
-&emsp;MaxPER = `float`。截断最大值百分比（0~100）。默认 95。
-
-**返回：**`array`。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The data to be stretched.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>min_label  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Minimum value after stretching. Default(None) is the minimum value of the input data.</p><p style="text-indent: 1em;"><b>max_label  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Maximum value after stretching. Default(None) is the maximum value of the input data.</p><p style="text-indent: 1em;"><b>ignore_value  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The value that is not involved in the calculation.</p><p style="text-indent: 1em;"><b>min_per  = </b> <code>float</code>. <span style="color:#48566B;">Default 5.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Specify the percentage of the low values to exclude from the stretch, which must be between 0 and 100.</p><p style="text-indent: 1em;"><b>max_per  = </b> <code>float</code>. <span style="color:#48566B;">Default 5.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Specify the percentage of the high values to exclude from the stretch, which must be between 0 and 100.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---
-

@@ -1,57 +1,15 @@
 ---
 title: CWDI
-date: 2024-07-01
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
+# gma.climet.index.CWDI
 
-## gma.climet.Index.**CWDI**(*PRE, ETc, Axis=None, Weights=[0.3, 0.25, 0.2, 0.15, 0.1], DurationPerWeight=10*) <Badge text="2.0.11 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">CWDI</span><span style="font-style: italic; color: black;font-size: 130%;">(pre, etc, axis = <span style="color:#48566B">None</span>, weights = <span style="color:#48566B">[0.1, 0.15, 0.2, 0.25, 0.3]</span>, duration_per_weight = <span style="color:#48566B">10</span>):</span></span>
 
-**功能：**【作物水分亏缺指数】。计算作物水分亏缺指数（Crop Water Deficit Index）。
+Calculate Crop Water Deficit Index.
 
-**参数：**
-
-&emsp;PRE: `array`。降水量（mm）。
-
-&emsp;ETc: `array`。作物需水量（mm）。
-
-**可选参数：**
-
-&emsp; Axis = `int||None`。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
-
-&emsp; Weights = `list`。分组权重。默认为 [0.3, 0.25, 0.2, 0.15, 0.1]。
-
-&emsp; DurationPerWeight = `int`。与权重对应，每个权重系数对应的时长。默认为 10。
-
-::: tip 每日 CWDI
-
-用以计算每日 CWDI 的数据为当日及之前 len(Weights) × DurationPerWeight 日数据。默认情况下为 50 天（组）。
-
-:::
-
-**返回：**`array`。单位为 %。
-
-**参考文献：**
-
-&emsp;Li Chongrui, You Songcai, Wu Yongfeng, Wang Yihao. Improved crop water deficit index for monitoring drought disaster change process of spring maize in the Northeast China[J]. Transactions of the Chinese Society of Agricultural Engineering (Transactions of the CSAE),  2019, 35(21): 175-185. DOI: 10.11975/j.issn.1002-6819.2019.21.021
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>pre: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Precipitation (mm).</p><p style="text-indent: 1em;"><b>etc: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Crop water requirements (mm).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="text-indent: 1em;"><b>weights  = </b> <code>list</code>. <span style="color:#48566B;">Default [0.1, 0.15, 0.2, 0.25, 0.3].</span></p><p style="padding-left: 1em;text-indent: 1em;">Weighting factors. The length of weights determines the number of weighting factors, and the sum of weights should be 1. Date from oldest to newest.</p><p style="text-indent: 1em;"><b>duration_per_weight  = </b> <code>int</code>. <span style="color:#48566B;">Default 10.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The length of water deficit corresponding to each weighting factor.</p><p style="text-indent: 1em;"><b>*Note: </b> <code>ThedatausedincalculatingeachCWDIislen(weights)��duration_per_weight</code>.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array(%)</code>.</p><p style="text-indent: 1em;"><b>References</b>.</p><p style="text-indent: 1em;"><b>Li Chongrui, You Songcai, Wu Yongfeng, Wang Yihao. Improved crop water deficit index for monitoring</b>.</p><p style="text-indent: 1em;"><b>drought disaster change process of spring maize in the Northeast China[J].</b>.</p><p style="text-indent: 1em;"><b>Transactions of the Chinese Society of Agricultural Engineering (Transactions of the CSAE),</b>.</p><p style="text-indent: 1em;"><b>2019, 35(21)</b>.</p>
 
 ---
-
-**示例 ：*基于 Excel 表数据（下载 [示例数据](/climet/PRE_ET0.xlsx)）***
-
-```python
-from gma import climet, io
-
-ELSXLayer = io.ReadVector('PRE_ET0.xlsx')
-Data = ELSXLayer.ToDataFrame()
-
-PRE = Data['PRE'].values
-ETc = Data['ET0'].values    ##这里仅做演示，实际使用时请使用真实的ETc。
-
-# 计算 CWDI 指数
-CWDI = climet.Index.CWDI(PRE, ETc)
-```
-> CWDI 计算结果
-
-![](/climet/CWDI.svg)

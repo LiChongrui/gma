@@ -1,44 +1,15 @@
 ---
 title: SNHT
-date: 2022-08-28
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
-
-## gma.climet.Diagnosis.**SNHT**(*Data, Axis = None*)<Badge text="1.1.1 +"/>
-
----
-
-**功能：**【SNHT 突变点检验】。基于 SNHT 法对时间序列数据进行突变点检验。
-
-**参数：**
-
-&emsp;Data：`list||array` 。需要检验的数据。
-
-**可选参数：**
-
-&emsp;Axis = `int`  。计算轴。如果不设置（None），多维数据会将所有数据展开到一维计算。
+# gma.climet.diagnosis.SNHT
 
 
-**返回：** `namedtuple`。
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">SNHT</span><span style="font-style: italic; color: black;font-size: 130%;">(data, axis = <span style="color:#48566B">None</span>):</span></span>
 
-&emsp;&emsp;MAXT：SNHT T 检验最大统计量。
+Checks homogeneity test using H. Alexandersson (1986) method.
 
-&emsp;&emsp;LOC：突变位置。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data to be tested.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">MAXT: Maximum of SNHT T Statistics.</p><p style="padding-left: 1em;text-indent: 1em;">loc: Probable change point location index (Start from 1).</p>
 
 ---
-
-**示例：**
-
-```python
-from gma import climet
-# 这里建立一个随机序列来模拟代码数据处理过程
-import numpy as np
-np.random.seed(0)
-Data = np.random.uniform(size = 72)
-
-SD = climet.Diagnosis.SNHT(Data)
-
-print(SD)
-```
-> \>>> SNHT(MAXT=6.46938054846884, LOC=43)
-

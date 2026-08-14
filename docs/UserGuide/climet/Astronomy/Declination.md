@@ -1,27 +1,15 @@
 ---
-title: Declination
-date: 2022-09-18
-sidebar: false
+title: declination
+date: 2026-08-14
+sidebar: true
 ---
+# gma.climet.astronomy.declination
 
-## gma.climet.Astronomy.**Declination**(*Day*) <Badge text="1.0.13 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">declination</span><span style="font-style: italic; color: black;font-size: 130%;">(day):</span></span>
 
-**功能：**【赤纬】。基于 FAO-56 推荐的方法计算赤纬（red）。
+Calculate declination (red) based on the method recommended by FAO-56.
 
-**参数：**
-
-&emsp;Day: `int||array` 。日期，以日序（儒略日）表示。1-365（平年）或 366（闰年）。
-
-**返回：**`array` 。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>day: </b> <code>int||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Day of year. 1-365 (normal year) or 366 (leap year).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---
-
-**示例 ：**
-
-```python
-from gma import climet
-climet.Astronomy.Declination([1,2,3])
-```
-> \>>> array([-0.40100809, -0.39956372, -0.39800096])

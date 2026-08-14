@@ -1,62 +1,15 @@
 ---
 title: D
-date: 2021-10-30
-sidebar: false
+date: 2026-08-14
+sidebar: true
 ---
+# gma.math.evaluation.D
 
-## gma.math.Evaluation.**D**(*Measure, Simulation, Axis = 0*)
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">D</span><span style="font-style: italic; color: black;font-size: 130%;">(real, pred, axis = <span style="color:#48566B">0</span>):</span></span>
 
-**功能：**【D】。D指标。
+D index.
 
-**参数：**
-
-&emsp;Measure：`list||array`。第一组数据。
-
-&emsp;Simulation：`list||array`。第二组数据。
-
-**可选参数：** 
-
-&emsp;Axis = `int` 。数据评估使用的轴。
-
-**返回：**`float||array`。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>real: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Measured data.</p><p style="text-indent: 1em;"><b>pred: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Simulation data.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The axis to use for calculations.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---
-**示例：**
-
-```python
-from gma import math
-```
-
-*序列（1 维）*
-
-```python
-MEA = [15.1, 33, 88, 158.4]
-SIM = [0.8, 1.7, 7.8, 7.4]
-EVA = math.Evaluation.D(MEA, SIM)
-```
-> \>>> 0.4857905378671188
-
-*更多维度*
-```python
-MEA = [[ 0.05120073,  0.05444646,  0.05096978,  0.05096978],
-       [ 0.16359164,  0.18061367,  0.16168582,  0.16168582],
-       [-0.07699195, -0.07706093, -0.07740774, -0.07740774],
-       [ 0.17469311,  0.19315895,  0.15614156,  0.15614156],
-       [ 0.2006536 ,  0.18265162,  0.15587704,  0.15587704]]
-SIM = [[ 0.22857143,  0.22911051,  0.1908772 ,  0.1908772 ],
-       [ 0.2956548 ,  0.3080475 ,  0.22230114,  0.22230114],
-       [ 0.32706437,  0.35      ,  0.29352903,  0.29352903],
-       [ 0.03658536,  0.03522885,  0.03478987,  0.03478987],
-       [-0.10225949, -0.07193749, -0.05467691, -0.05467691]]
-
-## 按照第一个维度计算
-EVA0 = math.Evaluation.D(MEA, SIM, Axis = 0)
-print('"Axis = 0":', EVA0)
-## 按照第二个维度计算
-EVA1 = math.Evaluation.D(MEA, SIM, Axis = 1)
-print('"Axis = 1":', EVA1)
-```
-> \>>> "Axis = 0": [0.12719236 0.15716047 0.14860985 0.14860985]<br>
-> \>>> "Axis = 1": [0.01756081 0.15881546 0.00101525 0.16984088 0.11762213]

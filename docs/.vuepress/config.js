@@ -2,10 +2,10 @@
 module.exports = {
     locales: {
         '/': {
-            lang: 'zh-CN'
+            lang: 'en-US'
         }
     },
-    //,'/en/': { lang: 'en-US', },  },
+    //,'/zh/': { lang: 'zh-CN', },  },
     port: '9000', // 本地端口
     markdown:{
         lineNumbers: true
@@ -14,12 +14,12 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/images/Logo-gma.svg' }]
     ],
-    title: '地理与气象分析库',
+    title: 'GMA Python',
     theme: require.resolve('../../theme-reco'),
     themeConfig: {
         //导航栏logo
         logo: '/images/Logo-gma.svg',
-        author: '洛',
+        author: 'Luo_Suppe',
         //type: 'blog',
         authorAvatar: '/images/Luo.jpg',
 

@@ -1,80 +1,70 @@
 ---
-title: 简介
+title: Introduce
 date: 2023-08-20
 sidebar: false
 ---
-<font color="#616AE5" size=3.5 style="line-height: 35px;">
-&emsp;&emsp;<strong>地理与气象分析库（Geographic and Meteorological Analysis，简称 gma）</strong>，
-</font>
-是一个基于 Python 的地理、气象数据快速处理分析和地理制图函数包。构建过程参考了ArcGIS和QGIS的操作逻辑和特点，并添加诸多独创性、独有的功能，具有独特的代码构造理念。
+<p style = "text-indent: 2em;"><strong  style = "color:#616AE5; size=3.5;">Geographic and Meteorological Analysis (gma)</strong>
+ is a Python-based function package for rapid processing and analysis of geographic and meteorological data, as well as geospatial mapping. Its development draws on the operational logic and features of ArcGIS and QGIS, while incorporating numerous original and unique functionalities with a distinctive code architecture philosophy.</p>
 
-&emsp;&emsp;整体上，gma遵循易用至上、开放共享、效率更新的原则，不断整合优秀的、前沿的、大众急需的地理/气象相关模型算法，力争打造国内独具特色的集地理数据处理和分析、气象指标计算、地理空间绘图等功能为一体函数包，以简单的用法、完整的帮助说明、典型的示例等使用者可以快速入手，并解决现实问题。
+&emsp;&emsp;Overall, gma adheres to the principles of user-friendliness, open sharing, and efficient updates. It continuously integrates cutting-edge, popular, and urgently needed geographic/meteorological models and algorithms, striving to become a distinctive domestic function package that integrates geographic data processing and analysis, meteorological index calculation, and geospatial mapping. With simple usage, comprehensive documentation, and typical examples, users can quickly get started and solve real-world problems.
 
-&emsp;&emsp;目前，gma 2 已经发布，相较于 gma 1，其底层算法逻辑彻底重构，功能函数重新归类，类结构和功能逻辑更加清晰，其更像是gma真正意义上的第一个正式版。
+## Included Features
 
-::: warning 注意
-+ gma 2 已经发布，并且数十年内不会进行大的用法调整！
 
-+ gma 1 不在提供支持，本站内容均建立于gma 2。
-:::
+::: theorem 
 
-<!-- more -->
++ **gio(Raster/Vector Data I/O Module)**  
+Includes data opening, information viewing, conversion, extraction, and in-memory raster/vector data creation.
 
-## 主要功能
++ **crs(Spatial Reference System)**  
+Includes geographic/projection coordinate system creation, datum/ellipsoid creation, projection method configuration, and initialization of existing spatial references.
 
-&emsp;&emsp;gma 是作者地理研学过程中成果的集合。且为每个函数配置中文的函数帮助说明，使用时只需调用对应的函数，设置相应的参数即可实现。
++ **smc(Spatial Miscellaneous Calculations)**  
+Includes spatial queries (length measurement, coordinate conversion, etc.) and spatial interpolation (Inverse Distance Weighting, Kriging, etc.).
 
-::: theorem 已包含的功能
++ **etools(Extension Tools)**  
+Includes surface analysis (slope, aspect, etc.), raster mosaicking, image correction, mosaicking, merging, and more.
 
-+ **栅格/矢量数据输入输出模块**：包括数据打开、信息查看、转换、提取，栅格/矢量内存数据创建等。
++ **carto(Geospatial Mapping)**  
+Includes raster and vector data plotting, as well as generation of north arrows, scale bars, etc.
 
-+ **坐标参考系统**：包括地理/投影坐标系创建、基准面/椭球体创建、投影方法配置、初始化现有空间参考等。
++ **math(Mathematical Operations)**  
+Includes data smoothing, evaluation, filtering, stretching, enhancement, transformation, and more.
 
-+ **地理空间制图**：包括栅格、矢量数据绘图，指北针、比例尺等生成。
++ **climet(Climatic and Meteorological Index Calculation)**  
+Includes climate indices (SPEI, SPI, etc.), various potential evapotranspiration algorithms (Penman-Monteith method, etc.), climate diagnostics (Mann-Kendall mutation test, etc.), and other related algorithms (sun–earth relative distance, etc.).
 
-+ **数学运算模块**：包括数据平滑、评估、滤波、拉伸、增强、变换等。
-
-+ **气候气象模块**：包括气候指数（SPEI、SPI等）、多种潜在蒸散算法（Penman-Monteith法等）、气候诊断（M-K突变检验等）和一些其他相关指数（日地相对距离等）算法等。
-
-+ **遥感指数计算**：包括NDVI、EVI、TVDI等遥感植被指数计算。
-
-+ **栅格处理工具**包括基础处理（重采样、重投影等）、提取分析（等值线提取、重分类等）、栅格融合（Pansharpen融合等）、滤波运算（高斯滤波等）、栅格分解（波段分解等）、多维处理（多维数据转为普通栅格等）、表面分析（坡度、坡向等）等工具。
-
-+ **矢量处理工具**：包括基础处理（几何修复、简化、重投影等）、矢量提取（要素分割等）、几何处理（裁剪、相交、擦除等）。
-
-+ **空间计算工具**：包括空间查询（长度测量、坐标转换等）、空间插值（反距离权重法、克里金法等）。
-
-+ **其他系统工具**：包括常用的文件查找、压缩文件操作、多线程等。
++ **rsvi(Remote Sensing Vegetation Indices)**  
+Includes calculation of remote sensing vegetation indices such as NDVI, EVI, TVDI, and more.
 
 :::
 
 
-## 构建初衷与目标
+## Original Intent and Goals
 
-&emsp;&emsp;对于大部分地学或气象学的学者来说，数据处理是一个很大的工程，动辄数小时或者数天的数据处理时间。如果没有很好的工具或者方法，在面对多时序（例如时序遥感数据），大尺度（例如全国范围）等数据分析研究时，就显得极为困难。
+&emsp;&emsp;For most researchers in geoscience or meteorology, data processing is a massive undertaking, often taking hours or even days. Without proper tools or methods, it becomes extremely challenging to handle multi-temporal datasets (e.g., time-series remote sensing data) or large-scale studies (e.g., national-level analysis).
 
-&emsp;&emsp;因此，gma构建的最初目的便是为了解决上述问题。当然，随着gma版本的更迭，gma内容也越来越丰富，功能越来越完善，所能解决的问题也越来越多。
+&emsp;&emsp;Thus, the original purpose of building gma was to address these challenges. As the library has evolved through successive versions, its capabilities have grown increasingly rich and robust, enabling it to solve an ever-widening range of problems.
 
+## Development Goals
 
-## 发展目标
+As gma continues to evolve through iterative updates, its development philosophy and goals have become increasingly clear:
 
-&emsp;&emsp;随着gma 的迭代更新，gma的建库理念和发展目标也越发明确：
+**(1) Data Processing**
 
-**&emsp;&emsp;（1）数据处理方面**
+&emsp;&emsp;Built on GDAL (OGR/OSR), simplifying and optimizing user interaction logic to build faster, more convenient, and more practical Python methods for geographic and meteorological data processing and analysis.
 
-&emsp;&emsp;基于GDAL（OGR/OSR），简化并优化用户交互逻辑，构建更加快速、方便、实用的Python地理与气象数据处理和分析方法。
+**(2) Climate and Meteorology**
 
-**&emsp;&emsp;（2）气候气象方面**
+&emsp;&emsp;Based on the NumPy ecosystem, covering the entire process from data preprocessing and extraction to climate applications, fully encapsulating complex mathematical methods to simplify usage and lower the barrier to entry.
 
-&emsp;&emsp;基于NumPy体系，涵盖从前期数据清晰、提取到气候应用的全过程，完整封装计算过程中繁杂的数学方法，简化使用方法，降低使用门槛。
+**(3) Geospatial Mapping**
 
-**&emsp;&emsp;（3）空间绘图方面**
+&emsp;&emsp;Using ArcGIS interaction logic as a reference template, building a Python geospatial mapping system independent of cartopy.
 
-&emsp;&emsp;以ArcGIS交互逻辑为参考模板，打造独立于cartopy的Python空间绘图体系。
+**(4) Domestic Open-Source GIS Applications**
 
-**&emsp;&emsp;（4）国内开源GIS应用**
-
-&emsp;&emsp;以ArcGIS工具箱功能为学习对象，力争成为国内功能最丰富的Python开源地理处理工具包。
+&emsp;&emsp;Drawing inspiration from ArcGIS Toolbox functionality, striving to become the most feature-rich Python open-source geospatial processing toolkit in China.
 
 
 

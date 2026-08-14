@@ -1,55 +1,51 @@
 ---
-title: 模块简介
-date: 2024-01-10
+title: Contents
+date: 2026-08-14
 sidebar: false
 ---
-
-&emsp;&emsp;坐标参考系统是地理空间数据表示和位置定位的基础，它是一种用于描述和测量地球表面位置的标准化框架。其定义了坐标系统、基准面和坐标单位等要素，以确保地球上不同地方的位置可以一致、准确地表示和比较。
-
-## 坐标系简介
-
-### 地理坐标系
-
-&emsp;&emsp;地理坐标系是使用三维球面来定义地球表面位置，以实现通过经纬度对地球表面点位引用的坐标系。一个地理坐标系包括角度测量单位、本初子午线和参考椭球体三部分。在球面系统中，水平线是等纬度线或纬线。垂直线是等经度线或经线。常见的 WGS 84、CGCS 2000 等都属于地理坐标系。
-
-![](/crs/GeogCS.png)
-
-&emsp;&emsp;一个坐标参考系统需要包含一个角度单位、一条子午线以及**一个基准面或一个椭球体**。
-
-
-### 投影坐标系
-
-&emsp;&emsp;地球椭球体表面也是个曲面，而我们日常生活中的地图及量测空间通常是二维平面，因此在地图制图和线性量测时首先要考虑把曲面转化成平面。由于球面上任何一点的位置是用地理坐标（λ，φ）表示的，而平面上的点的位置是用直角坐标（X，Y）表示的，所以要想将地球表面上的点转移到平面上，必须采用一定的方法来确定地理坐标与平面直角坐标或极坐标之间的关系。这种在球面和平面之间建立点与点之间函数关系的数学方法，就是地图投影方法。
-
-![](/crs/ProjCS.png)
-
-&emsp;&emsp;投影坐标系使用基于 X，Y 值的坐标系统来描述地球上某个点所处的位置。这个坐标系是从地球的近似椭球体投影得到的，它对应于某个地理坐标系。投影坐标系主要由 **地理坐标系、投影方法和线性单位** 构成。
-
-### 其他坐标系
-
-&emsp;&emsp;除了上述两种常用坐标系之外，还有以下坐标系类型：
-
-&emsp;&emsp;（1）地心坐标系
-
-&emsp;&emsp;以地球质心为原点建立的空间直角坐标系，或以球心与地球质心重合的地球椭球面为基准面所建立的大地坐标系。通常分为地心空间直角坐标系（以 X，Y，Z 为其坐标元素）和地心大地坐标系（以 B，L，H 为其坐标元素）。
-
-&emsp;&emsp;（2）垂直坐标系
-
-&emsp;&emsp;垂直坐标系可以定义高度或深度值的原点（轴）。与水平坐标系类似，除非要显示数据集或者要将数据集与使用不同垂直坐标系的其他数据合并，否则不需要使用垂直坐标系中的大多数信息。垂直坐标系主要由基准面、长度单位和轴组成。
-
-&emsp;&emsp;（3）复合坐标系
-
-&emsp;&emsp;复合坐标系可以指定一个复合的空间参考系，它可以用来组合两个不同的空间参考系。例如：一个复合的三维空间参考系可以由一个水平空间参考系（地理坐标系、投影坐标系等）和一个垂直空间参考系（垂直坐标系）构成。
-
-## 功能模块组成
-
-&emsp;&emsp;本模块主要实现对各类坐标系的支持，以及实现地理坐标系（GeogCS）和投影坐标系（ProjCS）两类坐标系的自定义创建，并为 gma 内其他模块提供支持。本模块功能函数组成如下图：
-
-
-![](/crs/crs.png)
-
-**导入此模块**
-
-```python
-from gma import crs
-```
+All items(functions/classes/consts) in this module are as follows:
+|No.|item|type|introduce|
+|---|---|---|---|
+|1|[crs.AngleUnits](/UserGuide/crs/AngleUnits.html)|data class|AngleUnits|
+|2|[crs.Ellips](/UserGuide/crs/Ellips.html)|data class|Ellips|
+|3|[crs.LinearUnits](/UserGuide/crs/LinearUnits.html)|data class|LinearUnits|
+|4|[crs.Primems](/UserGuide/crs/Primems.html)|data class|Primems|
+|5|[crs.CoordinateReferenceSystem](/UserGuide/crs/CoordinateReferenceSystem.html)|class|Coordinate reference system objectCoordinate system!|
+|6|[crs.Datum](/UserGuide/crs/Datum.html)|class|Datum object.Define a datum.|
+|7|[crs.Ellipsoid](/UserGuide/crs/Ellipsoid.html)|class|Ellipsoid object.Define an ellipsoid.|
+|8|[crs.GeographicCoordinateSystem](/UserGuide/crs/GeographicCoordinateSystem.html)|class|geographic coordinate systemCreate a geographic coordinate system!|
+|9|[crs.ProjectedCoordinateSystem](/UserGuide/crs/ProjectedCoordinateSystem.html)|class|projected coordinate systemCreate a projected coordinate system!|
+|10|[crs.ProjMethods.Aitoff](/UserGuide/crs/ProjMethods/Aitoff.html)|class|Aitoff projection method.|
+|11|[crs.ProjMethods.AlbersConicEqualArea](/UserGuide/crs/ProjMethods/AlbersConicEqualArea.html)|class|Albers Conic Equal Area projection method.|
+|12|[crs.ProjMethods.AzimuthalEquidistant](/UserGuide/crs/ProjMethods/AzimuthalEquidistant.html)|class|Azimuthal equidistant projection method.|
+|13|[crs.ProjMethods.Bonne](/UserGuide/crs/ProjMethods/Bonne.html)|class|Bonne projection method.|
+|14|[crs.ProjMethods.CassiniSoldner](/UserGuide/crs/ProjMethods/CassiniSoldner.html)|class|Cassini soldner projection method.|
+|15|[crs.ProjMethods.CompactMiller](/UserGuide/crs/ProjMethods/CompactMiller.html)|class|Compact Miller projection method.|
+|16|[crs.ProjMethods.CylindricalEqualArea](/UserGuide/crs/ProjMethods/CylindricalEqualArea.html)|class|Cylindrical equal area projection method.|
+|17|[crs.ProjMethods.EckertI](/UserGuide/crs/ProjMethods/EckertI.html)|class|Eckert I projection method.|
+|18|[crs.ProjMethods.EckertII](/UserGuide/crs/ProjMethods/EckertII.html)|class|Eckert II projection method.|
+|19|[crs.ProjMethods.EckertIII](/UserGuide/crs/ProjMethods/EckertIII.html)|class|Eckert III projection method.|
+|20|[crs.ProjMethods.EckertIV](/UserGuide/crs/ProjMethods/EckertIV.html)|class|Eckert IV projection method.|
+|21|[crs.ProjMethods.EckertV](/UserGuide/crs/ProjMethods/EckertV.html)|class|Eckert V projection method.|
+|22|[crs.ProjMethods.EckertVI](/UserGuide/crs/ProjMethods/EckertVI.html)|class|Eckert VI projection method.|
+|23|[crs.ProjMethods.EquidistantConic](/UserGuide/crs/ProjMethods/EquidistantConic.html)|class|Equidistant Conic projection method.|
+|24|[crs.ProjMethods.Equirectangular](/UserGuide/crs/ProjMethods/Equirectangular.html)|class|Equirectangular projection method.|
+|25|[crs.ProjMethods.GallStereographic](/UserGuide/crs/ProjMethods/GallStereographic.html)|class|Gall Stereographic projection method.|
+|26|[crs.ProjMethods.GoodeHomolosine](/UserGuide/crs/ProjMethods/GoodeHomolosine.html)|class|Goode Homolosine projection method.|
+|27|[crs.ProjMethods.LambertAzimuthalEqualArea](/UserGuide/crs/ProjMethods/LambertAzimuthalEqualArea.html)|class|Lambert Azimuthal Equal Area projection method.|
+|28|[crs.ProjMethods.LambertConformalConic2SP](/UserGuide/crs/ProjMethods/LambertConformalConic2SP.html)|class|Lambert Conformal Conic 2SP projection method.|
+|29|[crs.ProjMethods.Loximuthal](/UserGuide/crs/ProjMethods/Loximuthal.html)|class|Loximuthal projection method.|
+|30|[crs.ProjMethods.Mercator](/UserGuide/crs/ProjMethods/Mercator.html)|class|Mercator 1sp projection method.|
+|31|[crs.ProjMethods.Mercator2SP](/UserGuide/crs/ProjMethods/Mercator2SP.html)|class|Mercator 2SP projection method.|
+|32|[crs.ProjMethods.Mollweide](/UserGuide/crs/ProjMethods/Mollweide.html)|class|Mollweide projection method.|
+|33|[crs.ProjMethods.NaturalEarth](/UserGuide/crs/ProjMethods/NaturalEarth.html)|class|Natural earth projection method.|
+|34|[crs.ProjMethods.NaturalEarthII](/UserGuide/crs/ProjMethods/NaturalEarthII.html)|class|Natural earth II projection method.|
+|35|[crs.ProjMethods.Polyconic](/UserGuide/crs/ProjMethods/Polyconic.html)|class|Polyconic projection method.|
+|36|[crs.ProjMethods.Robinson](/UserGuide/crs/ProjMethods/Robinson.html)|class|Robinson projection method.|
+|37|[crs.ProjMethods.Sinusoidal](/UserGuide/crs/ProjMethods/Sinusoidal.html)|class|Sinusoidal projection method.|
+|38|[crs.ProjMethods.Times](/UserGuide/crs/ProjMethods/Times.html)|class|Times projection method.|
+|39|[crs.ProjMethods.TransverseMercator](/UserGuide/crs/ProjMethods/TransverseMercator.html)|class|Transverse Mercator projection method.|
+|40|[crs.ProjMethods.VanDerGrinten](/UserGuide/crs/ProjMethods/VanDerGrinten.html)|class|Van der Grinten projection method.|
+|41|[crs.ProjMethods.WinkelI](/UserGuide/crs/ProjMethods/WinkelI.html)|class|Winkel I projection method.|
+|42|[crs.ProjMethods.WinkelII](/UserGuide/crs/ProjMethods/WinkelII.html)|class|Winkel II projection method.|
+|43|[crs.ProjMethods.WinkelTripel](/UserGuide/crs/ProjMethods/WinkelTripel.html)|class|Winkel Tripel projection method.|

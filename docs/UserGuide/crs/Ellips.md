@@ -1,57 +1,45 @@
 ---
 title: Ellips
-date: 2023-01-10
+date: 2026-08-14
 sidebar: false
 ---
-
-&emsp;　gma 内置的椭球体位于 **crs.Ellips** 模块下。内置椭球体参数如下：
-
-| 椭球体名称                   | 长半轴（m） | 反扁率      |
-| ---------------------------- | ----------- | ----------- |
-| Airy1830                     | 6377563.396 | 299.3249646 |
-| AiryModified1849             | 6377340.189 | 299.3249646 |
-| AustralianNationalSpheroid   | 6378160     | 298.25      |
-| AverageTerrestrialSystem1977 | 6378135     | 298.257     |
-| Bessel1841                   | 6377397.155 | 299.1528128 |
-| BesselModified               | 6377492.018 | 299.1528128 |
-| BesselNamibia                | 6377483.865 | 299.1528128 |
-| CGCS2000                     | 6378137     | 298.2572221 |
-| Clarke1858                   | 6378293.645 | 294.2606764 |
-| Clarke1866                   | 6378206.4   | 294.9786982 |
-| Clarke1880                   | 6378306.37  | 293.4663077 |
-| Clarke1880ARC                | 6378249.145 | 293.4663077 |
-| Clarke1880Benoit             | 6378249.145 | 293.4663077 |
-| Clarke1880ING                | 6378249.2   | 293.4660213 |
-| Clarke1880INTFoot            | 6378300.789 | 293.4663155 |
-| Clarke1880RGS                | 6378249.145 | 293.465     |
-| Danish1876                   | 6377019.27  | 300         |
-| Everest1830Definition        | 6377299.366 | 300.8017255 |
-| Everest1830Modified          | 6377304.063 | 300.8017    |
-| GRS1967                      | 6378160     | 298.2471674 |
-| GRS1967Modified              | 6378160     | 298.25      |
-| GRS1980                      | 6378137     | 298.2572221 |
-| GSK2011                      | 6378136.5   | 298.2564151 |
-| Helmert1906                  | 6378200     | 298.3       |
-| Hough1960                    | 6378270     | 297         |
-| IAG1975                      | 6378140     | 298.257     |
-| IndonesianNationalSpheroid   | 6378160     | 298.247     |
-| International1924            | 6378388     | 297         |
-| Krassowsky1940               | 6378245     | 298.3       |
-| NWL9D                        | 6378145     | 298.25      |
-| PZ90                         | 6378136     | 298.2578393 |
-| Plessis1817                  | 6376523     | 308.64      |
-| Struve1860                   | 6378298.3   | 294.73      |
-| WGS72                        | 6378135     | 298.26      |
-| WGS84                        | 6378137     | 298.2572236 |
-| WarOffice                    | 6378300     | 296         |
-
-**示例：**
-
-```python
-from gma import crs
-
-Ellips = crs.Ellips.Airy1830
-print(Ellips)
-```
-
-> \>>> {'SemiMajor': 6377563.396, 'InvFlattening': 299.3249646}
+All consts in "**Ellips**" are as follows:
+|No.|item|value|
+|---|---|---|
+|1|crs.Ellips.AIRY_1830|{'semi_major': 6377563.396, 'inv_flattening': 299.3249646}|
+|2|crs.Ellips.BESSEL_1841|{'semi_major': 6377397.155, 'inv_flattening': 299.1528128}|
+|3|crs.Ellips.BESSEL_MODIFIED|{'semi_major': 6377492.018, 'inv_flattening': 299.1528128}|
+|4|crs.Ellips.BESSEL_NAMIBIA|{'semi_major': 6377483.865, 'inv_flattening': 299.1528128}|
+|5|crs.Ellips.CGCS2000|{'semi_major': 6378137.0, 'inv_flattening': 298.257222101}|
+|6|crs.Ellips.DANISH_1876|{'semi_major': 6377019.27, 'inv_flattening': 300.0}|
+|7|crs.Ellips.FISCHER_1960|{'semi_major': 6378166.0, 'inv_flattening': 298.3}|
+|8|crs.Ellips.FISCHER_1968|{'semi_major': 6378150.0, 'inv_flattening': 298.3}|
+|9|crs.Ellips.FISCHER_MODIFIED|{'semi_major': 6378155.0, 'inv_flattening': 298.3}|
+|10|crs.Ellips.GEM_10C|{'semi_major': 6378137.0, 'inv_flattening': 298.257223563}|
+|11|crs.Ellips.GRS_1967|{'semi_major': 6378160.0, 'inv_flattening': 298.247167427}|
+|12|crs.Ellips.GRS_1980|{'semi_major': 6378137.0, 'inv_flattening': 298.257222101}|
+|13|crs.Ellips.GSK2011|{'semi_major': 6378136.5, 'inv_flattening': 298.2564151}|
+|14|crs.Ellips.HELMERT_1906|{'semi_major': 6378200.0, 'inv_flattening': 298.3}|
+|15|crs.Ellips.HOUGH_1960|{'semi_major': 6378270.0, 'inv_flattening': 297.0}|
+|16|crs.Ellips.IAG_1975|{'semi_major': 6378140.0, 'inv_flattening': 298.257}|
+|17|crs.Ellips.INTERNATIONAL_1924|{'semi_major': 6378388.0, 'inv_flattening': 297.0}|
+|18|crs.Ellips.INTERNATIONAL_1967|{'semi_major': 6378160.0, 'inv_flattening': 298.25}|
+|19|crs.Ellips.KAULA_1961|{'semi_major': 6378163.0, 'inv_flattening': 298.24}|
+|20|crs.Ellips.KRASSOWSKY_1940|{'semi_major': 6378245.0, 'inv_flattening': 298.3}|
+|21|crs.Ellips.LERCH_1979|{'semi_major': 6378139.0, 'inv_flattening': 298.257}|
+|22|crs.Ellips.MAUPERTIUS_1738|{'semi_major': 6397300.0, 'inv_flattening': 191.0}|
+|23|crs.Ellips.MERIT_1983|{'semi_major': 6378137.0, 'inv_flattening': 298.257}|
+|24|crs.Ellips.NWL_10D|{'semi_major': 6378135.0, 'inv_flattening': 298.26}|
+|25|crs.Ellips.NWL_9D|{'semi_major': 6378145.0, 'inv_flattening': 298.25}|
+|26|crs.Ellips.OSU86F|{'semi_major': 6378136.2, 'inv_flattening': 298.257223563}|
+|27|crs.Ellips.OSU91A|{'semi_major': 6378136.3, 'inv_flattening': 298.257223563}|
+|28|crs.Ellips.PLESSIS_1817|{'semi_major': 6376523.0, 'inv_flattening': 308.64}|
+|29|crs.Ellips.PZ90|{'semi_major': 6378136.0, 'inv_flattening': 298.257839303}|
+|30|crs.Ellips.STRUVE_1860|{'semi_major': 6378298.3, 'inv_flattening': 294.73}|
+|31|crs.Ellips.WALBECK|{'semi_major': 6376896.0, 'inv_flattening': 302.78}|
+|32|crs.Ellips.WAR_OFFICE|{'semi_major': 6378300.0, 'inv_flattening': 296.0}|
+|33|crs.Ellips.WGS_1966|{'semi_major': 6378145.0, 'inv_flattening': 298.25}|
+|34|crs.Ellips.WGS_60|{'semi_major': 6378165.0, 'inv_flattening': 298.3}|
+|35|crs.Ellips.WGS_72|{'semi_major': 6378135.0, 'inv_flattening': 298.26}|
+|36|crs.Ellips.WGS_84|{'semi_major': 6378137.0, 'inv_flattening': 298.257223563}|
+|37|crs.Ellips.ZACH_1812|{'semi_major': 6376045.0, 'inv_flattening': 310.0}|

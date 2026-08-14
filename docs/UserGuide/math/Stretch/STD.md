@@ -1,34 +1,15 @@
 ---
-title: STD
-date: 2023-01-30
-sidebar: false
+title: std
+date: 2026-08-14
+sidebar: true
 ---
+# gma.math.stretch.std
 
-## gma.math.Stretch.**STD**(*Data, MinLabel = None, MaxLabel = None, IgnoreValue = None, NUMofSTD = 2*)<Badge text="1.1.3 +"/>
 
----
+<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">std</span><span style="font-style: italic; color: black;font-size: 130%;">(data, min_label = <span style="color:#48566B">None</span>, max_label = <span style="color:#48566B">None</span>, ignore_value = <span style="color:#48566B">None</span>, NUMofSTD = <span style="color:#48566B">2</span>):</span></span>
 
-**功能：** 【标准差拉伸】。以标准差作为直方图的端点，应用线性拉伸。
+Standard deviation stretch. This method is used to emphasize how much feature values vary from the mean value; it is best when used on normally distributed data.
 
-**参数：** 
-
-&emsp;Data: `array`。需要拉伸的数据。
-
-**可选参数：**
-
-&emsp;MinLabel = `float`。拉伸后最小值。默认为输入数组的最小值（None）。
-
-&emsp;MaxLabel = `float`。拉伸后最大值。默认为输入数组的最大值（None）。
-
-&emsp;IgnoreValue = `float`。不参与计算的忽略值。默认无（None）。
-
-&emsp;NUMofSTD = `float`。标准差数量。
-
-::: tip 提示
-在 均值 ± 标准差 * 标准差数量 之内的数据将被拉伸，之外的数据将被赋值为 均值 ± 标准差 * 标准差数量。
-:::
-
-**返回：**`array`。
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The data to be stretched.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>min_label  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Minimum value after stretching. Default(None) is the minimum value of the input data.</p><p style="text-indent: 1em;"><b>max_label  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Maximum value after stretching. Default(None) is the maximum value of the input data.</p><p style="text-indent: 1em;"><b>ignore_value  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The value that is not involved in the calculation.</p><p style="text-indent: 1em;"><b>NUMofSTD  = </b> <code>float</code>. <span style="color:#48566B;">Default 2.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of standard deviation.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---
-
