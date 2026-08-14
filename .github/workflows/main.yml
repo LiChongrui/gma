@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        node-version: [24] 
+        node-version: [24.14.0] 
 
     steps:
       # 拉取代码
