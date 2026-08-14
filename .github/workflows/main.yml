@@ -9,32 +9,29 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        node-version: [22]  # 改成稳定版本
+        node-version: [22] 
 
     steps:
+      # 拉取代码
       - name: Checkout
         uses: actions/checkout@v4
         with:
           persist-credentials: false
 
+      # 配置 node.js 版本
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'  # 缓存仍然有效
 
-      - name: Install dependencies
-        run: npm install  # 改为 npm install
-
+      # 生成静态文件
       - name: Build
-        run: npm run docs:build
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
-
+        run: npm install autoprefixer@latest caniuse-lite@latest browserslist@latest --save-dev && set NODE_OPTIONS=--openssl-legacy-provider && npm run docs:build
+ 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
