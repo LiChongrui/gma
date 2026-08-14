@@ -1,5 +1,5 @@
 ---
-title: earth\_sun\_relative\_distance
+title: earth__sun__relative__distance
 date: 2026-08-14
 sidebar: true
 ---

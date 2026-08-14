@@ -203,7 +203,6 @@ module.exports = {
             title: 'evaluation',
             collapsable: false,
             children: [
-                "evaluation/D", 
                 "evaluation/MAE", 
                 "evaluation/NRMSE", 
                 "evaluation/R2", 

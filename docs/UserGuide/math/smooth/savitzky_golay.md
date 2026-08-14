@@ -1,5 +1,5 @@
 ---
-title: savitzky\_golay
+title: savitzky_golay
 date: 2026-08-14
 sidebar: true
 ---

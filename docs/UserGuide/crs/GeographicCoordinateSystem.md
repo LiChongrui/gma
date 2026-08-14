@@ -10,7 +10,7 @@ sidebar: true
 
 geographic coordinate system Create a geographic coordinate system!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code>str</code>. <span style="color:#48566B;">Default 'GMA GCS'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Name of the new geographical coordinate system.</p><p style="text-indent: 1em;"><b>angular_unit  = </b> <code>float||str</code>. <span style="color:#48566B;">Default 'Degree'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Angular unit value. See more default angular units: AngularUnits class! If you need to customize the angle unit, you can enter a real number.</p><p style="text-indent: 1em;"><b>primem  = </b> <code>float||str</code>. <span style="color:#48566B;">Default 'Greenwich'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Prime meridian. See more default prime meridians: PRIMEMs class! If you need to customize the prime meridian, you can enter a real number.</p><p style="text-indent: 1em;"><b>ellipsoid  = </b> <code>str||aclassofEllipsoid</code>. <span style="color:#48566B;">Default 'WGS84'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Ellipsoid. See more default prime ellipsoids: Ellips class! If you need to customize the ellipsoid, please use the Ellipsoid class to initialize.</p><p style="text-indent: 1em;"><b>datum  = </b> <code>None||aclassofDatum</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Datum. If None, the ellipsoid is automatically configured based on the datum.</p><p style="padding-left: 1em;text-indent: 1em;">If it is a class of Datum, the parameter of Ellipsoid will be ignored.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>CoordinateReferenceSystem.</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code>str</code>. <span style="color:#48566B;">Default 'GMA GCS'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Name of the new geographical coordinate system.</p><p style="text-indent: 1em;"><b>angular_unit  = </b> <code>float||str</code>. <span style="color:#48566B;">Default 'Degree'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Angular unit value. See more default angular units: AngularUnits class! If you need to customize the angle unit, you can enter a real number.</p><p style="text-indent: 1em;"><b>primem  = </b> <code>float||str</code>. <span style="color:#48566B;">Default 'Greenwich'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Prime meridian. See more default prime meridians: PRIMEMs class! If you need to customize the prime meridian, you can enter a real number.</p><p style="text-indent: 1em;"><b>ellipsoid  = </b> <code>str||aclassofEllipsoid</code>. <span style="color:#48566B;">Default 'WGS84'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Ellipsoid. See more default prime ellipsoids: Ellips class! If you need to customize the ellipsoid, please use the Ellipsoid class to initialize.</p><p style="text-indent: 1em;"><b>datum  = </b> <code>None||aclassofDatum</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Datum. If None, the ellipsoid is automatically configured based on the datum.</p><p style="padding-left: 1em;text-indent: 1em;">If it is a class of Datum, the parameter of Ellipsoid will be ignored.</p>
 
 ---
 
@@ -42,7 +42,7 @@ Clone crs. --> <code> CoordinateReferenceSystem</code>
 
 Get projection parameters.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>dict</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>dict</code>.</p>
 
 ---
 
@@ -56,7 +56,7 @@ Get projection parameters.
 
 Make area of use of the CoordinateReferenceSystem in world.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code>None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>**kwargs</b>.</p><p style="padding-left: 1em;text-indent: 1em;">Other plotting parameters of CoordinateReferenceSystem's geometry. For more, see: ~.carto.utils.PolyCollection.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>matplotlib.~.AxesSubplot</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code>None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>**kwargs</b>.</p><p style="padding-left: 1em;text-indent: 1em;">Other plotting parameters of CoordinateReferenceSystem's geometry. For more, see: ~.carto.utils.PolyCollection.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>matplotlib.~.AxesSubplot</code>.</p>
 
 ---
 
@@ -70,7 +70,7 @@ Make area of use of the CoordinateReferenceSystem in world.
 
 Export projection to dict(json).
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>dict</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>dict</code>.</p>
 
 ---
 
@@ -84,7 +84,7 @@ Export projection to dict(json).
 
 Export projection to list.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ctype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'PCI'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export format. Can be 'PCI', 'USGS'.   </p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>list</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ctype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'PCI'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export format. Can be 'PCI', 'USGS'.   </p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>list</code>.</p>
 
 ---
 
@@ -98,7 +98,7 @@ Export projection to list.
 
 Export projection to string.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ctype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Wkt'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Export format. Can be 'MICoordSys', 'PrettyWkt', 'Proj4', 'Wkt', 'XML'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>str</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ctype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Wkt'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export format. Can be 'MICoordSys', 'PrettyWkt', 'Proj4', 'Wkt', 'XML'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>str</code>.</p>
 
 ---
 
@@ -109,7 +109,7 @@ Export projection to string.
 ### WKID
 
 
-Well-known ID Code and name. -> tuple(float, str)
+Well-known ID Code and name. --> <code> tuple(float, str)</code>
 
 
 
@@ -127,7 +127,7 @@ Angular units. --> <code> tuple(float, str)</code>
 ### area_of_interest
 
 
-The area of use's geometry of the crs in WGS84. -> Geometry.
+The area of use's geometry of the crs in WGS84. --> <code> Geometry.</code>
 
 
 
@@ -136,7 +136,7 @@ The area of use's geometry of the crs in WGS84. -> Geometry.
 ### area_of_use
 
 
-Get the area where the coordinate system is used. -> tuple(West, South, East, North in degree).
+Get the area where the coordinate system is used. --> <code> tuple(West, South, East, North in degree).</code>
 
 
 
@@ -154,7 +154,7 @@ Number of coordinate axes. --> <code> int</code>
 ### central_longitude
 
 
-Get the longitude of the central meridian. -> float
+Get the longitude of the central meridian. --> <code> float</code>
 
 
 
@@ -163,7 +163,7 @@ Get the longitude of the central meridian. -> float
 ### change_longitude
 
 
-Date Line -> float
+Date Line --> <code> float</code>
 
 
 
@@ -181,7 +181,7 @@ Datum name. --> <code> str</code>
 ### gcs
 
 
-Get projection parameters. -> CoordinateReferenceSystem
+Get projection parameters. --> <code> CoordinateReferenceSystem</code>
 
 
 
@@ -199,7 +199,7 @@ Inverse flattening. --> <code> float</code>
 ### linear_units
 
 
-Linear units and name. -> tuple(float, str).
+Linear units and name. --> <code> tuple(float, str).</code>
 
 
 
@@ -217,7 +217,7 @@ Name of the coordinate system. --> <code> str</code>
 ### planet
 
 
-The planet of the coordinate system. -> str
+The planet of the coordinate system. --> <code> str</code>
 
 
 
@@ -226,7 +226,7 @@ The planet of the coordinate system. -> str
 ### primem
 
 
-The prime meridian and name. -> tuple(float, str)
+The prime meridian and name. --> <code> tuple(float, str)</code>
 
 
 
@@ -235,7 +235,7 @@ The prime meridian and name. -> tuple(float, str)
 ### proj_method
 
 
-The project method name. -> str
+The project method name. --> <code> str</code>
 
 
 
@@ -280,7 +280,7 @@ Spheroid name. --> <code> str</code>
 ### type
 
 
-Space Reference Type. -> str
+Space Reference Type. --> <code> str</code>
 
 
 

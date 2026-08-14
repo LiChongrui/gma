@@ -1,5 +1,5 @@
 ---
-title: day\_light\_hours
+title: day__light__hours
 date: 2026-08-14
 sidebar: true
 ---

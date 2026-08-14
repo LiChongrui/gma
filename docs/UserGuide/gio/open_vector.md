@@ -1,5 +1,5 @@
 ---
-title: open\_vector
+title: open_vector
 date: 2026-08-14
 sidebar: true
 ---

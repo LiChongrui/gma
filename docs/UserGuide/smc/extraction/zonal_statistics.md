@@ -1,5 +1,5 @@
 ---
-title: zonal\_statistics
+title: zonal_statistics
 date: 2026-08-14
 sidebar: true
 ---

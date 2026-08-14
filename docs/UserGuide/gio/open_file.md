@@ -1,5 +1,5 @@
 ---
-title: open\_file
+title: open_file
 date: 2026-08-14
 sidebar: true
 ---

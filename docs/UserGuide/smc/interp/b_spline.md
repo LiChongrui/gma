@@ -1,5 +1,5 @@
 ---
-title: b\_spline
+title: b_spline
 date: 2026-08-14
 sidebar: true
 ---

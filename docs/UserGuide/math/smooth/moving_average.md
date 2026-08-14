@@ -1,5 +1,5 @@
 ---
-title: moving\_average
+title: moving_average
 date: 2026-08-14
 sidebar: true
 ---

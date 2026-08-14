@@ -1,5 +1,5 @@
 ---
-title: max\_min
+title: max_min
 date: 2026-08-14
 sidebar: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: hist\_equalize
+title: hist_equalize
 date: 2026-08-14
 sidebar: true
 ---

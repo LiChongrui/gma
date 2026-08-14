@@ -1,5 +1,5 @@
 ---
-title: time\_angle
+title: time_angle
 date: 2026-08-14
 sidebar: true
 ---

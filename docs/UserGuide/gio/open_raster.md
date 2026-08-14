@@ -1,5 +1,5 @@
 ---
-title: open\_raster
+title: open_raster
 date: 2026-08-14
 sidebar: true
 ---

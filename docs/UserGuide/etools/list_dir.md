@@ -1,5 +1,5 @@
 ---
-title: list\_dir
+title: list_dir
 date: 2026-08-14
 sidebar: true
 ---

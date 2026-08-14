@@ -1,5 +1,5 @@
 ---
-title: solar\_radiation\_flux\_oa
+title: solar__radiation__flux__oa
 date: 2026-08-14
 sidebar: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: natural\_neighbor
+title: natural_neighbor
 date: 2026-08-14
 sidebar: true
 ---

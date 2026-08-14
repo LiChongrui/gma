@@ -1,5 +1,5 @@
 ---
-title: progress\_fun
+title: progress_fun
 date: 2026-08-14
 sidebar: true
 ---

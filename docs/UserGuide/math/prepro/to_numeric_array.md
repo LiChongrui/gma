@@ -1,5 +1,5 @@
 ---
-title: to\_numeric\_array
+title: to__numeric__array
 date: 2026-08-14
 sidebar: true
 ---
@@ -10,6 +10,6 @@ sidebar: true
 
 Forces the input data to be converted to a numeric array, values that cannot be converted will be modified to nan.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>Alldatatypes</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data that needs to be transformed.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>any</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data that needs to be transformed.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
 
 ---

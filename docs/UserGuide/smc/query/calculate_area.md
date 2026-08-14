@@ -1,5 +1,5 @@
 ---
-title: calculate\_area
+title: calculate_area
 date: 2026-08-14
 sidebar: true
 ---
