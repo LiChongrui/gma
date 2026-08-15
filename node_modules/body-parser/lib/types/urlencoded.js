@@ -50,11 +50,15 @@ function urlencoded (options) {
 
   var extended = opts.extended !== false
   var inflate = opts.inflate !== false
-  var limit = typeof opts.limit !== 'number'
-    ? bytes.parse(opts.limit || '100kb')
-    : opts.limit
+  var limit = typeof opts.limit === 'undefined' || opts.limit === null
+    ? 102400 // 100kb default
+    : bytes.parse(opts.limit)
   var type = opts.type || 'application/x-www-form-urlencoded'
   var verify = opts.verify || false
+
+  if (limit === null) {
+    throw new TypeError('option limit "' + String(opts.limit) + '" is invalid')
+  }
 
   if (verify !== false && typeof verify !== 'function') {
     throw new TypeError('option verify must be function')
@@ -133,10 +137,15 @@ function extendedparser (options) {
   var parameterLimit = options.parameterLimit !== undefined
     ? options.parameterLimit
     : 1000
+  var depth = options.depth !== undefined ? options.depth : 32
   var parse = parser('qs')
 
   if (isNaN(parameterLimit) || parameterLimit < 1) {
     throw new TypeError('option parameterLimit must be a positive number')
+  }
+
+  if (isNaN(depth) || depth < 0) {
+    throw new TypeError('option depth must be a zero or a positive number')
   }
 
   if (isFinite(parameterLimit)) {
@@ -156,12 +165,23 @@ function extendedparser (options) {
     var arrayLimit = Math.max(100, paramCount)
 
     debug('parse extended urlencoding')
-    return parse(body, {
-      allowPrototypes: true,
-      arrayLimit: arrayLimit,
-      depth: Infinity,
-      parameterLimit: parameterLimit
-    })
+    try {
+      return parse(body, {
+        allowPrototypes: true,
+        arrayLimit: arrayLimit,
+        depth: depth,
+        strictDepth: true,
+        parameterLimit: parameterLimit
+      })
+    } catch (err) {
+      if (err instanceof RangeError) {
+        throw createError(400, 'The input exceeded the depth', {
+          type: 'querystring.parse.rangeError'
+        })
+      } else {
+        throw err
+      }
+    }
   }
 }
 
@@ -190,16 +210,15 @@ function getCharset (req) {
 
 function parameterCount (body, limit) {
   var count = 0
-  var index = 0
+  var index = -1
 
-  while ((index = body.indexOf('&', index)) !== -1) {
+  do {
     count++
-    index++
-
-    if (count === limit) {
+    if (count > limit) {
       return undefined
     }
-  }
+    index = body.indexOf('&', index + 1)
+  } while (index !== -1)
 
   return count
 }

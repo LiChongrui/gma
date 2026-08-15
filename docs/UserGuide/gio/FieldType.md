@@ -1,6 +1,6 @@
 ---
 title: FieldType
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.FieldType
@@ -10,7 +10,7 @@ sidebar: true
 
 Field type object for vector data. Create a FieldType object.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name: </b> <code>str</code>. <span style="color:#48566B;">Default = None</span></p><p style="padding-left: 1em;text-indent: 1em;">    The name of the field. None for dtype name.</p><p style="text-indent: 1em;"><b>dtype: </b> <code>str</code>. <span style="color:#48566B;">Default = 'UNKNOWN'</span></p><p style="padding-left: 1em;text-indent: 1em;">    The data type of the field. See `dtypes.DefinedFieldDataTypes` for valid types.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name: </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default = None</span></p><p style="padding-left: 1em;text-indent: 1em;">    The name of the field. None for dtype name.</p><p style="text-indent: 1em;"><b>dtype: </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default = 'UNKNOWN'</span></p><p style="padding-left: 1em;text-indent: 1em;">    The data type of the field. See `dtypes.DefinedFieldDataTypes` for valid types.</p>
 
 ---
 
@@ -28,7 +28,7 @@ Field type object for vector data. Create a FieldType object.
 
 Set the formatting precision for this field in characters.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>precision: </b> <code>int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new precision.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>precision: </b> <code style="text-indent: 0">int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new precision.</p>
 
 ---
 
@@ -42,7 +42,7 @@ Set the formatting precision for this field in characters.
 
 Set the formatting width for this field in characters.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>f_dtype: </b> <code>int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new field data type</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>f_dtype: </b> <code style="text-indent: 0">int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new field data type</p>
 
 ---
 
@@ -56,7 +56,7 @@ Set the formatting width for this field in characters.
 
 Set the formatting width for this field in characters.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>width: </b> <code>int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new width</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>width: </b> <code style="text-indent: 0">int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the new width</p>
 
 ---
 

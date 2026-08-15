@@ -1,6 +1,6 @@
 ---
 title: Const
-date: 2026-08-14
+date: 2026-08-15
 sidebar: false
 ---
 All items(functions/classes/consts) in this module are as follows:

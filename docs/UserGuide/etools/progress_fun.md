@@ -1,6 +1,6 @@
 ---
 title: progress_fun
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.etools.progress_fun

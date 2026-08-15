@@ -1,6 +1,6 @@
 ---
 title: zonal_statistics
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.smc.extraction.zonal_statistics
@@ -10,6 +10,6 @@ sidebar: true
 
 Statistics by region according to Features.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>in_ly: </b> <code>Layer</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma vector layer.</p><p style="text-indent: 1em;"><b>in_ds: </b> <code>Dataset</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma raster dataset.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>agg_fun: </b> <code>def</code>. <span style="color:#48566B;">Default np.sum.</span></p><p style="padding-left: 1em;text-indent: 1em;">Calculate functions. For Example: def calFun(in_ar): return in_ar.mean() agg_fun = calFun in_ar: Input NumPy arrays with region shape and a masked use in_ds nodata.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>DataFrame</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>in_ly: </b> <code style="text-indent: 0">Layer</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma vector layer.</p><p style="text-indent: 1em;"><b>in_ds: </b> <code style="text-indent: 0">Dataset</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma raster dataset.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>agg_fun: </b> <code style="text-indent: 0">def</code>. <span style="color:#48566B;">Default np.sum.</span></p><p style="padding-left: 1em;text-indent: 1em;">Calculate functions. For Example: def calFun(in_ar): return in_ar.mean() agg_fun = calFun in_ar: Input NumPy arrays with region shape and a masked use in_ds nodata.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">DataFrame</code>.</p>
 
 ---

@@ -1,6 +1,6 @@
 ---
-title: earth__sun__relative__distance
-date: 2026-08-14
+title: earth_sun_relative_distance
+date: 2026-08-15
 sidebar: true
 ---
 # gma.climet.astronomy.earth_sun_relative_distance
@@ -10,6 +10,6 @@ sidebar: true
 
 Calculate sun earth relative distance (AU) based on the method recommended by FAO-56.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>Day: </b> <code>int||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Day of year. 1-365 (normal year) or 366 (leap year).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>Day: </b> <code style="text-indent: 0">int||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Day of year. 1-365 (normal year) or 366 (leap year).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">array</code>.</p>
 
 ---

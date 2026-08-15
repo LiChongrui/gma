@@ -1,6 +1,6 @@
 ---
 title: VirtualRasterDataset
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.VirtualRasterDataset
@@ -10,6 +10,6 @@ sidebar: true
 
 Virtual raster Dataset object for raster data. Create a VRT Dataset object!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>gma_dses: </b> <code>str||list[str/Dataset]</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Datasets or raster file paths.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>gma_dses: </b> <code style="text-indent: 0">str||list[str/Dataset]</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Datasets or raster file paths.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
 
 ---

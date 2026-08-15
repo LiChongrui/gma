@@ -1,6 +1,6 @@
 ---
 title: GeoDatabase
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.GeoDatabase
@@ -10,7 +10,7 @@ sidebar: true
 
 A GeoDatabase wraps a GDAL Dataset object, and provides functions to access its layers and datasets. Initialize a GeoDatabase object.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>data  = </b> <code>None||str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If None, create a new empty GeoDatabase. If str, open the file path as GeoDatabase.</p><p style="text-indent: 1em;"><b>driver  = </b> <code>str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If data is None, the driver name to create the GeoDatabase.</p><p style="text-indent: 1em;"><b>out_dst: </b> <code>str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If data is None, the output file path to create the GeoDatabase.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>data  = </b> <code style="text-indent: 0">None||str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If None, create a new empty GeoDatabase. If str, open the file path as GeoDatabase.</p><p style="text-indent: 1em;"><b>driver  = </b> <code style="text-indent: 0">str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If data is None, the driver name to create the GeoDatabase.</p><p style="text-indent: 1em;"><b>out_dst: </b> <code style="text-indent: 0">str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    If data is None, the output file path to create the GeoDatabase.</p>
 
 ---
 
@@ -28,7 +28,7 @@ A GeoDatabase wraps a GDAL Dataset object, and provides functions to access its 
 
 Add Layer to GeoDataBase.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>GMALayer: </b> <code>Layer</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Another GMA Layer!</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>new_name  = </b> <code>str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The new name of the added Layer. Default is the added Layer's name.</p><p style="text-indent: 1em;"><b>OverWrite  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to force overwrite the layer with the same name.         </p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>GMALayer: </b> <code style="text-indent: 0">Layer</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Another GMA Layer!</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>new_name  = </b> <code style="text-indent: 0">str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The new name of the added Layer. Default is the added Layer's name.</p><p style="text-indent: 1em;"><b>OverWrite  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to force overwrite the layer with the same name.         </p>
 
 ---
 
@@ -42,7 +42,7 @@ Add Layer to GeoDataBase.
 
 Create a new layer in GeoDatabase.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code>str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">the name for the new layer. This should ideally not match any existing layer on the datasource. None for randint.</p><p style="text-indent: 1em;"><b>crs  = </b> <code>int||str||CoordinateReferenceSystem</code>. <span style="color:#48566B;">Default None</span></p><p style="padding-left: 1em;text-indent: 1em;">the coordinate system to use for the new layer, or None if no coordinate system is available.</p><p style="text-indent: 1em;"><b>gtype  = </b> <code>int</code>. <span style="color:#48566B;">Default 'Polygon'.</span></p><p style="padding-left: 1em;text-indent: 1em;">geometry type for the layer. Use 'Polygon' if there are no constraints on the types geometry to be written.</p><p style="text-indent: 1em;"><b>options  = </b> <code>dict/list</code>. <span style="color:#48566B;">Default [].</span></p><p style="padding-left: 1em;text-indent: 1em;">    Driver-specific dict or list of `name=value` options</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code style="text-indent: 0">str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">the name for the new layer. This should ideally not match any existing layer on the datasource. None for randint.</p><p style="text-indent: 1em;"><b>crs  = </b> <code style="text-indent: 0">int||str||CoordinateReferenceSystem</code>. <span style="color:#48566B;">Default None</span></p><p style="padding-left: 1em;text-indent: 1em;">the coordinate system to use for the new layer, or None if no coordinate system is available.</p><p style="text-indent: 1em;"><b>gtype  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 'Polygon'.</span></p><p style="padding-left: 1em;text-indent: 1em;">geometry type for the layer. Use 'Polygon' if there are no constraints on the types geometry to be written.</p><p style="text-indent: 1em;"><b>options  = </b> <code style="text-indent: 0">dict/list</code>. <span style="color:#48566B;">Default [].</span></p><p style="padding-left: 1em;text-indent: 1em;">    Driver-specific dict or list of `name=value` options</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -56,7 +56,7 @@ Create a new layer in GeoDatabase.
 
 Delete a Layer in GeoDataBase.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>name_or_id: </b> <code>int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Layer name or ID in GeoDataBase!</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>name_or_id: </b> <code style="text-indent: 0">int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Layer name or ID in GeoDataBase!</p>
 
 ---
 
@@ -70,7 +70,7 @@ Delete a Layer in GeoDataBase.
 
 Get a Dataset in GeoDataBase.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name_or_id  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Dataset ID or name in the GeoDataBase to get.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name_or_id  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Dataset ID or name in the GeoDataBase to get.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -84,7 +84,7 @@ Get a Dataset in GeoDataBase.
 
 Get a Layer in GeoDatabase.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name_or_id  = </b> <code>int||str</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Layer id or name in the GeoDatabase to get.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name_or_id  = </b> <code style="text-indent: 0">int||str</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Layer id or name in the GeoDatabase to get.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -96,7 +96,7 @@ Get a Layer in GeoDatabase.
 <span style="background-color:#F4F4F5;display: block;line-height:1.5"><span style="color: lightgray;font-size:90%;">[method]</span> .<span style="color: #616AE5; font-weight: bold;font-size: 125%;">iteritems</span><span style="font-style: italic; color: black;font-size: 120%;">(category = <span style="color:#48566B">None</span>, **kwargs):</span></span>
 
 
-Iterate vector layers and raster datasets. -> iter
+<p style="text-indent: 1em;">Iterate vector layers and raster datasets. --> <code style="text-indent: 0em;"> iter</code></p>
 
 
 
@@ -112,7 +112,7 @@ Iterate vector layers and raster datasets. -> iter
 
 Query the vector Layer with a SpatiaLite SQL expression.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>expr: </b> <code>str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The sql(ite) query string to evaluate.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>tran_opts  = </b> <code>dict</code>. <span style="color:#48566B;">Default {}.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to ._aio.layer.vector_translate.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to ._aio.vrt.VRTGeoDatabase.add_file.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>expr: </b> <code style="text-indent: 0">str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The sql(ite) query string to evaluate.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>tran_opts  = </b> <code style="text-indent: 0">dict</code>. <span style="color:#48566B;">Default {}.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to ._aio.layer.vector_translate.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to ._aio.vrt.VRTGeoDatabase.add_file.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -123,7 +123,7 @@ Query the vector Layer with a SpatiaLite SQL expression.
 ### dataset_count
 
 
-Number of datasets. -> int
+<p style="text-indent: 1em;">Number of datasets. --> <code style="text-indent: 0em;"> int</code></p>
 
 
 
@@ -132,7 +132,7 @@ Number of datasets. -> int
 ### dataset_names
 
 
-Names of datasets. --> <code> list[str]</code>
+<p style="text-indent: 1em;">Names of datasets. --> <code style="text-indent: 0em;"> list[str]</code></p>
 
 
 
@@ -141,7 +141,7 @@ Names of datasets. --> <code> list[str]</code>
 ### driver
 
 
-Database driver. --> <code> VectorDriver/RasterDriver</code>
+<p style="text-indent: 1em;">Database driver. --> <code style="text-indent: 0em;"> VectorDriver/RasterDriver</code></p>
 
 
 
@@ -150,7 +150,7 @@ Database driver. --> <code> VectorDriver/RasterDriver</code>
 ### files
 
 
-GeoDatabase associated files. --> <code> list[str]</code>
+<p style="text-indent: 1em;">GeoDatabase associated files. --> <code style="text-indent: 0em;"> list[str]</code></p>
 
 
 
@@ -159,7 +159,7 @@ GeoDatabase associated files. --> <code> list[str]</code>
 ### info
 
 
-Source metadata. -> dict
+<p style="text-indent: 1em;">Source metadata. --> <code style="text-indent: 0em;"> dict</code></p>
 
 
 
@@ -168,7 +168,7 @@ Source metadata. -> dict
 ### layer_count
 
 
-Number of layers. -> int
+<p style="text-indent: 1em;">Number of layers. --> <code style="text-indent: 0em;"> int</code></p>
 
 
 
@@ -177,7 +177,7 @@ Number of layers. -> int
 ### layer_names
 
 
-Name of Layers. --> <code> list[str]</code>
+<p style="text-indent: 1em;">Name of Layers. --> <code style="text-indent: 0em;"> list[str]</code></p>
 
 
 
@@ -186,7 +186,7 @@ Name of Layers. --> <code> list[str]</code>
 ### link
 
 
-GeoDatabase path link. --> <code> str</code>
+<p style="text-indent: 1em;">GeoDatabase path link. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 
@@ -195,7 +195,7 @@ GeoDatabase path link. --> <code> str</code>
 ### name
 
 
-GeoDatabase Name. --> <code> str</code>
+<p style="text-indent: 1em;">GeoDatabase Name. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 

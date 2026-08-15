@@ -1,6 +1,6 @@
 ---
 title: EckertIV
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.crs.ProjMethods.EckertIV
@@ -10,7 +10,7 @@ sidebar: true
 
 Eckert IV projection method.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>central_meridian  = </b> <code>float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The central meridian.</p><p style="text-indent: 1em;"><b>false_easting  = </b> <code>float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    X offset from planar origin.</p><p style="text-indent: 1em;"><b>false_northing  = </b> <code>float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Y offset from planar origin.    </p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>central_meridian  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The central meridian.</p><p style="text-indent: 1em;"><b>false_easting  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    X offset from planar origin.</p><p style="text-indent: 1em;"><b>false_northing  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Y offset from planar origin.    </p>
 
 ---
 

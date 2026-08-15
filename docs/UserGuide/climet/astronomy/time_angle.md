@@ -1,6 +1,6 @@
 ---
 title: time_angle
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.climet.astronomy.time_angle
@@ -10,6 +10,6 @@ sidebar: true
 
 Calculate hour angle based on the method recommended by FAO-56 (t).
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>day: </b> <code>int||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Day of year. 1-365 (normal year) or 366 (leap year).</p><p style="text-indent: 1em;"><b>lat: </b> <code>float||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Latitude (бу).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>day: </b> <code style="text-indent: 0">int||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Day of year. 1-365 (normal year) or 366 (leap year).</p><p style="text-indent: 1em;"><b>lat: </b> <code style="text-indent: 0">float||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Latitude (бу).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">array</code>.</p>
 
 ---

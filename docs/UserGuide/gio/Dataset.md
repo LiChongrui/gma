@@ -1,6 +1,6 @@
 ---
 title: Dataset
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.Dataset
@@ -10,7 +10,7 @@ sidebar: true
 
 A gma Dataset object. Create a Dataset object!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>data  = </b> <code>Dataset||ndarray||list||tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Input data source. Can be a Dataset object, or a NumPy ndarray, list, tuple.</p><p style="padding-left: 1em;text-indent: 1em;">If data is None, a new Dataset will be created according to the shape parameter.</p><p style="text-indent: 1em;"><b>shape  = </b> <code>tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Shape of the new Dataset. If shape is a 2-tuple, it represents (rows, columns), and the number of bands is 1. If shape is a 3-tuple, it represents (bands, rows, columns).</p><p style="padding-left: 1em;text-indent: 1em;">If shape is None, data must be set.</p><p style="text-indent: 1em;"><b>crs  = </b> <code>str||int||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters. Default(None) no coordinate system!</p><p style="text-indent: 1em;"><b>geo_transform  = </b> <code>tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Geo transformation of the output raster. The affine transformation is not specified by default (None).</p><p style="text-indent: 1em;"><b>dtype  = </b> <code>str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">A code or string tag for the output raster data type.</p><p style="padding-left: 1em;text-indent: 1em;">Supported data types include: 'Unknown', 'Byte', 'UInt16', 'Int16', 'UInt32', 'Int32','Float32', 'Float64', 'CInt16', 'CInt32', 'CFloat32', 'CFloat64', ...</p><p style="padding-left: 1em;text-indent: 1em;">for more, see const.RaDT_*.</p><p style="padding-left: 1em;text-indent: 1em;">If dtype is None, the data type is determined by the data parameter.</p><p style="text-indent: 1em;"><b>nodata  = </b> <code>float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Invalid value for output raster. The default is not specified (None).    </p><p style="text-indent: 1em;"><b>metadata  = </b> <code>dict</code>. <span style="color:#48566B;">Default {}.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Metadata to be added.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>data  = </b> <code style="text-indent: 0">Dataset||ndarray||list||tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Input data source. Can be a Dataset object, or a NumPy ndarray, list, tuple.</p><p style="padding-left: 1em;text-indent: 1em;">If data is None, a new Dataset will be created according to the shape parameter.</p><p style="text-indent: 1em;"><b>shape  = </b> <code style="text-indent: 0">tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Shape of the new Dataset. If shape is a 2-tuple, it represents (rows, columns), and the number of bands is 1. If shape is a 3-tuple, it represents (bands, rows, columns).</p><p style="padding-left: 1em;text-indent: 1em;">If shape is None, data must be set.</p><p style="text-indent: 1em;"><b>crs  = </b> <code style="text-indent: 0">str||int||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters. Default(None) no coordinate system!</p><p style="text-indent: 1em;"><b>geo_transform  = </b> <code style="text-indent: 0">tuple||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Geo transformation of the output raster. The affine transformation is not specified by default (None).</p><p style="text-indent: 1em;"><b>dtype  = </b> <code style="text-indent: 0">str||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">A code or string tag for the output raster data type.</p><p style="padding-left: 1em;text-indent: 1em;">Supported data types include: 'Unknown', 'Byte', 'UInt16', 'Int16', 'UInt32', 'Int32','Float32', 'Float64', 'CInt16', 'CInt32', 'CFloat32', 'CFloat64', ...</p><p style="padding-left: 1em;text-indent: 1em;">for more, see const.RaDT_*.</p><p style="padding-left: 1em;text-indent: 1em;">If dtype is None, the data type is determined by the data parameter.</p><p style="text-indent: 1em;"><b>nodata  = </b> <code style="text-indent: 0">float||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Invalid value for output raster. The default is not specified (None).    </p><p style="text-indent: 1em;"><b>metadata  = </b> <code style="text-indent: 0">dict</code>. <span style="color:#48566B;">Default {}.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Metadata to be added.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
 
 ---
 
@@ -28,7 +28,7 @@ A gma Dataset object. Create a Dataset object!
 
 Perform algebraic operations on Dataset.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>agg_fun: </b> <code>def</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Calculate functions. For Example: def calFun(in_ar): return in_ar[0] * 2.1 agg_fun = calFun in_ar: Input NumPy arrays with block`s shape.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>block  = </b> <code>tuple</code>. <span style="color:#48566B;">Default (None, 2048, 2048).</span></p><p style="padding-left: 1em;text-indent: 1em;">    Block sizes for bands, rows, and columns. Use None to represent all.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code>list||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Extract band numbers. Selecting a subset of bands can reduce memory usage.</p><p style="padding-left: 1em;text-indent: 1em;">The default (None) is all bands.</p><p style="text-indent: 1em;"><b>scr_nodata  = </b> <code>float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Input nodata value. The default is not specified (None).</p><p style="text-indent: 1em;"><b>dst_nodata  = </b> <code>float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Output nodata value. The default is scr_nodata (None).</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to driver.RasterDriver.create.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>agg_fun: </b> <code style="text-indent: 0">def</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Calculate functions. For Example: def calFun(in_ar): return in_ar[0] * 2.1 agg_fun = calFun in_ar: Input NumPy arrays with block`s shape.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>block  = </b> <code style="text-indent: 0">tuple</code>. <span style="color:#48566B;">Default (None, 2048, 2048).</span></p><p style="padding-left: 1em;text-indent: 1em;">    Block sizes for bands, rows, and columns. Use None to represent all.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code style="text-indent: 0">list||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Extract band numbers. Selecting a subset of bands can reduce memory usage.</p><p style="padding-left: 1em;text-indent: 1em;">The default (None) is all bands.</p><p style="text-indent: 1em;"><b>scr_nodata  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Input nodata value. The default is not specified (None).</p><p style="text-indent: 1em;"><b>dst_nodata  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Output nodata value. The default is scr_nodata (None).</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to driver.RasterDriver.create.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -42,7 +42,7 @@ Perform algebraic operations on Dataset.
 
 Clip off areas that are not covered by the method layer.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>layer: </b> <code>Layer||Feature||Geometry||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A GMA item use for cliping!</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>layer: </b> <code style="text-indent: 0">Layer||Feature||Geometry||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A GMA item use for cliping!</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -56,7 +56,7 @@ Clip off areas that are not covered by the method layer.
 
 The extent of a geometry is the bounding rectangle.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _aio.Layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _aio.Layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -70,7 +70,7 @@ The extent of a geometry is the bounding rectangle.
 
 Generate latitude and longitude raster.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Band 1 is longitude, Band 2 is latitude.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Band 1 is longitude, Band 2 is latitude.</p>
 
 ---
 
@@ -84,7 +84,7 @@ Generate latitude and longitude raster.
 
 Get palette of the band.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bid  = </b> <code>int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>matplotlib.colors.ListedColormap||None</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bid  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">matplotlib.colors.ListedColormap||None</code>.</p>
 
 ---
 
@@ -98,7 +98,7 @@ Get palette of the band.
 
 Generate a smooth curve formed by connecting points with equal quantity index values.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>interval  = </b> <code>float</code>. <span style="color:#48566B;">Default 50.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Isopleth interval.</p><p style="text-indent: 1em;"><b>base  = </b> <code>float</code>. <span style="color:#48566B;">Default 0.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The offset from the zero point of the start of the interval.</p><p style="text-indent: 1em;"><b>band  = </b> <code>int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of the band to be calculated starts from 1.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _aio.layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>interval  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 50.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Isopleth interval.</p><p style="text-indent: 1em;"><b>base  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 0.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The offset from the zero point of the start of the interval.</p><p style="text-indent: 1em;"><b>band  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of the band to be calculated starts from 1.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _aio.layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -112,7 +112,7 @@ Generate a smooth curve formed by connecting points with equal quantity index va
 
 Make plots of Dataset.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code>None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>bands  = </b> <code>int||list||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The band ID to be plotted. For multi-band data, only 1, 3 (RGB), and 4 (RGBA) bands are supported for selection. Duplicate bands will only keep one. Default is the first four bands.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to matplotlib.image.AxesImage.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>matplotlib.~.AxesSubplot</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code style="text-indent: 0">None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>bands  = </b> <code style="text-indent: 0">int||list||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The band ID to be plotted. For multi-band data, only 1, 3 (RGB), and 4 (RGBA) bands are supported for selection. Duplicate bands will only keep one. Default is the first four bands.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to matplotlib.image.AxesImage.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>matplotlib.~.AxesSubplot</b>.</p>
 
 ---
 
@@ -126,7 +126,7 @@ Make plots of Dataset.
 
 Reclassifies (or changes) the values in a raster.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>remap: </b> <code>dict</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Remap object. Used to remap an input value or range definition to a new value.</p><p style="padding-left: 1em;text-indent: 1em;">The format is {mapping1: value1, mapping2: value2, ...}.</p><p style="padding-left: 1em;text-indent: 1em;">Note: Items containing NAN will be rejected directly.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>method  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Range'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Specifies how to reclassify the values of the input raster. May be: 'Range' or 'Unique'.</p><p style="padding-left: 1em;text-indent: 1em;">'Range': The data in the range will be mapped.</p><p style="padding-left: 1em;text-indent: 1em;">'Unique': Mapped strictly on a one-to-one basis.</p><p style="padding-left: 1em;text-indent: 1em;">For example: Remap = {1000: 1, 2000: 2, 3000: 3} 1. ReClaMethod = 'Range'.</p><p style="padding-left: 1em;text-indent: 1em;">Data <= 1000: --> 1 1000 < Data <= 1000: --> 2 2000 < Data <= 3000: --> 3 Data > 3000: --> NoData 2. ReClaMethod = 'Unique'.</p><p style="padding-left: 1em;text-indent: 1em;">Data == 1000: --> 1 Data == 2000: --> 2 Data == 3000: --> 3 Other values: --> NoData</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>remap: </b> <code style="text-indent: 0">dict</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Remap object. Used to remap an input value or range definition to a new value.</p><p style="padding-left: 1em;text-indent: 1em;">The format is {mapping1: value1, mapping2: value2, ...}.</p><p style="padding-left: 1em;text-indent: 1em;">Note: Items containing NAN will be rejected directly.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>method  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'Range'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Specifies how to reclassify the values of the input raster. May be: 'Range' or 'Unique'.</p><p style="padding-left: 1em;text-indent: 1em;">'Range': The data in the range will be mapped.</p><p style="padding-left: 1em;text-indent: 1em;">'Unique': Mapped strictly on a one-to-one basis.</p><p style="padding-left: 1em;text-indent: 1em;">For example: Remap = {1000: 1, 2000: 2, 3000: 3} 1. ReClaMethod = 'Range'.</p><p style="padding-left: 1em;text-indent: 1em;">Data <= 1000: --> 1 1000 < Data <= 1000: --> 2 2000 < Data <= 3000: --> 3 Data > 3000: --> NoData 2. ReClaMethod = 'Unique'.</p><p style="padding-left: 1em;text-indent: 1em;">Data == 1000: --> 1 Data == 2000: --> 2 Data == 3000: --> 3 Other values: --> NoData</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -140,7 +140,7 @@ Reclassifies (or changes) the values in a raster.
 
 Change the spatial resolution of the Dataset.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>resolution: </b> <code>float||list</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Resampling resolution(X, Y).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>method  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Nearest'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Resampling method. Supported resampling methods include: 'Nearest', 'Bilinear', 'Cubic', 'CubicSpline', 'Lanczos', 'Average', 'RMS', 'Mode'.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>resolution: </b> <code style="text-indent: 0">float||list</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Resampling resolution(X, Y).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>method  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'Nearest'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Resampling method. Supported resampling methods include: 'Nearest', 'Bilinear', 'Cubic', 'CubicSpline', 'Lanczos', 'Average', 'RMS', 'Mode'.</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -154,7 +154,7 @@ Change the spatial resolution of the Dataset.
 
 Set dataset's crs!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code>str||int||None</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.  Default(None) no coordinate system!</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code style="text-indent: 0">str||int||None</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.  Default(None) no coordinate system!</p>
 
 ---
 
@@ -168,7 +168,7 @@ Set dataset's crs!
 
 Set GCPs.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>gcps  = </b> <code>list[tuple]</code>. <span style="color:#48566B;">Default [(0, 0, 0, 0, 0, '', '')].</span></p><p style="padding-left: 1em;text-indent: 1em;">list(4 foloat + 2str) of gcps values.</p><p style="padding-left: 1em;text-indent: 1em;">format: [(x(float), y(float), z(float), pixel(float), line(float), info(str, opt), id(str, opt)), ...]</p><p style="text-indent: 1em;"><b>crs  = </b> <code>str||int||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The gcps' coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.  Default(None) no coordinate system!</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>gcps  = </b> <code style="text-indent: 0">list[tuple]</code>. <span style="color:#48566B;">Default [(0, 0, 0, 0, 0, '', '')].</span></p><p style="padding-left: 1em;text-indent: 1em;">list(4 foloat + 2str) of gcps values.</p><p style="padding-left: 1em;text-indent: 1em;">format: [(x(float), y(float), z(float), pixel(float), line(float), info(str, opt), id(str, opt)), ...]</p><p style="text-indent: 1em;"><b>crs  = </b> <code style="text-indent: 0">str||int||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The gcps' coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.  Default(None) no coordinate system!</p>
 
 ---
 
@@ -182,7 +182,7 @@ Set GCPs.
 
 Set dataset's geo transform!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>geo_transform: </b> <code>tuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Geo transformation of the output raster(6 float of tuple). format: [x min, x resolution, x rotation, y max, y rotation, y resolution]</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>geo_transform: </b> <code style="text-indent: 0">tuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Geo transformation of the output raster(6 float of tuple). format: [x min, x resolution, x rotation, y max, y rotation, y resolution]</p>
 
 ---
 
@@ -196,7 +196,7 @@ Set dataset's geo transform!
 
 Set dataset's metadata!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>metadata: </b> <code>dict</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Metadata to be added. </p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>metadata: </b> <code style="text-indent: 0">dict</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Metadata to be added. </p>
 
 ---
 
@@ -210,7 +210,7 @@ Set dataset's metadata!
 
 Set dataset's nodata value of band!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>nodata: </b> <code>float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Invalid value for output raster.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bids  = </b> <code>int||lintofint||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1. None for all bands.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>nodata: </b> <code style="text-indent: 0">float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Invalid value for output raster.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bids  = </b> <code style="text-indent: 0">int||lintofint||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1. None for all bands.</p>
 
 ---
 
@@ -224,7 +224,7 @@ Set dataset's nodata value of band!
 
 Set dataset's palette of band!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>palette: </b> <code>dict||matplotlib.~.cmap||alistofthem</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Palette(color table) of raster bands.</p><p style="padding-left: 1em;text-indent: 1em;">For example: 1.dict({value: (R,G,B,A)}): palette = {10:(200,50,100,255), 20:(200,50,100,255)}.</p><p style="padding-left: 1em;text-indent: 1em;">2.camp: import matplotlib.colors as cor palette = cor.ListedColormap(['r', 'g', 'b'], N = 256)</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>palette: </b> <code style="text-indent: 0">dict||matplotlib.~.cmap||alistofthem</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Palette(color table) of raster bands.</p><p style="padding-left: 1em;text-indent: 1em;">For example: 1.dict({value: (R,G,B,A)}): palette = {10:(200,50,100,255), 20:(200,50,100,255)}.</p><p style="padding-left: 1em;text-indent: 1em;">2.camp: import matplotlib.colors as cor palette = cor.ListedColormap(['r', 'g', 'b'], N = 256)</p>
 
 ---
 
@@ -238,7 +238,7 @@ Set dataset's palette of band!
 
 Set dataset's statistics of band!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>statistics: </b> <code>None||listoftuple(vmin||vmax||vmean||vstddev)</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Statistics values. None for automatically compute statistics.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bids  = </b> <code>int||lintofint||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1. None for all bands.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>statistics: </b> <code style="text-indent: 0">None||listoftuple(vmin||vmax||vmean||vstddev)</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Statistics values. None for automatically compute statistics.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bids  = </b> <code style="text-indent: 0">int||lintofint||None</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1. None for all bands.</p>
 
 ---
 
@@ -252,7 +252,7 @@ Set dataset's statistics of band!
 
 Shift a distance of the dataset. **Warining: This method will modify the original data.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>distance  = </b> <code>float||list</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    X, Y shift distance. If a single value is provided, it is assumed that X = Y.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>distance  = </b> <code style="text-indent: 0">float||list</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    X, Y shift distance. If a single value is provided, it is assumed that X = Y.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -266,7 +266,7 @@ Shift a distance of the dataset. **Warining: This method will modify the origina
 
 Reads the raster dataset as a bytearray.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>row_size  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of rows to read from the start row (the row width of the data window). The default (None) is all rows from the start row.</p><p style="text-indent: 1em;"><b>column_size  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of columns to read from the start column (the column width of the data window). Default (None) All columns from the start column.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code>int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>bytearray</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>row_size  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of rows to read from the start row (the row width of the data window). The default (None) is all rows from the start row.</p><p style="text-indent: 1em;"><b>column_size  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of columns to read from the start column (the column width of the data window). Default (None) All columns from the start column.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code style="text-indent: 0">int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">bytearray</code>.</p>
 
 ---
 
@@ -280,7 +280,7 @@ Reads the raster dataset as a bytearray.
 
 Reproject to another coordinate system.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code>str||int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code style="text-indent: 0">str||int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -294,7 +294,7 @@ Reproject to another coordinate system.
 
 Convert the data type of raster.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>dtype: </b> <code>str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">A code or string tag for the output raster data type.</p><p style="padding-left: 1em;text-indent: 1em;">Supported data types include: 'Unknown', 'Byte', 'UInt16', 'Int16', 'UInt32', 'Int32','Float32', 'Float64', 'CInt16', 'CInt32', 'CFloat32', 'CFloat64', ...</p><p style="padding-left: 1em;text-indent: 1em;">for more, see const.RaDT_*.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Dataset</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>dtype: </b> <code style="text-indent: 0">str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">A code or string tag for the output raster data type.</p><p style="padding-left: 1em;text-indent: 1em;">Supported data types include: 'Unknown', 'Byte', 'UInt16', 'Int16', 'UInt32', 'Int32','Float32', 'Float64', 'CInt16', 'CInt32', 'CFloat32', 'CFloat64', ...</p><p style="padding-left: 1em;text-indent: 1em;">for more, see const.RaDT_*.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Dataset</code>.</p>
 
 ---
 
@@ -308,7 +308,7 @@ Convert the data type of raster.
 
 Save Dataset as a raster file.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>out_dst: </b> <code>str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The output raster file path.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>driver  = </b> <code>str</code>. <span style="color:#48566B;">Default 'GTiff'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Output file driver. For other drivers, see gft.RasterSummary().CreatableFormats.    </p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>out_dst: </b> <code style="text-indent: 0">str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The output raster file path.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>driver  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'GTiff'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Output file driver. For other drivers, see gft.RasterSummary().CreatableFormats.    </p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.dataset.raster_translate.</p>
 
 ---
 
@@ -322,7 +322,7 @@ Save Dataset as a raster file.
 
 Translate Dataset to Layer!
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>field  = </b> <code>str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The name of the output vector field. None for band.</p><p style="text-indent: 1em;"><b>band  = </b> <code>int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1.</p><p style="text-indent: 1em;"><b>gtype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'Polygon'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Geometry type! Can be 'Point', 'MultiPoint', 'Line', 'MultiLine', 'MultiPolygon' or 'Polygon'. The default (None) is the automatic geometry type.</p><p style="text-indent: 1em;"><b>mask  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to build mask layer(nodata:0, other:1).</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Layer</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>field  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The name of the output vector field. None for band.</p><p style="text-indent: 1em;"><b>band  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 1.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Number of the element calculation band. Start with 1.</p><p style="text-indent: 1em;"><b>gtype  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'Polygon'.</span></p><p style="padding-left: 1em;text-indent: 1em;">Geometry type! Can be 'Point', 'MultiPoint', 'Line', 'MultiLine', 'MultiPolygon' or 'Polygon'. The default (None) is the automatic geometry type.</p><p style="text-indent: 1em;"><b>mask  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to build mask layer(nodata:0, other:1).</p><p style="text-indent: 1em;"><b>**kwargs:</b></p><p style="padding-left: 1em;text-indent: 1em;">    Other parameters passed to _algos.geo.layer.Layer.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Layer</code>.</p>
 
 ---
 
@@ -336,7 +336,7 @@ Translate Dataset to Layer!
 
 Reads the raster dataset as a 3-ndim Numpy array.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>row_size  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of rows to read from the start row (the row width of the data window). The default (None) is all rows from the start row.</p><p style="text-indent: 1em;"><b>column_size  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of columns to read from the start column (the column width of the data window). Default (None) All columns from the start column.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code>int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p><p style="text-indent: 1em;"><b>mask_nodata  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to mask array with nodata value.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>row_size  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of rows to read from the start row (the row width of the data window). The default (None) is all rows from the start row.</p><p style="text-indent: 1em;"><b>column_size  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of columns to read from the start column (the column width of the data window). Default (None) All columns from the start column.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code style="text-indent: 0">int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p><p style="text-indent: 1em;"><b>mask_nodata  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to mask array with nodata value.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">array</code>.</p>
 
 ---
 
@@ -350,7 +350,7 @@ Reads the raster dataset as a 3-ndim Numpy array.
 
 Write array to dataset.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ar: </b> <code>np.ndarray</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The NumPy array that needs to be set.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code>int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ar: </b> <code style="text-indent: 0">np.ndarray</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The NumPy array that needs to be set.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>row_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting row of the data to be read.</p><p style="text-indent: 1em;"><b>column_off  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The starting column of the data to be read.</p><p style="text-indent: 1em;"><b>sel_bands  = </b> <code style="text-indent: 0">int||list</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The band number or list of band numbers to be read. Default (None) All bands (numbering starts from 1).</p>
 
 ---
 
@@ -361,7 +361,7 @@ Write array to dataset.
 ### blocks
 
 
-Fetch the natural block size of this band. --> <code> list(x and y dimensions of block)</code>
+<p style="text-indent: 1em;">Fetch the natural block size of this band. --> <code style="text-indent: 0em;"> list(x and y dimensions of block)</code></p>
 
 
 
@@ -370,7 +370,7 @@ Fetch the natural block size of this band. --> <code> list(x and y dimensions of
 ### bounds
 
 
-Bounds. --> <code> tuple</code>
+<p style="text-indent: 1em;">Bounds. --> <code style="text-indent: 0em;"> tuple</code></p>
 
 
 
@@ -379,7 +379,7 @@ Bounds. --> <code> tuple</code>
 ### compression
 
 
-Raster compression. --> <code> str</code>
+<p style="text-indent: 1em;">Raster compression. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 
@@ -397,7 +397,7 @@ Raster coordinate reference system. -> CoordinateReferenceSystem
 ### driver
 
 
-Raster driver. --> <code> RasterDriver</code>
+<p style="text-indent: 1em;">Raster driver. --> <code style="text-indent: 0em;"> RasterDriver</code></p>
 
 
 
@@ -406,7 +406,7 @@ Raster driver. --> <code> RasterDriver</code>
 ### dtype
 
 
-Raster data type. --> <code> str</code>
+<p style="text-indent: 1em;">Raster data type. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 
@@ -415,7 +415,7 @@ Raster data type. --> <code> str</code>
 ### gcps
 
 
-Raster GCPs. --> <code> tuple</code>
+<p style="text-indent: 1em;">Raster GCPs. --> <code style="text-indent: 0em;"> tuple</code></p>
 
 
 
@@ -424,7 +424,7 @@ Raster GCPs. --> <code> tuple</code>
 ### geo_transform
 
 
-Raster geo transform. --> <code> tuple</code>
+<p style="text-indent: 1em;">Raster geo transform. --> <code style="text-indent: 0em;"> tuple</code></p>
 
 
 
@@ -433,7 +433,7 @@ Raster geo transform. --> <code> tuple</code>
 ### link
 
 
-Layer path link. --> <code> str</code>
+<p style="text-indent: 1em;">Layer path link. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 
@@ -442,7 +442,7 @@ Layer path link. --> <code> str</code>
 ### metadata
 
 
-metadata. --> <code> dict</code>
+<p style="text-indent: 1em;">metadata. --> <code style="text-indent: 0em;"> dict</code></p>
 
 
 
@@ -451,7 +451,7 @@ metadata. --> <code> dict</code>
 ### name
 
 
-Raster Name. --> <code> str</code>
+<p style="text-indent: 1em;">Raster Name. --> <code style="text-indent: 0em;"> str</code></p>
 
 
 
@@ -460,7 +460,7 @@ Raster Name. --> <code> str</code>
 ### nodata
 
 
-Raster nodata values. --> <code> float</code>
+<p style="text-indent: 1em;">Raster nodata values. --> <code style="text-indent: 0em;"> float</code></p>
 
 
 
@@ -469,7 +469,7 @@ Raster nodata values. --> <code> float</code>
 ### resolution
 
 
-X, Y resolution. --> <code> tuple</code>
+<p style="text-indent: 1em;">X, Y resolution. --> <code style="text-indent: 0em;"> tuple</code></p>
 
 
 
@@ -478,7 +478,7 @@ X, Y resolution. --> <code> tuple</code>
 ### shape
 
 
-Raster shape. --> <code> tuple(band, rows, columns)</code>
+<p style="text-indent: 1em;">Raster shape. --> <code style="text-indent: 0em;"> tuple(band, rows, columns)</code></p>
 
 
 
@@ -487,7 +487,7 @@ Raster shape. --> <code> tuple(band, rows, columns)</code>
 ### stats
 
 
-Get stats of all bands. --> <code> dict</code>
+<p style="text-indent: 1em;">Get stats of all bands. --> <code style="text-indent: 0em;"> dict</code></p>
 
 
 

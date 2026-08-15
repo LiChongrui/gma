@@ -1,6 +1,6 @@
 ---
 title: SNHT
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.climet.diagnosis.SNHT
@@ -10,6 +10,6 @@ sidebar: true
 
 Checks homogeneity test using H. Alexandersson (1986) method.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data to be tested.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code>int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">MAXT: Maximum of SNHT T Statistics.</p><p style="padding-left: 1em;text-indent: 1em;">loc: Probable change point location index (Start from 1).</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code style="text-indent: 0">array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Data to be tested.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>axis  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">MAXT: Maximum of SNHT T Statistics.</p><p style="padding-left: 1em;text-indent: 1em;">loc: Probable change point location index (Start from 1).</p>
 
 ---

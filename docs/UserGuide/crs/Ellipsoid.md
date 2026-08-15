@@ -1,6 +1,6 @@
 ---
 title: Ellipsoid
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.crs.Ellipsoid
@@ -10,7 +10,7 @@ sidebar: true
 
 Ellipsoid object. Define an ellipsoid.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code>str</code>. <span style="color:#48566B;">Default 'GMA Ellipsoid'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Name of the new ellipsoid.</p><p style="text-indent: 1em;"><b>semi_major  = </b> <code>float||None</code>. <span style="color:#48566B;">Default 6378137.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The semi-major axis of the ellipsoid.</p><p style="text-indent: 1em;"><b>inv_flattening  = </b> <code>float</code>. <span style="color:#48566B;">Default 298.2572236.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The inverse flattening of the ellipsoid.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>name  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'GMA Ellipsoid'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Name of the new ellipsoid.</p><p style="text-indent: 1em;"><b>semi_major  = </b> <code style="text-indent: 0">float||None</code>. <span style="color:#48566B;">Default 6378137.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The semi-major axis of the ellipsoid.</p><p style="text-indent: 1em;"><b>inv_flattening  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 298.2572236.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The inverse flattening of the ellipsoid.</p>
 
 ---
 

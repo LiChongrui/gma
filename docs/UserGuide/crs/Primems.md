@@ -1,6 +1,6 @@
 ---
 title: Primems
-date: 2026-08-14
+date: 2026-08-15
 sidebar: false
 ---
 All consts in "**Primems**" are as follows:

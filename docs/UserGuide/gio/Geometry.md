@@ -1,6 +1,6 @@
 ---
 title: Geometry
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.Geometry
@@ -10,7 +10,7 @@ sidebar: true
 
 Geometry object for vector data. Create a Geometry object.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code>varioustypes</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The data to create the geometry from. It can be: - None: create an empty geometry of type gtype.</p><p style="padding-left: 1em;text-indent: 1em;">- str: a string representation of the geometry in WKT, GeoJSON, GML, etc.</p><p style="padding-left: 1em;text-indent: 1em;">- list, tuple or np.ndarray: a collection of points to create the geometry from.</p><p style="text-indent: 1em;"><b>gtype: </b> <code>str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The geometry type to create. It can be 'Point', 'LineString', 'Polygon', etc.</p><p style="padding-left: 1em;text-indent: 1em;">This parameter is required if data is a list, tuple or np.ndarray.</p><p style="text-indent: 1em;"><b>crs: </b> <code>str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The projection of the geometry. If None, no projection is set.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>data: </b> <code style="text-indent: 0">varioustypes</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The data to create the geometry from. It can be: - None: create an empty geometry of type gtype.</p><p style="padding-left: 1em;text-indent: 1em;">- str: a string representation of the geometry in WKT, GeoJSON, GML, etc.</p><p style="padding-left: 1em;text-indent: 1em;">- list, tuple or np.ndarray: a collection of points to create the geometry from.</p><p style="text-indent: 1em;"><b>gtype: </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The geometry type to create. It can be 'Point', 'LineString', 'Polygon', etc.</p><p style="padding-left: 1em;text-indent: 1em;">This parameter is required if data is a list, tuple or np.ndarray.</p><p style="text-indent: 1em;"><b>crs: </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The projection of the geometry. If None, no projection is set.</p>
 
 ---
 
@@ -28,7 +28,7 @@ Geometry object for vector data. Create a Geometry object.
 
 Add a geometry to this geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to add.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to add.</p>
 
 ---
 
@@ -42,7 +42,7 @@ Add a geometry to this geometry.
 
 Add a point to this geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>point: </b> <code>list||tuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The point coordinates to add. Should be a list or tuple of length 2, 3 or 4 depending on the geometry dimension.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>point: </b> <code style="text-indent: 0">list||tuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The point coordinates to add. Should be a list or tuple of length 2, 3 or 4 depending on the geometry dimension.</p>
 
 ---
 
@@ -56,7 +56,7 @@ Add a point to this geometry.
 
 Compute buffer of geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>distance: </b> <code>float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The buffer distance to be applied. Should be expressed into the same unit as the coordinates of the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>quadsecs  = </b> <code>int</code>. <span style="color:#48566B;">Default 30.</span></p><p style="padding-left: 1em;text-indent: 1em;">The number of segments used to approximate a 90 degree (quadrant) of curvature.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The newly created geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>distance: </b> <code style="text-indent: 0">float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The buffer distance to be applied. Should be expressed into the same unit as the coordinates of the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>quadsecs  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 30.</span></p><p style="padding-left: 1em;text-indent: 1em;">The number of segments used to approximate a 90 degree (quadrant) of curvature.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The newly created geometry.</p>
 
 ---
 
@@ -112,7 +112,7 @@ concave_hull(double ratio, bool allowHoles) -> Geometry
 
 Test for containment.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if this contains the other geometry, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if this contains the other geometry, otherwise False.</p>
 
 ---
 
@@ -154,7 +154,7 @@ Make a copy of this object.
 
 Test for crossing.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are crossing, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are crossing, otherwise False.</p>
 
 ---
 
@@ -168,7 +168,7 @@ Test for crossing.
 
 Return a Delaunay triangulation of the vertices of the geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>dfTolerance  = </b> <code>float||default0</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    optional snapping tolerance to use for improved robustness</p><p style="text-indent: 1em;"><b>bOnlyEdges  = </b> <code>bool||defaultTrue</code>.</p><p style="padding-left: 1em;text-indent: 1em;">If True, will return a MULTILINESTRING, otherwise it will return a GEOMETRYCOLLECTION containing triangular POLYGONs.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The geometry resulting from the Delaunay triangulation.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>dfTolerance  = </b> <code style="text-indent: 0">float||default0</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    optional snapping tolerance to use for improved robustness</p><p style="text-indent: 1em;"><b>bOnlyEdges  = </b> <code style="text-indent: 0">bool||defaultTrue</code>.</p><p style="padding-left: 1em;text-indent: 1em;">If True, will return a MULTILINESTRING, otherwise it will return a GEOMETRYCOLLECTION containing triangular POLYGONs.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The geometry resulting from the Delaunay triangulation.</p>
 
 ---
 
@@ -182,7 +182,7 @@ Return a Delaunay triangulation of the vertices of the geometry.
 
 Perform spatial difference between two Geometries.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
 
 ---
 
@@ -196,7 +196,7 @@ Perform spatial difference between two Geometries.
 
 Test for disjointness.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are disjoint, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are disjoint, otherwise False.</p>
 
 ---
 
@@ -210,7 +210,7 @@ Test for disjointness.
 
 Compute distance between two geometries.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to compare against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The distance between the geometries or -1 if an error occurs.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to compare against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The distance between the geometries or -1 if an error occurs.</p>
 
 ---
 
@@ -238,7 +238,7 @@ Clear geometry information.
 
 
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to test against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if equivalent or False otherwise.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to test against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if equivalent or False otherwise.</p>
 
 ---
 
@@ -252,7 +252,7 @@ Clear geometry information.
 
 The extent of a geometry is the bounding rectangle.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>Geometry</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">Geometry</code>.</p>
 
 ---
 
@@ -280,7 +280,7 @@ Convert geometry to strictly 2D.
 
 Compute geometry area.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>geodesic  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    whether considered as a surface on the underlying ellipsoid of the SRS attached to the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    the area in square meters, or a negative value for unsupported geometry types. </p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>geodesic  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    whether considered as a surface on the underlying ellipsoid of the SRS attached to the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    the area in square meters, or a negative value for unsupported geometry types. </p>
 
 ---
 
@@ -294,7 +294,7 @@ Compute geometry area.
 
 Compute geometry length.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>geodesic  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    whether considered as a surface on the underlying ellipsoid of the SRS attached to the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    the area in meters, or a negative value for unsupported geometry types.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>geodesic  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    whether considered as a surface on the underlying ellipsoid of the SRS attached to the geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>float:</b></p><p style="padding-left: 1em;text-indent: 1em;">    the area in meters, or a negative value for unsupported geometry types.</p>
 
 ---
 
@@ -308,7 +308,7 @@ Compute geometry length.
 
 Perform spatial intersection between two Geometries.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
 
 ---
 
@@ -322,7 +322,7 @@ Perform spatial intersection between two Geometries.
 
 Determines whether two geometries intersect.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to test against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if the geometries intersect, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to test against.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if the geometries intersect, otherwise False.</p>
 
 ---
 
@@ -406,7 +406,7 @@ Test if the geometry is valid.
 
 Attempts to make an invalid geometry valid without losing vertices.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>options  = </b> <code>list[str]</code>. <span style="color:#48566B;">Default [].</span></p><p style="padding-left: 1em;text-indent: 1em;">    papszOptions to be passed in. For example: ["METHOD=STRUCTURE"].</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A newly allocated geometry now owned by the caller.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>options  = </b> <code style="text-indent: 0">list[str]</code>. <span style="color:#48566B;">Default [].</span></p><p style="padding-left: 1em;text-indent: 1em;">    papszOptions to be passed in. For example: ["METHOD=STRUCTURE"].</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A newly allocated geometry now owned by the caller.</p>
 
 ---
 
@@ -434,7 +434,7 @@ Attempts to bring geometry into normalized/canonical form.
 
 Test for overlap.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are overlapping, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are overlapping, otherwise False.</p>
 
 ---
 
@@ -448,7 +448,7 @@ Test for overlap.
 
 Make plots of Geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code>None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>**kwargs</b>.</p><p style="padding-left: 1em;text-indent: 1em;">Other plotting parameters. For more, see: ~.carto.utils.PolyCollection/LineCollection/PointCollection.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>matplotlib.~.AxesSubplot</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ax  = </b> <code style="text-indent: 0">None||matplotlib.~.AxesSubplot</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">    A matplotlib subplot. If None, a default axes will be created. </p><p style="text-indent: 1em;"><b>**kwargs</b>.</p><p style="padding-left: 1em;text-indent: 1em;">Other plotting parameters. For more, see: ~.carto.utils.PolyCollection/LineCollection/PointCollection.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>matplotlib.~.AxesSubplot</b>.</p>
 
 ---
 
@@ -476,7 +476,7 @@ Make plots of Geometry.
 
 remove_geometry(int iSubGeom)
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>i: </b> <code>int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Sub geom's id.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>i: </b> <code style="text-indent: 0">int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Sub geom's id.</p>
 
 ---
 
@@ -504,7 +504,7 @@ remove lower dimension sub geoms.
 
 Modify the geometry such it has no segment longer then the given distance.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>max_length: </b> <code>float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the maximum distance between 2 points after segmentization</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>max_length: </b> <code style="text-indent: 0">float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the maximum distance between 2 points after segmentization</p>
 
 ---
 
@@ -518,7 +518,7 @@ Modify the geometry such it has no segment longer then the given distance.
 
 Set the geometry's crs.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code>str||int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters. The default is no coordinate system!</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code style="text-indent: 0">str||int</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The output coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters. The default is no coordinate system!</p>
 
 ---
 
@@ -532,7 +532,7 @@ Set the geometry's crs.
 
 Set space dimension of geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>dim  = </b> <code>str</code>. <span style="color:#48566B;">Default 'XY'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Space dimensions. Can be 'XY', 'XYZ', 'XYM' or 'XYZM'.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>dim  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'XY'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Space dimensions. Can be 'XY', 'XYZ', 'XYM' or 'XYZM'.</p>
 
 ---
 
@@ -546,7 +546,7 @@ Set space dimension of geometry.
 
 Compute a simplified geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>tolerance: </b> <code>float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The distance tolerance for the simplification.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>preserve_topology  = </b> <code>bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Simplify the geometry while preserving topology.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The simplified geometry or None if an error occurs.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>tolerance: </b> <code style="text-indent: 0">float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The distance tolerance for the simplification.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>preserve_topology  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default False.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Simplify the geometry while preserving topology.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    The simplified geometry or None if an error occurs.</p>
 
 ---
 
@@ -574,7 +574,7 @@ Swap x and y coordinates.
 
 Perform spatial symmetric difference between two Geometries.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
 
 ---
 
@@ -588,7 +588,7 @@ Perform spatial symmetric difference between two Geometries.
 
 Convert a geometry into bytearray.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>stype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'wkb'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export string type: 'iso_wkb' or 'wkb'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bytes or str</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>stype  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'wkb'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export string type: 'iso_wkb' or 'wkb'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bytes or str</b>.</p>
 
 ---
 
@@ -602,7 +602,7 @@ Convert a geometry into bytearray.
 
 Reproject geometry to new spatial reference system.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code>CoordinateReferenceSystem</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The spatial reference system to apply.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>copy  = </b> <code>bool</code>. <span style="color:#48566B;">Default True.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to return a copy of the reprojected geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry(copy = True) or None(copy = False):</b></p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>crs: </b> <code style="text-indent: 0">CoordinateReferenceSystem</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The spatial reference system to apply.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>copy  = </b> <code style="text-indent: 0">bool</code>. <span style="color:#48566B;">Default True.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Whether to return a copy of the reprojected geometry.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry(copy = True) or None(copy = False):</b></p>
 
 ---
 
@@ -630,7 +630,7 @@ Split complex geometry into basic geometries.
 
 Get all points from the geometry.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ndim: </b> <code>int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of dimensions for each point: 2, 3 or 4. If 0, it will use the geometry's own dimension.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>node  = </b> <code>bool||defaultFalse</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Whether to add node markers for points.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>list of x, y points, vert's codes(codes = True):</b></p><p style="padding-left: 1em;text-indent: 1em;">    A list containing all points in the geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ndim: </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    The number of dimensions for each point: 2, 3 or 4. If 0, it will use the geometry's own dimension.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>node  = </b> <code style="text-indent: 0">bool||defaultFalse</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Whether to add node markers for points.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>list of x, y points, vert's codes(codes = True):</b></p><p style="padding-left: 1em;text-indent: 1em;">    A list containing all points in the geometry.</p>
 
 ---
 
@@ -644,7 +644,7 @@ Get all points from the geometry.
 
 Set the geometry's precision.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>precision: </b> <code>float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Geometric coordinate precision. e.g: 0.001.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>precision: </b> <code style="text-indent: 0">float</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Geometric coordinate precision. e.g: 0.001.</p>
 
 ---
 
@@ -658,7 +658,7 @@ Set the geometry's precision.
 
 Convert a geometry into str / bytes.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>stype  = </b> <code>str</code>. <span style="color:#48566B;">Default 'wkt'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export string type: 'iso_wkt', 'json', 'kml' or 'wkt'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>str</b>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>stype  = </b> <code style="text-indent: 0">str</code>. <span style="color:#48566B;">Default 'wkt'.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Export string type: 'iso_wkt', 'json', 'kml' or 'wkt'.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>str</b>.</p>
 
 ---
 
@@ -672,7 +672,7 @@ Convert a geometry into str / bytes.
 
 Test for touching.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are touching, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if they are touching, otherwise False.</p>
 
 ---
 
@@ -700,7 +700,7 @@ Union all sum Geometries.
 
 Perform spatial union between two Geometries.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The other geometry to overlay.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Geometry:</b></p><p style="padding-left: 1em;text-indent: 1em;">    A new geometry.</p>
 
 ---
 
@@ -714,7 +714,7 @@ Perform spatial union between two Geometries.
 
 Test for containment.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code>Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if this is within other, otherwise False.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>other: </b> <code style="text-indent: 0">Geometry</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    the other geometry to compare.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>bool:</b></p><p style="padding-left: 1em;text-indent: 1em;">    True if this is within other, otherwise False.</p>
 
 ---
 

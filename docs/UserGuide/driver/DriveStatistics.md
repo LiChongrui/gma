@@ -1,6 +1,6 @@
 ---
 title: DriveStatistics
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.driver.DriveStatistics
@@ -21,7 +21,7 @@ Drive statistics object.
 ### creatables
 
 
-List of supported drivers that can be created. --> <code> list</code>
+<p style="text-indent: 1em;">List of supported drivers that can be created. --> <code style="text-indent: 0em;"> list</code></p>
 
 
 
@@ -30,7 +30,7 @@ List of supported drivers that can be created. --> <code> list</code>
 ### rasters
 
 
-List of supported drivers that can be raster. --> <code> list</code>
+<p style="text-indent: 1em;">List of supported drivers that can be raster. --> <code style="text-indent: 0em;"> list</code></p>
 
 
 
@@ -39,7 +39,7 @@ List of supported drivers that can be raster. --> <code> list</code>
 ### updatables
 
 
-List of supported drivers that can be updatables. --> <code> list</code>
+<p style="text-indent: 1em;">List of supported drivers that can be updatables. --> <code style="text-indent: 0em;"> list</code></p>
 
 
 
@@ -48,7 +48,7 @@ List of supported drivers that can be updatables. --> <code> list</code>
 ### vectors
 
 
-List of supported drivers that can be vector. --> <code> list</code>
+<p style="text-indent: 1em;">List of supported drivers that can be vector. --> <code style="text-indent: 0em;"> list</code></p>
 
 
 
@@ -57,7 +57,7 @@ List of supported drivers that can be vector. --> <code> list</code>
 ### virtualios
 
 
-List of supported drivers that can be virtualios. --> <code> list</code>
+<p style="text-indent: 1em;">List of supported drivers that can be virtualios. --> <code style="text-indent: 0em;"> list</code></p>
 
 
 

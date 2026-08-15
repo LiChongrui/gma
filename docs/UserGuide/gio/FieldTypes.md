@@ -1,6 +1,6 @@
 ---
 title: FieldTypes
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.gio.FieldTypes
@@ -10,7 +10,7 @@ sidebar: true
 
 Field types object for vector data. Create a FeatureDefn object.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ftype  = </b> <code>None||listofFieldType</code>. <span style="color:#48566B;">Default = None</span></p><p style="padding-left: 1em;text-indent: 1em;">    If None, create an empty FieldTypes.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>ftype  = </b> <code style="text-indent: 0">None||listofFieldType</code>. <span style="color:#48566B;">Default = None</span></p><p style="padding-left: 1em;text-indent: 1em;">    If None, create an empty FieldTypes.</p>
 
 ---
 
@@ -28,7 +28,7 @@ Field types object for vector data. Create a FeatureDefn object.
 
 Add a FieldType to this FieldTypes.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ftype: </b> <code>FieldType</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The FieldType to add.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>ftype: </b> <code style="text-indent: 0">FieldType</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The FieldType to add.</p>
 
 ---
 
@@ -42,7 +42,7 @@ Add a FieldType to this FieldTypes.
 
 Set a geom type to this FieldTypes.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>gtype: </b> <code>int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The geom type to set.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>gtype: </b> <code style="text-indent: 0">int||str</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    The geom type to set.</p>
 
 ---
 

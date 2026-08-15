@@ -1,6 +1,6 @@
 ---
 title: NDWI
-date: 2026-08-14
+date: 2026-08-15
 sidebar: true
 ---
 # gma.rsvi.NDWI
@@ -10,6 +10,6 @@ sidebar: true
 
 Calculate the Normalized Difference Water Index.
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>green: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Green light band data.</p><p style="text-indent: 1em;"><b>nir: </b> <code>array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Near-infrared band data.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code>array</code>.</p>
+<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>green: </b> <code style="text-indent: 0">array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Green light band data.</p><p style="text-indent: 1em;"><b>nir: </b> <code style="text-indent: 0">array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Near-infrared band data.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">array</code>.</p>
 
 ---
