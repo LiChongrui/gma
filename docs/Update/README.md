@@ -2,11 +2,8 @@
 title:  Release Notes
 date: 2026-08-14
 ---
-<Xicons icon="new" /> **New** 
-<Xicons icon="enhancement" /> **Enhancement** 
-<Xicons icon="fix" /> **Fix** 
-<Xicons icon="removal" /> **Removal** 
-<Xicons icon="issues" /> **Known Issues** 
+
+> <Xicons icon="new" /> **New**, <Xicons icon="enhancement" /> **Enhancement**, <Xicons icon="fix" /> **Fix**, <Xicons icon="removal" /> **Removal**, <Xicons icon="issues" /> **Known Issues** 
 
 ## gma 3.0.3
 

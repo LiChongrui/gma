@@ -12,7 +12,7 @@ bannerBrand:
   tagline: A Python package for rapid processing, analysis, and cartographic visualization of geospatial and meteorological data.
 
   buttons:
-    - { text: Explore Latest → gma 3.0.3, link: '/docs/UserGuide/gio/' }
+    - { text: Explore Latest → gma 3.0.3, link: '/docs/Introduce.html#included-features' }
     - { text: Learn GMA, link: '/docs/Introduce', type: 'plain' }
 
 features:

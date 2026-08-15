@@ -11,19 +11,39 @@ module.exports =  [
     },
 
     {
-        text: 'User Guide',
+        text: 'API reference',
         icon: "use-guide",
         children: [
-            {text: 'climet', link: '/docs/UserGuide/climet/'},
-            {text: 'rsvi', link: '/docs/UserGuide/rsvi/'},
-            {text: 'math', link: '/docs/UserGuide/math/'},
-            {text: 'crs', link: '/docs/UserGuide/crs/'},
-            {text: 'driver', link: '/docs/UserGuide/driver/'},
-            {text: 'gio', link: '/docs/UserGuide/gio/'},
-            {text: 'smc', link: '/docs/UserGuide/smc/'},
-            {text: 'etools', link: '/docs/UserGuide/etools/'},
-            {text: 'const', link: '/docs/UserGuide/const/'},
-         ]
+            {
+                text: 'Geo Processing',
+                children: [
+                    {text: 'gio', link: '/docs/UserGuide/gio/'},
+                    {text: 'crs', link: '/docs/UserGuide/crs/'},
+                    {text: 'driver', link: '/docs/UserGuide/driver/'},
+                    {text: 'smc', link: '/docs/UserGuide/smc/'},
+                ]
+            }, 
+            {
+                text: 'Array Algorithm',
+                children: [
+                    {text: 'climet', link: '/docs/UserGuide/climet/'},
+                    {text: 'rsvi', link: '/docs/UserGuide/rsvi/'},
+                    {text: 'math', link: '/docs/UserGuide/math/'},
+                ]
+            }, 
+            {
+                text: 'Cartography',
+                children: [
+                ]
+            },
+            {
+                text: 'Other Tools',
+                children: [
+                    {text: 'etools', link: '/docs/UserGuide/etools/'},
+                    {text: 'const', link: '/docs/UserGuide/const/'},
+                ]
+            }, 
+        ]
     },
     {
         text: 'Release Notes',
