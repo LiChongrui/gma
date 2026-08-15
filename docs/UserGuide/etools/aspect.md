@@ -3,7 +3,7 @@ title: aspect
 date: 2026-08-15
 sidebar: true
 ---
-# gma.etools.aspect
+<span style="font-size: 120%;font-weight: bold;">gma.etools.aspect</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">aspect</span><span style="font-style: italic; color: black;font-size: 130%;">(in_src, out_dst, compute_edges = <span style="color:#48566B">None</span>, band = <span style="color:#48566B">1</span>, trigonometric = <span style="color:#48566B">False</span>, zero_for_flat = <span style="color:#48566B">False</span>, algos = <span style="color:#48566B">"Horn"</span>, **kwargs):</span></span>

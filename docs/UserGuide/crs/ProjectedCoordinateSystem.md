@@ -3,7 +3,7 @@ title: ProjectedCoordinateSystem
 date: 2026-08-15
 sidebar: true
 ---
-# gma.crs.ProjectedCoordinateSystem
+<span style="font-size: 120%;font-weight: bold;">gma.crs.ProjectedCoordinateSystem</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">ProjectedCoordinateSystem</span><span style="font-style: italic; color: black;font-size: 130%;">(name = <span style="color:#48566B">"GMA PCS"</span>, linear_unit = <span style="color:#48566B">"metre"</span>, proj_method = <span style="color:#48566B">"AlbersConicEqualArea"</span>, gcs = <span style="color:#48566B">"WGS84"</span>):</span></span>

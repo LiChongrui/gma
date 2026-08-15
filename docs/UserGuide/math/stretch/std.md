@@ -3,7 +3,7 @@ title: std
 date: 2026-08-15
 sidebar: true
 ---
-# gma.math.stretch.std
+<span style="font-size: 120%;font-weight: bold;">gma.math.stretch.std</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">std</span><span style="font-style: italic; color: black;font-size: 130%;">(data, min_label = <span style="color:#48566B">None</span>, max_label = <span style="color:#48566B">None</span>, ignore_value = <span style="color:#48566B">None</span>, num_of_std = <span style="color:#48566B">2</span>):</span></span>

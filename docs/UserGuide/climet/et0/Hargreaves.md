@@ -3,7 +3,7 @@ title: Hargreaves
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.et0.Hargreaves
+<span style="font-size: 120%;font-weight: bold;">gma.climet.et0.Hargreaves</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Hargreaves</span><span style="font-style: italic; color: black;font-size: 130%;">(tmax, tmin, lat = <span style="color:#48566B">34.6</span>, TMean = <span style="color:#48566B">None</span>, axis = <span style="color:#48566B">None</span>, start_year = <span style="color:#48566B">1992</span>, start_day_of_year = <span style="color:#48566B">1</span>):</span></span>

@@ -3,7 +3,7 @@ title: to_numeric_array
 date: 2026-08-15
 sidebar: true
 ---
-# gma.math.prepro.to_numeric_array
+<span style="font-size: 120%;font-weight: bold;">gma.math.prepro.to_numeric_array</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">to_numeric_array</span><span style="font-style: italic; color: black;font-size: 130%;">(data):</span></span>

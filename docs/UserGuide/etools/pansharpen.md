@@ -3,7 +3,7 @@ title: pansharpen
 date: 2026-08-15
 sidebar: true
 ---
-# gma.etools.pansharpen
+<span style="font-size: 120%;font-weight: bold;">gma.etools.pansharpen</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">pansharpen</span><span style="font-style: italic; color: black;font-size: 130%;">(in_pan, in_multi, out_dst, resample = <span style="color:#48566B">"Cubic"</span>, spat_adjust = <span style="color:#48566B">"Union"</span>, bands = <span style="color:#48566B">None</span>, threads = <span style="color:#48566B">None</span>, bit_depth = <span style="color:#48566B">None</span>, **kwargs):</span></span>

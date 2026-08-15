@@ -3,7 +3,7 @@ title: NRMSE
 date: 2026-08-15
 sidebar: true
 ---
-# gma.math.evaluation.NRMSE
+<span style="font-size: 120%;font-weight: bold;">gma.math.evaluation.NRMSE</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">NRMSE</span><span style="font-style: italic; color: black;font-size: 130%;">(real, pred, axis = <span style="color:#48566B">0</span>):</span></span>

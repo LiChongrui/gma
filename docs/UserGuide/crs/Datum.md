@@ -3,7 +3,7 @@ title: Datum
 date: 2026-08-15
 sidebar: true
 ---
-# gma.crs.Datum
+<span style="font-size: 120%;font-weight: bold;">gma.crs.Datum</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Datum</span><span style="font-style: italic; color: black;font-size: 130%;">(name = <span style="color:#48566B">"GMA Datum"</span>, ellipsoid = <span style="color:#48566B">"GMA Ellipsoid"</span>, semi_major = <span style="color:#48566B">6378137.0</span>, inv_flattening = <span style="color:#48566B">298.2572236</span>):</span></span>

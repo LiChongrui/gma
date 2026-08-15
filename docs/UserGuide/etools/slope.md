@@ -3,7 +3,7 @@ title: slope
 date: 2026-08-15
 sidebar: true
 ---
-# gma.etools.slope
+<span style="font-size: 120%;font-weight: bold;">gma.etools.slope</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">slope</span><span style="font-style: italic; color: black;font-size: 130%;">(in_src, out_dst, compute_edges = <span style="color:#48566B">None</span>, band = <span style="color:#48566B">1</span>, scale = <span style="color:#48566B">1.0</span>, use_degree = <span style="color:#48566B">True</span>, algos = <span style="color:#48566B">"Horn"</span>, **kwargs):</span></span>

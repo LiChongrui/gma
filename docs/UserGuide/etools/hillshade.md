@@ -3,7 +3,7 @@ title: hillshade
 date: 2026-08-15
 sidebar: true
 ---
-# gma.etools.hillshade
+<span style="font-size: 120%;font-weight: bold;">gma.etools.hillshade</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">hillshade</span><span style="font-style: italic; color: black;font-size: 130%;">(in_src, out_dst, compute_edges = <span style="color:#48566B">None</span>, band = <span style="color:#48566B">1</span>, z_factor = <span style="color:#48566B">1.0</span>, scale = <span style="color:#48566B">1.0</span>, azimuth = <span style="color:#48566B">315.0</span>, altitude = <span style="color:#48566B">45.0</span>, combined = <span style="color:#48566B">False</span>, algos = <span style="color:#48566B">"Horn"</span>, **kwargs):</span></span>

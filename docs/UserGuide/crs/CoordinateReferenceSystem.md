@@ -3,7 +3,7 @@ title: CoordinateReferenceSystem
 date: 2026-08-15
 sidebar: true
 ---
-# gma.crs.CoordinateReferenceSystem
+<span style="font-size: 120%;font-weight: bold;">gma.crs.CoordinateReferenceSystem</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">CoordinateReferenceSystem</span><span style="font-style: italic; color: black;font-size: 130%;">(crs = <span style="color:#48566B">"WGS84"</span>):</span></span>

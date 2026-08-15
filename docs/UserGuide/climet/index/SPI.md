@@ -3,7 +3,7 @@ title: SPI
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.index.SPI
+<span style="font-size: 120%;font-weight: bold;">gma.climet.index.SPI</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">SPI</span><span style="font-style: italic; color: black;font-size: 130%;">(pre, axis = <span style="color:#48566B">None</span>, scale = <span style="color:#48566B">1</span>, periodicity = <span style="color:#48566B">12</span>, distribution = <span style="color:#48566B">"Gamma"</span>, fit_method = <span style="color:#48566B">"MLE"</span>, calibration = <span style="color:#48566B">None</span>):</span></span>

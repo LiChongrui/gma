@@ -3,7 +3,7 @@ title: solar_radiation_flux_oa
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.astronomy.solar_radiation_flux_oa
+<span style="font-size: 120%;font-weight: bold;">gma.climet.astronomy.solar_radiation_flux_oa</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">solar_radiation_flux_oa</span><span style="font-style: italic; color: black;font-size: 130%;">(day, lat):</span></span>

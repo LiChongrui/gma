@@ -3,7 +3,7 @@ title: kriging
 date: 2026-08-15
 sidebar: true
 ---
-# gma.smc.interp.kriging
+<span style="font-size: 120%;font-weight: bold;">gma.smc.interp.kriging</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">kriging</span><span style="font-style: italic; color: black;font-size: 130%;">(points, values, bounds = <span style="color:#48566B">None</span>, resolution = <span style="color:#48566B">None</span>, search_radius = <span style="color:#48566B">12</span>, crs = <span style="color:#48566B">None</span>, variogram_model = <span style="color:#48566B">"Linear"</span>, variogram_parameters = <span style="color:#48566B">None</span>, method = <span style="color:#48566B">"Ordinary"</span>, **kwargs):</span></span>

@@ -3,7 +3,7 @@ title: moving_average
 date: 2026-08-15
 sidebar: true
 ---
-# gma.math.smooth.moving_average
+<span style="font-size: 120%;font-weight: bold;">gma.math.smooth.moving_average</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">moving_average</span><span style="font-style: italic; color: black;font-size: 130%;">(data, window_size = <span style="color:#48566B">5</span>, times = <span style="color:#48566B">1</span>, edge_mode = <span style="color:#48566B">"interp"</span>, axis = <span style="color:#48566B">0</span>):</span></span>

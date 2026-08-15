@@ -3,7 +3,7 @@ title: SPEI
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.index.SPEI
+<span style="font-size: 120%;font-weight: bold;">gma.climet.index.SPEI</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">SPEI</span><span style="font-style: italic; color: black;font-size: 130%;">(pre, pet, axis = <span style="color:#48566B">None</span>, scale = <span style="color:#48566B">1</span>, periodicity = <span style="color:#48566B">12</span>, distribution = <span style="color:#48566B">"LogLogistic"</span>, fit_method = <span style="color:#48566B">"LMoment"</span>, calibration = <span style="color:#48566B">None</span>):</span></span>

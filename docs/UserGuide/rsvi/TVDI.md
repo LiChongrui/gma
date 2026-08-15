@@ -3,7 +3,7 @@ title: TVDI
 date: 2026-08-15
 sidebar: true
 ---
-# gma.rsvi.TVDI
+<span style="font-size: 120%;font-weight: bold;">gma.rsvi.TVDI</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">TVDI</span><span style="font-style: italic; color: black;font-size: 130%;">(vi, lst, vi_range = <span style="color:#48566B">[0.2, 0.8]</span>, lst_range = <span style="color:#48566B">[200, 350]</span>, delta = <span style="color:#48566B">0.01</span>, vi_nodata = <span style="color:#48566B">None</span>, lst_nodata = <span style="color:#48566B">None</span>, out_nodata = <span style="color:#48566B">-1.0</span>):</span></span>

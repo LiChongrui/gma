@@ -3,7 +3,7 @@ title: GeographicCoordinateSystem
 date: 2026-08-15
 sidebar: true
 ---
-# gma.crs.GeographicCoordinateSystem
+<span style="font-size: 120%;font-weight: bold;">gma.crs.GeographicCoordinateSystem</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">GeographicCoordinateSystem</span><span style="font-style: italic; color: black;font-size: 130%;">(name = <span style="color:#48566B">"GMA GCS"</span>, angular_unit = <span style="color:#48566B">"degree"</span>, primem = <span style="color:#48566B">"Greenwich"</span>, ellipsoid = <span style="color:#48566B">"WGS_84"</span>, datum = <span style="color:#48566B">None</span>):</span></span>

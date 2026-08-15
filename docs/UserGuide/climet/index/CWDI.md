@@ -3,7 +3,7 @@ title: CWDI
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.index.CWDI
+<span style="font-size: 120%;font-weight: bold;">gma.climet.index.CWDI</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">CWDI</span><span style="font-style: italic; color: black;font-size: 130%;">(pre, etc, axis = <span style="color:#48566B">None</span>, weights = <span style="color:#48566B">[0.1, 0.15, 0.2, 0.25, 0.3]</span>, duration_per_weight = <span style="color:#48566B">10</span>):</span></span>

@@ -3,7 +3,7 @@ title: Dataset
 date: 2026-08-15
 sidebar: true
 ---
-# gma.gio.Dataset
+<span style="font-size: 120%;font-weight: bold;">gma.gio.Dataset</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">Dataset</span><span style="font-style: italic; color: black;font-size: 130%;">(data = <span style="color:#48566B">None</span>, shape = <span style="color:#48566B">None</span>, crs = <span style="color:#48566B">None</span>, geo_transform = <span style="color:#48566B">None</span>, dtype = <span style="color:#48566B">None</span>, nodata = <span style="color:#48566B">None</span>, metadata = <span style="color:#48566B">{}</span>, **kwargs):</span></span>

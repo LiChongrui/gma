@@ -3,7 +3,7 @@ title: SNHT
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.diagnosis.SNHT
+<span style="font-size: 120%;font-weight: bold;">gma.climet.diagnosis.SNHT</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">SNHT</span><span style="font-style: italic; color: black;font-size: 130%;">(data, axis = <span style="color:#48566B">None</span>):</span></span>

@@ -3,7 +3,7 @@ title: FieldTypes
 date: 2026-08-15
 sidebar: true
 ---
-# gma.gio.FieldTypes
+<span style="font-size: 120%;font-weight: bold;">gma.gio.FieldTypes</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">FieldTypes</span><span style="font-style: italic; color: black;font-size: 130%;">(ftypes = <span style="color:#48566B">None</span>):</span></span>

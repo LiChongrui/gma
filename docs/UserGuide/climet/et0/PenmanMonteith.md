@@ -3,7 +3,7 @@ title: PenmanMonteith
 date: 2026-08-15
 sidebar: true
 ---
-# gma.climet.et0.PenmanMonteith
+<span style="font-size: 120%;font-weight: bold;">gma.climet.et0.PenmanMonteith</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">PenmanMonteith</span><span style="font-style: italic; color: black;font-size: 130%;">(prs, win, tmax, tmin, rhu, ssh, lat, Day, ele):</span></span>

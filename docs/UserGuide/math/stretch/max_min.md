@@ -3,7 +3,7 @@ title: max_min
 date: 2026-08-15
 sidebar: true
 ---
-# gma.math.stretch.max_min
+<span style="font-size: 120%;font-weight: bold;">gma.math.stretch.max_min</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">max_min</span><span style="font-style: italic; color: black;font-size: 130%;">(data, min_label = <span style="color:#48566B">None</span>, max_label = <span style="color:#48566B">None</span>, ignore_value = <span style="color:#48566B">None</span>, vmin = <span style="color:#48566B">None</span>, vmax = <span style="color:#48566B">None</span>):</span></span>

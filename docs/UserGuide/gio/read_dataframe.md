@@ -3,7 +3,7 @@ title: read_dataframe
 date: 2026-08-15
 sidebar: true
 ---
-# gma.gio.read_dataframe
+<span style="font-size: 120%;font-weight: bold;">gma.gio.read_dataframe</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">read_dataframe</span><span style="font-style: italic; color: black;font-size: 130%;">(df, geom_col = <span style="color:#48566B">None</span>, crs = <span style="color:#48566B">"WGS84"</span>, encoding = <span style="color:#48566B">"WKT"</span>, gtype = <span style="color:#48566B">None</span>, **kwargs):</span></span>

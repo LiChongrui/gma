@@ -3,7 +3,7 @@ title: CassiniSoldner
 date: 2026-08-15
 sidebar: true
 ---
-# gma.crs.ProjMethods.CassiniSoldner
+<span style="font-size: 120%;font-weight: bold;">gma.crs.ProjMethods.CassiniSoldner</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">class</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">CassiniSoldner</span><span style="font-style: italic; color: black;font-size: 130%;">(central_meridian = <span style="color:#48566B">0</span>, latitude_of_origin = <span style="color:#48566B">0</span>, false_easting = <span style="color:#48566B">0</span>, false_northing = <span style="color:#48566B">0</span>):</span></span>

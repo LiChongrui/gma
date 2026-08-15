@@ -3,7 +3,7 @@ title: idw
 date: 2026-08-15
 sidebar: true
 ---
-# gma.smc.interp.idw
+<span style="font-size: 120%;font-weight: bold;">gma.smc.interp.idw</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">idw</span><span style="font-style: italic; color: black;font-size: 130%;">(points, values, bounds = <span style="color:#48566B">None</span>, resolution = <span style="color:#48566B">None</span>, power = <span style="color:#48566B">2.0</span>, search_radius = <span style="color:#48566B">12</span>, crs = <span style="color:#48566B">None</span>, **kwargs):</span></span>

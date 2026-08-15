@@ -3,7 +3,7 @@ title: orthorectification
 date: 2026-08-15
 sidebar: true
 ---
-# gma.etools.orthorectification
+<span style="font-size: 120%;font-weight: bold;">gma.etools.orthorectification</span>
 
 
 <span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">orthorectification</span><span style="font-style: italic; color: black;font-size: 130%;">(in_src, out_dst, dem = <span style="color:#48566B">None</span>, **kwargs):</span></span>
