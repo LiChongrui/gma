@@ -1,0 +1,12 @@
+.arrow {
+  @apply inline-block w-1.5 h-1.5 align-middle border-0 border-solid border-transparent border-reco-text-lightmode border-r border-t origin-center transition-all;
+  @apply dark:border-reco-text-darkmode;
+
+  &.down {
+    @apply rotate-[135deg] -translate-y-0.5;
+  }
+
+  &.right {
+    @apply rotate-[45deg];
+  }
+}

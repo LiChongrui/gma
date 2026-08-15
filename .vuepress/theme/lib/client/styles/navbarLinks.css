@@ -1,0 +1,59 @@
+.navbar-links {
+  @apply md:ml-3;
+  .navbar-links__item {
+    @apply block my-0 ml-0 py-0;
+    @apply md:inline-block md:ml-3 md:mr-3;
+
+    &.language {
+      @apply flex items-center;
+      &::before {
+        @apply mr-6 h-6 border-basic-left;
+        content: '';
+      }
+    }
+
+    &.social-links {
+      @apply flex pl-0 leading-none;
+      &::before {
+        @apply mr-6 h-6 border-basic-left;
+        content: '';
+      }
+      .social-item {
+        @apply mx-1 list-none cursor-pointer;
+        svg {
+          @apply mr-0 text-lighter !important;
+          @apply hover:text-basic;
+        }
+      }
+    }
+
+    &.btn-toggle-dark-mode {
+      @apply flex items-center;
+      &::before {
+        @apply mr-6 h-6 border-basic-left;
+        content: '';
+      }
+    }
+
+    > .link {
+      @apply flex items-center text-sm font-semibold;
+      .xicon-container {
+        @apply mr-0.5;
+      }
+    }
+
+    /* 选中高亮，不可以移动 */
+    .router-link-active {
+      @apply text-reco-primary !important;
+    }
+  }
+
+  &.mobile {
+    .navbar-links__item {
+      @apply py-4 border-basic-bottom;
+      &::before {
+        @apply hidden;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { defineUserConfig } from "vuepress";
-import recoTheme from "vuepress-theme-reco";
+import recoTheme from "./theme"; // 自定义主题
 import { viteBundler } from '@vuepress/bundler-vite'
 //import { webpackBundler } from '@vuepress/bundler-webpack'
 

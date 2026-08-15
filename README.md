@@ -14,6 +14,7 @@ bannerBrand:
   buttons:
     - { text: Explore Latest → gma 3.0.3, link: '/docs/UserGuide/gio/' }
     - { text: Learn GMA, link: '/docs/Introduce', type: 'plain' }
+
 features:
 - title: User-Friendly First
   details: Built on Python, with a clear guide for quick start.
@@ -21,6 +22,10 @@ features:
   details: Over 100 functions are available for open use.
 - title: Efficient Updates
   details: Continuously optimized for peak performance.
+
+footer:
+  startYear: 2022
+  
 ---
 
 ## <strong>Quick Start</strong>

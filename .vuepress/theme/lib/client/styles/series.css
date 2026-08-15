@@ -1,0 +1,111 @@
+.series-container {
+  @apply transition-all duration-500 p-6 pt-7 w-64 fixed bottom-0 left-0 z-50 top-0 overflow-y-auto h-full;
+  @apply -translate-x-full;
+  @apply md:translate-x-0 md:sticky md:top-16 md:z-40 !important;
+  .series-group {
+    @apply pb-6;
+    .series-heading {
+      @apply mb-4 font-extrabold;
+      span {
+        @apply text-ellipsis overflow-hidden text-nowrap;
+      }
+      & + ul {
+        @apply pl-0 m-0 list-none;
+        li:is(:last-of-type) .series-group {
+          @apply pb-0;
+        }
+      }
+      &.active {
+        @apply text-reco-primary;
+      }
+    }
+    h5.series-heading {
+      @apply flex justify-between items-center cursor-pointer pt-0 my-0 text-basic;
+      & + ul {
+        @apply pt-4;
+        li {
+          span.xicon-content {
+            @apply text-ellipsis overflow-hidden text-nowrap;
+          }
+        }
+      }
+      &.series-level-1 + ul > li {
+        @apply ml-2 pl-4 border-basic-left;
+        span.xicon-container {
+          @apply w-full;
+        }
+      }
+    }
+    h6.series-heading {
+      @apply mt-0 pt-3 text-basic;
+    }
+    &:not(:first-of-type){
+      @apply border-basic-top border-dashed;
+      h5.series-heading {
+        @apply mt-6;
+      }
+    }
+    .series-item {
+      @apply text-lighter;
+    }
+    ul {
+      @apply pl-4 list-none;
+    }
+  }
+  a.series-item {
+    @apply relative block py-1 transition-all duration-500 leading-7 text-sm;
+    &::before {
+      @apply absolute inset-y-0 left-0 m-auto block w-0 h-0 rounded-1/2 transition-all duration-500;
+      @apply bg-reco-primary;
+      content: '';
+    }
+    &:hover {
+      @apply text-reco-primary;
+    }
+    &.router-link-active {
+      @apply pl-4;
+      &::before {
+        @apply w-1.5 h-1.5;
+      }
+      span {
+        @apply text-reco-primary;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .series-container {
+    max-height: calc(100vh - 4rem)
+  }
+}
+
+.series-mask {
+  @apply transition-colors delay-100 fixed z-50 top-0 right-0 bottom-0 left-0 block w-screen h-screen bg-gray-600/40;
+}
+
+.series--open {
+  .series-container {
+    @apply fixed bg-basic translate-x-0 !important;
+  }
+  /* .series-mask {
+    @apply block bg-gray-600/40;
+  } */
+  .toggle-series-button .icon span {
+    &:nth-of-type(1) {
+      @apply rotate-225 -translate-x-0.5 translate-y-2 w-6;
+    }
+    &:nth-of-type(2) {
+      @apply w-0;
+    }
+    &:nth-of-type(3) {
+      @apply -rotate-225 -translate-x-0.5 -translate-y-2 w-6;
+    }
+  }
+}
+
+.series--no {
+  .series-container {
+    @apply md:hidden;
+  }
+}
