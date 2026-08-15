@@ -3,10 +3,10 @@
   @apply md:h-screen;
   .banner-brand__content {
     @apply block box-border px-6 mt-32 max-w-screen-md;
-    @apply md:mt-0;
+    @apply md:mt-16;
     .title {
       @apply mb-6 text-5xl text-left bg-gradient-to-r from-reco-primary to-red-500 !important;
-      @apply md:text-7xl !important;
+      @apply md:text-6xl !important;
       @apply leading-tight !important;
       background-clip: text;
       -webkit-background-clip: text;
@@ -14,7 +14,7 @@
     }
     .description {
       @apply text-2xl;
-      @apply md:text-4xl;
+      @apply md:text-3xl;
     }
     .tagline {
       @apply text-lighter;
