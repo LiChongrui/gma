@@ -47,6 +47,7 @@ from gma.carto import plot, inres
 
 ```python
 from gma.carto import plot, inres
+from gma import crs
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -61,14 +62,16 @@ mf = plot.MapFrame(ax = ax, crs = proj)
 
 # 1. Add built-in world country and administrative boundary vectors
 xly = inres.WorldLayer.Country
-colors = np.random.uniform(size = (len(xly), 3))
+np.random.seed(4)
+colors = np.random.uniform(size = (len(xly), 4))
+
 ml1 = mf.add_vector(xly, facecolors = colors, edgecolors = 'gray', linewidths = 0.1)
 
 # 2. Add graticules
-gtl = mf.add_graticule(lat_range = range(-180, 180, 30), lon_range = range(-90, 90, 15), 
+gtl = mf.add_graticule(lon_range = range(-180, 180, 30), lat_range = range(-90, 90, 15), 
                        linewidths = 0.2, ls = (6, (6, 6)))
 # 2.1 Set the graticule frame border
 ol = gtl.set_outline(linewidths = 0.5)
 ```
-![](/Bonne.png)
+![](/example.svg)
 
