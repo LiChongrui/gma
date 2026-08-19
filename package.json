@@ -1,9 +1,9 @@
 {
-  "name": "vuepress-theme-reco-demo",
-  "version": "2.0.0",
-  "description": "Demo for vuepress-theme-reco@2.x.",
-  "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
-  "author": "reco_luan <recoluan@outlook.com>",
+  "name": "gma",
+  "version": "3.x",
+  "description": "gma @3.x.",
+  "repository": "https://github.com/LiChongrui/gma",
+  "author": "858998723@qq.com",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",

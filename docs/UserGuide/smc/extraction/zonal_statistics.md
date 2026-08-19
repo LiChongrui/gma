@@ -1,15 +1,26 @@
 ---
 title: zonal_statistics
 date: 2026-08-15
-sidebar: true
 ---
-<span style="font-size: 120%;font-weight: bold;">gma.smc.extraction.zonal_statistics</span>
 
+<p style="font-size: 120%;font-weight: bold;">gma.smc.extraction.zonal_statistics</p><span style="background-color:#F4F4F5;display: block;line-height:1.5;border-radius: 0.3rem;"><span style="color: gray;font-size:90%;">[function] </span><span style="color: #616AE5; font-weight: bold;font-size: 125%;">zonal_statistics</span><span style="font-style: italic; color: black;font-size: 120%;">(in_ly, in_ds, agg_fun = <span style="color:#48566B">np.sum</span>):</span></span>
 
-<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">zonal_statistics</span><span style="font-style: italic; color: black;font-size: 130%;">(in_ly, in_ds, agg_fun = <span style="color:#48566B">np.sum</span>):</span></span>
+<p>Statistics by region according to Features.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
+<p style="margin-left: 2em;"><b>in_ly</b>: <code style="text-indent: 0em;">Layer</code>. </p>
+<p style="margin-left: 4em;">A gma vector layer.</p>
+<p style="margin-left: 2em;"><b>in_ds</b>: <code style="text-indent: 0em;">Dataset</code>. </p>
+<p style="margin-left: 4em;">A gma raster dataset.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="margin-left: 2em;"><b>agg_fun </b> = <code style="text-indent: 0em;">def</code>. <span style="color:#48566B;"> Default np.sum</span>. </p>
+<p style="margin-left: 4em;">Calculate functions. For Example:</p>
 
-Statistics by region according to Features.
+```python
+def func(in_ar):
+    return in_ar.mean()
+agg_fun = func
+```
 
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>in_ly: </b> <code style="text-indent: 0">Layer</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma vector layer.</p><p style="text-indent: 1em;"><b>in_ds: </b> <code style="text-indent: 0">Dataset</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    A gma raster dataset.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>agg_fun: </b> <code style="text-indent: 0">def</code>. <span style="color:#48566B;">Default np.sum.</span></p><p style="padding-left: 1em;text-indent: 1em;">Calculate functions. For Example: def calFun(in_ar): return in_ar.mean() agg_fun = calFun in_ar: Input NumPy arrays with region shape and a masked use in_ds nodata.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">DataFrame</code>.</p>
-
----
+<p style="margin-left: 4em;">in_ar: Input NumPy arrays with region shape and a masked use in_ds nodata.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
+<p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">DataFrame</code>. </p>

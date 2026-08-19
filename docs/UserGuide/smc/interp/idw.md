@@ -1,15 +1,30 @@
 ---
 title: idw
 date: 2026-08-15
-sidebar: true
 ---
-<span style="font-size: 120%;font-weight: bold;">gma.smc.interp.idw</span>
 
+<p style="font-size: 120%;font-weight: bold;">gma.smc.interp.idw</p><span style="background-color:#F4F4F5;display: block;line-height:1.5;border-radius: 0.3rem;"><span style="color: gray;font-size:90%;">[function] </span><span style="color: #616AE5; font-weight: bold;font-size: 125%;">idw</span><span style="font-style: italic; color: black;font-size: 120%;">(points, values, bounds = <span style="color:#48566B">None</span>, resolution = <span style="color:#48566B">None</span>, power = <span style="color:#48566B">2.0</span>, search_radius = <span style="color:#48566B">12</span>, crs = <span style="color:#48566B">None</span>, **kwargs):</span></span>
 
-<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">idw</span><span style="font-style: italic; color: black;font-size: 130%;">(points, values, bounds = <span style="color:#48566B">None</span>, resolution = <span style="color:#48566B">None</span>, power = <span style="color:#48566B">2.0</span>, search_radius = <span style="color:#48566B">12</span>, crs = <span style="color:#48566B">None</span>, **kwargs):</span></span>
-
-Use IDW method to interpolate points into a 2D array.
-
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>points: </b> <code style="text-indent: 0">list||tuple||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Interpolate point X (longitude), Y (latitude) coordinates. There must be at least 4 coordinate points.</p><p style="padding-left: 1em;text-indent: 1em;">For example: points = [(122.52, 52.97), (124.72, 52.35), (124.4, 51.67), (126.63, 51.73)]</p><p style="text-indent: 1em;"><b>values: </b> <code style="text-indent: 0">array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The data value corresponding to the coordinate point, which is the same as the number of points.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>bounds  = </b> <code style="text-indent: 0">tuple</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The four boundaries of the interpolation result are the minimum longitude (left), the minimum latitude (bottom), the maximum longitude (right), and the maximum latitude (top). The default (None) is to extract the range from the input coordinate points.</p><p style="text-indent: 1em;"><b>resolution  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The resolution of the interpolation result. The default (None) is 1/10 of the minimum bounds X and Y difference.</p><p style="text-indent: 1em;"><b>power  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default 2.0.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Distance exponent (power). Used to control the saliency of points around the interpolation.</p><p style="text-indent: 1em;"><b>search_radius  = </b> <code style="text-indent: 0">int</code>. <span style="color:#48566B;">Default 12.</span></p><p style="padding-left: 1em;text-indent: 1em;">    Specifies the number of nearest input sample points to use to perform interpolation.</p><p style="text-indent: 1em;"><b>crs  = </b> <code style="text-indent: 0">str||int||aclassofgmaSpatialReference</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters or SpatialReference class.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Contains data (data) and affine transformation (geo_transform).</p><p style="text-indent: 1em;"><b>References</b>.</p><p style="text-indent: 1em;"><b>[1] Philip, G. M., and D. F. Watson. A Precise Method for Determining Contoured Surfaces.</b>.</p><p style="text-indent: 1em;"><b>Australian Petroleum Exploration Association Journal 22: </b> <code style="text-indent: 0">205-212.1982</code>.</p><p style="text-indent: 1em;"><b>[2] Watson, D. F., and G. M. Philip. A Refinement of Inverse Distance Weighted Interpolation.</b>.</p><p style="text-indent: 1em;"><b>Geoprocessing 2: </b> <code style="text-indent: 0">315-327.1985</code>.</p>
-
----
+<p>Use IDW method to interpolate points into a 2D array.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
+<p style="margin-left: 2em;"><b>points</b>: <code style="text-indent: 0em;">list||tuple||array</code>. </p>
+<p style="margin-left: 4em;">Interpolate point X (longitude), Y (latitude) coordinates. There must be at least 4 coordinate points.</p>
+<p style="margin-left: 2em;"><b>values</b>: <code style="text-indent: 0em;">array</code>. </p>
+<p style="margin-left: 4em;">The data value corresponding to the coordinate point, which is the same as the number of points.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="margin-left: 2em;"><b>bounds </b> = <code style="text-indent: 0em;">tuple</code>. <span style="color:#48566B;"> Default None</span>. </p>
+<p style="margin-left: 4em;">The four boundaries of the interpolation result are the minimum longitude (left), the minimum latitude (bottom), the maximum longitude (right), and the maximum latitude (top). The default (None) is to extract the range from the input coordinate points.</p>
+<p style="margin-left: 2em;"><b>resolution </b> = <code style="text-indent: 0em;">float</code>. <span style="color:#48566B;"> Default None</span>. </p>
+<p style="margin-left: 4em;">The resolution of the interpolation result. The default (None) is 1/10 of the minimum bounds X and Y difference.</p>
+<p style="margin-left: 2em;"><b>power </b> = <code style="text-indent: 0em;">float</code>. <span style="color:#48566B;"> Default 2.0</span>. </p>
+<p style="margin-left: 4em;">Distance exponent (power). Used to control the saliency of points around the interpolation.</p>
+<p style="margin-left: 2em;"><b>search_radius </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 12</span>. </p>
+<p style="margin-left: 4em;">Specifies the number of nearest input sample points to use to perform interpolation.</p>
+<p style="margin-left: 2em;"><b>crs </b> = <code style="text-indent: 0em;">str||int||CoordinateReferenceSystem</code>. <span style="color:#48566B;"> Default None</span>. </p>
+<p style="margin-left: 4em;">Coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters or CoordinateReferenceSystem.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
+<p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">namedtuple</code>. </p>
+<p style="margin-left: 4em;">Contains data (data) and affine transformation (geo_transform).</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">References:</p>
+<p style="text-indent: 2em;">[1] Philip, G. M., and D. F. Watson. A Precise Method for Determining Contoured Surfaces. Australian Petroleum Exploration Association Journal 22: 205-212. 1982.</p>
+<p style="text-indent: 2em;">[2] Watson, D. F., and G. M. Philip. A Refinement of Inverse Distance Weighted Interpolation. Geoprocessing 2:315-327. 1985.</p>

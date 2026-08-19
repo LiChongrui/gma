@@ -1,7 +1,6 @@
 ---
 title: Contents
 date: 2026-08-15
-sidebar: false
 ---
 All items(functions/classes/consts) in this module are as follows:
 |No.|item|type|introduce|
@@ -16,7 +15,7 @@ All items(functions/classes/consts) in this module are as follows:
 |8|[climet.diagnosis.Pettitt](/docs/UserGuide/climet/diagnosis/Pettitt.html)|function|Checks homogeneity test using A. N. Pettitt's (1979) method.|
 |9|[climet.diagnosis.SNHT](/docs/UserGuide/climet/diagnosis/SNHT.html)|function|Checks homogeneity test using H. Alexandersson (1986) method.|
 |10|[climet.et0.Hargreaves](/docs/UserGuide/climet/et0/Hargreaves.html)|function|Calculate daily potential evapotranspiration based on the Hargreaves (1998) method.|
-|11|[climet.et0.PenmanMonteith](/docs/UserGuide/climet/et0/PenmanMonteith.html)|function|Calculate daily crop reference evapotranspiration based on thePenman-Monteith (FAO-56) method.|
+|11|[climet.et0.PenmanMonteith](/docs/UserGuide/climet/et0/PenmanMonteith.html)|function|Calculate daily crop reference evapotranspiration based on the Penman-Monteith (FAO-56) method.|
 |12|[climet.et0.Thornthwaite](/docs/UserGuide/climet/et0/Thornthwaite.html)|function|Calculate monthly potential evapotranspiration based on the Thornthwaite (1948) method.|
 |13|[climet.index.CWDI](/docs/UserGuide/climet/index/CWDI.html)|function|Calculate Crop Water Deficit Index.|
 |14|[climet.index.PAP](/docs/UserGuide/climet/index/PAP.html)|function|Calculate fluctuation of precipitation to multi-year averages.|

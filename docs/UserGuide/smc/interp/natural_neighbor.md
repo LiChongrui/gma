@@ -1,15 +1,25 @@
 ---
 title: natural_neighbor
 date: 2026-08-15
-sidebar: true
 ---
-<span style="font-size: 120%;font-weight: bold;">gma.smc.interp.natural_neighbor</span>
 
+<p style="font-size: 120%;font-weight: bold;">gma.smc.interp.natural_neighbor</p><span style="background-color:#F4F4F5;display: block;line-height:1.5;border-radius: 0.3rem;"><span style="color: gray;font-size:90%;">[function] </span><span style="color: #616AE5; font-weight: bold;font-size: 125%;">natural_neighbor</span><span style="font-style: italic; color: black;font-size: 120%;">(points, values, resolution = <span style="color:#48566B">None</span>, crs = <span style="color:#48566B">None</span>, **kwargs):</span></span>
 
-<span style="background-color:#EFF0FC;display: block;line-height:1.5"><span style="color: gray;font-size:90%;">function</span> <span style="color: #616AE5; font-weight: bold;font-size: 150%;">natural_neighbor</span><span style="font-style: italic; color: black;font-size: 130%;">(points, values, resolution = <span style="color:#48566B">None</span>, crs = <span style="color:#48566B">None</span>, **kwargs):</span></span>
-
-Use Natural Neighbor method to interpolate points into a 2D array.
-
-<p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Parameters:</p><p style="text-indent: 1em;"><b>points: </b> <code style="text-indent: 0">list||tuple||array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">Interpolate point X (longitude), Y (latitude) coordinates. There must be at least 4 coordinate points.</p><p style="padding-left: 1em;text-indent: 1em;">For example: points = [(122.52, 52.97), (124.72, 52.35), (124.4, 51.67), (126.63, 51.73)]</p><p style="text-indent: 1em;"><b>values: </b> <code style="text-indent: 0">array</code>.</p><p style="padding-left: 1em;text-indent: 1em;">The data value corresponding to the coordinate point, which is the same as the number of points.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Optional:</p><p style="text-indent: 1em;"><b>resolution  = </b> <code style="text-indent: 0">float</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">The resolution of the interpolation result. The default (None) is 1/10 of the minimum bounds X and Y difference.</p><p style="text-indent: 1em;"><b>crs  = </b> <code style="text-indent: 0">str||int||aclassofgmaSpatialReference</code>. <span style="color:#48566B;">Default None.</span></p><p style="padding-left: 1em;text-indent: 1em;">Coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters or SpatialReference class.</p><p style="background-color:none;font-size: 120%;display: block;color:#9298ED; font-weight: bold;">Returns:</p><p style="text-indent: 1em;"><b>Type: </b> <code style="text-indent: 0">namedtuple</code>.</p><p style="padding-left: 1em;text-indent: 1em;">    Contains data (data) and affine transformation (geo_transform).</p><p style="text-indent: 1em;"><b>References</b>.</p><p style="text-indent: 1em;"><b>[1] Sibson, R. (1981). A brief description of natural neighbor interpolation (Chapter 2).</b>.</p><p style="text-indent: 1em;"><b>In V. Barnett (ed.). Interpolating Multivariate Data. Chichester: </b> <code style="text-indent: 0">JohnWiley.pp.21-36</code>.</p><p style="text-indent: 1em;"><b>[2] V.V. Belikov; V.D. Ivanov; V.K. Kontorovich; S.A. Korytnik; A.Y. Semenov (1997).</b>.</p><p style="text-indent: 1em;"><b>The non-Sibsonian interpolation: </b> <code style="text-indent: 0">Anewmethodofinterpolationofthevaluesofa</code>.</p><p style="text-indent: 1em;"><b>function on an arbitrary set of points. Computational mathematics and mathematical physics. 37 (1): </b> <code style="text-indent: 0">9-15</code>.</p><p style="text-indent: 1em;"><b>[3] N.H. Christ; R. Friedberg, R.; T.D. Lee (1982). weights of links and plaquettes</b>.</p><p style="text-indent: 1em;"><b>in a random lattice. Nuclear Physics B. 210 (3): </b> <code style="text-indent: 0">337-346</code>.</p>
-
----
+<p>Use Natural Neighbor method to interpolate points into a 2D array.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
+<p style="margin-left: 2em;"><b>points</b>: <code style="text-indent: 0em;">list||tuple||array</code>. </p>
+<p style="margin-left: 4em;">Interpolate point X (longitude), Y (latitude) coordinates. There must be at least 4 coordinate points.</p>
+<p style="margin-left: 2em;"><b>values</b>: <code style="text-indent: 0em;">array</code>. </p>
+<p style="margin-left: 4em;">The data value corresponding to the coordinate point, which is the same as the number of points.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="margin-left: 2em;"><b>resolution </b> = <code style="text-indent: 0em;">float</code>. <span style="color:#48566B;"> Default None</span>. </p>
+<p style="margin-left: 4em;">The resolution of the interpolation result. The default (None) is 1/10 of the minimum bounds X and Y difference.</p>
+<p style="margin-left: 2em;"><b>crs </b> = <code style="text-indent: 0em;">str||int||CoordinateReferenceSystem</code>. <span style="color:#48566B;"> Default None</span>. </p>
+<p style="margin-left: 4em;">Coordinate system. Can be EPSG, WKT, Proj4, and other types of coordinate characters or CoordinateReferenceSystem.</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
+<p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">namedtuple</code>. </p>
+<p style="margin-left: 4em;">Contains data (data) and affine transformation (geo_transform).</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">References:</p>
+<p style="text-indent: 2em;">[1] Sibson, R. (1981). A brief description of natural neighbor interpolation (Chapter 2). In V. Barnett (ed.). Interpolating Multivariate Data. Chichester: John Wiley. pp. 21-36.</p>
+<p style="text-indent: 2em;">[2] V.V. Belikov; V.D. Ivanov; V.K. Kontorovich; S.A. Korytnik; A.Y. Semenov (1997). The non-Sibsonian interpolation: A new method of interpolation of the values of a function on an arbitrary set of points. Computational mathematics and mathematical physics. 37 (1): 9-15.</p>
+<p style="text-indent: 2em;">[3] N.H. Christ; R. Friedberg, R.; T.D. Lee (1982). weights of links and plaquettes in a random lattice. Nuclear Physics B. 210 (3): 337-346.</p>
