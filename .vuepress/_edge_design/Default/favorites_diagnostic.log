@@ -1,0 +1,16 @@
+2026-11-20 10:17:10.135: [INFO] CurrentProfilePath: D:\github\gma\.vuepress\_edge_design\Default
+2026-11-20 10:17:10.135: [INFO] Profiles total count: 1
+2026-11-20 10:17:10.135: [INFO] Profile: name=用户配置 1 path=D:\github\gma\.vuepress\_edge_design\Default lastActive=null
+2026-11-20 10:17:10.135: [INFO] LastUsedProfileDir: D:\github\gma\.vuepress\_edge_design\Default
+2026-11-20 10:17:10.135: [INFO] VisibilityChanged: 0
+2026-11-20 10:17:10.160: [INFO] OnDoneLoading sync enabled: 0
+2026-11-20 10:17:10.160: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-20 10:17:10.160: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-20 10:17:10.160: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-20 10:17:10.163: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-20 10:17:12.488: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-20 10:17:12.490: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-20 10:17:12.493: [INFO] Primary account changed.
+2026-11-20 10:17:12.493: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-20 10:17:12.498: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-20 10:17:12.519: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3

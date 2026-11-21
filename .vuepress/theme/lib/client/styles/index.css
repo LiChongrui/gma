@@ -30,6 +30,8 @@
 @import 'series.css';
 @import 'subNavbar.css';
 @import 'theme.css';
+@import 'density.css';
+@import 'layout.css';
 @import 'timeline.css';
 @import 'toggleDarkModeButton.css';
 @import '404.css';

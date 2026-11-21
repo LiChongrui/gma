@@ -10,8 +10,13 @@ export const usePageCatalog = () => {
     const isShowCatalog = computed(() => catalog.value.length > 0 && frontmatter.value.home !== true);
     return { catalog, isShowCatalog };
 };
+const stripSigArgs = (title) => {
+    // 成员头一行化后标题为 name(args)；目录只显示方法名，锚点 slug 不受影响
+    const i = title.indexOf('(');
+    return i > 0 ? title.slice(0, i).trim() : title;
+};
 const headerToCatalogItem = (header) => ({
-    text: header.title,
+    text: stripSigArgs(header.title),
     link: `#${header.slug}`,
     level: header.level,
     children: headersToCatalog(header.children),

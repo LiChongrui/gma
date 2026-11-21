@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>data</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Data that needs smoothing.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>window_size </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 5</span>. </p>
 <p style="margin-left: 4em;">Smoothing window size. Must be a positive odd number.</p>
 <p style="margin-left: 2em;"><b>times </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 1</span>. </p>

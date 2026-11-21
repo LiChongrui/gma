@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">The input raster path or path collection.</p>
 <p style="margin-left: 2em;"><b>out_dst</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">The output raster file path.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>**kwargs</b>: </p>
 <p style="margin-left: 4em;">Other parameters passed to translate.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>

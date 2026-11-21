@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>in_path</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">The input file path.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>recursive </b> = <code style="text-indent: 0em;">bool</code>. <span style="color:#48566B;"> Default False</span>. </p>
 <p style="margin-left: 4em;">Whether match any files and zero or more directories and subdirectories.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>

@@ -1,0 +1,531 @@
+/* ============================================================
+   布局可读性覆盖（在 theme.css / density.css 之后加载）
+   1. 左侧栏 series-container：加宽 + 长页面名允许换行（不再省略截断）
+   2. 右侧目录 page-catalog-container：高度约束可靠化，底部内容可滚动查看
+   3. 两栏滚动条：细且可见（默认半透明，悬停加深），亮暗色通用
+   ============================================================ */
+
+/* ---------- 左侧栏 ---------- */
+.series-container {
+  /* 原 w-64 (16rem) -> 18rem；配合下面收窄左右内边距，文本可用宽度 208px -> 256px */
+  width: 18rem;
+  padding-left: 1rem;   /* 原 p-6 (1.5rem) */
+  padding-right: 1rem;
+}
+
+/* 长页面名 / 组标题不再省略截断：允许换行，信息完整 */
+.series-container .series-group .series-heading span {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  word-break: break-word;
+}
+.series-container .series-group h5.series-heading + ul li span.xicon-content {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  word-break: break-word;
+}
+
+/* ---------- 右侧目录 ---------- */
+.page-catalog-container {
+  /* 原 w-60 (15rem) -> 16rem，减少条目标题的省略截断 */
+  width: 16rem;
+  /* 覆盖 h-full：高度交给 max-height 约束（原来 max-height 只在 md+ 生效） */
+  height: auto;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  /* 滚动到底时最后一条不贴视口底边 */
+  padding-bottom: 2rem;
+}
+
+/* 目录条目不再截断：原主题对 li 内所有 span（含 Xicons 的内/外两层）
+   施加 w-full + ellipsis + overflow-hidden + nowrap，长标题/API 名/
+   方法签名超出部分整体被裁。放开为允许换行，文本完整可见。
+   （特异性 0,1,3 与原规则相同，靠后加载取胜；也同时压过
+   Xicons 自带的 .xicon-container .xicon-content { text-nowrap }） */
+.page-catalog-container ul li span {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  word-break: break-word;
+}
+
+/* ---------- 滚动条：细且可见 ---------- */
+.series-container,
+.page-catalog-container {
+  scrollbar-width: thin;                                /* Firefox */
+  scrollbar-color: rgba(125, 128, 145, 0.35) transparent;
+}
+/* 展开长列表（crs > ProjMethods 34 项）时滚动条出现不再挤窄内容宽度，消除布局跳动 */
+.series-container {
+  scrollbar-gutter: stable;
+}
+.series-container::-webkit-scrollbar,
+.page-catalog-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.series-container::-webkit-scrollbar-track,
+.page-catalog-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.series-container::-webkit-scrollbar-thumb,
+.page-catalog-container::-webkit-scrollbar-thumb {
+  background: rgba(125, 128, 145, 0.35);
+  border-radius: 3px;
+}
+.series-container::-webkit-scrollbar-thumb:hover,
+.page-catalog-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 128, 145, 0.65);
+}
+
+/* ============================================================
+   API 页视觉增强（全站正文生效，保持官网紫色语言）
+   ============================================================ */
+
+/* 页面主标题：h1 的主题基础规则是 -mt-12 + pt-12（净间距 0，标题贴死
+   上方面包屑，且盒子带 z-index:-10 滑到面包屑底下）——归零，与面包屑的
+   间距由其 margin-bottom 提供；锚点偏移用 scroll-margin-top */
+.page-content .page-title {
+  margin-top: 0;
+  padding-top: 0;
+  z-index: auto;
+  scroll-margin-top: 5rem;
+}
+
+/* 页面主标题：紫色渐变下划线 */
+.page-content .page-title::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 3px;
+  margin-top: 0.9rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #9298ED, rgba(146, 152, 237, 0));
+}
+
+/* ---------- 作者/日期行（PageInfo/PageMeta） ----------
+   文档站全部为 API/教程页面，作者与日期对查阅无信息量，整站隐藏 */
+.page-info,
+.page-meta .meta-item.last-updated {
+  display: none;
+}
+
+/* ---------- 标题字号分层 ----------
+   主题 base.css：h2 span text-2xl(24px)、h3 span text-xl(20px)、h4 span text-lg(18px)。
+   分节/成员标题与签名块、参数组标题挤在 18~24px 区间，层级无法分辨。
+   二次调整（用户反馈"标题还没有 pill 显眼，头重脚轻"）：标题整体加重——
+   章节(h2) 18.4px、成员(h3) 17.9px，均 700 粗体；h3 另加浅紫底条形成成员
+   区块感，权重明确压过 pill(13.6px 紫胶囊)。子级(h4) 16px。
+   紫色仅保留给代码身份（签名、类型、pill、链接） */
+.theme-reco-md-content h2 span {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.theme-reco-md-content h3 span {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+.theme-reco-md-content h4 span {
+  font-size: 1rem;
+}
+/* 标题文字色：正文所有 <a> 被 theme.css 染紫（!important），标题的
+   header-anchor 也是 <a>，其内部 span 会继承紫色 -> 显式改回标题深灰
+   （reco palette 的 text-heavier，与主题标题一致） */
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor span {
+  color: rgb(15, 23, 42);
+}
+.dark .theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor span {
+  color: rgb(255, 255, 255);
+}
+
+/* h3 成员标题：浅紫底条 + 左缘紫色圆角竖条。
+   成员头是页面最高频的"锚"，加极浅紫底条形成区块感（与 pill、正文拉开权重），
+   竖条贴底条左缘。竖条垂直定位用 top:50% + translateY(-50%) 几何居中于
+   行盒（此前 top:0.24em 手调值在用户端观感偏上） */
+.theme-reco-md-content h3 {
+  position: relative;
+  padding: 0.3rem 0.6rem 0.3rem 0.75rem;
+  border-radius: 6px;
+  background: rgba(146, 152, 237, 0.08);
+}
+.theme-reco-md-content h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1.15em;
+  width: 4px;
+  border-radius: 2px;
+  background: #9298ed;
+  transform: translateY(-50%);
+  transition: opacity 0.25s;
+}
+/* 悬停成员标题：竖条淡出，让位给 header-anchor 的 # 提示（同一区域切换） */
+.theme-reco-md-content h3:hover::before {
+  opacity: 0;
+}
+.dark .theme-reco-md-content h3 {
+  background: rgba(146, 152, 237, 0.13);
+}
+
+/* Optional:/Returns:/Parameters:/References: 参数组标题：胶囊 pill 标签。
+   这类 p 带 inline style "font-size: 120%;color:#9298ED;font-weight: bold;"，
+   inline 的 color/font-size 需要 !important 才能覆盖。
+   之前与 h3 同款"紫字+竖条"，视觉上和成员标题（h3）无法区分，现改为
+   小号胶囊标签，与"章节(h2) -> 成员(h3) -> 参数组(pill)"层级语言一致 */
+.theme-reco-md-content p[style*="#9298ED"] {
+  display: inline-block;
+  font-size: 0.85rem !important;
+  color: #616AE5 !important;
+  background: #EFF0FC;
+  padding: 0.15rem 0.75rem;
+  border-radius: 999px;
+  margin: 0.8rem 0 0.5rem;
+}
+.theme-reco-md-content p[style*="#9298ED"]::before {
+  content: none;
+}
+.dark .theme-reco-md-content p[style*="#9298ED"] {
+  color: #a6acf2 !important;
+  background: rgba(146, 152, 237, 0.16);
+}
+
+/* ---------- 签名块卡片化 ----------
+   类/函数签名块：inline 背景 #EFF0FC（顶层签名）/ #F4F4F5（成员签名），无内边距，
+   文字贴边；两块一紫一灰，同页出现时像两种组件。统一为浅紫卡 + 内边距 + 圆角。
+   内部字号（inline font-size: 150%/130%/125%/120%）按块降档，签名不再喧宾夺主 */
+.theme-reco-md-content span[style*="background-color:#EFF0FC"],
+.theme-reco-md-content span[style*="background-color:#F4F4F5"] {
+  background-color: #EFF0FC !important;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin: 0.55rem 0;
+}
+.theme-reco-md-content span[style*="background-color:#EFF0FC"] > span[style*="font-size:150%"] {
+  font-size: 135% !important;
+}
+.theme-reco-md-content span[style*="background-color:#EFF0FC"] > span[style*="font-size:130%"] {
+  font-size: 115% !important;
+}
+.theme-reco-md-content span[style*="background-color:#F4F4F5"] > span[style*="font-size:125%"] {
+  font-size: 112% !important;
+}
+.theme-reco-md-content span[style*="background-color:#F4F4F5"] > span[style*="font-size:120%"] {
+  font-size: 108% !important;
+}
+
+/* 暗色模式：签名块底色改暗紫（浅色内部字才可读） */
+.dark .theme-reco-md-content span[style*="background-color:#EFF0FC"],
+.dark .theme-reco-md-content span[style*="background-color:#F4F4F5"] {
+  background-color: rgba(146, 152, 237, 0.14) !important;
+}
+
+/* 暗色模式下原版黑/灰字在暗底上不可读（inline color 需 !important） */
+.dark .theme-reco-md-content span[style*="background-color:#EFF0FC"] span[style*="color:black"],
+.dark .theme-reco-md-content span[style*="background-color:#F4F4F5"] span[style*="color:black"] {
+  color: #d5d7e8 !important;
+}
+.dark .theme-reco-md-content span[style*="background-color:#EFF0FC"] span[style*="color:gray"],
+.dark .theme-reco-md-content span[style*="background-color:#F4F4F5"] span[style*="color:gray"] {
+  color: #9aa0b8 !important;
+}
+.dark .theme-reco-md-content span[style*="background-color:#EFF0FC"] span[style*="#616AE5"],
+.dark .theme-reco-md-content span[style*="background-color:#F4F4F5"] span[style*="#616AE5"] {
+  color: #a6acf2 !important;
+}
+.dark .theme-reco-md-content span[style*="background-color:#EFF0FC"] span[style*="#48566B"],
+.dark .theme-reco-md-content span[style*="background-color:#F4F4F5"] span[style*="#48566B"] {
+  color: #b8c0e8 !important;
+}
+
+/* ---------- 顶层路径标题（gma.xxx.ClassName） ----------
+   inline "font-size: 120%;font-weight: bold;"（无 color，与 684 处参数组标题的
+   "#9298ED" 变体可精确区分）。类/函数在库中的定位行：等宽字 + 主题紫灰调，
+   1rem 与正文等大保证可读，紫色系呼应"代码身份"语言但不与 pill 抢眼 */
+.theme-reco-md-content p[style*="font-size:120%"][style*="font-weight:bold"]:not([style*="9298ED"]) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #636aa8 !important;
+  letter-spacing: 0.01em;
+  margin: 0.15rem 0 0.55rem;
+}
+.dark .theme-reco-md-content p[style*="font-size:120%"][style*="font-weight:bold"]:not([style*="9298ED"]) {
+  color: #a4aae6 !important;
+}
+
+/* 表格：表头底色 + 斑马纹 + 悬停高亮 */
+.theme-reco-md-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.1rem 0;
+  font-size: 0.92em;
+}
+.theme-reco-md-content th,
+.theme-reco-md-content td {
+  border: 1px solid rgba(126, 130, 160, 0.22);
+  padding: 0.45rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+.theme-reco-md-content th {
+  background: rgba(146, 152, 237, 0.12);
+  font-weight: 600;
+}
+.theme-reco-md-content tbody tr {
+  transition: background-color 0.25s;
+}
+.theme-reco-md-content tbody tr:nth-child(2n) {
+  background: rgba(126, 130, 160, 0.05);
+}
+.theme-reco-md-content tbody tr:hover {
+  background: rgba(146, 152, 237, 0.09);
+}
+
+/* 引用块 */
+.theme-reco-md-content blockquote {
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid #9298ed;
+  border-radius: 0 6px 6px 0;
+  background: rgba(146, 152, 237, 0.07);
+}
+.theme-reco-md-content blockquote p {
+  margin: 0;
+}
+
+/* 分隔线：紫色渐隐 */
+.theme-reco-md-content hr {
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+  background: linear-gradient(90deg, rgba(146, 152, 237, 0.45), rgba(146, 152, 237, 0));
+}
+
+/* ---------- 暗色模式适配（darkMode: class） ---------- */
+.dark .theme-reco-md-content th {
+  background: rgba(146, 152, 237, 0.15);
+}
+.dark .theme-reco-md-content th,
+.dark .theme-reco-md-content td {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.dark .theme-reco-md-content tbody tr:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.04);
+}
+.dark .theme-reco-md-content tbody tr:hover {
+  background: rgba(146, 152, 237, 0.14);
+}
+.dark .theme-reco-md-content blockquote {
+  background: rgba(146, 152, 237, 0.1);
+}
+
+/* ---------- 左右侧目录行距收紧（用户反馈行距过大） ----------
+   左侧栏条目原 py-1 + leading-7（28px 行高 + 8px 上下 padding ≈ 36px/行）；
+   右侧目录 depth_2 条目原 py-4（相邻条目间空 32px）。选择器路径与原版
+   一致，本文件后加载覆盖 */
+/* ---------- 左侧栏行距（原版 36px/行 -> 收紧版 27px/行过挤 -> 回调 32px/行） ---------- */
+.series-container a.series-item {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  line-height: 1.6;
+}
+.series-container .series-group .series-heading {
+  margin-bottom: 1rem;
+}
+.series-container .series-group h5.series-heading + ul {
+  padding-top: 0.9rem;
+}
+.series-container .series-group h6.series-heading {
+  padding-top: 0.65rem;
+}
+.series-container .series-group {
+  padding-bottom: 1.6rem;
+}
+.series-container .series-group:not(:first-of-type) h5.series-heading {
+  margin-top: 1.2rem;
+}
+.page-catalog-container .page-catalog-menu-depth_2 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+.page-catalog-container .page-catalog-menu-depth_3 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* ---------- 标题锚点（header-anchor）修正 ----------
+   主题把 md 正文所有 <a> 染紫并 hover 下划线（theme.css:19-21，带 !important）。
+   标题的 header-anchor 也是 <a>：hover 下划线按 16px 位置绘制会横穿标题文字
+   （用户截图中的横线）——下划线禁用；# 锚点提示按用户要求恢复。
+   原版机制：::before content '#' + @apply invisible（visibility:hidden）+
+   hover 时 visible。此前只切 opacity 而漏掉 visibility -> # 永不渲染（已踩坑）。
+   本规则双通道覆盖（opacity + visibility），margin 随字号缩放、悬停范围
+   扩大到整个标题行；h3 竖条同区域淡出让位（见上方）。
+   正文普通链接行为不变。（特异性 0,3,2 > 原版 hover 规则 0,2,2，且本文件后加载） */
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor {
+  text-decoration: none !important;
+}
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor:hover,
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor:focus {
+  text-decoration: none !important;
+}
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor::before {
+  content: '#' !important;
+  color: #b9bed3;
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0s linear 0.25s;
+}
+/* h3（有底条）：# 收进底条左缘、竖条原位附近（em 相对 ::before 自身 0.8em 字号） */
+.theme-reco-md-content h3 a.header-anchor::before {
+  margin-left: -0.75em;
+  margin-right: 0.35em;
+}
+/* 其余标题（无底条）：# 悬在文字左侧外，约原版 -ml-3 的位置 */
+.theme-reco-md-content :is(h2, h4, h5, h6) a.header-anchor::before {
+  margin-left: -0.8em;
+  margin-right: 0.35em;
+}
+/* 悬停标题 / 键盘聚焦锚点时显现 */
+.theme-reco-md-content :is(h2, h3, h4, h5, h6):hover a.header-anchor::before,
+.theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor:focus::before {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.25s, visibility 0s;
+}
+.dark .theme-reco-md-content :is(h2, h3, h4, h5, h6) a.header-anchor::before {
+  color: #8e93ad;
+}
+
+/* ---------- Navbar 下拉菜单行距（API reference 等） ----------
+   菜单 li 字号 16px（.link 自身 14px），主题全局 line-height:2rem(32px)
+   使 inline-block 的 .link(20px) 基线对齐后剩余 12px 全变条目间隙。
+   三轮定稿 line-height:1.75 -> 行盒 28px、间隙 8px（12px 过松/24.8px 过挤） */
+.dropdown-link .dropdown-link__container,
+.dropdown-link .dropdown-link__container li {
+  line-height: 1.75;
+}
+
+/* ---------- 侧栏二级折叠组(crs > ProjMethods) ----------
+   sidebar 配置改为嵌套对象 + collapsable: true;组件 SeriesItem.js 已放开
+   二级组折叠交互、激活自动展开。此处只管视觉:
+   标题行(14px/600,与一级组区分)、组标题链接、嵌套列表缩进与左参考线 */
+.series-container li > .series-group {
+  padding-bottom: 0.4rem;
+}
+.series-container li > .series-group h6.series-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.15rem;
+  margin-bottom: 0.4rem;
+  padding-top: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #5f6079;
+  cursor: pointer;
+}
+/* 组标题文本即总览页链接时,折叠只由箭头触发,标题行本身不是点击区 */
+.series-container li > .series-group h6.series-heading:has(a.link) {
+  cursor: default;
+}
+.series-container li > .series-group h6.series-heading.active {
+  color: #616ae5;
+}
+.series-container li > .series-group h6.series-heading .series-group-title-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+.series-container li > .series-group h6.series-heading .series-group-title-link:hover {
+  color: #616ae5;
+}
+.series-container li > .series-group h6.series-heading .arrow {
+  cursor: pointer;
+}
+/* 嵌套列表:与一级列表一致的水平缩进 + 左虚线参考线(行距沿用 a.series-item 32px/行) */
+.series-container li > .series-group h6.series-heading + ul {
+  margin-top: 0.1rem;
+}
+.series-container li > .series-group h6.series-heading + ul > li {
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  border-left: 1px dashed rgba(125, 128, 145, 0.35);
+}
+.dark .series-container li > .series-group h6.series-heading {
+  color: #9ca0b8;
+}
+.dark .series-container li > .series-group h6.series-heading.active,
+.dark .series-container li > .series-group h6.series-heading .series-group-title-link:hover {
+  color: #9298ed;
+}
+.dark .series-container li > .series-group h6.series-heading + ul > li {
+  border-left-color: rgba(255, 255, 255, 0.14);
+}
+
+/* ---------- 继承说明卡（Inheritance card） ----------
+   子类页（VirtualVectorGeoDatabase / VirtualRasterDataset /
+   GeographicCoordinateSystem / ProjectedCoordinateSystem）不再重复罗列
+   继承的属性与方法，以卡片形式说明继承关系并指向父类文档 */
+.inherit-card {
+  margin: 1.2rem 0 0.5rem;
+  padding: 0.9rem 1.1rem 1rem;
+  border: 1px solid rgba(146, 152, 237, 0.3);
+  border-left: 3px solid #9298ed;
+  border-radius: 10px;
+  background: rgba(146, 152, 237, 0.06);
+}
+.inherit-card .inherit-card__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #848ad8;
+  margin-bottom: 0.4rem;
+}
+.inherit-card .inherit-card__body {
+  font-size: 0.92em;
+  line-height: 1.65;
+  color: #555b74;
+}
+.inherit-card .inherit-card__body p {
+  margin: 0;
+}
+.inherit-card .inherit-card__btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.55rem;
+  padding: 0.32rem 0.95rem;
+  border-radius: 999px;
+  background: #616ae5;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  transition: background 0.25s, transform 0.25s;
+}
+/* 主题把正文所有 <a> 染紫（text-reco-primary !important），按钮白字需
+   更高特异性才能压住：.theme-reco-md-content 前缀提到 (0,3,0) */
+.theme-reco-md-content .inherit-card .inherit-card__btn,
+.inherit-card .inherit-card__btn {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.inherit-card .inherit-card__btn:hover {
+  background: #4f57cc;
+  transform: translateX(2px);
+}
+.dark .inherit-card {
+  background: rgba(146, 152, 237, 0.1);
+}
+.dark .inherit-card .inherit-card__body {
+  color: #b6bbd6;
+}
+.dark .inherit-card .inherit-card__label {
+  color: #a6acf2;
+}

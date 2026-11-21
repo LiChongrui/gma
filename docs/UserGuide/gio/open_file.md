@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>in_src</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">Name of the file to open.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>flag </b> = <code style="text-indent: 0em;">int||None</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">Flag controlling how the Dataset is opened. None for auto.</p>
 <p style="margin-left: 2em;"><b>allowed_drivers </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default []</span>. </p>
@@ -20,3 +20,21 @@ date: 2026-08-15
 <p style="margin-left: 4em;">A list of filenames that are auxiliary to the main filename.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">GeoDatabase</code>. </p>
+
+## Example
+
+```python
+from gma import gio
+
+gdb = gio.open_file('NewGDB.gpkg')           # the sample GeoPackage
+
+print(type(gdb).__name__, gdb.driver)
+print('layers  :', gdb.layer_names)
+print('features:', [len(gdb.get_layer(i)) for i in range(gdb.layer_count)])
+```
+
+```text
+GeoDatabase GPKG - Vector
+layers  : ['New_Australia', 'Australia']
+features: [18, 9]
+```

@@ -1,0 +1,16 @@
+2026-11-20 07:10:36.703: [INFO] CurrentProfilePath: D:\github\gma\.vuepress\_shots\pfCollapse\Default
+2026-11-20 07:10:36.703: [INFO] Profiles total count: 1
+2026-11-20 07:10:36.703: [INFO] Profile: name=用户配置 1 path=D:\github\gma\.vuepress\_shots\pfCollapse\Default lastActive=null
+2026-11-20 07:10:36.703: [INFO] LastUsedProfileDir: D:\github\gma\.vuepress\_shots\pfCollapse\Default
+2026-11-20 07:10:36.703: [INFO] VisibilityChanged: 0
+2026-11-20 07:10:36.727: [INFO] OnDoneLoading sync enabled: 0
+2026-11-20 07:10:36.727: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-20 07:10:36.727: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-20 07:10:36.727: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-20 07:10:36.730: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-20 07:10:39.145: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-11-20 07:10:39.150: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-20 07:10:39.151: [INFO] Primary account changed.
+2026-11-20 07:10:39.151: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-11-20 07:10:39.156: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-11-20 07:10:39.165: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3

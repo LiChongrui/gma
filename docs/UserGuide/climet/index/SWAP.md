@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>pre</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Precipitation (mm).</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>a </b> = <code style="text-indent: 0em;">float</code>. <span style="color:#48566B;"> Default 0.9</span>. </p>
 <p style="margin-left: 4em;">The parameter of weight decay over time.</p>
 <p style="margin-left: 2em;"><b>N </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 44</span>. </p>

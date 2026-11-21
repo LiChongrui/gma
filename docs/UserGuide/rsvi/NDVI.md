@@ -13,3 +13,17 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Near-infrared band data.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">array</code>. </p>
+
+## Example
+
+```python
+import numpy as np
+from gma import rsvi
+
+# Simulated surface reflectance (0-1) of the red and nir bands
+red = np.random.uniform(0.05, 0.5, (512, 512)).astype('float32')
+nir = np.random.uniform(0.1, 0.6, (512, 512)).astype('float32')
+
+# Calculate the Normalized Difference Vegetation Index
+ndvi = rsvi.NDVI(red, nir)
+```

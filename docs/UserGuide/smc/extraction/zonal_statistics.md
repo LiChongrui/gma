@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">A gma vector layer.</p>
 <p style="margin-left: 2em;"><b>in_ds</b>: <code style="text-indent: 0em;">Dataset</code>. </p>
 <p style="margin-left: 4em;">A gma raster dataset.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>agg_fun </b> = <code style="text-indent: 0em;">def</code>. <span style="color:#48566B;"> Default np.sum</span>. </p>
 <p style="margin-left: 4em;">Calculate functions. For Example:</p>
 

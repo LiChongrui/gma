@@ -1,0 +1,65 @@
+<template><div><p style="font-size: 120%;font-weight: bold;">gma.crs.LinearUnits</p><span style="background-color:#EFF0FC;display: block;line-height:1.6;border-radius: 0.3rem;"><span style="color: gray;font-size:90%;">[const] </span><span style="color: #616AE5; font-weight: bold;font-size: 150%;">LinearUnits</span></span>
+<p>Linear units object. Conversion factors relative to the metre.</p>
+<p>Attribute names are derived from the PROJ database and accessed directly as instance attributes:</p>
+<div class="language-python line-numbers-mode" data-highlighter="prismjs" data-ext="py" data-title="py"><pre v-pre><code><span class="line"><span class="token keyword">from</span> gma <span class="token keyword">import</span> crs</span>
+<span class="line">crs<span class="token punctuation">.</span>LinearUnits<span class="token punctuation">.</span>METRE</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>crs.LinearUnits.METRE --> <code style="text-indent: 0em;">1.0</code></p>
+<h2 id="constants" tabindex="-1"><a class="header-anchor" href="#constants"><span>Constants</span></a></h2>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value (to metre)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>CENTIMETRE</code></td>
+<td>0.01</td>
+</tr>
+<tr>
+<td><code v-pre>CHAIN</code></td>
+<td>20.1168</td>
+</tr>
+<tr>
+<td><code v-pre>DECIMETER</code></td>
+<td>0.01</td>
+</tr>
+<tr>
+<td><code v-pre>FATHOM</code></td>
+<td>1.8288</td>
+</tr>
+<tr>
+<td><code v-pre>FOOT</code></td>
+<td>0.3048</td>
+</tr>
+<tr>
+<td><code v-pre>INCH</code></td>
+<td>0.0254</td>
+</tr>
+<tr>
+<td><code v-pre>KILOMETRE</code></td>
+<td>1000.0</td>
+</tr>
+<tr>
+<td><code v-pre>LINK</code></td>
+<td>0.201168</td>
+</tr>
+<tr>
+<td><code v-pre>METRE</code></td>
+<td>1.0</td>
+</tr>
+<tr>
+<td><code v-pre>MILLIMETRE</code></td>
+<td>0.001</td>
+</tr>
+<tr>
+<td><code v-pre>YARD</code></td>
+<td>0.9144</td>
+</tr>
+</tbody>
+</table>
+</div></template>
+
+

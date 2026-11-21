@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>df</b>: <code style="text-indent: 0em;">DataFrame</code>. </p>
 <p style="margin-left: 4em;">The pandas DataFrame that needs to be read.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>geom_col </b> = <code style="text-indent: 0em;">str||None</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">Geometry field name. If None, there is no geometry.</p>
 <p style="margin-left: 2em;"><b>crs </b> = <code style="text-indent: 0em;">str||int||class</code>. <span style="color:#48566B;"> Default 'WGS84'</span>. </p>
@@ -27,3 +27,22 @@ date: 2026-08-15
 <p style="margin-left: 4em;">(https://gdal.org/en/stable/drivers/vector/vrt.html).</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">Layer</code>. </p>
+
+## Example
+
+```python
+import pandas as pd
+from gma import gio
+
+ly = gio.open_vector('Australia.shp')
+df = ly.to_pandas(keep_geom=True)[['name', 'geometry']]
+
+res = gio.read_dataframe(df, geom_col='geometry', gtype='Polygon')
+print(type(res).__name__, len(res), res.gtype)
+print('first:', res.get_feature(0).fields['name'])
+```
+
+```text
+Layer 11 Polygon
+first: Western Australia
+```

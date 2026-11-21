@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">The input raster file path.</p>
 <p style="margin-left: 2em;"><b>out_dst</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">The output raster file path.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>compute_edges </b> = <code style="text-indent: 0em;">bool</code>. <span style="color:#48566B;"> Default True</span>. </p>
 <p style="margin-left: 4em;">Whether to compute raster edge data and data near no data values.</p>
 <p style="margin-left: 4em;">Setting values that are not True are treated as False.</p>

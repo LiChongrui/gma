@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>in_src</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">Name of the file to open.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>name_or_id </b> = <code style="text-indent: 0em;">int||str</code>. <span style="color:#48566B;"> Default 0</span>. </p>
 <p style="margin-left: 4em;">Layer id or name in the GeoDatabase to get.</p>
 <p style="margin-left: 2em;"><b>allowed_drivers </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default []</span>. </p>
@@ -20,3 +20,21 @@ date: 2026-08-15
 <p style="margin-left: 4em;">A list of filenames that are auxiliary to the main filename.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">Layer</code>. </p>
+
+## Example
+
+```python
+from gma import gio
+
+ly = gio.open_vector('Australia.shp')
+
+print(type(ly).__name__, ly.gtype, len(ly))
+print('bounds:', tuple(round(v, 2) for v in ly.bounds))
+print('name  :', ly.get_feature(0).fields['name'])
+```
+
+```text
+Layer Polygon 11
+bounds: (112.91, -43.62, 153.62, -10.05)
+name  : Western Australia
+```

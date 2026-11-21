@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Vegetation index data.</p>
 <p style="margin-left: 2em;"><b>lst</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Land surface temperature (K).</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>vi_range </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default [0.2, 0.8]</span>. </p>
 <p style="margin-left: 4em;">Valid value range of vegetation index participating in wet and dry edge fitting.</p>
 <p style="margin-left: 2em;"><b>lst_range </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default [200, 350]</span>. </p>

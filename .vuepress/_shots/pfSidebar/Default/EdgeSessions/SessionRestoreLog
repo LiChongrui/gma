@@ -1,0 +1,61 @@
+{"logTime": "1120/064925", "session": "START"}
+{"logTime": "1120/064925", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1120/064925", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:452 EdgeLogLastSessionExitTypeOnStartup", "message": "Previous Session Exit Type: PreviousSessionExitType::kNormalBrowserShutDown"}
+{"logTime": "1120/064925", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1757 DetermineURLsAndLaunch", "message": "Startup Preference: 0"}
+{"logTime": "1120/064925", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1759 DetermineURLsAndLaunch", "message": "Browser Open Behavior: 0"}
+{"logTime": "1120/064927", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "No session files found for SessionType SessionRestore"}
+{"logTime": "1120/065624", "session": "START"}
+{"logTime": "1120/065624", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": true,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:452 EdgeLogLastSessionExitTypeOnStartup", "message": "Previous Session Exit Type: PreviousSessionExitType::kBrowserCrash"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1757 DetermineURLsAndLaunch", "message": "Startup Preference: 0"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1759 DetermineURLsAndLaunch", "message": "Browser Open Behavior: 1"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:3251 RestoreSession", "message": "Session restore started"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:3276 RestoreSession", "message": "Last session exit type : Session ended due to browser crash"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:3303 RestoreSession", "message": "Session restore started with behavior bitmask: 30, last session exit type: Session ended due to browser crash"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:3307 RestoreSession", "message": "Session Restore source: SessionRestoreAttemptSource::kAutoRestore"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kRestoreInitiated - {\r\n   \"restore_browser\": true,\r\n   \"synchronous\": true,\r\n   \"type\": 5\r\n}\r\n"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:837 Restore", "message": "Session service data found"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "Last session file : Session_13439630967860010"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:841 CreateTabsAndWindows", "message": "Commands to decode: 20"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:2247 RestoreSessionFromCommands", "message": "Parse from commands results: Tabs 1, groups 0, windows 1, discarded windows 0"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:598 EdgeLogDecodeResults", "message": "All tabs/windows/tab groups decoded"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:600 EdgeLogDecodeResults", "message": "Decoded windows: 1, discarded windows: 0"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "Last session file : Session_13439630967860010"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:841 CreateTabsAndWindows", "message": "Commands to decode: 20"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:2247 RestoreSessionFromCommands", "message": "Parse from commands results: Tabs 1, groups 0, windows 1, discarded windows 0"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:598 EdgeLogDecodeResults", "message": "All tabs/windows/tab groups decoded"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:600 EdgeLogDecodeResults", "message": "Decoded windows: 1, discarded windows: 0"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:1489 ProcessSessionWindowsIfReady", "message": "All session reads complete (session data read succeeded)"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\edge_session_restore_telemetry_helper.cc:221 RecordProcessingStarted", "message": "Processing session windows: 1"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\edge_session_restore_telemetry_helper.cc:239 RecordPostPruningResult", "message": "After PruneWindows: 1 windows remaining"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:1829 ProcessSessionWindows", "message": "Restoring tabs to existing browser, window SessionId: 1868508546, browser id: 1868508596"}
+{"logTime": "1120/065625", "level": "INFO", "location": "components\\sessions\\core\\edge_session_restore_telemetry_helper.cc:291 RecordWindowTabRestoreStarted", "message": "Restoring tabs to browser, initial tab count: 1"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:2080 ProcessSessionWindows", "message": "Restored tabs to window SessionId: 1868508546, browser id: 1868508596, tab count: 1"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:1301 FinishedTabCreation", "message": "Creating all tabs/browsers completed"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:1609 LogEdgeSessionRestoreTelemetry", "message": "Session restore completed successfully"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:1616 LogEdgeSessionRestoreTelemetry", "message": "1 tabs restored and loaded"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_restore.cc:2188 ProcessSessionWindows", "message": "Session restore restored all windows"}
+{"logTime": "1120/065625", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kRestore - {\r\n   \"errored_reading\": false,\r\n   \"tab_count\": 1,\r\n   \"type\": 1,\r\n   \"window_count\": 1\r\n}\r\n"}
+{"logTime": "1120/070234", "session": "START"}
+{"logTime": "1120/070234", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": true,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1120/070234", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:452 EdgeLogLastSessionExitTypeOnStartup", "message": "Previous Session Exit Type: PreviousSessionExitType::kBrowserCrash"}
+{"logTime": "1120/070234", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1757 DetermineURLsAndLaunch", "message": "Startup Preference: 0"}
+{"logTime": "1120/070234", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1759 DetermineURLsAndLaunch", "message": "Browser Open Behavior: 0"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "Delete session file Session_13439630967860010, for SessionType SessionRestore"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "Last session file : Session_13439631387675299"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:841 CreateTabsAndWindows", "message": "Commands to decode: 26"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:2247 RestoreSessionFromCommands", "message": "Parse from commands results: Tabs 2, groups 0, windows 1, discarded windows 0"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:598 EdgeLogDecodeResults", "message": "All tabs/windows/tab groups decoded"}
+{"logTime": "1120/070234", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:600 EdgeLogDecodeResults", "message": "Decoded windows: 1, discarded windows: 0"}
+{"logTime": "1120/070234", "level": "INFO", "location": "chrome\\browser\\ui\\views\\session_crashed_bubble_view.cc:430 ShowBubble", "message": "Session crashed bubble shown. PWILO checkbox present: false"}
+{"logTime": "1120/070517", "session": "START"}
+{"logTime": "1120/070517", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": true,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1120/070517", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:452 EdgeLogLastSessionExitTypeOnStartup", "message": "Previous Session Exit Type: PreviousSessionExitType::kBrowserCrash"}
+{"logTime": "1120/070517", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1757 DetermineURLsAndLaunch", "message": "Startup Preference: 0"}
+{"logTime": "1120/070517", "level": "INFO", "location": "chrome\\browser\\ui\\startup\\startup_browser_creator_impl.cc:1759 DetermineURLsAndLaunch", "message": "Browser Open Behavior: 0"}
+{"logTime": "1120/070517", "level": "INFO", "location": "components\\sessions\\core\\command_storage_manager.cc:644 operator()", "message": "Last session file : Session_13439631387675299"}
+{"logTime": "1120/070517", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:841 CreateTabsAndWindows", "message": "Commands to decode: 26"}
+{"logTime": "1120/070517", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:2247 RestoreSessionFromCommands", "message": "Parse from commands results: Tabs 2, groups 0, windows 1, discarded windows 0"}
+{"logTime": "1120/070517", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:598 EdgeLogDecodeResults", "message": "All tabs/windows/tab groups decoded"}
+{"logTime": "1120/070517", "level": "INFO", "location": "components\\sessions\\core\\session_service_commands.cc:600 EdgeLogDecodeResults", "message": "Decoded windows: 1, discarded windows: 0"}
+{"logTime": "1120/070517", "level": "INFO", "location": "chrome\\browser\\ui\\views\\session_crashed_bubble_view.cc:430 ShowBubble", "message": "Session crashed bubble shown. PWILO checkbox present: false"}

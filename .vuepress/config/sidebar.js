@@ -171,6 +171,7 @@ module.exports = {
             text: 'evaluation',
             collapsable: false,
             children: [
+                "evaluation/D", 
                 "evaluation/MAE", 
                 "evaluation/NRMSE", 
                 "evaluation/R2", 
@@ -263,51 +264,62 @@ module.exports = {
             text: 'crs',
             collapsable: false,
             children: [
+                "AngleUnits",
                 "CoordinateReferenceSystem", 
                 "Datum", 
+                "Ellips", 
                 "Ellipsoid", 
                 "GeographicCoordinateSystem", 
+                "LinearUnits", 
+                "Primems",
                 "ProjectedCoordinateSystem",
+                "ProjMethods",
+            ]
+        },
+    ],
+
+    '/docs/UserGuide/const/': [
+        {
+            text: 'Start',
+            collapsable: false,
+            children: [
+                ''
+            ]
+        },
+    ],
+
+    '/docs/UserGuide/carto/': [
+        {
+            text: 'Start',
+            collapsable: false,
+            children: [
+                ''
             ]
         },
         {
-            text: 'crs.ProjMethods',
+            text: 'carto',
             collapsable: false,
             children: [
-                "ProjMethods/Aitoff", 
-                "ProjMethods/AlbersConicEqualArea", 
-                "ProjMethods/AzimuthalEquidistant", 
-                "ProjMethods/Bonne", 
-                "ProjMethods/CassiniSoldner", 
-                "ProjMethods/CompactMiller", 
-                "ProjMethods/CylindricalEqualArea", 
-                "ProjMethods/EckertI", 
-                "ProjMethods/EckertII", 
-                "ProjMethods/EckertIII", 
-                "ProjMethods/EckertIV", 
-                "ProjMethods/EckertV", 
-                "ProjMethods/EckertVI", 
-                "ProjMethods/EquidistantConic", 
-                "ProjMethods/Equirectangular", 
-                "ProjMethods/GallStereographic", 
-                "ProjMethods/GoodeHomolosine", 
-                "ProjMethods/LambertAzimuthalEqualArea", 
-                "ProjMethods/LambertConformalConic2SP", 
-                "ProjMethods/Loximuthal", 
-                "ProjMethods/Mercator", 
-                "ProjMethods/Mercator2SP", 
-                "ProjMethods/Mollweide", 
-                "ProjMethods/NaturalEarth", 
-                "ProjMethods/NaturalEarthII", 
-                "ProjMethods/Polyconic", 
-                "ProjMethods/Robinson", 
-                "ProjMethods/Sinusoidal", 
-                "ProjMethods/Times", 
-                "ProjMethods/TransverseMercator", 
-                "ProjMethods/VanDerGrinten", 
-                "ProjMethods/WinkelI", 
-                "ProjMethods/WinkelII", 
-                "ProjMethods/WinkelTripel", 
+                "MapFrame",
+                "inres",
+            ]
+        },
+    ],
+
+    '/docs/UserGuide/sensors/': [
+        {
+            text: 'Start',
+            collapsable: false,
+            children: [
+                ''
+            ]
+        },
+        {
+            text: 'optical',
+            collapsable: false,
+            children: [
+                "optical/GF1_PMS", 
+                "optical/XMLMeta", 
             ]
         },
     ],

@@ -13,7 +13,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">The multispectral image path.</p>
 <p style="margin-left: 2em;"><b>out_dst</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">The output raster file path.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>resample</b>: <code style="text-indent: 0em;">str</code>. <span style="color:#48566B;"> Default 'Cubic'</span>. </p>
 <p style="margin-left: 4em;">Resampling method. Supported resampling methods include:</p>
 <p style="margin-left: 4em;">'Nearest', 'Bilinear', 'Cubic', 'CubicSpline', 'Lanczos', 'Average'.</p>
@@ -23,7 +23,7 @@ date: 2026-08-15
 <p style="margin-left: 2em;"><b>bands </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">List of fused multispectral bands. For example [1,2...], the band count starts at 1.</p>
 <p style="margin-left: 4em;">The default is to fuse all bands of the input multispectral data (None).</p>
-<p style="margin-left: 4em;">***The weight value ('weights') for each band is the same, determined by the number of Bands, which is 1 / len(Bands).</p>
+<p style="margin-left: 4em;">The weight value ('weights') for each band is the same, determined by the number of Bands, which is 1 / len(Bands).</p>
 <p style="margin-left: 2em;"><b>threads </b> = <code style="text-indent: 0em;">int||'ALL_CPUS'||None</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">The number of threads that converge on the computer's CPU. Multithreading is not used by default (None).</p>
 <p style="margin-left: 2em;"><b>bit_depth </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default None</span>. </p>
@@ -32,3 +32,12 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Other parameters passed to translate.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">DataSet</code>. </p>
+
+## Example
+
+```python
+from gma import etools
+
+# Pansharpening: fuse a panchromatic band with multispectral bands
+etools.pansharpen('GF1_PAN.tif', 'GF1_MSS.tif', 'GF1_Fused.tif', resample = 'Cubic')
+```

@@ -1,0 +1,516 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/.vuepress/.temp/pages/docs/UserGuide/crs/ProjMethods.html.vue");const _sfc_main = {  }
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/.vuepress/.cache/deps/vue.js?v=055001c5"
+
+function _sfc_render(_ctx, _cache) {
+  const _component_RouteLink = _resolveComponent("RouteLink")
+
+  return (_openBlock(), _createElementBlock("div", null, [
+    _cache[103] || (_cache[103] = _createStaticVNode("<p style=\"font-size:120%;font-weight:bold;\">gma.crs.ProjMethods</p><span style=\"background-color:#EFF0FC;display:block;line-height:1.6;border-radius:0.3rem;\"><span style=\"color:gray;font-size:90%;\">[const] </span><span style=\"color:#616AE5;font-weight:bold;font-size:150%;\">ProjMethods</span></span><p>The projection methods container. All supported projection methods are mounted as attributes - each attribute is a projection method class, and instantiating it creates a projection method object which holds the parameters and renders the <code style=\"text-indent:0em;\">PROJECTION</code> fragment of WKT (attributes: <b>name</b>, <b>pars</b>).</p><div class=\"language-python line-numbers-mode\" data-highlighter=\"prismjs\" data-ext=\"py\" data-title=\"py\"><pre><code><span class=\"line\"><span class=\"token keyword\">from</span> gma <span class=\"token keyword\">import</span> crs</span>\n<span class=\"line\"></span>\n<span class=\"line\">method <span class=\"token operator\">=</span> crs<span class=\"token punctuation\">.</span>ProjMethods<span class=\"token punctuation\">.</span>Mercator<span class=\"token punctuation\">(</span>central_meridian <span class=\"token operator\">=</span> <span class=\"token number\">110</span><span class=\"token punctuation\">)</span></span>\n<span class=\"line\"></span></code></pre><div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0;\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>crs.ProjMethods.Mercator() --&gt; <code style=\"text-indent:0em;\">&lt;ProjMethod:Mercator&gt;</code></p><h2 id=\"projection-methods\" tabindex=\"-1\"><a class=\"header-anchor\" href=\"#projection-methods\"><span>Projection methods</span></a></h2>", 6)),
+    _createElementVNode("table", null, [
+      _cache[102] || (_cache[102] = _createElementVNode("thead", null, [
+        _createElementVNode("tr", null, [
+          _createElementVNode("th", null, "Method"),
+          _createElementVNode("th", null, "Description"),
+          _createElementVNode("th", null, "Parameters")
+        ])
+      ], -1 /* CACHED */)),
+      _createElementVNode("tbody", null, [
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Aitoff.html" }, {
+              default: _withCtx(() => [...(_cache[0] || (_cache[0] = [
+                _createElementVNode("code", null, "Aitoff", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[1] || (_cache[1] = _createElementVNode("td", null, "Aitoff projection method.", -1 /* CACHED */)),
+          _cache[2] || (_cache[2] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/AlbersConicEqualArea.html" }, {
+              default: _withCtx(() => [...(_cache[3] || (_cache[3] = [
+                _createElementVNode("code", null, "AlbersConicEqualArea", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[4] || (_cache[4] = _createElementVNode("td", null, "Albers Conic Equal Area projection method.", -1 /* CACHED */)),
+          _cache[5] || (_cache[5] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, latitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/AzimuthalEquidistant.html" }, {
+              default: _withCtx(() => [...(_cache[6] || (_cache[6] = [
+                _createElementVNode("code", null, "AzimuthalEquidistant", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[7] || (_cache[7] = _createElementVNode("td", null, "Azimuthal equidistant projection method.", -1 /* CACHED */)),
+          _cache[8] || (_cache[8] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, latitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Bonne.html" }, {
+              default: _withCtx(() => [...(_cache[9] || (_cache[9] = [
+                _createElementVNode("code", null, "Bonne", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[10] || (_cache[10] = _createElementVNode("td", null, "Bonne projection method.", -1 /* CACHED */)),
+          _cache[11] || (_cache[11] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/CassiniSoldner.html" }, {
+              default: _withCtx(() => [...(_cache[12] || (_cache[12] = [
+                _createElementVNode("code", null, "CassiniSoldner", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[13] || (_cache[13] = _createElementVNode("td", null, "Cassini soldner projection method.", -1 /* CACHED */)),
+          _cache[14] || (_cache[14] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_origin, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/CompactMiller.html" }, {
+              default: _withCtx(() => [...(_cache[15] || (_cache[15] = [
+                _createElementVNode("code", null, "CompactMiller", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[16] || (_cache[16] = _createElementVNode("td", null, "Compact Miller projection method.", -1 /* CACHED */)),
+          _cache[17] || (_cache[17] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/CylindricalEqualArea.html" }, {
+              default: _withCtx(() => [...(_cache[18] || (_cache[18] = [
+                _createElementVNode("code", null, "CylindricalEqualArea", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[19] || (_cache[19] = _createElementVNode("td", null, "Cylindrical equal area projection method.", -1 /* CACHED */)),
+          _cache[20] || (_cache[20] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertI.html" }, {
+              default: _withCtx(() => [...(_cache[21] || (_cache[21] = [
+                _createElementVNode("code", null, "EckertI", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[22] || (_cache[22] = _createElementVNode("td", null, "Eckert I projection method.", -1 /* CACHED */)),
+          _cache[23] || (_cache[23] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertII.html" }, {
+              default: _withCtx(() => [...(_cache[24] || (_cache[24] = [
+                _createElementVNode("code", null, "EckertII", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[25] || (_cache[25] = _createElementVNode("td", null, "Eckert II projection method.", -1 /* CACHED */)),
+          _cache[26] || (_cache[26] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertIII.html" }, {
+              default: _withCtx(() => [...(_cache[27] || (_cache[27] = [
+                _createElementVNode("code", null, "EckertIII", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[28] || (_cache[28] = _createElementVNode("td", null, "Eckert III projection method.", -1 /* CACHED */)),
+          _cache[29] || (_cache[29] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertIV.html" }, {
+              default: _withCtx(() => [...(_cache[30] || (_cache[30] = [
+                _createElementVNode("code", null, "EckertIV", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[31] || (_cache[31] = _createElementVNode("td", null, "Eckert IV projection method.", -1 /* CACHED */)),
+          _cache[32] || (_cache[32] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertV.html" }, {
+              default: _withCtx(() => [...(_cache[33] || (_cache[33] = [
+                _createElementVNode("code", null, "EckertV", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[34] || (_cache[34] = _createElementVNode("td", null, "Eckert V projection method.", -1 /* CACHED */)),
+          _cache[35] || (_cache[35] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EckertVI.html" }, {
+              default: _withCtx(() => [...(_cache[36] || (_cache[36] = [
+                _createElementVNode("code", null, "EckertVI", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[37] || (_cache[37] = _createElementVNode("td", null, "Eckert VI projection method.", -1 /* CACHED */)),
+          _cache[38] || (_cache[38] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/EquidistantConic.html" }, {
+              default: _withCtx(() => [...(_cache[39] || (_cache[39] = [
+                _createElementVNode("code", null, "EquidistantConic", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[40] || (_cache[40] = _createElementVNode("td", null, "Equidistant Conic projection method.", -1 /* CACHED */)),
+          _cache[41] || (_cache[41] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, latitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Equirectangular.html" }, {
+              default: _withCtx(() => [...(_cache[42] || (_cache[42] = [
+                _createElementVNode("code", null, "Equirectangular", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[43] || (_cache[43] = _createElementVNode("td", null, "Equirectangular projection method.", -1 /* CACHED */)),
+          _cache[44] || (_cache[44] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/GallStereographic.html" }, {
+              default: _withCtx(() => [...(_cache[45] || (_cache[45] = [
+                _createElementVNode("code", null, "GallStereographic", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[46] || (_cache[46] = _createElementVNode("td", null, "Gall Stereographic projection method.", -1 /* CACHED */)),
+          _cache[47] || (_cache[47] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/GoodeHomolosine.html" }, {
+              default: _withCtx(() => [...(_cache[48] || (_cache[48] = [
+                _createElementVNode("code", null, "GoodeHomolosine", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[49] || (_cache[49] = _createElementVNode("td", null, "Goode Homolosine projection method.", -1 /* CACHED */)),
+          _cache[50] || (_cache[50] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/LambertAzimuthalEqualArea.html" }, {
+              default: _withCtx(() => [...(_cache[51] || (_cache[51] = [
+                _createElementVNode("code", null, "LambertAzimuthalEqualArea", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[52] || (_cache[52] = _createElementVNode("td", null, "Lambert Azimuthal Equal Area projection method.", -1 /* CACHED */)),
+          _cache[53] || (_cache[53] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/LambertConformalConic2SP.html" }, {
+              default: _withCtx(() => [...(_cache[54] || (_cache[54] = [
+                _createElementVNode("code", null, "LambertConformalConic2SP", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[55] || (_cache[55] = _createElementVNode("td", null, "Lambert Conformal Conic 2SP projection method.", -1 /* CACHED */)),
+          _cache[56] || (_cache[56] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_origin, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Loximuthal.html" }, {
+              default: _withCtx(() => [...(_cache[57] || (_cache[57] = [
+                _createElementVNode("code", null, "Loximuthal", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[58] || (_cache[58] = _createElementVNode("td", null, "Loximuthal projection method.", -1 /* CACHED */)),
+          _cache[59] || (_cache[59] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_origin, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Mercator.html" }, {
+              default: _withCtx(() => [...(_cache[60] || (_cache[60] = [
+                _createElementVNode("code", null, "Mercator", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[61] || (_cache[61] = _createElementVNode("td", null, "Mercator 1sp projection method.", -1 /* CACHED */)),
+          _cache[62] || (_cache[62] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing, scale_factor")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Mercator2SP.html" }, {
+              default: _withCtx(() => [...(_cache[63] || (_cache[63] = [
+                _createElementVNode("code", null, "Mercator2SP", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[64] || (_cache[64] = _createElementVNode("td", null, "Mercator 2SP projection method.", -1 /* CACHED */)),
+          _cache[65] || (_cache[65] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Mollweide.html" }, {
+              default: _withCtx(() => [...(_cache[66] || (_cache[66] = [
+                _createElementVNode("code", null, "Mollweide", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[67] || (_cache[67] = _createElementVNode("td", null, "Mollweide projection method.", -1 /* CACHED */)),
+          _cache[68] || (_cache[68] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/NaturalEarth.html" }, {
+              default: _withCtx(() => [...(_cache[69] || (_cache[69] = [
+                _createElementVNode("code", null, "NaturalEarth", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[70] || (_cache[70] = _createElementVNode("td", null, "Natural earth projection method.", -1 /* CACHED */)),
+          _cache[71] || (_cache[71] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/NaturalEarthII.html" }, {
+              default: _withCtx(() => [...(_cache[72] || (_cache[72] = [
+                _createElementVNode("code", null, "NaturalEarthII", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[73] || (_cache[73] = _createElementVNode("td", null, "Natural earth II projection method.", -1 /* CACHED */)),
+          _cache[74] || (_cache[74] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Polyconic.html" }, {
+              default: _withCtx(() => [...(_cache[75] || (_cache[75] = [
+                _createElementVNode("code", null, "Polyconic", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[76] || (_cache[76] = _createElementVNode("td", null, "Polyconic projection method.", -1 /* CACHED */)),
+          _cache[77] || (_cache[77] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_origin, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Robinson.html" }, {
+              default: _withCtx(() => [...(_cache[78] || (_cache[78] = [
+                _createElementVNode("code", null, "Robinson", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[79] || (_cache[79] = _createElementVNode("td", null, "Robinson projection method.", -1 /* CACHED */)),
+          _cache[80] || (_cache[80] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Sinusoidal.html" }, {
+              default: _withCtx(() => [...(_cache[81] || (_cache[81] = [
+                _createElementVNode("code", null, "Sinusoidal", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[82] || (_cache[82] = _createElementVNode("td", null, "Sinusoidal projection method.", -1 /* CACHED */)),
+          _cache[83] || (_cache[83] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "longitude_of_center, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/Times.html" }, {
+              default: _withCtx(() => [...(_cache[84] || (_cache[84] = [
+                _createElementVNode("code", null, "Times", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[85] || (_cache[85] = _createElementVNode("td", null, "Times projection method.", -1 /* CACHED */)),
+          _cache[86] || (_cache[86] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/TransverseMercator.html" }, {
+              default: _withCtx(() => [...(_cache[87] || (_cache[87] = [
+                _createElementVNode("code", null, "TransverseMercator", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[88] || (_cache[88] = _createElementVNode("td", null, "Transverse Mercator projection method.", -1 /* CACHED */)),
+          _cache[89] || (_cache[89] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, latitude_of_origin, false_easting, false_northing, scale_factor")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/VanDerGrinten.html" }, {
+              default: _withCtx(() => [...(_cache[90] || (_cache[90] = [
+                _createElementVNode("code", null, "VanDerGrinten", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[91] || (_cache[91] = _createElementVNode("td", null, "Van der Grinten projection method.", -1 /* CACHED */)),
+          _cache[92] || (_cache[92] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/WinkelI.html" }, {
+              default: _withCtx(() => [...(_cache[93] || (_cache[93] = [
+                _createElementVNode("code", null, "WinkelI", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[94] || (_cache[94] = _createElementVNode("td", null, "Winkel I projection method.", -1 /* CACHED */)),
+          _cache[95] || (_cache[95] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/WinkelII.html" }, {
+              default: _withCtx(() => [...(_cache[96] || (_cache[96] = [
+                _createElementVNode("code", null, "WinkelII", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[97] || (_cache[97] = _createElementVNode("td", null, "Winkel II projection method.", -1 /* CACHED */)),
+          _cache[98] || (_cache[98] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ]),
+        _createElementVNode("tr", null, [
+          _createElementVNode("td", null, [
+            _createVNode(_component_RouteLink, { to: "/docs/UserGuide/crs/ProjMethods/WinkelTripel.html" }, {
+              default: _withCtx(() => [...(_cache[99] || (_cache[99] = [
+                _createElementVNode("code", null, "WinkelTripel", -1 /* CACHED */)
+              ]))]),
+              _: 1 /* STABLE */
+            })
+          ]),
+          _cache[100] || (_cache[100] = _createElementVNode("td", null, "Winkel Tripel projection method.", -1 /* CACHED */)),
+          _cache[101] || (_cache[101] = _createElementVNode("td", null, [
+            _createElementVNode("code", { style: {"text-indent":"0em"} }, "central_meridian, false_easting, false_northing")
+          ], -1 /* CACHED */))
+        ])
+      ])
+    ])
+  ]))
+}
+
+
+_sfc_main.__hmrId = "2a819f7d"
+typeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)
+import.meta.hot.on('file-changed', ({ file }) => {
+  __VUE_HMR_RUNTIME__.CHANGED_FILE = file
+})
+import.meta.hot.accept(mod => {
+  if (!mod) return
+  const { default: updated, _rerender_only } = mod
+  if (_rerender_only) {
+    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)
+  } else {
+    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)
+  }
+})
+import _export_sfc from "/@id/__x00__plugin-vue:export-helper"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',"D:/github/gma/.vuepress/.temp/pages/docs/UserGuide/crs/ProjMethods.html.vue"]])
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRDovZ2l0aHViL2dtYS8udnVlcHJlc3MvLnRlbXAvcGFnZXMvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzLmh0bWwudnVlIiwibmFtZXMiOltdLCJzb3VyY2VzIjpbIlByb2pNZXRob2RzLmh0bWwudnVlIl0sInNvdXJjZXNDb250ZW50IjpbIjx0ZW1wbGF0ZT48ZGl2PjxwIHN0eWxlPVwiZm9udC1zaXplOiAxMjAlO2ZvbnQtd2VpZ2h0OiBib2xkO1wiPmdtYS5jcnMuUHJvak1ldGhvZHM8L3A+PHNwYW4gc3R5bGU9XCJiYWNrZ3JvdW5kLWNvbG9yOiNFRkYwRkM7ZGlzcGxheTogYmxvY2s7bGluZS1oZWlnaHQ6MS42O2JvcmRlci1yYWRpdXM6IDAuM3JlbTtcIj48c3BhbiBzdHlsZT1cImNvbG9yOiBncmF5O2ZvbnQtc2l6ZTo5MCU7XCI+W2NvbnN0XSA8L3NwYW4+PHNwYW4gc3R5bGU9XCJjb2xvcjogIzYxNkFFNTsgZm9udC13ZWlnaHQ6IGJvbGQ7Zm9udC1zaXplOiAxNTAlO1wiPlByb2pNZXRob2RzPC9zcGFuPjwvc3Bhbj5cbjxwPlRoZSBwcm9qZWN0aW9uIG1ldGhvZHMgY29udGFpbmVyLiBBbGwgc3VwcG9ydGVkIHByb2plY3Rpb24gbWV0aG9kcyBhcmUgbW91bnRlZCBhcyBhdHRyaWJ1dGVzIC0gZWFjaCBhdHRyaWJ1dGUgaXMgYSBwcm9qZWN0aW9uIG1ldGhvZCBjbGFzcywgYW5kIGluc3RhbnRpYXRpbmcgaXQgY3JlYXRlcyBhIHByb2plY3Rpb24gbWV0aG9kIG9iamVjdCB3aGljaCBob2xkcyB0aGUgcGFyYW1ldGVycyBhbmQgcmVuZGVycyB0aGUgPGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPlBST0pFQ1RJT048L2NvZGU+IGZyYWdtZW50IG9mIFdLVCAoYXR0cmlidXRlczogPGI+bmFtZTwvYj4sIDxiPnBhcnM8L2I+KS48L3A+XG48ZGl2IGNsYXNzPVwibGFuZ3VhZ2UtcHl0aG9uIGxpbmUtbnVtYmVycy1tb2RlXCIgZGF0YS1oaWdobGlnaHRlcj1cInByaXNtanNcIiBkYXRhLWV4dD1cInB5XCIgZGF0YS10aXRsZT1cInB5XCI+PHByZSB2LXByZT48Y29kZT48c3BhbiBjbGFzcz1cImxpbmVcIj48c3BhbiBjbGFzcz1cInRva2VuIGtleXdvcmRcIj5mcm9tPC9zcGFuPiBnbWEgPHNwYW4gY2xhc3M9XCJ0b2tlbiBrZXl3b3JkXCI+aW1wb3J0PC9zcGFuPiBjcnM8L3NwYW4+XG48c3BhbiBjbGFzcz1cImxpbmVcIj48L3NwYW4+XG48c3BhbiBjbGFzcz1cImxpbmVcIj5tZXRob2QgPHNwYW4gY2xhc3M9XCJ0b2tlbiBvcGVyYXRvclwiPj08L3NwYW4+IGNyczxzcGFuIGNsYXNzPVwidG9rZW4gcHVuY3R1YXRpb25cIj4uPC9zcGFuPlByb2pNZXRob2RzPHNwYW4gY2xhc3M9XCJ0b2tlbiBwdW5jdHVhdGlvblwiPi48L3NwYW4+TWVyY2F0b3I8c3BhbiBjbGFzcz1cInRva2VuIHB1bmN0dWF0aW9uXCI+KDwvc3Bhbj5jZW50cmFsX21lcmlkaWFuIDxzcGFuIGNsYXNzPVwidG9rZW4gb3BlcmF0b3JcIj49PC9zcGFuPiA8c3BhbiBjbGFzcz1cInRva2VuIG51bWJlclwiPjExMDwvc3Bhbj48c3BhbiBjbGFzcz1cInRva2VuIHB1bmN0dWF0aW9uXCI+KTwvc3Bhbj48L3NwYW4+XG48c3BhbiBjbGFzcz1cImxpbmVcIj48L3NwYW4+PC9jb2RlPjwvcHJlPlxuPGRpdiBjbGFzcz1cImxpbmUtbnVtYmVyc1wiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIHN0eWxlPVwiY291bnRlci1yZXNldDpsaW5lLW51bWJlciAwXCI+PGRpdiBjbGFzcz1cImxpbmUtbnVtYmVyXCI+PC9kaXY+PGRpdiBjbGFzcz1cImxpbmUtbnVtYmVyXCI+PC9kaXY+PGRpdiBjbGFzcz1cImxpbmUtbnVtYmVyXCI+PC9kaXY+PC9kaXY+PC9kaXY+PHA+Y3JzLlByb2pNZXRob2RzLk1lcmNhdG9yKCkgLS0+IDxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj4mbHQ7UHJvak1ldGhvZDpNZXJjYXRvciZndDs8L2NvZGU+PC9wPlxuPGgyIGlkPVwicHJvamVjdGlvbi1tZXRob2RzXCIgdGFiaW5kZXg9XCItMVwiPjxhIGNsYXNzPVwiaGVhZGVyLWFuY2hvclwiIGhyZWY9XCIjcHJvamVjdGlvbi1tZXRob2RzXCI+PHNwYW4+UHJvamVjdGlvbiBtZXRob2RzPC9zcGFuPjwvYT48L2gyPlxuPHRhYmxlPlxuPHRoZWFkPlxuPHRyPlxuPHRoPk1ldGhvZDwvdGg+XG48dGg+RGVzY3JpcHRpb248L3RoPlxuPHRoPlBhcmFtZXRlcnM8L3RoPlxuPC90cj5cbjwvdGhlYWQ+XG48dGJvZHk+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvQWl0b2ZmLmh0bWxcIj48Y29kZSB2LXByZT5BaXRvZmY8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5BaXRvZmYgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvQWxiZXJzQ29uaWNFcXVhbEFyZWEuaHRtbFwiPjxjb2RlIHYtcHJlPkFsYmVyc0NvbmljRXF1YWxBcmVhPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+QWxiZXJzIENvbmljIEVxdWFsIEFyZWEgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+bG9uZ2l0dWRlX29mX2NlbnRlciwgbGF0aXR1ZGVfb2ZfY2VudGVyLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9BemltdXRoYWxFcXVpZGlzdGFudC5odG1sXCI+PGNvZGUgdi1wcmU+QXppbXV0aGFsRXF1aWRpc3RhbnQ8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5BemltdXRoYWwgZXF1aWRpc3RhbnQgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+bG9uZ2l0dWRlX29mX2NlbnRlciwgbGF0aXR1ZGVfb2ZfY2VudGVyLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9Cb25uZS5odG1sXCI+PGNvZGUgdi1wcmU+Qm9ubmU8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5Cb25uZSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9DYXNzaW5pU29sZG5lci5odG1sXCI+PGNvZGUgdi1wcmU+Q2Fzc2luaVNvbGRuZXI8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5DYXNzaW5pIHNvbGRuZXIgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgbGF0aXR1ZGVfb2Zfb3JpZ2luLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9Db21wYWN0TWlsbGVyLmh0bWxcIj48Y29kZSB2LXByZT5Db21wYWN0TWlsbGVyPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+Q29tcGFjdCBNaWxsZXIgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvQ3lsaW5kcmljYWxFcXVhbEFyZWEuaHRtbFwiPjxjb2RlIHYtcHJlPkN5bGluZHJpY2FsRXF1YWxBcmVhPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+Q3lsaW5kcmljYWwgZXF1YWwgYXJlYSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9FY2tlcnRJLmh0bWxcIj48Y29kZSB2LXByZT5FY2tlcnRJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+RWNrZXJ0IEkgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvRWNrZXJ0SUkuaHRtbFwiPjxjb2RlIHYtcHJlPkVja2VydElJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+RWNrZXJ0IElJIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL0Vja2VydElJSS5odG1sXCI+PGNvZGUgdi1wcmU+RWNrZXJ0SUlJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+RWNrZXJ0IElJSSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9FY2tlcnRJVi5odG1sXCI+PGNvZGUgdi1wcmU+RWNrZXJ0SVY8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5FY2tlcnQgSVYgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvRWNrZXJ0Vi5odG1sXCI+PGNvZGUgdi1wcmU+RWNrZXJ0VjwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPkVja2VydCBWIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL0Vja2VydFZJLmh0bWxcIj48Y29kZSB2LXByZT5FY2tlcnRWSTwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPkVja2VydCBWSSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9FcXVpZGlzdGFudENvbmljLmh0bWxcIj48Y29kZSB2LXByZT5FcXVpZGlzdGFudENvbmljPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+RXF1aWRpc3RhbnQgQ29uaWMgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+bG9uZ2l0dWRlX29mX2NlbnRlciwgbGF0aXR1ZGVfb2ZfY2VudGVyLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9FcXVpcmVjdGFuZ3VsYXIuaHRtbFwiPjxjb2RlIHYtcHJlPkVxdWlyZWN0YW5ndWxhcjwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPkVxdWlyZWN0YW5ndWxhciBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9HYWxsU3RlcmVvZ3JhcGhpYy5odG1sXCI+PGNvZGUgdi1wcmU+R2FsbFN0ZXJlb2dyYXBoaWM8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5HYWxsIFN0ZXJlb2dyYXBoaWMgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvR29vZGVIb21vbG9zaW5lLmh0bWxcIj48Y29kZSB2LXByZT5Hb29kZUhvbW9sb3NpbmU8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5Hb29kZSBIb21vbG9zaW5lIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL0xhbWJlcnRBemltdXRoYWxFcXVhbEFyZWEuaHRtbFwiPjxjb2RlIHYtcHJlPkxhbWJlcnRBemltdXRoYWxFcXVhbEFyZWE8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5MYW1iZXJ0IEF6aW11dGhhbCBFcXVhbCBBcmVhIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGxhdGl0dWRlX29mX2NlbnRlciwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvTGFtYmVydENvbmZvcm1hbENvbmljMlNQLmh0bWxcIj48Y29kZSB2LXByZT5MYW1iZXJ0Q29uZm9ybWFsQ29uaWMyU1A8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5MYW1iZXJ0IENvbmZvcm1hbCBDb25pYyAyU1AgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgbGF0aXR1ZGVfb2Zfb3JpZ2luLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9Mb3hpbXV0aGFsLmh0bWxcIj48Y29kZSB2LXByZT5Mb3hpbXV0aGFsPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+TG94aW11dGhhbCBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBsYXRpdHVkZV9vZl9vcmlnaW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL01lcmNhdG9yLmh0bWxcIj48Y29kZSB2LXByZT5NZXJjYXRvcjwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPk1lcmNhdG9yIDFzcCBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZywgc2NhbGVfZmFjdG9yPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL01lcmNhdG9yMlNQLmh0bWxcIj48Y29kZSB2LXByZT5NZXJjYXRvcjJTUDwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPk1lcmNhdG9yIDJTUCBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9Nb2xsd2VpZGUuaHRtbFwiPjxjb2RlIHYtcHJlPk1vbGx3ZWlkZTwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPk1vbGx3ZWlkZSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5sb25naXR1ZGVfb2ZfY2VudGVyLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9OYXR1cmFsRWFydGguaHRtbFwiPjxjb2RlIHYtcHJlPk5hdHVyYWxFYXJ0aDwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPk5hdHVyYWwgZWFydGggcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvTmF0dXJhbEVhcnRoSUkuaHRtbFwiPjxjb2RlIHYtcHJlPk5hdHVyYWxFYXJ0aElJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+TmF0dXJhbCBlYXJ0aCBJSSBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9Qb2x5Y29uaWMuaHRtbFwiPjxjb2RlIHYtcHJlPlBvbHljb25pYzwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPlBvbHljb25pYyBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBsYXRpdHVkZV9vZl9vcmlnaW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL1JvYmluc29uLmh0bWxcIj48Y29kZSB2LXByZT5Sb2JpbnNvbjwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPlJvYmluc29uIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmxvbmdpdHVkZV9vZl9jZW50ZXIsIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL1NpbnVzb2lkYWwuaHRtbFwiPjxjb2RlIHYtcHJlPlNpbnVzb2lkYWw8L2NvZGU+PC9Sb3V0ZUxpbms+PC90ZD5cbjx0ZD5TaW51c29pZGFsIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmxvbmdpdHVkZV9vZl9jZW50ZXIsIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL1RpbWVzLmh0bWxcIj48Y29kZSB2LXByZT5UaW1lczwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPlRpbWVzIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL1RyYW5zdmVyc2VNZXJjYXRvci5odG1sXCI+PGNvZGUgdi1wcmU+VHJhbnN2ZXJzZU1lcmNhdG9yPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+VHJhbnN2ZXJzZSBNZXJjYXRvciBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBsYXRpdHVkZV9vZl9vcmlnaW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nLCBzY2FsZV9mYWN0b3I8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvVmFuRGVyR3JpbnRlbi5odG1sXCI+PGNvZGUgdi1wcmU+VmFuRGVyR3JpbnRlbjwvY29kZT48L1JvdXRlTGluaz48L3RkPlxuPHRkPlZhbiBkZXIgR3JpbnRlbiBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjx0cj5cbjx0ZD48Um91dGVMaW5rIHRvPVwiL2RvY3MvVXNlckd1aWRlL2Nycy9Qcm9qTWV0aG9kcy9XaW5rZWxJLmh0bWxcIj48Y29kZSB2LXByZT5XaW5rZWxJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+V2lua2VsIEkgcHJvamVjdGlvbiBtZXRob2QuPC90ZD5cbjx0ZD48Y29kZSBzdHlsZT1cInRleHQtaW5kZW50OiAwZW07XCI+Y2VudHJhbF9tZXJpZGlhbiwgZmFsc2VfZWFzdGluZywgZmFsc2Vfbm9ydGhpbmc8L2NvZGU+PC90ZD5cbjwvdHI+XG48dHI+XG48dGQ+PFJvdXRlTGluayB0bz1cIi9kb2NzL1VzZXJHdWlkZS9jcnMvUHJvak1ldGhvZHMvV2lua2VsSUkuaHRtbFwiPjxjb2RlIHYtcHJlPldpbmtlbElJPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+V2lua2VsIElJIHByb2plY3Rpb24gbWV0aG9kLjwvdGQ+XG48dGQ+PGNvZGUgc3R5bGU9XCJ0ZXh0LWluZGVudDogMGVtO1wiPmNlbnRyYWxfbWVyaWRpYW4sIGZhbHNlX2Vhc3RpbmcsIGZhbHNlX25vcnRoaW5nPC9jb2RlPjwvdGQ+XG48L3RyPlxuPHRyPlxuPHRkPjxSb3V0ZUxpbmsgdG89XCIvZG9jcy9Vc2VyR3VpZGUvY3JzL1Byb2pNZXRob2RzL1dpbmtlbFRyaXBlbC5odG1sXCI+PGNvZGUgdi1wcmU+V2lua2VsVHJpcGVsPC9jb2RlPjwvUm91dGVMaW5rPjwvdGQ+XG48dGQ+V2lua2VsIFRyaXBlbCBwcm9qZWN0aW9uIG1ldGhvZC48L3RkPlxuPHRkPjxjb2RlIHN0eWxlPVwidGV4dC1pbmRlbnQ6IDBlbTtcIj5jZW50cmFsX21lcmlkaWFuLCBmYWxzZV9lYXN0aW5nLCBmYWxzZV9ub3J0aGluZzwvY29kZT48L3RkPlxuPC90cj5cbjwvdGJvZHk+XG48L3RhYmxlPlxuPC9kaXY+PC90ZW1wbGF0ZT5cblxuXG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozt3QkFBVSxvQkE2TEo7O0lBckxOLG9CQW9MUTtvQ0FuTFIsb0JBTVE7UUFMUixvQkFJSztVQUhMLG9CQUFlLFlBQVgsUUFBTTtVQUNWLG9CQUFvQixZQUFoQixhQUFXO1VBQ2Ysb0JBQW1CLFlBQWYsWUFBVTs7O01BR2Qsb0JBMktRO1FBMUtSLG9CQUlLO1VBSEwsb0JBQTBHO1lBQXRHLGFBQWlHLHdCQUF0RixFQUFFLEVBQUMsNkNBQTZDO2dDQUFDLENBQXlCO2dCQUF6QixvQkFBeUIsY0FBYixRQUFNOzs7OztvQ0FDbEYsb0JBQWtDLFlBQTlCLDJCQUF5QjtvQ0FDN0Isb0JBQStGO1lBQTNGLG9CQUFzRixVQUFoRixLQUF5QixFQUF6QixxQkFBeUIsSUFBQyxpREFBK0M7OztRQUVuRixvQkFJSztVQUhMLG9CQUFzSTtZQUFsSSxhQUE2SCx3QkFBbEgsRUFBRSxFQUFDLDJEQUEyRDtnQ0FBQyxDQUF1QztnQkFBdkMsb0JBQXVDLGNBQTNCLHNCQUFvQjs7Ozs7b0NBQzlHLG9CQUFtRCxZQUEvQyw0Q0FBMEM7b0NBQzlDLG9CQUFzSDtZQUFsSCxvQkFBNkcsVUFBdkcsS0FBeUIsRUFBekIscUJBQXlCLElBQUMsd0VBQXNFOzs7UUFFMUcsb0JBSUs7VUFITCxvQkFBc0k7WUFBbEksYUFBNkgsd0JBQWxILEVBQUUsRUFBQywyREFBMkQ7Z0NBQUMsQ0FBdUM7Z0JBQXZDLG9CQUF1QyxjQUEzQixzQkFBb0I7Ozs7O29DQUM5RyxvQkFBaUQsWUFBN0MsMENBQXdDO29DQUM1QyxvQkFBc0g7WUFBbEgsb0JBQTZHLFVBQXZHLEtBQXlCLEVBQXpCLHFCQUF5QixJQUFDLHdFQUFzRTs7O1FBRTFHLG9CQUlLO1VBSEwsb0JBQXdHO1lBQXBHLGFBQStGLHdCQUFwRixFQUFFLEVBQUMsNENBQTRDO2dDQUFD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

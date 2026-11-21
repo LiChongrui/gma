@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Measured data.</p>
 <p style="margin-left: 2em;"><b>pred</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Simulation data.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>axis </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 0</span>. </p>
 <p style="margin-left: 4em;">The axis to use for calculations.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>

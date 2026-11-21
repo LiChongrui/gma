@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Measured data.</p>
 <p style="margin-left: 2em;"><b>pred</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Simulation data.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>method </b> = <code style="text-indent: 0em;">str</code>. <span style="color:#48566B;"> Default 'pearson'</span>. </p>
 <p style="margin-left: 4em;">Supported methods include: 'pearson', 'kendall', 'spearman'.</p>
 <p style="margin-left: 2em;"><b>axis </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 0</span>. </p>

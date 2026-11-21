@@ -1,0 +1,285 @@
+{
+ "Aitoff": {
+  "desc": "Aitoff projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "AlbersConicEqualArea": {
+  "desc": "Albers Conic Equal Area projection method.",
+  "params": [
+   "longitude_of_center",
+   "latitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "AzimuthalEquidistant": {
+  "desc": "Azimuthal equidistant projection method.",
+  "params": [
+   "longitude_of_center",
+   "latitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Bonne": {
+  "desc": "Bonne projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "CassiniSoldner": {
+  "desc": "Cassini soldner projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_origin",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "CompactMiller": {
+  "desc": "Compact Miller projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "CylindricalEqualArea": {
+  "desc": "Cylindrical equal area projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertI": {
+  "desc": "Eckert I projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertII": {
+  "desc": "Eckert II projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertIII": {
+  "desc": "Eckert III projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertIV": {
+  "desc": "Eckert IV projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertV": {
+  "desc": "Eckert V projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EckertVI": {
+  "desc": "Eckert VI projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "EquidistantConic": {
+  "desc": "Equidistant Conic projection method.",
+  "params": [
+   "longitude_of_center",
+   "latitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Equirectangular": {
+  "desc": "Equirectangular projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "GallStereographic": {
+  "desc": "Gall Stereographic projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "GoodeHomolosine": {
+  "desc": "Goode Homolosine projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "LambertAzimuthalEqualArea": {
+  "desc": "Lambert Azimuthal Equal Area projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "LambertConformalConic2SP": {
+  "desc": "Lambert Conformal Conic 2SP projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_origin",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Loximuthal": {
+  "desc": "Loximuthal projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_origin",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Mercator": {
+  "desc": "Mercator 1sp projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing",
+   "scale_factor"
+  ]
+ },
+ "Mercator2SP": {
+  "desc": "Mercator 2SP projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Mollweide": {
+  "desc": "Mollweide projection method.",
+  "params": [
+   "longitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "NaturalEarth": {
+  "desc": "Natural earth projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "NaturalEarthII": {
+  "desc": "Natural earth II projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Polyconic": {
+  "desc": "Polyconic projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_origin",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Robinson": {
+  "desc": "Robinson projection method.",
+  "params": [
+   "longitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Sinusoidal": {
+  "desc": "Sinusoidal projection method.",
+  "params": [
+   "longitude_of_center",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "Times": {
+  "desc": "Times projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "TransverseMercator": {
+  "desc": "Transverse Mercator projection method.",
+  "params": [
+   "central_meridian",
+   "latitude_of_origin",
+   "false_easting",
+   "false_northing",
+   "scale_factor"
+  ]
+ },
+ "VanDerGrinten": {
+  "desc": "Van der Grinten projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "WinkelI": {
+  "desc": "Winkel I projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "WinkelII": {
+  "desc": "Winkel II projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ },
+ "WinkelTripel": {
+  "desc": "Winkel Tripel projection method.",
+  "params": [
+   "central_meridian",
+   "false_easting",
+   "false_northing"
+  ]
+ }
+}

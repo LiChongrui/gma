@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>data</b>: <code style="text-indent: 0em;">list||tuple||Series||DataFrame||array</code>. </p>
 <p style="margin-left: 4em;">Data to be filled.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>nodatas </b> = <code style="text-indent: 0em;">float||list</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">Flags missing values that need to be filled. Can be a number (float) or a list of numbers (list).</p>
 <p style="margin-left: 4em;">Note: 1. When nodatas is a list, all values in the list will be interpolated.</p>

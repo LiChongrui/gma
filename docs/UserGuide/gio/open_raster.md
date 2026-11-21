@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>in_src</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">Name of the file to open.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>name_or_id </b> = <code style="text-indent: 0em;">int||str</code>. <span style="color:#48566B;"> Default 0</span>. </p>
 <p style="margin-left: 4em;">Dataset id or name in the GeoDatabase to get.</p>
 <p style="margin-left: 2em;"><b>allowed_drivers </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default []</span>. </p>
@@ -20,3 +20,21 @@ date: 2026-08-15
 <p style="margin-left: 4em;">A list of filenames that are auxiliary to the main filename.</p>
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Returns:</p>
 <p style="margin-left: 2em;"><b>Type</b>: <code style="text-indent: 0em;">Dataset</code>. </p>
+
+## Example
+
+```python
+from gma import gio
+
+ds = gio.open_raster('HYP_50M_SR_W.tif')     # Natural Earth shaded relief
+
+print(type(ds).__name__, ds.shape, ds.dtype)
+print('bounds:', tuple(round(v, 2) for v in ds.bounds))
+print('crs   :', ds.crs)
+```
+
+```text
+Dataset (3, 5400, 10800) Byte
+bounds: (-180.0, -90.0, 180.0, 90.0)
+crs   : <CoordinateReferenceSystem:WGS 84>
+```

@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>tem</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Monthly mean temperature (¡æ).</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>lat </b> = <code style="text-indent: 0em;">float||array</code>. <span style="color:#48566B;"> Default 34.6¡ã N</span>. </p>
 <p style="margin-left: 4em;">Data latitude value (¡ã).</p>
 <p style="margin-left: 4em;">*Note: If lat is an array, it should have the same shape as the input data on the non-computed axis!</p>

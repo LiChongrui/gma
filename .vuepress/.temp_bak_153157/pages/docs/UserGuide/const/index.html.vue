@@ -1,0 +1,688 @@
+<template><div><p>All constants in this module are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>item</th>
+<th>type</th>
+<th>introduce</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>FiDT_Binary</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>FiDT_RealList</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>FiDT_Date</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>FiDT_DateTime</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>FiDT_Real</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>FiDT_Integer</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>FiDT_Integer64</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>FiDT_Integer64List</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>FiDT_IntegerList</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>FiDT_String</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>FiDT_StringList</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>FiDT_Time</td>
+<td>const</td>
+<td>Field data type.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GeDT_CircularString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>GeDT_3DCircularString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GeDT_CompoundCurve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>GeDT_3DCompoundCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GeDT_Curve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>GeDT_3DCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GeDT_CurvePolygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GeDT_3DCurvePolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GeDT_GeometryCollection</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>GeDT_3DGeometryCollection</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>23</td>
+<td>GeDT_LineString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>GeDT_3DLineString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>25</td>
+<td>GeDT_MeasuredCircularString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>GeDT_3DMeasuredCircularString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>27</td>
+<td>GeDT_MeasuredCompoundCurve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>GeDT_3DMeasuredCompoundCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>29</td>
+<td>GeDT_MeasuredCurve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>30</td>
+<td>GeDT_3DMeasuredCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>31</td>
+<td>GeDT_MeasuredCurvePolygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>32</td>
+<td>GeDT_3DMeasuredCurvePolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>33</td>
+<td>GeDT_MeasuredGeometryCollection</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>34</td>
+<td>GeDT_3DMeasuredGeometryCollection</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>35</td>
+<td>GeDT_MeasuredLineString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>36</td>
+<td>GeDT_3DMeasuredLineString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>37</td>
+<td>GeDT_MeasuredMultiCurve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>38</td>
+<td>GeDT_3DMeasuredMultiCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>39</td>
+<td>GeDT_MeasuredMultiLineString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>40</td>
+<td>GeDT_3DMeasuredMultiLineString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>41</td>
+<td>GeDT_MeasuredMultiPoint</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>42</td>
+<td>GeDT_3DMeasuredMultiPoint</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>43</td>
+<td>GeDT_MeasuredMultiPolygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>44</td>
+<td>GeDT_3DMeasuredMultiPolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>45</td>
+<td>GeDT_MeasuredMultiSurface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>46</td>
+<td>GeDT_3DMeasuredMultiSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>47</td>
+<td>GeDT_MeasuredPoint</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>48</td>
+<td>GeDT_3DMeasuredPoint</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>49</td>
+<td>GeDT_MeasuredPolygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>50</td>
+<td>GeDT_3DMeasuredPolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>51</td>
+<td>GeDT_MeasuredPolyhedralSurface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>52</td>
+<td>GeDT_3DMeasuredPolyhedralSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>53</td>
+<td>GeDT_MeasuredSurface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>54</td>
+<td>GeDT_3DMeasuredSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>55</td>
+<td>GeDT_MeasuredTIN</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>56</td>
+<td>GeDT_3DMeasuredTIN</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>57</td>
+<td>GeDT_MeasuredTriangle</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>58</td>
+<td>GeDT_3DMeasuredTriangle</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>59</td>
+<td>GeDT_MultiCurve</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>60</td>
+<td>GeDT_3DMultiCurve</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>61</td>
+<td>GeDT_MultiLineString</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>62</td>
+<td>GeDT_3DMultiLineString</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>63</td>
+<td>GeDT_MultiPoint</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>64</td>
+<td>GeDT_3DMultiPoint</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>65</td>
+<td>GeDT_MultiPolygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>66</td>
+<td>GeDT_3DMultiPolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>67</td>
+<td>GeDT_MultiSurface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>68</td>
+<td>GeDT_3DMultiSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>69</td>
+<td>GeDT_None</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>70</td>
+<td>GeDT_Point</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>71</td>
+<td>GeDT_3DPoint</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>72</td>
+<td>GeDT_Polygon</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>73</td>
+<td>GeDT_3DPolygon</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>74</td>
+<td>GeDT_PolyhedralSurface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>75</td>
+<td>GeDT_3DPolyhedralSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>76</td>
+<td>GeDT_Surface</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>77</td>
+<td>GeDT_3DSurface</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>78</td>
+<td>GeDT_TIN</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>79</td>
+<td>GeDT_3DTIN</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>80</td>
+<td>GeDT_Triangle</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>81</td>
+<td>GeDT_3DTriangle</td>
+<td>const</td>
+<td>Geometry type (3D).</td>
+</tr>
+<tr>
+<td>82</td>
+<td>GeDT_Unknown</td>
+<td>const</td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td>83</td>
+<td>RaDT_Byte</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>84</td>
+<td>RaDT_CFloat32</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>85</td>
+<td>RaDT_CFloat64</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>86</td>
+<td>RaDT_CInt16</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>87</td>
+<td>RaDT_CInt32</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>88</td>
+<td>RaDT_Float32</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>89</td>
+<td>RaDT_Float64</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>90</td>
+<td>RaDT_Int16</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>91</td>
+<td>RaDT_Int32</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>RaDT_Int64</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>93</td>
+<td>RaDT_Int8</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>94</td>
+<td>RaDT_UInt16</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>95</td>
+<td>RaDT_UInt32</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>96</td>
+<td>RaDT_UInt64</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>97</td>
+<td>RaDT_Unknown</td>
+<td>const</td>
+<td>Raster data type.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>RspM_Nearest</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>99</td>
+<td>RspM_Bilinear</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>100</td>
+<td>RspM_Cubic</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>101</td>
+<td>RspM_CubicSpline</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>102</td>
+<td>RspM_Lanczos</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>103</td>
+<td>RspM_Average</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>104</td>
+<td>RspM_RMS</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>105</td>
+<td>RspM_Mode</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>106</td>
+<td>RspM_Gauss</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>107</td>
+<td>RspM_Max</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>108</td>
+<td>RspM_Min</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>109</td>
+<td>RspM_Median</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>110</td>
+<td>RspM_Q1</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>111</td>
+<td>RspM_Q3</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+<tr>
+<td>112</td>
+<td>RspM_Sum</td>
+<td>const</td>
+<td>Resample method.</td>
+</tr>
+</tbody>
+</table>
+</div></template>
+
+

@@ -34,6 +34,7 @@ module.exports =  [
             {
                 text: 'Cartography',
                 children: [
+                    {text: 'carto', link: '/docs/UserGuide/carto/'},
                 ]
             },
             {
@@ -41,6 +42,7 @@ module.exports =  [
                 children: [
                     {text: 'etools', link: '/docs/UserGuide/etools/'},
                     {text: 'const', link: '/docs/UserGuide/const/'},
+                    {text: 'sensors', link: '/docs/UserGuide/sensors/'},
                 ]
             }, 
         ]

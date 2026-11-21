@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">Precipitation (mm).</p>
 <p style="margin-left: 2em;"><b>etc</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Crop water requirements (mm).</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>axis </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">Calculation axis. If not set (None), multidimensional data will be expanded to 1 dimension for calculation.</p>
 <p style="margin-left: 2em;"><b>weights </b> = <code style="text-indent: 0em;">list</code>. <span style="color:#48566B;"> Default [0.1, 0.15, 0.2, 0.25, 0.3]</span>. </p>

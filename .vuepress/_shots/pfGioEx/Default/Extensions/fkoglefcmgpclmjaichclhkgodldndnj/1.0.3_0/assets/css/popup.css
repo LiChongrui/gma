@@ -1,0 +1,68 @@
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    width: 205px;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu_item {
+    width: 195px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    padding-left: 10px;
+    font-size: 14px;
+    user-select: none;
+}
+
+.menu_item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu_icon {
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.float-switch {
+    margin-left: auto;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.switch-container {
+    width: 30px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch-container.active {
+    background-color: #3b7dff;
+}
+
+.switch-handle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch-container.active .switch-handle {
+    transform: translateX(15px);
+}

@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>in_src</b>: <code style="text-indent: 0em;">str||list</code>. </p>
 <p style="margin-left: 4em;">The input raster path or path collection.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>out_dst </b> = <code style="text-indent: 0em;">str||None</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">The output raster file path. If not set (None), a memory file is created.</p>
 <p style="margin-left: 2em;"><b>tr_type </b> = <code style="text-indent: 0em;">str</code>. <span style="color:#48566B;"> Default 'warp'</span>. </p>

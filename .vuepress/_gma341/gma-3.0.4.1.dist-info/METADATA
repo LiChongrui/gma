@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: gma
+Version: 3.0.4.1
+Summary: Geographic and Meteorological Analysis.
+Home-page: http://gma.luosgeo.com/
+Author: Li Chongrui
+Author-email: 858998723@qq.com
+License: MIT
+Platform: win_amd64
+Requires-Python: >=3.11
+Requires-Dist: pandas>=3.0.3
+Requires-Dist: numpy>=2.4.1
+Requires-Dist: scipy>=1.17.0
+Requires-Dist: matplotlib>=3.10.8
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+Preface
+--------
+
+For most scholars of geosciences or meteorology, data processing is a big project, which can take several hours or days of data processing. Without good tools or methods, it will be extremely difficult to analyze and research data with multiple time series (such as time series remote sensing data) and large-scale (such as nationwide), because data processing itself is very time-consuming and labor-intensive.
+
+In order to solve these problems, gma (Geographic and Meteorological Analysis) encapsulates the data processing process. 
+
+Requires
+--------------------------------------
+
+* pandas: >= 3.0.3
+* numpy: >= 2.4.1
+* scipy: >= 1.17.0
+* matplotlib: >= 3.10.8
+
+Included features
+--------------------------------------
+
+* Climate and meteorology(gma.climet): e.g. SPEI, SPI, ET0, etc.
+
+* Remote sensing indices(gma.rsvi): e.g. NDVI, EVI, TVDI, etc.
+
+* Mathematical operations(gma.math): e.g. data smoothing, evaluation, filtering, stretching, enhancement transformations, etc.
+
+* Spatial miscellany(gma.smc): e.g. spatial distance calculation, area calculation, coordinate transformation, spatial interpolation, etc.
+
+* Geographic formats(gma.driver): e.g. creating and modifying raster/vector driven formats.
+
+* Raster/Vector reading, writing and conversion(gma.gio): e.g. raster mosaicking, resampling, etc. vector clipping, erasing, intersection, merging, reprojection, etc.
+
+* Coordinate reference system(gma.crs): e.g. creating projections, ellipsoids, datum, etc.
+
+* Cartographic tool(gma.carto): e.g. raster and vector data plotting, generating north arrow, scale bar, defining coordinate systems, etc.
+
+Due to the limited level, there will be more or less problems in the function. Looking forward to your feedback and corrections. 
+
+More functions will be added later. We hope you can provide valuable comments.
+

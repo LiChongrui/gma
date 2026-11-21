@@ -9,7 +9,7 @@ date: 2026-08-15
 <p style="font-size: 120%;color:#9298ED; font-weight: bold;">Parameters:</p>
 <p style="margin-left: 2em;"><b>data</b>: <code style="text-indent: 0em;">array</code>. </p>
 <p style="margin-left: 4em;">Data to be calculated.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>size </b> = <code style="text-indent: 0em;">int</code>. <span style="color:#48566B;"> Default 3</span>. </p>
 <p style="margin-left: 4em;">Zoom factor. The output array is scaled by a factor of size.</p>
 <p style="margin-left: 2em;"><b>nodata </b> = <code style="text-indent: 0em;">float</code>. <span style="color:#48566B;"> Default None</span>. </p>

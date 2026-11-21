@@ -11,7 +11,7 @@ date: 2026-08-15
 <p style="margin-left: 4em;">The input raster file path.</p>
 <p style="margin-left: 2em;"><b>out_dst</b>: <code style="text-indent: 0em;">str</code>. </p>
 <p style="margin-left: 4em;">The output raster file path.</p>
-<p style="font-size: 120%;color:#9298ED; font-weight: bold;">**Optional:</p>
+<p style="font-size: 120%;color:#9298ED; font-weight: bold;">Optional:</p>
 <p style="margin-left: 2em;"><b>dem </b> = <code style="text-indent: 0em;">float||str||None</code>. <span style="color:#48566B;"> Default None</span>. </p>
 <p style="margin-left: 4em;">The name of the fixed height or DEM file used for RPC calculations. Default is not set (None).</p>
 <p style="margin-left: 2em;"><b>**kwargs</b>: </p>

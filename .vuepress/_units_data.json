@@ -1,0 +1,195 @@
+{
+ "AngleUnits": {
+  "MILLIARC_SECOND": 4.848136811095355e-09,
+  "RADIAN": 1.0,
+  "DEGREE": 0.017453292519943278,
+  "ARC_MINUTE": 0.0002908882086657213,
+  "ARC_SECOND": 4.848136811095355e-06,
+  "GRAD": 0.01570796326794895,
+  "GON": 0.01570796326794895,
+  "MICRORADIAN": 1e-06,
+  "CENTESIMAL_MINUTE": 0.0001570796326794895,
+  "CENTESIMAL_SECOND": 1.570796326794895e-06,
+  "MIL_6400": 0.0009817477042468094
+ },
+ "LinearUnits": {
+  "MILLIMETRE": 0.001,
+  "CENTIMETRE": 0.01,
+  "METRE": 1.0,
+  "FOOT": 0.3048,
+  "FATHOM": 1.8288,
+  "KILOMETRE": 1000.0,
+  "YARD": 0.9144,
+  "CHAIN": 20.1168,
+  "LINK": 0.201168,
+  "DECIMETER": 0.01,
+  "INCH": 0.0254
+ },
+ "Primems": {
+  "Copenhagen": 12.34399,
+  "Greenwich": 0.0,
+  "Lisbon": -9.0754862,
+  "Paris": 2.5969213,
+  "Bogota": -74.04513,
+  "Madrid": -3.411455,
+  "Rome": 12.27084,
+  "Bern": 7.26225,
+  "Jakarta": 106.482779,
+  "Ferro": -17.4,
+  "Brussels": 4.220471,
+  "Stockholm": 18.03298,
+  "Athens": 23.4258815,
+  "Oslo": 10.43225,
+  "Luoyang": 112.5522641
+ },
+ "Ellips": {
+  "CGCS2000": {
+   "semi_major": 6378137.0,
+   "inv_flattening": 298.257222101
+  },
+  "GSK2011": {
+   "semi_major": 6378136.5,
+   "inv_flattening": 298.2564151
+  },
+  "ZACH_1812": {
+   "semi_major": 6376045.0,
+   "inv_flattening": 310.0
+  },
+  "AIRY_1830": {
+   "semi_major": 6377563.396,
+   "inv_flattening": 299.3249646
+  },
+  "BESSEL_1841": {
+   "semi_major": 6377397.155,
+   "inv_flattening": 299.1528128
+  },
+  "BESSEL_MODIFIED": {
+   "semi_major": 6377492.018,
+   "inv_flattening": 299.1528128
+  },
+  "BESSEL_NAMIBIA": {
+   "semi_major": 6377483.865,
+   "inv_flattening": 299.1528128
+  },
+  "GRS_1980": {
+   "semi_major": 6378137.0,
+   "inv_flattening": 298.257222101
+  },
+  "HELMERT_1906": {
+   "semi_major": 6378200.0,
+   "inv_flattening": 298.3
+  },
+  "INTERNATIONAL_1924": {
+   "semi_major": 6378388.0,
+   "inv_flattening": 297.0
+  },
+  "KRASSOWSKY_1940": {
+   "semi_major": 6378245.0,
+   "inv_flattening": 298.3
+  },
+  "NWL_9D": {
+   "semi_major": 6378145.0,
+   "inv_flattening": 298.25
+  },
+  "PLESSIS_1817": {
+   "semi_major": 6376523.0,
+   "inv_flattening": 308.64
+  },
+  "STRUVE_1860": {
+   "semi_major": 6378298.3,
+   "inv_flattening": 294.73
+  },
+  "WAR_OFFICE": {
+   "semi_major": 6378300.0,
+   "inv_flattening": 296.0
+  },
+  "WGS_84": {
+   "semi_major": 6378137.0,
+   "inv_flattening": 298.257223563
+  },
+  "GEM_10C": {
+   "semi_major": 6378137.0,
+   "inv_flattening": 298.257223563
+  },
+  "OSU86F": {
+   "semi_major": 6378136.2,
+   "inv_flattening": 298.257223563
+  },
+  "OSU91A": {
+   "semi_major": 6378136.3,
+   "inv_flattening": 298.257223563
+  },
+  "GRS_1967": {
+   "semi_major": 6378160.0,
+   "inv_flattening": 298.247167427
+  },
+  "WGS_72": {
+   "semi_major": 6378135.0,
+   "inv_flattening": 298.26
+  },
+  "IAG_1975": {
+   "semi_major": 6378140.0,
+   "inv_flattening": 298.257
+  },
+  "DANISH_1876": {
+   "semi_major": 6377019.27,
+   "inv_flattening": 300.0
+  },
+  "HOUGH_1960": {
+   "semi_major": 6378270.0,
+   "inv_flattening": 297.0
+  },
+  "PZ90": {
+   "semi_major": 6378136.0,
+   "inv_flattening": 298.257839303
+  },
+  "INTERNATIONAL_1967": {
+   "semi_major": 6378160.0,
+   "inv_flattening": 298.25
+  },
+  "NWL_10D": {
+   "semi_major": 6378135.0,
+   "inv_flattening": 298.26
+  },
+  "WGS_1966": {
+   "semi_major": 6378145.0,
+   "inv_flattening": 298.25
+  },
+  "FISCHER_1960": {
+   "semi_major": 6378166.0,
+   "inv_flattening": 298.3
+  },
+  "FISCHER_1968": {
+   "semi_major": 6378150.0,
+   "inv_flattening": 298.3
+  },
+  "FISCHER_MODIFIED": {
+   "semi_major": 6378155.0,
+   "inv_flattening": 298.3
+  },
+  "WALBECK": {
+   "semi_major": 6376896.0,
+   "inv_flattening": 302.78
+  },
+  "KAULA_1961": {
+   "semi_major": 6378163.0,
+   "inv_flattening": 298.24
+  },
+  "LERCH_1979": {
+   "semi_major": 6378139.0,
+   "inv_flattening": 298.257
+  },
+  "MERIT_1983": {
+   "semi_major": 6378137.0,
+   "inv_flattening": 298.257
+  },
+  "MAUPERTIUS_1738": {
+   "semi_major": 6397300.0,
+   "inv_flattening": 191.0
+  },
+  "WGS_60": {
+   "semi_major": 6378165.0,
+   "inv_flattening": 298.3
+  }
+ }
+}

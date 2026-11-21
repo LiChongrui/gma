@@ -1,0 +1,67 @@
+/**
+ * 密度优化（2026-11-20）：整体缩小文本、收紧间距。
+ * 只作用于文档正文（.theme-reco-md-content），不影响首页/侧栏/顶栏。
+ * 本文件在 index.css 中位于 theme.css 之后，同优先级规则以本文件为准。
+ */
+
+.theme-container .theme-reco-md-content {
+  /* 基础字号 16px -> 15px；inline 百分比字号（120%/125%/150% 等）随基数等比缩小 */
+  font-size: 15px;
+  line-height: 1.55;
+  /* body 全局 tracking-wider(0.05em) 在正文中收紧 */
+  letter-spacing: normal;
+  /* 原 @apply mb-16(4rem) -> 2.5rem */
+  margin-bottom: 2.5rem;
+
+  /* 段落间距：主题 base.css 的 p/ol/ul/table { my-6(1.5rem) + leading-8(2rem) }
+     是"整页很空"的最大来源（API 页几乎全由 <p> 堆成，相邻 p 之间空 3rem）。
+     收紧为 0.4rem / 1.6 行高 */
+  p,
+  ol,
+  ul {
+    margin: 0.4rem 0;
+    line-height: 1.6;
+  }
+
+  /* 参数名行（inline margin-left:2em）：作为"组头"留出组间距，
+     与紧跟的说明行几乎贴合，形成"名字+说明"视觉成组 */
+  p[style*="margin-left:2em"] {
+    margin-top: 0.55rem;
+    margin-bottom: 0.15rem;
+    line-height: 1.55;
+  }
+  /* 参数说明行（inline margin-left:4em）：紧跟参数名；连续 4em 行是同组续行 */
+  p[style*="margin-left:4em"] {
+    margin: 0.15rem 0;
+    line-height: 1.55;
+  }
+
+  /* 标题间距与锚点偏移：彻底废弃主题的"负 margin + padding-top"锚点 hack。
+     原版 -mt-8/pt-12 差值 1rem；此前收紧时把差值压成 0（-4.75/4.75），
+     导致 h2 分隔线和 h3 文字贴死上一段，且标题盒子带主题的 z-index:-10
+     会整体滑入上一段下方。
+     现改为正常正间距 + scroll-margin-top（原生标准：锚点跳转时元素顶部
+     落在顶栏 4rem 之下 1rem），并恢复 z-index，标题不再压到任何背景之下 */
+  h2 {
+    margin-top: 1.9rem;
+    margin-bottom: 0.5em;
+    padding-top: 0;
+    z-index: auto;
+    scroll-margin-top: 5rem;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.1rem;
+    margin-bottom: 0.4em;
+    padding-top: 0;
+    z-index: auto;
+    scroll-margin-top: 5rem;
+  }
+
+  /* h2 分隔线（::before）的下边距 1.5rem -> 0.6rem */
+  h2::before {
+    margin-bottom: 0.6rem;
+  }
+}

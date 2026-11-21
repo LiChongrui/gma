@@ -1,0 +1,27 @@
+{
+   "action": {
+      "default_icon": "assets/img/logo64.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "description": "一款强大的多功能PDF编辑软件，采用国产自研PDF引擎，百兆文件秒开。拥有PDF编辑、格式转换、注释等多种功能，可以满足大家不同的需求。",
+   "host_permissions": [ "\u003Call_urls>", "file://*/*" ],
+   "icons": {
+      "128": "assets/img/logo64.png",
+      "16": "assets/img/logo64.png",
+      "48": "assets/img/logo64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhwSYXYHQ9D0pljYmF2E/3GpbN9iYvkRrXWTf4DQB6CqFKmzJ9OLKI7dlQ1R9LK7fkyZsh5TldAszFJTf0Lti4J23tkNBBTFQzti28AppWbVdrAdcvPg0aDiE++qrBIjMmuzBuVxZEt4sxcftwxb+Hx7I9+ILeZUUDKPi47mS4pF8eFQfkaLWaHImH/ZNCA9pVTi/CDCfrAKZe++7ZM50CaKD+HL3Myih9Ao3hJ4ZuokaJGsI2E7SX/rujFkrQGXtREc2+dDyhWgoqiHqgXPCJvg/pk/qCUnhZZROi3b5KKPWMTsgKqDjU8OxcFvqhE8owYfV/HK3HTrWArTTcmz3ZQIDAQAB",
+   "manifest_version": 3,
+   "name": "PDF编辑转换器悬浮组件",
+   "permissions": [ "storage", "tabs", "nativeMessaging", "scripting" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.0.3",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/img/edit.png", "assets/img/print.png", "assets/img/output.png", "assets/img/right_arrow.png", "assets/img/pdf2word.png", "assets/img/pdf2excel.png", "assets/img/pdf2pic.png", "assets/img/pdf2ppt.png", "assets/img/pdf2cad.png", "assets/img/merge_splite.png", "assets/img/more.png", "assets/img/instruction_bg.png", "assets/img/btn_pin.png", "assets/img/btn_settings.png", "assets/js/content_script.js", "assets/js/jquery-3.4.1.min.js" ]
+   } ]
+}
